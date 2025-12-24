@@ -1,8 +1,13 @@
 import type { NextConfig } from "next";
 
+// Use base path only in production (profootballnetwork.com)
+// For Vercel preview deployments, use root path
+const isProduction = process.env.NEXT_PUBLIC_SITE_URL?.includes('profootballnetwork.com');
+const basePath = isProduction ? '/cfb-hq/transfer-portal-tracker' : '';
+
 const nextConfig: NextConfig = {
-  basePath: '/cfb-hq/transfer-portal-tracker',
-  assetPrefix: '/cfb-hq/transfer-portal-tracker/',
+  basePath: basePath,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
   images: {
     remotePatterns: [
       {
