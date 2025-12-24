@@ -59,7 +59,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                   Transfer Path
                 </th>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  Rating
+                  PFSN Impact Grade
                 </th>
               </tr>
             </thead>
@@ -73,7 +73,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                     <div className="flex items-center">
                       <div className="flex-shrink-0 h-10 w-10 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                         <Image
-                          src={getTeamLogo(player.formerSchool)}
+                          src={getTeamLogo(player.formerSchool.toLowerCase())}
                           alt={`${player.formerSchool} logo`}
                           fill
                           className="object-contain p-1"
@@ -105,7 +105,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                       <div className="flex items-center gap-2">
                         <div className="relative h-6 w-6 flex-shrink-0">
                           <Image
-                            src={getTeamLogo(player.formerSchool)}
+                            src={getTeamLogo(player.formerSchool.toLowerCase())}
                             alt={`${player.formerSchool} logo`}
                             fill
                             className="object-contain"
@@ -122,7 +122,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                           <div className="flex items-center gap-2">
                             <div className="relative h-6 w-6 flex-shrink-0">
                               <Image
-                                src={getTeamLogo(player.newSchool)}
+                                src={getTeamLogo(player.newSchool.toLowerCase())}
                                 alt={`${player.newSchool} logo`}
                                 fill
                                 className="object-contain"
@@ -161,7 +161,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
               <div className="flex items-center gap-3">
                 <div className="flex-shrink-0 h-12 w-12 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                   <Image
-                    src={getTeamLogo(player.formerSchool)}
+                    src={getTeamLogo(player.formerSchool.toLowerCase())}
                     alt={`${player.formerSchool} logo`}
                     fill
                     className="object-contain p-1"
@@ -180,7 +180,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
               {player.rating && (
                 <div className="text-right">
                   <div className="text-xl font-bold text-gray-900">{player.rating}</div>
-                  <div className="text-xs text-gray-500">Rating</div>
+                  <div className="text-xs text-gray-500">PFSN Grade</div>
                 </div>
               )}
             </div>
@@ -200,7 +200,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                   <div className="flex items-center gap-2">
                     <div className="relative h-5 w-5 flex-shrink-0">
                       <Image
-                        src={getTeamLogo(player.formerSchool)}
+                        src={getTeamLogo(player.formerSchool.toLowerCase())}
                         alt={`${player.formerSchool} logo`}
                         fill
                         className="object-contain"
@@ -220,7 +220,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                       <div className="flex items-center gap-2">
                         <div className="relative h-5 w-5 flex-shrink-0">
                           <Image
-                            src={getTeamLogo(player.newSchool)}
+                            src={getTeamLogo(player.newSchool.toLowerCase())}
                             alt={`${player.newSchool} logo`}
                             fill
                             className="object-contain"

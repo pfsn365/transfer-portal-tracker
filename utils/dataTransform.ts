@@ -72,9 +72,9 @@ export function transformPlayerData(row: TransferPortalDataRow, index: number): 
   const status = mapStatus(row[TransferPortalColumns.Status] || 'Active');
   const playerClass = mapClass(row[TransferPortalColumns.Class] || 'FR');
   const position = mapPosition(row[TransferPortalColumns.Position] || 'ATH');
-  const formerSchool = row[TransferPortalColumns.FormerSchool]?.trim().toLowerCase() || '';
+  const formerSchool = row[TransferPortalColumns.FormerSchool]?.trim() || '';
   const formerConference = mapConference(row[TransferPortalColumns.FormerConference] || '');
-  const newSchool = row[TransferPortalColumns.NewSchool]?.trim().toLowerCase() || '';
+  const newSchool = row[TransferPortalColumns.NewSchool]?.trim() || '';
   const newConference = row[TransferPortalColumns.NewConference]?.trim() || '';
   const impactGrade = parseFloat(row[TransferPortalColumns.ImpactGrade] || '0');
 
