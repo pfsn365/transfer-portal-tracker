@@ -1,0 +1,202 @@
+// CFB Team Primary Colors (official hex codes)
+export const teamColors: Record<string, string> = {
+  // SEC
+  'alabama': '#9E1B32',
+  'arkansas': '#9D2235',
+  'auburn': '#0C2340',
+  'florida': '#0021A5',
+  'georgia': '#BA0C2F',
+  'kentucky': '#0033A0',
+  'lsu': '#461D7C',
+  'mississippi': '#CE1126',
+  'ole miss': '#CE1126',
+  'mississippi state': '#660000',
+  'missouri': '#F1B82D',
+  'oklahoma': '#841617',
+  'south carolina': '#73000A',
+  'tennessee': '#FF8200',
+  'texas': '#BF5700',
+  'texas a&m': '#500000',
+  'vanderbilt': '#866D4B',
+
+  // Big Ten
+  'illinois': '#E84A27',
+  'indiana': '#990000',
+  'iowa': '#FFCD00',
+  'maryland': '#E03A3E',
+  'michigan': '#00274C',
+  'michigan state': '#18453B',
+  'minnesota': '#7A0019',
+  'nebraska': '#E41C38',
+  'northwestern': '#4E2A84',
+  'ohio state': '#BB0000',
+  'oregon': '#154733',
+  'penn state': '#041E42',
+  'purdue': '#CEB888',
+  'rutgers': '#CC0033',
+  'ucla': '#2D68C4',
+  'usc': '#990000',
+  'washington': '#4B2E83',
+  'wisconsin': '#C5050C',
+
+  // Big 12
+  'arizona': '#003366',
+  'arizona state': '#8C1D40',
+  'baylor': '#003015',
+  'byu': '#002255',
+  'cincinnati': '#E00122',
+  'colorado': '#CFB87C',
+  'houston': '#C8102E',
+  'iowa state': '#C8102E',
+  'kansas': '#0051BA',
+  'kansas state': '#512888',
+  'oklahoma state': '#FF7300',
+  'tcu': '#4D1979',
+  'texas tech': '#CC0000',
+  'ucf': '#000000',
+  'utah': '#CC0000',
+  'west virginia': '#002855',
+
+  // ACC
+  'boston college': '#98002E',
+  'california': '#003262',
+  'clemson': '#F56600',
+  'duke': '#003087',
+  'florida state': '#782F40',
+  'georgia tech': '#B3A369',
+  'louisville': '#AD0000',
+  'miami': '#F47321',
+  'miami (fl)': '#F47321',
+  'north carolina': '#7BAFD4',
+  'north carolina state': '#CC0000',
+  'notre dame': '#0C2340',
+  'pittsburgh': '#003594',
+  'pitt': '#003594',
+  'smu': '#0033A0',
+  'stanford': '#8C1515',
+  'syracuse': '#F76900',
+  'virginia': '#232D4B',
+  'virginia tech': '#630031',
+  'wake forest': '#9E7E38',
+
+  // American/AAC
+  'charlotte': '#005035',
+  'east carolina': '#592A8A',
+  'fau': '#003366',
+  'memphis': '#003087',
+  'navy': '#003B7C',
+  'north texas': '#00853E',
+  'rice': '#003D7D',
+  'usf': '#006747',
+  'temple': '#9D2235',
+  'tulane': '#006747',
+  'tulsa': '#002D72',
+  'uab': '#1E6B52',
+  'utsa': '#0C2340',
+
+  // Mountain West
+  'air force': '#003087',
+  'boise state': '#0033A0',
+  'colorado state': '#1E4D2B',
+  'fresno state': '#DB0032',
+  'hawaii': '#024731',
+  'nevada': '#003366',
+  'new mexico': '#BA0C2F',
+  'san diego state': '#A6192E',
+  'san jose state': '#0055A2',
+  'unlv': '#CF0A2C',
+  'utah state': '#0F2439',
+  'wyoming': '#492F24',
+
+  // Conference USA
+  'delaware': '#00539F',
+  'florida international': '#081E3F',
+  'fiu': '#081E3F',
+  'jacksonville state': '#CC0000',
+  'kennesaw state': '#FDBB30',
+  'liberty': '#002D62',
+  'louisiana tech': '#002F8B',
+  'middle tennessee': '#0066CC',
+  'new mexico state': '#891216',
+  'sam houston': '#FF6A00',
+  'utep': '#FF8200',
+  'western kentucky': '#C60C30',
+
+  // MAC
+  'akron': '#041E42',
+  'ball state': '#CC0000',
+  'bowling green': '#FE5000',
+  'buffalo': '#005BBB',
+  'central michigan': '#6A0032',
+  'eastern michigan': '#006633',
+  'kent state': '#002664',
+  'miami (oh)': '#B61E2E',
+  'northern illinois': '#BA0C2F',
+  'ohio': '#00694E',
+  'toledo': '#15397F',
+  'western michigan': '#6C4023',
+
+  // Sun Belt
+  'appalachian state': '#222222',
+  'arkansas state': '#CC092F',
+  'coastal carolina': '#006F71',
+  'georgia southern': '#011E41',
+  'georgia state': '#0039A6',
+  'james madison': '#450084',
+  'jmu': '#450084',
+  'louisiana': '#CE181E',
+  'louisiana-monroe': '#840029',
+  'marshall': '#00B140',
+  'old dominion': '#003057',
+  'south alabama': '#00205B',
+  'southern miss': '#FFAB00',
+  'texas state': '#501214',
+  'troy': '#8B2332',
+
+  // PAC-12
+  'oregon state': '#DC4405',
+  'washington state': '#981E32',
+
+  // Independents
+  'army': '#000000',
+  'connecticut': '#000E2F',
+  'massachusetts': '#881c1c',
+
+  // FCS Notable
+  'jackson state': '#004C97',
+  'north dakota state': '#0A5640',
+  'montana': '#4A0404',
+}
+
+// Get team color with fallback
+export function getTeamColor(teamName: string): string {
+  const team = teamName.toLowerCase().trim()
+  return teamColors[team] || '#004E89' // Default to blue if team not found
+}
+
+// Convert hex to RGB for opacity support
+export function hexToRgb(hex: string): { r: number; g: number; b: number } | null {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null
+}
+
+// Get lighter shade of team color for backgrounds
+export function getTeamColorLight(teamName: string, opacity: number = 0.1): string {
+  const hex = getTeamColor(teamName)
+  const rgb = hexToRgb(hex)
+  if (!rgb) return `rgba(0, 78, 137, ${opacity})`
+  return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${opacity})`
+}
+
+// Determine if text should be light or dark based on background color
+export function getContrastTextColor(hexColor: string): string {
+  const rgb = hexToRgb(hexColor)
+  if (!rgb) return '#FFFFFF'
+
+  const luminance = (0.299 * rgb.r + 0.587 * rgb.g + 0.114 * rgb.b) / 255
+  return luminance > 0.5 ? '#000000' : '#FFFFFF'
+}
