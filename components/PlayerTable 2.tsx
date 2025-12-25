@@ -113,7 +113,6 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                     {player.rating && (
                       <div className="flex items-center">
                         <span className="text-lg font-bold text-gray-900">{player.rating}</span>
-                        <span className="ml-1 text-xs text-gray-500">/100</span>
                       </div>
                     )}
                   </td>

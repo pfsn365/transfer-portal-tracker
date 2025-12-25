@@ -7,6 +7,7 @@ import PlayerTable from '@/components/PlayerTable';
 import Header from '@/components/Header';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
+import BannerAd from '@/components/BannerAd';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -108,6 +109,8 @@ export default function TransferPortalTracker() {
   return (
     <main className="min-h-screen bg-gray-50">
       <Header playerCount={filteredPlayers.length} totalCount={players.length} lastUpdated={lastUpdated} />
+
+      <BannerAd />
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <FilterBar

@@ -89,7 +89,7 @@ export function transformPlayerData(row: TransferPortalDataRow, index: number): 
     formerSchool: formerSchool,
     formerConference: formerConference,
     announcedDate: new Date().toISOString().split('T')[0], // Use current date as fallback
-    rating: impactGrade > 0 ? Math.round(impactGrade) : undefined,
+    rating: impactGrade > 0 ? impactGrade : undefined,
   };
 
   // Add new school if exists and is different from former school
