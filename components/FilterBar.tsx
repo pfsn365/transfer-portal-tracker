@@ -14,7 +14,7 @@ interface FilterBarProps {
   schools: string[];
 }
 
-const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed', 'Expected', 'Withdrawn'];
+const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed', 'Enrolled', 'Withdrawn'];
 const classes: (PlayerClass | 'All')[] = ['All', 'FR', 'SO', 'JR', 'SR', 'GR'];
 const positions: (PlayerPosition | 'All')[] = [
   'All', 'QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'C',

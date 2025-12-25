@@ -1,8 +1,5 @@
 import { TransferPlayer } from '@/types/player';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
-import { getTeamLogo } from '@/utils/teamLogos';
-import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 
 interface PlayerTableProps {
   players: TransferPlayer[];
@@ -15,12 +12,12 @@ export default function PlayerTable({ players }: PlayerTableProps) {
         return 'bg-green-100 text-green-800 border-green-300';
       case 'Entered':
         return 'bg-yellow-100 text-yellow-800 border-yellow-300';
-      case 'Enrolled':
-        return 'bg-blue-100 text-blue-800 border-blue-300';
+      case 'Expected':
+        return 'bg-orange-100 text-orange-800 border-orange-300';
       case 'Withdrawn':
         return 'bg-gray-100 text-gray-800 border-gray-300';
       default:
-        return 'bg-yellow-100 text-yellow-800 border-yellow-300';
+        return 'bg-blue-100 text-blue-800 border-blue-300';
     }
   };
 
@@ -59,7 +56,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                   Transfer Path
                 </th>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  PFSN Impact Grade
+                  Rating
                 </th>
               </tr>
             </thead>
@@ -71,13 +68,8 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                 >
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-10 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
-                        <Image
-                          src={getTeamLogo(player.formerSchool.toLowerCase())}
-                          alt={`${player.formerSchool} logo`}
-                          fill
-                          className="object-contain p-1"
-                        />
+                      <div className="flex-shrink-0 h-10 w-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white font-bold">
+                        {player.name.split(' ').map(n => n[0]).join('')}
                       </div>
                       <div className="ml-4">
                         <div className="text-sm font-bold text-gray-900">{player.name}</div>
@@ -102,36 +94,16 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <div className="relative h-6 w-6 flex-shrink-0">
-                          <Image
-                            src={getTeamLogo(player.formerSchool.toLowerCase())}
-                            alt={`${player.formerSchool} logo`}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="text-left">
-                          <div className="font-semibold text-gray-900">{player.formerSchool}</div>
-                          <div className="text-xs text-gray-500">{player.formerConference}</div>
-                        </div>
+                      <div className="text-left">
+                        <div className="font-semibold text-gray-900">{player.formerSchool}</div>
+                        <div className="text-xs text-gray-500">{player.formerConference}</div>
                       </div>
                       {player.newSchool && (
                         <>
-                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
-                          <div className="flex items-center gap-2">
-                            <div className="relative h-6 w-6 flex-shrink-0">
-                              <Image
-                                src={getTeamLogo(player.newSchool.toLowerCase())}
-                                alt={`${player.newSchool} logo`}
-                                fill
-                                className="object-contain"
-                              />
-                            </div>
-                            <div className="text-left">
-                              <div className="font-semibold text-green-700">{player.newSchool}</div>
-                              <div className="text-xs text-gray-500">{player.newConference}</div>
-                            </div>
+                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                          <div className="text-left">
+                            <div className="font-semibold text-green-700">{player.newSchool}</div>
+                            <div className="text-xs text-gray-500">{player.newConference}</div>
                           </div>
                         </>
                       )}
@@ -159,13 +131,8 @@ export default function PlayerTable({ players }: PlayerTableProps) {
             {/* Player Header */}
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 h-12 w-12 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
-                  <Image
-                    src={getTeamLogo(player.formerSchool.toLowerCase())}
-                    alt={`${player.formerSchool} logo`}
-                    fill
-                    className="object-contain p-1"
-                  />
+                <div className="flex-shrink-0 h-12 w-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white font-bold">
+                  {player.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">{player.name}</h3>
@@ -180,7 +147,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
               {player.rating && (
                 <div className="text-right">
                   <div className="text-xl font-bold text-gray-900">{player.rating}</div>
-                  <div className="text-xs text-gray-500">PFSN Grade</div>
+                  <div className="text-xs text-gray-500">Rating</div>
                 </div>
               )}
             </div>
@@ -197,40 +164,16 @@ export default function PlayerTable({ players }: PlayerTableProps) {
               <div className="flex items-center gap-2">
                 <div className="flex-1">
                   <div className="text-xs text-gray-500 mb-1">From</div>
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-5 w-5 flex-shrink-0">
-                      <Image
-                        src={getTeamLogo(player.formerSchool.toLowerCase())}
-                        alt={`${player.formerSchool} logo`}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 text-sm">{player.formerSchool}</div>
-                      <div className="text-xs text-gray-500">{player.formerConference}</div>
-                    </div>
-                  </div>
+                  <div className="font-semibold text-gray-900">{player.formerSchool}</div>
+                  <div className="text-xs text-gray-500">{player.formerConference}</div>
                 </div>
                 {player.newSchool && (
                   <>
                     <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
                     <div className="flex-1">
                       <div className="text-xs text-gray-500 mb-1">To</div>
-                      <div className="flex items-center gap-2">
-                        <div className="relative h-5 w-5 flex-shrink-0">
-                          <Image
-                            src={getTeamLogo(player.newSchool.toLowerCase())}
-                            alt={`${player.newSchool} logo`}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                        <div>
-                          <div className="font-semibold text-green-700 text-sm">{player.newSchool}</div>
-                          <div className="text-xs text-gray-500">{player.newConference}</div>
-                        </div>
-                      </div>
+                      <div className="font-semibold text-green-700">{player.newSchool}</div>
+                      <div className="text-xs text-gray-500">{player.newConference}</div>
                     </div>
                   </>
                 )}

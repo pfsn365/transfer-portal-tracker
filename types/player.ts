@@ -1,4 +1,4 @@
-export type PlayerStatus = 'Entered' | 'Committed' | 'Withdrawn' | 'Expected';
+export type PlayerStatus = 'Entered' | 'Committed' | 'Withdrawn' | 'Enrolled';
 
 export type PlayerClass = 'FR' | 'SO' | 'JR' | 'SR' | 'GR';
 

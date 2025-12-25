@@ -10,7 +10,8 @@ function mapStatus(apiStatus: string): PlayerStatus {
     'active': 'Entered',
     'entered': 'Entered',
     'committed': 'Committed',
-    'expected': 'Expected',
+    'enrolled': 'Enrolled',
+    'expected': 'Enrolled',
     'withdrawn': 'Withdrawn',
   };
 
