@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import RaptiveScript from '@/components/RaptiveScript';
+import VideoPlayerScript from '@/components/VideoPlayerScript';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://profootballnetwork.com/cfb-hq/transfer-portal-tracker'),
@@ -71,10 +73,13 @@ export default function RootLayout({
   return (
     <html lang="en-us">
       <head>
+        {/* Analytics and Ad Scripts */}
         <GoogleAnalytics />
+        <RaptiveScript />
 
         {/* Resource hints for performance */}
         <link rel="dns-prefetch" href="//www.profootballnetwork.com" />
+        <link rel="dns-prefetch" href="//ads.adthrive.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.profootballnetwork.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,7 +92,8 @@ export default function RootLayout({
         {/* Performance and security */}
         <meta httpEquiv="X-DNS-Prefetch-Control" content="on" />
       </head>
-      <body className="antialiased pb-24">
+      <body className="antialiased raptive-pfn-disable-footer-close pb-24">
+        <VideoPlayerScript />
         {children}
       </body>
     </html>
