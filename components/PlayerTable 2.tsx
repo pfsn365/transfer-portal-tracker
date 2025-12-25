@@ -47,9 +47,6 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                   Class
                 </th>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  HT/WT
-                </th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
                   Status
                 </th>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
@@ -83,9 +80,6 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
                     {player.class}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                    {player.height && player.weight ? `${player.height} / ${player.weight}` : '-'}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
@@ -178,18 +172,6 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                 )}
               </div>
             </div>
-
-            {/* Physical Stats */}
-            {player.height && player.weight && (
-              <div className="flex items-center gap-4 text-sm text-gray-700">
-                <div>
-                  <span className="text-gray-500">Height:</span> <span className="font-medium">{player.height}</span>
-                </div>
-                <div>
-                  <span className="text-gray-500">Weight:</span> <span className="font-medium">{player.weight} lbs</span>
-                </div>
-              </div>
-            )}
           </div>
         ))}
       </div>
