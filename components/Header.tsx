@@ -20,11 +20,11 @@ export default function Header({ playerCount, totalCount, lastUpdated }: HeaderP
 
   return (
     <div className="text-white shadow-lg" style={{ backgroundColor: '#0050A0' }}>
-      <div className="max-w-[1600px] mx-auto px-4 py-3 sm:py-4">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1">
+      <div className="max-w-[1600px] mx-auto px-4 py-6 sm:py-8">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
           CFB Transfer Portal Tracker
         </h1>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs sm:text-sm lg:text-base text-white/90">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm sm:text-base text-white/90">
           <p>
             Latest update includes announced and verified entries: {formattedDate}
           </p>
