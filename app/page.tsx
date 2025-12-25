@@ -109,6 +109,11 @@ export default function TransferPortalTracker() {
     <main className="min-h-screen bg-gray-50">
       <Header playerCount={filteredPlayers.length} totalCount={players.length} lastUpdated={lastUpdated} />
 
+      {/* Raptive Header Ad */}
+      <div className="container mx-auto px-4 min-h-[150px]">
+        <div className="raptive-pfn-header"></div>
+      </div>
+
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <FilterBar
           selectedStatus={selectedStatus}
