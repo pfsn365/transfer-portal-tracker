@@ -24,14 +24,9 @@ export default function Header({ playerCount, totalCount, lastUpdated }: HeaderP
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
           CFB Transfer Portal Tracker
         </h1>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm sm:text-base text-white/90">
-          <p>
-            Latest update includes announced and verified entries: {formattedDate}
-          </p>
-          <p className="font-semibold">
-            Showing {playerCount} of {totalCount} Players
-          </p>
-        </div>
+        <p className="text-sm sm:text-base text-white/90">
+          Latest update includes announced and verified entries: {formattedDate}
+        </p>
       </div>
     </div>
   );
