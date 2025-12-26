@@ -3,6 +3,8 @@ import "./globals.css";
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import RaptiveScript from '@/components/RaptiveScript';
 import VideoPlayerScript from '@/components/VideoPlayerScript';
+import CanonicalURL from '@/components/CanonicalURL';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://profootballnetwork.com/cfb-hq/transfer-portal-tracker'),
@@ -63,6 +65,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker',
   },
+  verification: {
+    google: 'verification-code-here', // Add your Google Search Console verification code
+  },
+  category: 'sports',
 };
 
 export default function RootLayout({
@@ -86,14 +92,23 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Theme colors */}
-        <meta name="theme-color" content="#FF6B35" />
-        <meta name="msapplication-TileColor" content="#FF6B35" />
+        <meta name="theme-color" content="#0050A0" />
+        <meta name="msapplication-TileColor" content="#0050A0" />
+
+        {/* Additional SEO meta tags */}
+        <meta name="application-name" content="CFB Transfer Portal Tracker" />
+        <meta name="apple-mobile-web-app-title" content="CFB Portal Tracker" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="format-detection" content="telephone=no" />
 
         {/* Performance and security */}
         <meta httpEquiv="X-DNS-Prefetch-Control" content="on" />
       </head>
       <body className="antialiased raptive-pfn-disable-footer-close pb-24">
+        <CanonicalURL />
         <VideoPlayerScript />
+        <StructuredData />
         {children}
       </body>
     </html>
