@@ -24,6 +24,41 @@ export default function PlayerTable({ players }: PlayerTableProps) {
     }
   };
 
+  const getPositionColor = (position: string) => {
+    // Quarterback
+    if (position === 'QB') return 'bg-purple-100 text-purple-800';
+
+    // Running Backs
+    if (position === 'RB') return 'bg-green-100 text-green-800';
+
+    // Wide Receivers
+    if (position === 'WR') return 'bg-blue-100 text-blue-800';
+
+    // Tight End
+    if (position === 'TE') return 'bg-cyan-100 text-cyan-800';
+
+    // Offensive Line
+    if (['OL', 'OT', 'OG', 'C'].includes(position)) return 'bg-orange-100 text-orange-800';
+
+    // Defensive Line
+    if (['EDGE', 'DL', 'DT'].includes(position)) return 'bg-red-100 text-red-800';
+
+    // Linebackers
+    if (position === 'LB') return 'bg-amber-100 text-amber-800';
+
+    // Defensive Backs
+    if (['CB', 'S', 'DB'].includes(position)) return 'bg-teal-100 text-teal-800';
+
+    // Special Teams
+    if (['K', 'P'].includes(position)) return 'bg-gray-100 text-gray-800';
+
+    // Athletes
+    if (position === 'ATH') return 'bg-violet-100 text-violet-800';
+
+    // Default
+    return 'bg-slate-100 text-slate-800';
+  };
+
   if (players.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow-md p-12 text-center">
@@ -83,7 +118,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="px-2 py-1 text-xs font-semibold rounded bg-blue-100 text-blue-800">
+                    <span className={`px-2 py-1 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                       {player.position}
                     </span>
                   </td>
@@ -167,7 +202,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                 <div>
                   <h3 className="font-bold text-gray-900">{player.name}</h3>
                   <div className="flex items-center gap-2 mt-1">
-                    <span className="px-2 py-0.5 text-xs font-semibold rounded bg-blue-100 text-blue-800">
+                    <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                       {player.position}
                     </span>
                     <span className="text-xs text-gray-600 font-medium">{player.class}</span>
