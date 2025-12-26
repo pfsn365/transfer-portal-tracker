@@ -96,14 +96,18 @@ export default function Pagination({
             {getPageNumbers().map((page, index) => (
               <button
                 key={index}
-                onClick={() => typeof page === 'number' && onPageChange(page)}
+                onClick={() => {
+                  if (typeof page === 'number') {
+                    onPageChange(page);
+                  }
+                }}
                 disabled={page === '...'}
                 className={`min-w-[36px] sm:min-w-[40px] px-2 sm:px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   page === currentPage
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-blue-600 text-white cursor-default'
                     : page === '...'
                     ? 'cursor-default text-gray-400'
-                    : 'border border-gray-300 hover:bg-gray-50 text-gray-700'
+                    : 'border border-gray-300 hover:bg-gray-50 text-gray-700 cursor-pointer'
                 }`}
               >
                 {page}
