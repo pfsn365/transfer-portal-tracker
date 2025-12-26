@@ -7,6 +7,7 @@ import PlayerTable from '@/components/PlayerTable';
 import Header from '@/components/Header';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
+import TableSkeleton from '@/components/TableSkeleton';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -86,8 +87,25 @@ export default function TransferPortalTracker() {
     return (
       <main className="min-h-screen bg-gray-50">
         <Header playerCount={0} totalCount={0} lastUpdated={lastUpdated} />
+
+        {/* Raptive Header Ad */}
+        <div className="container mx-auto px-4 min-h-[150px]">
+          <div className="raptive-pfn-header"></div>
+        </div>
+
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <LoadingSpinner />
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+              {[...Array(5)].map((_, i) => (
+                <div key={i}>
+                  <div className="h-4 w-16 bg-gray-200 rounded animate-pulse mb-2" />
+                  <div className="h-10 w-full bg-gray-200 rounded animate-pulse" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <TableSkeleton />
         </div>
       </main>
     );

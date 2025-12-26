@@ -91,6 +91,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
+        {/* Preload critical assets */}
+        <link rel="preload" as="image" href="https://a.espncdn.com/i/teamlogos/ncaa/500/default-team-logo-500.png" />
+
+        {/* Font display optimization */}
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onLoad={(e: any) => e.target.media='all'} />
+
         {/* Theme colors */}
         <meta name="theme-color" content="#0050A0" />
         <meta name="msapplication-TileColor" content="#0050A0" />

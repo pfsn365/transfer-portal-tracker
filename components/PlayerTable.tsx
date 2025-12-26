@@ -35,7 +35,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
   return (
     <>
       {/* Desktop Table View */}
-      <div className="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden content-auto">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-100 border-b-2 border-gray-200">
@@ -73,6 +73,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                           src={getTeamLogo(player.formerSchool.toLowerCase())}
                           alt={`${player.formerSchool} logo`}
                           fill
+                          sizes="40px"
                           className="object-contain p-1"
                         />
                       </div>
@@ -102,6 +103,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                             src={getTeamLogo(player.formerSchool.toLowerCase())}
                             alt={`${player.formerSchool} logo`}
                             fill
+                            sizes="24px"
                             className="object-contain"
                           />
                         </div>
@@ -119,6 +121,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                                 src={getTeamLogo(player.newSchool.toLowerCase())}
                                 alt={`${player.newSchool} logo`}
                                 fill
+                                sizes="24px"
                                 className="object-contain"
                               />
                             </div>
@@ -157,6 +160,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                     src={getTeamLogo(player.formerSchool.toLowerCase())}
                     alt={`${player.formerSchool} logo`}
                     fill
+                    sizes="48px"
                     className="object-contain p-1"
                   />
                 </div>
@@ -196,6 +200,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                         src={getTeamLogo(player.formerSchool.toLowerCase())}
                         alt={`${player.formerSchool} logo`}
                         fill
+                        sizes="20px"
                         className="object-contain"
                       />
                     </div>
@@ -216,6 +221,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
                             src={getTeamLogo(player.newSchool.toLowerCase())}
                             alt={`${player.newSchool} logo`}
                             fill
+                            sizes="20px"
                             className="object-contain"
                           />
                         </div>

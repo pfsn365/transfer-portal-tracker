@@ -184,3 +184,37 @@ body {
     padding-bottom: max(24px, env(safe-area-inset-bottom));
   }
 }
+
+/* Performance optimizations for rendering */
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* Reduce paint on scroll for better performance */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Raptive ad container optimization - prevent CLS */
+.raptive-pfn-header {
+  min-height: 90px;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .raptive-pfn-header {
+    min-height: 250px;
+  }
+}
+
+/* Optimize animations for performance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
