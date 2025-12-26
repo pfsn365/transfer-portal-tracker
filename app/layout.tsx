@@ -95,12 +95,16 @@ export default function RootLayout({
         <meta name="theme-color" content="#0050A0" />
         <meta name="msapplication-TileColor" content="#0050A0" />
 
-        {/* Additional SEO meta tags */}
+        {/* Mobile Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="application-name" content="CFB Transfer Portal Tracker" />
         <meta name="apple-mobile-web-app-title" content="CFB Portal Tracker" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="width" />
 
         {/* Performance and security */}
         <meta httpEquiv="X-DNS-Prefetch-Control" content="on" />

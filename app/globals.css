@@ -131,3 +131,56 @@ body {
     bottom: 45px;
   }
 }
+
+/* Mobile Touch Optimization */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase tap targets for mobile */
+  button, a, select, input {
+    min-height: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .table-row-hover:hover {
+    transform: none;
+  }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Optimize spacing for tablets */
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Reduce spacing on small screens */
+  body {
+    padding-bottom: 80px; /* Account for video player */
+  }
+
+  /* Optimize font sizes for mobile */
+  html {
+    font-size: 16px; /* Prevent zoom on input focus */
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 896px) and (orientation: landscape) {
+  /* Adjust header for landscape */
+  .header-mobile {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+}

@@ -148,7 +148,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
       {/* Mobile Card View */}
       <div className="lg:hidden space-y-4">
         {players.map((player) => (
-          <div key={player.id} className="bg-white rounded-lg shadow-md p-4 border border-gray-200">
+          <div key={player.id} className="bg-white rounded-lg shadow-md p-4 sm:p-5 border border-gray-200 active:bg-gray-50 transition-colors">
             {/* Player Header */}
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-3">
