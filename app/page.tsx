@@ -177,17 +177,6 @@ export default function TransferPortalTracker() {
         />
 
         <div className="mt-6">
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            itemsPerPage={itemsPerPage}
-            totalItems={filteredPlayers.length}
-            onPageChange={handlePageChange}
-            onItemsPerPageChange={handleItemsPerPageChange}
-          />
-        </div>
-
-        <div className="mt-6">
           <PlayerTable players={paginatedPlayers} />
         </div>
 
