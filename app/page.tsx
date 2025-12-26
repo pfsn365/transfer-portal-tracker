@@ -87,8 +87,18 @@ export default function TransferPortalTracker() {
   const paginatedPlayers = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    return filteredPlayers.slice(startIndex, endIndex);
-  }, [filteredPlayers, currentPage, itemsPerPage]);
+    const sliced = filteredPlayers.slice(startIndex, endIndex);
+    console.log('Pagination Debug:', {
+      totalPlayers: filteredPlayers.length,
+      itemsPerPage,
+      totalPages,
+      currentPage,
+      startIndex,
+      endIndex,
+      slicedCount: sliced.length
+    });
+    return sliced;
+  }, [filteredPlayers, currentPage, itemsPerPage, totalPages]);
 
   // Handle pagination changes
   const handlePageChange = (page: number) => {
