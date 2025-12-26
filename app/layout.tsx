@@ -96,7 +96,7 @@ export default function RootLayout({
 
         {/* Font display optimization */}
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onLoad={(e: any) => e.target.media='all'} />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
 
         {/* Theme colors */}
         <meta name="theme-color" content="#0050A0" />
