@@ -18,36 +18,27 @@ export default function Pagination({
   onItemsPerPageChange,
 }: PaginationProps) {
   const getPageNumbers = () => {
-    const pages: (number | string)[] = [];
-    const maxVisible = 7; // Max page numbers to show
+    const pages: number[] = [];
+    const maxVisible = 3; // Show 3 pages at a time
 
     if (totalPages <= maxVisible) {
-      // Show all pages if total is small
+      // Show all pages if total is 3 or less
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
       }
     } else {
-      // Always show first page
-      pages.push(1);
+      // Calculate which 3 pages to show based on current page
+      let startPage = Math.max(1, currentPage - 1);
+      let endPage = Math.min(totalPages, startPage + maxVisible - 1);
 
-      if (currentPage > 3) {
-        pages.push('...');
+      // Adjust if we're near the end
+      if (endPage === totalPages) {
+        startPage = Math.max(1, totalPages - maxVisible + 1);
       }
 
-      // Show pages around current page
-      const start = Math.max(2, currentPage - 1);
-      const end = Math.min(totalPages - 1, currentPage + 1);
-
-      for (let i = start; i <= end; i++) {
+      for (let i = startPage; i <= endPage; i++) {
         pages.push(i);
       }
-
-      if (currentPage < totalPages - 2) {
-        pages.push('...');
-      }
-
-      // Always show last page
-      pages.push(totalPages);
     }
 
     return pages;
@@ -93,20 +84,13 @@ export default function Pagination({
             </button>
 
             {/* Page numbers */}
-            {getPageNumbers().map((page, index) => (
+            {getPageNumbers().map((page) => (
               <button
-                key={index}
-                onClick={() => {
-                  if (typeof page === 'number') {
-                    onPageChange(page);
-                  }
-                }}
-                disabled={page === '...'}
+                key={page}
+                onClick={() => onPageChange(page)}
                 className={`min-w-[36px] sm:min-w-[40px] px-2 sm:px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   page === currentPage
                     ? 'bg-blue-600 text-white cursor-default'
-                    : page === '...'
-                    ? 'cursor-default text-gray-400'
                     : 'border border-gray-300 hover:bg-gray-50 text-gray-700 cursor-pointer'
                 }`}
               >
