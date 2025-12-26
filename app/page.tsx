@@ -8,6 +8,7 @@ import Header from '@/components/Header';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
+import Pagination from '@/components/Pagination';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -20,6 +21,10 @@ export default function TransferPortalTracker() {
   const [selectedClass, setSelectedClass] = useState<PlayerClass | 'All'>('All');
   const [selectedPosition, setSelectedPosition] = useState<PlayerPosition | 'All'>('All');
   const [selectedConference, setSelectedConference] = useState<Conference | 'All'>('All');
+
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(25);
 
   // Fetch data from API
   const fetchData = async () => {
@@ -71,6 +76,30 @@ export default function TransferPortalTracker() {
       return true;
     });
   }, [players, selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference]);
+
+  // Reset to page 1 when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference]);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredPlayers.length / itemsPerPage);
+  const paginatedPlayers = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return filteredPlayers.slice(startIndex, endIndex);
+  }, [filteredPlayers, currentPage, itemsPerPage]);
+
+  // Handle pagination changes
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleItemsPerPageChange = (items: number) => {
+    setItemsPerPage(items);
+    setCurrentPage(1);
+  };
 
   // Get unique schools from data
   const schools = useMemo(() => {
@@ -148,7 +177,29 @@ export default function TransferPortalTracker() {
         />
 
         <div className="mt-6">
-          <PlayerTable players={filteredPlayers} />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            itemsPerPage={itemsPerPage}
+            totalItems={filteredPlayers.length}
+            onPageChange={handlePageChange}
+            onItemsPerPageChange={handleItemsPerPageChange}
+          />
+        </div>
+
+        <div className="mt-6">
+          <PlayerTable players={paginatedPlayers} />
+        </div>
+
+        <div className="mt-6">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            itemsPerPage={itemsPerPage}
+            totalItems={filteredPlayers.length}
+            onPageChange={handlePageChange}
+            onItemsPerPageChange={handleItemsPerPageChange}
+          />
         </div>
       </div>
     </main>
