@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
+import { getTeamById } from '@/data/teams';
 
 interface FilterBarProps {
   selectedStatus: PlayerStatus | 'All';
@@ -63,16 +65,30 @@ export default function FilterBar({
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             School
           </label>
-          <select
-            value={selectedSchool}
-            onChange={(e) => onSchoolChange(e.target.value)}
-            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
-          >
-            <option value="All">All</option>
-            {schools.map(school => (
-              <option key={school} value={school}>{school}</option>
-            ))}
-          </select>
+          <div className="flex gap-2">
+            <select
+              value={selectedSchool}
+              onChange={(e) => onSchoolChange(e.target.value)}
+              className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+            >
+              <option value="All">All</option>
+              {schools.map(school => (
+                <option key={school} value={school}>{school}</option>
+              ))}
+            </select>
+            {selectedSchool !== 'All' && (() => {
+              const team = getTeamById(selectedSchool);
+              return team ? (
+                <Link
+                  href={`/college/${team.slug}`}
+                  className="px-3 py-2.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap"
+                  title={`View ${team.name} page`}
+                >
+                  View
+                </Link>
+              ) : null;
+            })()}
+          </div>
         </div>
 
         {/* Class Filter */}
