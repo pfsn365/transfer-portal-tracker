@@ -32,22 +32,20 @@ export default function Header({
 
           {/* Stats - Desktop */}
           {totalCount > 0 && (
-            <div className="hidden lg:flex items-center gap-4 text-sm whitespace-nowrap">
-              <div className="flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-3 text-sm">
+              <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <span className="font-semibold">{totalCount.toLocaleString()} Total</span>
-                {topPosition && topPositionCount && (
-                  <>
-                    <span className="text-white/50">|</span>
-                    <span>Top: <strong>{topPosition}</strong> ({topPositionCount})</span>
-                  </>
-                )}
-                {mostActiveConference && mostActiveConferenceCount && (
-                  <>
-                    <span className="text-white/50">|</span>
-                    <span>Active: <strong>{mostActiveConference}</strong> ({mostActiveConferenceCount} in)</span>
-                  </>
-                )}
               </div>
+              {topPosition && topPositionCount && (
+                <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span>Top: <strong>{topPosition}</strong> ({topPositionCount})</span>
+                </div>
+              )}
+              {mostActiveConference && mostActiveConferenceCount && (
+                <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span>Active: <strong>{mostActiveConference}</strong> ({mostActiveConferenceCount} in)</span>
+                </div>
+              )}
             </div>
           )}
 
