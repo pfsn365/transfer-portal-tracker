@@ -9,6 +9,7 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
 import Pagination from '@/components/Pagination';
+import { getTeamById } from '@/data/teams';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -93,9 +94,24 @@ export default function TransferPortalTracker() {
       }
 
       if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
-      if (selectedSchool !== 'All' &&
-          player.formerSchool !== selectedSchool &&
-          player.newSchool !== selectedSchool) return false;
+
+      // School filter - match by name or team ID (case-insensitive)
+      if (selectedSchool !== 'All') {
+        const team = getTeamById(selectedSchool);
+        const schoolLower = selectedSchool.toLowerCase();
+        const formerSchoolLower = player.formerSchool.toLowerCase();
+        const newSchoolLower = (player.newSchool || '').toLowerCase();
+
+        const formerMatch = formerSchoolLower === schoolLower ||
+                           formerSchoolLower === team?.id.toLowerCase() ||
+                           formerSchoolLower === team?.name.toLowerCase();
+        const newMatch = newSchoolLower === schoolLower ||
+                        newSchoolLower === team?.id.toLowerCase() ||
+                        newSchoolLower === team?.name.toLowerCase();
+
+        if (!formerMatch && !newMatch) return false;
+      }
+
       if (selectedClass !== 'All' && player.class !== selectedClass) return false;
       if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
       if (selectedConference !== 'All' &&

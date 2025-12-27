@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
-import { getTeamById } from '@/data/teams';
+import { getTeamById, getAllConferences, getTeamsByConference } from '@/data/teams';
 
 interface FilterBarProps {
   selectedStatus: PlayerStatus | 'All';
@@ -71,10 +71,19 @@ export default function FilterBar({
               onChange={(e) => onSchoolChange(e.target.value)}
               className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
             >
-              <option value="All">All</option>
-              {schools.map(school => (
-                <option key={school} value={school}>{school}</option>
-              ))}
+              <option value="All">All Schools</option>
+              {getAllConferences().map(conference => {
+                const teams = getTeamsByConference(conference);
+                return (
+                  <optgroup key={conference} label={conference}>
+                    {teams.map(team => (
+                      <option key={team.id} value={team.name}>
+                        {team.name}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
             </select>
             {selectedSchool !== 'All' && (() => {
               const team = getTeamById(selectedSchool);
