@@ -9,7 +9,6 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
 import Pagination from '@/components/Pagination';
-import StatsCards from '@/components/StatsCards';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -201,11 +200,45 @@ export default function TransferPortalTracker() {
     return Array.from(schoolSet).sort();
   }, [players]);
 
+  // Calculate stats for header
+  const headerStats = useMemo(() => {
+    // Most active position
+    const positionCounts = players.reduce((acc, player) => {
+      acc[player.position] = (acc[player.position] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    const topPosition = Object.entries(positionCounts)
+      .sort(([, a], [, b]) => b - a)[0];
+
+    // Most active conference (incoming)
+    const incomingConferenceCounts = players.reduce((acc, player) => {
+      if (player.newConference) {
+        acc[player.newConference] = (acc[player.newConference] || 0) + 1;
+      }
+      return acc;
+    }, {} as Record<string, number>);
+
+    const mostActiveConference = Object.entries(incomingConferenceCounts)
+      .sort(([, a], [, b]) => b - a)[0];
+
+    return {
+      topPosition: topPosition?.[0],
+      topPositionCount: topPosition?.[1],
+      mostActiveConference: mostActiveConference?.[0],
+      mostActiveConferenceCount: mostActiveConference?.[1],
+    };
+  }, [players]);
+
   // Show loading state
   if (loading) {
     return (
       <main className="min-h-screen bg-gray-50">
-        <Header playerCount={0} totalCount={0} lastUpdated={lastUpdated} />
+        <Header
+          playerCount={0}
+          totalCount={0}
+          lastUpdated={lastUpdated}
+        />
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[150px]">
@@ -213,17 +246,6 @@ export default function TransferPortalTracker() {
         </div>
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          {/* Stats Cards Skeleton */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-md p-6">
-                <div className="h-4 w-24 bg-gray-200 rounded animate-pulse mb-3" />
-                <div className="h-8 w-16 bg-gray-200 rounded animate-pulse mb-2" />
-                <div className="h-3 w-20 bg-gray-200 rounded animate-pulse" />
-              </div>
-            ))}
-          </div>
-
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
               {[...Array(5)].map((_, i) => (
@@ -245,7 +267,11 @@ export default function TransferPortalTracker() {
   if (error) {
     return (
       <main className="min-h-screen bg-gray-50">
-        <Header playerCount={0} totalCount={0} lastUpdated={lastUpdated} />
+        <Header
+          playerCount={0}
+          totalCount={0}
+          lastUpdated={lastUpdated}
+        />
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <ErrorMessage message={error} onRetry={fetchData} />
         </div>
@@ -255,7 +281,15 @@ export default function TransferPortalTracker() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <Header playerCount={filteredPlayers.length} totalCount={players.length} lastUpdated={lastUpdated} />
+      <Header
+        playerCount={filteredPlayers.length}
+        totalCount={players.length}
+        lastUpdated={lastUpdated}
+        topPosition={headerStats.topPosition}
+        topPositionCount={headerStats.topPositionCount}
+        mostActiveConference={headerStats.mostActiveConference}
+        mostActiveConferenceCount={headerStats.mostActiveConferenceCount}
+      />
 
       {/* Raptive Header Ad */}
       <div className="container mx-auto px-4 min-h-[150px]">
@@ -263,9 +297,6 @@ export default function TransferPortalTracker() {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* Stats Summary Cards */}
-        <StatsCards players={players} />
-
         {/* Search Bar */}
         <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
           <div className="relative">
