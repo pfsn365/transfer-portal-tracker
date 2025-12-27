@@ -9,6 +9,7 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
 import Pagination from '@/components/Pagination';
+import StatsCards from '@/components/StatsCards';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -21,6 +22,13 @@ export default function TransferPortalTracker() {
   const [selectedClass, setSelectedClass] = useState<PlayerClass | 'All'>('All');
   const [selectedPosition, setSelectedPosition] = useState<PlayerPosition | 'All'>('All');
   const [selectedConference, setSelectedConference] = useState<Conference | 'All'>('All');
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
+  // Sorting state
+  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool';
+  type SortDirection = 'asc' | 'desc';
+  const [sortField, setSortField] = useState<SortField | null>(null);
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
@@ -61,9 +69,30 @@ export default function TransferPortalTracker() {
     fetchData();
   }, []);
 
+  // Handle sorting
+  const handleSort = (field: SortField) => {
+    if (sortField === field) {
+      // Toggle direction if same field
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      // New field, default to ascending
+      setSortField(field);
+      setSortDirection('asc');
+    }
+  };
+
   // Filter players based on selections
   const filteredPlayers = useMemo(() => {
     return players.filter(player => {
+      // Search filter
+      if (searchQuery.trim() !== '') {
+        const query = searchQuery.toLowerCase();
+        const nameMatch = player.name.toLowerCase().includes(query);
+        const schoolMatch = player.formerSchool.toLowerCase().includes(query) ||
+                           (player.newSchool?.toLowerCase().includes(query) ?? false);
+        if (!nameMatch && !schoolMatch) return false;
+      }
+
       if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
       if (selectedSchool !== 'All' &&
           player.formerSchool !== selectedSchool &&
@@ -75,21 +104,72 @@ export default function TransferPortalTracker() {
           player.newConference !== selectedConference) return false;
       return true;
     });
-  }, [players, selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference]);
+  }, [players, selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery]);
+
+  // Sort filtered players
+  const sortedPlayers = useMemo(() => {
+    if (!sortField) return filteredPlayers;
+
+    const sorted = [...filteredPlayers].sort((a, b) => {
+      let aVal: any;
+      let bVal: any;
+
+      switch (sortField) {
+        case 'name':
+          aVal = a.name.toLowerCase();
+          bVal = b.name.toLowerCase();
+          break;
+        case 'position':
+          aVal = a.position;
+          bVal = b.position;
+          break;
+        case 'class':
+          // Sort by class year order: FR, SO, JR, SR, GR
+          const classOrder = { FR: 1, SO: 2, JR: 3, SR: 4, GR: 5 };
+          aVal = classOrder[a.class];
+          bVal = classOrder[b.class];
+          break;
+        case 'status':
+          aVal = a.status;
+          bVal = b.status;
+          break;
+        case 'rating':
+          aVal = a.rating ?? 0;
+          bVal = b.rating ?? 0;
+          break;
+        case 'formerSchool':
+          aVal = a.formerSchool.toLowerCase();
+          bVal = b.formerSchool.toLowerCase();
+          break;
+        case 'newSchool':
+          aVal = (a.newSchool || '').toLowerCase();
+          bVal = (b.newSchool || '').toLowerCase();
+          break;
+        default:
+          return 0;
+      }
+
+      if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
+      if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+    return sorted;
+  }, [filteredPlayers, sortField, sortDirection]);
 
   // Reset to page 1 when filters change
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference]);
+  }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery]);
 
   // Calculate pagination
-  const totalPages = Math.ceil(filteredPlayers.length / itemsPerPage);
+  const totalPages = Math.ceil(sortedPlayers.length / itemsPerPage);
   const paginatedPlayers = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const sliced = filteredPlayers.slice(startIndex, endIndex);
+    const sliced = sortedPlayers.slice(startIndex, endIndex);
     console.log('Pagination Debug:', {
-      totalPlayers: filteredPlayers.length,
+      totalPlayers: sortedPlayers.length,
       itemsPerPage,
       totalPages,
       currentPage,
@@ -98,7 +178,7 @@ export default function TransferPortalTracker() {
       slicedCount: sliced.length
     });
     return sliced;
-  }, [filteredPlayers, currentPage, itemsPerPage, totalPages]);
+  }, [sortedPlayers, currentPage, itemsPerPage, totalPages]);
 
   // Handle pagination changes
   const handlePageChange = (page: number) => {
@@ -133,6 +213,17 @@ export default function TransferPortalTracker() {
         </div>
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          {/* Stats Cards Skeleton */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="bg-white rounded-lg shadow-md p-6">
+                <div className="h-4 w-24 bg-gray-200 rounded animate-pulse mb-3" />
+                <div className="h-8 w-16 bg-gray-200 rounded animate-pulse mb-2" />
+                <div className="h-3 w-20 bg-gray-200 rounded animate-pulse" />
+              </div>
+            ))}
+          </div>
+
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
               {[...Array(5)].map((_, i) => (
@@ -172,6 +263,46 @@ export default function TransferPortalTracker() {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        {/* Stats Summary Cards */}
+        <StatsCards players={players} />
+
+        {/* Search Bar */}
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search by player name or school..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+            <svg
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
+
         <FilterBar
           selectedStatus={selectedStatus}
           selectedSchool={selectedSchool}
@@ -187,7 +318,12 @@ export default function TransferPortalTracker() {
         />
 
         <div className="mt-6">
-          <PlayerTable players={paginatedPlayers} />
+          <PlayerTable
+            players={paginatedPlayers}
+            sortField={sortField}
+            sortDirection={sortDirection}
+            onSort={handleSort}
+          />
         </div>
 
         <div className="mt-6">
@@ -195,7 +331,7 @@ export default function TransferPortalTracker() {
             currentPage={currentPage}
             totalPages={totalPages}
             itemsPerPage={itemsPerPage}
-            totalItems={filteredPlayers.length}
+            totalItems={sortedPlayers.length}
             onPageChange={handlePageChange}
             onItemsPerPageChange={handleItemsPerPageChange}
           />

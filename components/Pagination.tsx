@@ -75,6 +75,7 @@ export default function Pagination({
           <div className="flex items-center gap-1 sm:gap-2 justify-center flex-wrap">
             {/* Previous button */}
             <button
+              type="button"
               onClick={() => onPageChange(currentPage - 1)}
               disabled={currentPage === 1}
               className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
@@ -87,6 +88,7 @@ export default function Pagination({
             {getPageNumbers().map((page) => (
               <button
                 key={page}
+                type="button"
                 onClick={() => onPageChange(page)}
                 className={`min-w-[36px] sm:min-w-[40px] px-2 sm:px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   page === currentPage
@@ -100,6 +102,7 @@ export default function Pagination({
 
             {/* Next button */}
             <button
+              type="button"
               onClick={() => onPageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
               className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"

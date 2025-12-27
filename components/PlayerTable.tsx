@@ -1,14 +1,43 @@
 import { TransferPlayer } from '@/types/player';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronUp, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 
+type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool';
+type SortDirection = 'asc' | 'desc';
+
 interface PlayerTableProps {
   players: TransferPlayer[];
+  sortField: SortField | null;
+  sortDirection: SortDirection;
+  onSort: (field: SortField) => void;
 }
 
-export default function PlayerTable({ players }: PlayerTableProps) {
+export default function PlayerTable({ players, sortField, sortDirection, onSort }: PlayerTableProps) {
+  // Sortable header component
+  const SortableHeader = ({ field, children }: { field: SortField; children: React.ReactNode }) => {
+    const isActive = sortField === field;
+    return (
+      <th
+        className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none"
+        onClick={() => onSort(field)}
+      >
+        <div className="flex items-center gap-1">
+          {children}
+          <div className="flex flex-col">
+            <ChevronUp
+              className={`w-3 h-3 -mb-1 ${isActive && sortDirection === 'asc' ? 'text-blue-600' : 'text-gray-400'}`}
+            />
+            <ChevronDown
+              className={`w-3 h-3 ${isActive && sortDirection === 'desc' ? 'text-blue-600' : 'text-gray-400'}`}
+            />
+          </div>
+        </div>
+      </th>
+    );
+  };
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Committed':
@@ -75,24 +104,14 @@ export default function PlayerTable({ players }: PlayerTableProps) {
           <table className="w-full">
             <thead className="bg-gray-100 border-b-2 border-gray-200">
               <tr>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  Player
-                </th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  Pos
-                </th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  Class
-                </th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  Status
-                </th>
+                <SortableHeader field="name">Player</SortableHeader>
+                <SortableHeader field="position">Pos</SortableHeader>
+                <SortableHeader field="class">Class</SortableHeader>
+                <SortableHeader field="status">Status</SortableHeader>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
                   Transfer Path
                 </th>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  PFSN Impact Grade
-                </th>
+                <SortableHeader field="rating">PFSN Impact Grade</SortableHeader>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -184,7 +203,40 @@ export default function PlayerTable({ players }: PlayerTableProps) {
       </div>
 
       {/* Mobile Card View */}
-      <div className="lg:hidden space-y-4">
+      <div className="lg:hidden">
+        {/* Mobile Sort Controls */}
+        <div className="bg-white rounded-lg shadow-md p-4 mb-4 border border-gray-200">
+          <label className="block text-sm font-semibold text-gray-700 mb-2">Sort By</label>
+          <div className="flex gap-2">
+            <select
+              value={sortField || ''}
+              onChange={(e) => onSort(e.target.value as SortField)}
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">Default</option>
+              <option value="name">Player Name</option>
+              <option value="position">Position</option>
+              <option value="class">Class</option>
+              <option value="status">Status</option>
+              <option value="rating">Impact Grade</option>
+            </select>
+            {sortField && (
+              <button
+                type="button"
+                onClick={() => onSort(sortField)}
+                className="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 transition-colors"
+              >
+                {sortDirection === 'asc' ? (
+                  <ChevronUp className="w-5 h-5" />
+                ) : (
+                  <ChevronDown className="w-5 h-5" />
+                )}
+              </button>
+            )}
+          </div>
+        </div>
+
+        <div className="space-y-4">
         {players.map((player) => (
           <div key={player.id} className="bg-white rounded-lg shadow-md p-4 sm:p-5 border border-gray-200 active:bg-gray-50 transition-colors">
             {/* Player Header */}
@@ -272,6 +324,7 @@ export default function PlayerTable({ players }: PlayerTableProps) {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </>
   );
