@@ -146,21 +146,10 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     const outgoing = outgoingTransfers.length;
     const netGain = incoming - outgoing;
 
-    // Top position incoming
-    const positionCounts = incomingTransfers.reduce((acc, player) => {
-      acc[player.position] = (acc[player.position] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>);
-
-    const topPosition = Object.entries(positionCounts)
-      .sort(([, a], [, b]) => b - a)[0];
-
     return {
       incoming,
       outgoing,
       netGain,
-      topPosition: topPosition?.[0],
-      topPositionCount: topPosition?.[1],
     };
   }, [incomingTransfers, outgoingTransfers]);
 
@@ -212,12 +201,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* Back Link */}
+        {/* All Teams Button */}
         <Link
           href="/college"
-          className="text-blue-600 hover:underline mb-4 inline-block"
+          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mb-4"
         >
-          ← Back to All Teams
+          All Teams
         </Link>
 
         {/* Team Header */}
@@ -243,7 +232,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         </div>
 
         {/* Stats Summary */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-3 gap-4 mb-6">
           <div className="bg-white rounded-lg shadow-md p-4">
             <p className="text-sm text-gray-600 uppercase mb-1">Incoming</p>
             <p className="text-2xl font-bold text-green-600">{teamStats.incoming}</p>
@@ -256,12 +245,6 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             <p className="text-sm text-gray-600 uppercase mb-1">Net Gain/Loss</p>
             <p className={`text-2xl font-bold ${teamStats.netGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {teamStats.netGain >= 0 ? '+' : ''}{teamStats.netGain}
-            </p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-4">
-            <p className="text-sm text-gray-600 uppercase mb-1">Top Need</p>
-            <p className="text-2xl font-bold text-gray-900">
-              {teamStats.topPosition || 'N/A'}
             </p>
           </div>
         </div>
