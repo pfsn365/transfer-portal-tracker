@@ -1,8 +1,10 @@
 import { TransferPlayer } from '@/types/player';
 import { ArrowRight, ChevronUp, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
+import { getTeamById } from '@/data/teams';
 
 type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
 type SortDirection = 'asc' | 'desc';
@@ -151,39 +153,81 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <div className="relative h-6 w-6 flex-shrink-0">
-                          <Image
-                            src={getTeamLogo(player.formerSchool.toLowerCase())}
-                            alt={`${player.formerSchool} logo`}
-                            fill
-                            sizes="24px"
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="text-left">
-                          <div className="font-semibold text-gray-900">{player.formerSchool}</div>
-                          <div className="text-xs text-gray-500">{player.formerConference}</div>
-                        </div>
-                      </div>
-                      {player.newSchool && (
-                        <>
-                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
-                          <div className="flex items-center gap-2">
+                      {(() => {
+                        const formerTeam = getTeamById(player.formerSchool);
+                        return formerTeam ? (
+                          <Link href={`/college/${formerTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
                             <div className="relative h-6 w-6 flex-shrink-0">
                               <Image
-                                src={getTeamLogo(player.newSchool.toLowerCase())}
-                                alt={`${player.newSchool} logo`}
+                                src={getTeamLogo(player.formerSchool.toLowerCase())}
+                                alt={`${player.formerSchool} logo`}
                                 fill
                                 sizes="24px"
                                 className="object-contain"
                               />
                             </div>
                             <div className="text-left">
-                              <div className="font-semibold text-green-700">{player.newSchool}</div>
-                              <div className="text-xs text-gray-500">{player.newConference}</div>
+                              <div className="font-semibold text-gray-900 hover:underline">{player.formerSchool}</div>
+                              <div className="text-xs text-gray-500">{player.formerConference}</div>
+                            </div>
+                          </Link>
+                        ) : (
+                          <div className="flex items-center gap-2">
+                            <div className="relative h-6 w-6 flex-shrink-0">
+                              <Image
+                                src={getTeamLogo(player.formerSchool.toLowerCase())}
+                                alt={`${player.formerSchool} logo`}
+                                fill
+                                sizes="24px"
+                                className="object-contain"
+                              />
+                            </div>
+                            <div className="text-left">
+                              <div className="font-semibold text-gray-900">{player.formerSchool}</div>
+                              <div className="text-xs text-gray-500">{player.formerConference}</div>
                             </div>
                           </div>
+                        );
+                      })()}
+                      {player.newSchool && (
+                        <>
+                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
+                          {(() => {
+                            const newTeam = getTeamById(player.newSchool!);
+                            return newTeam ? (
+                              <Link href={`/college/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                                <div className="relative h-6 w-6 flex-shrink-0">
+                                  <Image
+                                    src={getTeamLogo(player.newSchool.toLowerCase())}
+                                    alt={`${player.newSchool} logo`}
+                                    fill
+                                    sizes="24px"
+                                    className="object-contain"
+                                  />
+                                </div>
+                                <div className="text-left">
+                                  <div className="font-semibold text-green-700 hover:underline">{player.newSchool}</div>
+                                  <div className="text-xs text-gray-500">{player.newConference}</div>
+                                </div>
+                              </Link>
+                            ) : (
+                              <div className="flex items-center gap-2">
+                                <div className="relative h-6 w-6 flex-shrink-0">
+                                  <Image
+                                    src={getTeamLogo(player.newSchool.toLowerCase())}
+                                    alt={`${player.newSchool} logo`}
+                                    fill
+                                    sizes="24px"
+                                    className="object-contain"
+                                  />
+                                </div>
+                                <div className="text-left">
+                                  <div className="font-semibold text-green-700">{player.newSchool}</div>
+                                  <div className="text-xs text-gray-500">{player.newConference}</div>
+                                </div>
+                              </div>
+                            );
+                          })()}
                         </>
                       )}
                     </div>
@@ -281,42 +325,84 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
               <div className="flex items-center gap-2">
                 <div className="flex-1">
                   <div className="text-xs text-gray-500 mb-1">From</div>
-                  <div className="flex items-center gap-2">
-                    <div className="relative h-5 w-5 flex-shrink-0">
-                      <Image
-                        src={getTeamLogo(player.formerSchool.toLowerCase())}
-                        alt={`${player.formerSchool} logo`}
-                        fill
-                        sizes="20px"
-                        className="object-contain"
-                      />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 text-sm">{player.formerSchool}</div>
-                      <div className="text-xs text-gray-500">{player.formerConference}</div>
-                    </div>
-                  </div>
-                </div>
-                {player.newSchool && (
-                  <>
-                    <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                    <div className="flex-1">
-                      <div className="text-xs text-gray-500 mb-1">To</div>
-                      <div className="flex items-center gap-2">
+                  {(() => {
+                    const formerTeam = getTeamById(player.formerSchool);
+                    return formerTeam ? (
+                      <Link href={`/college/${formerTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
                         <div className="relative h-5 w-5 flex-shrink-0">
                           <Image
-                            src={getTeamLogo(player.newSchool.toLowerCase())}
-                            alt={`${player.newSchool} logo`}
+                            src={getTeamLogo(player.formerSchool.toLowerCase())}
+                            alt={`${player.formerSchool} logo`}
                             fill
                             sizes="20px"
                             className="object-contain"
                           />
                         </div>
                         <div>
-                          <div className="font-semibold text-green-700 text-sm">{player.newSchool}</div>
-                          <div className="text-xs text-gray-500">{player.newConference}</div>
+                          <div className="font-semibold text-gray-900 text-sm hover:underline">{player.formerSchool}</div>
+                          <div className="text-xs text-gray-500">{player.formerConference}</div>
+                        </div>
+                      </Link>
+                    ) : (
+                      <div className="flex items-center gap-2">
+                        <div className="relative h-5 w-5 flex-shrink-0">
+                          <Image
+                            src={getTeamLogo(player.formerSchool.toLowerCase())}
+                            alt={`${player.formerSchool} logo`}
+                            fill
+                            sizes="20px"
+                            className="object-contain"
+                          />
+                        </div>
+                        <div>
+                          <div className="font-semibold text-gray-900 text-sm">{player.formerSchool}</div>
+                          <div className="text-xs text-gray-500">{player.formerConference}</div>
                         </div>
                       </div>
+                    );
+                  })()}
+                </div>
+                {player.newSchool && (
+                  <>
+                    <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    <div className="flex-1">
+                      <div className="text-xs text-gray-500 mb-1">To</div>
+                      {(() => {
+                        const newTeam = getTeamById(player.newSchool!);
+                        return newTeam ? (
+                          <Link href={`/college/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                            <div className="relative h-5 w-5 flex-shrink-0">
+                              <Image
+                                src={getTeamLogo(player.newSchool.toLowerCase())}
+                                alt={`${player.newSchool} logo`}
+                                fill
+                                sizes="20px"
+                                className="object-contain"
+                              />
+                            </div>
+                            <div>
+                              <div className="font-semibold text-green-700 text-sm hover:underline">{player.newSchool}</div>
+                              <div className="text-xs text-gray-500">{player.newConference}</div>
+                            </div>
+                          </Link>
+                        ) : (
+                          <div className="flex items-center gap-2">
+                            <div className="relative h-5 w-5 flex-shrink-0">
+                              <Image
+                                src={getTeamLogo(player.newSchool.toLowerCase())}
+                                alt={`${player.newSchool} logo`}
+                                fill
+                                sizes="20px"
+                                className="object-contain"
+                              />
+                            </div>
+                            <div>
+                              <div className="font-semibold text-green-700 text-sm">{player.newSchool}</div>
+                              <div className="text-xs text-gray-500">{player.newConference}</div>
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
                   </>
                 )}
