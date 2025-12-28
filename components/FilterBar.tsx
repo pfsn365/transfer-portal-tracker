@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
 import { getTeamById, getAllConferences, getTeamsByConference } from '@/data/teams';
 
@@ -42,6 +42,7 @@ export default function FilterBar({
   onConferenceChange,
   schools,
 }: FilterBarProps) {
+  const router = useRouter();
   // Local state for school conference filter (separate from player conference filter)
   const [schoolConferenceFilter, setSchoolConferenceFilter] = useState<Conference | 'All'>('All');
 
@@ -117,7 +118,18 @@ export default function FilterBar({
                   </button>
                   <select
                     value={selectedSchool}
-                    onChange={(e) => onSchoolChange(e.target.value)}
+                    onChange={(e) => {
+                      const schoolName = e.target.value;
+                      onSchoolChange(schoolName);
+
+                      // Navigate to team page if a specific school is selected
+                      if (schoolName !== 'All') {
+                        const team = getTeamById(schoolName);
+                        if (team) {
+                          router.push(`/college/${team.slug}`);
+                        }
+                      }
+                    }}
                     className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
                   >
                     <option value="All">All {schoolConferenceFilter} Schools</option>
@@ -130,18 +142,6 @@ export default function FilterBar({
                 </div>
               )}
             </div>
-            {selectedSchool !== 'All' && (() => {
-              const team = getTeamById(selectedSchool);
-              return team ? (
-                <Link
-                  href={`/college/${team.slug}`}
-                  className="px-3 py-2.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap"
-                  title={`View ${team.name} page`}
-                >
-                  View
-                </Link>
-              ) : null;
-            })()}
           </div>
         </div>
 
