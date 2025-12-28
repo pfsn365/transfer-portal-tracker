@@ -253,12 +253,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           style={{ backgroundColor: teamColor }}
         >
           <div className="flex items-center gap-4">
-            <div className="relative h-20 w-20 bg-white rounded-full p-3">
+            <div className="relative h-24 w-24 bg-white rounded-full p-4">
               <Image
                 src={getTeamLogo(team.id)}
                 alt={`${team.name} logo`}
                 fill
-                sizes="80px"
+                sizes="96px"
                 className="object-contain"
               />
             </div>

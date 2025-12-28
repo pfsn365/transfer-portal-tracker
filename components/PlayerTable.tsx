@@ -124,13 +124,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                 >
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <div className="flex-shrink-0 h-10 w-10 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                      <div className="flex-shrink-0 h-12 w-12 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                         <Image
                           src={getTeamLogo(player.formerSchool.toLowerCase())}
                           alt={`${player.formerSchool} logo`}
                           fill
-                          sizes="40px"
-                          className="object-contain p-1"
+                          sizes="48px"
+                          className="object-contain p-2"
                         />
                       </div>
                       <div className="ml-4">
@@ -292,7 +292,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                     alt={`${player.formerSchool} logo`}
                     fill
                     sizes="48px"
-                    className="object-contain p-1"
+                    className="object-contain p-2"
                   />
                 </div>
                 <div>
