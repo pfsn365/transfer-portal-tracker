@@ -237,13 +237,13 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             href="/"
             className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
           >
-            Transfer Portal
+            Transfer Portal Tracker
           </Link>
           <Link
             href="/college"
             className="inline-block bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
           >
-            All Teams
+            View All Teams
           </Link>
         </div>
 
