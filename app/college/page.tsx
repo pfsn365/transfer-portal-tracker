@@ -22,6 +22,14 @@ export default function CollegeDirectory() {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        {/* Transfer Portal Button */}
+        <Link
+          href="/"
+          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mb-4"
+        >
+          Transfer Portal
+        </Link>
+
         <div className="mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
             College Football Teams
@@ -37,7 +45,7 @@ export default function CollegeDirectory() {
 
           return (
             <div key={conference} className="mb-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-200">
+              <h3 className="text-2xl font-bold text-white bg-gradient-to-r from-blue-600 to-blue-700 mb-4 px-4 py-3 rounded-lg shadow-md">
                 {conference}
               </h3>
 
