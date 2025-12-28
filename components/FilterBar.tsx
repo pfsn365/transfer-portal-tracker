@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
 import { getTeamById, getAllConferences, getTeamsByConference } from '@/data/teams';
@@ -41,9 +42,28 @@ export default function FilterBar({
   onConferenceChange,
   schools,
 }: FilterBarProps) {
+  // Local state for school conference filter (separate from player conference filter)
+  const [schoolConferenceFilter, setSchoolConferenceFilter] = useState<Conference | 'All'>('All');
+
+  // Get teams to display based on selected conference
+  const getSchoolOptions = () => {
+    if (schoolConferenceFilter === 'All') {
+      return getAllConferences().flatMap(conf => getTeamsByConference(conf));
+    }
+    return getTeamsByConference(schoolConferenceFilter);
+  };
+
+  const handleSchoolConferenceChange = (conf: Conference | 'All') => {
+    setSchoolConferenceFilter(conf);
+    // Reset school selection when conference changes
+    if (selectedSchool !== 'All') {
+      onSchoolChange('All');
+    }
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
         {/* Status Filter */}
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -61,42 +81,50 @@ export default function FilterBar({
         </div>
 
         {/* School Filter */}
-        <div>
+        <div className="lg:col-span-2">
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             School
           </label>
-          <div className="flex gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {/* Conference selector for schools */}
             <select
-              value={selectedSchool}
-              onChange={(e) => onSchoolChange(e.target.value)}
-              className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+              value={schoolConferenceFilter}
+              onChange={(e) => handleSchoolConferenceChange(e.target.value as Conference | 'All')}
+              className="px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
             >
-              <option value="All">All Schools</option>
-              {getAllConferences().map(conference => {
-                const teams = getTeamsByConference(conference);
-                return (
-                  <optgroup key={conference} label={conference}>
-                    {teams.map(team => (
-                      <option key={team.id} value={team.name}>
-                        {team.name}
-                      </option>
-                    ))}
-                  </optgroup>
-                );
-              })}
+              <option value="All">All Conferences</option>
+              {getAllConferences().map(conf => (
+                <option key={conf} value={conf}>{conf}</option>
+              ))}
             </select>
-            {selectedSchool !== 'All' && (() => {
-              const team = getTeamById(selectedSchool);
-              return team ? (
-                <Link
-                  href={`/college/${team.slug}`}
-                  className="px-3 py-2.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap"
-                  title={`View ${team.name} page`}
-                >
-                  View
-                </Link>
-              ) : null;
-            })()}
+
+            {/* School selector */}
+            <div className="flex gap-2">
+              <select
+                value={selectedSchool}
+                onChange={(e) => onSchoolChange(e.target.value)}
+                className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+              >
+                <option value="All">All Schools</option>
+                {getSchoolOptions().map(team => (
+                  <option key={team.id} value={team.name}>
+                    {team.name}
+                  </option>
+                ))}
+              </select>
+              {selectedSchool !== 'All' && (() => {
+                const team = getTeamById(selectedSchool);
+                return team ? (
+                  <Link
+                    href={`/college/${team.slug}`}
+                    className="px-3 py-2.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap"
+                    title={`View ${team.name} page`}
+                  >
+                    View
+                  </Link>
+                ) : null;
+              })()}
+            </div>
           </div>
         </div>
 
