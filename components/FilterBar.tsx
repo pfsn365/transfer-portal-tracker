@@ -29,6 +29,128 @@ const conferences: (Conference | 'All')[] = [
   'Independent', 'FCS'
 ];
 
+// Custom School Dropdown Component
+function CustomSchoolDropdown({
+  selectedSchool,
+  onSchoolChange,
+  router
+}: {
+  selectedSchool: string;
+  onSchoolChange: (school: string) => void;
+  router: ReturnType<typeof useRouter>;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedConference, setSelectedConference] = useState<Conference | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+        setSelectedConference(null);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleConferenceClick = (conference: Conference) => {
+    setSelectedConference(conference);
+    // Dropdown stays open
+  };
+
+  const handleTeamClick = (teamName: string) => {
+    onSchoolChange(teamName);
+    const team = getTeamById(teamName);
+    if (team) {
+      router.push(`/college/${team.slug}`);
+    }
+    setIsOpen(false);
+    setSelectedConference(null);
+  };
+
+  const handleBackClick = () => {
+    setSelectedConference(null);
+    // Dropdown stays open
+  };
+
+  const displayText = selectedSchool !== 'All' ? selectedSchool : 'All Schools';
+
+  return (
+    <div ref={dropdownRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm text-left flex items-center justify-between"
+      >
+        <span>{displayText}</span>
+        <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {isOpen && (
+        <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-64 overflow-y-auto">
+          {!selectedConference ? (
+            // Conference Selection
+            <>
+              <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50 sticky top-0">
+                Select Conference
+              </div>
+              {getAllConferences().map(conference => (
+                <button
+                  key={conference}
+                  type="button"
+                  onClick={() => handleConferenceClick(conference)}
+                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-sm text-gray-900 transition-colors"
+                >
+                  {conference}
+                </button>
+              ))}
+            </>
+          ) : (
+            // Team Selection
+            <>
+              <button
+                type="button"
+                onClick={handleBackClick}
+                className="w-full text-left px-3 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50 sticky top-0 bg-white border-b border-gray-200"
+              >
+                ← Back to Conferences
+              </button>
+              <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50 sticky top-0">
+                {selectedConference} Schools
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  onSchoolChange('All');
+                  setIsOpen(false);
+                  setSelectedConference(null);
+                }}
+                className="w-full text-left px-3 py-2 hover:bg-blue-50 text-sm text-gray-900 transition-colors"
+              >
+                All {selectedConference} Schools
+              </button>
+              {getTeamsByConference(selectedConference).map(team => (
+                <button
+                  key={team.id}
+                  type="button"
+                  onClick={() => handleTeamClick(team.name)}
+                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-sm text-gray-900 transition-colors"
+                >
+                  {team.name}
+                </button>
+              ))}
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function FilterBar({
   selectedStatus,
   selectedSchool,
@@ -43,21 +165,6 @@ export default function FilterBar({
   schools,
 }: FilterBarProps) {
   const router = useRouter();
-  const [selectedSchoolConference, setSelectedSchoolConference] = useState<Conference | null>(null);
-  const schoolSelectRef = useRef<HTMLSelectElement>(null);
-
-  // Reopen dropdown after conference selection
-  useEffect(() => {
-    if (selectedSchoolConference && schoolSelectRef.current) {
-      // Small delay to allow the dropdown to update with new options
-      setTimeout(() => {
-        schoolSelectRef.current?.focus();
-        // Try to open the dropdown programmatically
-        const event = new MouseEvent('mousedown', { bubbles: true });
-        schoolSelectRef.current?.dispatchEvent(event);
-      }, 50);
-    }
-  }, [selectedSchoolConference]);
 
   return (
     <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
@@ -78,69 +185,16 @@ export default function FilterBar({
           </select>
         </div>
 
-        {/* School Filter */}
-        <div className="lg:col-span-2">
+        {/* School Filter - Custom Dropdown */}
+        <div className="lg:col-span-2 relative">
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             School
           </label>
-          <select
-            ref={schoolSelectRef}
-            value={selectedSchoolConference ? selectedSchool : ''}
-            onChange={(e) => {
-              const value = e.target.value;
-
-              if (!selectedSchoolConference) {
-                // Conference selection mode - user selected a conference
-                if (value && value !== 'BACK') {
-                  setSelectedSchoolConference(value as Conference);
-                  onSchoolChange('All'); // Reset school selection
-                }
-              } else {
-                // Team selection mode
-                if (value === 'BACK') {
-                  // Go back to conference selection
-                  setSelectedSchoolConference(null);
-                  onSchoolChange('All');
-                } else {
-                  // User selected a team
-                  const schoolName = value;
-                  onSchoolChange(schoolName);
-
-                  // Navigate to team page if a specific school is selected
-                  if (schoolName !== 'All') {
-                    const team = getTeamById(schoolName);
-                    if (team) {
-                      router.push(`/college/${team.slug}`);
-                    }
-                  }
-                }
-              }
-            }}
-            className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
-          >
-            {!selectedSchoolConference ? (
-              // Conference Selection Mode
-              <>
-                <option value="">Select Conference</option>
-                {getAllConferences().map(conference => (
-                  <option key={conference} value={conference}>
-                    {conference}
-                  </option>
-                ))}
-              </>
-            ) : (
-              // Team Selection Mode
-              <>
-                <option value="BACK">← Back to Conferences</option>
-                <option value="All">All {selectedSchoolConference} Schools</option>
-                {getTeamsByConference(selectedSchoolConference).map(team => (
-                  <option key={team.id} value={team.name}>
-                    {team.name}
-                  </option>
-                ))}
-              </>
-            )}
-          </select>
+          <CustomSchoolDropdown
+            selectedSchool={selectedSchool}
+            onSchoolChange={onSchoolChange}
+            router={router}
+          />
         </div>
 
         {/* Class Filter */}
