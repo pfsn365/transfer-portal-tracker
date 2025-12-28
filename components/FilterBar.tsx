@@ -80,51 +80,68 @@ export default function FilterBar({
           </select>
         </div>
 
-        {/* School Filter */}
+        {/* School Filter - Smart Single Dropdown */}
         <div className="lg:col-span-2">
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             School
           </label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {/* Conference selector for schools */}
-            <select
-              value={schoolConferenceFilter}
-              onChange={(e) => handleSchoolConferenceChange(e.target.value as Conference | 'All')}
-              className="px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
-            >
-              <option value="All">All Conferences</option>
-              {getAllConferences().map(conf => (
-                <option key={conf} value={conf}>{conf}</option>
-              ))}
-            </select>
-
-            {/* School selector */}
-            <div className="flex gap-2">
-              <select
-                value={selectedSchool}
-                onChange={(e) => onSchoolChange(e.target.value)}
-                className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
-              >
-                <option value="All">All Schools</option>
-                {getSchoolOptions().map(team => (
-                  <option key={team.id} value={team.name}>
-                    {team.name}
-                  </option>
-                ))}
-              </select>
-              {selectedSchool !== 'All' && (() => {
-                const team = getTeamById(selectedSchool);
-                return team ? (
-                  <Link
-                    href={`/college/${team.slug}`}
-                    className="px-3 py-2.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap"
-                    title={`View ${team.name} page`}
+          <div className="flex gap-2">
+            <div className="flex-1">
+              {schoolConferenceFilter === 'All' ? (
+                // Conference Selection Mode
+                <select
+                  value="All"
+                  onChange={(e) => {
+                    const value = e.target.value as Conference | 'All';
+                    if (value !== 'All') {
+                      handleSchoolConferenceChange(value);
+                    }
+                  }}
+                  className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                >
+                  <option value="All">Select Conference</option>
+                  {getAllConferences().map(conf => (
+                    <option key={conf} value={conf}>{conf}</option>
+                  ))}
+                </select>
+              ) : (
+                // School Selection Mode
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleSchoolConferenceChange('All')}
+                    className="px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors text-sm font-medium whitespace-nowrap"
+                    title="Change conference"
                   >
-                    View
-                  </Link>
-                ) : null;
-              })()}
+                    ← {schoolConferenceFilter}
+                  </button>
+                  <select
+                    value={selectedSchool}
+                    onChange={(e) => onSchoolChange(e.target.value)}
+                    className="flex-1 px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                  >
+                    <option value="All">All {schoolConferenceFilter} Schools</option>
+                    {getSchoolOptions().map(team => (
+                      <option key={team.id} value={team.name}>
+                        {team.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
             </div>
+            {selectedSchool !== 'All' && (() => {
+              const team = getTeamById(selectedSchool);
+              return team ? (
+                <Link
+                  href={`/college/${team.slug}`}
+                  className="px-3 py-2.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap"
+                  title={`View ${team.name} page`}
+                >
+                  View
+                </Link>
+              ) : null;
+            })()}
           </div>
         </div>
 
