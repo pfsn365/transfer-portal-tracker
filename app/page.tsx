@@ -216,35 +216,6 @@ export default function TransferPortalTracker() {
     return Array.from(schoolSet).sort();
   }, [players]);
 
-  // Calculate stats for header
-  const headerStats = useMemo(() => {
-    // Most active position
-    const positionCounts = players.reduce((acc, player) => {
-      acc[player.position] = (acc[player.position] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>);
-
-    const topPosition = Object.entries(positionCounts)
-      .sort(([, a], [, b]) => b - a)[0];
-
-    // Most active conference (incoming)
-    const incomingConferenceCounts = players.reduce((acc, player) => {
-      if (player.newConference) {
-        acc[player.newConference] = (acc[player.newConference] || 0) + 1;
-      }
-      return acc;
-    }, {} as Record<string, number>);
-
-    const mostActiveConference = Object.entries(incomingConferenceCounts)
-      .sort(([, a], [, b]) => b - a)[0];
-
-    return {
-      topPosition: topPosition?.[0],
-      topPositionCount: topPosition?.[1],
-      mostActiveConference: mostActiveConference?.[0],
-      mostActiveConferenceCount: mostActiveConference?.[1],
-    };
-  }, [players]);
 
   // Show loading state
   if (loading) {
@@ -301,10 +272,6 @@ export default function TransferPortalTracker() {
         playerCount={filteredPlayers.length}
         totalCount={players.length}
         lastUpdated={lastUpdated}
-        topPosition={headerStats.topPosition}
-        topPositionCount={headerStats.topPositionCount}
-        mostActiveConference={headerStats.mostActiveConference}
-        mostActiveConferenceCount={headerStats.mostActiveConferenceCount}
       />
 
       {/* Raptive Header Ad */}

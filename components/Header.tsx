@@ -2,59 +2,23 @@ interface HeaderProps {
   playerCount: number;
   totalCount: number;
   lastUpdated?: string;
-  topPosition?: string;
-  topPositionCount?: number;
-  mostActiveConference?: string;
-  mostActiveConferenceCount?: number;
 }
 
 export default function Header({
   playerCount,
   totalCount,
   lastUpdated,
-  topPosition,
-  topPositionCount,
-  mostActiveConference,
-  mostActiveConferenceCount
 }: HeaderProps) {
   return (
     <div className="text-white shadow-lg" style={{ backgroundColor: '#0050A0' }}>
       <div className="max-w-[1600px] mx-auto px-4 py-6 sm:py-8">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-          <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              CFB Transfer Portal Tracker
-            </h1>
-            <p className="text-sm sm:text-base text-white/90">
-              Track every college football transfer with real-time updates, advanced filtering, and verified data
-            </p>
-          </div>
-
-          {/* Stats - Desktop */}
-          {totalCount > 0 && (
-            <div className="hidden lg:flex items-center gap-3 text-sm">
-              <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-                <span>Total Players: <strong>{totalCount.toLocaleString()}</strong></span>
-              </div>
-              {topPosition && topPositionCount && (
-                <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span>Top Position: <strong>{topPosition}</strong> ({topPositionCount})</span>
-                </div>
-              )}
-              {mostActiveConference && mostActiveConferenceCount && (
-                <div className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span>Most Active Conf: <strong>{mostActiveConference}</strong> ({mostActiveConferenceCount} in)</span>
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* Stats - Mobile (just total) */}
-          {totalCount > 0 && (
-            <div className="lg:hidden text-sm text-white/90">
-              {totalCount.toLocaleString()} players in portal
-            </div>
-          )}
+        <div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+            CFB Transfer Portal Tracker
+          </h1>
+          <p className="text-sm sm:text-base text-white/90">
+            Track every college football transfer with real-time updates, advanced filtering, and verified data
+          </p>
         </div>
       </div>
     </div>
