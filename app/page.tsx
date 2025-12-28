@@ -25,10 +25,10 @@ export default function TransferPortalTracker() {
   const [searchQuery, setSearchQuery] = useState<string>('');
 
   // Sorting state
-  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool';
+  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
   type SortDirection = 'asc' | 'desc';
-  const [sortField, setSortField] = useState<SortField | null>(null);
-  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+  const [sortField, setSortField] = useState<SortField | null>('announcedDate');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
@@ -159,6 +159,10 @@ export default function TransferPortalTracker() {
         case 'newSchool':
           aVal = (a.newSchool || '').toLowerCase();
           bVal = (b.newSchool || '').toLowerCase();
+          break;
+        case 'announcedDate':
+          aVal = new Date(a.announcedDate).getTime();
+          bVal = new Date(b.announcedDate).getTime();
           break;
         default:
           return 0;

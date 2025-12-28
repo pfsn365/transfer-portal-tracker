@@ -25,10 +25,10 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [activeTab, setActiveTab] = useState<'incoming' | 'outgoing'>('incoming');
 
   // Sorting state
-  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool';
+  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
   type SortDirection = 'asc' | 'desc';
-  const [sortField, setSortField] = useState<SortField | null>(null);
-  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
+  const [sortField, setSortField] = useState<SortField | null>('announcedDate');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
   // Fetch data from API
   const fetchData = async () => {
@@ -127,6 +127,10 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         case 'newSchool':
           aVal = (a.newSchool || '').toLowerCase();
           bVal = (b.newSchool || '').toLowerCase();
+          break;
+        case 'announcedDate':
+          aVal = new Date(a.announcedDate).getTime();
+          bVal = new Date(b.announcedDate).getTime();
           break;
         default:
           return 0;

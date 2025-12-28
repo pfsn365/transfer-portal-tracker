@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 
-type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool';
+type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
 type SortDirection = 'asc' | 'desc';
 
 interface PlayerTableProps {
