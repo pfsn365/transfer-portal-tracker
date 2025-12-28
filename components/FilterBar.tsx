@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
 import { getTeamById, getAllConferences, getTeamsByConference } from '@/data/teams';
@@ -42,6 +43,7 @@ export default function FilterBar({
   schools,
 }: FilterBarProps) {
   const router = useRouter();
+  const [selectedSchoolConference, setSelectedSchoolConference] = useState<Conference | null>(null);
 
   return (
     <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
@@ -68,31 +70,61 @@ export default function FilterBar({
             School
           </label>
           <select
-            value={selectedSchool}
+            value={selectedSchoolConference ? selectedSchool : ''}
             onChange={(e) => {
-              const schoolName = e.target.value;
-              onSchoolChange(schoolName);
+              const value = e.target.value;
 
-              // Navigate to team page if a specific school is selected
-              if (schoolName !== 'All') {
-                const team = getTeamById(schoolName);
-                if (team) {
-                  router.push(`/college/${team.slug}`);
+              if (!selectedSchoolConference) {
+                // Conference selection mode - user selected a conference
+                if (value && value !== 'BACK') {
+                  setSelectedSchoolConference(value as Conference);
+                  onSchoolChange('All'); // Reset school selection
+                }
+              } else {
+                // Team selection mode
+                if (value === 'BACK') {
+                  // Go back to conference selection
+                  setSelectedSchoolConference(null);
+                  onSchoolChange('All');
+                } else {
+                  // User selected a team
+                  const schoolName = value;
+                  onSchoolChange(schoolName);
+
+                  // Navigate to team page if a specific school is selected
+                  if (schoolName !== 'All') {
+                    const team = getTeamById(schoolName);
+                    if (team) {
+                      router.push(`/college/${team.slug}`);
+                    }
+                  }
                 }
               }
             }}
             className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
           >
-            <option value="All">All Schools</option>
-            {getAllConferences().map(conference => (
-              <optgroup key={conference} label={conference}>
-                {getTeamsByConference(conference).map(team => (
+            {!selectedSchoolConference ? (
+              // Conference Selection Mode
+              <>
+                <option value="">Select Conference</option>
+                {getAllConferences().map(conference => (
+                  <option key={conference} value={conference}>
+                    {conference}
+                  </option>
+                ))}
+              </>
+            ) : (
+              // Team Selection Mode
+              <>
+                <option value="BACK">← Back to Conferences</option>
+                <option value="All">All {selectedSchoolConference} Schools</option>
+                {getTeamsByConference(selectedSchoolConference).map(team => (
                   <option key={team.id} value={team.name}>
                     {team.name}
                   </option>
                 ))}
-              </optgroup>
-            ))}
+              </>
+            )}
           </select>
         </div>
 
