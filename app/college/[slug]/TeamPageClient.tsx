@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TransferPlayer } from '@/types/player';
+import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
 import { getTeamBySlug } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor } from '@/utils/teamColors';
@@ -23,6 +23,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'incoming' | 'outgoing'>('incoming');
+
+  // Filter state
+  const [selectedStatus, setSelectedStatus] = useState<PlayerStatus | 'All'>('All');
+  const [selectedClass, setSelectedClass] = useState<PlayerClass | 'All'>('All');
+  const [selectedPosition, setSelectedPosition] = useState<PlayerPosition | 'All'>('All');
+  const [selectedConference, setSelectedConference] = useState<Conference | 'All'>('All');
 
   // Sorting state
   type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
@@ -75,19 +81,39 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   // Filter players for this team
   const incomingTransfers = useMemo(() => {
     if (!team) return [];
-    return players.filter(player =>
-      player.newSchool?.toLowerCase() === team.name.toLowerCase() ||
-      player.newSchool?.toLowerCase() === team.id.toLowerCase()
-    );
-  }, [players, team]);
+    return players.filter(player => {
+      // Must be incoming to this team
+      const isIncoming = player.newSchool?.toLowerCase() === team.name.toLowerCase() ||
+                        player.newSchool?.toLowerCase() === team.id.toLowerCase();
+      if (!isIncoming) return false;
+
+      // Apply filters
+      if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
+      if (selectedClass !== 'All' && player.class !== selectedClass) return false;
+      if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
+      if (selectedConference !== 'All' && player.formerConference !== selectedConference) return false;
+
+      return true;
+    });
+  }, [players, team, selectedStatus, selectedClass, selectedPosition, selectedConference]);
 
   const outgoingTransfers = useMemo(() => {
     if (!team) return [];
-    return players.filter(player =>
-      player.formerSchool?.toLowerCase() === team.name.toLowerCase() ||
-      player.formerSchool?.toLowerCase() === team.id.toLowerCase()
-    );
-  }, [players, team]);
+    return players.filter(player => {
+      // Must be outgoing from this team
+      const isOutgoing = player.formerSchool?.toLowerCase() === team.name.toLowerCase() ||
+                        player.formerSchool?.toLowerCase() === team.id.toLowerCase();
+      if (!isOutgoing) return false;
+
+      // Apply filters
+      if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
+      if (selectedClass !== 'All' && player.class !== selectedClass) return false;
+      if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
+      if (selectedConference !== 'All' && player.newConference !== selectedConference) return false;
+
+      return true;
+    });
+  }, [players, team, selectedStatus, selectedClass, selectedPosition, selectedConference]);
 
   // Sort players
   const sortedPlayers = useMemo(() => {
@@ -205,13 +231,21 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {/* All Teams Button */}
-        <Link
-          href="/college"
-          className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mb-4"
-        >
-          All Teams
-        </Link>
+        {/* Navigation Buttons */}
+        <div className="flex gap-3 mb-4">
+          <Link
+            href="/"
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+          >
+            Transfer Portal
+          </Link>
+          <Link
+            href="/college"
+            className="inline-block bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
+          >
+            All Teams
+          </Link>
+        </div>
 
         {/* Team Header */}
         <div
@@ -250,6 +284,106 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             <p className={`text-2xl font-bold ${teamStats.netGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {teamStats.netGain >= 0 ? '+' : ''}{teamStats.netGain}
             </p>
+          </div>
+        </div>
+
+        {/* Filters */}
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+            {/* Status Filter */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Status
+              </label>
+              <select
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value as PlayerStatus | 'All')}
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+              >
+                <option value="All">All</option>
+                <option value="Entered">Entered</option>
+                <option value="Committed">Committed</option>
+                <option value="Enrolled">Enrolled</option>
+                <option value="Withdrawn">Withdrawn</option>
+              </select>
+            </div>
+
+            {/* Class Filter */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Class
+              </label>
+              <select
+                value={selectedClass}
+                onChange={(e) => setSelectedClass(e.target.value as PlayerClass | 'All')}
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+              >
+                <option value="All">All</option>
+                <option value="FR">FR</option>
+                <option value="SO">SO</option>
+                <option value="JR">JR</option>
+                <option value="SR">SR</option>
+                <option value="GR">GR</option>
+              </select>
+            </div>
+
+            {/* Position Filter */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Position
+              </label>
+              <select
+                value={selectedPosition}
+                onChange={(e) => setSelectedPosition(e.target.value as PlayerPosition | 'All')}
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+              >
+                <option value="All">All</option>
+                <option value="QB">QB</option>
+                <option value="RB">RB</option>
+                <option value="WR">WR</option>
+                <option value="TE">TE</option>
+                <option value="OL">OL</option>
+                <option value="OT">OT</option>
+                <option value="OG">OG</option>
+                <option value="C">C</option>
+                <option value="EDGE">EDGE</option>
+                <option value="DL">DL</option>
+                <option value="DT">DT</option>
+                <option value="LB">LB</option>
+                <option value="CB">CB</option>
+                <option value="S">S</option>
+                <option value="DB">DB</option>
+                <option value="K">K</option>
+                <option value="P">P</option>
+                <option value="ATH">ATH</option>
+              </select>
+            </div>
+
+            {/* Conference Filter */}
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">
+                Conference
+              </label>
+              <select
+                value={selectedConference}
+                onChange={(e) => setSelectedConference(e.target.value as Conference | 'All')}
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+              >
+                <option value="All">All</option>
+                <option value="SEC">SEC</option>
+                <option value="Big Ten">Big Ten</option>
+                <option value="Big 12">Big 12</option>
+                <option value="ACC">ACC</option>
+                <option value="Pac-12">Pac-12</option>
+                <option value="American">American</option>
+                <option value="Mountain West">Mountain West</option>
+                <option value="Sun Belt">Sun Belt</option>
+                <option value="MAC">MAC</option>
+                <option value="C-USA">C-USA</option>
+                <option value="Independent">Independent</option>
+                <option value="FCS">FCS</option>
+              </select>
+            </div>
           </div>
         </div>
 
