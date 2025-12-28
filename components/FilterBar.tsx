@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
 import { getTeamById, getAllConferences, getTeamsByConference } from '@/data/teams';
@@ -44,6 +44,20 @@ export default function FilterBar({
 }: FilterBarProps) {
   const router = useRouter();
   const [selectedSchoolConference, setSelectedSchoolConference] = useState<Conference | null>(null);
+  const schoolSelectRef = useRef<HTMLSelectElement>(null);
+
+  // Reopen dropdown after conference selection
+  useEffect(() => {
+    if (selectedSchoolConference && schoolSelectRef.current) {
+      // Small delay to allow the dropdown to update with new options
+      setTimeout(() => {
+        schoolSelectRef.current?.focus();
+        // Try to open the dropdown programmatically
+        const event = new MouseEvent('mousedown', { bubbles: true });
+        schoolSelectRef.current?.dispatchEvent(event);
+      }, 50);
+    }
+  }, [selectedSchoolConference]);
 
   return (
     <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
@@ -70,6 +84,7 @@ export default function FilterBar({
             School
           </label>
           <select
+            ref={schoolSelectRef}
             value={selectedSchoolConference ? selectedSchool : ''}
             onChange={(e) => {
               const value = e.target.value;
