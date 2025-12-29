@@ -230,7 +230,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         <div className="raptive-pfn-header"></div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* Navigation Buttons */}
         <div className="flex gap-3 mb-4">
           <Link

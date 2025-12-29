@@ -21,7 +21,7 @@ export default function CollegeDirectory() {
         <div className="raptive-pfn-header"></div>
       </div>
 
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* Transfer Portal Button */}
         <Link
           href="/"

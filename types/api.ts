@@ -18,7 +18,8 @@ export type TransferPortalDataRow = [
   string,  // Former School
   string,  // New Conference
   string,  // New School
-  string   // PFSN Impact Grade
+  string,  // PFSN Impact Grade
+  string   // Date
 ];
 
 // Column indices for easy reference
@@ -32,5 +33,6 @@ export enum TransferPortalColumns {
   FormerSchool = 6,
   NewConference = 7,
   NewSchool = 8,
-  ImpactGrade = 9
+  ImpactGrade = 9,
+  Date = 10
 }

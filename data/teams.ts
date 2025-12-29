@@ -172,7 +172,27 @@ export function getTeamBySlug(slug: string): Team | undefined {
 }
 
 export function getTeamById(id: string): Team | undefined {
-  return allTeams.find(team => team.id.toLowerCase() === id.toLowerCase());
+  const searchTerm = id.toLowerCase().trim();
+
+  // 1. Try exact match on team ID
+  let team = allTeams.find(team => team.id.toLowerCase() === searchTerm);
+  if (team) return team;
+
+  // 2. Try exact match on full team name
+  team = allTeams.find(team => team.name.toLowerCase() === searchTerm);
+  if (team) return team;
+
+  // 3. Try partial match - check if search term starts with team ID
+  // e.g., "Northern Illinois Huskies" starts with "northern illinois"
+  team = allTeams.find(team => searchTerm.startsWith(team.id.toLowerCase()));
+  if (team) return team;
+
+  // 4. Try partial match - check if team name starts with search term
+  // e.g., search "Northern Illinois" matches "Northern Illinois Huskies"
+  team = allTeams.find(team => team.name.toLowerCase().startsWith(searchTerm));
+  if (team) return team;
+
+  return undefined;
 }
 
 export function getTeamsByConference(conference: Conference): Team[] {

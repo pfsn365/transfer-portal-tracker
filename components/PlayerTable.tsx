@@ -121,6 +121,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                     </div>
                   </div>
                 </SortableHeader>
+                <SortableHeader field="announcedDate">Date</SortableHeader>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -240,11 +241,20 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    {player.rating && (
-                      <div className="flex items-center">
-                        <span className="text-lg font-bold text-gray-900">{player.rating}</span>
-                      </div>
-                    )}
+                    <div className="flex items-center">
+                      <span className="text-lg font-bold text-gray-900">
+                        {player.rating ? player.rating : '-'}
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="text-sm text-gray-900">
+                      {new Date(player.announcedDate).toLocaleDateString('en-US', {
+                        month: 'numeric',
+                        day: 'numeric',
+                        year: 'numeric'
+                      })}
+                    </span>
                   </td>
                 </tr>
               ))}
@@ -312,12 +322,12 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   </div>
                 </div>
               </div>
-              {player.rating && (
-                <div className="text-right">
-                  <div className="text-xl font-bold text-gray-900">{player.rating}</div>
-                  <div className="text-xs text-gray-500">PFSN Grade</div>
+              <div className="text-right">
+                <div className="text-xl font-bold text-gray-900">
+                  {player.rating ? player.rating : '-'}
                 </div>
-              )}
+                <div className="text-xs text-gray-500">PFSN Grade</div>
+              </div>
             </div>
 
             {/* Status */}
@@ -414,6 +424,15 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   </>
                 )}
               </div>
+            </div>
+
+            {/* Date */}
+            <div className="text-xs text-gray-500">
+              {new Date(player.announcedDate).toLocaleDateString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+              })}
             </div>
           </div>
         ))}

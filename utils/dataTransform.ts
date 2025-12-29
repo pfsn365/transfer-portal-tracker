@@ -69,7 +69,12 @@ export function transformPlayerData(row: TransferPortalDataRow, index: number): 
   const formerConference = mapConference(row[TransferPortalColumns.FormerConference] || '');
   const newSchool = row[TransferPortalColumns.NewSchool]?.trim() || '';
   const newConference = row[TransferPortalColumns.NewConference]?.trim() || '';
-  const impactGrade = parseFloat(row[TransferPortalColumns.ImpactGrade] || '0');
+  const announcedDate = row[TransferPortalColumns.Date]?.trim() || new Date().toISOString().split('T')[0];
+
+  // Parse impact grade - handle #N/A, empty strings, and invalid values
+  const impactGradeRaw = row[TransferPortalColumns.ImpactGrade]?.trim() || '';
+  const impactGrade = parseFloat(impactGradeRaw);
+  const validImpactGrade = !isNaN(impactGrade) && impactGrade > 0 ? impactGrade : undefined;
 
   // Create player object
   const player: TransferPlayer = {
@@ -80,8 +85,8 @@ export function transformPlayerData(row: TransferPortalDataRow, index: number): 
     status: status,
     formerSchool: formerSchool,
     formerConference: formerConference,
-    announcedDate: new Date().toISOString().split('T')[0], // Use current date as fallback
-    rating: impactGrade > 0 ? impactGrade : undefined,
+    announcedDate: announcedDate,
+    rating: validImpactGrade,
   };
 
   // Add new school if exists and is different from former school
