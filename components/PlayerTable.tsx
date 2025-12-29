@@ -6,30 +6,28 @@ import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 import { getTeamById } from '@/data/teams';
 
-// Get position-specific impact grade URL
-function getPositionImpactUrl(position: PlayerPosition): string {
+// Get position-specific impact grade URL (only for positions with ranking pages)
+function getPositionImpactUrl(position: PlayerPosition): string | null {
   const positionMap: Record<string, string> = {
     'QB': 'qb',
     'RB': 'rb',
     'WR': 'wr',
     'TE': 'te',
     'OL': 'ol',
-    'OT': 'ot',
-    'OG': 'og',
-    'C': 'c',
+    'OT': 'ol',  // All O-Line positions use OL rankings
+    'OG': 'ol',
+    'C': 'ol',
     'EDGE': 'edge',
     'DL': 'dl',
     'DT': 'dt',
     'LB': 'lb',
     'CB': 'cb',
-    'S': 's',
-    'DB': 'db',
-    'K': 'k',
-    'P': 'p',
-    'ATH': 'ath'
+    // No ranking pages for: S, DB, K, P, ATH
   };
 
-  const posSlug = positionMap[position] || position.toLowerCase();
+  const posSlug = positionMap[position];
+  if (!posSlug) return null;
+
   return `https://www.profootballnetwork.com/cfb-${posSlug}-rankings-impact/`;
 }
 
@@ -144,7 +142,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   <div>
                     <div>PFSN Impact Grade</div>
                     <div className="text-[10px] font-normal normal-case text-gray-500 mt-0.5">
-                      Only comparable within position
+                      Comparable within position groups
                     </div>
                   </div>
                 </SortableHeader>
@@ -270,14 +268,23 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
                       {player.rating ? (
-                        <Link
-                          href={getPositionImpactUrl(player.position)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline transition-colors"
-                        >
-                          {player.rating.toFixed(1)}
-                        </Link>
+                        (() => {
+                          const url = getPositionImpactUrl(player.position);
+                          return url ? (
+                            <Link
+                              href={url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                            >
+                              {player.rating.toFixed(1)}
+                            </Link>
+                          ) : (
+                            <span className="text-lg font-bold text-gray-900">
+                              {player.rating.toFixed(1)}
+                            </span>
+                          );
+                        })()
                       ) : (
                         <span className="text-lg font-bold text-gray-900">-</span>
                       )}
@@ -361,14 +368,23 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
               <div className="text-right">
                 <div className="text-xl font-bold">
                   {player.rating ? (
-                    <Link
-                      href={getPositionImpactUrl(player.position)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
-                    >
-                      {player.rating.toFixed(1)}
-                    </Link>
+                    (() => {
+                      const url = getPositionImpactUrl(player.position);
+                      return url ? (
+                        <Link
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                        >
+                          {player.rating.toFixed(1)}
+                        </Link>
+                      ) : (
+                        <span className="text-gray-900">
+                          {player.rating.toFixed(1)}
+                        </span>
+                      );
+                    })()
                   ) : (
                     <span className="text-gray-900">-</span>
                   )}
