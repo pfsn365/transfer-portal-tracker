@@ -50,21 +50,13 @@ function mapPosition(apiPosition: string): PlayerPosition {
   return 'ATH'; // Default fallback
 }
 
-// Map API conference to our conference types
+// Map API conference - just pass through what comes from the Google Sheet
 function mapConference(apiConference: string): Conference {
   const conf = apiConference.trim();
 
-  const validConferences: Conference[] = [
-    'SEC', 'Big Ten', 'Big 12', 'ACC', 'Pac-12',
-    'American', 'Mountain West', 'Sun Belt', 'MAC', 'C-USA',
-    'Independent', 'FCS'
-  ];
-
-  if (validConferences.includes(conf as Conference)) {
-    return conf as Conference;
-  }
-
-  return 'Independent'; // Default fallback
+  // Return the conference directly from the sheet
+  // Type assertion is safe here because we trust the Google Sheet data
+  return conf as Conference;
 }
 
 // Transform API row to TransferPlayer object

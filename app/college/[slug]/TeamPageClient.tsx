@@ -253,12 +253,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           style={{ backgroundColor: teamColor }}
         >
           <div className="flex items-center gap-4">
-            <div className="relative h-24 w-24 bg-white rounded-full p-4">
+            <div className="relative h-28 w-28 bg-white rounded-full p-5">
               <Image
                 src={getTeamLogo(team.id)}
                 alt={`${team.name} logo`}
                 fill
-                sizes="96px"
+                sizes="112px"
                 className="object-contain"
               />
             </div>
@@ -379,7 +379,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
                 <option value="Mountain West">Mountain West</option>
                 <option value="Sun Belt">Sun Belt</option>
                 <option value="MAC">MAC</option>
-                <option value="C-USA">C-USA</option>
+                <option value="Conference USA">Conference USA</option>
                 <option value="Independent">Independent</option>
                 <option value="FCS">FCS</option>
               </select>

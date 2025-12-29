@@ -113,7 +113,14 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
                   Transfer Path
                 </th>
-                <SortableHeader field="rating">PFSN Impact Grade</SortableHeader>
+                <SortableHeader field="rating">
+                  <div>
+                    <div>PFSN Impact Grade</div>
+                    <div className="text-[10px] font-normal normal-case text-gray-500 mt-0.5">
+                      Only comparable within position
+                    </div>
+                  </div>
+                </SortableHeader>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -124,13 +131,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                 >
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <div className="flex-shrink-0 h-12 w-12 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                      <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                         <Image
                           src={getTeamLogo(player.formerSchool.toLowerCase())}
                           alt={`${player.formerSchool} logo`}
                           fill
-                          sizes="48px"
-                          className="object-contain p-2"
+                          sizes="56px"
+                          className="object-contain p-3"
                         />
                       </div>
                       <div className="ml-4">
@@ -286,13 +293,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
             {/* Player Header */}
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 h-12 w-12 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                   <Image
                     src={getTeamLogo(player.formerSchool.toLowerCase())}
                     alt={`${player.formerSchool} logo`}
                     fill
-                    sizes="48px"
-                    className="object-contain p-2"
+                    sizes="56px"
+                    className="object-contain p-3"
                   />
                 </div>
                 <div>

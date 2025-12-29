@@ -9,7 +9,7 @@ export type PlayerPosition =
 
 export type Conference =
   | 'SEC' | 'Big Ten' | 'Big 12' | 'ACC' | 'Pac-12'
-  | 'American' | 'Mountain West' | 'Sun Belt' | 'MAC' | 'C-USA'
+  | 'American' | 'Mountain West' | 'Sun Belt' | 'MAC' | 'Conference USA'
   | 'Independent' | 'FCS';
 
 export interface TransferPlayer {

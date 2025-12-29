@@ -25,7 +25,7 @@ const positions: (PlayerPosition | 'All')[] = [
 ];
 const conferences: (Conference | 'All')[] = [
   'All', 'SEC', 'Big Ten', 'Big 12', 'ACC', 'Pac-12',
-  'American', 'Mountain West', 'Sun Belt', 'MAC', 'C-USA',
+  'American', 'Mountain West', 'Sun Belt', 'MAC', 'Conference USA',
   'Independent', 'FCS'
 ];
 
