@@ -53,14 +53,14 @@ interface PlayerTableProps {
 
 export default function PlayerTable({ players, sortField, sortDirection, onSort }: PlayerTableProps) {
   // Sortable header component
-  const SortableHeader = ({ field, children }: { field: SortField; children: React.ReactNode }) => {
+  const SortableHeader = ({ field, children, centered = false }: { field: SortField; children: React.ReactNode; centered?: boolean }) => {
     const isActive = sortField === field;
     return (
       <th
-        className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none"
+        className={`px-6 py-4 ${centered ? 'text-center' : 'text-left'} text-xs font-bold text-gray-700 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none`}
         onClick={() => onSort(field)}
       >
-        <div className="flex items-center gap-1">
+        <div className={`flex items-center gap-1 ${centered ? 'justify-center' : ''}`}>
           {children}
           <div className="flex flex-col">
             <ChevronUp
@@ -142,13 +142,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
             <thead className="bg-gray-100 border-b-2 border-gray-200">
               <tr>
                 <SortableHeader field="name">Player</SortableHeader>
-                <SortableHeader field="position">Pos</SortableHeader>
-                <SortableHeader field="class">Class</SortableHeader>
+                <SortableHeader field="position" centered>Pos</SortableHeader>
+                <SortableHeader field="class" centered>Class</SortableHeader>
                 <SortableHeader field="status">Status</SortableHeader>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
                   Transfer Path
                 </th>
-                <SortableHeader field="rating">
+                <SortableHeader field="rating" centered>
                   <div>
                     <div>PFSN Impact Grade</div>
                     <div className="text-[10px] font-normal normal-case text-gray-500 mt-0.5">
@@ -186,12 +186,12 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                       </div>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-6 py-4 whitespace-nowrap text-center">
                     <span className={`px-2 py-1 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                       {player.position}
                     </span>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
+                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900 font-medium">
                     {player.class}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -280,8 +280,8 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="flex items-center">
+                  <td className="px-6 py-4 whitespace-nowrap text-center">
+                    <div className="flex items-center justify-center">
                       {player.rating ? (
                         (() => {
                           const url = getPositionImpactUrl(player.position);
