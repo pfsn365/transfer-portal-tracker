@@ -281,9 +281,34 @@ const cfbTeams: Record<string, string> = {
   'southern utah': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SUU.png',
   'sacred heart': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SHU.png',
   'utah tech': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UTT.png',
+
+  // TODO: Add these FCS schools when logos are available:
+  // BRWN - Brown
+  // BUT - Butler
+  // CLMB - Columbia
+  // COR - Cornell
+  // DART - Dartmouth
+  // DAV - Davidson
+  // DAY - Dayton
+  // DRKE - Drake
+  // GTWN - Georgetown
+  // HARV - Harvard
+  // LEH - Lehigh
+  // MRST - Marist
+  // MVSU - Mississippi Valley State
+  // MORE - Morehead State
+  // NDSU - North Dakota State
+  // PENN - Penn
+  // PRES - Presbyterian
+  // PCT - Princeton
+  // UST - St. Thomas
+  // USD - San Diego
+  // STET - Stetson
+  // VAL - Valparaiso
+  // YALE - Yale
 }
 
 export function getTeamLogo(teamName: string): string {
   const team = teamName.toLowerCase().trim()
-  return cfbTeams[team] || '/logos/default.png'
+  return cfbTeams[team] || '/logos/default.svg'
 }
