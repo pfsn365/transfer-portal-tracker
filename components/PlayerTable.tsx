@@ -1,10 +1,37 @@
-import { TransferPlayer } from '@/types/player';
+import { TransferPlayer, PlayerPosition } from '@/types/player';
 import { ArrowRight, ChevronUp, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 import { getTeamById } from '@/data/teams';
+
+// Get position-specific impact grade URL
+function getPositionImpactUrl(position: PlayerPosition): string {
+  const positionMap: Record<string, string> = {
+    'QB': 'qb',
+    'RB': 'rb',
+    'WR': 'wr',
+    'TE': 'te',
+    'OL': 'ol',
+    'OT': 'ot',
+    'OG': 'og',
+    'C': 'c',
+    'EDGE': 'edge',
+    'DL': 'dl',
+    'DT': 'dt',
+    'LB': 'lb',
+    'CB': 'cb',
+    'S': 's',
+    'DB': 'db',
+    'K': 'k',
+    'P': 'p',
+    'ATH': 'ath'
+  };
+
+  const posSlug = positionMap[position] || position.toLowerCase();
+  return `https://www.profootballnetwork.com/cfb-${posSlug}-rankings-impact/`;
+}
 
 type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
 type SortDirection = 'asc' | 'desc';
@@ -242,9 +269,18 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <span className="text-lg font-bold text-gray-900">
-                        {player.rating ? player.rating.toFixed(1) : '-'}
-                      </span>
+                      {player.rating ? (
+                        <Link
+                          href={getPositionImpactUrl(player.position)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                        >
+                          {player.rating.toFixed(1)}
+                        </Link>
+                      ) : (
+                        <span className="text-lg font-bold text-gray-900">-</span>
+                      )}
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -323,8 +359,19 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                 </div>
               </div>
               <div className="text-right">
-                <div className="text-xl font-bold text-gray-900">
-                  {player.rating ? player.rating.toFixed(1) : '-'}
+                <div className="text-xl font-bold">
+                  {player.rating ? (
+                    <Link
+                      href={getPositionImpactUrl(player.position)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                    >
+                      {player.rating.toFixed(1)}
+                    </Link>
+                  ) : (
+                    <span className="text-gray-900">-</span>
+                  )}
                 </div>
                 <div className="text-xs text-gray-500">PFSN Grade</div>
               </div>
