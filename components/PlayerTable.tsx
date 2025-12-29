@@ -243,7 +243,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
                       <span className="text-lg font-bold text-gray-900">
-                        {player.rating ? player.rating : '-'}
+                        {player.rating ? player.rating.toFixed(1) : '-'}
                       </span>
                     </div>
                   </td>
@@ -324,7 +324,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
               </div>
               <div className="text-right">
                 <div className="text-xl font-bold text-gray-900">
-                  {player.rating ? player.rating : '-'}
+                  {player.rating ? player.rating.toFixed(1) : '-'}
                 </div>
                 <div className="text-xs text-gray-500">PFSN Grade</div>
               </div>
