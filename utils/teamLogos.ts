@@ -1,3 +1,5 @@
+import { allTeams } from '@/data/teams'
+
 // CFB Team Logos
 const cfbTeams: Record<string, string> = {
   // SEC
@@ -310,5 +312,30 @@ const cfbTeams: Record<string, string> = {
 
 export function getTeamLogo(teamName: string): string {
   const team = teamName.toLowerCase().trim()
-  return cfbTeams[team] || '/logos/default.svg'
+
+  // Try exact match first
+  if (cfbTeams[team]) {
+    return cfbTeams[team]
+  }
+
+  // If no exact match, check if the team name starts with any known team ID
+  // This handles cases where mascot is included (e.g., "Texas Tech Red Raiders" -> "texas tech")
+  for (const knownTeam of allTeams) {
+    const teamId = knownTeam.id.toLowerCase()
+    if (team.startsWith(teamId + ' ') || team === teamId) {
+      if (cfbTeams[teamId]) {
+        return cfbTeams[teamId]
+      }
+    }
+  }
+
+  // Also check the keys in cfbTeams directly for partial matches
+  for (const key of Object.keys(cfbTeams)) {
+    if (team.startsWith(key + ' ') || team === key) {
+      return cfbTeams[key]
+    }
+  }
+
+  // Default fallback
+  return '/logos/default.svg'
 }
