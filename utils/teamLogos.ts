@@ -270,6 +270,17 @@ const cfbTeams: Record<string, string> = {
   'incarnate word': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/IW.png',
   'bryant': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/BRY.png',
   'east texas a&m': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ETAMU.png',
+  'hampton': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/HAMP.png',
+  'mercyhurst': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MCY.png',
+  'montana': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MON.png',
+  'south dakota state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SDSU.png',
+  'stonehill': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/STO.png',
+  'west georgia': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UWG.png',
+  'utrgv': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TRGV.png',
+  'tennessee state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TSU.png',
+  'southern utah': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SUU.png',
+  'sacred heart': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SHU.png',
+  'utah tech': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UTT.png',
 }
 
 export function getTeamLogo(teamName: string): string {
