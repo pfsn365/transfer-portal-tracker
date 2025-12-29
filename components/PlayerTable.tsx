@@ -8,21 +8,26 @@ import { getTeamById } from '@/data/teams';
 
 // Get position-specific impact grade URL (only for positions with ranking pages)
 function getPositionImpactUrl(position: PlayerPosition): string | null {
+  // Special case URLs that don't follow the standard pattern
+  if (position === 'OL' || position === 'OT' || position === 'OG' || position === 'C') {
+    return 'https://www.profootballnetwork.com/cfb-player-ol-rankings-impact';
+  }
+  if (position === 'S') {
+    return 'https://www.profootballnetwork.com/cfb-safety-rankings-impact';
+  }
+
+  // Standard pattern URLs
   const positionMap: Record<string, string> = {
     'QB': 'qb',
     'RB': 'rb',
     'WR': 'wr',
     'TE': 'te',
-    'OL': 'ol',
-    'OT': 'ol',  // All O-Line positions use OL rankings
-    'OG': 'ol',
-    'C': 'ol',
     'EDGE': 'edge',
     'DL': 'dl',
     'DT': 'dt',
     'LB': 'lb',
     'CB': 'cb',
-    // No ranking pages for: S, DB, K, P, ATH
+    // No ranking pages for: DB, K, P, ATH
   };
 
   const posSlug = positionMap[position];
