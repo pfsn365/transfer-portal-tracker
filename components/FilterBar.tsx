@@ -64,7 +64,7 @@ function CustomSchoolDropdown({
     onSchoolChange(teamName);
     const team = getTeamById(teamName);
     if (team) {
-      router.push(`/college/${team.slug}`);
+      router.push(`/college-teams/${team.slug}`);
     }
     setIsOpen(false);
     setSelectedConference(null);
