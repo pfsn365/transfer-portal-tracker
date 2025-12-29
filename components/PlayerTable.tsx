@@ -31,6 +31,16 @@ function getPositionImpactUrl(position: PlayerPosition): string | null {
   return `https://www.profootballnetwork.com/cfb-${posSlug}-rankings-impact/`;
 }
 
+// Get which school logo to display based on player status
+function getDisplaySchool(player: TransferPlayer): string {
+  // If committed or enrolled and has a new school, show new school
+  if ((player.status === 'Committed' || player.status === 'Enrolled') && player.newSchool) {
+    return player.newSchool;
+  }
+  // Otherwise show former school
+  return player.formerSchool;
+}
+
 type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
 type SortDirection = 'asc' | 'desc';
 
@@ -157,15 +167,20 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                 >
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
-                        <Image
-                          src={getTeamLogo(player.formerSchool.toLowerCase())}
-                          alt={`${player.formerSchool} logo`}
-                          fill
-                          sizes="56px"
-                          className="object-contain p-3"
-                        />
-                      </div>
+                      {(() => {
+                        const displaySchool = getDisplaySchool(player);
+                        return (
+                          <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                            <Image
+                              src={getTeamLogo(displaySchool.toLowerCase())}
+                              alt={`${displaySchool} logo`}
+                              fill
+                              sizes="56px"
+                              className="object-contain p-3"
+                            />
+                          </div>
+                        );
+                      })()}
                       <div className="ml-4">
                         <div className="text-sm font-bold text-gray-900">{player.name}</div>
                       </div>
@@ -346,15 +361,20 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
             {/* Player Header */}
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
-                  <Image
-                    src={getTeamLogo(player.formerSchool.toLowerCase())}
-                    alt={`${player.formerSchool} logo`}
-                    fill
-                    sizes="56px"
-                    className="object-contain p-3"
-                  />
-                </div>
+                {(() => {
+                  const displaySchool = getDisplaySchool(player);
+                  return (
+                    <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                      <Image
+                        src={getTeamLogo(displaySchool.toLowerCase())}
+                        alt={`${displaySchool} logo`}
+                        fill
+                        sizes="56px"
+                        className="object-contain p-3"
+                      />
+                    </div>
+                  );
+                })()}
                 <div>
                   <h3 className="font-bold text-gray-900">{player.name}</h3>
                   <div className="flex items-center gap-2 mt-1">
