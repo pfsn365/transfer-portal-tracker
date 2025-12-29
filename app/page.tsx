@@ -75,9 +75,9 @@ export default function TransferPortalTracker() {
       // Toggle direction if same field
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
     } else {
-      // New field, default to ascending
+      // New field - default to descending for class (to show GR/SR first), ascending for others
       setSortField(field);
-      setSortDirection('asc');
+      setSortDirection(field === 'class' ? 'desc' : 'asc');
     }
   };
 

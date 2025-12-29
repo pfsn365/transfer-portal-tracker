@@ -74,7 +74,8 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
     } else {
       setSortField(field);
-      setSortDirection('asc');
+      // Default to descending for class (to show GR/SR first), ascending for others
+      setSortDirection(field === 'class' ? 'desc' : 'asc');
     }
   };
 
