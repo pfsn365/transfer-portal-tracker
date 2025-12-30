@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${team.name} Transfer Portal Tracker | ${team.conference}`;
   const description = `Track ${team.name} transfer portal activity. View incoming and outgoing transfers, roster changes, and recruiting updates for ${team.name} ${team.conference} football.`;
-  const url = `https://profootballnetwork.com/cfb-hq/transfer-portal-tracker/college/${team.slug}`;
+  const url = `https://profootballnetwork.com/cfb-hq/transfer-portal-tracker/college-teams/${team.slug}`;
   const imageUrl = `https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/${team.id.toUpperCase()}.png`;
 
   return {

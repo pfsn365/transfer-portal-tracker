@@ -53,7 +53,7 @@ export default function CollegeDirectory() {
                 {teams.map(team => (
                   <Link
                     key={team.slug}
-                    href={`/college/${team.slug}`}
+                    href={`/college-teams/${team.slug}`}
                     className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow group"
                   >
                     <div className="flex flex-col items-center text-center">
