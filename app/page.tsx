@@ -103,6 +103,19 @@ export default function TransferPortalTracker() {
     setShowWatchlistOnly(false);
   };
 
+  // Check if any filters are active
+  const hasActiveFilters = useMemo(() => {
+    return (
+      selectedStatus !== 'All' ||
+      selectedSchool !== 'All' ||
+      selectedClass !== 'All' ||
+      selectedPosition !== 'All' ||
+      selectedConference !== 'All' ||
+      searchQuery.trim() !== '' ||
+      showWatchlistOnly
+    );
+  }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery, showWatchlistOnly]);
+
   // Filter players based on selections
   const filteredPlayers = useMemo(() => {
     return players.filter(player => {
@@ -388,7 +401,11 @@ export default function TransferPortalTracker() {
           {/* Clear Filters */}
           <button
             onClick={handleClearFilters}
-            className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-red-500 hover:text-red-600 transition-colors"
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+              hasActiveFilters
+                ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
+                : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
+            }`}
           >
             <X className="w-4 h-4" />
             Clear Filters

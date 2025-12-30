@@ -286,7 +286,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           </div>
                         );
                       })()}
-                      {player.newSchool && (
+                      {player.newSchool ? (
                         <>
                           <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
                           {(() => {
@@ -326,7 +326,12 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             );
                           })()}
                         </>
-                      )}
+                      ) : (player.status === 'Entered' || player.status === 'Withdrawn') ? (
+                        <>
+                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
+                          <div className="text-2xl font-bold text-gray-400">?</div>
+                        </>
+                      ) : null}
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-center">
@@ -526,7 +531,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     );
                   })()}
                 </div>
-                {player.newSchool && (
+                {player.newSchool ? (
                   <>
                     <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
                     <div className="flex-1">
@@ -569,7 +574,14 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       })()}
                     </div>
                   </>
-                )}
+                ) : (player.status === 'Entered' || player.status === 'Withdrawn') ? (
+                  <>
+                    <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    <div className="flex-1 flex items-center justify-center">
+                      <div className="text-3xl font-bold text-gray-400">?</div>
+                    </div>
+                  </>
+                ) : null}
               </div>
             </div>
 
