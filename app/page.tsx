@@ -463,7 +463,7 @@ export default function TransferPortalTracker() {
         {/* View FBS Teams */}
         <div className="mb-6 flex justify-end">
           <Link
-            href="/college-teams"
+            href="/teams"
             className="flex items-center px-4 py-2 bg-blue-600 text-white border-2 border-blue-600 rounded-lg font-medium hover:bg-blue-700 hover:border-blue-700 transition-colors"
           >
             View FBS Teams

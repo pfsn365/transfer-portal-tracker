@@ -5,12 +5,15 @@ import Image from 'next/image';
 import { allTeams, getAllConferences, getTeamsByConference } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import Header from '@/components/Header';
+import PFNHeader from '@/components/PFNHeader';
+import Footer from '@/components/Footer';
 
 export default function CollegeDirectory() {
   const conferences = getAllConferences();
 
   return (
     <main className="min-h-screen bg-gray-50">
+      <PFNHeader />
       <Header
         playerCount={0}
         totalCount={0}
@@ -27,7 +30,7 @@ export default function CollegeDirectory() {
           href="/"
           className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mb-4"
         >
-          Transfer Portal
+          Transfer Portal Tracker
         </Link>
 
         <div className="mb-6">
@@ -45,7 +48,7 @@ export default function CollegeDirectory() {
 
           return (
             <div key={conference} className="mb-8">
-              <h3 className="text-2xl font-bold text-white bg-gradient-to-r from-blue-600 to-blue-700 mb-4 px-4 py-3 rounded-lg shadow-md">
+              <h3 className="text-2xl font-bold text-white mb-4 px-4 py-3 rounded-lg shadow-md" style={{ backgroundColor: '#800000' }}>
                 {conference}
               </h3>
 
@@ -53,7 +56,7 @@ export default function CollegeDirectory() {
                 {teams.map(team => (
                   <Link
                     key={team.slug}
-                    href={`/college-teams/${team.slug}`}
+                    href={`/teams/${team.slug}`}
                     className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow group"
                   >
                     <div className="flex flex-col items-center text-center">
@@ -77,6 +80,8 @@ export default function CollegeDirectory() {
           );
         })}
       </div>
+
+      <Footer currentPage="CFB" />
     </main>
   );
 }

@@ -8,6 +8,8 @@ import { getTeamBySlug } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor } from '@/utils/teamColors';
 import Header from '@/components/Header';
+import PFNHeader from '@/components/PFNHeader';
+import Footer from '@/components/Footer';
 import PlayerTable from '@/components/PlayerTable';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
@@ -206,13 +208,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   if (!team) {
     return (
       <main className="min-h-screen bg-gray-50">
+        <PFNHeader />
         <Header playerCount={0} totalCount={0} />
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Team Not Found</h1>
-          <Link href="/college-teams" className="text-blue-600 hover:underline">
+          <Link href="/teams" className="text-blue-600 hover:underline">
             Back to Teams Directory
           </Link>
         </div>
+        <Footer currentPage="CFB" />
       </main>
     );
   }
@@ -220,10 +224,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   if (loading) {
     return (
       <main className="min-h-screen bg-gray-50">
+        <PFNHeader />
         <Header playerCount={0} totalCount={0} />
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <LoadingSpinner />
         </div>
+        <Footer currentPage="CFB" />
       </main>
     );
   }
@@ -231,10 +237,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   if (error) {
     return (
       <main className="min-h-screen bg-gray-50">
+        <PFNHeader />
         <Header playerCount={0} totalCount={0} />
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <ErrorMessage message={error} onRetry={fetchData} />
         </div>
+        <Footer currentPage="CFB" />
       </main>
     );
   }
@@ -243,6 +251,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
   return (
     <main className="min-h-screen bg-gray-50">
+      <PFNHeader />
       <Header playerCount={0} totalCount={players.length} />
 
       {/* Raptive Header Ad */}
@@ -260,7 +269,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             Transfer Portal Tracker
           </Link>
           <Link
-            href="/college-teams"
+            href="/teams"
             className="inline-block bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
           >
             View All Teams
@@ -454,6 +463,8 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           </div>
         </div>
       </div>
+
+      <Footer currentPage="CFB" />
     </main>
   );
 }
