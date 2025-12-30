@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
-import { getTeamById, getAllConferences, getTeamsByConference } from '@/data/teams';
+import { getAllConferences, getTeamsByConference } from '@/data/teams';
 
 interface FilterBarProps {
   selectedStatus: PlayerStatus | 'All';
@@ -32,12 +31,10 @@ const conferences: (Conference | 'All')[] = [
 // Custom School Dropdown Component
 function CustomSchoolDropdown({
   selectedSchool,
-  onSchoolChange,
-  router
+  onSchoolChange
 }: {
   selectedSchool: string;
   onSchoolChange: (school: string) => void;
-  router: ReturnType<typeof useRouter>;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedConference, setSelectedConference] = useState<Conference | null>(null);
@@ -62,10 +59,6 @@ function CustomSchoolDropdown({
 
   const handleTeamClick = (teamName: string) => {
     onSchoolChange(teamName);
-    const team = getTeamById(teamName);
-    if (team) {
-      router.push(`/college-teams/${team.slug}`);
-    }
     setIsOpen(false);
     setSelectedConference(null);
   };
@@ -122,17 +115,6 @@ function CustomSchoolDropdown({
               <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50 sticky top-0">
                 {selectedConference} Schools
               </div>
-              <button
-                type="button"
-                onClick={() => {
-                  onSchoolChange('All');
-                  setIsOpen(false);
-                  setSelectedConference(null);
-                }}
-                className="w-full text-left px-3 py-2 hover:bg-blue-50 text-sm text-gray-900 transition-colors"
-              >
-                All {selectedConference} Schools
-              </button>
               {getTeamsByConference(selectedConference).map(team => (
                 <button
                   key={team.id}
@@ -164,8 +146,6 @@ export default function FilterBar({
   onConferenceChange,
   schools,
 }: FilterBarProps) {
-  const router = useRouter();
-
   return (
     <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
@@ -193,7 +173,6 @@ export default function FilterBar({
           <CustomSchoolDropdown
             selectedSchool={selectedSchool}
             onSchoolChange={onSchoolChange}
-            router={router}
           />
         </div>
 
