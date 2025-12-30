@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../styles/pfsn-header-footer.css";
 
 :root {
   --background: #f9fafb;
@@ -49,6 +50,45 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #6b7280;
+}
+
+/* Table scrollbar - always visible when content overflows */
+.table-scroll-permanent {
+  overflow-x: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #9ca3af #e5e7eb; /* Firefox: thumb track */
+}
+
+.table-scroll-permanent::-webkit-scrollbar {
+  height: 12px;
+  display: block;
+}
+
+.table-scroll-permanent::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.table-scroll-permanent::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 6px;
+  border: 2px solid #e5e7eb;
+}
+
+.table-scroll-permanent::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Prevent auto-hiding on macOS/iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  .table-scroll-permanent {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Force scrollbar visibility on WebKit browsers */
+.table-scroll-permanent::-webkit-scrollbar-corner {
+  background: #e5e7eb;
 }
 
 /* Animations */
@@ -201,6 +241,18 @@ body {
   height: 92px;
   max-height: 92px;
   overflow: hidden;
+}
+
+/* Raptive Privacy Preferences - add padding below */
+.pfsn-footer {
+  margin-bottom: 40px;
+}
+
+/* Add space below the Raptive privacy button */
+body::after {
+  content: '';
+  display: block;
+  height: 100px;
 }
 
 /* Optimize animations for performance */

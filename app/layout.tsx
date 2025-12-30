@@ -95,8 +95,8 @@ export default function RootLayout({
         <link rel="preload" as="image" href="https://a.espncdn.com/i/teamlogos/ncaa/500/default-team-logo-500.png" />
 
         {/* Font display optimization */}
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" as="style" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" />
 
         {/* Theme colors */}
         <meta name="theme-color" content="#0050A0" />

@@ -172,7 +172,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
     <>
       {/* Desktop Table View */}
       <div className="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden content-auto">
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto table-scroll-permanent">
           <table className="w-full">
             <thead className="bg-gray-100 border-b-2 border-gray-200">
               <tr>
