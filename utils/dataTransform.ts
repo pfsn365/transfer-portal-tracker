@@ -9,6 +9,7 @@ function mapStatus(apiStatus: string): PlayerStatus {
   const statusMap: Record<string, PlayerStatus> = {
     'active': 'Entered',
     'entered': 'Entered',
+    'in portal': 'Entered',
     'committed': 'Committed',
     'enrolled': 'Enrolled',
     'withdrawn': 'Withdrawn',
