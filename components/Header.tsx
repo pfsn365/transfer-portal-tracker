@@ -11,9 +11,9 @@ export default function Header({
 }: HeaderProps) {
   return (
     <div className="text-white shadow-lg" style={{ backgroundColor: '#0050A0' }}>
-      <div className="max-w-[1600px] mx-auto px-4 py-6 sm:py-8">
+      <div className="max-w-[1600px] mx-auto px-4 py-8 sm:py-12">
         <div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
             CFB Transfer Portal Tracker
           </h1>
           <p className="text-sm sm:text-base text-white/90">

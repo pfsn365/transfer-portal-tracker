@@ -172,9 +172,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
           <table className="w-full">
             <thead className="bg-gray-100 border-b-2 border-gray-200">
               <tr>
-                <th className="px-4 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider w-16">
-                  <Star className="w-4 h-4 mx-auto" />
-                </th>
+                <th className="px-4 py-4 w-16"></th>
                 <SortableHeader field="name">Player</SortableHeader>
                 <SortableHeader field="position" centered>Pos</SortableHeader>
                 <SortableHeader field="class" centered>Class</SortableHeader>
