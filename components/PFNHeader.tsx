@@ -478,7 +478,7 @@ export default function PFNHeader() {
         .mobile-menu-btn {
           display: none;
           position: absolute;
-          right: 16px;
+          left: 16px;
           background: none;
           border: none;
           color: white;
