@@ -221,12 +221,12 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       {(() => {
                         const displaySchool = getDisplaySchool(player);
                         return (
-                          <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                          <div className="flex-shrink-0 h-16 w-16 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                             <Image
                               src={getTeamLogo(displaySchool.toLowerCase())}
                               alt={`${displaySchool} logo`}
                               fill
-                              sizes="56px"
+                              sizes="64px"
                               className="object-contain p-3"
                             />
                           </div>
@@ -256,33 +256,33 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         const formerTeam = getTeamById(player.formerSchool);
                         return formerTeam ? (
                           <Link href={`/college-teams/${formerTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
-                            <div className="relative h-6 w-6 flex-shrink-0">
+                            <div className="relative h-7 w-7 flex-shrink-0">
                               <Image
                                 src={getTeamLogo(player.formerSchool.toLowerCase())}
                                 alt={`${player.formerSchool} logo`}
                                 fill
-                                sizes="24px"
+                                sizes="28px"
                                 className="object-contain"
                               />
                             </div>
                             <div className="text-left">
-                              <div className="font-semibold text-gray-900 hover:underline">{player.formerSchool}</div>
+                              <div className="text-base font-semibold text-gray-900 hover:underline">{player.formerSchool}</div>
                               <div className="text-xs text-gray-500">{player.formerConference}</div>
                             </div>
                           </Link>
                         ) : (
                           <div className="flex items-center gap-2">
-                            <div className="relative h-6 w-6 flex-shrink-0">
+                            <div className="relative h-7 w-7 flex-shrink-0">
                               <Image
                                 src={getTeamLogo(player.formerSchool.toLowerCase())}
                                 alt={`${player.formerSchool} logo`}
                                 fill
-                                sizes="24px"
+                                sizes="28px"
                                 className="object-contain"
                               />
                             </div>
                             <div className="text-left">
-                              <div className="font-semibold text-gray-900">{player.formerSchool}</div>
+                              <div className="text-base font-semibold text-gray-900">{player.formerSchool}</div>
                               <div className="text-xs text-gray-500">{player.formerConference}</div>
                             </div>
                           </div>
@@ -295,33 +295,33 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             const newTeam = getTeamById(player.newSchool!);
                             return newTeam ? (
                               <Link href={`/college-teams/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
-                                <div className="relative h-6 w-6 flex-shrink-0">
+                                <div className="relative h-7 w-7 flex-shrink-0">
                                   <Image
                                     src={getTeamLogo(player.newSchool.toLowerCase())}
                                     alt={`${player.newSchool} logo`}
                                     fill
-                                    sizes="24px"
+                                    sizes="28px"
                                     className="object-contain"
                                   />
                                 </div>
                                 <div className="text-left">
-                                  <div className="font-semibold text-green-700 hover:underline">{player.newSchool}</div>
+                                  <div className="text-base font-semibold text-green-700 hover:underline">{player.newSchool}</div>
                                   <div className="text-xs text-gray-500">{player.newConference}</div>
                                 </div>
                               </Link>
                             ) : (
                               <div className="flex items-center gap-2">
-                                <div className="relative h-6 w-6 flex-shrink-0">
+                                <div className="relative h-7 w-7 flex-shrink-0">
                                   <Image
                                     src={getTeamLogo(player.newSchool.toLowerCase())}
                                     alt={`${player.newSchool} logo`}
                                     fill
-                                    sizes="24px"
+                                    sizes="28px"
                                     className="object-contain"
                                   />
                                 </div>
                                 <div className="text-left">
-                                  <div className="font-semibold text-green-700">{player.newSchool}</div>
+                                  <div className="text-base font-semibold text-green-700">{player.newSchool}</div>
                                   <div className="text-xs text-gray-500">{player.newConference}</div>
                                 </div>
                               </div>
@@ -434,12 +434,12 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 {(() => {
                   const displaySchool = getDisplaySchool(player);
                   return (
-                    <div className="flex-shrink-0 h-14 w-14 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
+                    <div className="flex-shrink-0 h-16 w-16 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
                       <Image
                         src={getTeamLogo(displaySchool.toLowerCase())}
                         alt={`${displaySchool} logo`}
                         fill
-                        sizes="56px"
+                        sizes="64px"
                         className="object-contain p-3"
                       />
                     </div>
@@ -500,33 +500,33 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     const formerTeam = getTeamById(player.formerSchool);
                     return formerTeam ? (
                       <Link href={`/college-teams/${formerTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
-                        <div className="relative h-5 w-5 flex-shrink-0">
+                        <div className="relative h-6 w-6 flex-shrink-0">
                           <Image
                             src={getTeamLogo(player.formerSchool.toLowerCase())}
                             alt={`${player.formerSchool} logo`}
                             fill
-                            sizes="20px"
+                            sizes="24px"
                             className="object-contain"
                           />
                         </div>
                         <div>
-                          <div className="font-semibold text-gray-900 text-sm hover:underline">{player.formerSchool}</div>
+                          <div className="font-semibold text-gray-900 text-base hover:underline">{player.formerSchool}</div>
                           <div className="text-xs text-gray-500">{player.formerConference}</div>
                         </div>
                       </Link>
                     ) : (
                       <div className="flex items-center gap-2">
-                        <div className="relative h-5 w-5 flex-shrink-0">
+                        <div className="relative h-6 w-6 flex-shrink-0">
                           <Image
                             src={getTeamLogo(player.formerSchool.toLowerCase())}
                             alt={`${player.formerSchool} logo`}
                             fill
-                            sizes="20px"
+                            sizes="24px"
                             className="object-contain"
                           />
                         </div>
                         <div>
-                          <div className="font-semibold text-gray-900 text-sm">{player.formerSchool}</div>
+                          <div className="font-semibold text-gray-900 text-base">{player.formerSchool}</div>
                           <div className="text-xs text-gray-500">{player.formerConference}</div>
                         </div>
                       </div>
@@ -542,33 +542,33 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         const newTeam = getTeamById(player.newSchool!);
                         return newTeam ? (
                           <Link href={`/college-teams/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
-                            <div className="relative h-5 w-5 flex-shrink-0">
+                            <div className="relative h-6 w-6 flex-shrink-0">
                               <Image
                                 src={getTeamLogo(player.newSchool.toLowerCase())}
                                 alt={`${player.newSchool} logo`}
                                 fill
-                                sizes="20px"
+                                sizes="24px"
                                 className="object-contain"
                               />
                             </div>
                             <div>
-                              <div className="font-semibold text-green-700 text-sm hover:underline">{player.newSchool}</div>
+                              <div className="font-semibold text-green-700 text-base hover:underline">{player.newSchool}</div>
                               <div className="text-xs text-gray-500">{player.newConference}</div>
                             </div>
                           </Link>
                         ) : (
                           <div className="flex items-center gap-2">
-                            <div className="relative h-5 w-5 flex-shrink-0">
+                            <div className="relative h-6 w-6 flex-shrink-0">
                               <Image
                                 src={getTeamLogo(player.newSchool.toLowerCase())}
                                 alt={`${player.newSchool} logo`}
                                 fill
-                                sizes="20px"
+                                sizes="24px"
                                 className="object-contain"
                               />
                             </div>
                             <div>
-                              <div className="font-semibold text-green-700 text-sm">{player.newSchool}</div>
+                              <div className="font-semibold text-green-700 text-base">{player.newSchool}</div>
                               <div className="text-xs text-gray-500">{player.newConference}</div>
                             </div>
                           </div>

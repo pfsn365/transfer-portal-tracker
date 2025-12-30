@@ -330,7 +330,10 @@ export function getTeamLogo(teamName: string): string {
   }
 
   // Also check the keys in cfbTeams directly for partial matches
-  for (const key of Object.keys(cfbTeams)) {
+  // Sort keys by length (longest first) to match more specific names first
+  // This ensures "texas a&m" is checked before "texas"
+  const sortedKeys = Object.keys(cfbTeams).sort((a, b) => b.length - a.length);
+  for (const key of sortedKeys) {
     if (team.startsWith(key + ' ') || team === key) {
       return cfbTeams[key]
     }
