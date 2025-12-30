@@ -1,10 +1,12 @@
 import { TransferPlayer, PlayerPosition } from '@/types/player';
-import { ArrowRight, ChevronUp, ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronUp, ChevronDown, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 import { getTeamById } from '@/data/teams';
+import { getWatchlist, addToWatchlist, removeFromWatchlist } from '@/utils/watchlist';
 
 // Get position-specific impact grade URL (only for positions with ranking pages)
 function getPositionImpactUrl(position: PlayerPosition): string | null {
@@ -54,9 +56,33 @@ interface PlayerTableProps {
   sortField: SortField | null;
   sortDirection: SortDirection;
   onSort: (field: SortField) => void;
+  onWatchlistChange?: () => void;
 }
 
-export default function PlayerTable({ players, sortField, sortDirection, onSort }: PlayerTableProps) {
+export default function PlayerTable({ players, sortField, sortDirection, onSort, onWatchlistChange }: PlayerTableProps) {
+  // Watchlist state
+  const [watchlist, setWatchlist] = useState<string[]>([]);
+
+  // Load watchlist on mount
+  useEffect(() => {
+    setWatchlist(getWatchlist());
+  }, []);
+
+  // Toggle watchlist
+  const toggleWatchlist = (playerId: string) => {
+    if (watchlist.includes(playerId)) {
+      removeFromWatchlist(playerId);
+      setWatchlist(watchlist.filter(id => id !== playerId));
+    } else {
+      addToWatchlist(playerId);
+      setWatchlist([...watchlist, playerId]);
+    }
+    // Notify parent component of watchlist change
+    if (onWatchlistChange) {
+      onWatchlistChange();
+    }
+  };
+
   // Sortable header component
   const SortableHeader = ({ field, children, centered = false }: { field: SortField; children: React.ReactNode; centered?: boolean }) => {
     const isActive = sortField === field;
@@ -146,6 +172,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
           <table className="w-full">
             <thead className="bg-gray-100 border-b-2 border-gray-200">
               <tr>
+                <th className="px-4 py-4 text-center text-xs font-bold text-gray-700 uppercase tracking-wider w-16">
+                  <Star className="w-4 h-4 mx-auto" />
+                </th>
                 <SortableHeader field="name">Player</SortableHeader>
                 <SortableHeader field="position" centered>Pos</SortableHeader>
                 <SortableHeader field="class" centered>Class</SortableHeader>
@@ -170,6 +199,21 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                   key={player.id}
                   className={`table-row-hover ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                 >
+                  <td className="px-4 py-4 text-center">
+                    <button
+                      onClick={() => toggleWatchlist(player.id)}
+                      className="hover:scale-110 transition-transform"
+                      title={watchlist.includes(player.id) ? 'Remove from watchlist' : 'Add to watchlist'}
+                    >
+                      <Star
+                        className={`w-5 h-5 ${
+                          watchlist.includes(player.id)
+                            ? 'fill-yellow-400 text-yellow-400'
+                            : 'text-gray-400 hover:text-yellow-400'
+                        }`}
+                      />
+                    </button>
+                  </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
                       {(() => {
@@ -365,7 +409,21 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
           <div key={player.id} className="bg-white rounded-lg shadow-md p-4 sm:p-5 border border-gray-200 active:bg-gray-50 transition-colors">
             {/* Player Header */}
             <div className="flex items-start justify-between mb-3">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => toggleWatchlist(player.id)}
+                  className="hover:scale-110 transition-transform flex-shrink-0"
+                  title={watchlist.includes(player.id) ? 'Remove from watchlist' : 'Add to watchlist'}
+                >
+                  <Star
+                    className={`w-5 h-5 ${
+                      watchlist.includes(player.id)
+                        ? 'fill-yellow-400 text-yellow-400'
+                        : 'text-gray-400 hover:text-yellow-400'
+                    }`}
+                  />
+                </button>
+                <div className="flex items-center gap-3">
                 {(() => {
                   const displaySchool = getDisplaySchool(player);
                   return (
@@ -388,6 +446,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort 
                     </span>
                     <span className="text-xs text-gray-600 font-medium">{player.class}</span>
                   </div>
+                </div>
                 </div>
               </div>
               <div className="text-right">

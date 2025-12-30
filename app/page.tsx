@@ -10,6 +10,9 @@ import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
 import Pagination from '@/components/Pagination';
 import { getTeamById } from '@/data/teams';
+import { getWatchlist } from '@/utils/watchlist';
+import { exportToCSV } from '@/utils/csvExport';
+import { Download, Star, X } from 'lucide-react';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -23,6 +26,8 @@ export default function TransferPortalTracker() {
   const [selectedPosition, setSelectedPosition] = useState<PlayerPosition | 'All'>('All');
   const [selectedConference, setSelectedConference] = useState<Conference | 'All'>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [showWatchlistOnly, setShowWatchlistOnly] = useState<boolean>(false);
+  const [watchlist, setWatchlist] = useState<string[]>([]);
 
   // Sorting state
   type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
@@ -67,6 +72,7 @@ export default function TransferPortalTracker() {
   // Load data on component mount
   useEffect(() => {
     fetchData();
+    setWatchlist(getWatchlist());
   }, []);
 
   // Handle sorting
@@ -81,9 +87,28 @@ export default function TransferPortalTracker() {
     }
   };
 
+  // Handle export to CSV
+  const handleExport = () => {
+    exportToCSV(sortedPlayers, 'transfer-portal-data.csv');
+  };
+
+  // Handle clear all filters
+  const handleClearFilters = () => {
+    setSelectedStatus('All');
+    setSelectedSchool('All');
+    setSelectedClass('All');
+    setSelectedPosition('All');
+    setSelectedConference('All');
+    setSearchQuery('');
+    setShowWatchlistOnly(false);
+  };
+
   // Filter players based on selections
   const filteredPlayers = useMemo(() => {
     return players.filter(player => {
+      // Watchlist filter
+      if (showWatchlistOnly && !watchlist.includes(player.id)) return false;
+
       // Search filter
       if (searchQuery.trim() !== '') {
         const query = searchQuery.toLowerCase();
@@ -119,7 +144,7 @@ export default function TransferPortalTracker() {
           player.newConference !== selectedConference) return false;
       return true;
     });
-  }, [players, selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery]);
+  }, [players, selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery, showWatchlistOnly, watchlist]);
 
   // Sort filtered players
   const sortedPlayers = useMemo(() => {
@@ -335,12 +360,48 @@ export default function TransferPortalTracker() {
           schools={schools}
         />
 
+        {/* Action Buttons */}
+        <div className="mt-4 flex flex-wrap gap-3">
+          {/* Watchlist Toggle */}
+          <button
+            onClick={() => setShowWatchlistOnly(!showWatchlistOnly)}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+              showWatchlistOnly
+                ? 'bg-yellow-500 text-white hover:bg-yellow-600'
+                : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-yellow-500 hover:text-yellow-600'
+            }`}
+          >
+            <Star className={`w-4 h-4 ${showWatchlistOnly ? 'fill-white' : ''}`} />
+            My Watchlist ({watchlist.length})
+          </button>
+
+          {/* Export to CSV */}
+          <button
+            onClick={handleExport}
+            disabled={sortedPlayers.length === 0}
+            className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <Download className="w-4 h-4" />
+            Export to CSV
+          </button>
+
+          {/* Clear Filters */}
+          <button
+            onClick={handleClearFilters}
+            className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-red-500 hover:text-red-600 transition-colors"
+          >
+            <X className="w-4 h-4" />
+            Clear Filters
+          </button>
+        </div>
+
         <div className="mt-6">
           <PlayerTable
             players={paginatedPlayers}
             sortField={sortField}
             sortDirection={sortDirection}
             onSort={handleSort}
+            onWatchlistChange={() => setWatchlist(getWatchlist())}
           />
         </div>
 
