@@ -11,7 +11,7 @@ function mapStatus(apiStatus: string): PlayerStatus {
     'entered': 'Entered',
     'committed': 'Committed',
     'enrolled': 'Enrolled',
-    'expected': 'Enrolled',
+    'expected': 'Expected',
     'withdrawn': 'Withdrawn',
   };
 
@@ -21,6 +21,13 @@ function mapStatus(apiStatus: string): PlayerStatus {
 // Map API class to our class types
 function mapClass(apiClass: string): PlayerClass {
   const cls = apiClass.trim().toUpperCase();
+
+  // Map redshirt variations
+  if (cls === 'RS-FR' || cls === 'RSFR' || cls === 'RS FR') return 'RS-FR';
+  if (cls === 'RS-SO' || cls === 'RSSO' || cls === 'RS SO') return 'RS-SO';
+  if (cls === 'RS-JR' || cls === 'RSJR' || cls === 'RS JR') return 'RS-JR';
+  if (cls === 'RS-SR' || cls === 'RSSR' || cls === 'RS SR') return 'RS-SR';
+  if (cls === 'RS-GR' || cls === 'RSGR' || cls === 'RS GR') return 'RS-GR';
 
   // Map common variations
   if (cls === 'FR' || cls === 'FRESHMAN') return 'FR';

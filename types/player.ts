@@ -1,6 +1,6 @@
-export type PlayerStatus = 'Entered' | 'Committed' | 'Withdrawn' | 'Enrolled';
+export type PlayerStatus = 'Entered' | 'Committed' | 'Withdrawn' | 'Enrolled' | 'Expected';
 
-export type PlayerClass = 'FR' | 'SO' | 'JR' | 'SR' | 'GR';
+export type PlayerClass = 'FR' | 'SO' | 'JR' | 'SR' | 'GR' | 'RS-FR' | 'RS-SO' | 'RS-JR' | 'RS-SR' | 'RS-GR';
 
 export type PlayerPosition =
   | 'QB' | 'RB' | 'WR' | 'TE' | 'OL' | 'OT' | 'OG' | 'C'

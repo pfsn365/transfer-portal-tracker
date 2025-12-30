@@ -90,7 +90,13 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
       // Apply filters
       if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
-      if (selectedClass !== 'All' && player.class !== selectedClass) return false;
+      // Class filter - include redshirt variants (e.g., FR filter includes both FR and RS-FR)
+      if (selectedClass !== 'All') {
+        const playerClass = player.class;
+        const matchesBase = playerClass === selectedClass;
+        const matchesRedshirt = playerClass === `RS-${selectedClass}`;
+        if (!matchesBase && !matchesRedshirt) return false;
+      }
       if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
       if (selectedConference !== 'All' && player.formerConference !== selectedConference) return false;
 
@@ -108,7 +114,13 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
       // Apply filters
       if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
-      if (selectedClass !== 'All' && player.class !== selectedClass) return false;
+      // Class filter - include redshirt variants (e.g., FR filter includes both FR and RS-FR)
+      if (selectedClass !== 'All') {
+        const playerClass = player.class;
+        const matchesBase = playerClass === selectedClass;
+        const matchesRedshirt = playerClass === `RS-${selectedClass}`;
+        if (!matchesBase && !matchesRedshirt) return false;
+      }
       if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
       if (selectedConference !== 'All' && player.newConference !== selectedConference) return false;
 
@@ -135,9 +147,16 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           bVal = b.position;
           break;
         case 'class':
-          const classOrder = { FR: 1, SO: 2, JR: 3, SR: 4, GR: 5 };
-          aVal = classOrder[a.class];
-          bVal = classOrder[b.class];
+          // Sort by class year order: FR, RS-FR, SO, RS-SO, JR, RS-JR, SR, RS-SR, GR, RS-GR
+          const classOrder = {
+            'FR': 1, 'RS-FR': 1.5,
+            'SO': 2, 'RS-SO': 2.5,
+            'JR': 3, 'RS-JR': 3.5,
+            'SR': 4, 'RS-SR': 4.5,
+            'GR': 5, 'RS-GR': 5.5
+          };
+          aVal = classOrder[a.class] || 1;
+          bVal = classOrder[b.class] || 1;
           break;
         case 'status':
           aVal = a.status;
