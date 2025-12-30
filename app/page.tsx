@@ -12,7 +12,8 @@ import Pagination from '@/components/Pagination';
 import { getTeamById } from '@/data/teams';
 import { getWatchlist } from '@/utils/watchlist';
 import { exportToCSV } from '@/utils/csvExport';
-import { Download, Star, X } from 'lucide-react';
+import { Download, Star, X, Users } from 'lucide-react';
+import Link from 'next/link';
 
 export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -374,42 +375,53 @@ export default function TransferPortalTracker() {
         />
 
         {/* Action Buttons */}
-        <div className="mt-4 flex flex-wrap gap-3">
-          {/* Watchlist Toggle */}
-          <button
-            onClick={() => setShowWatchlistOnly(!showWatchlistOnly)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
-              showWatchlistOnly
-                ? 'bg-yellow-500 text-white hover:bg-yellow-600'
-                : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-yellow-500 hover:text-yellow-600'
-            }`}
-          >
-            <Star className={`w-4 h-4 ${showWatchlistOnly ? 'fill-white' : ''}`} />
-            My Watchlist ({watchlist.length})
-          </button>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap gap-3">
+            {/* Watchlist Toggle */}
+            <button
+              onClick={() => setShowWatchlistOnly(!showWatchlistOnly)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+                showWatchlistOnly
+                  ? 'bg-yellow-500 text-white hover:bg-yellow-600'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-yellow-500 hover:text-yellow-600'
+              }`}
+            >
+              <Star className={`w-4 h-4 ${showWatchlistOnly ? 'fill-white' : ''}`} />
+              My Watchlist ({watchlist.length})
+            </button>
 
-          {/* Export to CSV */}
-          <button
-            onClick={handleExport}
-            disabled={paginatedPlayers.length === 0}
-            className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <Download className="w-4 h-4" />
-            Export to CSV
-          </button>
+            {/* Export to CSV */}
+            <button
+              onClick={handleExport}
+              disabled={paginatedPlayers.length === 0}
+              className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <Download className="w-4 h-4" />
+              Export to CSV
+            </button>
 
-          {/* Clear Filters */}
-          <button
-            onClick={handleClearFilters}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
-              hasActiveFilters
-                ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
-                : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
-            }`}
+            {/* Clear Filters */}
+            <button
+              onClick={handleClearFilters}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+                hasActiveFilters
+                  ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
+              }`}
+            >
+              <X className="w-4 h-4" />
+              Clear Filters
+            </button>
+          </div>
+
+          {/* View FBS Teams */}
+          <Link
+            href="/college-teams"
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white border-2 border-blue-600 rounded-lg font-medium hover:bg-blue-700 hover:border-blue-700 transition-colors"
           >
-            <X className="w-4 h-4" />
-            Clear Filters
-          </button>
+            <Users className="w-4 h-4" />
+            View FBS Teams
+          </Link>
         </div>
 
         <div className="mt-6">
