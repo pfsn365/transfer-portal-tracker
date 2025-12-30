@@ -89,7 +89,7 @@ export default function TransferPortalTracker() {
 
   // Handle export to CSV
   const handleExport = () => {
-    exportToCSV(sortedPlayers, 'transfer-portal-data.csv');
+    exportToCSV(paginatedPlayers, 'transfer-portal-data.csv');
   };
 
   // Handle clear all filters
@@ -391,7 +391,7 @@ export default function TransferPortalTracker() {
           {/* Export to CSV */}
           <button
             onClick={handleExport}
-            disabled={sortedPlayers.length === 0}
+            disabled={paginatedPlayers.length === 0}
             className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <Download className="w-4 h-4" />
