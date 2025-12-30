@@ -289,7 +289,7 @@ export default function PFNHeader() {
       )}
 
       {/* Spacer to account for fixed header */}
-      <div style={{ height: '50px' }} />
+      <div className="header-spacer" />
 
       <style jsx>{`
         .pfn-header-wrapper {
@@ -532,7 +532,14 @@ export default function PFNHeader() {
           background: #0a0a0a;
         }
 
+        .header-spacer {
+          height: 50px;
+        }
+
         @media (max-width: 768px) {
+          .header-spacer {
+            height: 34.5px;
+          }
           .pfn-header-wrapper {
             height: 34.5px;
           }
