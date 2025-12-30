@@ -16,7 +16,16 @@ interface FilterBarProps {
   schools: string[];
 }
 
-const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed', 'Enrolled', 'Expected', 'Withdrawn'];
+const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed', 'Enrolled', 'Withdrawn'];
+
+// Display names for statuses
+const statusDisplayNames: Record<string, string> = {
+  'All': 'All',
+  'Entered': 'In Portal',
+  'Committed': 'Committed',
+  'Enrolled': 'Enrolled',
+  'Withdrawn': 'Withdrawn',
+};
 const classes: (PlayerClass | 'All')[] = ['All', 'FR', 'SO', 'JR', 'SR', 'GR'];
 const positions: (PlayerPosition | 'All')[] = [
   'All', 'QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'C',
@@ -160,7 +169,7 @@ export default function FilterBar({
             className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
           >
             {statuses.map(status => (
-              <option key={status} value={status}>{status}</option>
+              <option key={status} value={status}>{statusDisplayNames[status]}</option>
             ))}
           </select>
         </div>

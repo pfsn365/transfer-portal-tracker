@@ -114,13 +114,15 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
         return 'bg-yellow-100 text-yellow-800 border-yellow-300';
       case 'Enrolled':
         return 'bg-blue-100 text-blue-800 border-blue-300';
-      case 'Expected':
-        return 'bg-purple-100 text-purple-800 border-purple-300';
       case 'Withdrawn':
         return 'bg-gray-100 text-gray-800 border-gray-300';
       default:
         return 'bg-yellow-100 text-yellow-800 border-yellow-300';
     }
+  };
+
+  const getStatusDisplayName = (status: string) => {
+    return status === 'Entered' ? 'In Portal' : status;
   };
 
   const getPositionColor = (position: string) => {
@@ -245,7 +247,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
-                      {player.status}
+                      {getStatusDisplayName(player.status)}
                     </span>
                   </td>
                   <td className="px-6 py-4">
@@ -485,7 +487,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
             {/* Status */}
             <div className="mb-3">
               <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
-                {player.status}
+                {getStatusDisplayName(player.status)}
               </span>
             </div>
 

@@ -11,7 +11,6 @@ function mapStatus(apiStatus: string): PlayerStatus {
     'entered': 'Entered',
     'committed': 'Committed',
     'enrolled': 'Enrolled',
-    'expected': 'Expected',
     'withdrawn': 'Withdrawn',
   };
 
