@@ -12,7 +12,7 @@ import Pagination from '@/components/Pagination';
 import { getTeamById } from '@/data/teams';
 import { getWatchlist } from '@/utils/watchlist';
 import { exportToCSV } from '@/utils/csvExport';
-import { Download, Star, X, Users } from 'lucide-react';
+import { Download, Star, X } from 'lucide-react';
 import Link from 'next/link';
 
 export default function TransferPortalTracker() {
@@ -417,9 +417,8 @@ export default function TransferPortalTracker() {
           {/* View FBS Teams */}
           <Link
             href="/college-teams"
-            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white border-2 border-blue-600 rounded-lg font-medium hover:bg-blue-700 hover:border-blue-700 transition-colors"
+            className="flex items-center px-4 py-2 bg-blue-600 text-white border-2 border-blue-600 rounded-lg font-medium hover:bg-blue-700 hover:border-blue-700 transition-colors"
           >
-            <Users className="w-4 h-4" />
             View FBS Teams
           </Link>
         </div>
