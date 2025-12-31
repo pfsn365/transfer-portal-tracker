@@ -286,7 +286,7 @@ export default function TransferPortalTracker() {
         />
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[150px]">
+        <div className="container mx-auto px-4 min-h-[110px]">
           <div className="raptive-pfn-header-90"></div>
         </div>
 
@@ -335,7 +335,7 @@ export default function TransferPortalTracker() {
       />
 
       {/* Raptive Header Ad */}
-      <div className="container mx-auto px-4 min-h-[150px]">
+      <div className="container mx-auto px-4 min-h-[110px]">
         <div className="raptive-pfn-header-90"></div>
       </div>
 
