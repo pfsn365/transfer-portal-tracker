@@ -346,6 +346,6 @@ export function getTeamLogo(teamName: string): string {
     }
   }
 
-  // Default fallback
-  return '/logos/default.svg'
+  // Default fallback - NCAA logo for schools not in our database (FCS, D2, etc.)
+  return 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ncaa.png'
 }

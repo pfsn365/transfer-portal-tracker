@@ -2,24 +2,28 @@
 
 import Script from 'next/script'
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'
+const GA_MEASUREMENT_ID = 'G-94BYBHMYCW'
 
 export default function GoogleAnalytics() {
   return (
     <>
       <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        async
+        defer
       />
       <Script
         id="google-analytics"
         strategy="afterInteractive"
+        async
+        defer
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
+            gtag('config', '${GA_MEASUREMENT_ID}', {
               page_path: window.location.pathname,
             });
           `,
