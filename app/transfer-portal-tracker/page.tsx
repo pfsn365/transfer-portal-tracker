@@ -49,8 +49,7 @@ export default function TransferPortalTracker() {
       setLoading(true);
       setError(null);
 
-      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const response = await fetch(`${basePath}/api/transfer-portal`);
+      const response = await fetch(`/cfb-hq/api/transfer-portal`);
 
       if (!response.ok) {
         throw new Error('Failed to fetch transfer portal data');
