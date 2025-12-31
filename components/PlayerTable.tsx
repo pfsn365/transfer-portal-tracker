@@ -189,7 +189,6 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 </th>
                 <SortableHeader field="rating" centered>
                   <div className="flex items-center justify-center gap-1">
-                    <span>PFSN Impact Grade</span>
                     <div className="relative">
                       <button
                         type="button"
@@ -215,6 +214,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         </>
                       )}
                     </div>
+                    <span>PFSN Impact Grade</span>
                   </div>
                 </SortableHeader>
                 <SortableHeader field="announcedDate">Date Entered</SortableHeader>
