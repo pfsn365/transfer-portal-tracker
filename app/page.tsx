@@ -364,12 +364,10 @@ export default function TransferPortalTracker() {
 
             <Link
               href="/teams"
-              className="flex flex-col sm:flex-row items-center justify-center px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-center text-sm sm:text-base leading-tight sm:whitespace-nowrap"
+              className="flex items-center justify-center px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-center text-sm sm:text-base whitespace-nowrap"
               aria-label="Browse all team transfer pages"
             >
-              <span className="sm:hidden">Browse Team</span>
-              <span className="sm:hidden">Transfer Pages</span>
-              <span className="hidden sm:inline">Browse Team Transfer Pages</span>
+              Browse Team Transfer Pages
             </Link>
           </div>
 

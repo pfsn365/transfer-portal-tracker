@@ -472,11 +472,14 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 })()}
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-gray-900 text-base leading-tight mb-1.5">{player.name}</h3>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="text-xs text-gray-600 font-medium">{player.class}</span>
                     <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                       {player.position}
                     </span>
-                    <span className="text-xs text-gray-600 font-medium">{player.class}</span>
+                    <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getStatusColor(player.status)}`}>
+                      {getStatusDisplayName(player.status)}
+                    </span>
                   </div>
                 </div>
                 </div>
@@ -507,13 +510,6 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 </div>
                 <div className="text-[11px] text-gray-500 mt-1 leading-tight">PFSN<br />Grade</div>
               </div>
-            </div>
-
-            {/* Status */}
-            <div className="mb-4">
-              <span className={`px-3 py-1.5 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
-                {getStatusDisplayName(player.status)}
-              </span>
             </div>
 
             {/* Transfer Path */}
