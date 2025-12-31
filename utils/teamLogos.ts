@@ -284,30 +284,35 @@ const cfbTeams: Record<string, string> = {
   'sacred heart': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SHU.png',
   'utah tech': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UTT.png',
 
-  // TODO: Add these FCS schools when logos are available:
-  // BRWN - Brown
-  // BUT - Butler
-  // CLMB - Columbia
-  // COR - Cornell
-  // DART - Dartmouth
-  // DAV - Davidson
-  // DAY - Dayton
-  // DRKE - Drake
-  // GTWN - Georgetown
-  // HARV - Harvard
-  // LEH - Lehigh
-  // MRST - Marist
-  // MVSU - Mississippi Valley State
-  // MORE - Morehead State
-  // NDSU - North Dakota State
-  // PENN - Penn
-  // PRES - Presbyterian
-  // PCT - Princeton
-  // UST - St. Thomas
-  // USD - San Diego
-  // STET - Stetson
-  // VAL - Valparaiso
-  // YALE - Yale
+  // Ivy League
+  'brown': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/BRWN.png',
+  'columbia': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CLMB.png',
+  'cornell': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/COR.png',
+  'dartmouth': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/DART.png',
+  'harvard': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/HARV.png',
+  'penn': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/PENN.png',
+  'pennsylvania': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/PENN.png',
+  'princeton': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/PCT.png',
+  'yale': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/YALE.png',
+
+  // Pioneer Football League
+  'butler': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/BUT.png',
+  'davidson': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/DAV.png',
+  'dayton': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/DAY.png',
+  'drake': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/DRKE.png',
+  'valparaiso': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/VAL.png',
+
+  // Other FCS
+  'georgetown': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/GTWN.png',
+  'lehigh': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/LEH.png',
+  'marist': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MRST.png',
+  'mississippi valley state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MVSU.png',
+  'morehead state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MORE.png',
+  'north dakota state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NDSU.png',
+  'presbyterian': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/PRES.png',
+  'st. thomas': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UST.png',
+  'san diego': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/USD.png',
+  'stetson': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/STET.png',
 }
 
 export function getTeamLogo(teamName: string): string {
