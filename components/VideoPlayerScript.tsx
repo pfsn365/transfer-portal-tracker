@@ -1,17 +1,13 @@
 'use client';
 
 import { useEffect } from 'react';
-import Script from 'next/script';
 
 declare global {
   interface Window {
     gtag?: (command: string, action: string, params: Record<string, unknown>) => void;
-  }
-}
-
-function removeClass(element: HTMLElement | null, className: string) {
-  if (element && element.classList.contains(className)) {
-    element.classList.remove(className);
+    googletag?: {
+      apiReady?: boolean;
+    };
   }
 }
 
@@ -42,10 +38,9 @@ function getOrCreateSegment(): number {
   return newV;
 }
 
-function closeVideoPlayerContainer(element: HTMLElement) {
-  const playerContainer = element.closest('#video-player-container');
-  if (playerContainer) {
-    playerContainer.remove();
+function removeClass(element: HTMLElement | null, className: string) {
+  if (element && element.classList.contains(className)) {
+    element.classList.remove(className);
   }
 }
 
@@ -60,14 +55,6 @@ function loadSTN(target: HTMLElement) {
   });
   console.log('stn player loaded');
 
-  const containerCloseBtn = document.querySelector('#video-player-container .close-video-player-btn') as HTMLElement;
-  if (containerCloseBtn) {
-    setTimeout(() => {
-      containerCloseBtn.addEventListener('click', () => closeVideoPlayerContainer(containerCloseBtn));
-      removeClass(containerCloseBtn, 'hidden');
-    }, 1000);
-  }
-
   const playerDiv = document.createElement('div');
   playerDiv.className = 's2nPlayer z6poo5gh';
   playerDiv.setAttribute('data-type', 'float');
@@ -81,81 +68,86 @@ function loadSTN(target: HTMLElement) {
   target.appendChild(s);
 }
 
-function loadPrimis(target: HTMLElement) {
+function loadPrimis(target?: HTMLElement | null) {
   window.addEventListener('load', function() {
     if (typeof window.gtag === 'function') {
-      console.log('gtag triggered for primis');
       window.gtag('event', 'Primis_Player_Segment', {
         'page_url': window.location.href,
       });
     }
   });
-  console.log('primis loaded');
 
-  const marker = document.createElement('p');
-  marker.id = 'widgetLoaded';
-  marker.style.cssText = 'width:0;height:0;margin:0;padding:0;';
-  target.appendChild(marker);
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://live.primis.tech/live/liveView.php?s=120789&cbuster=%%CACHEBUSTER%%';
 
-  (function(d: Document, s: string, b: string) {
-    let mElmt: HTMLElement | null;
-    const primisElmt = d.createElement('script');
-    primisElmt.type = 'text/javascript';
-    primisElmt.async = true;
-    primisElmt.src = s;
-    const elmtInterval = setInterval(function() {
-      mElmt = d.getElementById(b);
-      if (mElmt && mElmt.parentNode) {
-        mElmt.parentNode.insertBefore(primisElmt, mElmt.nextSibling);
-        mElmt.parentNode.removeChild(mElmt);
-        return clearInterval(elmtInterval);
+  if (target) {
+    target.appendChild(script);
+  } else {
+    (document.body || document.head).appendChild(script);
+  }
+}
+
+function waitForGPT(): Promise<void> {
+  return new Promise((resolve) => {
+    if (window.googletag && window.googletag.apiReady) {
+      resolve();
+      return;
+    }
+
+    const checkInterval = setInterval(function() {
+      if (window.googletag && window.googletag.apiReady) {
+        clearInterval(checkInterval);
+        resolve();
       }
-    }, 20);
-  })(document, 'https://live.primis.tech/live/liveView.php?s=120789&cbuster=%%CACHEBUSTER%%', 'widgetLoaded');
+    }, 100);
+
+    // Timeout after 10 seconds
+    setTimeout(function() {
+      clearInterval(checkInterval);
+      resolve();
+    }, 10000);
+  });
+}
+
+function isDesktop(): boolean {
+  return window.innerWidth >= 768;
 }
 
 export default function VideoPlayerScript() {
   useEffect(() => {
-    // Wait for DOM to be fully ready
     const initVideoPlayer = () => {
       const target = document.getElementById('video-player-container');
-      if (!target) {
-        console.warn('video-player-container not found');
-        return;
-      }
+      if (!target) return;
 
       removeClass(target, 'hidden');
 
       const segmentValue = getOrCreateSegment();
       if (segmentValue <= 50) {
-        loadPrimis(target);
-      } else {
         loadSTN(target);
+      } else {
+        if (isDesktop()) {
+          loadPrimis(target);
+        } else {
+          loadPrimis();
+          target.remove();
+        }
       }
     };
 
-    // Use a small delay to ensure the container is rendered
-    const timer = setTimeout(initVideoPlayer, 100);
-
-    return () => clearTimeout(timer);
+    // Wait for GPT to be available (loaded by AdThrive), then init video player
+    waitForGPT()
+      .then(() => {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initVideoPlayer);
+        } else {
+          initVideoPlayer();
+        }
+      })
+      .catch((err) => console.error('Script loading error:', err));
   }, []);
 
   return (
-    <>
-      <div id="video-player-container" className="hidden">
-        <button
-          className="close-video-player-btn hidden"
-          onClick={(e) => closeVideoPlayerContainer(e.currentTarget)}
-        >
-          <img
-            className="close-icon"
-            src="https://staticd.profootballnetwork.com/skm/assets/pfn/video-player-container/close-icon.png"
-            alt="close-icon"
-            width="18"
-            height="18"
-          />
-        </button>
-      </div>
-    </>
+    <div id="video-player-container" className="hidden"></div>
   );
 }
