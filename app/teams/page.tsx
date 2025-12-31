@@ -55,20 +55,22 @@ export default function CollegeDirectory() {
             <li>
               <Link
                 href="/"
-                className="inline-flex items-center min-h-[44px] py-2 text-blue-600 hover:underline transition-colors touch-manipulation"
+                className="inline-flex items-center min-h-[44px] py-2 hover:underline transition-colors touch-manipulation"
+                style={{ color: '#800000' }}
                 aria-label="Go to Transfer Portal Tracker home"
               >
                 Home
               </Link>
             </li>
-            <li aria-hidden="true" className="text-gray-400">
+            <li aria-hidden="true" style={{ color: '#800000' }}>
               <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
               </svg>
             </li>
             <li>
               <span
-                className="inline-flex items-center min-h-[44px] py-2 font-semibold text-gray-900"
+                className="inline-flex items-center min-h-[44px] py-2 font-semibold"
+                style={{ color: '#800000' }}
                 aria-current="page"
               >
                 Teams

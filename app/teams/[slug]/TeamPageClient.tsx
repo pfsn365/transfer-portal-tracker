@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback, useTransition } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
@@ -28,7 +28,6 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [isPending, startTransition] = useTransition();
 
   // Filter state
   const [selectedStatus, setSelectedStatus] = useState<PlayerStatus | 'All'>('All');
@@ -208,27 +207,19 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
   // Optimized filter handlers with useCallback to prevent re-renders
   const handleStatusChange = useCallback((value: PlayerStatus | 'All') => {
-    startTransition(() => {
-      setSelectedStatus(value);
-    });
+    setSelectedStatus(value);
   }, []);
 
   const handleClassChange = useCallback((value: PlayerClass | 'All') => {
-    startTransition(() => {
-      setSelectedClass(value);
-    });
+    setSelectedClass(value);
   }, []);
 
   const handlePositionChange = useCallback((value: PlayerPosition | 'All') => {
-    startTransition(() => {
-      setSelectedPosition(value);
-    });
+    setSelectedPosition(value);
   }, []);
 
   const handleTypeChange = useCallback((value: TransferType) => {
-    startTransition(() => {
-      setSelectedType(value);
-    });
+    setSelectedType(value);
   }, []);
 
   // Handle export to CSV
@@ -239,12 +230,10 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
   // Handle clear all filters
   const handleClearFilters = useCallback(() => {
-    startTransition(() => {
-      setSelectedStatus('All');
-      setSelectedClass('All');
-      setSelectedPosition('All');
-      setSelectedType('All');
-    });
+    setSelectedStatus('All');
+    setSelectedClass('All');
+    setSelectedPosition('All');
+    setSelectedType('All');
   }, []);
 
   // Check if any filters are active
@@ -548,12 +537,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         </div>
 
         {/* Transfers Table */}
-        <div className="relative bg-white rounded-lg shadow-md p-6 mb-6" style={{ contentVisibility: 'auto' }}>
-          {isPending && (
-            <div className="absolute inset-0 bg-white bg-opacity-60 flex items-center justify-center z-10 rounded-lg">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-            </div>
-          )}
+        <div className="bg-white rounded-lg shadow-md p-6 mb-6" style={{ contentVisibility: 'auto' }}>
           {sortedPlayers.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-500">
@@ -562,14 +546,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
               </p>
             </div>
           ) : (
-            <div style={{ willChange: isPending ? 'contents' : 'auto' }}>
-              <PlayerTable
-                players={sortedPlayers}
-                sortField={sortField}
-                sortDirection={sortDirection}
-                onSort={handleSort}
-              />
-            </div>
+            <PlayerTable
+              players={sortedPlayers}
+              sortField={sortField}
+              sortDirection={sortDirection}
+              onSort={handleSort}
+            />
           )}
         </div>
       </div>
