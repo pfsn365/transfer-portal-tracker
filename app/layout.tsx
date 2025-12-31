@@ -28,19 +28,19 @@ export const metadata: Metadata = {
   publisher: "Pro Football Network",
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/cfb-hq/favicon.ico', sizes: 'any' },
+      { url: '/cfb-hq/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/cfb-hq/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/cfb-hq/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+      { url: '/cfb-hq/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/cfb-hq/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
   },
-  manifest: '/manifest.json',
+  manifest: '/cfb-hq/manifest.json',
   robots: {
     index: true,
     follow: true,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     siteName: 'CFB HQ',
     images: [
       {
-        url: '/og-image.png',
+        url: '/cfb-hq/og-image.png',
         width: 1200,
         height: 630,
         alt: 'CFB HQ - College Football Tools',
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     description: 'Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources.',
     creator: '@PFN365',
     site: '@PFN365',
-    images: ['/og-image.png'],
+    images: ['/cfb-hq/og-image.png'],
   },
   alternates: {
     canonical: 'https://profootballnetwork.com/cfb-hq',

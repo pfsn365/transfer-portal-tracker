@@ -2,30 +2,30 @@
   "name": "CFB HQ",
   "short_name": "CFB HQ",
   "description": "Your destination for college football tools and data",
-  "start_url": "/",
+  "start_url": "/cfb-hq/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0050A0",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/pfsn-logo.png",
+      "src": "/cfb-hq/pfsn-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/cfb-hq/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/cfb-hq/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "/cfb-hq/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
@@ -33,6 +33,6 @@
   "categories": ["sports", "news"],
   "lang": "en-US",
   "dir": "ltr",
-  "scope": "/",
+  "scope": "/cfb-hq/",
   "prefer_related_applications": false
 }
