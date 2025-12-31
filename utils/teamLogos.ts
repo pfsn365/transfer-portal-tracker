@@ -116,6 +116,7 @@ const cfbTeams: Record<string, string> = {
   'nevada': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NEV.png',
   'new mexico': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UNM.png',
   'san diego state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SDSU.png',
+  'sdsu': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SDSU.png', // San Diego State (not South Dakota State)
   'san jose state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SJSU.png',
   'unlv': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UNLV.png',
   'utah state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/USU.png',
@@ -275,7 +276,8 @@ const cfbTeams: Record<string, string> = {
   'hampton': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/HAMP.png',
   'mercyhurst': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MCY.png',
   'montana': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MON.png',
-  'south dakota state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SDSU.png',
+  'south dakota state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SDST.png',
+  'sdst': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SDST.png', // South Dakota State (not San Diego State)
   'stonehill': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/STO.png',
   'west georgia': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UWG.png',
   'utrgv': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TRGV.png',
