@@ -29,26 +29,26 @@ export default function NotFound() {
             className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors min-w-[200px] justify-center"
           >
             <Home className="w-5 h-5" />
-            Go to Homepage
+            Go to CFB HQ
           </Link>
 
           <Link
-            href="/teams"
+            href="/transfer-portal-tracker"
             className="flex items-center gap-2 px-6 py-3 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 transition-colors min-w-[200px] justify-center"
           >
             <ArrowLeft className="w-5 h-5" />
-            Browse Teams
+            Transfer Portal
           </Link>
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-200">
           <p className="text-sm text-gray-500">
             Looking for something specific?{' '}
-            <Link href="/" className="text-blue-600 hover:text-blue-700 font-medium underline">
+            <Link href="/transfer-portal-tracker" className="text-blue-600 hover:text-blue-700 font-medium underline">
               Search the transfer portal
             </Link>
             {' '}or{' '}
-            <Link href="/teams" className="text-blue-600 hover:text-blue-700 font-medium underline">
+            <Link href="/transfer-portal-tracker/teams" className="text-blue-600 hover:text-blue-700 font-medium underline">
               browse all teams
             </Link>
             .

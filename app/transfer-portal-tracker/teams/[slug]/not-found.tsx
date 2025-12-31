@@ -48,15 +48,15 @@ export default function TeamNotFound() {
           {/* Quick Actions */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Link
-              href="/"
+              href="/transfer-portal-tracker"
               className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               <Home className="w-5 h-5" />
-              Go to Homepage
+              Transfer Portal
             </Link>
 
             <Link
-              href="/teams"
+              href="/transfer-portal-tracker/teams"
               className="flex items-center gap-2 px-6 py-3 bg-gray-200 text-gray-900 rounded-lg font-medium hover:bg-gray-300 transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
@@ -95,7 +95,7 @@ export default function TeamNotFound() {
                 {filteredTeams.map(team => (
                   <Link
                     key={team.slug}
-                    href={`/teams/${team.slug}`}
+                    href={`/transfer-portal-tracker/teams/${team.slug}`}
                     className="flex flex-col items-center text-center p-3 bg-gray-50 rounded-lg hover:bg-blue-50 hover:shadow-md transition-all group"
                   >
                     <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
@@ -127,11 +127,11 @@ export default function TeamNotFound() {
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
           <p className="text-sm text-gray-700">
             <strong>Need help?</strong> Browse all {allTeams.length} teams in our{' '}
-            <Link href="/teams" className="text-blue-600 hover:text-blue-700 font-medium underline">
+            <Link href="/transfer-portal-tracker/teams" className="text-blue-600 hover:text-blue-700 font-medium underline">
               teams directory
             </Link>
             {' '}or return to the{' '}
-            <Link href="/" className="text-blue-600 hover:text-blue-700 font-medium underline">
+            <Link href="/transfer-portal-tracker" className="text-blue-600 hover:text-blue-700 font-medium underline">
               main transfer portal tracker
             </Link>
             .

@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 
-const BASE_URL = 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker';
+const BASE_URL = 'https://www.profootballnetwork.com/cfb-hq';
 
 export default function CanonicalURL() {
   const pathname = usePathname();

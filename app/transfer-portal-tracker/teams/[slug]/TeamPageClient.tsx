@@ -279,7 +279,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Team Not Found</h1>
           <Link
-            href="/teams"
+            href="/transfer-portal-tracker/teams"
             className="inline-flex items-center justify-center min-h-[44px] px-4 py-2.5 text-blue-600 hover:underline touch-manipulation"
             aria-label="Go back to teams directory"
           >
@@ -347,12 +347,12 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           <ol className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
             <li>
               <Link
-                href="/"
+                href="/transfer-portal-tracker"
                 className="inline-flex items-center min-h-[44px] py-2 hover:underline transition-colors touch-manipulation"
                 style={{ color: teamColor }}
                 aria-label="Go to Transfer Portal Tracker home"
               >
-                Home
+                Transfer Portal
               </Link>
             </li>
             <li aria-hidden="true" style={{ color: teamColor }}>
@@ -362,7 +362,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             </li>
             <li>
               <Link
-                href="/teams"
+                href="/transfer-portal-tracker/teams"
                 className="inline-flex items-center min-h-[44px] py-2 hover:underline transition-colors touch-manipulation"
                 style={{ color: teamColor }}
                 aria-label="Browse all team transfer pages"

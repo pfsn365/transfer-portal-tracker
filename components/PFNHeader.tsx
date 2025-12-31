@@ -171,7 +171,7 @@ export default function PFNHeader() {
             className="header-logo-container"
           >
             <img
-              src="/pfsn-logo.png"
+              src="/cfb-hq/pfsn-logo.png"
               alt="PFSN Logo"
               className="header-logo"
             />

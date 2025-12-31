@@ -54,12 +54,12 @@ export default function CollegeDirectory() {
           <ol className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
             <li>
               <Link
-                href="/"
+                href="/transfer-portal-tracker"
                 className="inline-flex items-center min-h-[44px] py-2 hover:underline transition-colors touch-manipulation"
                 style={{ color: '#800000' }}
                 aria-label="Go to Transfer Portal Tracker home"
               >
-                Home
+                Transfer Portal
               </Link>
             </li>
             <li aria-hidden="true" style={{ color: '#800000' }}>
@@ -122,7 +122,7 @@ export default function CollegeDirectory() {
                 {teams.map(team => (
                   <Link
                     key={team.slug}
-                    href={`/teams/${team.slug}`}
+                    href={`/transfer-portal-tracker/teams/${team.slug}`}
                     className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow group"
                   >
                     <div className="flex flex-col items-center text-center">

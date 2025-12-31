@@ -1,7 +1,7 @@
 {
-  "name": "CFB Transfer Portal Tracker",
-  "short_name": "CFB Portal",
-  "description": "Track college football transfer portal activity in real-time with hourly updates",
+  "name": "CFB HQ",
+  "short_name": "CFB HQ",
+  "description": "Your destination for college football tools and data",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

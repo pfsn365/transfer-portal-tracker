@@ -7,21 +7,20 @@ import CanonicalURL from '@/components/CanonicalURL';
 import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://profootballnetwork.com/cfb-hq/transfer-portal-tracker'),
+  metadataBase: new URL('https://profootballnetwork.com/cfb-hq'),
   title: {
-    default: "CFB Transfer Portal Tracker - College Football Portal News",
-    template: "%s | CFB Transfer Portal Tracker"
+    default: "CFB HQ - College Football Tools & Resources",
+    template: "%s | CFB HQ"
   },
-  description: "Track all college football transfer portal activity in real-time with hourly updates. Filter by status, school, position, class, and conference. The most comprehensive CFB transfer portal tracker with live data.",
+  description: "Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources from Pro Football Network.",
   keywords: [
+    "CFB HQ",
+    "College Football",
     "CFB Transfer Portal",
     "College Football Transfer Portal",
     "Transfer Portal Tracker",
-    "NCAA Transfer Portal",
-    "College Football Transfers",
-    "Portal News",
-    "CFB Recruiting",
-    "Transfer Portal Database",
+    "NCAA Football",
+    "CFB Tools",
     "Pro Football Network"
   ],
   authors: [{ name: "Pro Football Network" }],
@@ -56,29 +55,29 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker',
-    title: 'CFB Transfer Portal Tracker - College Football Portal News',
-    description: 'Track all college football transfer portal activity in real-time with hourly updates. Filter by status, school, position, class, and conference. Live transfer portal data.',
-    siteName: 'CFB Transfer Portal Tracker',
+    url: 'https://profootballnetwork.com/cfb-hq',
+    title: 'CFB HQ - College Football Tools & Resources',
+    description: 'Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources.',
+    siteName: 'CFB HQ',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'CFB Transfer Portal Tracker',
+        alt: 'CFB HQ - College Football Tools',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CFB Transfer Portal Tracker - College Football Portal News',
-    description: 'Track all college football transfer portal activity in real-time with hourly updates. The most comprehensive CFB transfer portal tracker with live data.',
+    title: 'CFB HQ - College Football Tools & Resources',
+    description: 'Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources.',
     creator: '@PFN365',
     site: '@PFN365',
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker',
+    canonical: 'https://profootballnetwork.com/cfb-hq',
   },
   verification: {
     google: 'verification-code-here', // Add your Google Search Console verification code
@@ -122,8 +121,8 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="application-name" content="CFB Transfer Portal Tracker" />
-        <meta name="apple-mobile-web-app-title" content="CFB Portal Tracker" />
+        <meta name="application-name" content="CFB HQ" />
+        <meta name="apple-mobile-web-app-title" content="CFB HQ" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="HandheldFriendly" content="true" />
         <meta name="MobileOptimized" content="width" />
