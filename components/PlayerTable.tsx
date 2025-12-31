@@ -1,5 +1,5 @@
 import { TransferPlayer, PlayerPosition } from '@/types/player';
-import { ArrowRight, ChevronUp, ChevronDown, Star } from 'lucide-react';
+import { ArrowRight, ChevronUp, ChevronDown, Star, Info } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -62,6 +62,9 @@ interface PlayerTableProps {
 export default function PlayerTable({ players, sortField, sortDirection, onSort, onWatchlistChange }: PlayerTableProps) {
   // Watchlist state
   const [watchlist, setWatchlist] = useState<string[]>([]);
+
+  // Impact grade info tooltip state
+  const [showImpactInfo, setShowImpactInfo] = useState(false);
 
   // Load watchlist on mount
   useEffect(() => {
@@ -185,10 +188,32 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   Transfer Path
                 </th>
                 <SortableHeader field="rating" centered>
-                  <div>
-                    <div>PFSN Impact Grade</div>
-                    <div className="text-[10px] font-normal normal-case text-gray-500 mt-0.5">
-                      Comparable within position groups
+                  <div className="flex items-center justify-center gap-1">
+                    <span>PFSN Impact Grade</span>
+                    <div className="relative">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setShowImpactInfo(!showImpactInfo);
+                        }}
+                        className="inline-flex items-center justify-center w-4 h-4 rounded-full hover:bg-gray-200 transition-colors"
+                        aria-label="Impact grade information"
+                      >
+                        <Info className="w-3 h-3 text-gray-500" />
+                      </button>
+                      {showImpactInfo && (
+                        <>
+                          <div
+                            className="fixed inset-0 z-10"
+                            onClick={() => setShowImpactInfo(false)}
+                          />
+                          <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-20 w-56 p-3 bg-gray-900 text-white text-xs rounded-lg shadow-lg">
+                            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45" />
+                            Grades are comparable within position groups but not across
+                          </div>
+                        </>
+                      )}
                     </div>
                   </div>
                 </SortableHeader>
