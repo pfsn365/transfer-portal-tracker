@@ -9,10 +9,10 @@ import StructuredData from '@/components/StructuredData';
 export const metadata: Metadata = {
   metadataBase: new URL('https://profootballnetwork.com/cfb-hq'),
   title: {
-    default: "CFB HQ - College Football Tools & Resources",
+    default: "College Football HQ - CFB Tools & Resources",
     template: "%s | CFB HQ"
   },
-  description: "Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources from Pro Football Network.",
+  description: "Your destination for college football tools and data. Access comprehensive CFB resources from PFSN, including the transfer portal, playoff, and more.",
   keywords: [
     "CFB HQ",
     "College Football",
@@ -21,11 +21,10 @@ export const metadata: Metadata = {
     "Transfer Portal Tracker",
     "NCAA Football",
     "CFB Tools",
-    "Pro Football Network"
   ],
-  authors: [{ name: "Pro Football Network" }],
-  creator: "Pro Football Network",
-  publisher: "Pro Football Network",
+  authors: [{ name: "PFSN" }],
+  creator: "PFSN",
+  publisher: "PFSN",
   icons: {
     icon: [
       { url: '/cfb-hq/favicon.ico', sizes: 'any' },
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://profootballnetwork.com/cfb-hq',
     title: 'CFB HQ - College Football Tools & Resources',
-    description: 'Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources.',
+    description: 'Your destination for college football tools and data. Access comprehensive CFB resources from PFSN, including the transfer portal, playoff, and more.',
     siteName: 'CFB HQ',
     images: [
       {
@@ -71,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CFB HQ - College Football Tools & Resources',
-    description: 'Your destination for college football tools and data. Track the transfer portal, browse team pages, and access comprehensive CFB resources.',
+    description: 'Your destination for college football tools and data. Access comprehensive CFB resources from PFSN, including the transfer portal, playoff, and more.',
     creator: '@PFN365',
     site: '@PFN365',
     images: ['/cfb-hq/og-image.png'],

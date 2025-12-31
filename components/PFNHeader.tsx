@@ -11,8 +11,9 @@ interface MenuItem {
 const menuData: MenuItem[] = [
   {
     label: 'CFB',
-    href: 'https://www.profootballnetwork.com/cfb/',
+    href: 'https://www.profootballnetwork.com/cfb-hq/',
     children: [
+      { label: 'CFB Transfer Portal Tracker', href: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker' },
       { label: 'CFB Playoff Predictor', href: 'https://www.profootballnetwork.com/college-football-playoff-predictor' },
       { label: 'CFB Playoff Meter', href: 'https://www.profootballnetwork.com/cfb-fpm/' },
       {
