@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "../styles/pfsn-header-footer.css";
 
+iframe[id^="google_ads_iframe"] {
+    display: unset;
+}
+
 :root {
   --background: #f9fafb;
   --foreground: #111827;
