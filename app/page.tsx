@@ -460,13 +460,14 @@ export default function TransferPortalTracker() {
           )}
         </div>
 
-        {/* View FBS Teams */}
+        {/* Browse Team Transfer Pages */}
         <div className="mb-6 flex justify-end">
           <Link
             href="/teams"
             className="flex items-center px-4 py-2 bg-blue-600 text-white border-2 border-blue-600 rounded-lg font-medium hover:bg-blue-700 hover:border-blue-700 transition-colors"
+            aria-label="Browse all team transfer pages"
           >
-            View FBS Teams
+            Browse Team Transfer Pages
           </Link>
         </div>
 

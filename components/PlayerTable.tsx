@@ -192,7 +192,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     </div>
                   </div>
                 </SortableHeader>
-                <SortableHeader field="announcedDate">Date</SortableHeader>
+                <SortableHeader field="announcedDate">Date Entered</SortableHeader>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">

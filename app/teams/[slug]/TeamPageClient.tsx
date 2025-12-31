@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback, useTransition } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
@@ -13,10 +13,14 @@ import Footer from '@/components/Footer';
 import PlayerTable from '@/components/PlayerTable';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
+import { exportToCSV } from '@/utils/csvExport';
+import { Download, X } from 'lucide-react';
 
 interface TeamPageClientProps {
   slug: string;
 }
+
+type TransferType = 'All' | 'Incoming' | 'Outgoing';
 
 export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const team = getTeamBySlug(slug);
@@ -24,13 +28,13 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'incoming' | 'outgoing'>('incoming');
+  const [isPending, startTransition] = useTransition();
 
   // Filter state
   const [selectedStatus, setSelectedStatus] = useState<PlayerStatus | 'All'>('All');
   const [selectedClass, setSelectedClass] = useState<PlayerClass | 'All'>('All');
   const [selectedPosition, setSelectedPosition] = useState<PlayerPosition | 'All'>('All');
-  const [selectedConference, setSelectedConference] = useState<Conference | 'All'>('All');
+  const [selectedType, setSelectedType] = useState<TransferType>('All');
 
   // Sorting state
   type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
@@ -82,40 +86,23 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   };
 
   // Filter players for this team
-  const incomingTransfers = useMemo(() => {
+  const filteredPlayers = useMemo(() => {
     if (!team) return [];
     return players.filter(player => {
-      // Must be incoming to this team
+      // Check if player is incoming or outgoing for this team
       const isIncoming = player.newSchool?.toLowerCase() === team.name.toLowerCase() ||
                         player.newSchool?.toLowerCase() === team.id.toLowerCase();
-      if (!isIncoming) return false;
-
-      // Apply filters
-      if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
-      // Class filter - include redshirt variants (e.g., FR filter includes both FR and RS-FR)
-      if (selectedClass !== 'All') {
-        const playerClass = player.class;
-        const matchesBase = playerClass === selectedClass;
-        const matchesRedshirt = playerClass === `RS-${selectedClass}`;
-        if (!matchesBase && !matchesRedshirt) return false;
-      }
-      if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
-      if (selectedConference !== 'All' && player.formerConference !== selectedConference) return false;
-
-      return true;
-    });
-  }, [players, team, selectedStatus, selectedClass, selectedPosition, selectedConference]);
-
-  const outgoingTransfers = useMemo(() => {
-    if (!team) return [];
-    return players.filter(player => {
-      // Must be outgoing from this team
       const isOutgoing = player.formerSchool?.toLowerCase() === team.name.toLowerCase() ||
                         player.formerSchool?.toLowerCase() === team.id.toLowerCase();
-      if (!isOutgoing) return false;
 
-      // Apply filters
+      // Apply Type filter
+      if (selectedType === 'Incoming' && !isIncoming) return false;
+      if (selectedType === 'Outgoing' && !isOutgoing) return false;
+      if (selectedType === 'All' && !isIncoming && !isOutgoing) return false;
+
+      // Apply other filters
       if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
+
       // Class filter - include redshirt variants (e.g., FR filter includes both FR and RS-FR)
       if (selectedClass !== 'All') {
         const playerClass = player.class;
@@ -123,19 +110,35 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         const matchesRedshirt = playerClass === `RS-${selectedClass}`;
         if (!matchesBase && !matchesRedshirt) return false;
       }
+
       if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
-      if (selectedConference !== 'All' && player.newConference !== selectedConference) return false;
 
       return true;
     });
-  }, [players, team, selectedStatus, selectedClass, selectedPosition, selectedConference]);
+  }, [players, team, selectedStatus, selectedClass, selectedPosition, selectedType]);
+
+  // Calculate incoming and outgoing counts for stats
+  const incomingCount = useMemo(() => {
+    if (!team) return 0;
+    return players.filter(player =>
+      player.newSchool?.toLowerCase() === team.name.toLowerCase() ||
+      player.newSchool?.toLowerCase() === team.id.toLowerCase()
+    ).length;
+  }, [players, team]);
+
+  const outgoingCount = useMemo(() => {
+    if (!team) return 0;
+    return players.filter(player =>
+      player.formerSchool?.toLowerCase() === team.name.toLowerCase() ||
+      player.formerSchool?.toLowerCase() === team.id.toLowerCase()
+    ).length;
+  }, [players, team]);
 
   // Sort players
   const sortedPlayers = useMemo(() => {
-    const playersToSort = activeTab === 'incoming' ? incomingTransfers : outgoingTransfers;
-    if (!sortField) return playersToSort;
+    if (!sortField) return filteredPlayers;
 
-    const sorted = [...playersToSort].sort((a, b) => {
+    const sorted = [...filteredPlayers].sort((a, b) => {
       let aVal: any;
       let bVal: any;
 
@@ -190,29 +193,88 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     });
 
     return sorted;
-  }, [activeTab, incomingTransfers, outgoingTransfers, sortField, sortDirection]);
+  }, [filteredPlayers, sortField, sortDirection]);
 
   // Calculate team stats
   const teamStats = useMemo(() => {
-    const incoming = incomingTransfers.length;
-    const outgoing = outgoingTransfers.length;
-    const netGain = incoming - outgoing;
+    const netGain = incomingCount - outgoingCount;
 
     return {
-      incoming,
-      outgoing,
+      incoming: incomingCount,
+      outgoing: outgoingCount,
       netGain,
     };
-  }, [incomingTransfers, outgoingTransfers]);
+  }, [incomingCount, outgoingCount]);
+
+  // Optimized filter handlers with useCallback to prevent re-renders
+  const handleStatusChange = useCallback((value: PlayerStatus | 'All') => {
+    startTransition(() => {
+      setSelectedStatus(value);
+    });
+  }, []);
+
+  const handleClassChange = useCallback((value: PlayerClass | 'All') => {
+    startTransition(() => {
+      setSelectedClass(value);
+    });
+  }, []);
+
+  const handlePositionChange = useCallback((value: PlayerPosition | 'All') => {
+    startTransition(() => {
+      setSelectedPosition(value);
+    });
+  }, []);
+
+  const handleTypeChange = useCallback((value: TransferType) => {
+    startTransition(() => {
+      setSelectedType(value);
+    });
+  }, []);
+
+  // Handle export to CSV
+  const handleExport = useCallback(() => {
+    const teamName = team?.name.replace(/\s+/g, '-').toLowerCase() || 'team';
+    exportToCSV(sortedPlayers, `${teamName}-transfers.csv`);
+  }, [team?.name, sortedPlayers]);
+
+  // Handle clear all filters
+  const handleClearFilters = useCallback(() => {
+    startTransition(() => {
+      setSelectedStatus('All');
+      setSelectedClass('All');
+      setSelectedPosition('All');
+      setSelectedType('All');
+    });
+  }, []);
+
+  // Check if any filters are active
+  const hasActiveFilters = useMemo(() => {
+    return (
+      selectedStatus !== 'All' ||
+      selectedClass !== 'All' ||
+      selectedPosition !== 'All' ||
+      selectedType !== 'All'
+    );
+  }, [selectedStatus, selectedClass, selectedPosition, selectedType]);
 
   if (!team) {
     return (
-      <main className="min-h-screen bg-gray-50">
+      <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
         <PFNHeader />
         <Header playerCount={0} totalCount={0} />
+
+        {/* Raptive Header Ad - Reserve space when team not found */}
+        <div className="container mx-auto px-4">
+          <div className="min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
+        </div>
+
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Team Not Found</h1>
-          <Link href="/teams" className="text-blue-600 hover:underline">
+          <Link
+            href="/teams"
+            className="inline-flex items-center justify-center min-h-[44px] px-4 py-2.5 text-blue-600 hover:underline touch-manipulation"
+            aria-label="Go back to teams directory"
+          >
             Back to Teams Directory
           </Link>
         </div>
@@ -223,9 +285,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gray-50">
+      <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
         <PFNHeader />
         <Header playerCount={0} totalCount={0} />
+
+        {/* Raptive Header Ad - Reserve space during loading */}
+        <div className="container mx-auto px-4">
+          <div className="min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
+        </div>
+
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <LoadingSpinner />
         </div>
@@ -236,9 +304,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
   if (error) {
     return (
-      <main className="min-h-screen bg-gray-50">
+      <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
         <PFNHeader />
         <Header playerCount={0} totalCount={0} />
+
+        {/* Raptive Header Ad - Reserve space during error */}
+        <div className="container mx-auto px-4">
+          <div className="min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
+        </div>
+
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <ErrorMessage message={error} onRetry={fetchData} />
         </div>
@@ -250,48 +324,79 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const teamColor = getTeamColor(team.id);
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
       <PFNHeader />
       <Header playerCount={0} totalCount={players.length} />
 
-      {/* Raptive Header Ad */}
-      <div className="container mx-auto px-4 min-h-[150px]">
-        <div className="raptive-pfn-header"></div>
+      {/* Raptive Header Ad - Reserve space to prevent CLS */}
+      <div className="container mx-auto px-4">
+        <div className="raptive-pfn-header min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
-        {/* Navigation Buttons */}
-        <div className="flex gap-3 mb-4">
-          <Link
-            href="/"
-            className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
-          >
-            Transfer Portal Tracker
-          </Link>
-          <Link
-            href="/teams"
-            className="inline-block bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
-          >
-            View All Teams
-          </Link>
-        </div>
+        {/* Breadcrumb Navigation */}
+        <nav aria-label="Breadcrumb" className="mb-6">
+          <ol className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
+            <li>
+              <Link
+                href="/"
+                className="inline-flex items-center min-h-[44px] py-2 hover:underline transition-colors touch-manipulation"
+                style={{ color: teamColor }}
+                aria-label="Go to Transfer Portal Tracker home"
+              >
+                Home
+              </Link>
+            </li>
+            <li aria-hidden="true" style={{ color: teamColor }}>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </li>
+            <li>
+              <Link
+                href="/teams"
+                className="inline-flex items-center min-h-[44px] py-2 hover:underline transition-colors touch-manipulation"
+                style={{ color: teamColor }}
+                aria-label="Browse all team transfer pages"
+              >
+                Teams
+              </Link>
+            </li>
+            <li aria-hidden="true" style={{ color: teamColor }}>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </li>
+            <li>
+              <span
+                className="inline-flex items-center min-h-[44px] py-2 font-semibold"
+                style={{ color: teamColor }}
+                aria-current="page"
+              >
+                {team.name}
+              </span>
+            </li>
+          </ol>
+        </nav>
 
         {/* Team Header */}
         <div
           className="rounded-lg shadow-md p-6 mb-6 text-white"
-          style={{ backgroundColor: teamColor }}
+          style={{ backgroundColor: teamColor, contain: 'layout style paint' }}
         >
           <div className="flex items-center gap-4">
-            <div className="relative h-28 w-28 bg-white rounded-full p-5">
+            <div className="relative h-28 w-28 flex-shrink-0 bg-white rounded-full p-5">
               <Image
                 src={getTeamLogo(team.id)}
                 alt={`${team.name} logo`}
-                fill
+                width={112}
+                height={112}
                 sizes="112px"
-                className="object-contain"
+                className="object-contain w-full h-full"
+                priority
               />
             </div>
-            <div>
+            <div className="min-w-0 flex-1">
               <h1 className="text-3xl sm:text-4xl font-bold">{team.name}</h1>
               <p className="text-lg opacity-90">{team.conference}</p>
             </div>
@@ -299,16 +404,16 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         </div>
 
         {/* Stats Summary */}
-        <div className="grid grid-cols-3 gap-4 mb-6">
-          <div className="bg-white rounded-lg shadow-md p-4">
+        <div className="grid grid-cols-3 gap-4 mb-6" style={{ contain: 'layout' }}>
+          <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
             <p className="text-sm text-gray-600 uppercase mb-1">Incoming</p>
             <p className="text-2xl font-bold text-green-600">{teamStats.incoming}</p>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-4">
+          <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
             <p className="text-sm text-gray-600 uppercase mb-1">Outgoing</p>
             <p className="text-2xl font-bold text-red-600">{teamStats.outgoing}</p>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-4">
+          <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
             <p className="text-sm text-gray-600 uppercase mb-1">Net Gain/Loss</p>
             <p className={`text-2xl font-bold ${teamStats.netGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {teamStats.netGain >= 0 ? '+' : ''}{teamStats.netGain}
@@ -317,17 +422,19 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         </div>
 
         {/* Filters */}
-        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6" style={{ contain: 'layout style' }}>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {/* Status Filter */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="status-filter" className="block text-sm font-semibold text-gray-700 mb-2">
                 Status
               </label>
               <select
+                id="status-filter"
                 value={selectedStatus}
-                onChange={(e) => setSelectedStatus(e.target.value as PlayerStatus | 'All')}
+                onChange={(e) => handleStatusChange(e.target.value as PlayerStatus | 'All')}
                 className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                aria-label="Filter by status"
               >
                 <option value="All">All</option>
                 <option value="Entered">Entered</option>
@@ -339,13 +446,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
             {/* Class Filter */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="class-filter" className="block text-sm font-semibold text-gray-700 mb-2">
                 Class
               </label>
               <select
+                id="class-filter"
                 value={selectedClass}
-                onChange={(e) => setSelectedClass(e.target.value as PlayerClass | 'All')}
+                onChange={(e) => handleClassChange(e.target.value as PlayerClass | 'All')}
                 className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                aria-label="Filter by class"
               >
                 <option value="All">All</option>
                 <option value="FR">FR</option>
@@ -358,13 +467,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
             {/* Position Filter */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="position-filter" className="block text-sm font-semibold text-gray-700 mb-2">
                 Position
               </label>
               <select
+                id="position-filter"
                 value={selectedPosition}
-                onChange={(e) => setSelectedPosition(e.target.value as PlayerPosition | 'All')}
+                onChange={(e) => handlePositionChange(e.target.value as PlayerPosition | 'All')}
                 className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                aria-label="Filter by position"
               >
                 <option value="All">All</option>
                 <option value="QB">QB</option>
@@ -388,79 +499,78 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
               </select>
             </div>
 
-            {/* Conference Filter */}
+            {/* Type Filter */}
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                Conference
+              <label htmlFor="type-filter" className="block text-sm font-semibold text-gray-700 mb-2">
+                Type
               </label>
               <select
-                value={selectedConference}
-                onChange={(e) => setSelectedConference(e.target.value as Conference | 'All')}
+                id="type-filter"
+                value={selectedType}
+                onChange={(e) => handleTypeChange(e.target.value as TransferType)}
                 className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                aria-label="Filter by transfer type"
               >
                 <option value="All">All</option>
-                <option value="SEC">SEC</option>
-                <option value="Big Ten">Big Ten</option>
-                <option value="Big 12">Big 12</option>
-                <option value="ACC">ACC</option>
-                <option value="Pac-12">Pac-12</option>
-                <option value="American">American</option>
-                <option value="Mountain West">Mountain West</option>
-                <option value="Sun Belt">Sun Belt</option>
-                <option value="MAC">MAC</option>
-                <option value="Conference USA">Conference USA</option>
-                <option value="Independent">Independent</option>
-                <option value="FCS">FCS</option>
+                <option value="Incoming">Incoming</option>
+                <option value="Outgoing">Outgoing</option>
               </select>
             </div>
           </div>
+
+          {/* Action Buttons */}
+          <div className="mt-4 flex flex-wrap gap-3">
+            {/* Export to CSV */}
+            <button
+              onClick={handleExport}
+              disabled={sortedPlayers.length === 0}
+              className="flex items-center gap-2 px-4 py-2.5 min-h-[44px] bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
+              aria-label="Export transfers to CSV"
+            >
+              <Download className="w-4 h-4" aria-hidden="true" />
+              Export to CSV
+            </button>
+
+            {/* Clear Filters */}
+            <button
+              onClick={handleClearFilters}
+              className={`flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-lg font-medium transition-colors touch-manipulation ${
+                hasActiveFilters
+                  ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
+                  : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
+              }`}
+              aria-label="Clear all filters"
+            >
+              <X className="w-4 h-4" aria-hidden="true" />
+              Clear Filters
+            </button>
+          </div>
         </div>
 
-        {/* Tabs */}
-        <div className="bg-white rounded-lg shadow-md mb-6">
-          <div className="border-b border-gray-200">
-            <nav className="flex">
-              <button
-                type="button"
-                onClick={() => setActiveTab('incoming')}
-                className={`px-6 py-4 text-sm font-medium border-b-2 transition-colors ${
-                  activeTab === 'incoming'
-                    ? 'border-blue-600 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
-              >
-                Incoming Transfers ({teamStats.incoming})
-              </button>
-              <button
-                type="button"
-                onClick={() => setActiveTab('outgoing')}
-                className={`px-6 py-4 text-sm font-medium border-b-2 transition-colors ${
-                  activeTab === 'outgoing'
-                    ? 'border-blue-600 text-blue-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
-              >
-                Outgoing Transfers ({teamStats.outgoing})
-              </button>
-            </nav>
-          </div>
-
-          <div className="p-6">
-            {sortedPlayers.length === 0 ? (
-              <div className="text-center py-12">
-                <p className="text-gray-500">
-                  No {activeTab} transfers found for {team.name}
-                </p>
-              </div>
-            ) : (
+        {/* Transfers Table */}
+        <div className="relative bg-white rounded-lg shadow-md p-6 mb-6" style={{ contentVisibility: 'auto' }}>
+          {isPending && (
+            <div className="absolute inset-0 bg-white bg-opacity-60 flex items-center justify-center z-10 rounded-lg">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+            </div>
+          )}
+          {sortedPlayers.length === 0 ? (
+            <div className="text-center py-12">
+              <p className="text-gray-500">
+                No transfers found for {team.name}
+                {hasActiveFilters && ' with the selected filters'}
+              </p>
+            </div>
+          ) : (
+            <div style={{ willChange: isPending ? 'contents' : 'auto' }}>
               <PlayerTable
                 players={sortedPlayers}
                 sortField={sortField}
                 sortDirection={sortDirection}
                 onSort={handleSort}
               />
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
 
