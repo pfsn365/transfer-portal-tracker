@@ -29,7 +29,7 @@ const statusDisplayNames: Record<string, string> = {
 const classes: (PlayerClass | 'All')[] = ['All', 'FR', 'SO', 'JR', 'SR'];
 const positions: (PlayerPosition | 'All')[] = [
   'All', 'QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'C',
-  'EDGE', 'DL', 'DT', 'LB', 'CB', 'S', 'DB', 'K', 'P', 'ATH'
+  'EDGE', 'DL', 'LB', 'CB', 'S', 'K', 'P', 'LS', 'ATH'
 ];
 const conferences: (Conference | 'All')[] = [
   'All', 'SEC', 'Big Ten', 'Big 12', 'ACC', 'Pac-12',

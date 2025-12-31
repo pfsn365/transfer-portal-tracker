@@ -4,7 +4,7 @@ export type PlayerClass = 'FR' | 'SO' | 'JR' | 'SR' | 'GR' | 'RS-FR' | 'RS-SO' |
 
 export type PlayerPosition =
   | 'QB' | 'RB' | 'WR' | 'TE' | 'OL' | 'OT' | 'OG' | 'C'
-  | 'EDGE' | 'DL' | 'DT' | 'LB' | 'CB' | 'S' | 'DB'
+  | 'EDGE' | 'DL' | 'LB' | 'CB' | 'S'
   | 'K' | 'P' | 'LS' | 'ATH';
 
 export type Conference =
