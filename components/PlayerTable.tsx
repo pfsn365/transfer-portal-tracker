@@ -11,7 +11,7 @@ import { getWatchlist, addToWatchlist, removeFromWatchlist } from '@/utils/watch
 // Get position-specific impact grade URL (only for positions with ranking pages)
 function getPositionImpactUrl(position: PlayerPosition): string | null {
   // Special case URLs that don't follow the standard pattern
-  if (position === 'OL' || position === 'OT' || position === 'OG' || position === 'C') {
+  if (position === 'OT' || position === 'IOL') {
     return 'https://www.profootballnetwork.com/cfb-player-ol-rankings-impact';
   }
   if (position === 'S') {
@@ -26,10 +26,9 @@ function getPositionImpactUrl(position: PlayerPosition): string | null {
     'TE': 'te',
     'EDGE': 'edge',
     'DL': 'dl',
-    'DT': 'dt',
     'LB': 'lb',
     'CB': 'cb',
-    // No ranking pages for: DB, K, P, ATH
+    // No ranking pages for: K, P, LS, ATH
   };
 
   const posSlug = positionMap[position];

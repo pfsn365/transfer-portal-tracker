@@ -45,7 +45,7 @@ function mapPosition(apiPosition: string): PlayerPosition {
 
   // Common positions
   const validPositions: PlayerPosition[] = [
-    'QB', 'RB', 'WR', 'TE', 'OT', 'iOL',
+    'QB', 'RB', 'WR', 'TE', 'OT', 'IOL',
     'EDGE', 'DL', 'LB', 'CB', 'S',
     'K', 'P', 'LS', 'ATH'
   ];

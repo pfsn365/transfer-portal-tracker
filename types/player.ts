@@ -3,7 +3,7 @@ export type PlayerStatus = 'Entered' | 'Committed' | 'Withdrawn' | 'Enrolled';
 export type PlayerClass = 'FR' | 'SO' | 'JR' | 'SR' | 'GR' | 'RS-FR' | 'RS-SO' | 'RS-JR' | 'RS-SR' | 'RS-GR';
 
 export type PlayerPosition =
-  | 'QB' | 'RB' | 'WR' | 'TE' | 'OT' | 'iOL'
+  | 'QB' | 'RB' | 'WR' | 'TE' | 'OT' | 'IOL'
   | 'EDGE' | 'DL' | 'LB' | 'CB' | 'S'
   | 'K' | 'P' | 'LS' | 'ATH';
 
