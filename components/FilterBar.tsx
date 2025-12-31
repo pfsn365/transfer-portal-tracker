@@ -26,7 +26,7 @@ const statusDisplayNames: Record<string, string> = {
   'Enrolled': 'Enrolled',
   'Withdrawn': 'Withdrawn',
 };
-const classes: (PlayerClass | 'All')[] = ['All', 'FR', 'SO', 'JR', 'SR', 'GR'];
+const classes: (PlayerClass | 'All')[] = ['All', 'FR', 'SO', 'JR', 'SR'];
 const positions: (PlayerPosition | 'All')[] = [
   'All', 'QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'C',
   'EDGE', 'DL', 'DT', 'LB', 'CB', 'S', 'DB', 'K', 'P', 'ATH'

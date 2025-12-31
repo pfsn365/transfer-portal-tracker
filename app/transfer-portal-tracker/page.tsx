@@ -14,6 +14,7 @@ import Pagination from '@/components/Pagination';
 import { getTeamById } from '@/data/teams';
 import { getWatchlist } from '@/utils/watchlist';
 import { exportToCSV } from '@/utils/csvExport';
+import { isFCSConference } from '@/utils/conferenceHelpers';
 import { Download, Star, X, ChevronDown, ChevronUp, Filter } from 'lucide-react';
 import Link from 'next/link';
 
@@ -161,9 +162,21 @@ export default function TransferPortalTracker() {
         if (!matchesBase && !matchesRedshirt) return false;
       }
       if (selectedPosition !== 'All' && player.position !== selectedPosition) return false;
-      if (selectedConference !== 'All' &&
-          player.formerConference !== selectedConference &&
-          player.newConference !== selectedConference) return false;
+
+      // Conference filter - handle FCS as a special case
+      if (selectedConference !== 'All') {
+        if (selectedConference === 'FCS') {
+          // When FCS is selected, show all players from FCS conferences
+          const formerIsFCS = isFCSConference(player.formerConference);
+          const newIsFCS = player.newConference ? isFCSConference(player.newConference) : false;
+          if (!formerIsFCS && !newIsFCS) return false;
+        } else {
+          // Regular conference filter
+          if (player.formerConference !== selectedConference &&
+              player.newConference !== selectedConference) return false;
+        }
+      }
+
       return true;
     });
   }, [players, selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery, showWatchlistOnly, watchlist]);
