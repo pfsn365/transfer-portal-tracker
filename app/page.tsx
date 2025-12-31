@@ -343,7 +343,7 @@ export default function TransferPortalTracker() {
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* Collapsible Search & Filter Section */}
         <div className="bg-white rounded-lg shadow-md mb-6">
-          <div className="flex items-center justify-between p-4 sm:p-6 gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 p-4 sm:p-6">
             <button
               onClick={() => setFiltersExpanded(!filtersExpanded)}
               className="flex items-center gap-3 text-left hover:opacity-80 transition-opacity flex-1 min-w-0"
@@ -356,18 +356,20 @@ export default function TransferPortalTracker() {
                 </span>
               )}
               {filtersExpanded ? (
-                <ChevronUp className="w-5 h-5 text-gray-600 flex-shrink-0" />
+                <ChevronUp className="w-5 h-5 text-gray-600 flex-shrink-0 ml-auto" />
               ) : (
-                <ChevronDown className="w-5 h-5 text-gray-600 flex-shrink-0" />
+                <ChevronDown className="w-5 h-5 text-gray-600 flex-shrink-0 ml-auto" />
               )}
             </button>
 
             <Link
               href="/teams"
-              className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors whitespace-nowrap text-sm sm:text-base"
+              className="flex flex-col sm:flex-row items-center justify-center px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-center text-sm sm:text-base leading-tight sm:whitespace-nowrap"
               aria-label="Browse all team transfer pages"
             >
-              Browse Team Transfer Pages
+              <span className="sm:hidden">Browse Team</span>
+              <span className="sm:hidden">Transfer Pages</span>
+              <span className="hidden sm:inline">Browse Team Transfer Pages</span>
             </Link>
           </div>
 
