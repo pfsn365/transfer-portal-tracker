@@ -140,7 +140,7 @@ export const allTeams: Team[] = [
   { id: 'kennesaw state', name: 'Kennesaw State Owls', slug: 'kennesaw-state-owls', conference: 'Conference USA' },
   { id: 'liberty', name: 'Liberty Flames', slug: 'liberty-flames', conference: 'Conference USA' },
   { id: 'louisiana tech', name: 'Louisiana Tech Bulldogs', slug: 'louisiana-tech-bulldogs', conference: 'Conference USA' },
-  { id: 'middle tennessee', name: 'Middle Tennessee Blue Raiders', slug: 'middle-tennessee-blue-raiders', conference: 'Conference USA' },
+  { id: 'middle tennessee state', name: 'Middle Tennessee Blue Raiders', slug: 'middle-tennessee-blue-raiders', conference: 'Conference USA' },
   { id: 'new mexico state', name: 'New Mexico State Aggies', slug: 'new-mexico-state-aggies', conference: 'Conference USA' },
   { id: 'sam houston', name: 'Sam Houston Bearkats', slug: 'sam-houston-bearkats', conference: 'Conference USA' },
   { id: 'utep', name: 'UTEP Miners', slug: 'utep-miners', conference: 'Conference USA' },

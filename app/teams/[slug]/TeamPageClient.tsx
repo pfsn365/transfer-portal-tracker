@@ -95,20 +95,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     if (!team) return [];
     return players.filter(player => {
       // Check if player is incoming or outgoing for this team
-      // Use flexible matching to handle variations like "Middle Tennessee" vs "Middle Tennessee State"
       const teamNameLower = team.name.toLowerCase();
       const teamIdLower = team.id.toLowerCase();
       const newSchoolLower = (player.newSchool || '').toLowerCase();
       const formerSchoolLower = player.formerSchool.toLowerCase();
 
       const isIncoming = newSchoolLower === teamIdLower ||
-                        newSchoolLower === teamNameLower ||
-                        newSchoolLower.includes(teamIdLower) ||
-                        teamIdLower.includes(newSchoolLower);
+                        newSchoolLower === teamNameLower;
       const isOutgoing = formerSchoolLower === teamIdLower ||
-                        formerSchoolLower === teamNameLower ||
-                        formerSchoolLower.includes(teamIdLower) ||
-                        teamIdLower.includes(formerSchoolLower);
+                        formerSchoolLower === teamNameLower;
 
       // Apply Type filter
       if (selectedType === 'Incoming' && !isIncoming) return false;
@@ -141,9 +136,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     return players.filter(player => {
       const newSchoolLower = (player.newSchool || '').toLowerCase();
       return newSchoolLower === teamIdLower ||
-             newSchoolLower === teamNameLower ||
-             newSchoolLower.includes(teamIdLower) ||
-             teamIdLower.includes(newSchoolLower);
+             newSchoolLower === teamNameLower;
     }).length;
   }, [players, team]);
 
@@ -155,9 +148,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     return players.filter(player => {
       const formerSchoolLower = player.formerSchool.toLowerCase();
       return formerSchoolLower === teamIdLower ||
-             formerSchoolLower === teamNameLower ||
-             formerSchoolLower.includes(teamIdLower) ||
-             teamIdLower.includes(formerSchoolLower);
+             formerSchoolLower === teamNameLower;
     }).length;
   }, [players, team]);
 
