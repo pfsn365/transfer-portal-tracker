@@ -107,7 +107,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Preload critical assets */}
-        <link rel="preload" as="image" href="https://a.espncdn.com/i/teamlogos/ncaa/500/default-team-logo-500.png" />
+        <link rel="preload" as="image" href="https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ncaa.png" />
 
         {/* Font display optimization */}
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" as="style" />
