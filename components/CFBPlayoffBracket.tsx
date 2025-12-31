@@ -194,8 +194,8 @@ function MatchupCard({ matchup, compact = false, userPick, onPickWinner, canPick
     team2Winner = team2.score > team1.score;
   }
 
-  const canPickTeam1 = canPick && !matchup.completed && team1 && team1.name && team1.name !== 'TBD';
-  const canPickTeam2 = canPick && !matchup.completed && team2 && team2.name && team2.name !== 'TBD';
+  const canPickTeam1 = !!(canPick && !matchup.completed && team1 && team1.name && team1.name !== 'TBD');
+  const canPickTeam2 = !!(canPick && !matchup.completed && team2 && team2.name && team2.name !== 'TBD');
 
   return (
     <div className={`bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden`}>
