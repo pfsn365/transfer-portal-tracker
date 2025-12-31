@@ -1,29 +1,45 @@
 import Link from 'next/link';
 import PFNHeader from '@/components/PFNHeader';
 import Footer from '@/components/Footer';
+import CFBPlayoffBracket from '@/components/CFBPlayoffBracket';
+import CFBScheduleWidget from '@/components/CFBScheduleWidget';
 
 export default function CFBHQPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       <PFNHeader />
 
-      {/* Header Spacer */}
-      <div className="h-[50px] md:h-[34.5px]" />
-
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-6">
-            CFB HQ
+      <div className="text-white h-[132px] flex items-center justify-center" style={{ backgroundColor: '#800000' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+            College Football HQ
           </h1>
-          <p className="text-xl sm:text-2xl text-center text-blue-100 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-200">
             Your destination for college football tools and data
           </p>
         </div>
       </div>
 
+      {/* Raptive Header Ad */}
+      <div className="container mx-auto px-4 min-h-[110px]">
+        <div className="raptive-pfn-header-90"></div>
+      </div>
+
+      {/* Playoff Bracket & Schedule Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="flex flex-col lg:flex-row gap-6 justify-center lg:items-stretch">
+          <div className="shrink-0">
+            <CFBPlayoffBracket />
+          </div>
+          <div className="w-full lg:flex-1 lg:max-w-[400px]">
+            <CFBScheduleWidget />
+          </div>
+        </div>
+      </div>
+
       {/* Tools Grid */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-10">
           Tools & Resources
         </h2>
