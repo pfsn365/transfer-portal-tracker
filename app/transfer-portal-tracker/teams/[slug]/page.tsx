@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url,
-      siteName: 'Pro Football Network',
+      siteName: 'PFSN',
       images: [
         {
           url: imageUrl,
