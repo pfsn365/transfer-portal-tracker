@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface MenuItem {
   label: string;
@@ -8,7 +8,18 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
-const menuData: MenuItem[] = [
+interface APIMenuItem {
+  id: number;
+  title: string;
+  url: string;
+  target: string;
+  classes: string;
+  order: number;
+  children?: APIMenuItem[];
+}
+
+// Fallback menu data in case API fails
+const fallbackMenuData: MenuItem[] = [
   {
     label: 'CFB',
     href: 'https://www.profootballnetwork.com/cfb-hq/',
@@ -16,151 +27,83 @@ const menuData: MenuItem[] = [
       { label: 'CFB Transfer Portal Tracker', href: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker' },
       { label: 'CFB Playoff Predictor', href: 'https://www.profootballnetwork.com/college-football-playoff-predictor' },
       { label: 'CFB Playoff Meter', href: 'https://www.profootballnetwork.com/cfb-fpm/' },
-      {
-        label: 'CFB Offense Impact',
-        href: 'https://profootballnetwork.com/cfb-offense-rankings-impact/',
-        children: [
-          { label: 'CFB QB Impact', href: 'https://profootballnetwork.com/cfb-qb-rankings-impact/' },
-          { label: 'CFB RB Impact', href: 'https://profootballnetwork.com/cfb-rb-rankings-impact/' },
-          { label: 'CFB WR Impact', href: 'https://profootballnetwork.com/cfb-wr-rankings-impact/' },
-          { label: 'CFB TE Impact', href: 'https://profootballnetwork.com/cfb-te-rankings-impact/' },
-          { label: 'CFB Team OL Impact', href: 'https://profootballnetwork.com/cfb-team-ol-rankings-impact/' },
-          { label: 'CFB Player OL Impact', href: 'https://profootballnetwork.com/cfb-player-ol-rankings-impact/' },
-        ]
-      },
-      {
-        label: 'CFB Defense Impact',
-        href: 'https://profootballnetwork.com/cfb-defense-rankings-impact/',
-        children: [
-          { label: 'CFB DT Impact', href: 'https://profootballnetwork.com/cfb-dt-rankings-impact/' },
-          { label: 'CFB EDGE Impact', href: 'https://profootballnetwork.com/cfb-edge-rankings-impact/' },
-          { label: 'CFB LB Impact', href: 'https://profootballnetwork.com/cfb-lb-rankings-impact/' },
-          { label: 'CFB CB Impact', href: 'https://profootballnetwork.com/cfb-cb-rankings-impact/' },
-          { label: 'CFB Safety Impact', href: 'https://profootballnetwork.com/cfb-safety-rankings-impact/' },
-        ]
-      },
     ]
   },
   {
     label: 'Fantasy',
     href: 'https://www.profootballnetwork.com/fantasy/football',
-    children: [
-      { label: 'Fantasy Trade Analyzer', href: 'https://www.profootballnetwork.com/fantasy-football-trade-analyzer' },
-      { label: 'DFS Lineup Optimizer', href: 'https://www.profootballnetwork.com/nfl-dfs-optimizer-lineup-generator/' },
-      { label: 'Fantasy Start/Sit Optimizer', href: 'https://www.profootballnetwork.com/who-should-i-start-fantasy-optimizer' },
-      { label: 'Fantasy Waiver Wire Assistant', href: 'https://www.profootballnetwork.com/fantasy-football-waiver-wire' },
-      { label: 'Fantasy Team Name Generator', href: 'https://www.profootballnetwork.com/fantasy-football-team-name-generator' },
-      {
-        label: 'Fantasy Rankings',
-        href: '#',
-        children: [
-          { label: '2025 Fantasy PPR Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/overall-rankings' },
-          { label: '2025 Fantasy WR Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/wr-rankings-ppr' },
-          { label: '2025 Fantasy RB Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/rb-rankings-ppr' },
-          { label: '2025 Fantasy TE Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/te-rankings-ppr' },
-          { label: '2025 Fantasy QB Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/qb-rankings-ppr' },
-          { label: '2025 Fantasy Kicker Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/kicker-rankings' },
-          { label: '2025 Fantasy Defense Rankings', href: 'https://www.profootballnetwork.com/fantasy/football/defense-rankings' },
-          { label: 'Fantasy Dynasty Rankings', href: 'https://www.profootballnetwork.com/dynasty-fantasy-football-rankings/' },
-        ]
-      },
-      { label: 'Fantasy Football MDS', href: 'https://www.profootballnetwork.com/fantasy-football-mock-draft-simulator/' },
-      { label: 'NFL Betting Odds Calculator', href: 'https://www.profootballnetwork.com/nfl-betting/betting-odds-calculator/' },
-      { label: 'NFL Betting Parlay Calculator', href: 'https://www.profootballnetwork.com/nfl-betting/parlays-calculator/' },
-    ]
   },
   {
     label: 'MLB',
     href: 'https://www.profootballnetwork.com/mlb/',
-    children: [
-      { label: 'MLB Playoff Predictor', href: 'https://www.profootballnetwork.com/mlb-playoff-predictor/' },
-    ]
   },
   {
     label: 'NBA',
     href: 'https://www.profootballnetwork.com/nba/',
-    children: [
-      { label: 'NBA Mock Draft Simulator', href: 'https://www.profootballnetwork.com/nba-mock-draft-simulator' },
-      { label: 'NBA Playoff Predictor', href: 'https://www.profootballnetwork.com/nba-playoff-predictor/' },
-    ]
   },
   {
     label: 'NFL',
     href: 'https://www.profootballnetwork.com/nfl/',
-    children: [
-      { label: 'NFL Mock Draft Simulator', href: 'https://www.profootballnetwork.com/mockdraft' },
-      { label: 'NFL Playoff Predictor', href: 'https://www.profootballnetwork.com/nfl-playoff-predictor' },
-      { label: 'Ultimate GM Simulator', href: 'https://www.profootballnetwork.com/nfl-ultimate-gm-simulator/' },
-      { label: 'NFL Draft Big Board Builder', href: 'https://www.profootballnetwork.com/nfl-draft-big-board-builder' },
-      { label: 'NFL Offseason Manager', href: 'https://www.profootballnetwork.com/nfl-offseason-salary-cap-free-agency-manager' },
-      {
-        label: 'Teams',
-        href: '#',
-        children: [
-          { label: 'AFC East', href: '#' },
-          { label: 'AFC North', href: '#' },
-          { label: 'AFC South', href: '#' },
-          { label: 'AFC West', href: '#' },
-          { label: 'NFC East', href: '#' },
-          { label: 'NFC North', href: '#' },
-          { label: 'NFC South', href: '#' },
-          { label: 'NFC West', href: '#' },
-        ]
-      },
-      { label: 'NFL News and Analysis', href: 'https://www.profootballnetwork.com/nfl/' },
-      { label: 'Football Playoff Meter (FPM)', href: 'https://www.profootballnetwork.com/nfl-fpm/' },
-      {
-        label: 'NFL Impact Rankings',
-        href: 'https://www.profootballnetwork.com/nfl-qb-rankings-impact/',
-        children: [
-          { label: 'Offense Impact Rankings', href: 'https://profootballnetwork.com/nfl-offense-rankings-impact/' },
-          { label: 'Defense Impact Rankings', href: 'https://profootballnetwork.com/nfl-defense-rankings-impact/' },
-        ]
-      },
-      { label: 'NFL News Tracker', href: 'https://www.profootballnetwork.com/nfl-player-news-injuries-transactions-fantasy/' },
-      { label: 'NFL Salary Cap Tracker', href: 'https://www.profootballnetwork.com/nfl-salary-cap-space-by-team' },
-      { label: 'NFL Transactions', href: 'https://www.profootballnetwork.com/nfl-transactions' },
-      { label: 'NFL Depth Charts', href: 'https://www.profootballnetwork.com/nfl/depth-chart/' },
-      {
-        label: 'NFL Draft',
-        href: 'https://www.profootballnetwork.com/nfl-draft-hq/',
-        children: [
-          { label: 'NFL Mock Draft Simulator', href: 'https://www.profootballnetwork.com/mock-draft-simulator/' },
-          { label: 'PFSN NFL Draft Rankings', href: 'https://www.profootballnetwork.com/nfl-draft-hq/pfsn-big-board/' },
-          { label: '2026 NFL Draft Order', href: 'https://www.profootballnetwork.com/nfl-draft-hq/draft-order/' },
-        ]
-      },
-      { label: 'NFL Injuries', href: 'https://www.profootballnetwork.com/nfl-injury-report' },
-      { label: 'NFL Schedule', href: 'https://www.profootballnetwork.com/nfl/schedule/' },
-      { label: 'NFL Standings', href: 'https://www.profootballnetwork.com/nfl/standings/' },
-    ]
   },
   {
     label: 'Soccer',
     href: 'https://www.profootballnetwork.com/soccer/',
-    children: [
-      { label: 'Soccer Homepage', href: 'https://www.profootballnetwork.com/soccer/' },
-      { label: 'World Cup Simulator', href: 'https://www.profootballnetwork.com/fifa-world-cup-simulator/' },
-    ]
   },
   {
     label: 'Games',
     href: '#',
-    children: [
-      { label: 'NBA Player Guessing Game', href: 'https://www.profootballnetwork.com/nba-player-guessing-game' },
-      { label: 'NFL Connections', href: 'https://www.profootballnetwork.com/games/nfl-connections/' },
-      { label: 'NFL Player Guessing Game', href: 'https://www.profootballnetwork.com/nfl-player-guessing-game/' },
-      { label: 'NFL Draft Prospect Guessing Game', href: 'https://www.profootballnetwork.com/nfl-draft-prospect-guessing-game/' },
-      { label: 'NFL Word Search', href: 'https://www.profootballnetwork.com/nfl-wordsearch' },
-      { label: 'NFL Wordle', href: 'https://www.profootballnetwork.com/nfl-word-fumble-player-name-game/' },
-    ]
   },
 ];
+
+// Transform API response (already nested) to MenuItem format
+function transformMenuData(apiItems: APIMenuItem[]): MenuItem[] {
+  function transformItem(item: APIMenuItem): MenuItem {
+    const menuItem: MenuItem = {
+      label: item.title,
+      href: item.url || '#',
+    };
+
+    if (item.children && item.children.length > 0) {
+      menuItem.children = item.children.map(transformItem);
+    }
+
+    return menuItem;
+  }
+
+  return apiItems.map(transformItem);
+}
 
 export default function PFNHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
+  const [menuData, setMenuData] = useState<MenuItem[]>(fallbackMenuData);
+
+  useEffect(() => {
+    async function fetchMenu() {
+      try {
+        const response = await fetch('https://www.profootballnetwork.com/wp-json/pfsn/v1/menu/54', {
+          next: { revalidate: 3600 } // Cache for 1 hour
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch menu');
+        }
+
+        const data: APIMenuItem[] = await response.json();
+        const transformedMenu = transformMenuData(data);
+
+        if (transformedMenu.length > 0) {
+          setMenuData(transformedMenu);
+        }
+      } catch (error) {
+        console.error('Error fetching menu:', error);
+        // Keep using fallback menu data
+      }
+    }
+
+    fetchMenu();
+  }, []);
 
   return (
     <>
