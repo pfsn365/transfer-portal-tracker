@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @import "../styles/pfsn-header-footer.css";
 
-iframe[id^="google_ads_iframe"] {
-    display: unset;
-}
-
 :root {
   --background: #f9fafb;
   --foreground: #111827;
@@ -345,7 +341,7 @@ body {
 }
 
 /* Raptive Header Ad Restriction */
-.raptive-pfn-header {
+.raptive-pfn-header-90 {
   height: 92px;
   max-height: 92px;
   overflow: hidden;

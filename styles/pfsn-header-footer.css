@@ -1,6 +1,10 @@
 /* PFSN Header and Footer Styles */
 /* Note: Fonts (Roboto, Open Sans) are loaded via Google Fonts in layout.tsx */
 
+iframe[id^="google_ads_iframe"] {
+    display: unset;
+}
+
 /* Reset for PFSN components */
 .pfsn-header-wrap *,
 .pfsn-footer * {

@@ -337,7 +337,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
 
       {/* Raptive Header Ad - Reserve space to prevent CLS */}
       <div className="container mx-auto px-4">
-        <div className="raptive-pfn-header min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
+        <div className="raptive-pfn-header-90 min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
