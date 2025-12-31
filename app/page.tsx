@@ -343,25 +343,33 @@ export default function TransferPortalTracker() {
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* Collapsible Search & Filter Section */}
         <div className="bg-white rounded-lg shadow-md mb-6">
-          <button
-            onClick={() => setFiltersExpanded(!filtersExpanded)}
-            className="w-full flex items-center justify-between p-4 sm:p-6 text-left hover:bg-gray-50 transition-colors"
-          >
-            <div className="flex items-center gap-3">
-              <Filter className="w-5 h-5 text-gray-600" />
+          <div className="flex items-center justify-between p-4 sm:p-6 gap-3">
+            <button
+              onClick={() => setFiltersExpanded(!filtersExpanded)}
+              className="flex items-center gap-3 text-left hover:opacity-80 transition-opacity flex-1 min-w-0"
+            >
+              <Filter className="w-5 h-5 text-gray-600 flex-shrink-0" />
               <span className="font-semibold text-gray-800">Search & Filters</span>
               {hasActiveFilters && (
                 <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
                   Active
                 </span>
               )}
-            </div>
-            {filtersExpanded ? (
-              <ChevronUp className="w-5 h-5 text-gray-600" />
-            ) : (
-              <ChevronDown className="w-5 h-5 text-gray-600" />
-            )}
-          </button>
+              {filtersExpanded ? (
+                <ChevronUp className="w-5 h-5 text-gray-600 flex-shrink-0" />
+              ) : (
+                <ChevronDown className="w-5 h-5 text-gray-600 flex-shrink-0" />
+              )}
+            </button>
+
+            <Link
+              href="/teams"
+              className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors whitespace-nowrap text-sm sm:text-base"
+              aria-label="Browse all team transfer pages"
+            >
+              Browse Team Transfer Pages
+            </Link>
+          </div>
 
           {filtersExpanded && (
             <div className="px-4 sm:px-6 pb-4 sm:pb-6 border-t border-gray-200">
@@ -458,17 +466,6 @@ export default function TransferPortalTracker() {
               </div>
             </div>
           )}
-        </div>
-
-        {/* Browse Team Transfer Pages */}
-        <div className="mb-6 flex justify-end">
-          <Link
-            href="/teams"
-            className="flex items-center px-4 py-2 bg-blue-600 text-white border-2 border-blue-600 rounded-lg font-medium hover:bg-blue-700 hover:border-blue-700 transition-colors"
-            aria-label="Browse all team transfer pages"
-          >
-            Browse Team Transfer Pages
-          </Link>
         </div>
 
         <div className="mt-6">
