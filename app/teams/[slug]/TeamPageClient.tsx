@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
 import { getTeamBySlug } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
@@ -24,6 +25,11 @@ type TransferType = 'All' | 'Incoming' | 'Outgoing';
 
 export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const team = getTeamBySlug(slug);
+
+  // If team not found, show 404 page
+  if (!team) {
+    notFound();
+  }
 
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(true);
@@ -89,10 +95,20 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     if (!team) return [];
     return players.filter(player => {
       // Check if player is incoming or outgoing for this team
-      const isIncoming = player.newSchool?.toLowerCase() === team.name.toLowerCase() ||
-                        player.newSchool?.toLowerCase() === team.id.toLowerCase();
-      const isOutgoing = player.formerSchool?.toLowerCase() === team.name.toLowerCase() ||
-                        player.formerSchool?.toLowerCase() === team.id.toLowerCase();
+      // Use flexible matching to handle variations like "Middle Tennessee" vs "Middle Tennessee State"
+      const teamNameLower = team.name.toLowerCase();
+      const teamIdLower = team.id.toLowerCase();
+      const newSchoolLower = (player.newSchool || '').toLowerCase();
+      const formerSchoolLower = player.formerSchool.toLowerCase();
+
+      const isIncoming = newSchoolLower === teamIdLower ||
+                        newSchoolLower === teamNameLower ||
+                        newSchoolLower.includes(teamIdLower) ||
+                        teamIdLower.includes(newSchoolLower);
+      const isOutgoing = formerSchoolLower === teamIdLower ||
+                        formerSchoolLower === teamNameLower ||
+                        formerSchoolLower.includes(teamIdLower) ||
+                        teamIdLower.includes(formerSchoolLower);
 
       // Apply Type filter
       if (selectedType === 'Incoming' && !isIncoming) return false;
@@ -119,18 +135,30 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   // Calculate incoming and outgoing counts for stats
   const incomingCount = useMemo(() => {
     if (!team) return 0;
-    return players.filter(player =>
-      player.newSchool?.toLowerCase() === team.name.toLowerCase() ||
-      player.newSchool?.toLowerCase() === team.id.toLowerCase()
-    ).length;
+    const teamNameLower = team.name.toLowerCase();
+    const teamIdLower = team.id.toLowerCase();
+
+    return players.filter(player => {
+      const newSchoolLower = (player.newSchool || '').toLowerCase();
+      return newSchoolLower === teamIdLower ||
+             newSchoolLower === teamNameLower ||
+             newSchoolLower.includes(teamIdLower) ||
+             teamIdLower.includes(newSchoolLower);
+    }).length;
   }, [players, team]);
 
   const outgoingCount = useMemo(() => {
     if (!team) return 0;
-    return players.filter(player =>
-      player.formerSchool?.toLowerCase() === team.name.toLowerCase() ||
-      player.formerSchool?.toLowerCase() === team.id.toLowerCase()
-    ).length;
+    const teamNameLower = team.name.toLowerCase();
+    const teamIdLower = team.id.toLowerCase();
+
+    return players.filter(player => {
+      const formerSchoolLower = player.formerSchool.toLowerCase();
+      return formerSchoolLower === teamIdLower ||
+             formerSchoolLower === teamNameLower ||
+             formerSchoolLower.includes(teamIdLower) ||
+             teamIdLower.includes(formerSchoolLower);
+    }).length;
   }, [players, team]);
 
   // Sort players

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "CFB Transfer Portal Tracker - College Football Portal News",
     template: "%s | CFB Transfer Portal Tracker"
   },
-  description: "Track all college football transfer portal activity in real-time. Filter by status, school, position, class, and conference. The most comprehensive CFB transfer portal tracker.",
+  description: "Track all college football transfer portal activity in real-time with hourly updates. Filter by status, school, position, class, and conference. The most comprehensive CFB transfer portal tracker with live data.",
   keywords: [
     "CFB Transfer Portal",
     "College Football Transfer Portal",
@@ -27,6 +27,21 @@ export const metadata: Metadata = {
   authors: [{ name: "Pro Football Network" }],
   creator: "Pro Football Network",
   publisher: "Pro Football Network",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
+  manifest: '/manifest.json',
   robots: {
     index: true,
     follow: true,
@@ -43,7 +58,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker',
     title: 'CFB Transfer Portal Tracker - College Football Portal News',
-    description: 'Track all college football transfer portal activity in real-time. Filter by status, school, position, class, and conference.',
+    description: 'Track all college football transfer portal activity in real-time with hourly updates. Filter by status, school, position, class, and conference. Live transfer portal data.',
     siteName: 'CFB Transfer Portal Tracker',
     images: [
       {
@@ -57,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CFB Transfer Portal Tracker - College Football Portal News',
-    description: 'Track all college football transfer portal activity in real-time. The most comprehensive CFB transfer portal tracker.',
+    description: 'Track all college football transfer portal activity in real-time with hourly updates. The most comprehensive CFB transfer portal tracker with live data.',
     creator: '@PFN365',
     site: '@PFN365',
     images: ['/og-image.png'],

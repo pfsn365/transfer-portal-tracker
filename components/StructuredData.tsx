@@ -89,7 +89,7 @@ export default function StructuredData() {
       {
         "@type": "Dataset",
         "name": "College Football Transfer Portal Database",
-        "description": "Real-time database of college football players in the transfer portal, including status, former school, new school, position, class, and conference information.",
+        "description": "Real-time database of college football players in the transfer portal, including status, former school, new school, position, class, and conference information. Updated hourly with live transfer portal data.",
         "url": "https://profootballnetwork.com/cfb-hq/transfer-portal-tracker",
         "keywords": [
           "CFB Transfer Portal",
@@ -104,7 +104,17 @@ export default function StructuredData() {
         "includedInDataCatalog": {
           "@type": "DataCatalog",
           "name": "Pro Football Network Sports Data"
-        }
+        },
+        "temporalCoverage": "2024/..",
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "encodingFormat": "text/csv",
+            "contentUrl": "https://profootballnetwork.com/cfb-hq/transfer-portal-tracker"
+          }
+        ],
+        "isAccessibleForFree": true,
+        "license": "https://profootballnetwork.com/terms-of-service"
       }
     ]
   };
