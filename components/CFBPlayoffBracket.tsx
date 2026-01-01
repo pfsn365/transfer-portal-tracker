@@ -96,12 +96,12 @@ const initialPlayoffData: { [key: string]: Matchup } = {
   },
   'qf-3': {
     id: 'qf-3',
-    team1: { seed: 2, name: 'Ohio State' },
-    team2: { seed: 10, name: 'Miami' },
+    team1: { seed: 2, name: 'Ohio State', score: 14 },
+    team2: { seed: 10, name: 'Miami', score: 24 },
     round: 'Quarterfinal',
     location: 'Cotton Bowl',
     date: 'Dec 31',
-    completed: false,
+    completed: true,
   },
   'qf-4': {
     id: 'qf-4',
@@ -110,7 +110,7 @@ const initialPlayoffData: { [key: string]: Matchup } = {
     round: 'Quarterfinal',
     location: 'Sugar Bowl',
     date: 'Jan 1',
-    completed: false,
+    completed: true,
   },
   // Semifinals (Jan 9-10) - Orange & Cotton Bowls
   'sf-1': {
@@ -305,6 +305,11 @@ export default function CFBPlayoffBracket() {
       if (winner) {
         const { nextMatchup, slot } = bracketProgression[matchupId];
         if (newData[nextMatchup]) {
+          const existingTeam = newData[nextMatchup][slot];
+          // Preserve existing team data if it has a score (game already has results entered)
+          if (existingTeam?.score !== undefined) {
+            return;
+          }
           // Don't carry score forward - only seed and name
           newData[nextMatchup][slot] = { seed: winner.seed, name: winner.name };
         }
