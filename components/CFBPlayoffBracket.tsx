@@ -78,21 +78,21 @@ const initialPlayoffData: { [key: string]: Matchup } = {
   // Quarterfinals (Dec 31 - Jan 1) - NY6 Bowls
   'qf-1': {
     id: 'qf-1',
-    team1: { seed: 1, name: 'Indiana' },
-    team2: { seed: 9, name: 'Alabama' },
+    team1: { seed: 1, name: 'Indiana', score: 38 },
+    team2: { seed: 9, name: 'Alabama', score: 3 },
     round: 'Quarterfinal',
     location: 'Rose Bowl',
     date: 'Jan 1',
-    completed: false,
+    completed: true,
   },
   'qf-2': {
     id: 'qf-2',
-    team1: { seed: 4, name: 'Texas Tech' },
-    team2: { seed: 5, name: 'Oregon' },
+    team1: { seed: 4, name: 'Texas Tech', score: 0 },
+    team2: { seed: 5, name: 'Oregon', score: 23 },
     round: 'Quarterfinal',
     location: 'Orange Bowl',
     date: 'Jan 1',
-    completed: false,
+    completed: true,
   },
   'qf-3': {
     id: 'qf-3',
@@ -105,8 +105,8 @@ const initialPlayoffData: { [key: string]: Matchup } = {
   },
   'qf-4': {
     id: 'qf-4',
-    team1: { seed: 3, name: 'Georgia' },
-    team2: { seed: 6, name: 'Ole Miss' },
+    team1: { seed: 3, name: 'Georgia', score: 34 },
+    team2: { seed: 6, name: 'Ole Miss', score: 39 },
     round: 'Quarterfinal',
     location: 'Sugar Bowl',
     date: 'Jan 1',
