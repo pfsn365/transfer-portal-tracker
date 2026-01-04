@@ -111,7 +111,69 @@ export function transformAPIData(data: string[][]): TransferPlayer[] {
   const dataRows = data.slice(1);
 
   // Transform each row
-  return dataRows.map((row, index) =>
+  const allPlayers = dataRows.map((row, index) =>
     transformPlayerData(row as TransferPortalDataRow, index)
   ).filter(player => player.name && player.formerSchool); // Filter out invalid entries
+
+  // Deduplicate players - group by name + former school
+  const playerMap = new Map<string, TransferPlayer[]>();
+
+  allPlayers.forEach(player => {
+    // Create unique key using name and former school (case-insensitive)
+    const key = `${player.name.toLowerCase()}|${player.formerSchool.toLowerCase()}`;
+
+    if (!playerMap.has(key)) {
+      playerMap.set(key, []);
+    }
+    playerMap.get(key)!.push(player);
+  });
+
+  // Merge duplicate entries
+  const deduplicatedPlayers: TransferPlayer[] = [];
+
+  playerMap.forEach((players) => {
+    if (players.length === 1) {
+      // No duplicates, just add the player
+      deduplicatedPlayers.push(players[0]);
+    } else {
+      // Multiple entries for the same player - merge them
+      // Priority: Enrolled > Committed > Entered > Withdrawn
+      const statusPriority: Record<PlayerStatus, number> = {
+        'Enrolled': 4,
+        'Committed': 3,
+        'Entered': 2,
+        'Withdrawn': 1,
+      };
+
+      // Sort by status priority (highest first)
+      const sortedPlayers = [...players].sort((a, b) =>
+        statusPriority[b.status] - statusPriority[a.status]
+      );
+
+      // Use the highest priority player as base
+      const mergedPlayer = { ...sortedPlayers[0] };
+
+      // Find the "Entered" entry to get the portal entry date
+      const enteredEntry = players.find(p => p.status === 'Entered');
+
+      // Find the committed/enrolled entry to get the commit date
+      const committedEntry = players.find(p =>
+        p.status === 'Committed' || p.status === 'Enrolled'
+      );
+
+      // Set announcedDate to the Entered date if it exists
+      if (enteredEntry) {
+        mergedPlayer.announcedDate = enteredEntry.announcedDate;
+      }
+
+      // Set commitDate to the Committed/Enrolled date if it exists
+      if (committedEntry) {
+        mergedPlayer.commitDate = committedEntry.announcedDate;
+      }
+
+      deduplicatedPlayers.push(mergedPlayer);
+    }
+  });
+
+  return deduplicatedPlayers;
 }

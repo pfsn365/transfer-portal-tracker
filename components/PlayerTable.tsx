@@ -216,7 +216,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     <span>PFSN Impact Grade</span>
                   </div>
                 </SortableHeader>
-                <SortableHeader field="announcedDate">Date Entered</SortableHeader>
+                <SortableHeader field="announcedDate">Timeline</SortableHeader>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -385,14 +385,27 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="text-sm text-gray-900">
-                      {new Date(player.announcedDate).toLocaleDateString('en-US', {
-                        month: 'numeric',
-                        day: 'numeric',
-                        year: 'numeric'
-                      })}
-                    </span>
+                  <td className="px-6 py-4">
+                    <div className="text-sm">
+                      <div className="text-gray-900">
+                        <span className="text-gray-600">Entered: </span>
+                        {new Date(player.announcedDate).toLocaleDateString('en-US', {
+                          month: 'numeric',
+                          day: 'numeric',
+                          year: 'numeric'
+                        })}
+                      </div>
+                      {player.commitDate && (
+                        <div className="text-gray-900 mt-1">
+                          <span className="text-gray-600">Committed: </span>
+                          {new Date(player.commitDate).toLocaleDateString('en-US', {
+                            month: 'numeric',
+                            day: 'numeric',
+                            year: 'numeric'
+                          })}
+                        </div>
+                      )}
+                    </div>
                   </td>
                 </tr>
               ))}
@@ -607,13 +620,26 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
               </div>
             </div>
 
-            {/* Date */}
+            {/* Timeline */}
             <div className="text-xs text-gray-500">
-              {new Date(player.announcedDate).toLocaleDateString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric'
-              })}
+              <div>
+                <span className="font-medium">Entered: </span>
+                {new Date(player.announcedDate).toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric'
+                })}
+              </div>
+              {player.commitDate && (
+                <div className="mt-0.5">
+                  <span className="font-medium">Committed: </span>
+                  {new Date(player.commitDate).toLocaleDateString('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric'
+                  })}
+                </div>
+              )}
             </div>
           </div>
         ))}
