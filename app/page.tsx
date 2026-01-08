@@ -113,7 +113,7 @@ export default function CFBHQPage() {
             <div className="p-6">
               <div className="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
                 <svg
-                  className="w-7 h-7 text-gray-400"
+                  className="w-7 h-7 text-gray-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -129,12 +129,12 @@ export default function CFBHQPage() {
               <h3 className="text-xl font-bold text-gray-500 mb-2">
                 More Tools Coming Soon
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-500">
                 Stay tuned for more college football tools and resources.
               </p>
             </div>
             <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
-              <span className="text-gray-400 font-medium">Coming Soon</span>
+              <span className="text-gray-600 font-medium">Coming Soon</span>
             </div>
           </div>
         </div>

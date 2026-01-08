@@ -16,7 +16,7 @@ export default function Header({
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
             College Football Transfer Portal Tracker
           </h1>
-          <p className="text-sm sm:text-base text-white/90">
+          <p className="text-base text-white/90">
             Track every college football transfer with real-time updates, advanced filtering, and verified data
           </p>
         </div>

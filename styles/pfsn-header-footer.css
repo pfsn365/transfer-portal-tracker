@@ -164,7 +164,7 @@ iframe[id^="google_ads_iframe"] {
 .footer-links a {
   color: #cccccc;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   transition: color 0.3s ease;
   line-height: 1.6;
@@ -220,7 +220,7 @@ iframe[id^="google_ads_iframe"] {
 .copyright {
   text-align: center;
   color: #999;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
@@ -253,26 +253,26 @@ iframe[id^="google_ads_iframe"] {
   .pfsn-header-container {
     gap: 25px;
   }
-  
+
   .pfsn-logo {
     width: 160px;
   }
-  
+
   .nav-menu {
     gap: 12px;
   }
-  
+
   .nav-menu a {
     font-size: 14px;
     padding: 8px 12px;
   }
-  
+
   .footer-column-title {
     font-size: 16px;
   }
-  
+
   .footer-links a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -347,21 +347,21 @@ iframe[id^="google_ads_iframe"] {
   .pfsn-footer {
     padding: 50px 0 30px;
   }
-  
+
   .footer-columns {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .footer-column-title {
     font-size: 16px;
     margin-bottom: 15px;
   }
-  
+
   .footer-links a {
-    font-size: 14px;
+    font-size: 16px;
   }
-  
+
   .footer-links li {
     margin-bottom: 8px;
   }
@@ -371,17 +371,17 @@ iframe[id^="google_ads_iframe"] {
   .pfsn-logo {
     width: 120px;
   }
-  
+
   .nav-menu a {
     font-size: 11px;
     padding: 5px 8px;
   }
-  
+
   .footer-column-title {
-    font-size: 15px;
+    font-size: 16px;
   }
-  
+
   .footer-links a {
-    font-size: 13px;
+    font-size: 16px;
   }
 }

@@ -150,7 +150,7 @@ function TeamLogo({ teamName, size = 24 }: { teamName: string; size?: number }) 
         className="bg-gray-200 rounded-full flex items-center justify-center flex-shrink-0"
         style={{ width: size, height: size }}
       >
-        <span className="text-gray-400 text-xs">?</span>
+        <span className="text-gray-500 text-xs">?</span>
       </div>
     );
   }
@@ -220,7 +220,7 @@ function MatchupCard({ matchup, compact = false, userPick, onPickWinner, canPick
       </div>
       {matchup.location && (
         <div className="bg-gray-50 px-2 py-1 border-t border-gray-200">
-          <span className="text-xs text-gray-500">{matchup.date} - {matchup.location}</span>
+          <span className="text-xs text-gray-600">{matchup.date} - {matchup.location}</span>
         </div>
       )}
     </div>
@@ -249,12 +249,12 @@ function TeamRow({ team, compact = false, isWinner = false, isPicked = false, ca
     >
       <div className="flex items-center gap-2 min-w-0 flex-1">
         {team.seed > 0 && (
-          <span className={`${compact ? 'text-xs' : 'text-sm'} text-gray-400 w-4 flex-shrink-0`}>
+          <span className={`${compact ? 'text-xs' : 'text-sm'} text-gray-500 w-4 flex-shrink-0`}>
             {team.seed}
           </span>
         )}
         <TeamLogo teamName={team.name} size={compact ? 20 : 24} />
-        <span className={`${compact ? 'text-xs' : 'text-sm'} ${isTBD ? 'text-gray-400 italic' : isWinner ? 'text-gray-900' : 'text-gray-600'} truncate`}>
+        <span className={`${compact ? 'text-xs' : 'text-sm'} ${isTBD ? 'text-gray-500 italic' : isWinner ? 'text-gray-900' : 'text-gray-600'} truncate`}>
           {team.name || 'TBD'}
         </span>
         {isPicked && (
@@ -425,7 +425,7 @@ export default function CFBPlayoffBracket() {
                         <span className="text-gray-900 font-bold">{champion.name}</span>
                       </div>
                     ) : (
-                      <div className="text-gray-400 italic">TBD</div>
+                      <div className="text-gray-500 italic">TBD</div>
                     )}
                   </div>
                 </div>
@@ -447,7 +447,7 @@ export default function CFBPlayoffBracket() {
                 <span className="text-xl font-bold text-gray-900">{champion.name}</span>
               </div>
             ) : (
-              <div className="text-xl font-bold text-gray-400 mt-1 italic">TBD</div>
+              <div className="text-xl font-bold text-gray-500 mt-1 italic">TBD</div>
             )}
           </div>
 

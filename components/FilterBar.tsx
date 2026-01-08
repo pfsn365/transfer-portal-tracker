@@ -97,7 +97,7 @@ function CustomSchoolDropdown({
           {!selectedConference ? (
             // Conference Selection
             <>
-              <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50 sticky top-0">
+              <div className="px-3 py-2 text-base font-semibold text-gray-600 bg-gray-50 sticky top-0">
                 Select Conference
               </div>
               {getAllConferences().map(conference => (
@@ -105,7 +105,7 @@ function CustomSchoolDropdown({
                   key={conference}
                   type="button"
                   onClick={() => handleConferenceClick(conference)}
-                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-sm text-gray-900 transition-colors"
+                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-base text-gray-900 transition-colors"
                 >
                   {conference}
                 </button>
@@ -117,11 +117,11 @@ function CustomSchoolDropdown({
               <button
                 type="button"
                 onClick={handleBackClick}
-                className="w-full text-left px-3 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-50 sticky top-0 bg-white border-b border-gray-200"
+                className="w-full text-left px-3 py-2 text-base font-semibold text-blue-600 hover:bg-blue-50 sticky top-0 bg-white border-b border-gray-200"
               >
                 ← Back to Conferences
               </button>
-              <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50 sticky top-0">
+              <div className="px-3 py-2 text-base font-semibold text-gray-600 bg-gray-50 sticky top-0">
                 {selectedConference} Schools
               </div>
               {getTeamsByConference(selectedConference).map(team => (
@@ -129,7 +129,7 @@ function CustomSchoolDropdown({
                   key={team.id}
                   type="button"
                   onClick={() => handleTeamClick(team.name)}
-                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-sm text-gray-900 transition-colors"
+                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-base text-gray-900 transition-colors"
                 >
                   {team.name}
                 </button>

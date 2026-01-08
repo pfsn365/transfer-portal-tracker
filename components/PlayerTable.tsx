@@ -97,10 +97,10 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
           {children}
           <div className="flex flex-col">
             <ChevronUp
-              className={`w-3 h-3 -mb-1 ${isActive && sortDirection === 'asc' ? 'text-blue-600' : 'text-gray-400'}`}
+              className={`w-3 h-3 -mb-1 ${isActive && sortDirection === 'asc' ? 'text-blue-600' : 'text-gray-500'}`}
             />
             <ChevronDown
-              className={`w-3 h-3 ${isActive && sortDirection === 'desc' ? 'text-blue-600' : 'text-gray-400'}`}
+              className={`w-3 h-3 ${isActive && sortDirection === 'desc' ? 'text-blue-600' : 'text-gray-500'}`}
             />
           </div>
         </div>
@@ -235,7 +235,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         className={`w-5 h-5 ${
                           watchlist.includes(player.id)
                             ? 'fill-yellow-400 text-yellow-400'
-                            : 'text-gray-400 hover:text-yellow-400'
+                            : 'text-gray-500 hover:text-yellow-400'
                         }`}
                       />
                     </button>
@@ -291,7 +291,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             </div>
                             <div className="text-left">
                               <div className="text-base font-semibold text-gray-900 hover:underline">{player.formerSchool}</div>
-                              <div className="text-xs text-gray-500">{player.formerConference}</div>
+                              <div className="text-sm text-gray-500">{player.formerConference}</div>
                             </div>
                           </Link>
                         ) : (
@@ -307,14 +307,14 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             </div>
                             <div className="text-left">
                               <div className="text-base font-semibold text-gray-900">{player.formerSchool}</div>
-                              <div className="text-xs text-gray-500">{player.formerConference}</div>
+                              <div className="text-sm text-gray-500">{player.formerConference}</div>
                             </div>
                           </div>
                         );
                       })()}
                       {player.newSchool ? (
                         <>
-                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
+                          <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-1" />
                           {(() => {
                             const newTeam = getTeamById(player.newSchool!);
                             return newTeam ? (
@@ -330,7 +330,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                                 </div>
                                 <div className="text-left">
                                   <div className="text-base font-semibold text-green-700 hover:underline">{player.newSchool}</div>
-                                  <div className="text-xs text-gray-500">{player.newConference}</div>
+                                  <div className="text-sm text-gray-500">{player.newConference}</div>
                                 </div>
                               </Link>
                             ) : (
@@ -346,7 +346,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                                 </div>
                                 <div className="text-left">
                                   <div className="text-base font-semibold text-green-700">{player.newSchool}</div>
-                                  <div className="text-xs text-gray-500">{player.newConference}</div>
+                                  <div className="text-sm text-gray-500">{player.newConference}</div>
                                 </div>
                               </div>
                             );
@@ -354,8 +354,8 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         </>
                       ) : (player.status === 'Entered' || player.status === 'Withdrawn') ? (
                         <>
-                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-1" />
-                          <div className="text-2xl font-bold text-gray-400">?</div>
+                          <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-1" />
+                          <div className="text-2xl font-bold text-gray-500">?</div>
                         </>
                       ) : null}
                     </div>
@@ -386,7 +386,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     </div>
                   </td>
                   <td className="px-6 py-4">
-                    <div className="text-sm">
+                    <div className="text-base">
                       <div className="text-gray-900">
                         <span className="text-gray-600">Entered: </span>
                         {new Date(player.announcedDate).toLocaleDateString('en-US', {
@@ -463,7 +463,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     className={`w-5 h-5 ${
                       watchlist.includes(player.id)
                         ? 'fill-yellow-400 text-yellow-400'
-                        : 'text-gray-400 hover:text-yellow-400'
+                        : 'text-gray-500 hover:text-yellow-400'
                     }`}
                   />
                 </button>
@@ -485,7 +485,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-gray-900 text-base leading-tight mb-1.5">{player.name}</h3>
                   <div className="flex items-center gap-1.5 flex-wrap">
-                    <span className="text-xs text-gray-600 font-medium">{player.class}</span>
+                    <span className="text-sm text-gray-600 font-medium">{player.class}</span>
                     <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                       {player.position}
                     </span>
@@ -520,7 +520,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     <span className="text-gray-900">-</span>
                   )}
                 </div>
-                <div className="text-[11px] text-gray-500 mt-1 leading-tight">PFSN<br />Grade</div>
+                <div className="text-sm text-gray-500 mt-1 leading-tight">PFSN<br />Grade</div>
               </div>
             </div>
 
@@ -528,7 +528,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
             <div className="bg-gray-50 rounded-lg p-3.5 mb-3">
               <div className="flex items-center gap-2.5">
                 <div className="flex-1 min-w-0">
-                  <div className="text-[11px] text-gray-500 mb-1.5 font-medium">FROM</div>
+                  <div className="text-sm text-gray-600 mb-1.5 font-medium">FROM</div>
                   {(() => {
                     const formerTeam = getTeamById(player.formerSchool);
                     return formerTeam ? (
@@ -544,7 +544,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         </div>
                         <div className="min-w-0 flex-1">
                           <div className="font-semibold text-gray-900 text-sm hover:underline truncate">{player.formerSchool}</div>
-                          <div className="text-[11px] text-gray-500 truncate">{player.formerConference}</div>
+                          <div className="text-sm text-gray-600 truncate">{player.formerConference}</div>
                         </div>
                       </Link>
                     ) : (
@@ -560,7 +560,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         </div>
                         <div className="min-w-0 flex-1">
                           <div className="font-semibold text-gray-900 text-sm truncate">{player.formerSchool}</div>
-                          <div className="text-[11px] text-gray-500 truncate">{player.formerConference}</div>
+                          <div className="text-sm text-gray-600 truncate">{player.formerConference}</div>
                         </div>
                       </div>
                     );
@@ -568,9 +568,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 </div>
                 {player.newSchool ? (
                   <>
-                    <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-0.5" />
+                    <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-0.5" />
                     <div className="flex-1 min-w-0">
-                      <div className="text-[11px] text-gray-500 mb-1.5 font-medium">TO</div>
+                      <div className="text-sm text-gray-600 mb-1.5 font-medium">TO</div>
                       {(() => {
                         const newTeam = getTeamById(player.newSchool!);
                         return newTeam ? (
@@ -586,7 +586,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             </div>
                             <div className="min-w-0 flex-1">
                               <div className="font-semibold text-green-700 text-sm hover:underline truncate">{player.newSchool}</div>
-                              <div className="text-[11px] text-gray-500 truncate">{player.newConference}</div>
+                              <div className="text-sm text-gray-600 truncate">{player.newConference}</div>
                             </div>
                           </Link>
                         ) : (
@@ -602,7 +602,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             </div>
                             <div className="min-w-0 flex-1">
                               <div className="font-semibold text-green-700 text-sm truncate">{player.newSchool}</div>
-                              <div className="text-[11px] text-gray-500 truncate">{player.newConference}</div>
+                              <div className="text-sm text-gray-600 truncate">{player.newConference}</div>
                             </div>
                           </div>
                         );
@@ -611,9 +611,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   </>
                 ) : (player.status === 'Entered' || player.status === 'Withdrawn') ? (
                   <>
-                    <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0 mx-0.5" />
+                    <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-0.5" />
                     <div className="flex-1 flex items-center justify-center">
-                      <div className="text-2xl font-bold text-gray-400">?</div>
+                      <div className="text-2xl font-bold text-gray-500">?</div>
                     </div>
                   </>
                 ) : null}
@@ -621,7 +621,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
             </div>
 
             {/* Timeline */}
-            <div className="text-xs text-gray-500">
+            <div className="text-sm text-gray-500">
               <div>
                 <span className="font-medium">Entered: </span>
                 {new Date(player.announcedDate).toLocaleDateString('en-US', {

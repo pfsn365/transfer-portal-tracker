@@ -343,7 +343,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
+          <ol className="flex flex-wrap items-center gap-2 text-base">
             <li>
               <Link
                 href="/transfer-portal-tracker"
@@ -413,15 +413,15 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         {/* Stats Summary */}
         <div className="grid grid-cols-3 gap-4 mb-6" style={{ contain: 'layout' }}>
           <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
-            <p className="text-sm text-gray-600 uppercase mb-1">Incoming</p>
+            <p className="text-base text-gray-600 uppercase mb-1">Incoming</p>
             <p className="text-2xl font-bold text-green-600">{teamStats.incoming}</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
-            <p className="text-sm text-gray-600 uppercase mb-1">Outgoing</p>
+            <p className="text-base text-gray-600 uppercase mb-1">Outgoing</p>
             <p className="text-2xl font-bold text-red-600">{teamStats.outgoing}</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
-            <p className="text-sm text-gray-600 uppercase mb-1">Net Gain/Loss</p>
+            <p className="text-base text-gray-600 uppercase mb-1">Net Gain/Loss</p>
             <p className={`text-2xl font-bold ${teamStats.netGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {teamStats.netGain >= 0 ? '+' : ''}{teamStats.netGain}
             </p>

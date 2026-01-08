@@ -39,7 +39,7 @@ export default function StatsCards({ players }: StatsCardsProps) {
       {/* Total Players */}
       <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
         <div>
-          <p className="text-sm font-medium text-gray-600 uppercase">Total Players</p>
+          <p className="text-base font-medium text-gray-600 uppercase">Total Players</p>
           <p className="text-3xl font-bold text-gray-900 mt-1">{totalPlayers.toLocaleString()}</p>
         </div>
       </div>
@@ -47,11 +47,11 @@ export default function StatsCards({ players }: StatsCardsProps) {
       {/* Most Active Position */}
       <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
         <div>
-          <p className="text-sm font-medium text-gray-600 uppercase">Top Position</p>
+          <p className="text-base font-medium text-gray-600 uppercase">Top Position</p>
           {mostActivePosition ? (
             <>
               <p className="text-3xl font-bold text-gray-900 mt-1">{mostActivePosition[0]}</p>
-              <p className="text-xs text-gray-500 mt-1">{mostActivePosition[1]} players</p>
+              <p className="text-sm text-gray-500 mt-1">{mostActivePosition[1]} players</p>
             </>
           ) : (
             <p className="text-3xl font-bold text-gray-900 mt-1">N/A</p>
@@ -62,11 +62,11 @@ export default function StatsCards({ players }: StatsCardsProps) {
       {/* Most Active Conference (Incoming) */}
       <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
         <div>
-          <p className="text-sm font-medium text-gray-600 uppercase">Most Active Conf</p>
+          <p className="text-base font-medium text-gray-600 uppercase">Most Active Conf</p>
           {mostActiveConference ? (
             <>
               <p className="text-2xl font-bold text-gray-900 mt-1">{mostActiveConference[0]}</p>
-              <p className="text-xs text-gray-500 mt-1">{mostActiveConference[1]} incoming</p>
+              <p className="text-sm text-gray-500 mt-1">{mostActiveConference[1]} incoming</p>
             </>
           ) : (
             <p className="text-3xl font-bold text-gray-900 mt-1">N/A</p>
@@ -77,9 +77,9 @@ export default function StatsCards({ players }: StatsCardsProps) {
       {/* Average Impact Grade */}
       <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-amber-500">
         <div>
-          <p className="text-sm font-medium text-gray-600 uppercase">Avg Impact Grade</p>
+          <p className="text-base font-medium text-gray-600 uppercase">Avg Impact Grade</p>
           <p className="text-3xl font-bold text-gray-900 mt-1">{avgRating}</p>
-          <p className="text-xs text-gray-500 mt-1">{playersWithRating.length} rated</p>
+          <p className="text-sm text-gray-500 mt-1">{playersWithRating.length} rated</p>
         </div>
       </div>
     </div>

@@ -65,7 +65,7 @@ export default function Pagination({
             <option value={50}>50</option>
             <option value={100}>100</option>
           </select>
-          <span className="text-sm text-gray-600 hidden sm:inline">
+          <span className="text-base text-gray-600 hidden sm:inline">
             {totalItems > 0 ? `${startItem}-${endItem} of ${totalItems}` : '0 players'}
           </span>
         </div>
@@ -114,7 +114,7 @@ export default function Pagination({
         )}
 
         {/* Mobile item count */}
-        <span className="text-sm text-gray-600 sm:hidden text-center">
+        <span className="text-base text-gray-600 sm:hidden text-center">
           {totalItems > 0 ? `${startItem}-${endItem} of ${totalItems}` : '0 players'}
         </span>
       </div>

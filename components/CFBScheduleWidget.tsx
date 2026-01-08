@@ -109,7 +109,7 @@ function GameRow({ game }: { game: Game }) {
       <div className="flex items-center justify-between mb-1">
         <span className="text-xs text-gray-500">{game.date} {game.time && `• ${game.time}`}</span>
         {game.network && (
-          <span className="text-xs font-medium text-gray-400">{game.network}</span>
+          <span className="text-xs font-medium text-gray-500">{game.network}</span>
         )}
       </div>
 
@@ -148,7 +148,7 @@ function GameRow({ game }: { game: Game }) {
       </div>
 
       {game.location && (
-        <div className="mt-1.5 text-xs text-gray-400">{game.location}</div>
+        <div className="mt-1.5 text-xs text-gray-500">{game.location}</div>
       )}
     </div>
   );
