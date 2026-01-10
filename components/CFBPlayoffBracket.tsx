@@ -112,24 +112,24 @@ const initialPlayoffData: { [key: string]: Matchup } = {
     date: 'Jan 1',
     completed: true,
   },
-  // Semifinals (Jan 9-10) - Orange & Cotton Bowls
+  // Semifinals (Jan 8-9)
   'sf-1': {
     id: 'sf-1',
-    team1: null,
-    team2: null,
+    team1: { seed: 1, name: 'Indiana', score: 56 },
+    team2: { seed: 5, name: 'Oregon', score: 22 },
     round: 'Semifinal',
     location: 'Peach Bowl',
     date: 'Jan 9',
-    completed: false,
+    completed: true,
   },
   'sf-2': {
     id: 'sf-2',
-    team1: null,
-    team2: null,
+    team1: { seed: 10, name: 'Miami', score: 31 },
+    team2: { seed: 6, name: 'Ole Miss', score: 27 },
     round: 'Semifinal',
     location: 'Fiesta Bowl',
     date: 'Jan 8',
-    completed: false,
+    completed: true,
   },
   // Championship (Jan 19, 2026)
   'final': {
