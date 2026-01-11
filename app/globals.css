@@ -20,10 +20,10 @@ body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 50px; /* Space for fixed PFN header */
+  padding-top: 50px; /* Space for fixed PFSN header */
 }
 
-/* PFN Header - Critical styles for SSR */
+/* PFSN Header - Critical styles for SSR */
 .pfn-header-wrapper {
   display: flex;
   align-items: center;

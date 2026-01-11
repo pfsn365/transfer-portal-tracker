@@ -4,7 +4,7 @@ A comprehensive, real-time college football transfer portal tracking application
 
 ## Features
 
-- **Live Data Integration**: Fetches real transfer portal data from PFN Google Sheets API
+- **Live Data Integration**: Fetches real transfer portal data from PFSN Google Sheets API
 - **Real-time Filtering**: Auto-updating filters for Status, School, Class, Position, and Conference - no Apply button needed
 - **Team Branding**: Official team logos and colors for all 130+ FBS teams
 - **Responsive Design**: Optimized desktop table view and mobile card view
@@ -47,7 +47,7 @@ transfer-portal-tracker/
 │   └── api.ts               # API response interfaces
 ├── utils/
 │   ├── teamColors.ts        # Official team colors for all CFB teams
-│   ├── teamLogos.ts         # Team logo URLs from PFN CDN
+│   ├── teamLogos.ts         # Team logo URLs from PFSN CDN
 │   └── dataTransform.ts     # Transform API data to app format
 └── next.config.ts           # Next.js configuration
 ```
@@ -119,7 +119,7 @@ Each transfer player includes:
 ## Team Branding
 
 The tracker includes comprehensive team branding for 130+ FBS teams:
-- **Team Logos**: Hosted on PFN CDN for fast loading
+- **Team Logos**: Hosted on PFSN CDN for fast loading
 - **Team Colors**: Official hex codes for all teams
 - **Conference Coverage**: All Power 5, Group of 5, Independents, and major FCS programs
 - **Visual Transfer Paths**: See team logos in transfer progression (Former School → New School)

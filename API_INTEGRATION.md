@@ -9,7 +9,7 @@ https://staticj.profootballnetwork.com/assets/sheets/tools/cfb-transfer-portal-t
 
 ## Data Flow
 
-1. **External API** → PFN JSON endpoint with Google Sheets data
+1. **External API** → PFSN JSON endpoint with Google Sheets data
 2. **Next.js API Route** (`/api/transfer-portal`) → Fetches and transforms data
 3. **Client Component** → Displays with filters and team branding
 4. **Caching** → 1-hour cache for optimal performance

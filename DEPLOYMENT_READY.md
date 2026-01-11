@@ -17,7 +17,7 @@ The CFB Transfer Portal Tracker is fully built, tested, and ready for deployment
 - **130+ Team Logos**: All FBS teams covered
 - **Official Colors**: Team-specific color schemes ready for use
 - **Visual Transfer Paths**: From School → To School with logos
-- **CDN Hosted**: Fast loading from PFN CDN
+- **CDN Hosted**: Fast loading from PFSN CDN
 
 ### 3. Core Features ✅
 - **5 Auto-Updating Filters**: Status, School, Class, Position, Conference

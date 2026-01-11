@@ -15,7 +15,7 @@ git add .
 git commit -m "Initial commit: CFB Transfer Portal Tracker with live API integration
 
 - Auto-updating filters (Status, School, Class, Position, Conference)
-- Live data from PFN Google Sheets API (hourly refresh)
+- Live data from PFSN Google Sheets API (hourly refresh)
 - Official team logos and colors for 130+ FBS teams
 - Responsive design (desktop table + mobile cards)
 - Professional loading and error states

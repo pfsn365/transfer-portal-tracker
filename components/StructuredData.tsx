@@ -7,7 +7,7 @@ export default function StructuredData() {
         "@id": "https://www.profootballnetwork.com/#organization",
         "name": "PFSN",
         "legalName": "Pro Football Network Inc.",
-        "alternateName": ["Pro Football Network", "Pro Football & Sports Network", "PFN", "PFSN365", "PFN365"],
+        "alternateName": ["Pro Football Network", "Pro Football & Sports Network", "PFSN", "PFSN365"],
         "url": "https://www.profootballnetwork.com/",
         "foundingDate": "2019",
         "address": {

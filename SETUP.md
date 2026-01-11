@@ -31,7 +31,7 @@ All 5 filter dropdowns update the results immediately without clicking "Apply":
 - Conference (All FBS conferences + FCS)
 
 ### ✅ Team Logos & Colors
-- 130+ team logos from PFN CDN
+- 130+ team logos from PFSN CDN
 - Official team colors for all FBS teams
 - Logos displayed in player avatars and transfer paths
 - Visual "From → To" transfer progression

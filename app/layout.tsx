@@ -72,8 +72,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'CFB HQ - College Football Tools & Resources',
     description: 'Your destination for college football tools and data. Access comprehensive CFB resources from PFSN, including the transfer portal, playoff, and more.',
-    creator: '@PFN365',
-    site: '@PFN365',
+    creator: '@PFSN365',
+    site: '@PFSN365',
     images: ['/cfb-hq/og-image.png'],
   },
   alternates: {
