@@ -444,10 +444,8 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
                 aria-label="Filter by status"
               >
                 <option value="All">All</option>
-                <option value="Entered">Entered</option>
+                <option value="Entered">In Portal</option>
                 <option value="Committed">Committed</option>
-                <option value="Enrolled">Enrolled</option>
-                <option value="Withdrawn">Withdrawn</option>
               </select>
             </div>
 

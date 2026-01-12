@@ -16,15 +16,13 @@ interface FilterBarProps {
   schools: string[];
 }
 
-const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed', 'Enrolled', 'Withdrawn'];
+const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed'];
 
 // Display names for statuses
 const statusDisplayNames: Record<string, string> = {
   'All': 'All',
   'Entered': 'In Portal',
   'Committed': 'Committed',
-  'Enrolled': 'Enrolled',
-  'Withdrawn': 'Withdrawn',
 };
 const classes: (PlayerClass | 'All')[] = ['All', 'FR', 'SO', 'JR', 'SR'];
 const positions: (PlayerPosition | 'All')[] = [

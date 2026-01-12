@@ -11,8 +11,8 @@ function mapStatus(apiStatus: string): PlayerStatus {
     'entered': 'Entered',
     'in portal': 'Entered',
     'committed': 'Committed',
-    'enrolled': 'Enrolled',
-    'withdrawn': 'Withdrawn',
+    'enrolled': 'Committed',  // Map enrolled to committed
+    'withdrawn': 'Entered',   // Map withdrawn to entered (back in portal)
   };
 
   return statusMap[status.toLowerCase()] || 'Entered';
@@ -137,12 +137,10 @@ export function transformAPIData(data: string[][]): TransferPlayer[] {
       deduplicatedPlayers.push(players[0]);
     } else {
       // Multiple entries for the same player - merge them
-      // Priority: Enrolled > Committed > Entered > Withdrawn
+      // Priority: Committed > Entered
       const statusPriority: Record<PlayerStatus, number> = {
-        'Enrolled': 4,
-        'Committed': 3,
-        'Entered': 2,
-        'Withdrawn': 1,
+        'Committed': 2,
+        'Entered': 1,
       };
 
       // Sort by status priority (highest first)
@@ -156,17 +154,15 @@ export function transformAPIData(data: string[][]): TransferPlayer[] {
       // Find the "Entered" entry to get the portal entry date
       const enteredEntry = players.find(p => p.status === 'Entered');
 
-      // Find the committed/enrolled entry to get the commit date
-      const committedEntry = players.find(p =>
-        p.status === 'Committed' || p.status === 'Enrolled'
-      );
+      // Find the committed entry to get the commit date
+      const committedEntry = players.find(p => p.status === 'Committed');
 
       // Set announcedDate to the Entered date if it exists
       if (enteredEntry) {
         mergedPlayer.announcedDate = enteredEntry.announcedDate;
       }
 
-      // Set commitDate to the Committed/Enrolled date if it exists
+      // Set commitDate to the Committed date if it exists
       if (committedEntry) {
         mergedPlayer.commitDate = committedEntry.announcedDate;
       }

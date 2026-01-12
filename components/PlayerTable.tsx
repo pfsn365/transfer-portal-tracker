@@ -39,8 +39,8 @@ function getPositionImpactUrl(position: PlayerPosition): string | null {
 
 // Get which school logo to display based on player status
 function getDisplaySchool(player: TransferPlayer): string {
-  // If committed or enrolled and has a new school, show new school
-  if ((player.status === 'Committed' || player.status === 'Enrolled') && player.newSchool) {
+  // If committed and has a new school, show new school
+  if (player.status === 'Committed' && player.newSchool) {
     return player.newSchool;
   }
   // Otherwise show former school
@@ -114,10 +114,6 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
         return 'bg-green-100 text-green-800 border-green-300';
       case 'Entered':
         return 'bg-yellow-100 text-yellow-800 border-yellow-300';
-      case 'Enrolled':
-        return 'bg-blue-100 text-blue-800 border-blue-300';
-      case 'Withdrawn':
-        return 'bg-gray-100 text-gray-800 border-gray-300';
       default:
         return 'bg-yellow-100 text-yellow-800 border-yellow-300';
     }
@@ -352,7 +348,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                             );
                           })()}
                         </>
-                      ) : (player.status === 'Entered' || player.status === 'Withdrawn') ? (
+                      ) : player.status === 'Entered' ? (
                         <>
                           <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-1" />
                           <div className="text-2xl font-bold text-gray-500">?</div>
@@ -609,7 +605,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       })()}
                     </div>
                   </>
-                ) : (player.status === 'Entered' || player.status === 'Withdrawn') ? (
+                ) : player.status === 'Entered' ? (
                   <>
                     <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-0.5" />
                     <div className="flex-1 flex items-center justify-center">
