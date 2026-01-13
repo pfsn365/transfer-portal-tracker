@@ -1,14 +1,4 @@
-interface HeaderProps {
-  playerCount: number;
-  totalCount: number;
-  lastUpdated?: string;
-}
-
-export default function Header({
-  playerCount,
-  totalCount,
-  lastUpdated,
-}: HeaderProps) {
+export default function Header() {
   return (
     <div className="text-white shadow-lg" style={{ backgroundColor: '#800000' }}>
       <div className="max-w-[1600px] mx-auto px-4 py-4 sm:py-6 text-center">

@@ -80,29 +80,41 @@ export default function PFNHeader() {
   const [menuData, setMenuData] = useState<MenuItem[]>(fallbackMenuData);
 
   useEffect(() => {
+    const abortController = new AbortController();
+
     async function fetchMenu() {
       try {
         const response = await fetch('https://www.profootballnetwork.com/wp-json/pfsn/v1/menu/54', {
-          next: { revalidate: 3600 } // Cache for 1 hour
+          next: { revalidate: 3600 },
+          signal: abortController.signal,
         });
+
+        if (abortController.signal.aborted) return;
 
         if (!response.ok) {
           throw new Error('Failed to fetch menu');
         }
 
         const data: APIMenuItem[] = await response.json();
+
+        if (abortController.signal.aborted) return;
+
         const transformedMenu = transformMenuData(data);
 
         if (transformedMenu.length > 0) {
           setMenuData(transformedMenu);
         }
       } catch (error) {
+        if (error instanceof Error && error.name === 'AbortError') return;
         console.error('Error fetching menu:', error);
-        // Keep using fallback menu data
       }
     }
 
     fetchMenu();
+
+    return () => {
+      abortController.abort();
+    };
   }, []);
 
   return (

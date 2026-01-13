@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 export const metadata: Metadata = {
   title: 'College Football Transfer Portal Tracker',
@@ -42,5 +43,5 @@ export default function TransferPortalLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return <ErrorBoundary>{children}</ErrorBoundary>;
 }

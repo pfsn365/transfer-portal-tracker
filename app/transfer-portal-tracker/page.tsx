@@ -22,7 +22,7 @@ export default function TransferPortalTracker() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [lastUpdated, setLastUpdated] = useState<string>('');
+  const [refreshKey, setRefreshKey] = useState(0);
 
   const [selectedStatus, setSelectedStatus] = useState<PlayerStatus | 'All'>('All');
   const [selectedSchool, setSelectedSchool] = useState<string>('All');
@@ -44,40 +44,58 @@ export default function TransferPortalTracker() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(25);
 
-  // Fetch data from API
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-
-      const response = await fetch(`/cfb-hq/api/transfer-portal`);
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch transfer portal data');
-      }
-
-      const data = await response.json();
-
-      if (data.error) {
-        throw new Error(data.error);
-      }
-
-      setPlayers(data.players || []);
-      setLastUpdated(data.updatedTime || new Date().toISOString());
-
-    } catch (err) {
-      console.error('Error fetching data:', err);
-      setError(err instanceof Error ? err.message : 'An error occurred while loading data');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   // Load data on component mount
   useEffect(() => {
+    const abortController = new AbortController();
+
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const response = await fetch(`/cfb-hq/api/transfer-portal`, {
+          signal: abortController.signal,
+        });
+
+        if (abortController.signal.aborted) return;
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch transfer portal data');
+        }
+
+        const data = await response.json();
+
+        if (abortController.signal.aborted) return;
+
+        if (data.error) {
+          throw new Error(data.error);
+        }
+
+        setPlayers(data.players || []);
+
+      } catch (err) {
+        if (err instanceof Error && err.name === 'AbortError') return;
+        console.error('Error fetching data:', err);
+        setError(err instanceof Error ? err.message : 'An error occurred while loading data');
+      } finally {
+        if (!abortController.signal.aborted) {
+          setLoading(false);
+        }
+      }
+    };
+
     fetchData();
     setWatchlist(getWatchlist());
-  }, []);
+
+    return () => {
+      abortController.abort();
+    };
+  }, [refreshKey]);
+
+  // Handle retry
+  const handleRetry = () => {
+    setRefreshKey(prev => prev + 1);
+  };
 
   // Handle sorting
   const handleSort = (field: SortField) => {
@@ -252,18 +270,8 @@ export default function TransferPortalTracker() {
   const paginatedPlayers = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const sliced = sortedPlayers.slice(startIndex, endIndex);
-    console.log('Pagination Debug:', {
-      totalPlayers: sortedPlayers.length,
-      itemsPerPage,
-      totalPages,
-      currentPage,
-      startIndex,
-      endIndex,
-      slicedCount: sliced.length
-    });
-    return sliced;
-  }, [sortedPlayers, currentPage, itemsPerPage, totalPages]);
+    return sortedPlayers.slice(startIndex, endIndex);
+  }, [sortedPlayers, currentPage, itemsPerPage]);
 
   // Handle pagination changes
   const handlePageChange = (page: number) => {
@@ -276,27 +284,12 @@ export default function TransferPortalTracker() {
     setCurrentPage(1);
   };
 
-  // Get unique schools from data
-  const schools = useMemo(() => {
-    const schoolSet = new Set<string>();
-    players.forEach(player => {
-      schoolSet.add(player.formerSchool);
-      if (player.newSchool) schoolSet.add(player.newSchool);
-    });
-    return Array.from(schoolSet).sort();
-  }, [players]);
-
-
   // Show loading state
   if (loading) {
     return (
       <main className="min-h-screen bg-gray-50">
         <PFNHeader />
-        <Header
-          playerCount={0}
-          totalCount={0}
-          lastUpdated={lastUpdated}
-        />
+        <Header />
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -326,13 +319,9 @@ export default function TransferPortalTracker() {
     return (
       <main className="min-h-screen bg-gray-50">
         <PFNHeader />
-        <Header
-          playerCount={0}
-          totalCount={0}
-          lastUpdated={lastUpdated}
-        />
+        <Header />
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <ErrorMessage message={error} onRetry={fetchData} />
+          <ErrorMessage message={error} onRetry={handleRetry} />
         </div>
       </main>
     );
@@ -341,11 +330,7 @@ export default function TransferPortalTracker() {
   return (
     <main className="min-h-screen bg-gray-50">
       <PFNHeader />
-      <Header
-        playerCount={filteredPlayers.length}
-        totalCount={players.length}
-        lastUpdated={lastUpdated}
-      />
+      <Header />
 
       {/* Raptive Header Ad */}
       <div className="container mx-auto px-4 min-h-[110px]">
@@ -434,7 +419,6 @@ export default function TransferPortalTracker() {
                   onClassChange={setSelectedClass}
                   onPositionChange={setSelectedPosition}
                   onConferenceChange={setSelectedConference}
-                  schools={schools}
                 />
               </div>
 

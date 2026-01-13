@@ -38,10 +38,7 @@ export default function CollegeDirectory() {
   return (
     <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
       <PFNHeader />
-      <Header
-        playerCount={0}
-        totalCount={0}
-      />
+      <Header />
 
       {/* Raptive Header Ad */}
       <div className="container mx-auto px-4 min-h-[110px]">

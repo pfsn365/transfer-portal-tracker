@@ -166,40 +166,83 @@ export const allTeams: Team[] = [
   { id: 'western michigan', name: 'Western Michigan Broncos', slug: 'western-michigan-broncos', conference: 'MAC' },
 ];
 
+// Pre-built lookup Maps for O(1) access
+const teamBySlugMap = new Map<string, Team>(
+  allTeams.map(team => [team.slug, team])
+);
+
+const teamByIdMap = new Map<string, Team>(
+  allTeams.map(team => [team.id.toLowerCase(), team])
+);
+
+const teamByNameMap = new Map<string, Team>(
+  allTeams.map(team => [team.name.toLowerCase(), team])
+);
+
+const teamsByConferenceMap = new Map<Conference, Team[]>();
+allTeams.forEach(team => {
+  const existing = teamsByConferenceMap.get(team.conference) || [];
+  existing.push(team);
+  teamsByConferenceMap.set(team.conference, existing);
+});
+teamsByConferenceMap.forEach((teams, conf) => {
+  teamsByConferenceMap.set(conf, teams.sort((a, b) => a.name.localeCompare(b.name)));
+});
+
+// Cache for fuzzy lookups to avoid repeated searches
+const fuzzyLookupCache = new Map<string, Team | undefined>();
+
 // Helper functions
 export function getTeamBySlug(slug: string): Team | undefined {
-  return allTeams.find(team => team.slug === slug);
+  return teamBySlugMap.get(slug);
 }
 
 export function getTeamById(id: string): Team | undefined {
   const searchTerm = id.toLowerCase().trim();
 
-  // 1. Try exact match on team ID
-  let team = allTeams.find(team => team.id.toLowerCase() === searchTerm);
-  if (team) return team;
+  // Check cache first for fuzzy lookups
+  if (fuzzyLookupCache.has(searchTerm)) {
+    return fuzzyLookupCache.get(searchTerm);
+  }
 
-  // 2. Try exact match on full team name
-  team = allTeams.find(team => team.name.toLowerCase() === searchTerm);
-  if (team) return team;
+  // 1. Try exact match on team ID (O(1))
+  let team = teamByIdMap.get(searchTerm);
+  if (team) {
+    fuzzyLookupCache.set(searchTerm, team);
+    return team;
+  }
+
+  // 2. Try exact match on full team name (O(1))
+  team = teamByNameMap.get(searchTerm);
+  if (team) {
+    fuzzyLookupCache.set(searchTerm, team);
+    return team;
+  }
 
   // 3. Try partial match - check if search term starts with team ID
   // e.g., "Northern Illinois Huskies" starts with "northern illinois"
-  team = allTeams.find(team => searchTerm.startsWith(team.id.toLowerCase()));
-  if (team) return team;
+  team = allTeams.find(t => searchTerm.startsWith(t.id.toLowerCase()));
+  if (team) {
+    fuzzyLookupCache.set(searchTerm, team);
+    return team;
+  }
 
   // 4. Try partial match - check if team name starts with search term
   // e.g., search "Northern Illinois" matches "Northern Illinois Huskies"
-  team = allTeams.find(team => team.name.toLowerCase().startsWith(searchTerm));
-  if (team) return team;
+  team = allTeams.find(t => t.name.toLowerCase().startsWith(searchTerm));
+  if (team) {
+    fuzzyLookupCache.set(searchTerm, team);
+    return team;
+  }
 
+  fuzzyLookupCache.set(searchTerm, undefined);
   return undefined;
 }
 
 export function getTeamsByConference(conference: Conference): Team[] {
-  return allTeams.filter(team => team.conference === conference).sort((a, b) => a.name.localeCompare(b.name));
+  return teamsByConferenceMap.get(conference) || [];
 }
 
 export function getAllConferences(): Conference[] {
-  const conferences = new Set<Conference>(allTeams.map(team => team.conference));
-  return Array.from(conferences).sort();
+  return Array.from(teamsByConferenceMap.keys()).sort();
 }

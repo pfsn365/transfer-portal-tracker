@@ -34,6 +34,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   // Filter state
   const [selectedStatus, setSelectedStatus] = useState<PlayerStatus | 'All'>('All');
@@ -47,36 +48,55 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [sortField, setSortField] = useState<SortField | null>('announcedDate');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
-  // Fetch data from API
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-
-      const response = await fetch(`/cfb-hq/api/transfer-portal`);
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch transfer portal data');
-      }
-
-      const data = await response.json();
-
-      if (data.error) {
-        throw new Error(data.error);
-      }
-
-      setPlayers(data.players || []);
-    } catch (err) {
-      console.error('Error fetching data:', err);
-      setError(err instanceof Error ? err.message : 'An error occurred while loading data');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
+    const abortController = new AbortController();
+
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const response = await fetch(`/cfb-hq/api/transfer-portal`, {
+          signal: abortController.signal,
+        });
+
+        if (abortController.signal.aborted) return;
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch transfer portal data');
+        }
+
+        const data = await response.json();
+
+        if (abortController.signal.aborted) return;
+
+        if (data.error) {
+          throw new Error(data.error);
+        }
+
+        setPlayers(data.players || []);
+      } catch (err) {
+        if (err instanceof Error && err.name === 'AbortError') return;
+        console.error('Error fetching data:', err);
+        setError(err instanceof Error ? err.message : 'An error occurred while loading data');
+      } finally {
+        if (!abortController.signal.aborted) {
+          setLoading(false);
+        }
+      }
+    };
+
     fetchData();
-  }, []);
+
+    return () => {
+      abortController.abort();
+    };
+  }, [refreshKey]);
+
+  // Handle retry
+  const handleRetry = () => {
+    setRefreshKey(prev => prev + 1);
+  };
 
   // Handle sorting
   const handleSort = (field: SortField) => {
@@ -268,7 +288,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     return (
       <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
         <PFNHeader />
-        <Header playerCount={0} totalCount={0} />
+        <Header />
 
         {/* Raptive Header Ad - Reserve space when team not found */}
         <div className="container mx-auto px-4">
@@ -294,7 +314,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     return (
       <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
         <PFNHeader />
-        <Header playerCount={0} totalCount={0} />
+        <Header />
 
         {/* Raptive Header Ad - Reserve space during loading */}
         <div className="container mx-auto px-4">
@@ -313,7 +333,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     return (
       <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
         <PFNHeader />
-        <Header playerCount={0} totalCount={0} />
+        <Header />
 
         {/* Raptive Header Ad - Reserve space during error */}
         <div className="container mx-auto px-4">
@@ -321,7 +341,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         </div>
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <ErrorMessage message={error} onRetry={fetchData} />
+          <ErrorMessage message={error} onRetry={handleRetry} />
         </div>
         <Footer currentPage="CFB" />
       </main>
@@ -333,7 +353,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   return (
     <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
       <PFNHeader />
-      <Header playerCount={0} totalCount={players.length} />
+      <Header />
 
       {/* Raptive Header Ad - Reserve space to prevent CLS */}
       <div className="container mx-auto px-4">

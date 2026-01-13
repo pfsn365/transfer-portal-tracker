@@ -13,7 +13,6 @@ interface FilterBarProps {
   onClassChange: (cls: PlayerClass | 'All') => void;
   onPositionChange: (position: PlayerPosition | 'All') => void;
   onConferenceChange: (conference: Conference | 'All') => void;
-  schools: string[];
 }
 
 const statuses: (PlayerStatus | 'All')[] = ['All', 'Entered', 'Committed'];
@@ -151,7 +150,6 @@ export default function FilterBar({
   onClassChange,
   onPositionChange,
   onConferenceChange,
-  schools,
 }: FilterBarProps) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">

@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { getTeamLogo } from '@/utils/teamLogos';
-import { getTeamColor, getTeamColorLight } from '@/utils/teamColors';
 import { getTeamById } from '@/data/teams';
 import { getWatchlist, addToWatchlist, removeFromWatchlist } from '@/utils/watchlist';
 
