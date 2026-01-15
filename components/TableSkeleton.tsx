@@ -23,7 +23,7 @@ export default function TableSkeleton() {
                   Transfer Path
                 </th>
                 <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  PFSN Impact Grade
+                  Impact Grade
                 </th>
               </tr>
             </thead>

@@ -178,9 +178,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 <SortableHeader field="position" centered>Pos</SortableHeader>
                 <SortableHeader field="class" centered>Class</SortableHeader>
                 <SortableHeader field="status">Status</SortableHeader>
-                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
-                  Transfer Path
-                </th>
+                <SortableHeader field="formerSchool" centered>Previous School</SortableHeader>
+                <th className="px-2 py-4 w-8"></th>
+                <SortableHeader field="newSchool" centered>New School</SortableHeader>
                 <SortableHeader field="rating" centered>
                   <div className="flex items-center justify-center gap-1">
                     <div className="relative">
@@ -208,7 +208,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         </>
                       )}
                     </div>
-                    <span>PFSN Impact Grade</span>
+                    <span>Impact Grade</span>
                   </div>
                 </SortableHeader>
                 <SortableHeader field="announcedDate">Timeline</SortableHeader>
@@ -270,7 +270,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     </span>
                   </td>
                   <td className="px-6 py-4">
-                    <div className="flex items-center gap-2 text-sm">
+                    <div className="flex justify-center">
                       {(() => {
                         const formerTeam = getTeamById(player.formerSchool);
                         return formerTeam ? (
@@ -307,52 +307,53 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           </div>
                         );
                       })()}
+                    </div>
+                  </td>
+                  <td className="px-2 py-4 text-center">
+                    <ArrowRight className="w-4 h-4 text-gray-400 mx-auto" />
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="flex justify-center">
                       {player.newSchool ? (
-                        <>
-                          <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-1" />
-                          {(() => {
-                            const newTeam = getTeamById(player.newSchool!);
-                            return newTeam ? (
-                              <Link href={`/transfer-portal-tracker/teams/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
-                                <div className="relative h-7 w-7 flex-shrink-0">
-                                  <Image
-                                    src={getTeamLogo(player.newSchool.toLowerCase())}
-                                    alt={`${player.newSchool} logo`}
-                                    fill
-                                    sizes="28px"
-                                    className="object-contain"
-                                  />
-                                </div>
-                                <div className="text-left">
-                                  <div className="text-base font-semibold text-green-700 hover:underline">{player.newSchool}</div>
-                                  <div className="text-sm text-gray-500">{player.newConference}</div>
-                                </div>
-                              </Link>
-                            ) : (
-                              <div className="flex items-center gap-2">
-                                <div className="relative h-7 w-7 flex-shrink-0">
-                                  <Image
-                                    src={getTeamLogo(player.newSchool.toLowerCase())}
-                                    alt={`${player.newSchool} logo`}
-                                    fill
-                                    sizes="28px"
-                                    className="object-contain"
-                                  />
-                                </div>
-                                <div className="text-left">
-                                  <div className="text-base font-semibold text-green-700">{player.newSchool}</div>
-                                  <div className="text-sm text-gray-500">{player.newConference}</div>
-                                </div>
+                        (() => {
+                          const newTeam = getTeamById(player.newSchool!);
+                          return newTeam ? (
+                            <Link href={`/transfer-portal-tracker/teams/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                              <div className="relative h-7 w-7 flex-shrink-0">
+                                <Image
+                                  src={getTeamLogo(player.newSchool.toLowerCase())}
+                                  alt={`${player.newSchool} logo`}
+                                  fill
+                                  sizes="28px"
+                                  className="object-contain"
+                                />
                               </div>
-                            );
-                          })()}
-                        </>
-                      ) : player.status === 'Entered' ? (
-                        <>
-                          <ArrowRight className="w-4 h-4 text-gray-500 flex-shrink-0 mx-1" />
-                          <div className="text-2xl font-bold text-gray-500">?</div>
-                        </>
-                      ) : null}
+                              <div className="text-left">
+                                <div className="text-base font-semibold text-green-700 hover:underline">{player.newSchool}</div>
+                                <div className="text-sm text-gray-500">{player.newConference}</div>
+                              </div>
+                            </Link>
+                          ) : (
+                            <div className="flex items-center gap-2">
+                              <div className="relative h-7 w-7 flex-shrink-0">
+                                <Image
+                                  src={getTeamLogo(player.newSchool.toLowerCase())}
+                                  alt={`${player.newSchool} logo`}
+                                  fill
+                                  sizes="28px"
+                                  className="object-contain"
+                                />
+                              </div>
+                              <div className="text-left">
+                                <div className="text-base font-semibold text-green-700">{player.newSchool}</div>
+                                <div className="text-sm text-gray-500">{player.newConference}</div>
+                              </div>
+                            </div>
+                          );
+                        })()
+                      ) : (
+                        <div className="text-2xl font-bold text-gray-400">?</div>
+                      )}
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-center">
@@ -380,7 +381,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 py-4 whitespace-nowrap">
                     <div className="text-base">
                       <div className="text-gray-900">
                         <span className="text-gray-600">Entered: </span>
@@ -515,7 +516,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     <span className="text-gray-900">-</span>
                   )}
                 </div>
-                <div className="text-sm text-gray-500 mt-1 leading-tight">PFSN<br />Grade</div>
+                <div className="text-sm text-gray-500 mt-1 leading-tight">Impact<br />Grade</div>
               </div>
             </div>
 

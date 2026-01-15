@@ -18,7 +18,7 @@ export function exportToCSV(players: TransferPlayer[], filename: string = 'trans
     'Former Conference',
     'New School',
     'New Conference',
-    'PFSN Impact Grade',
+    'Impact Grade',
     'Date Announced'
   ];
 
