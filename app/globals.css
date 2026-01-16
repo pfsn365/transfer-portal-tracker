@@ -21,6 +21,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-top: 50px; /* Space for fixed PFSN header */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* PFSN Header - Critical styles for SSR */
@@ -316,21 +319,21 @@ body {
 
 /* Raptive Header Ad Restriction */
 .raptive-pfn-header-90 {
-  height: 110px;
+  min-height: 105px;
   max-height: 110px;
   overflow: hidden;
+}
+
+/* Raptive/AdThrive Footer Message - ensures it stays at bottom with flexbox ordering */
+.adthrive-footer-message {
+  order: 9999;
+  margin-bottom: 100px;
+  width: 100%;
 }
 
 /* Raptive Privacy Preferences - add padding below */
 .pfsn-footer {
   margin-bottom: 40px;
-}
-
-/* Add space below the Raptive privacy button */
-body::after {
-  content: '';
-  display: block;
-  height: 100px;
 }
 
 /* Optimize animations for performance */
