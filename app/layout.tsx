@@ -28,16 +28,15 @@ export const metadata: Metadata = {
   publisher: "PFSN",
   icons: {
     icon: [
-      { url: '/cfb-hq/favicon.ico', sizes: 'any' },
-      { url: '/cfb-hq/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/cfb-hq/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: 'https://staticd.profootballnetwork.com/skm/assets/pfn/favicon-icon-ver-2.ico', sizes: 'any' },
+      { url: 'https://staticd.profootballnetwork.com/skm/assets/pfn/favicon-icon-ver-2.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
-      { url: '/cfb-hq/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: 'https://staticd.profootballnetwork.com/skm/assets/pfn/favicon-icon-ver-2.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { url: '/cfb-hq/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/cfb-hq/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+      { url: 'https://staticd.profootballnetwork.com/skm/assets/pfn/favicon-icon-ver-2.png', sizes: '192x192', type: 'image/png' },
+      { url: 'https://staticd.profootballnetwork.com/skm/assets/pfn/favicon-icon-ver-2.png', sizes: '512x512', type: 'image/png' },
     ],
   },
   manifest: '/cfb-hq/manifest.json',
