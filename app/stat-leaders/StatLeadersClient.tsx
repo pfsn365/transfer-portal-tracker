@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
+import StatLeadersSkeleton from '@/components/StatLeadersSkeleton';
 import { getApiPath } from '@/utils/api';
 
 // Helper to create player image slug from name
@@ -348,12 +349,7 @@ export default function StatLeadersClient() {
           </div>
 
           {/* Loading State */}
-          {loading && (
-            <div className="flex items-center justify-center py-12">
-              <div className="w-8 h-8 border-4 border-[#800000] border-t-transparent rounded-full animate-spin" />
-              <span className="ml-3 text-gray-600">Loading stat leaders...</span>
-            </div>
-          )}
+          {loading && <StatLeadersSkeleton />}
 
           {/* Error State */}
           {error && (

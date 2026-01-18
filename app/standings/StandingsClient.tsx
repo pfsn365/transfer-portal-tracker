@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
+import StandingsSkeleton from '@/components/StandingsSkeleton';
 import { getApiPath } from '@/utils/api';
 
 interface StandingsTeam {
@@ -306,12 +307,7 @@ export default function StandingsClient() {
           </div>
 
           {/* Loading State */}
-          {loading && (
-            <div className="flex items-center justify-center py-12">
-              <div className="w-8 h-8 border-4 border-[#800000] border-t-transparent rounded-full animate-spin" />
-              <span className="ml-3 text-gray-600">Loading standings...</span>
-            </div>
-          )}
+          {loading && <StandingsSkeleton />}
 
           {/* Error State */}
           {error && (

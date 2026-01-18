@@ -70,8 +70,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               <img
                 src="https://statico.profootballnetwork.com/wp-content/uploads/2025/06/12093424/tools-navigation-06-12-25.jpg"
                 alt="PFSN Logo"
-                width={120}
-                height={24}
+                style={{ height: '24px' }}
                 className="h-6 w-auto transition-all duration-300 hover:opacity-80"
               />
             </a>

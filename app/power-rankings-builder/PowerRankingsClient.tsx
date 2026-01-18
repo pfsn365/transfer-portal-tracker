@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
+import PowerRankingsSkeleton from '@/components/PowerRankingsSkeleton';
 import { getApiPath } from '@/utils/api';
 
 interface TeamWithRecord {
@@ -1172,12 +1173,7 @@ export default function PowerRankingsClient() {
           )}
 
           {/* Loading State */}
-          {loading && (
-            <div className="flex items-center justify-center py-12">
-              <div className="w-8 h-8 border-4 border-[#800000] border-t-transparent rounded-full animate-spin" />
-              <span className="ml-3 text-gray-600">Loading rankings...</span>
-            </div>
-          )}
+          {loading && <PowerRankingsSkeleton />}
 
           {/* Rankings Table */}
           {!loading && (
