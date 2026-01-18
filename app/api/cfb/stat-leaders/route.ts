@@ -30,8 +30,7 @@ const STAT_CATEGORIES = [
   { key: 'passingTouchdowns', name: 'Passing TDs', espnName: 'passingTouchdowns', group: 'passing' },
   { key: 'completionPct', name: 'Completion %', espnName: 'completionPct', group: 'passing' },
   { key: 'yardsPerPassAttempt', name: 'Yards/Attempt', espnName: 'yardsPerPassAttempt', group: 'passing' },
-  { key: 'QBRating', name: 'Passer Rating', espnName: 'QBRating', group: 'passing' },
-  { key: 'interceptions', name: 'INTs Thrown', espnName: 'interceptions', group: 'passing' },
+  { key: 'QBRating', name: 'QB Rating', espnName: 'quarterbackRating', group: 'passing' },
   // Rushing
   { key: 'rushingYards', name: 'Rushing Yards', espnName: 'rushingYards', group: 'rushing' },
   { key: 'rushingTouchdowns', name: 'Rushing TDs', espnName: 'rushingTouchdowns', group: 'rushing' },
@@ -46,7 +45,7 @@ const STAT_CATEGORIES = [
   // Defense
   { key: 'totalTackles', name: 'Tackles', espnName: 'totalTackles', group: 'defense' },
   { key: 'sacks', name: 'Sacks', espnName: 'sacks', group: 'defense' },
-  { key: 'defensiveInterceptions', name: 'Interceptions', espnName: 'defensiveInterceptions', group: 'defense' },
+  { key: 'defensiveInterceptions', name: 'Interceptions', espnName: 'interceptions', group: 'defense' },
   { key: 'tacklesForLoss', name: 'Tackles for Loss', espnName: 'tacklesForLoss', group: 'defense' },
   { key: 'forcedFumbles', name: 'Forced Fumbles', espnName: 'forcedFumbles', group: 'defense' },
   { key: 'passesDefended', name: 'Passes Defended', espnName: 'passesDefended', group: 'defense' },

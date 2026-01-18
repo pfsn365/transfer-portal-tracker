@@ -106,8 +106,7 @@ const CATEGORY_LABELS: Record<string, { short: string; color: string }> = {
   passingTouchdowns: { short: 'PASS TD', color: 'bg-purple-100 text-purple-800' },
   completionPct: { short: 'COMP %', color: 'bg-purple-100 text-purple-800' },
   yardsPerPassAttempt: { short: 'YDS/ATT', color: 'bg-purple-100 text-purple-800' },
-  QBRating: { short: 'QBR', color: 'bg-purple-100 text-purple-800' },
-  interceptions: { short: 'INT', color: 'bg-purple-100 text-purple-800' },
+  QBRating: { short: 'QB RTG', color: 'bg-purple-100 text-purple-800' },
   // Rushing
   rushingYards: { short: 'RUSH YDS', color: 'bg-green-100 text-green-800' },
   rushingTouchdowns: { short: 'RUSH TD', color: 'bg-green-100 text-green-800' },
