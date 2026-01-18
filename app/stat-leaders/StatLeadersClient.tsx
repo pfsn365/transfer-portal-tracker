@@ -619,17 +619,6 @@ export default function StatLeadersClient() {
                 </div>
               )}
 
-              {/* Legend */}
-              <div className="mt-6 bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">Legend</h3>
-                <div className="flex flex-wrap gap-4 text-sm">
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-4 bg-amber-50 border-l-4 border-l-amber-400 rounded-r"></div>
-                    <span className="text-gray-600">{division === 'fbs' ? 'CFP Playoff Team' : 'FCS Playoff Team'}</span>
-                  </div>
-                </div>
-              </div>
-
               {/* No Data */}
               {categories.length === 0 && (
                 <div className="text-center py-12">
