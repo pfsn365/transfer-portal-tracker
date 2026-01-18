@@ -150,22 +150,6 @@ const FBS_CONFERENCES = [
   'Independent'
 ];
 
-// 12-team CFP Playoff teams (FBS) - hardcoded for efficiency
-const FBS_PLAYOFF_TEAMS = [
-  'Indiana', 'Ohio State', 'Georgia', 'Texas Tech', 'Oregon', 'Ole Miss',
-  'Texas A&M', 'Oklahoma', 'Alabama', 'Miami', 'Tulane', 'James Madison'
-];
-
-// FCS Playoff teams (24-team bracket) - hardcoded for efficiency
-const FCS_PLAYOFF_TEAMS = [
-  'Illinois State', 'Southeastern Louisiana', 'Central Connecticut', 'Rhode Island',
-  'North Dakota State', 'UC Davis', 'Yale', 'Youngstown State',
-  'Lamar', 'Abilene Christian', 'Montana State', 'Stephen F. Austin',
-  'Villanova', 'Montana', 'Harvard', 'North Dakota',
-  'Tennessee Tech', 'Lehigh', 'Tarleton State', 'Drake',
-  'South Dakota', 'New Hampshire', 'South Dakota State'
-];
-
 type SortField = 'rank' | 'name' | 'position' | 'team' | 'class' | 'gp' | 'value';
 type SortDirection = 'asc' | 'desc';
 
@@ -327,13 +311,6 @@ export default function StatLeadersClient() {
     if (rank === 2) return 'bg-gray-300 text-gray-700';
     if (rank === 3) return 'bg-amber-600 text-amber-100';
     return 'bg-gray-100 text-gray-800';
-  };
-
-  // Check if player's team is in CFP playoff (uses hardcoded team names)
-  const isOnCfpTeam = (player: StatLeader): boolean => {
-    const playoffTeams = division === 'fbs' ? FBS_PLAYOFF_TEAMS : FCS_PLAYOFF_TEAMS;
-    const teamName = player.teamName.toLowerCase();
-    return playoffTeams.some(pt => teamName.includes(pt.toLowerCase()) || pt.toLowerCase().includes(teamName));
   };
 
   // Get unique conferences from current leaders
@@ -568,14 +545,10 @@ export default function StatLeadersClient() {
                         </tr>
                       </thead>
                       <tbody>
-                        {displayedLeaders.map((leader, index) => {
-                          const onCfpTeam = isOnCfpTeam(leader);
-                          return (
+                        {displayedLeaders.map((leader, index) => (
                             <tr
                               key={leader.playerId || index}
-                              className={`border-b border-gray-200 hover:bg-gray-100 transition-colors ${
-                                onCfpTeam ? 'bg-amber-50 border-l-4 border-l-amber-400' : ''
-                              }`}
+                              className="border-b border-gray-200 hover:bg-gray-100 transition-colors"
                             >
                               <td className="pl-6 pr-4 py-4">
                                 <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-bold ${getMedalColor(index + 1)}`}>
@@ -627,8 +600,7 @@ export default function StatLeadersClient() {
                                 <span className="text-lg font-bold text-[#800000]">{getDisplayValue(leader)}</span>
                               </td>
                             </tr>
-                          );
-                        })}
+                        ))}
                       </tbody>
                     </table>
                   </div>

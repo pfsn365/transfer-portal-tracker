@@ -31,22 +31,6 @@ interface ConferenceStandings {
 // Priority conferences to show first
 const PRIORITY_CONFERENCES = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'Pac-12'];
 
-// 12-team CFP Playoff teams (FBS) - from the homepage bracket
-const FBS_PLAYOFF_TEAMS = [
-  'Indiana', 'Ohio State', 'Georgia', 'Texas Tech', 'Oregon', 'Ole Miss',
-  'Texas A&M', 'Oklahoma', 'Alabama', 'Miami', 'Tulane', 'James Madison'
-];
-
-// FCS Playoff teams (24-team bracket)
-const FCS_PLAYOFF_TEAMS = [
-  'Illinois State', 'Southeastern Louisiana', 'Central Connecticut', 'Rhode Island',
-  'North Dakota State', 'UC Davis', 'Yale', 'Youngstown State',
-  'Lamar', 'Abilene Christian', 'Montana State', 'Stephen F. Austin',
-  'Villanova', 'Montana', 'Harvard', 'North Dakota',
-  'Tennessee Tech', 'Lehigh', 'Tarleton State', 'Drake',
-  'South Dakota', 'New Hampshire', 'South Dakota State'
-];
-
 type SortOption = 'conference' | 'overall' | 'name';
 
 export default function StandingsClient() {
@@ -200,13 +184,6 @@ export default function StandingsClient() {
   // Check if team is bowl eligible (6+ wins)
   const isBowlEligible = (team: StandingsTeam): boolean => {
     return team.wins >= 6;
-  };
-
-  // Check if team made the playoff (FBS 12-team CFP or FCS 24-team bracket)
-  const isInPlayoff = (team: StandingsTeam): boolean => {
-    const playoffTeams = division === 'fbs' ? FBS_PLAYOFF_TEAMS : FCS_PLAYOFF_TEAMS;
-    const teamName = team.name.toLowerCase();
-    return playoffTeams.some(pt => teamName.includes(pt.toLowerCase()) || pt.toLowerCase().includes(teamName));
   };
 
   return (
@@ -386,14 +363,11 @@ export default function StandingsClient() {
                       <tbody className="divide-y divide-gray-100">
                         {conference.teams.map((team, index) => {
                           const cfpRank = getCfpRank(team);
-                          const inPlayoff = isInPlayoff(team);
                           const bowlEligible = isBowlEligible(team);
 
                           // Determine row background color
                           let rowBgClass = index % 2 === 0 ? 'bg-white' : 'bg-gray-50/50';
-                          if (inPlayoff) {
-                            rowBgClass = 'bg-amber-50 border-l-4 border-l-amber-400';
-                          } else if (bowlEligible && division === 'fbs') {
+                          if (bowlEligible && division === 'fbs') {
                             rowBgClass = 'bg-green-50 border-l-4 border-l-green-400';
                           }
 
@@ -490,26 +464,18 @@ export default function StandingsClient() {
           )}
 
           {/* Legend */}
-          {!loading && !error && filteredStandings.length > 0 && (
+          {!loading && !error && filteredStandings.length > 0 && division === 'fbs' && (
             <div className="mt-6 bg-white rounded-xl border border-gray-200 shadow-sm p-4">
               <h3 className="text-sm font-semibold text-gray-700 mb-3">Legend</h3>
               <div className="flex flex-wrap gap-4 text-sm">
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-4 bg-amber-50 border-l-4 border-l-amber-400 rounded-r"></div>
-                  <span className="text-gray-600">{division === 'fbs' ? 'CFP Playoff Team' : 'FCS Playoff Team'}</span>
+                  <div className="w-6 h-4 bg-green-50 border-l-4 border-l-green-400 rounded-r"></div>
+                  <span className="text-gray-600">Bowl Eligible (6+ wins)</span>
                 </div>
-                {division === 'fbs' && (
-                  <>
-                    <div className="flex items-center gap-2">
-                      <div className="w-6 h-4 bg-green-50 border-l-4 border-l-green-400 rounded-r"></div>
-                      <span className="text-gray-600">Bowl Eligible (6+ wins)</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-bold text-amber-700 bg-amber-100 px-1.5 py-0.5 rounded">#1</span>
-                      <span className="text-gray-600">CFP Ranking</span>
-                    </div>
-                  </>
-                )}
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-amber-700 bg-amber-100 px-1.5 py-0.5 rounded">#1</span>
+                  <span className="text-gray-600">CFP Ranking</span>
+                </div>
               </div>
             </div>
           )}
