@@ -50,12 +50,6 @@ const STAT_CATEGORIES = [
   { key: 'tacklesForLoss', name: 'Tackles for Loss', espnName: 'tacklesForLoss', group: 'defense' },
   { key: 'forcedFumbles', name: 'Forced Fumbles', espnName: 'forcedFumbles', group: 'defense' },
   { key: 'passesDefended', name: 'Passes Defended', espnName: 'passesDefended', group: 'defense' },
-  // Special Teams
-  { key: 'puntReturnYards', name: 'Punt Return Yards', espnName: 'puntReturnYards', group: 'specialTeams' },
-  { key: 'kickReturnYards', name: 'Kick Return Yards', espnName: 'kickReturnYards', group: 'specialTeams' },
-  { key: 'puntReturnTouchdowns', name: 'Punt Return TDs', espnName: 'puntReturnTouchdowns', group: 'specialTeams' },
-  { key: 'kickReturnTouchdowns', name: 'Kick Return TDs', espnName: 'kickReturnTouchdowns', group: 'specialTeams' },
-  { key: 'fieldGoalPct', name: 'Field Goal %', espnName: 'fieldGoalPct', group: 'specialTeams' },
 ];
 
 // Keep original categories for backward compatibility

@@ -140,7 +140,6 @@ const STAT_GROUPS = [
   { key: 'rushing', name: 'Rushing', color: 'green' },
   { key: 'receiving', name: 'Receiving', color: 'blue' },
   { key: 'defense', name: 'Defense', color: 'red' },
-  { key: 'specialTeams', name: 'Special Teams', color: 'orange' },
 ];
 
 // FBS Conferences
