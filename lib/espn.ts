@@ -325,7 +325,7 @@ export async function fetchStandings(group: '80' | '81' = '80'): Promise<Confere
     const parseStandingsEntries = (entries: unknown[]): StandingsTeam[] => {
       const teams: StandingsTeam[] = [];
       for (const entry of entries) {
-        const typedEntry = entry as { team?: { id: string; displayName?: string; name?: string; abbreviation?: string; logos?: Array<{ href: string }> }; stats?: Array<{ name: string; displayValue?: string }> };
+        const typedEntry = entry as { team?: { id: string; displayName?: string; shortDisplayName?: string; location?: string; name?: string; abbreviation?: string; logos?: Array<{ href: string }> }; stats?: Array<{ name: string; displayValue?: string }> };
         const team = typedEntry.team;
         if (!team) continue;
 
@@ -343,7 +343,7 @@ export async function fetchStandings(group: '80' | '81' = '80'): Promise<Confere
 
         teams.push({
           id: team.id,
-          name: team.displayName || team.name || '',
+          name: team.location || team.shortDisplayName || team.displayName || team.name || '',
           abbreviation: team.abbreviation || '',
           logo: team.logos?.[0]?.href || '',
           wins: overallRecord.wins,

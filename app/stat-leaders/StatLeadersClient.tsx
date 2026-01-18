@@ -136,9 +136,6 @@ const FBS_CONFERENCES = [
   'Independent'
 ];
 
-type SortField = 'rank' | 'name' | 'position' | 'team' | 'class' | 'gp' | 'value';
-type SortDirection = 'asc' | 'desc';
-
 export default function StatLeadersClient() {
   const [categories, setCategories] = useState<CategoryData[]>([]);
   const [loading, setLoading] = useState(true);
@@ -149,8 +146,6 @@ export default function StatLeadersClient() {
   const [division, setDivision] = useState<'fbs' | 'fcs'>('fbs');
   const [statType, setStatType] = useState<'total' | 'perGame'>('total');
   const [conferenceFilter, setConferenceFilter] = useState<string>('all');
-  const [sortField, setSortField] = useState<SortField>('rank');
-  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -229,7 +224,7 @@ export default function StatLeadersClient() {
   // Get the selected category data
   const selectedCategoryData = categories.find(c => c.name === selectedCategory);
 
-  // Calculate displayed leaders with filtering and sorting
+  // Calculate displayed leaders with filtering
   const displayedLeaders = useMemo(() => {
     if (!selectedCategoryData) return [];
 
@@ -240,57 +235,11 @@ export default function StatLeadersClient() {
       leaders = leaders.filter(l => l.conference === conferenceFilter);
     }
 
-    // Sort based on current sort field and direction
-    leaders.sort((a, b) => {
-      let comparison = 0;
-      switch (sortField) {
-        case 'name':
-          comparison = a.name.localeCompare(b.name);
-          break;
-        case 'position':
-          comparison = a.position.localeCompare(b.position);
-          break;
-        case 'team':
-          comparison = a.teamName.localeCompare(b.teamName);
-          break;
-        case 'class':
-          const classOrder = { 'FR': 1, 'SO': 2, 'JR': 3, 'SR': 4 };
-          comparison = (classOrder[a.classYear as keyof typeof classOrder] || 5) - (classOrder[b.classYear as keyof typeof classOrder] || 5);
-          break;
-        case 'gp':
-          comparison = a.gamesPlayed - b.gamesPlayed;
-          break;
-        case 'value':
-        case 'rank':
-        default:
-          comparison = getNumericValue(b) - getNumericValue(a);
-          break;
-      }
-      return sortDirection === 'asc' ? comparison : -comparison;
-    });
+    // Sort by stat value (highest first)
+    leaders.sort((a, b) => getNumericValue(b) - getNumericValue(a));
 
     return leaders.slice(0, displayCount);
-  }, [selectedCategoryData, conferenceFilter, sortField, sortDirection, displayCount, statType]);
-
-  // Handle column header click for sorting
-  const handleSort = (field: SortField) => {
-    if (sortField === field) {
-      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortField(field);
-      setSortDirection(field === 'value' || field === 'rank' ? 'desc' : 'asc');
-    }
-  };
-
-  // Sort indicator component
-  const SortIndicator = ({ field }: { field: SortField }) => {
-    if (sortField !== field) return null;
-    return (
-      <span className="ml-1">
-        {sortDirection === 'asc' ? '↑' : '↓'}
-      </span>
-    );
-  };
+  }, [selectedCategoryData, conferenceFilter, displayCount, statType]);
 
   const getMedalColor = (rank: number) => {
     if (rank === 1) return 'bg-yellow-400 text-yellow-900';
@@ -453,8 +402,6 @@ export default function StatLeadersClient() {
                           onClick={() => {
                             setSelectedCategory(category.name);
                             setDisplayCount(25);
-                            setSortField('rank');
-                            setSortDirection('asc');
                           }}
                           className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                             isSelected
@@ -486,47 +433,26 @@ export default function StatLeadersClient() {
                     <table className="w-full">
                       <thead className="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
                         <tr>
-                          <th
-                            onClick={() => handleSort('rank')}
-                            className="pl-6 pr-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            Rank <SortIndicator field="rank" />
+                          <th className="pl-6 pr-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 bg-gray-50">
+                            Rank
                           </th>
-                          <th
-                            onClick={() => handleSort('name')}
-                            className="px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            Player <SortIndicator field="name" />
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50">
+                            Player
                           </th>
-                          <th
-                            onClick={() => handleSort('position')}
-                            className="hidden sm:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-20 cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            Pos <SortIndicator field="position" />
+                          <th className="hidden sm:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-20 bg-gray-50">
+                            Pos
                           </th>
-                          <th
-                            onClick={() => handleSort('team')}
-                            className="hidden md:table-cell px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            Team <SortIndicator field="team" />
+                          <th className="hidden md:table-cell px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50">
+                            Team
                           </th>
-                          <th
-                            onClick={() => handleSort('class')}
-                            className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            Class <SortIndicator field="class" />
+                          <th className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 bg-gray-50">
+                            Class
                           </th>
-                          <th
-                            onClick={() => handleSort('gp')}
-                            className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            GP <SortIndicator field="gp" />
+                          <th className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 bg-gray-50">
+                            GP
                           </th>
-                          <th
-                            onClick={() => handleSort('value')}
-                            className="px-4 py-3 text-right text-xs font-semibold text-gray-500 uppercase tracking-wider w-24 cursor-pointer hover:bg-gray-100 bg-gray-50"
-                          >
-                            {CATEGORY_LABELS[selectedCategoryData.name]?.short || 'Value'} <SortIndicator field="value" />
+                          <th className="px-4 py-3 text-right text-xs font-semibold text-gray-500 uppercase tracking-wider w-24 bg-gray-50">
+                            {CATEGORY_LABELS[selectedCategoryData.name]?.short || 'Value'}
                           </th>
                         </tr>
                       </thead>

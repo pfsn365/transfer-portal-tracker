@@ -441,7 +441,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         {new Date(player.announcedDate).toLocaleDateString('en-US', {
                           month: 'numeric',
                           day: 'numeric',
-                          year: 'numeric'
+                          year: '2-digit'
                         })}
                       </div>
                       {player.commitDate && (
@@ -450,7 +450,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           {new Date(player.commitDate).toLocaleDateString('en-US', {
                             month: 'numeric',
                             day: 'numeric',
-                            year: 'numeric'
+                            year: '2-digit'
                           })}
                         </div>
                       )}
@@ -667,7 +667,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 {new Date(player.announcedDate).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
-                  year: 'numeric'
+                  year: '2-digit'
                 })}
               </div>
               {player.commitDate && (
@@ -676,7 +676,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   {new Date(player.commitDate).toLocaleDateString('en-US', {
                     month: 'short',
                     day: 'numeric',
-                    year: 'numeric'
+                    year: '2-digit'
                   })}
                 </div>
               )}
