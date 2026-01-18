@@ -30,7 +30,6 @@ const STAT_CATEGORIES = [
   { key: 'passingTouchdowns', name: 'Passing TDs', espnName: 'passingTouchdowns', group: 'passing' },
   { key: 'completionPct', name: 'Completion %', espnName: 'completionPct', group: 'passing' },
   { key: 'yardsPerPassAttempt', name: 'Yards/Attempt', espnName: 'yardsPerPassAttempt', group: 'passing' },
-  { key: 'QBRating', name: 'QB Rating', espnName: 'quarterbackRating', group: 'passing' },
   // Rushing
   { key: 'rushingYards', name: 'Rushing Yards', espnName: 'rushingYards', group: 'rushing' },
   { key: 'rushingTouchdowns', name: 'Rushing TDs', espnName: 'rushingTouchdowns', group: 'rushing' },

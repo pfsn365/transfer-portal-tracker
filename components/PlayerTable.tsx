@@ -437,7 +437,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="text-base">
                       <div className="text-gray-900">
-                        <span className="text-gray-600">Entered: </span>
+                        <span className="text-gray-600">Ent: </span>
                         {new Date(player.announcedDate).toLocaleDateString('en-US', {
                           month: 'numeric',
                           day: 'numeric',
@@ -446,7 +446,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       </div>
                       {player.commitDate && (
                         <div className="text-gray-900 mt-1">
-                          <span className="text-gray-600">Committed: </span>
+                          <span className="text-gray-600">Com: </span>
                           {new Date(player.commitDate).toLocaleDateString('en-US', {
                             month: 'numeric',
                             day: 'numeric',
@@ -663,7 +663,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
             {/* Timeline */}
             <div className="text-sm text-gray-500">
               <div>
-                <span className="font-medium">Entered: </span>
+                <span className="font-medium">Ent: </span>
                 {new Date(player.announcedDate).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
@@ -672,7 +672,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
               </div>
               {player.commitDate && (
                 <div className="mt-0.5">
-                  <span className="font-medium">Committed: </span>
+                  <span className="font-medium">Com: </span>
                   {new Date(player.commitDate).toLocaleDateString('en-US', {
                     month: 'short',
                     day: 'numeric',

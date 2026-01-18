@@ -89,24 +89,12 @@ const getPositionStyle = (position: string): string => {
   return 'bg-gray-100 text-gray-700';
 };
 
-// Class year color helper
-const getClassYearStyle = (classYear: string): string => {
-  switch (classYear) {
-    case 'FR': return 'bg-green-100 text-green-700';
-    case 'SO': return 'bg-blue-100 text-blue-700';
-    case 'JR': return 'bg-purple-100 text-purple-700';
-    case 'SR': return 'bg-amber-100 text-amber-700';
-    default: return 'bg-gray-100 text-gray-700';
-  }
-};
-
 const CATEGORY_LABELS: Record<string, { short: string; color: string }> = {
   // Passing
   passingYards: { short: 'PASS YDS', color: 'bg-purple-100 text-purple-800' },
   passingTouchdowns: { short: 'PASS TD', color: 'bg-purple-100 text-purple-800' },
   completionPct: { short: 'COMP %', color: 'bg-purple-100 text-purple-800' },
   yardsPerPassAttempt: { short: 'YDS/ATT', color: 'bg-purple-100 text-purple-800' },
-  QBRating: { short: 'QB RTG', color: 'bg-purple-100 text-purple-800' },
   // Rushing
   rushingYards: { short: 'RUSH YDS', color: 'bg-green-100 text-green-800' },
   rushingTouchdowns: { short: 'RUSH TD', color: 'bg-green-100 text-green-800' },
@@ -585,11 +573,7 @@ export default function StatLeadersClient() {
                                 </div>
                               </td>
                               <td className="hidden lg:table-cell px-4 py-4 text-center">
-                                {leader.classYear && (
-                                  <span className={`inline-flex items-center justify-center px-2 py-1 rounded text-xs font-semibold ${getClassYearStyle(leader.classYear)}`}>
-                                    {leader.classYear}
-                                  </span>
-                                )}
+                                <span className="text-gray-600 text-sm">{leader.classYear || '-'}</span>
                               </td>
                               <td className="hidden lg:table-cell px-4 py-4 text-center">
                                 <span className="text-gray-600">{leader.gamesPlayed}</span>
