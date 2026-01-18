@@ -32,7 +32,7 @@ export default function StructuredData() {
           "https://www.instagram.com/pfsn365/",
           "https://www.linkedin.com/company/pfsn365",
           "https://www.youtube.com/c/profootballnetwork",
-          "https://www.tiktok.com/@pfn365",
+          "https://www.tiktok.com/@pfsn365",
           "https://www.threads.com/@pfsn365",
           "https://bsky.app/profile/did:plc:ymwh7dihf5ra32e5ms5jjaar",
           "https://apple.news/TNZRJixlpTJCDE_GPUJK2Lw",
@@ -53,20 +53,36 @@ export default function StructuredData() {
         "inLanguage": "en-US",
         "publisher": {
           "@id": "https://www.profootballnetwork.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.profootballnetwork.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker/#webpage",
-        "url": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker",
-        "name": "CFB Transfer Portal Tracker - College Football Portal News",
-        "description": "Track all college football transfer portal activity in real-time. Filter by status, school, position, class, and conference. The most comprehensive CFB transfer portal tracker.",
+        "@id": "https://www.profootballnetwork.com/cfb-hq/#webpage",
+        "url": "https://www.profootballnetwork.com/cfb-hq",
+        "name": "College Football HQ - CFB Tools, Playoff Bracket & Transfer Portal",
+        "description": "Your destination for college football tools and data at PFSN. Access comprehensive CFB resources including the transfer portal, playoff bracket, standings, and more.",
         "inLanguage": "en-US",
         "isPartOf": {
           "@id": "https://www.profootballnetwork.com/#website"
-        },
-        "about": {
-          "@id": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker/#softwareapplication"
+        }
+      },
+      {
+        "@type": "SportsOrganization",
+        "@id": "https://www.profootballnetwork.com/cfb-hq/#sportsorg",
+        "name": "CFB HQ",
+        "description": "College Football Headquarters - Comprehensive tools and data for college football fans",
+        "sport": "American Football",
+        "url": "https://www.profootballnetwork.com/cfb-hq",
+        "parentOrganization": {
+          "@id": "https://www.profootballnetwork.com/#organization"
         }
       },
       {
@@ -84,8 +100,22 @@ export default function StructuredData() {
         },
         "creator": {
           "@id": "https://www.profootballnetwork.com/#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.profootballnetwork.com/cfb-hq/power-rankings-builder/#softwareapplication",
+        "name": "CFB Power Rankings Builder",
+        "description": "Create and customize your own college football power rankings. Drag and drop teams, save rankings, and download shareable images.",
+        "url": "https://www.profootballnetwork.com/cfb-hq/power-rankings-builder",
+        "applicationCategory": "SportsApplication",
+        "operatingSystem": "Web browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
         },
-        "publisher": {
+        "creator": {
           "@id": "https://www.profootballnetwork.com/#organization"
         }
       },
@@ -93,10 +123,10 @@ export default function StructuredData() {
         "@type": "Dataset",
         "@id": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker/#dataset",
         "name": "College Football Transfer Portal Database",
-        "description": "Real-time database of college football players in the transfer portal, including status, former school, new school, position, class, and conference information. Updated hourly with live transfer portal data.",
+        "description": "Real-time database of college football players in the transfer portal, including status, former school, new school, position, class, and conference information.",
         "url": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker",
-        "keywords": ["CFB Transfer Portal", "College Football Transfers", "NCAA Transfer Portal", "Transfer Portal Database", "College Football Recruiting"],
-        "temporalCoverage": "2024/..",
+        "keywords": ["CFB Transfer Portal", "College Football Transfers", "NCAA Transfer Portal", "Transfer Portal Database"],
+        "temporalCoverage": "2025/..",
         "isAccessibleForFree": true,
         "license": "https://www.profootballnetwork.com/terms-of-service",
         "creator": {
@@ -105,16 +135,35 @@ export default function StructuredData() {
         "includedInDataCatalog": {
           "@type": "DataCatalog",
           "name": "PFSN Sports Data"
-        },
-        "distribution": {
-          "@type": "DataDownload",
-          "encodingFormat": "text/html",
-          "contentUrl": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker"
+        }
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://www.profootballnetwork.com/cfb-hq/standings/#dataset",
+        "name": "College Football Standings Database",
+        "description": "Current college football conference standings for all FBS and FCS divisions, including win-loss records and conference standings.",
+        "url": "https://www.profootballnetwork.com/cfb-hq/standings",
+        "keywords": ["CFB Standings", "College Football Standings", "Conference Standings", "FBS Standings", "FCS Standings"],
+        "isAccessibleForFree": true,
+        "creator": {
+          "@id": "https://www.profootballnetwork.com/#organization"
+        }
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://www.profootballnetwork.com/cfb-hq/stat-leaders/#dataset",
+        "name": "College Football Statistical Leaders Database",
+        "description": "Top statistical leaders in college football including passing, rushing, receiving, and defensive statistics for FBS and FCS.",
+        "url": "https://www.profootballnetwork.com/cfb-hq/stat-leaders",
+        "keywords": ["CFB Stats", "College Football Statistics", "Stat Leaders", "Passing Leaders", "Rushing Leaders"],
+        "isAccessibleForFree": true,
+        "creator": {
+          "@id": "https://www.profootballnetwork.com/#organization"
         }
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker/#breadcrumb",
+        "@id": "https://www.profootballnetwork.com/cfb-hq/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -125,14 +174,8 @@ export default function StructuredData() {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "College Football",
+            "name": "College Football HQ",
             "item": "https://www.profootballnetwork.com/cfb-hq/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Transfer Portal Tracker",
-            "item": "https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker"
           }
         ]
       }

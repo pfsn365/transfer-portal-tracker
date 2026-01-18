@@ -129,6 +129,8 @@ export default function PFNHeader() {
             <img
               src="/cfb-hq/pfsn-logo.png"
               alt="PFSN Logo"
+              width={180}
+              height={36}
               className="header-logo"
             />
           </a>

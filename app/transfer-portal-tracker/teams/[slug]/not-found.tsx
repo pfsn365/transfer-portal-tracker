@@ -115,7 +115,7 @@ export default function TeamNotFound() {
               </p>
               <button
                 onClick={() => setSearchQuery('')}
-                className="mt-3 text-blue-600 hover:text-blue-700 font-medium"
+                className="mt-3 text-blue-600 hover:text-blue-700 font-medium cursor-pointer"
               >
                 Clear search
               </button>

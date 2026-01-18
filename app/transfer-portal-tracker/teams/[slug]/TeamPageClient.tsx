@@ -4,17 +4,18 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition, Conference } from '@/types/player';
+import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition } from '@/types/player';
 import { getTeamBySlug } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor } from '@/utils/teamColors';
 import Header from '@/components/Header';
-import PFNHeader from '@/components/PFNHeader';
+import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import PlayerTable from '@/components/PlayerTable';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
 import { exportToCSV } from '@/utils/csvExport';
+import { CLASS_ORDER } from '@/utils/constants';
 import { Download, X } from 'lucide-react';
 
 interface TeamPageClientProps {
@@ -176,8 +177,8 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     if (!sortField) return filteredPlayers;
 
     const sorted = [...filteredPlayers].sort((a, b) => {
-      let aVal: any;
-      let bVal: any;
+      let aVal: string | number;
+      let bVal: string | number;
 
       switch (sortField) {
         case 'name':
@@ -190,15 +191,8 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           break;
         case 'class':
           // Sort by class year order: FR, RS-FR, SO, RS-SO, JR, RS-JR, SR, RS-SR, GR, RS-GR
-          const classOrder = {
-            'FR': 1, 'RS-FR': 1.5,
-            'SO': 2, 'RS-SO': 2.5,
-            'JR': 3, 'RS-JR': 3.5,
-            'SR': 4, 'RS-SR': 4.5,
-            'GR': 5, 'RS-GR': 5.5
-          };
-          aVal = classOrder[a.class] || 1;
-          bVal = classOrder[b.class] || 1;
+          aVal = CLASS_ORDER[a.class] || 1;
+          bVal = CLASS_ORDER[b.class] || 1;
           break;
         case 'status':
           aVal = a.status;
@@ -284,12 +278,32 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
     );
   }, [selectedStatus, selectedClass, selectedPosition, selectedType]);
 
+  // Sidebar wrapper component to reduce repetition
+  const PageWrapper = ({ children }: { children: React.ReactNode }) => (
+    <div className="flex min-h-screen bg-gray-50">
+      {/* Desktop sidebar */}
+      <div className="hidden lg:block">
+        <div className="fixed top-0 left-0 w-64 h-screen z-10">
+          <CFBSidebar />
+        </div>
+      </div>
+
+      {/* Mobile sidebar */}
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
+        <CFBSidebar isMobile={true} />
+      </div>
+
+      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0" style={{ touchAction: 'manipulation' }}>
+        <Header />
+        {children}
+        <Footer currentPage="CFB" />
+      </main>
+    </div>
+  );
+
   if (!team) {
     return (
-      <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
-        <PFNHeader />
-        <Header />
-
+      <PageWrapper>
         {/* Raptive Header Ad - Reserve space when team not found */}
         <div className="container mx-auto px-4">
           <div className="min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
@@ -305,17 +319,13 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             Back to Teams Directory
           </Link>
         </div>
-        <Footer currentPage="CFB" />
-      </main>
+      </PageWrapper>
     );
   }
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
-        <PFNHeader />
-        <Header />
-
+      <PageWrapper>
         {/* Raptive Header Ad - Reserve space during loading */}
         <div className="container mx-auto px-4">
           <div className="min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
@@ -324,17 +334,13 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <LoadingSpinner />
         </div>
-        <Footer currentPage="CFB" />
-      </main>
+      </PageWrapper>
     );
   }
 
   if (error) {
     return (
-      <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
-        <PFNHeader />
-        <Header />
-
+      <PageWrapper>
         {/* Raptive Header Ad - Reserve space during error */}
         <div className="container mx-auto px-4">
           <div className="min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
@@ -343,18 +349,14 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <ErrorMessage message={error} onRetry={handleRetry} />
         </div>
-        <Footer currentPage="CFB" />
-      </main>
+      </PageWrapper>
     );
   }
 
   const teamColor = getTeamColor(team.id);
 
   return (
-    <main className="min-h-screen bg-gray-50" style={{ touchAction: 'manipulation' }}>
-      <PFNHeader />
-      <Header />
-
+    <PageWrapper>
       {/* Raptive Header Ad - Reserve space to prevent CLS */}
       <div className="container mx-auto px-4">
         <div className="raptive-pfn-header-90 min-h-[90px] md:min-h-[120px] lg:min-h-[150px]"></div>
@@ -406,45 +408,51 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           </ol>
         </nav>
 
-        {/* Team Header */}
+        {/* Team Hero Header */}
         <div
-          className="rounded-lg shadow-md p-6 mb-6 text-white"
+          className="rounded-xl shadow-md mb-6 text-white"
           style={{ backgroundColor: teamColor, contain: 'layout style paint' }}
         >
-          <div className="flex items-center gap-4">
-            <div className="relative h-28 w-28 flex-shrink-0 bg-white rounded-full p-5">
-              <Image
-                src={getTeamLogo(team.id)}
-                alt={`${team.name} logo`}
-                width={112}
-                height={112}
-                sizes="112px"
-                className="object-contain w-full h-full"
-                priority
-              />
-            </div>
-            <div className="min-w-0 flex-1">
-              <h1 className="text-3xl sm:text-4xl font-bold">{team.name}</h1>
-              <p className="text-lg opacity-90">{team.conference}</p>
-            </div>
-          </div>
-        </div>
+          <div className="container mx-auto px-4 py-4 sm:py-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6">
+              <div className="flex items-center gap-4 sm:gap-6">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-white rounded-full flex items-center justify-center shadow-lg p-3 sm:p-4">
+                  <Image
+                    src={getTeamLogo(team.id)}
+                    alt={`${team.name} logo`}
+                    width={112}
+                    height={112}
+                    sizes="(max-width: 640px) 80px, (max-width: 1024px) 96px, 128px"
+                    className="object-contain w-full h-full"
+                    priority
+                  />
+                </div>
+                <div className="min-w-0 text-center lg:text-left">
+                  <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1">{team.name}</h1>
+                  <p className="text-base sm:text-lg lg:text-xl opacity-90">{team.conference}</p>
+                </div>
+              </div>
 
-        {/* Stats Summary */}
-        <div className="grid grid-cols-3 gap-4 mb-6" style={{ contain: 'layout' }}>
-          <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
-            <p className="text-base text-gray-600 uppercase mb-1">Incoming</p>
-            <p className="text-2xl font-bold text-green-600">{teamStats.incoming}</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
-            <p className="text-base text-gray-600 uppercase mb-1">Outgoing</p>
-            <p className="text-2xl font-bold text-red-600">{teamStats.outgoing}</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-md p-4 min-h-[88px] flex flex-col justify-between">
-            <p className="text-base text-gray-600 uppercase mb-1">Net Gain/Loss</p>
-            <p className={`text-2xl font-bold ${teamStats.netGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-              {teamStats.netGain >= 0 ? '+' : ''}{teamStats.netGain}
-            </p>
+              {/* Stats Card */}
+              <div className="bg-white text-gray-800 rounded-lg p-4 sm:p-6 w-full lg:w-auto shadow-lg">
+                <div className="grid grid-cols-3 gap-4 sm:gap-6 text-center">
+                  <div>
+                    <p className="text-xs sm:text-sm text-gray-600 uppercase font-semibold mb-1">Incoming</p>
+                    <p className="text-xl sm:text-2xl font-bold text-green-600">{teamStats.incoming}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs sm:text-sm text-gray-600 uppercase font-semibold mb-1">Outgoing</p>
+                    <p className="text-xl sm:text-2xl font-bold text-red-600">{teamStats.outgoing}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs sm:text-sm text-gray-600 uppercase font-semibold mb-1">Net</p>
+                    <p className={`text-xl sm:text-2xl font-bold ${teamStats.netGain >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                      {teamStats.netGain >= 0 ? '+' : ''}{teamStats.netGain}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -460,7 +468,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
                 id="status-filter"
                 value={selectedStatus}
                 onChange={(e) => handleStatusChange(e.target.value as PlayerStatus | 'All')}
-                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm cursor-pointer"
                 aria-label="Filter by status"
               >
                 <option value="All">All</option>
@@ -478,7 +486,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
                 id="class-filter"
                 value={selectedClass}
                 onChange={(e) => handleClassChange(e.target.value as PlayerClass | 'All')}
-                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm cursor-pointer"
                 aria-label="Filter by class"
               >
                 <option value="All">All</option>
@@ -499,7 +507,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
                 id="position-filter"
                 value={selectedPosition}
                 onChange={(e) => handlePositionChange(e.target.value as PlayerPosition | 'All')}
-                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm cursor-pointer"
                 aria-label="Filter by position"
               >
                 <option value="All">All</option>
@@ -533,7 +541,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
                 id="type-filter"
                 value={selectedType}
                 onChange={(e) => handleTypeChange(e.target.value as TransferType)}
-                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm"
+                className="w-full px-3 py-2.5 sm:py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 transition-all text-base sm:text-sm cursor-pointer"
                 aria-label="Filter by transfer type"
               >
                 <option value="All">All</option>
@@ -549,7 +557,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             <button
               onClick={handleExport}
               disabled={sortedPlayers.length === 0}
-              className="flex items-center gap-2 px-4 py-2.5 min-h-[44px] bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
+              className="flex items-center gap-2 px-4 py-2.5 min-h-[44px] bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation cursor-pointer"
               aria-label="Export transfers to CSV"
             >
               <Download className="w-4 h-4" aria-hidden="true" />
@@ -559,7 +567,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
             {/* Clear Filters */}
             <button
               onClick={handleClearFilters}
-              className={`flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-lg font-medium transition-colors touch-manipulation ${
+              className={`flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-lg font-medium transition-colors touch-manipulation cursor-pointer ${
                 hasActiveFilters
                   ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
                   : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
@@ -591,8 +599,6 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
           )}
         </div>
       </div>
-
-      <Footer currentPage="CFB" />
-    </main>
+    </PageWrapper>
   );
 }

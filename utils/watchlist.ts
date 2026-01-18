@@ -39,12 +39,3 @@ export function removeFromWatchlist(playerId: string): void {
     console.error('Error removing from watchlist:', error);
   }
 }
-
-export function isInWatchlist(playerId: string): boolean {
-  const watchlist = getWatchlist();
-  return watchlist.includes(playerId);
-}
-
-export function getWatchlistCount(): number {
-  return getWatchlist().length;
-}

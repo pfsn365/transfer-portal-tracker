@@ -143,7 +143,7 @@ const initialPlayoffData: { [key: string]: Matchup } = {
   },
 };
 
-function TeamLogo({ teamName, size = 24 }: { teamName: string; size?: number }) {
+function TeamLogo({ teamName, size = 28 }: { teamName: string; size?: number }) {
   if (!teamName || teamName === 'TBD' || teamName.startsWith('Winner')) {
     return (
       <div
@@ -161,8 +161,9 @@ function TeamLogo({ teamName, size = 24 }: { teamName: string; size?: number }) 
     <img
       src={logoUrl}
       alt={`${teamName} logo`}
+      width={size}
+      height={size}
       className="flex-shrink-0 object-contain"
-      style={{ width: size, height: size }}
       onError={(e) => {
         (e.target as HTMLImageElement).src = '/cfb-hq/logos/default.svg';
       }}
@@ -199,7 +200,7 @@ function MatchupCard({ matchup, compact = false, userPick, onPickWinner, canPick
 
   return (
     <div className={`bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden`}>
-      <div className={compact ? 'p-1.5' : 'p-2'}>
+      <div className={compact ? 'p-2' : 'p-3'}>
         <TeamRow
           team={displayTeam1}
           compact={compact}
@@ -208,7 +209,7 @@ function MatchupCard({ matchup, compact = false, userPick, onPickWinner, canPick
           canPick={canPickTeam1}
           onPick={() => onPickWinner?.(matchup.id, 'team1')}
         />
-        <div className="border-t border-gray-100 my-1"></div>
+        <div className="border-t border-gray-100 my-1.5"></div>
         <TeamRow
           team={displayTeam2}
           compact={compact}
@@ -219,8 +220,8 @@ function MatchupCard({ matchup, compact = false, userPick, onPickWinner, canPick
         />
       </div>
       {matchup.location && (
-        <div className="bg-gray-50 px-2 py-1 border-t border-gray-200">
-          <span className="text-xs text-gray-600">{matchup.date} - {matchup.location}</span>
+        <div className="bg-gray-50 px-3 py-1.5 border-t border-gray-200">
+          <span className="text-sm text-gray-600">{matchup.date} - {matchup.location}</span>
         </div>
       )}
     </div>
@@ -242,27 +243,27 @@ function TeamRow({ team, compact = false, isWinner = false, isPicked = false, ca
   return (
     <div
       onClick={canPick && !isTBD ? onPick : undefined}
-      className={`flex items-center justify-between ${compact ? 'py-0.5' : 'py-1'}
+      className={`flex items-center justify-between ${compact ? 'py-1' : 'py-1.5'}
         ${isWinner ? 'font-semibold' : ''}
-        ${isPicked ? 'bg-green-50 -mx-1.5 px-1.5 rounded' : ''}
-        ${canPick && !isTBD ? 'cursor-pointer hover:bg-gray-50 -mx-1.5 px-1.5 rounded transition-colors' : ''}`}
+        ${isPicked ? 'bg-green-50 -mx-2 px-2 rounded' : ''}
+        ${canPick && !isTBD ? 'cursor-pointer hover:bg-gray-50 -mx-2 px-2 rounded transition-colors' : ''}`}
     >
       <div className="flex items-center gap-2 min-w-0 flex-1">
         {team.seed > 0 && (
-          <span className={`${compact ? 'text-xs' : 'text-sm'} text-gray-500 w-4 flex-shrink-0`}>
+          <span className={`${compact ? 'text-sm' : 'text-base'} text-gray-500 w-5 flex-shrink-0`}>
             {team.seed}
           </span>
         )}
-        <TeamLogo teamName={team.name} size={compact ? 20 : 24} />
-        <span className={`${compact ? 'text-xs' : 'text-sm'} ${isTBD ? 'text-gray-500 italic' : isWinner ? 'text-gray-900' : 'text-gray-600'} truncate`}>
+        <TeamLogo teamName={team.name} size={compact ? 24 : 28} />
+        <span className={`${compact ? 'text-sm' : 'text-base'} ${isTBD ? 'text-gray-500 italic' : isWinner ? 'text-gray-900' : 'text-gray-600'} truncate`}>
           {team.name || 'TBD'}
         </span>
         {isPicked && (
-          <span className="text-green-600 text-xs ml-1">✓</span>
+          <span className="text-green-600 text-sm ml-1">✓</span>
         )}
       </div>
       {team.score !== undefined && (
-        <span className={`${compact ? 'text-xs' : 'text-sm'} ${isWinner ? 'text-gray-900 font-bold' : 'text-gray-500'} ml-2`}>
+        <span className={`${compact ? 'text-sm' : 'text-base'} ${isWinner ? 'text-gray-900 font-bold' : 'text-gray-500'} ml-2`}>
           {team.score}
         </span>
       )}
@@ -279,7 +280,7 @@ export default function CFBPlayoffBracket() {
 
   // Recompute display data when user picks change
   useEffect(() => {
-    const newData = JSON.parse(JSON.stringify(initialPlayoffData)) as typeof initialPlayoffData;
+    const newData = structuredClone(initialPlayoffData);
 
     // Process each matchup and propagate winners/picks
     const processMatchup = (matchupId: string) => {
@@ -363,28 +364,28 @@ export default function CFBPlayoffBracket() {
   const hasAnyPicks = Object.keys(userPicks).length > 0;
 
   return (
-    <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden w-fit mx-auto">
-      <div className="px-4 py-2 border-b border-gray-200 flex items-center justify-between" style={{ backgroundColor: '#800000' }}>
-        <h3 className="text-lg font-bold text-white">2025-26 CFB Playoff Bracket</h3>
+    <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden w-full max-w-6xl mx-auto">
+      <div className="px-5 py-3 border-b border-gray-200 flex items-center justify-between" style={{ backgroundColor: '#800000' }}>
+        <h3 className="text-xl font-bold text-white">2025-26 CFB Playoff Bracket</h3>
         <button
           onClick={() => setUserPicks({})}
-          className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${hasAnyPicks ? 'bg-white/20 text-white hover:bg-white/30' : 'invisible'}`}
+          className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-colors cursor-pointer ${hasAnyPicks ? 'bg-white/20 text-white hover:bg-white/30' : 'invisible'}`}
         >
           Clear Picks
         </button>
       </div>
 
-      <div className="bg-blue-50 border-b border-blue-200 px-4 py-2">
+      <div className="bg-blue-50 border-b border-blue-200 px-5 py-2.5">
         <p className="text-sm text-blue-700">Click on a team to pick them as the winner. Your picks will advance through the bracket.</p>
       </div>
 
-      <div className="px-4 pt-2 pb-4 overflow-x-auto">
+      <div className="px-5 pt-3 pb-5 overflow-x-auto">
         {/* Desktop Bracket View */}
         <div className="hidden lg:block">
-          <div className="flex items-stretch gap-4">
+          <div className="flex items-stretch gap-4 justify-between">
             {/* First Round */}
-            <div className="flex flex-col gap-4 w-[180px]">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide text-center">First Round</div>
+            <div className="flex flex-col gap-5 flex-1 min-w-[200px] max-w-[260px]">
+              <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center">First Round</div>
               <MatchupCard matchup={displayData['r1-1']} compact userPick={userPicks['r1-1']} onPickWinner={handlePickWinner} canPick />
               <MatchupCard matchup={displayData['r1-2']} compact userPick={userPicks['r1-2']} onPickWinner={handlePickWinner} canPick />
               <MatchupCard matchup={displayData['r1-3']} compact userPick={userPicks['r1-3']} onPickWinner={handlePickWinner} canPick />
@@ -392,8 +393,8 @@ export default function CFBPlayoffBracket() {
             </div>
 
             {/* Quarterfinals */}
-            <div className="flex flex-col gap-4 w-[180px] justify-around">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide text-center">Quarterfinals</div>
+            <div className="flex flex-col gap-5 flex-1 min-w-[200px] max-w-[260px] justify-around">
+              <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center">Quarterfinals</div>
               <MatchupCard matchup={displayData['qf-1']} compact userPick={userPicks['qf-1']} onPickWinner={handlePickWinner} canPick />
               <MatchupCard matchup={displayData['qf-2']} compact userPick={userPicks['qf-2']} onPickWinner={handlePickWinner} canPick />
               <MatchupCard matchup={displayData['qf-3']} compact userPick={userPicks['qf-3']} onPickWinner={handlePickWinner} canPick />
@@ -401,8 +402,8 @@ export default function CFBPlayoffBracket() {
             </div>
 
             {/* Semifinals */}
-            <div className="flex flex-col gap-4 w-[180px] justify-around">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide text-center">Semifinals</div>
+            <div className="flex flex-col gap-5 flex-1 min-w-[200px] max-w-[260px] justify-around">
+              <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center">Semifinals</div>
               <div className="flex-1 flex flex-col justify-around">
                 <MatchupCard matchup={displayData['sf-1']} compact userPick={userPicks['sf-1']} onPickWinner={handlePickWinner} canPick />
                 <MatchupCard matchup={displayData['sf-2']} compact userPick={userPicks['sf-2']} onPickWinner={handlePickWinner} canPick />
@@ -410,22 +411,22 @@ export default function CFBPlayoffBracket() {
             </div>
 
             {/* Championship */}
-            <div className="flex flex-col w-[200px]">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide text-center">Championship</div>
+            <div className="flex flex-col flex-1 min-w-[220px] max-w-[280px]">
+              <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center">Championship</div>
               <div className="flex-1 flex flex-col justify-center">
                 <MatchupCard matchup={displayData['final']} userPick={userPicks['final']} onPickWinner={handlePickWinner} canPick />
-                <div className="mt-3 text-center">
-                  <div className={`inline-block rounded-lg px-4 py-2 ${champion ? 'bg-yellow-100 border border-yellow-300' : 'bg-gray-100 border border-gray-200'}`}>
-                    <span className={`font-semibold text-sm ${champion ? 'text-yellow-800' : 'text-gray-500'}`}>
+                <div className="mt-4 text-center">
+                  <div className={`inline-block rounded-lg px-5 py-3 ${champion ? 'bg-yellow-100 border border-yellow-300' : 'bg-gray-100 border border-gray-200'}`}>
+                    <span className={`font-semibold text-base ${champion ? 'text-yellow-800' : 'text-gray-500'}`}>
                       {userPicks['final'] && !finalMatchup.completed ? 'Your Pick' : 'National Champion'}
                     </span>
                     {champion ? (
-                      <div className="flex items-center justify-center gap-2 mt-1">
-                        <TeamLogo teamName={champion.name} size={24} />
-                        <span className="text-gray-900 font-bold">{champion.name}</span>
+                      <div className="flex items-center justify-center gap-2 mt-2">
+                        <TeamLogo teamName={champion.name} size={28} />
+                        <span className="text-gray-900 font-bold text-lg">{champion.name}</span>
                       </div>
                     ) : (
-                      <div className="text-gray-500 italic">TBD</div>
+                      <div className="text-gray-500 italic text-lg">TBD</div>
                     )}
                   </div>
                 </div>

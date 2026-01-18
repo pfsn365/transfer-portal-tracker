@@ -7,6 +7,68 @@ import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamById } from '@/data/teams';
 import { getWatchlist, addToWatchlist, removeFromWatchlist } from '@/utils/watchlist';
 
+// Helper to create player image slug from name
+function createPlayerSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim();
+}
+
+// Player avatar component - shows player image with team logo fallback
+function PlayerAvatar({
+  playerName,
+  teamName,
+  size = 'lg'
+}: {
+  playerName: string;
+  teamName: string;
+  size?: 'sm' | 'md' | 'lg';
+}) {
+  const [imageError, setImageError] = useState(false);
+  const slug = createPlayerSlug(playerName);
+
+  const sizeClasses = {
+    sm: 'h-10 w-10',
+    md: 'h-12 w-12',
+    lg: 'h-16 w-16',
+  };
+
+  const paddingClasses = {
+    sm: 'p-2',
+    md: 'p-2',
+    lg: 'p-3',
+  };
+
+  // If player image failed to load, show team logo
+  if (imageError) {
+    return (
+      <div className={`flex-shrink-0 ${sizeClasses[size]} relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200`}>
+        <Image
+          src={getTeamLogo(teamName.toLowerCase())}
+          alt={`${teamName} logo`}
+          fill
+          sizes={size === 'lg' ? '64px' : size === 'md' ? '48px' : '40px'}
+          className={`object-contain ${paddingClasses[size]}`}
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className={`flex-shrink-0 ${sizeClasses[size]} relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200`}>
+      <img
+        src={`/cfb-hq/player-images/${slug}.png`}
+        alt={`${playerName} headshot`}
+        className="w-full h-full object-cover"
+        onError={() => setImageError(true)}
+      />
+    </div>
+  );
+}
+
 // Get position-specific impact grade URL (only for positions with ranking pages)
 function getPositionImpactUrl(position: PlayerPosition): string | null {
   // Special case URLs that don't follow the standard pattern
@@ -136,7 +198,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
     if (position === 'TE') return 'bg-cyan-100 text-cyan-800';
 
     // Offensive Line
-    if (['OL', 'OT', 'OG', 'C'].includes(position)) return 'bg-orange-100 text-orange-800';
+    if (['OL', 'OT', 'OG', 'OC', 'IOL', 'T', 'C', 'G'].includes(position)) return 'bg-orange-100 text-orange-800';
 
     // Defensive Line
     if (['EDGE', 'DL', 'DT'].includes(position)) return 'bg-red-100 text-red-800';
@@ -190,7 +252,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           e.stopPropagation();
                           setShowImpactInfo(!showImpactInfo);
                         }}
-                        className="inline-flex items-center justify-center w-4 h-4 rounded-full hover:bg-gray-200 transition-colors"
+                        className="inline-flex items-center justify-center w-4 h-4 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
                         aria-label="Impact grade information"
                       >
                         <Info className="w-3 h-3 text-gray-500" />
@@ -223,7 +285,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   <td className="px-4 py-4 text-center">
                     <button
                       onClick={() => toggleWatchlist(player.id)}
-                      className="hover:scale-110 transition-transform"
+                      className="hover:scale-110 transition-transform cursor-pointer"
                       title={watchlist.includes(player.id) ? 'Remove from watchlist' : 'Add to watchlist'}
                     >
                       <Star
@@ -237,20 +299,11 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      {(() => {
-                        const displaySchool = getDisplaySchool(player);
-                        return (
-                          <div className="flex-shrink-0 h-16 w-16 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
-                            <Image
-                              src={getTeamLogo(displaySchool.toLowerCase())}
-                              alt={`${displaySchool} logo`}
-                              fill
-                              sizes="64px"
-                              className="object-contain p-3"
-                            />
-                          </div>
-                        );
-                      })()}
+                      <PlayerAvatar
+                        playerName={player.name}
+                        teamName={getDisplaySchool(player)}
+                        size="lg"
+                      />
                       <div className="ml-4">
                         <div className="text-sm font-bold text-gray-900">{player.name}</div>
                       </div>
@@ -419,7 +472,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
             <select
               value={sortField || ''}
               onChange={(e) => onSort(e.target.value as SortField)}
-              className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
             >
               <option value="">Default</option>
               <option value="name">Player Name</option>
@@ -432,7 +485,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
               <button
                 type="button"
                 onClick={() => onSort(sortField)}
-                className="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 transition-colors"
+                className="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
               >
                 {sortDirection === 'asc' ? (
                   <ChevronUp className="w-5 h-5" />
@@ -452,7 +505,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
               <div className="flex items-start gap-2.5 flex-1 min-w-0">
                 <button
                   onClick={() => toggleWatchlist(player.id)}
-                  className="hover:scale-110 transition-transform flex-shrink-0 mt-1"
+                  className="hover:scale-110 transition-transform flex-shrink-0 mt-1 cursor-pointer"
                   title={watchlist.includes(player.id) ? 'Remove from watchlist' : 'Add to watchlist'}
                 >
                   <Star
@@ -464,20 +517,11 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   />
                 </button>
                 <div className="flex items-center gap-2.5 flex-1 min-w-0">
-                {(() => {
-                  const displaySchool = getDisplaySchool(player);
-                  return (
-                    <div className="flex-shrink-0 h-12 w-12 relative rounded-full overflow-hidden bg-gray-100 ring-2 ring-gray-200">
-                      <Image
-                        src={getTeamLogo(displaySchool.toLowerCase())}
-                        alt={`${displaySchool} logo`}
-                        fill
-                        sizes="48px"
-                        className="object-contain p-2"
-                      />
-                    </div>
-                  );
-                })()}
+                  <PlayerAvatar
+                    playerName={player.name}
+                    teamName={getDisplaySchool(player)}
+                    size="md"
+                  />
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-gray-900 text-base leading-tight mb-1.5">{player.name}</h3>
                   <div className="flex items-center gap-1.5 flex-wrap">

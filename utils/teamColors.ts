@@ -173,30 +173,3 @@ export function getTeamColor(teamName: string): string {
   const team = teamName.toLowerCase().trim()
   return teamColors[team] || '#004E89' // Default to blue if team not found
 }
-
-// Convert hex to RGB for opacity support
-export function hexToRgb(hex: string): { r: number; g: number; b: number } | null {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
-  return result ? {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
-  } : null
-}
-
-// Get lighter shade of team color for backgrounds
-export function getTeamColorLight(teamName: string, opacity: number = 0.1): string {
-  const hex = getTeamColor(teamName)
-  const rgb = hexToRgb(hex)
-  if (!rgb) return `rgba(0, 78, 137, ${opacity})`
-  return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${opacity})`
-}
-
-// Determine if text should be light or dark based on background color
-export function getContrastTextColor(hexColor: string): string {
-  const rgb = hexToRgb(hexColor)
-  if (!rgb) return '#FFFFFF'
-
-  const luminance = (0.299 * rgb.r + 0.587 * rgb.g + 0.114 * rgb.b) / 255
-  return luminance > 0.5 ? '#000000' : '#FFFFFF'
-}
