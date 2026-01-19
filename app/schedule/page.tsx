@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CFB Schedule 2025 | College Football Games & Scores',
     description: 'View the complete 2025 college football schedule. Browse FBS and FCS games by week, check scores, TV broadcasts, and game times.',
-    url: 'https://profootballnetwork.com/cfb-hq/schedule',
+    url: 'https://www.profootballnetwork.com/cfb-hq/schedule',
     type: 'website',
   },
   twitter: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: 'View the complete 2025 college football schedule. Browse FBS and FCS games by week, check scores, and game times.',
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/schedule',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/schedule',
   },
 };
 

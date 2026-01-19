@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CFB Standings 2025 | College Football Conference Standings',
     description: 'View current college football standings for all FBS and FCS conferences. Track conference records, overall records, and winning streaks.',
-    url: 'https://profootballnetwork.com/cfb-hq/standings',
+    url: 'https://www.profootballnetwork.com/cfb-hq/standings',
     type: 'website',
   },
   twitter: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'View current college football standings for all FBS and FCS conferences.',
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/standings',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/standings',
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CFB Power Rankings Builder 2025 | Create Your Own Rankings',
     description: 'Create and customize your own college football power rankings. Drag and drop teams, save multiple rankings, and download shareable images.',
-    url: 'https://profootballnetwork.com/cfb-hq/power-rankings-builder',
+    url: 'https://www.profootballnetwork.com/cfb-hq/power-rankings-builder',
     type: 'website',
   },
   twitter: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'Create and customize your own college football power rankings. Drag, drop, save, and share.',
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/power-rankings-builder',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/power-rankings-builder',
   },
 };
 

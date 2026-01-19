@@ -10,14 +10,14 @@ import { getApiPath } from '@/utils/api';
 
 // Featured FBS teams (popular/successful programs)
 const FEATURED_TEAMS = [
-  { id: 'ohio-state', name: 'Ohio State', abbr: 'OSU', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/194.png' },
-  { id: 'alabama', name: 'Alabama', abbr: 'ALA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/333.png' },
-  { id: 'georgia', name: 'Georgia', abbr: 'UGA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/61.png' },
-  { id: 'texas', name: 'Texas', abbr: 'TEX', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/251.png' },
-  { id: 'michigan', name: 'Michigan', abbr: 'MICH', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/130.png' },
-  { id: 'usc', name: 'USC', abbr: 'USC', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/30.png' },
-  { id: 'notre-dame', name: 'Notre Dame', abbr: 'ND', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/87.png' },
-  { id: 'oregon', name: 'Oregon', abbr: 'ORE', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png' },
+  { id: 'ohio-state-buckeyes', name: 'Ohio State', abbr: 'OSU', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/194.png' },
+  { id: 'alabama-crimson-tide', name: 'Alabama', abbr: 'ALA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/333.png' },
+  { id: 'georgia-bulldogs', name: 'Georgia', abbr: 'UGA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/61.png' },
+  { id: 'texas-longhorns', name: 'Texas', abbr: 'TEX', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/251.png' },
+  { id: 'michigan-wolverines', name: 'Michigan', abbr: 'MICH', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/130.png' },
+  { id: 'usc-trojans', name: 'USC', abbr: 'USC', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/30.png' },
+  { id: 'notre-dame-fighting-irish', name: 'Notre Dame', abbr: 'ND', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/87.png' },
+  { id: 'oregon-ducks', name: 'Oregon', abbr: 'ORE', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png' },
 ];
 
 interface StatLeader {
@@ -33,22 +33,9 @@ interface CategoryData {
   leaders: StatLeader[];
 }
 
-interface Article {
-  title: string;
-  link: string;
-  pubDate: string;
-  description: string;
-  featuredImage?: string;
-  author?: string;
-  category?: string;
-}
-
 export default function CFBHomePageContent() {
   const [statLeaders, setStatLeaders] = useState<CategoryData[]>([]);
   const [statLeadersLoading, setStatLeadersLoading] = useState(true);
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [articlesLoading, setArticlesLoading] = useState(true);
-  const [visibleArticles, setVisibleArticles] = useState(3);
 
   // Fetch all data on mount
   useEffect(() => {
@@ -76,30 +63,7 @@ export default function CFBHomePageContent() {
       }
     }
 
-    async function fetchArticles() {
-      try {
-        const rssUrl = encodeURIComponent('https://www.profootballnetwork.com/cfb-feed/');
-        const response = await fetch(getApiPath(`api/proxy-rss?url=${rssUrl}`), {
-          signal: abortController.signal,
-        });
-        if (abortController.signal.aborted) return;
-        if (response.ok) {
-          const data = await response.json();
-          setArticles(data.articles || []);
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        console.error('Error fetching articles:', err);
-      } finally {
-        if (!abortController.signal.aborted) {
-          setArticlesLoading(false);
-        }
-      }
-    }
-
-    // Fetch all data in parallel
     fetchStatLeaders();
-    fetchArticles();
 
     return () => {
       abortController.abort();
@@ -423,124 +387,6 @@ export default function CFBHomePageContent() {
             </div>
           </div>
 
-          {/* Latest College Football Articles Section */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-8">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-gray-900">Latest College Football Articles</h2>
-              <a
-                href="https://www.profootballnetwork.com/cfb/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#800000] hover:text-[#600000] font-semibold text-sm transition-colors"
-              >
-                View All Articles →
-              </a>
-            </div>
-
-            {articlesLoading ? (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="animate-pulse">
-                    <div className="bg-gray-200 rounded-lg h-48 mb-4"></div>
-                    <div className="h-4 bg-gray-200 rounded w-20 mb-2"></div>
-                    <div className="h-5 bg-gray-200 rounded mb-2"></div>
-                    <div className="h-5 bg-gray-200 rounded w-3/4 mb-3"></div>
-                    <div className="h-3 bg-gray-200 rounded w-full mb-1"></div>
-                    <div className="h-3 bg-gray-200 rounded w-2/3"></div>
-                  </div>
-                ))}
-              </div>
-            ) : articles.length > 0 ? (
-              <>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {articles.slice(0, visibleArticles).map((article, index) => (
-                    <a
-                      key={index}
-                      href={article.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block"
-                    >
-                      {/* Article Image */}
-                      <div className="relative h-48 rounded-lg overflow-hidden mb-4 bg-gray-100">
-                        {article.featuredImage ? (
-                          <Image
-                            src={article.featuredImage}
-                            alt={article.title}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
-                            unoptimized
-                          />
-                        ) : (
-                          <div className="w-full h-full bg-gradient-to-br from-[#800000] to-[#600000] flex items-center justify-center">
-                            <span className="text-white text-4xl font-bold opacity-30">CFB</span>
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Category Badge */}
-                      {article.category && (
-                        <span className="inline-block text-xs font-semibold text-[#800000] uppercase tracking-wide mb-2">
-                          {article.category}
-                        </span>
-                      )}
-
-                      {/* Title */}
-                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#800000] transition-colors line-clamp-2 mb-2">
-                        {article.title}
-                      </h3>
-
-                      {/* Description */}
-                      <p className="text-sm text-gray-600 line-clamp-2 mb-3">
-                        {article.description}
-                      </p>
-
-                      {/* Meta */}
-                      <div className="flex items-center gap-3 text-xs text-gray-500">
-                        {article.author && <span>{article.author}</span>}
-                        {article.pubDate && (
-                          <span>
-                            {new Date(article.pubDate).toLocaleDateString('en-US', {
-                              month: 'short',
-                              day: 'numeric',
-                              year: 'numeric'
-                            })}
-                          </span>
-                        )}
-                      </div>
-                    </a>
-                  ))}
-                </div>
-
-                {/* Show More Button */}
-                {visibleArticles < articles.length && (
-                  <div className="mt-8 text-center">
-                    <button
-                      onClick={() => setVisibleArticles(prev => prev + 3)}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-lg transition-colors cursor-pointer"
-                    >
-                      Show More Articles
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                  </div>
-                )}
-              </>
-            ) : (
-              <div className="text-center py-8 text-gray-500">
-                <p>No articles available at the moment</p>
-                <a
-                  href="https://www.profootballnetwork.com/college-football/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#800000] hover:underline text-sm mt-2 inline-block"
-                >
-                  Visit PFSN for CFB news →
-                </a>
-              </div>
-            )}
-          </div>
         </div>
 
         <Footer currentPage="CFB" />

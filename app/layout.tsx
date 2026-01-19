@@ -9,7 +9,7 @@ import StructuredData from '@/components/StructuredData';
 import CFBScoreTicker from '@/components/CFBScoreTicker';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://profootballnetwork.com/cfb-hq'),
+  metadataBase: new URL('https://www.profootballnetwork.com/cfb-hq'),
   title: {
     default: "College Football HQ - CFB Tools & Resources",
     template: "%s | CFB HQ"
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://profootballnetwork.com/cfb-hq',
+    url: 'https://www.profootballnetwork.com/cfb-hq',
     title: 'CFB HQ - College Football Tools & Resources',
     description: 'Your destination for college football tools and data. Access comprehensive CFB resources from PFSN, including the transfer portal, playoff, and more.',
     siteName: 'CFB HQ',
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     images: ['/cfb-hq/og-image.png'],
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq',
   },
   verification: {
     google: 'verification-code-here', // Add your Google Search Console verification code

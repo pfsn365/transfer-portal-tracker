@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Browse All Teams | CFB Transfer Portal Tracker',
     description: 'Browse transfer portal activity for every college football team. View incoming and outgoing transfers by school.',
-    url: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker/teams',
+    url: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker/teams',
     type: 'website',
   },
   twitter: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Browse transfer portal activity for every college football team.',
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker/teams',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker/teams',
   },
 };
 

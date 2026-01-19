@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CFB Stat Leaders 2025 | College Football Statistics',
     description: 'View the top statistical leaders in college football. Browse passing, rushing, receiving, and defensive stats for FBS and FCS.',
-    url: 'https://profootballnetwork.com/cfb-hq/stat-leaders',
+    url: 'https://www.profootballnetwork.com/cfb-hq/stat-leaders',
     type: 'website',
   },
   twitter: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'View the top statistical leaders in college football for FBS and FCS divisions.',
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/stat-leaders',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/stat-leaders',
   },
 };
 

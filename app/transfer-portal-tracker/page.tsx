@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CFB Transfer Portal Tracker 2025 | College Football Transfers',
     description: 'Track every college football transfer in real-time. Filter by status, school, position, class, and conference.',
-    url: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker',
+    url: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker',
     type: 'website',
   },
   twitter: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: 'Track every college football transfer in real-time. The most comprehensive CFB transfer portal database.',
   },
   alternates: {
-    canonical: 'https://profootballnetwork.com/cfb-hq/transfer-portal-tracker',
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker',
   },
 };
 
