@@ -145,6 +145,7 @@ export default function StructuredData() {
         "url": "https://www.profootballnetwork.com/cfb-hq/standings",
         "keywords": ["CFB Standings", "College Football Standings", "Conference Standings", "FBS Standings", "FCS Standings"],
         "isAccessibleForFree": true,
+        "license": "https://www.profootballnetwork.com/terms-of-service",
         "creator": {
           "@id": "https://www.profootballnetwork.com/#organization"
         }
@@ -157,6 +158,7 @@ export default function StructuredData() {
         "url": "https://www.profootballnetwork.com/cfb-hq/stat-leaders",
         "keywords": ["CFB Stats", "College Football Statistics", "Stat Leaders", "Passing Leaders", "Rushing Leaders"],
         "isAccessibleForFree": true,
+        "license": "https://www.profootballnetwork.com/terms-of-service",
         "creator": {
           "@id": "https://www.profootballnetwork.com/#organization"
         }
