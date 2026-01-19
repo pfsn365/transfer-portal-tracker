@@ -428,7 +428,7 @@ export default function CFBHomePageContent() {
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">Latest College Football Articles</h2>
               <a
-                href="https://www.profootballnetwork.com/college-football/"
+                href="https://www.profootballnetwork.com/cfb/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#800000] hover:text-[#600000] font-semibold text-sm transition-colors"
