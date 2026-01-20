@@ -298,7 +298,7 @@ export default function TransferPortalClient() {
           <CFBSidebar isMobile={true} />
         </div>
 
-        <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+        <main className="flex-1 lg:ml-64 min-w-0 mt-[48px] lg:mt-0">
           <Header />
 
           {/* Raptive Header Ad */}
@@ -341,7 +341,7 @@ export default function TransferPortalClient() {
           <CFBSidebar isMobile={true} />
         </div>
 
-        <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+        <main className="flex-1 lg:ml-64 min-w-0 mt-[48px] lg:mt-0">
           <Header />
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <ErrorMessage message={error} onRetry={handleRetry} />
@@ -365,7 +365,7 @@ export default function TransferPortalClient() {
         <CFBSidebar isMobile={true} />
       </div>
 
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+      <main className="flex-1 lg:ml-64 min-w-0 mt-[48px] lg:mt-0">
         <Header />
 
         {/* Raptive Header Ad */}
