@@ -1,9 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { getApiPath } from '@/utils/api';
-import type { TickerGame } from '@/lib/espn';
+import { useLiveScores } from '@/hooks/useLiveScores';
 
 // Format game time in user's local timezone
 function formatLocalGameTime(isoDate: string): string {
@@ -25,42 +23,7 @@ function formatLocalGameTime(isoDate: string): string {
 }
 
 export default function CFBScoreTicker() {
-  const [games, setGames] = useState<TickerGame[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const abortController = new AbortController();
-    let isMounted = true;
-
-    const fetchGames = async () => {
-      try {
-        const response = await fetch(getApiPath('api/cfb/espn-scoreboard?ticker=true'), {
-          signal: abortController.signal,
-        });
-        if (!response.ok) throw new Error('Failed to fetch');
-        const data = await response.json();
-        if (isMounted) {
-          setGames(data.games || []);
-        }
-      } catch (error) {
-        if (error instanceof Error && error.name === 'AbortError') return;
-        console.error('Error fetching live scores:', error);
-      } finally {
-        if (isMounted) {
-          setLoading(false);
-        }
-      }
-    };
-
-    fetchGames();
-    const interval = setInterval(fetchGames, 30000);
-
-    return () => {
-      isMounted = false;
-      abortController.abort();
-      clearInterval(interval);
-    };
-  }, []);
+  const { games, loading } = useLiveScores();
 
   if (loading) {
     return (

@@ -1,0 +1,176 @@
+import { TransferPlayer } from '@/types/player';
+import { ArrowRight } from 'lucide-react';
+
+interface PlayerTableProps {
+  players: TransferPlayer[];
+}
+
+export default function PlayerTable({ players }: PlayerTableProps) {
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'Committed':
+        return 'bg-green-100 text-green-800 border-green-300';
+      case 'Entered':
+        return 'bg-yellow-100 text-yellow-800 border-yellow-300';
+      default:
+        return 'bg-yellow-100 text-yellow-800 border-yellow-300';
+    }
+  };
+
+  if (players.length === 0) {
+    return (
+      <div className="bg-white rounded-lg shadow-md p-12 text-center">
+        <p className="text-gray-500 text-lg">No players found matching your filters.</p>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {/* Desktop Table View */}
+      <div className="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead className="bg-gray-100 border-b-2 border-gray-200">
+              <tr>
+                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                  Player
+                </th>
+                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                  Pos
+                </th>
+                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                  Class
+                </th>
+                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                  Status
+                </th>
+                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                  Transfer Path
+                </th>
+                <th className="px-6 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                  Rating
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {players.map((player, index) => (
+                <tr
+                  key={player.id}
+                  className={`table-row-hover ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
+                >
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0 h-10 w-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white font-bold">
+                        {player.name.split(' ').map(n => n[0]).join('')}
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-sm font-bold text-gray-900">{player.name}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="px-2 py-1 text-xs font-semibold rounded bg-blue-100 text-blue-800">
+                      {player.position}
+                    </span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
+                    {player.class}
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
+                      {player.status}
+                    </span>
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="flex items-center gap-2 text-sm">
+                      <div className="text-left">
+                        <div className="font-semibold text-gray-900">{player.formerSchool}</div>
+                        <div className="text-xs text-gray-500">{player.formerConference}</div>
+                      </div>
+                      {player.newSchool && (
+                        <>
+                          <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                          <div className="text-left">
+                            <div className="font-semibold text-green-700">{player.newSchool}</div>
+                            <div className="text-xs text-gray-500">{player.newConference}</div>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    {player.rating && (
+                      <div className="flex items-center">
+                        <span className="text-lg font-bold text-gray-900">{player.rating}</span>
+                      </div>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Mobile Card View */}
+      <div className="lg:hidden space-y-4">
+        {players.map((player) => (
+          <div key={player.id} className="bg-white rounded-lg shadow-md p-4 border border-gray-200">
+            {/* Player Header */}
+            <div className="flex items-start justify-between mb-3">
+              <div className="flex items-center gap-3">
+                <div className="flex-shrink-0 h-12 w-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center text-white font-bold">
+                  {player.name.split(' ').map(n => n[0]).join('')}
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900">{player.name}</h3>
+                  <div className="flex items-center gap-2 mt-1">
+                    <span className="px-2 py-0.5 text-xs font-semibold rounded bg-blue-100 text-blue-800">
+                      {player.position}
+                    </span>
+                    <span className="text-xs text-gray-600 font-medium">{player.class}</span>
+                  </div>
+                </div>
+              </div>
+              {player.rating && (
+                <div className="text-right">
+                  <div className="text-xl font-bold text-gray-900">{player.rating}</div>
+                  <div className="text-xs text-gray-500">Rating</div>
+                </div>
+              )}
+            </div>
+
+            {/* Status */}
+            <div className="mb-3">
+              <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
+                {player.status}
+              </span>
+            </div>
+
+            {/* Transfer Path */}
+            <div className="bg-gray-50 rounded-lg p-3 mb-3">
+              <div className="flex items-center gap-2">
+                <div className="flex-1">
+                  <div className="text-xs text-gray-500 mb-1">From</div>
+                  <div className="font-semibold text-gray-900">{player.formerSchool}</div>
+                  <div className="text-xs text-gray-500">{player.formerConference}</div>
+                </div>
+                {player.newSchool && (
+                  <>
+                    <ArrowRight className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                    <div className="flex-1">
+                      <div className="text-xs text-gray-500 mb-1">To</div>
+                      <div className="font-semibold text-green-700">{player.newSchool}</div>
+                      <div className="text-xs text-gray-500">{player.newConference}</div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}

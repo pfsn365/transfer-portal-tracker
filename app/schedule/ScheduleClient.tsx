@@ -6,6 +6,7 @@ import Image from 'next/image';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { getApiPath } from '@/utils/api';
+import { useLiveScores } from '@/hooks/useLiveScores';
 
 interface GameLeader {
   name: string;
@@ -187,6 +188,9 @@ function ScheduleClientInner() {
   const currentConferences = division === 'fbs' ? FBS_CONFERENCES : FCS_CONFERENCES;
   const isToday = selectedDate === getLocalDateString();
 
+  // Use shared live scores hook (synced with ticker)
+  const { games: liveGames, lastUpdated: liveScoresLastUpdated } = useLiveScores();
+
   // Check if there are any live games in cache
   const hasLiveGames = useMemo(() => {
     return allGamesCache.some(game => game.status.state === 'in');
@@ -198,51 +202,48 @@ function ScheduleClientInner() {
     setTeamSearch('');
   }, [division]);
 
-  // Auto-refresh live games using ticker API
+  // Sync cache with shared live scores (keeps ticker and schedule in sync)
   useEffect(() => {
-    if (!hasLiveGames || loading) return;
+    if (!liveGames.length || loading) return;
 
-    const refreshLiveGames = async () => {
-      try {
-        const response = await fetch(getApiPath('api/cfb/espn-scoreboard?ticker=true'));
-        if (!response.ok) return;
+    setAllGamesCache(prevCache => {
+      const updatedCache = [...prevCache];
+      let hasChanges = false;
 
-        const data = await response.json();
-        const liveGames = data.games || [];
-
-        // Update cache with fresh live game data
-        setAllGamesCache(prevCache => {
-          const updatedCache = [...prevCache];
-          for (const liveGame of liveGames) {
-            const index = updatedCache.findIndex(g => g.id === liveGame.id);
-            if (index !== -1) {
-              // Preserve leaders from existing cache, update scores/status
-              updatedCache[index] = {
-                ...updatedCache[index],
-                awayTeam: {
-                  ...updatedCache[index].awayTeam,
-                  score: liveGame.awayTeam?.score,
-                },
-                homeTeam: {
-                  ...updatedCache[index].homeTeam,
-                  score: liveGame.homeTeam?.score,
-                },
-                status: liveGame.status || updatedCache[index].status,
-              };
-            }
+      for (const liveGame of liveGames) {
+        const index = updatedCache.findIndex(g => g.id === liveGame.id);
+        if (index !== -1) {
+          const cached = updatedCache[index];
+          // Only update if scores changed
+          if (cached.awayTeam.score !== liveGame.awayTeam?.score ||
+              cached.homeTeam.score !== liveGame.homeTeam?.score) {
+            hasChanges = true;
+            // Map TickerGame status fields to ScheduleGame status
+            const newStatus = {
+              state: liveGame.isLive ? 'in' as const : liveGame.isFinal ? 'post' as const : 'pre' as const,
+              detail: liveGame.statusDetail,
+              shortDetail: liveGame.statusDetail,
+              completed: liveGame.isFinal,
+            };
+            updatedCache[index] = {
+              ...cached,
+              awayTeam: {
+                ...cached.awayTeam,
+                score: liveGame.awayTeam?.score,
+              },
+              homeTeam: {
+                ...cached.homeTeam,
+                score: liveGame.homeTeam?.score,
+              },
+              status: newStatus,
+            };
           }
-          return updatedCache;
-        });
-      } catch (err) {
-        console.error('Error refreshing live games:', err);
+        }
       }
-    };
 
-    // Refresh every 30 seconds when there are live games
-    const interval = setInterval(refreshLiveGames, 30000);
-
-    return () => clearInterval(interval);
-  }, [hasLiveGames, loading]);
+      return hasChanges ? updatedCache : prevCache;
+    });
+  }, [liveGames, liveScoresLastUpdated, loading]);
 
   // Fetch ALL schedule data once when division changes (single API call)
   useEffect(() => {
