@@ -4,7 +4,6 @@ import { transformAPIData } from '@/utils/dataTransform';
 
 const API_URL = 'https://staticj.profootballnetwork.com/assets/sheets/tools/cfb-transfer-portal-tracker/transferPortalTrackerData.json';
 
-export const dynamic = 'force-dynamic';
 export const revalidate = 3600;
 
 export async function GET() {
