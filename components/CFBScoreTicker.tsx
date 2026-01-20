@@ -28,8 +28,8 @@ export default function CFBScoreTicker() {
   if (loading) {
     return (
       <>
-        {/* Mobile: below nav header (48px), Desktop: at top offset by sidebar (256px) */}
-        <div className="fixed top-[48px] lg:top-0 right-0 left-0 lg:left-64 bg-black text-white py-2 px-4 z-10 lg:z-40">
+        {/* Mobile: below nav header (52px), Desktop: at top offset by sidebar (256px) */}
+        <div className="fixed top-[52px] lg:top-0 right-0 left-0 lg:left-64 bg-black text-white py-2 px-4 z-10 lg:z-40">
           <div className="flex items-center justify-center gap-2">
             <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
             <span className="text-sm">Loading scores...</span>
@@ -47,8 +47,8 @@ export default function CFBScoreTicker() {
 
   return (
     <>
-      {/* Mobile: below nav header (top-[48px]), Desktop: at top offset by sidebar */}
-      <div className="fixed top-[48px] lg:top-0 right-0 left-0 lg:left-64 bg-black text-white z-10 lg:z-40">
+      {/* Mobile: below nav header (top-[52px]), Desktop: at top offset by sidebar */}
+      <div className="fixed top-[52px] lg:top-0 right-0 left-0 lg:left-64 bg-black text-white z-10 lg:z-40">
         <div className="flex items-center">
           {/* Scrollable Games Container */}
           <div className="overflow-x-auto scrollbar-hide flex-1">

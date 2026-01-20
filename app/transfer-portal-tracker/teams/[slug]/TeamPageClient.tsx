@@ -297,7 +297,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         <CFBSidebar isMobile={true} />
       </div>
 
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[48px] lg:mt-0" style={{ touchAction: 'manipulation' }}>
+      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0" style={{ touchAction: 'manipulation' }}>
         <Header />
         {children}
         <Footer currentPage="CFB" />

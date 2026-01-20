@@ -48,7 +48,7 @@ export default function TeamsClient() {
         <CFBSidebar isMobile={true} />
       </div>
 
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[48px] lg:mt-0" style={{ touchAction: 'manipulation' }}>
+      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0" style={{ touchAction: 'manipulation' }}>
         {/* Hero Section */}
         <div className="bg-[#800000] text-white pb-4 lg:pb-6">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">

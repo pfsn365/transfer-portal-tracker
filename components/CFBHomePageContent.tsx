@@ -87,7 +87,7 @@ export default function CFBHomePageContent() {
       {/* Main content */}
       <main id="main-content" className="flex-1 lg:ml-64 min-w-0">
         {/* Header */}
-        <div className="bg-[#800000] text-white pt-[48px] lg:pt-0 pb-4 lg:pb-6">
+        <div className="bg-[#800000] text-white pt-[52px] lg:pt-0 pb-4 lg:pb-6">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
               College Football HQ
