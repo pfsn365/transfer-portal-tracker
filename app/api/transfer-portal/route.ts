@@ -13,7 +13,7 @@ export async function GET() {
 
     const response = await fetch(API_URL, {
       headers: {
-        'PFN-Internal-NON-Blocking': 'true',
+        'User-Agent': 'PFN-Internal-NON-Blocking',
       },
       next: { revalidate: 3600 },
       signal: controller.signal,
