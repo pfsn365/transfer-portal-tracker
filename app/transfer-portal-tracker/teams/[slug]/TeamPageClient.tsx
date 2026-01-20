@@ -44,7 +44,7 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
   const [selectedType, setSelectedType] = useState<TransferType>('All');
 
   // Sorting state
-  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
+  type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate' | 'commitDate';
   type SortDirection = 'asc' | 'desc';
   const [sortField, setSortField] = useState<SortField | null>('announcedDate');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
@@ -213,6 +213,10 @@ export default function TeamPageClient({ slug }: TeamPageClientProps) {
         case 'announcedDate':
           aVal = new Date(a.announcedDate).getTime();
           bVal = new Date(b.announcedDate).getTime();
+          break;
+        case 'commitDate':
+          aVal = a.commitDate ? new Date(a.commitDate).getTime() : (sortDirection === 'asc' ? Infinity : -Infinity);
+          bVal = b.commitDate ? new Date(b.commitDate).getTime() : (sortDirection === 'asc' ? Infinity : -Infinity);
           break;
         default:
           return 0;

@@ -57,13 +57,18 @@ function mapPosition(apiPosition: string): PlayerPosition {
   return 'ATH'; // Default fallback
 }
 
-// Map API conference - just pass through what comes from the Google Sheet
+// Map API conference - abbreviate long conference names
 function mapConference(apiConference: string): Conference {
   const conf = apiConference.trim();
 
-  // Return the conference directly from the sheet
-  // Type assertion is safe here because we trust the Google Sheet data
-  return conf as Conference;
+  // Map long conference names to abbreviations
+  const conferenceAbbreviations: Record<string, string> = {
+    'FBS Independent': 'FBS Ind.',
+    'FCS Independent': 'FCS Ind.',
+  };
+
+  // Return abbreviated name if it exists, otherwise return original
+  return (conferenceAbbreviations[conf] || conf) as Conference;
 }
 
 // Transform API row to TransferPlayer object

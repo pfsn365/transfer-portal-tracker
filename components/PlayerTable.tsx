@@ -108,7 +108,7 @@ function getDisplaySchool(player: TransferPlayer): string {
   return player.formerSchool;
 }
 
-type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate';
+type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate' | 'commitDate';
 type SortDirection = 'asc' | 'desc';
 
 interface PlayerTableProps {
@@ -237,8 +237,6 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
               <tr>
                 <th className="px-4 py-4 w-16"></th>
                 <SortableHeader field="name">Player</SortableHeader>
-                <SortableHeader field="position" centered>Pos</SortableHeader>
-                <SortableHeader field="class" centered>Class</SortableHeader>
                 <SortableHeader field="status">Status</SortableHeader>
                 <SortableHeader field="formerSchool" centered>Previous School</SortableHeader>
                 <th className="px-2 py-4 w-8"></th>
@@ -273,7 +271,8 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     <span>Impact Grade</span>
                   </div>
                 </SortableHeader>
-                <SortableHeader field="announcedDate">Timeline</SortableHeader>
+                <SortableHeader field="announcedDate" centered>Enter Date</SortableHeader>
+                <SortableHeader field="commitDate" centered>Commit Date</SortableHeader>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -306,16 +305,15 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       />
                       <div className="ml-4">
                         <div className="text-sm font-bold text-gray-900">{player.name}</div>
+                        <div className="flex items-center gap-1.5 mt-1">
+                          <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
+                            {player.position}
+                          </span>
+                          <span className="text-gray-400">·</span>
+                          <span className="text-sm text-gray-600 font-medium">{player.class}</span>
+                        </div>
                       </div>
                     </div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-center">
-                    <span className={`px-2 py-1 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
-                      {player.position}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-900 font-medium">
-                    {player.class}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
@@ -434,27 +432,27 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <div className="text-base">
-                      <div className="text-gray-900">
-                        <span className="text-gray-600">Ent: </span>
-                        {new Date(player.announcedDate).toLocaleDateString('en-US', {
+                  <td className="px-6 py-4 whitespace-nowrap text-center">
+                    <span className="text-sm text-gray-900">
+                      {new Date(player.announcedDate).toLocaleDateString('en-US', {
+                        month: 'numeric',
+                        day: 'numeric',
+                        year: '2-digit'
+                      })}
+                    </span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-center">
+                    <span className="text-sm text-gray-900">
+                      {player.commitDate ? (
+                        new Date(player.commitDate).toLocaleDateString('en-US', {
                           month: 'numeric',
                           day: 'numeric',
                           year: '2-digit'
-                        })}
-                      </div>
-                      {player.commitDate && (
-                        <div className="text-gray-900 mt-1">
-                          <span className="text-gray-600">Com: </span>
-                          {new Date(player.commitDate).toLocaleDateString('en-US', {
-                            month: 'numeric',
-                            day: 'numeric',
-                            year: '2-digit'
-                          })}
-                        </div>
+                        })
+                      ) : (
+                        '—'
                       )}
-                    </div>
+                    </span>
                   </td>
                 </tr>
               ))}
