@@ -12,6 +12,9 @@ export async function GET() {
     const timeoutId = setTimeout(() => controller.abort(), 10000);
 
     const response = await fetch(API_URL, {
+      headers: {
+        'PFN-Internal-NON-Blocking': 'true',
+      },
       next: { revalidate: 3600 },
       signal: controller.signal,
     });
