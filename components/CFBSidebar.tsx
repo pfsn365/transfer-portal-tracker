@@ -58,7 +58,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-white p-2.5 -m-1.5 rounded-lg hover:bg-white/10 active:bg-white/20 transition-colors cursor-pointer"
+              className="sidebar-header-btn text-white p-2.5 -m-1.5 rounded-lg hover:bg-white/10 active:bg-white/20 transition-colors cursor-pointer"
               aria-label="Toggle menu"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,11 +66,10 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               </svg>
             </button>
 
-            <a href="https://www.profootballnetwork.com" target="_blank" rel="noopener noreferrer" className="block">
+            <a href="https://www.profootballnetwork.com" target="_blank" rel="noopener noreferrer" className="sidebar-header-link flex items-center">
               <img
                 src="https://statico.profootballnetwork.com/wp-content/uploads/2025/06/12093424/tools-navigation-06-12-25.jpg"
                 alt="PFSN Logo"
-                style={{ height: '24px' }}
                 className="h-6 w-auto transition-all duration-300 hover:opacity-80"
               />
             </a>
@@ -80,7 +79,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
 
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="text-white p-1 cursor-pointer"
+            className="sidebar-header-btn text-white p-1 cursor-pointer"
             aria-label="Toggle dropdown"
           >
             <svg

@@ -250,8 +250,11 @@ body {
 
 /* Mobile Touch Optimization */
 @media (hover: none) and (pointer: coarse) {
-  /* Increase tap targets for mobile */
-  button, a, select, input {
+  /* Increase tap targets for mobile - exclude sidebar header elements */
+  button:not(.sidebar-header-btn),
+  a:not(.sidebar-header-link),
+  select,
+  input {
     min-height: 44px;
   }
 
