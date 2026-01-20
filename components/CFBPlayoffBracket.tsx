@@ -134,12 +134,12 @@ const initialPlayoffData: { [key: string]: Matchup } = {
   // Championship (Jan 19, 2026)
   'final': {
     id: 'final',
-    team1: null,
-    team2: null,
+    team1: { seed: 1, name: 'Indiana', score: 27 },
+    team2: { seed: 10, name: 'Miami', score: 21 },
     round: 'Championship',
     location: 'Miami, FL',
     date: 'Jan 19',
-    completed: false,
+    completed: true,
   },
 };
 
@@ -373,10 +373,6 @@ export default function CFBPlayoffBracket() {
         >
           Clear Picks
         </button>
-      </div>
-
-      <div className="bg-blue-50 border-b border-blue-200 px-5 py-2.5">
-        <p className="text-sm text-blue-700">Click on a team to pick them as the winner. Your picks will advance through the bracket.</p>
       </div>
 
       <div className="px-5 pt-3 pb-5 overflow-x-auto">
