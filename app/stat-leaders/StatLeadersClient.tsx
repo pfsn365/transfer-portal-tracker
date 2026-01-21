@@ -6,25 +6,7 @@ import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import StatLeadersSkeleton from '@/components/StatLeadersSkeleton';
 import { getApiPath } from '@/utils/api';
-
-// Helper to create player image slug from name
-function createPlayerSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-}
-
-// Helper to get player initials
-function getPlayerInitials(name: string): string {
-  const parts = name.split(' ').filter(p => p.length > 0);
-  if (parts.length >= 2) {
-    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-  }
-  return parts[0]?.substring(0, 2).toUpperCase() || '??';
-}
+import { createPlayerSlug, getPlayerInitials } from '@/utils/playerHelpers';
 
 // Player headshot component with local image fallback
 function PlayerHeadshot({ name, className = "w-10 h-10" }: { name: string; className?: string }) {
@@ -282,7 +264,10 @@ export default function StatLeadersClient() {
               CFB Stat Leaders
             </h1>
             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
-              2025 {division === 'fbs' ? 'FBS' : 'FCS'} statistical leaders
+              {(() => {
+                const year = new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear();
+                return `${year}-${(year + 1).toString().slice(-2)}`;
+              })()} {division === 'fbs' ? 'FBS' : 'FCS'} statistical leaders
             </p>
           </div>
         </div>

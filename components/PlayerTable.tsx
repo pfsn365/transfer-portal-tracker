@@ -6,16 +6,7 @@ import { useState, useEffect } from 'react';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamById } from '@/data/teams';
 import { getWatchlist, addToWatchlist, removeFromWatchlist } from '@/utils/watchlist';
-
-// Helper to create player image slug from name
-function createPlayerSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-}
+import { createPlayerSlug } from '@/utils/playerHelpers';
 
 // Player avatar component - shows player image with team logo fallback
 function PlayerAvatar({

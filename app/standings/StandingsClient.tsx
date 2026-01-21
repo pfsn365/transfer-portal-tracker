@@ -209,7 +209,10 @@ export default function StandingsClient() {
               CFB Standings
             </h1>
             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-200">
-              {new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear()} {division === 'fbs' ? 'FBS' : 'FCS'} conference standings
+              {(() => {
+                const year = new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear();
+                return `${year}-${(year + 1).toString().slice(-2)}`;
+              })()} {division === 'fbs' ? 'FBS' : 'FCS'} conference standings
             </p>
           </div>
         </div>

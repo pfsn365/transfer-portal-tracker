@@ -29,7 +29,9 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     { title: 'CFB Transfer Portal Tracker', url: '/transfer-portal-tracker', external: false },
     { title: 'CFB Schedule', url: '/schedule', external: false },
     { title: 'CFB Standings', url: '/standings', external: false },
+    { title: 'CFB Rankings', url: '/rankings', external: false },
     { title: 'CFB Stat Leaders', url: '/stat-leaders', external: false },
+    { title: 'CFB Postseason Hub', url: '/postseason', external: false },
     { title: 'CFB Power Rankings Builder', url: '/power-rankings-builder', external: false },
     { title: 'CFB Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
   ];
