@@ -295,7 +295,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         size="lg"
                       />
                       <div className="ml-4">
-                        <div className="text-sm font-bold text-gray-900">{player.name}</div>
+                        <Link href={`/players/${createPlayerSlug(player.name)}`} className="text-sm font-bold text-gray-900 hover:text-[#800000] transition-colors">
+                          {player.name}
+                        </Link>
                         <div className="flex items-center gap-1.5 mt-1">
                           <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                             {player.position}
@@ -512,7 +514,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     size="md"
                   />
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-gray-900 text-base leading-tight mb-1.5">{player.name}</h3>
+                  <Link href={`/players/${createPlayerSlug(player.name)}`} className="font-bold text-gray-900 text-base leading-tight mb-1.5 hover:text-[#800000] transition-colors block">
+                    {player.name}
+                  </Link>
                   <div className="flex items-center gap-1.5 flex-wrap">
                     <span className="text-sm text-gray-600 font-medium">{player.class}</span>
                     <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>

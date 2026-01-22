@@ -2,10 +2,12 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import useSWR from 'swr';
 import { Team } from '@/data/teams';
 import { fetcher } from '@/utils/swr';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import { createPlayerSlug } from '@/utils/playerHelpers';
 
 interface RosterTabProps {
   team: Team;
@@ -202,7 +204,7 @@ export default function RosterTab({ team, teamColor }: RosterTabProps) {
                     <tr key={player.id || idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
                       <td className="px-4 py-3 text-sm font-medium text-gray-900">{player.jersey}</td>
                       <td className="px-4 py-3">
-                        <div className="flex items-center gap-3">
+                        <Link href={`/players/${createPlayerSlug(player.name)}`} className="flex items-center gap-3 group">
                           {player.headshot && (
                             <Image
                               src={player.headshot}
@@ -212,8 +214,8 @@ export default function RosterTab({ team, teamColor }: RosterTabProps) {
                               className="rounded-full object-cover"
                             />
                           )}
-                          <span className="font-medium text-gray-900">{player.name}</span>
-                        </div>
+                          <span className="font-medium text-gray-900 group-hover:text-[#800000] transition-colors">{player.name}</span>
+                        </Link>
                       </td>
                       <td className="px-4 py-3 text-sm text-gray-600">{player.position}</td>
                       <td className="px-4 py-3 text-sm text-gray-600 hidden sm:table-cell">{player.class}</td>

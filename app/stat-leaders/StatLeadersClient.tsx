@@ -451,14 +451,14 @@ export default function StatLeadersClient() {
                                 </span>
                               </td>
                               <td className="px-4 py-4">
-                                <div className="flex items-center gap-3">
+                                <Link href={`/players/${createPlayerSlug(leader.name)}`} className="flex items-center gap-3 group">
                                   <PlayerHeadshot name={leader.name} />
                                   <div>
-                                    <div className="font-semibold text-gray-900">{leader.name}</div>
+                                    <div className="font-semibold text-gray-900 group-hover:text-[#800000] transition-colors">{leader.name}</div>
                                     <div className="text-sm text-gray-500 sm:hidden">{leader.position}</div>
                                     <div className="text-xs text-gray-400 md:hidden">{leader.teamAbbreviation || leader.teamName}</div>
                                   </div>
-                                </div>
+                                </Link>
                               </td>
                               <td className="hidden sm:table-cell px-4 py-4 text-center">
                                 <span className={`inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-semibold ${getPositionStyle(leader.position)}`}>

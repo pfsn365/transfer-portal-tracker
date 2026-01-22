@@ -145,6 +145,54 @@ function slugify(name: string): string {
     .trim();
 }
 
+// Transfer portal API URL
+const TRANSFER_PORTAL_API = 'https://staticj.profootballnetwork.com/assets/sheets/tools/cfb-transfer-portal-tracker/transferPortalTrackerData.json';
+
+// Cache for transfer portal data
+let transferPortalCache: any[] | null = null;
+let transferPortalCacheTimestamp = 0;
+const TRANSFER_PORTAL_CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+
+async function getTransferPortalData(): Promise<any[]> {
+  const now = Date.now();
+  if (transferPortalCache && now - transferPortalCacheTimestamp < TRANSFER_PORTAL_CACHE_TTL) {
+    return transferPortalCache;
+  }
+
+  try {
+    const response = await fetch(TRANSFER_PORTAL_API, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; CFB-Hub/1.0)' },
+      next: { revalidate: 600 },
+    });
+
+    if (!response.ok) return [];
+
+    const data = await response.json();
+    const sheetData = data?.collections?.[0]?.data || [];
+
+    // Skip header row and transform
+    const players = sheetData.slice(1).map((row: string[], idx: number) => ({
+      name: row[0]?.trim() || '',
+      position: row[1]?.trim() || '',
+      class: row[2]?.trim() || '',
+      formerSchool: row[3]?.trim() || '',
+      formerConference: row[4]?.trim() || '',
+      newSchool: row[5]?.trim() || '',
+      newConference: row[6]?.trim() || '',
+      status: row[7]?.trim() || '',
+      date: row[8]?.trim() || '',
+      impactGrade: row[9]?.trim() || '',
+    }));
+
+    transferPortalCache = players;
+    transferPortalCacheTimestamp = now;
+    return players;
+  } catch (error) {
+    console.error('Error fetching transfer portal data:', error);
+    return transferPortalCache || [];
+  }
+}
+
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ playerSlug: string }> }
@@ -164,6 +212,7 @@ export async function GET(
 
     const { player: foundPlayer, teamSlug: foundTeamSlug, espnTeamId: foundEspnTeamId, teamInfo: foundTeamInfo } = playerEntry;
     const athleteId = foundPlayer.id;
+    const playerName = foundPlayer.fullName || foundPlayer.displayName;
 
     // Get team data for additional info
     const teamData = allTeams.find(t => t.slug === foundTeamSlug);
@@ -173,31 +222,57 @@ export async function GET(
       ? `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}/gamelog?season=${seasonParam}`
       : `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}/gamelog`;
 
-    // Fetch additional player data from ESPN
-    const [statsResponse, gameLogResponse, athleteResponse] = await Promise.allSettled([
+    // Fetch additional player data from ESPN and transfer portal in parallel
+    const [statsResponse, gameLogResponse, athleteResponse, transferPortalData] = await Promise.all([
       fetchWithRetry(
         `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}/stats`
-      ),
-      fetchWithRetry(gameLogUrl),
+      ).catch(() => null),
+      fetchWithRetry(gameLogUrl).catch(() => null),
       fetchWithRetry(
         `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}`
-      ),
+      ).catch(() => null),
+      getTransferPortalData(),
     ]);
 
     let statsData: any = null;
     let gameLogData: any = null;
     let athleteData: any = null;
 
-    if (statsResponse.status === 'fulfilled' && statsResponse.value.ok) {
-      statsData = await statsResponse.value.json();
+    if (statsResponse?.ok) {
+      statsData = await statsResponse.json();
     }
 
-    if (gameLogResponse.status === 'fulfilled' && gameLogResponse.value.ok) {
-      gameLogData = await gameLogResponse.value.json();
+    if (gameLogResponse?.ok) {
+      gameLogData = await gameLogResponse.json();
     }
 
-    if (athleteResponse.status === 'fulfilled' && athleteResponse.value.ok) {
-      athleteData = await athleteResponse.value.json();
+    if (athleteResponse?.ok) {
+      athleteData = await athleteResponse.json();
+    }
+
+    // Find transfer portal entry for this player (fuzzy match on name)
+    const playerNameLower = playerName.toLowerCase();
+    const transferEntry = transferPortalData.find((p: any) => {
+      const portalNameLower = p.name.toLowerCase();
+      return portalNameLower === playerNameLower ||
+        portalNameLower.includes(playerNameLower) ||
+        playerNameLower.includes(portalNameLower);
+    });
+
+    // Build transfer portal history if found
+    let transferPortalHistory: any = null;
+    if (transferEntry) {
+      transferPortalHistory = {
+        status: transferEntry.status === 'Committed' || transferEntry.newSchool ? 'Committed' : 'In Portal',
+        enteredDate: transferEntry.date || null,
+        formerSchool: transferEntry.formerSchool || null,
+        formerConference: transferEntry.formerConference || null,
+        newSchool: transferEntry.newSchool || null,
+        newConference: transferEntry.newConference || null,
+        impactGrade: transferEntry.impactGrade ? parseFloat(transferEntry.impactGrade) : null,
+        position: transferEntry.position || null,
+        class: transferEntry.class || null,
+      };
     }
 
     // Extract current season stats and career stats from ESPN API
@@ -362,6 +437,7 @@ export async function GET(
       careerStats,
       gameLog,
       availableSeasons,
+      transferPortalHistory,
     };
 
     return NextResponse.json(playerProfile);

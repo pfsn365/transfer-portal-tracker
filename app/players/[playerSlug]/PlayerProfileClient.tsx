@@ -68,6 +68,17 @@ interface PlayerProfile {
     value: string;
     displayValue: string;
   }>;
+  transferPortalHistory: {
+    status: string;
+    enteredDate: string | null;
+    formerSchool: string | null;
+    formerConference: string | null;
+    newSchool: string | null;
+    newConference: string | null;
+    impactGrade: number | null;
+    position: string | null;
+    class: string | null;
+  } | null;
 }
 
 interface Props {
@@ -273,11 +284,11 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center gap-5">
             {/* Player Headshot with circular white background */}
-            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
+            <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
               <img
                 src={getLocalHeadshotUrl(playerSlug)}
                 alt={player.name}
-                className="w-full h-full object-cover object-[center_15%] scale-[1.3]"
+                className="w-full h-full object-cover object-[center_15%] scale-[0.85]"
                 onError={(e) => {
                   // Fallback to ESPN headshot if local image doesn't exist
                   (e.target as HTMLImageElement).src = player.headshot;
@@ -365,6 +376,69 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
             )}
           </div>
         </div>
+
+        {/* Transfer Portal History */}
+        {player.transferPortalHistory && (
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 mb-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Transfer Portal History</h2>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              {/* Status Badge */}
+              <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium ${
+                player.transferPortalHistory.status === 'Committed'
+                  ? 'bg-green-100 text-green-800'
+                  : 'bg-yellow-100 text-yellow-800'
+              }`}>
+                <span className={`w-2 h-2 rounded-full ${
+                  player.transferPortalHistory.status === 'Committed' ? 'bg-green-500' : 'bg-yellow-500'
+                }`}></span>
+                {player.transferPortalHistory.status}
+              </div>
+
+              {/* Impact Grade */}
+              {player.transferPortalHistory.impactGrade && (
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-500">Impact Grade:</span>
+                  <span className="font-semibold text-gray-900">
+                    {player.transferPortalHistory.impactGrade.toFixed(1)}
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Transfer Details */}
+            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
+              {player.transferPortalHistory.formerSchool && (
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-500">From:</span>
+                  <span className="font-medium text-gray-900">{player.transferPortalHistory.formerSchool}</span>
+                  {player.transferPortalHistory.formerConference && (
+                    <span className="text-gray-500">({player.transferPortalHistory.formerConference})</span>
+                  )}
+                </div>
+              )}
+
+              {player.transferPortalHistory.newSchool && (
+                <>
+                  <span className="text-gray-400">→</span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-500">To:</span>
+                    <span className="font-medium text-gray-900">{player.transferPortalHistory.newSchool}</span>
+                    {player.transferPortalHistory.newConference && (
+                      <span className="text-gray-500">({player.transferPortalHistory.newConference})</span>
+                    )}
+                  </div>
+                </>
+              )}
+
+              {player.transferPortalHistory.enteredDate && (
+                <div className="flex items-center gap-2 ml-auto">
+                  <span className="text-gray-500">Entered:</span>
+                  <span className="text-gray-700">{player.transferPortalHistory.enteredDate}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Game Log Section */}
         {(currentGameLog.length > 0 || player.availableSeasons.length > 0) && (
@@ -536,6 +610,40 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                         ))}
                       </tr>
                     ))}
+                    {/* Career Totals Row */}
+                    {selectedCategoryData.seasons.length > 1 && (
+                      <tr className="border-t-2 border-gray-300 bg-gray-100 font-semibold">
+                        <td className="py-3 px-2 text-gray-900 whitespace-nowrap">Career</td>
+                        <td className="py-3 px-2 text-gray-700 whitespace-nowrap">—</td>
+                        {selectedCategoryData.seasons[0]?.stats.categories.map((cat, colIdx) => {
+                          // Sum up the values for this column across all seasons
+                          const values = selectedCategoryData.seasons.map(s => s.stats.values[colIdx]);
+                          const numericValues = values.filter(v => typeof v === 'number') as number[];
+
+                          // Check if this is a rate/average stat (AVG, PCT, etc.)
+                          const isRateStat = cat.includes('AVG') || cat.includes('PCT') || cat.includes('%') || cat === 'YPC' || cat === 'YPR' || cat === 'YPA';
+
+                          let displayValue: string;
+                          if (numericValues.length === 0) {
+                            displayValue = '—';
+                          } else if (isRateStat) {
+                            // For rate stats, show average
+                            const avg = numericValues.reduce((a, b) => a + b, 0) / numericValues.length;
+                            displayValue = avg.toFixed(1);
+                          } else {
+                            // For counting stats, show sum
+                            const sum = numericValues.reduce((a, b) => a + b, 0);
+                            displayValue = Number.isInteger(sum) ? sum.toString() : sum.toFixed(1);
+                          }
+
+                          return (
+                            <td key={colIdx} className="py-3 px-2 text-center text-gray-900 whitespace-nowrap">
+                              {displayValue}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    )}
                   </tbody>
                 </table>
               </div>
