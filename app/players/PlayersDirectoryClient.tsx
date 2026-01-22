@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
@@ -208,55 +208,82 @@ export default function PlayersDirectoryClient() {
   // Debounced search value
   const [debouncedSearch, setDebouncedSearch] = useState('');
 
+  // Track previous filter values to detect changes
+  const prevFiltersRef = useRef({ team: 'all', position: 'all', search: '', itemsPerPage: 24 });
+
   // Debounce search input
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchQuery);
-      setCurrentPage(1);
     }, 300);
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  // Reset to page 1 when filters change
+  // Fetch players from API - single unified fetch effect
   useEffect(() => {
-    setCurrentPage(1);
-  }, [selectedTeam, selectedPosition, itemsPerPage]);
+    const controller = new AbortController();
+    const prevFilters = prevFiltersRef.current;
 
-  // Fetch players from API
-  const fetchPlayers = useCallback(async () => {
-    setLoading(true);
-    setError(null);
+    // Check if filters changed (not just page)
+    const filtersChanged =
+      prevFilters.team !== selectedTeam ||
+      prevFilters.position !== selectedPosition ||
+      prevFilters.search !== debouncedSearch ||
+      prevFilters.itemsPerPage !== itemsPerPage;
 
-    try {
-      const params = new URLSearchParams({
-        page: currentPage.toString(),
-        limit: itemsPerPage.toString(),
-      });
+    // Update ref for next comparison
+    prevFiltersRef.current = {
+      team: selectedTeam,
+      position: selectedPosition,
+      search: debouncedSearch,
+      itemsPerPage
+    };
 
-      if (debouncedSearch) params.set('search', debouncedSearch);
-      if (selectedTeam !== 'all') params.set('team', selectedTeam);
-      if (selectedPosition !== 'all') params.set('position', selectedPosition);
-
-      const response = await fetch(`/cfb-hq/api/players?${params.toString()}`);
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch players');
-      }
-
-      const data = await response.json();
-      setPlayers(data.players || []);
-      setPagination(data.pagination || null);
-    } catch (err) {
-      console.error('Error fetching players:', err);
-      setError('Failed to load player data. Please try again later.');
-    } finally {
-      setLoading(false);
+    // If filters changed, reset to page 1
+    const pageToFetch = filtersChanged ? 1 : currentPage;
+    if (filtersChanged && currentPage !== 1) {
+      setCurrentPage(1);
+      return; // Let the next render handle the fetch with page 1
     }
-  }, [currentPage, itemsPerPage, debouncedSearch, selectedTeam, selectedPosition]);
 
-  useEffect(() => {
+    async function fetchPlayers() {
+      setLoading(true);
+      setError(null);
+
+      try {
+        const params = new URLSearchParams({
+          page: pageToFetch.toString(),
+          limit: itemsPerPage.toString(),
+        });
+
+        if (debouncedSearch) params.set('search', debouncedSearch);
+        if (selectedTeam !== 'all') params.set('team', selectedTeam);
+        if (selectedPosition !== 'all') params.set('position', selectedPosition);
+
+        const response = await fetch(`/cfb-hq/api/players?${params.toString()}`, {
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch players');
+        }
+
+        const data = await response.json();
+        setPlayers(data.players || []);
+        setPagination(data.pagination || null);
+      } catch (err) {
+        if (err instanceof Error && err.name === 'AbortError') return;
+        console.error('Error fetching players:', err);
+        setError('Failed to load player data. Please try again later.');
+      } finally {
+        setLoading(false);
+      }
+    }
+
     fetchPlayers();
-  }, [fetchPlayers]);
+
+    return () => controller.abort();
+  }, [currentPage, itemsPerPage, debouncedSearch, selectedTeam, selectedPosition]);
 
   const handleImageError = (slug: string) => {
     setImageErrors(prev => new Set(prev).add(slug));

@@ -270,14 +270,14 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
     <SidebarLayout>
       {/* Hero Section with Team Primary Color */}
       <div className="text-white pt-[57px] lg:pt-0" style={{ backgroundColor: player.team?.primaryColor || '#800000' }}>
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row items-center gap-6">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row items-center gap-5">
             {/* Player Headshot with circular white background */}
-            <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
+            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
               <img
                 src={getLocalHeadshotUrl(playerSlug)}
                 alt={player.name}
-                className="w-full h-full object-cover object-[center_15%] scale-[1.4]"
+                className="w-full h-full object-cover object-[center_15%] scale-[1.3]"
                 onError={(e) => {
                   // Fallback to ESPN headshot if local image doesn't exist
                   (e.target as HTMLImageElement).src = player.headshot;
@@ -287,7 +287,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
 
             {/* Player Info */}
             <div className="text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl font-bold mb-2">
+              <h1 className="text-2xl md:text-3xl font-bold mb-2">
                 {player.name}
                 {player.jersey && <span className="text-white/70 ml-3">#{player.jersey}</span>}
               </h1>
@@ -297,7 +297,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                   <img
                     src={player.team.logo}
                     alt={player.team.name}
-                    className="w-6 h-6"
+                    className="w-5 h-5"
                   />
                 )}
                 <Link
@@ -308,14 +308,6 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 </Link>
                 <span className="text-white/50">|</span>
                 <span>{player.positionName || player.position}</span>
-                {player.class && (
-                  <>
-                    <span className="text-white/50">|</span>
-                    <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-white/20">
-                      {player.class}
-                    </span>
-                  </>
-                )}
               </div>
             </div>
           </div>
