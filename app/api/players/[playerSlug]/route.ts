@@ -146,7 +146,7 @@ function slugify(name: string): string {
     .trim();
 }
 
-// Transfer portal API URL
+// Transfer portal data - fetched from the same source as the main transfer portal API
 const TRANSFER_PORTAL_API = 'https://staticj.profootballnetwork.com/assets/sheets/tools/cfb-transfer-portal-tracker/transferPortalTrackerData.json';
 
 // Cache for transfer portal data
@@ -162,11 +162,11 @@ async function getTransferPortalData(): Promise<any[]> {
 
   try {
     const response = await fetch(TRANSFER_PORTAL_API, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; CFB-Hub/1.0)' },
+      headers: { 'User-Agent': 'PFN-Internal-NON-Blocking' },
       next: { revalidate: 600 },
     });
 
-    if (!response.ok) return [];
+    if (!response.ok) return transferPortalCache || [];
 
     const data = await response.json();
     const sheetData = data?.collections?.[0]?.data || [];
