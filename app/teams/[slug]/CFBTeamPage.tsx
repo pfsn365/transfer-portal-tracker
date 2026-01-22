@@ -11,7 +11,6 @@ import CFBNavigationTabs from '@/components/cfb-tabs/CFBNavigationTabs';
 import OverviewTab from '@/components/cfb-tabs/OverviewTab';
 import RosterTab from '@/components/cfb-tabs/RosterTab';
 import ScheduleTab from '@/components/cfb-tabs/ScheduleTab';
-import StatsTab from '@/components/cfb-tabs/StatsTab';
 import TransfersTab from '@/components/cfb-tabs/TransfersTab';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
@@ -58,12 +57,12 @@ function TeamHeroSection({ team, teamColor, record, conferenceRank, headCoach }:
                 {conferenceRank && record ? (
                   `${conferenceRank} in ${team.conference} • ${record.wins}-${record.losses} (${record.confWins}-${record.confLosses})`
                 ) : (
-                  team.conference
+                  <>
+                    {team.conference}
+                    {headCoach && <span> | HC: {headCoach}</span>}
+                  </>
                 )}
               </p>
-              {headCoach && (
-                <p className="text-sm sm:text-base opacity-75 mt-1">HC: {headCoach}</p>
-              )}
             </div>
           </div>
 
@@ -197,8 +196,6 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
         return <RosterTab team={team} teamColor={teamColor} />;
       case 'schedule':
         return <ScheduleTab team={team} teamColor={teamColor} />;
-      case 'stats':
-        return <StatsTab team={team} teamColor={teamColor} />;
       case 'transfers':
         return <TransfersTab team={team} teamColor={teamColor} />;
       default:
