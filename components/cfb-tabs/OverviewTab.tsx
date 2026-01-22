@@ -175,16 +175,16 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
   }, [standingsData, team.conference, team.id, team.name]);
 
   // Process transfers data
-  const transfers = useMemo(() => {
+  const transfers = useMemo((): { incoming: TransferPlayer[]; outgoing: TransferPlayer[] } => {
     const players = transfersData?.players || [];
     const teamIdLower = team.id.toLowerCase();
 
-    const incoming = players.filter((p: any) => {
+    const incoming: TransferPlayer[] = players.filter((p: TransferPlayer) => {
       const newSchoolLower = (p.newSchool || '').toLowerCase();
       return newSchoolLower === teamIdLower || newSchoolLower.includes(teamIdLower);
     }).slice(0, 5);
 
-    const outgoing = players.filter((p: any) => {
+    const outgoing: TransferPlayer[] = players.filter((p: TransferPlayer) => {
       const formerSchoolLower = p.formerSchool.toLowerCase();
       return formerSchoolLower === teamIdLower || formerSchoolLower.includes(teamIdLower);
     }).slice(0, 5);
