@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { teamSlugToEspnId } from '@/utils/espnTeamIds';
 import { allTeams } from '@/data/teams';
+import { getTeamColor } from '@/utils/teamColors';
 
 // Global player index: playerSlug -> { player data, team info }
 interface PlayerIndexEntry {
@@ -403,10 +404,8 @@ export async function GET(
       ? [foundPlayer.birthPlace.city, foundPlayer.birthPlace.state].filter(Boolean).join(', ')
       : '';
 
-    // Get team primary color
-    const teamPrimaryColor = teamData?.conference
-      ? getConferenceColor(teamData.conference)
-      : '#800000';
+    // Get team primary color using the same utility as team pages
+    const teamPrimaryColor = teamData?.id ? getTeamColor(teamData.id) : '#800000';
 
     // Build player profile response
     const playerProfile = {
@@ -448,22 +447,4 @@ export async function GET(
       { status: 500 }
     );
   }
-}
-
-// Helper to get conference-based team color
-function getConferenceColor(conference: string): string {
-  const colors: Record<string, string> = {
-    'SEC': '#800000',
-    'Big Ten': '#0033a0',
-    'Big 12': '#004c00',
-    'ACC': '#013ca6',
-    'Pac-12': '#1c4c1c',
-    'American': '#cc0000',
-    'Mountain West': '#1e4d8c',
-    'Sun Belt': '#ffc222',
-    'MAC': '#006400',
-    'Conference USA': '#003087',
-    'Independent': '#0c2340',
-  };
-  return colors[conference] || '#800000';
 }
