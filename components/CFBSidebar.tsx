@@ -36,7 +36,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     { title: 'CFB Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
   ];
 
-  const isBrowseTeamsPage = isActivePage('/transfer-portal-tracker/teams');
+  const isBrowseTeamsPage = isActivePage('/teams') || pathname.startsWith('/teams');
 
   const otherTools = [
     { title: 'NFL Mock Draft Simulator', url: 'https://www.profootballnetwork.com/mock-draft-simulator/' },
@@ -115,7 +115,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                   </div>
                 </Link>
                 <Link
-                  href="/transfer-portal-tracker/teams"
+                  href="/teams"
                   className={`block px-3 py-2.5 rounded text-sm transition-colors ${
                     isBrowseTeamsPage
                       ? 'bg-[#800000] text-white'
@@ -284,7 +284,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
           </li>
           <li>
             <Link
-              href="/transfer-portal-tracker/teams"
+              href="/teams"
               className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                 isBrowseTeamsPage
                   ? 'bg-[#800000] text-white'
