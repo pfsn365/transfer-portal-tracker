@@ -1,23 +1,12 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import useSWR from 'swr';
 import { Team } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { fetcher } from '@/utils/swr';
-
-interface Article {
-  title: string;
-  description: string;
-  link: string;
-  pubDate: string;
-  author: string;
-  category: string;
-  readTime: string;
-  featuredImage?: string;
-}
 
 interface OverviewTabProps {
   team: Team;
@@ -121,50 +110,7 @@ function TransfersCardSkeleton() {
   );
 }
 
-function ArticlesCardSkeleton() {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-pulse">
-      {[1, 2, 3].map((i) => (
-        <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md">
-          <div className="w-full aspect-video bg-gray-200"></div>
-          <div className="p-4 space-y-3">
-            <div className="h-6 bg-gray-200 rounded w-3/4"></div>
-            <div className="h-4 bg-gray-200 rounded w-full"></div>
-            <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-            <div className="flex justify-between items-center">
-              <div className="h-3 bg-gray-200 rounded w-20"></div>
-              <div className="h-3 bg-gray-200 rounded w-16"></div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-// Helper to format relative time
-function getRelativeTime(dateString: string): string {
-  const now = new Date();
-  const date = new Date(dateString);
-  const diffMs = now.getTime() - date.getTime();
-  const diffMins = Math.floor(diffMs / 60000);
-  const diffHours = Math.floor(diffMs / 3600000);
-  const diffDays = Math.floor(diffMs / 86400000);
-
-  if (diffMins < 60) {
-    return `${diffMins}m ago`;
-  } else if (diffHours < 24) {
-    return `${diffHours}h ago`;
-  } else if (diffDays < 7) {
-    return `${diffDays}d ago`;
-  } else {
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  }
-}
-
 export default function OverviewTab({ team, schedule, teamColor }: OverviewTabProps) {
-  const [visibleArticles, setVisibleArticles] = useState(3);
-
   // SWR hooks for data fetching with caching
   const { data: standingsData, isLoading: loadingStandings } = useSWR(
     `/cfb-hq/api/cfb/standings?group=80`,
@@ -178,15 +124,6 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
     fetcher,
     { revalidateOnFocus: false, dedupingInterval: 300000 }
   );
-
-  // Fetch CFB articles from RSS feed
-  const { data: articlesData, isLoading: loadingArticles } = useSWR<{ success: boolean; articles: Article[] }>(
-    `/cfb-hq/api/cfb/articles`,
-    fetcher,
-    { revalidateOnFocus: false, dedupingInterval: 300000 }
-  );
-
-  const articles = articlesData?.articles || [];
 
   // Derive recent games from schedule prop
   const recentGames = useMemo(() => {
@@ -447,82 +384,6 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
           >
             View All Transfer Portal Activity
           </Link>
-        </div>
-      </div>
-
-      {/* Latest College Football Articles */}
-      <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-        <div className="px-4 py-3 border-b border-gray-200" style={{ backgroundColor: teamColor }}>
-          <h3 className="text-lg font-bold text-white">Latest College Football Articles</h3>
-        </div>
-        <div className="p-4">
-          {loadingArticles ? (
-            <ArticlesCardSkeleton />
-          ) : articles.length > 0 ? (
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {articles.slice(0, visibleArticles).map((article, index) => (
-                  <a
-                    key={index}
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-gray-100"
-                  >
-                    {/* Featured Image */}
-                    {article.featuredImage && (
-                      <div className="w-full aspect-video overflow-hidden bg-gray-200">
-                        <img
-                          src={article.featuredImage}
-                          alt={article.title}
-                          className="w-full h-full object-cover"
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
-
-                    {/* Article Content */}
-                    <div className="p-4">
-                      <h4
-                        className="text-base font-semibold text-gray-900 mb-2 line-clamp-2 hover:underline"
-                        style={{ color: teamColor }}
-                      >
-                        {article.title}
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                        {article.description}
-                      </p>
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-gray-500">
-                          {getRelativeTime(article.pubDate)}
-                        </span>
-                        <span className="font-medium" style={{ color: teamColor }}>
-                          Read More →
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-
-              {/* Show More Button */}
-              {visibleArticles < articles.length && (
-                <div className="mt-6 text-center">
-                  <button
-                    onClick={() => setVisibleArticles(prev => Math.min(prev + 3, articles.length))}
-                    className="text-white px-6 py-2.5 rounded-lg font-medium transition-colors hover:opacity-90 cursor-pointer"
-                    style={{ backgroundColor: teamColor }}
-                  >
-                    Show More Articles
-                  </button>
-                </div>
-              )}
-            </>
-          ) : (
-            <div className="text-center py-8">
-              <p className="text-gray-500">No articles available</p>
-            </div>
-          )}
         </div>
       </div>
     </div>

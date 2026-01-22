@@ -68,17 +68,6 @@ interface PlayerProfile {
     value: string;
     displayValue: string;
   }>;
-  transferPortalHistory: {
-    status: string;
-    enteredDate: string | null;
-    formerSchool: string | null;
-    formerConference: string | null;
-    newSchool: string | null;
-    newConference: string | null;
-    impactGrade: number | null;
-    position: string | null;
-    class: string | null;
-  } | null;
 }
 
 interface Props {
@@ -376,69 +365,6 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
             )}
           </div>
         </div>
-
-        {/* Transfer Portal History */}
-        {player.transferPortalHistory && (
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 mb-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Transfer Portal History</h2>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              {/* Status Badge */}
-              <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium ${
-                player.transferPortalHistory.status === 'Committed'
-                  ? 'bg-green-100 text-green-800'
-                  : 'bg-yellow-100 text-yellow-800'
-              }`}>
-                <span className={`w-2 h-2 rounded-full ${
-                  player.transferPortalHistory.status === 'Committed' ? 'bg-green-500' : 'bg-yellow-500'
-                }`}></span>
-                {player.transferPortalHistory.status}
-              </div>
-
-              {/* Impact Grade */}
-              {player.transferPortalHistory.impactGrade && (
-                <div className="flex items-center gap-2">
-                  <span className="text-sm text-gray-500">Impact Grade:</span>
-                  <span className="font-semibold text-gray-900">
-                    {player.transferPortalHistory.impactGrade.toFixed(1)}
-                  </span>
-                </div>
-              )}
-            </div>
-
-            {/* Transfer Details */}
-            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
-              {player.transferPortalHistory.formerSchool && (
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-500">From:</span>
-                  <span className="font-medium text-gray-900">{player.transferPortalHistory.formerSchool}</span>
-                  {player.transferPortalHistory.formerConference && (
-                    <span className="text-gray-500">({player.transferPortalHistory.formerConference})</span>
-                  )}
-                </div>
-              )}
-
-              {player.transferPortalHistory.newSchool && (
-                <>
-                  <span className="text-gray-400">→</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-gray-500">To:</span>
-                    <span className="font-medium text-gray-900">{player.transferPortalHistory.newSchool}</span>
-                    {player.transferPortalHistory.newConference && (
-                      <span className="text-gray-500">({player.transferPortalHistory.newConference})</span>
-                    )}
-                  </div>
-                </>
-              )}
-
-              {player.transferPortalHistory.enteredDate && (
-                <div className="flex items-center gap-2 ml-auto">
-                  <span className="text-gray-500">Entered:</span>
-                  <span className="text-gray-700">{player.transferPortalHistory.enteredDate}</span>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
 
         {/* Game Log Section */}
         {(currentGameLog.length > 0 || player.availableSeasons.length > 0) && (
