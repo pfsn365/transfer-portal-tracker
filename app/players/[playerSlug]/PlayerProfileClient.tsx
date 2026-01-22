@@ -288,7 +288,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
               <img
                 src={getLocalHeadshotUrl(playerSlug)}
                 alt={player.name}
-                className="w-full h-full object-cover object-[center_25%] scale-[0.85]"
+                className="w-full h-full object-cover object-[center_20%]"
                 onError={(e) => {
                   // Fallback to ESPN headshot if local image doesn't exist
                   (e.target as HTMLImageElement).src = player.headshot;

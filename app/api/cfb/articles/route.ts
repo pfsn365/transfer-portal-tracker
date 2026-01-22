@@ -1,15 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import * as cheerio from 'cheerio';
 
-const CFB_RSS_FEED = 'https://www.profootballnetwork.com/cfb-feed';
+const CFB_RSS_FEED = 'https://www.profootballnetwork.com/tag/college-football/feed/';
 
 export async function GET(request: NextRequest) {
   try {
     const response = await fetch(CFB_RSS_FEED, {
       method: 'GET',
       headers: {
-        'Accept': 'application/rss+xml, application/xml, text/xml',
-        'User-Agent': 'CFB-HQ/1.0'
+        'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+        'User-Agent': 'Mozilla/5.0 (compatible; PFSN-CFB-HQ/1.0)',
+        'Referer': 'https://www.profootballnetwork.com/',
       },
       next: { revalidate: 3600 } // Cache for 1 hour
     });
