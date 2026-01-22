@@ -347,7 +347,7 @@ export async function GET(
       weight: foundPlayer.displayWeight || (foundPlayer.weight ? `${foundPlayer.weight} lbs` : '—'),
       class: foundPlayer.experience?.displayValue || '',
       hometown,
-      highSchool: athleteData?.athlete?.college?.name || '',
+      highSchool: '', // ESPN doesn't provide reliable high school data for CFB
       birthDate: foundPlayer.dateOfBirth || '',
       headshot: foundPlayer.headshot?.href || `https://a.espncdn.com/i/headshots/college-football/players/full/${athleteId}.png`,
       team: {
