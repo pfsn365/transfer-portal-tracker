@@ -1,43 +1,72 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
-import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface PlayerProfile {
   id: string;
-  name: string;
   slug: string;
+  name: string;
+  firstName: string;
+  lastName: string;
+  jersey: string;
+  position: string;
+  positionName: string;
+  height: string;
+  weight: string;
+  class: string;
+  hometown: string;
+  highSchool: string;
+  birthDate: string;
+  headshot: string;
   team: {
     id: string;
-    name: string;
     slug: string;
+    name: string;
     abbreviation: string;
     logo: string;
     primaryColor: string;
   };
-  position: string;
-  positionFull: string;
-  jerseyNumber: string;
-  class: string;
-  height: string;
-  weight: string;
-  hometown: string;
-  highSchool?: string;
-  headshot?: string;
-  stats?: {
-    season: string;
-    categories: Array<{
-      name: string;
-      stats: Record<string, string | number>;
+  currentSeasonStats: Record<string, {
+    categories: string[];
+    values: number[];
+    labels: string[];
+  }> | null;
+  careerStats: Array<{
+    category: string;
+    displayName: string;
+    seasons: Array<{
+      season: string;
+      team: string;
+      teamAbbr: string;
+      stats: {
+        categories: string[];
+        values: number[];
+        labels: string[];
+      };
     }>;
-  };
-  transferHistory?: Array<{
-    fromSchool: string;
-    toSchool: string;
+  }>;
+  gameLog: Array<{
+    gameId: string;
     date: string;
+    opponent: string;
+    opponentAbbr: string;
+    opponentLogo: string;
+    homeAway: string;
+    result: string;
+    score: string;
+    stats: {
+      categories: string[];
+      values: number[];
+      labels: string[];
+    };
+  }>;
+  availableSeasons: Array<{
+    value: string;
+    displayValue: string;
   }>;
 }
 
@@ -45,76 +74,102 @@ interface Props {
   playerSlug: string;
 }
 
-function getPositionFullName(pos: string): string {
-  const positionMap: Record<string, string> = {
-    'QB': 'Quarterback',
-    'RB': 'Running Back',
-    'FB': 'Fullback',
-    'WR': 'Wide Receiver',
-    'TE': 'Tight End',
-    'OL': 'Offensive Line',
-    'OT': 'Offensive Tackle',
-    'OG': 'Offensive Guard',
-    'C': 'Center',
-    'DL': 'Defensive Line',
-    'DE': 'Defensive End',
-    'DT': 'Defensive Tackle',
-    'NT': 'Nose Tackle',
-    'LB': 'Linebacker',
-    'ILB': 'Inside Linebacker',
-    'OLB': 'Outside Linebacker',
-    'MLB': 'Middle Linebacker',
-    'CB': 'Cornerback',
-    'S': 'Safety',
-    'FS': 'Free Safety',
-    'SS': 'Strong Safety',
-    'K': 'Kicker',
-    'P': 'Punter',
-    'LS': 'Long Snapper',
-    'ATH': 'Athlete',
-  };
-  return positionMap[pos.toUpperCase()] || pos;
+// Get local player headshot URL
+function getLocalHeadshotUrl(playerSlug: string): string {
+  return `/cfb-hq/player-images/${playerSlug}.png`;
 }
 
 export default function PlayerProfileClient({ playerSlug }: Props) {
   const [player, setPlayer] = useState<PlayerProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [imageError, setImageError] = useState(false);
+  const [selectedSeason, setSelectedSeason] = useState<string>('');
+  const [gameLogLoading, setGameLogLoading] = useState(false);
+  const [currentGameLog, setCurrentGameLog] = useState<PlayerProfile['gameLog']>([]);
+  const [selectedStatCategory, setSelectedStatCategory] = useState<string>('');
 
   useEffect(() => {
-    async function fetchPlayerData() {
-      setLoading(true);
-      setError(null);
+    const controller = new AbortController();
 
+    async function fetchData() {
       try {
-        const response = await fetch(`/cfb-hq/api/players/${playerSlug}`);
+        setLoading(true);
+        setError(null);
+
+        const response = await fetch(`/cfb-hq/api/players/${playerSlug}`, {
+          signal: controller.signal,
+        });
+
         if (!response.ok) {
           if (response.status === 404) {
-            setError('Player not found');
-          } else {
-            throw new Error('Failed to fetch player');
+            throw new Error('Player not found');
           }
-          return;
+          throw new Error('Failed to fetch player data');
         }
-        const data = await response.json();
-        setPlayer(data.player);
+
+        const playerData = await response.json();
+        setPlayer(playerData);
+        setCurrentGameLog(playerData.gameLog || []);
+
+        // Set default season to the first available one
+        if (playerData.availableSeasons?.length > 0) {
+          setSelectedSeason(playerData.availableSeasons[0].value);
+        }
+
+        // Set default stat category
+        if (playerData.careerStats?.length > 0) {
+          setSelectedStatCategory(playerData.careerStats[0].category);
+        }
       } catch (err) {
-        console.error('Error fetching player:', err);
-        setError('Failed to load player data. Please try again later.');
+        if (err instanceof Error && err.name === 'AbortError') return;
+        setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
         setLoading(false);
       }
     }
 
-    if (playerSlug) {
-      fetchPlayerData();
-    }
+    fetchData();
+
+    return () => controller.abort();
   }, [playerSlug]);
 
-  const getInitials = (name: string) => {
-    return name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
-  };
+  // Fetch game log when season changes
+  useEffect(() => {
+    if (!player || !selectedSeason) return;
+
+    // If it's the default (current) season, use the already-loaded data
+    const currentSeasonValue = player.availableSeasons?.[0]?.value;
+    if (selectedSeason === currentSeasonValue) {
+      setCurrentGameLog(player.gameLog);
+      return;
+    }
+
+    const controller = new AbortController();
+
+    async function fetchGameLog() {
+      setGameLogLoading(true);
+      try {
+        const response = await fetch(
+          `/cfb-hq/api/players/${playerSlug}?season=${selectedSeason}`,
+          { signal: controller.signal }
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setCurrentGameLog(data.gameLog || []);
+        }
+      } catch (err) {
+        if (err instanceof Error && err.name !== 'AbortError') {
+          console.error('Error fetching game log:', err);
+        }
+      } finally {
+        setGameLogLoading(false);
+      }
+    }
+
+    fetchGameLog();
+
+    return () => controller.abort();
+  }, [selectedSeason, player, playerSlug]);
 
   // Sidebar layout wrapper
   const SidebarLayout = ({ children }: { children: React.ReactNode }) => (
@@ -127,114 +182,139 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
       <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
         <CFBSidebar isMobile={true} />
       </div>
-      <main id="main-content" className="flex-1 lg:ml-64 min-w-0">
+      <main className="flex-1 lg:ml-64 min-w-0">
         {children}
         <Footer />
       </main>
     </div>
   );
 
-  // Loading state
   if (loading) {
     return (
       <SidebarLayout>
-        <div className="bg-gray-400 text-white pt-[57px] lg:pt-0">
-          <div className="container mx-auto px-4 py-8">
-            <LoadingSpinner />
+        <div className="pt-[57px] lg:pt-0">
+          <div className="flex items-center justify-center py-24">
+            <div className="text-center">
+              <svg
+                className="animate-spin h-12 w-12 mx-auto mb-4 text-[#800000]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
+              </svg>
+              <p className="text-gray-600 font-medium">Loading player profile...</p>
+            </div>
           </div>
         </div>
       </SidebarLayout>
     );
   }
 
-  // Error state
   if (error || !player) {
     return (
       <SidebarLayout>
-        <div className="bg-gray-600 text-white pt-[57px] lg:pt-0">
-          <div className="container mx-auto px-4 py-8">
-            <Link href="/players" className="text-white/80 hover:text-white mb-4 inline-flex items-center gap-1">
-              ← Back to Players
-            </Link>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 py-8">
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center max-w-xl mx-auto">
-            <h2 className="text-xl font-semibold text-red-700 mb-2">
-              {error === 'Player not found' ? 'Player Not Found' : 'Error Loading Player'}
-            </h2>
-            <p className="text-red-600 mb-4">
-              {error === 'Player not found'
-                ? 'The player you are looking for does not exist or has been moved.'
-                : error}
-            </p>
-            <Link
-              href="/players"
-              className="inline-block px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700"
-            >
-              Browse All Players
-            </Link>
+        <div className="pt-[57px] lg:pt-0">
+          <div className="max-w-7xl mx-auto px-4 py-12">
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+              <div className="flex items-start gap-3">
+                <svg
+                  className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <div>
+                  <h3 className="text-red-800 font-semibold mb-1">
+                    {error === 'Player not found' ? 'Player Not Found' : 'Error Loading Player'}
+                  </h3>
+                  <p className="text-red-600 text-sm">{error}</p>
+                  <Link
+                    href="/players"
+                    className="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 text-sm"
+                  >
+                    Browse All Players
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </SidebarLayout>
     );
   }
+
+  // Get the selected stat category data
+  const selectedCategoryData = player.careerStats.find(c => c.category === selectedStatCategory);
 
   return (
     <SidebarLayout>
       {/* Hero Section with Team Primary Color */}
-      <div
-        className="text-white pt-[57px] lg:pt-3 lg:pb-3"
-        style={{ backgroundColor: player.team?.primaryColor || '#800000' }}
-      >
-        <div className="container mx-auto px-4 py-3 lg:py-3">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
+      <div className="text-white pt-[57px] lg:pt-0" style={{ backgroundColor: player.team?.primaryColor || '#800000' }}>
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            {/* Player Headshot with circular white background */}
+            <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
+              <img
+                src={getLocalHeadshotUrl(playerSlug)}
+                alt={player.name}
+                className="w-full h-full object-cover object-[center_15%] scale-[1.4]"
+                onError={(e) => {
+                  // Fallback to ESPN headshot if local image doesn't exist
+                  (e.target as HTMLImageElement).src = player.headshot;
+                }}
+              />
+            </div>
+
             {/* Player Info */}
-            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-4 lg:mb-0">
-              {/* Headshot */}
-              <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full flex items-center justify-center shadow-lg overflow-hidden flex-shrink-0 bg-white">
-                {player.headshot && !imageError ? (
+            <div className="text-center md:text-left">
+              <h1 className="text-3xl md:text-4xl font-bold mb-2">
+                {player.name}
+                {player.jersey && <span className="text-white/70 ml-3">#{player.jersey}</span>}
+              </h1>
+
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-white/80">
+                {player.team.logo && (
                   <img
-                    src={player.headshot}
-                    alt={player.name}
-                    className="w-full h-full object-cover object-[center_15%] scale-[1.4]"
-                    onError={() => setImageError(true)}
+                    src={player.team.logo}
+                    alt={player.team.name}
+                    className="w-6 h-6"
                   />
-                ) : (
-                  <div
-                    className="w-full h-full rounded-full flex items-center justify-center text-3xl lg:text-4xl font-bold bg-gray-200 text-gray-600"
-                  >
-                    {getInitials(player.name)}
-                  </div>
                 )}
-              </div>
-
-              {/* Name and Details */}
-              <div className="text-center sm:text-left">
-                <h1 className="text-2xl lg:text-4xl font-bold">
-                  {player.name} {player.jerseyNumber && <span className="font-normal opacity-60">#{player.jerseyNumber}</span>}
-                </h1>
-
-                <div className="flex items-center justify-center sm:justify-start gap-2 text-base lg:text-lg mt-2">
-                  <Link href={`/teams/${player.team.slug}`} className="flex items-center gap-2 hover:opacity-80">
-                    {player.team.logo && (
-                      <img
-                        src={player.team.logo}
-                        alt={player.team.name}
-                        className="w-6 h-6"
-                      />
-                    )}
-                    <span className="font-medium">{player.team.name}</span>
-                  </Link>
-                  <span className="opacity-60">|</span>
-                  <span className="opacity-90">{getPositionFullName(player.position)}</span>
-                </div>
-
-                {/* Class Badge */}
+                <Link
+                  href={`/teams/${player.team.slug}`}
+                  className="font-medium hover:text-white transition-colors"
+                >
+                  {player.team.name}
+                </Link>
+                <span className="text-white/50">|</span>
+                <span>{player.positionName || player.position}</span>
                 {player.class && (
-                  <span className="inline-block mt-2 px-3 py-1 rounded-full text-xs font-medium bg-white/20 text-white">
-                    {player.class}
-                  </span>
+                  <>
+                    <span className="text-white/50">|</span>
+                    <span className="px-2 py-0.5 rounded-full text-xs font-medium bg-white/20">
+                      {player.class}
+                    </span>
+                  </>
                 )}
               </div>
             </div>
@@ -242,13 +322,16 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
         </div>
       </div>
 
+      {/* Raptive Header Ad */}
+      <div className="container mx-auto px-4 h-[120px] flex items-center justify-center">
+        <div className="raptive-pfn-header-90 w-full h-full"></div>
+      </div>
+
       {/* Content Area */}
       <div className="container mx-auto px-4 py-6">
-        {/* Bio Section */}
+        {/* Player Information */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">
-            Player Information
-          </h2>
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Player Information</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div>
               <dt className="text-xs text-gray-500 uppercase tracking-wide">Height</dt>
@@ -276,53 +359,195 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 <dd className="font-medium text-gray-900">{player.highSchool}</dd>
               </div>
             )}
+            {player.birthDate && (
+              <div>
+                <dt className="text-xs text-gray-500 uppercase tracking-wide">Birth Date</dt>
+                <dd className="font-medium text-gray-900">
+                  {new Date(player.birthDate).toLocaleDateString('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric',
+                  })}
+                </dd>
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Season Stats Section - Placeholder for future implementation */}
-        {player.stats && player.stats.categories.length > 0 && (
+        {/* Game Log Section */}
+        {(currentGameLog.length > 0 || player.availableSeasons.length > 0) && (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 mb-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
-              {player.stats.season} Stats
-            </h2>
-            <div className="space-y-4">
-              {player.stats.categories.map((category) => (
-                <div key={category.name} className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
-                    {category.name}
-                  </h3>
-                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-4">
-                    {Object.entries(category.stats).map(([key, value]) => (
-                      <div key={key} className="text-center">
-                        <dt className="text-xs text-gray-500 uppercase">{key}</dt>
-                        <dd className="font-semibold text-gray-900">{value}</dd>
-                      </div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+              <h2 className="text-lg font-semibold text-gray-900">Game Log</h2>
+              {player.availableSeasons.length > 0 && (
+                <div className="flex items-center gap-2">
+                  <label htmlFor="season-select" className="text-sm text-gray-600">Season:</label>
+                  <select
+                    id="season-select"
+                    value={selectedSeason}
+                    onChange={(e) => setSelectedSeason(e.target.value)}
+                    className="px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#800000] focus:border-[#800000]"
+                  >
+                    {player.availableSeasons.map((season) => (
+                      <option key={season.value} value={season.value}>
+                        {season.displayValue}
+                      </option>
                     ))}
-                  </div>
+                  </select>
                 </div>
-              ))}
+              )}
             </div>
+            {gameLogLoading ? (
+              <div className="flex items-center justify-center py-12">
+                <svg
+                  className="animate-spin h-8 w-8 text-[#800000]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg>
+              </div>
+            ) : currentGameLog.length === 0 ? (
+              <div className="text-center py-8 text-gray-500">
+                No game data available for this season
+              </div>
+            ) : (
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Date</th>
+                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">OPP</th>
+                      <th className="text-center py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Result</th>
+                      {currentGameLog[0]?.stats.categories.slice(0, 8).map((cat) => (
+                        <th key={cat} className="text-center py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">
+                          {cat}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {currentGameLog.map((game, idx) => {
+                      const gameDate = new Date(game.date);
+                      return (
+                        <tr
+                          key={game.gameId}
+                          className={`border-b border-gray-100 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+                        >
+                          <td className="py-3 px-2 font-medium text-gray-900 whitespace-nowrap">
+                            {gameDate.toLocaleDateString('en-US', {
+                              month: 'short',
+                              day: 'numeric',
+                            })}
+                          </td>
+                          <td className="py-3 px-2 text-gray-700 whitespace-nowrap">
+                            <div className="flex items-center gap-2">
+                              <span>{game.homeAway === 'away' ? '@' : 'vs'}</span>
+                              {game.opponentLogo && (
+                                <Image
+                                  src={game.opponentLogo}
+                                  alt={game.opponentAbbr}
+                                  width={20}
+                                  height={20}
+                                  className="w-5 h-5 object-contain"
+                                  unoptimized
+                                />
+                              )}
+                              <span>{game.opponentAbbr || game.opponent}</span>
+                            </div>
+                          </td>
+                          <td className="py-3 px-2 text-center whitespace-nowrap">
+                            <span className={`font-medium ${game.result === 'W' ? 'text-green-600' : 'text-red-600'}`}>
+                              {game.result} {game.score}
+                            </span>
+                          </td>
+                          {game.stats.values.slice(0, 8).map((value, colIdx) => (
+                            <td key={colIdx} className="py-3 px-2 text-center text-gray-700 whitespace-nowrap">
+                              {typeof value === 'number' ? value.toFixed(0) : value}
+                            </td>
+                          ))}
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
         )}
 
-        {/* Transfer History Section */}
-        {player.transferHistory && player.transferHistory.length > 0 && (
+        {/* Career Stats Section */}
+        {player.careerStats.length > 0 && (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-5 mb-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
-              Transfer History
-            </h2>
-            <div className="space-y-3">
-              {player.transferHistory.map((transfer, index) => (
-                <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                  <div className="flex-1">
-                    <span className="text-gray-600">{transfer.fromSchool}</span>
-                    <span className="mx-2 text-gray-400">→</span>
-                    <span className="font-medium text-gray-900">{transfer.toSchool}</span>
-                  </div>
-                  <span className="text-sm text-gray-500">{transfer.date}</span>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+              <h2 className="text-lg font-semibold text-gray-900">Career Stats</h2>
+              {player.careerStats.length > 1 && (
+                <div className="flex flex-wrap gap-2">
+                  {player.careerStats.map((cat) => (
+                    <button
+                      key={cat.category}
+                      onClick={() => setSelectedStatCategory(cat.category)}
+                      className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                        selectedStatCategory === cat.category
+                          ? 'bg-[#800000] text-white'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      {cat.displayName}
+                    </button>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
+
+            {selectedCategoryData && selectedCategoryData.seasons.length > 0 && (
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Season</th>
+                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Team</th>
+                      {selectedCategoryData.seasons[0]?.stats.categories.map((cat) => (
+                        <th key={cat} className="text-center py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">
+                          {cat}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {selectedCategoryData.seasons.map((season, idx) => (
+                      <tr
+                        key={`${season.season}-${idx}`}
+                        className={`border-b border-gray-100 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+                      >
+                        <td className="py-3 px-2 font-medium text-gray-900 whitespace-nowrap">{season.season}</td>
+                        <td className="py-3 px-2 text-gray-700 whitespace-nowrap">{season.teamAbbr || season.team}</td>
+                        {season.stats.values.map((value, colIdx) => (
+                          <td key={colIdx} className="py-3 px-2 text-center text-gray-700 whitespace-nowrap">
+                            {typeof value === 'number'
+                              ? Number.isInteger(value) ? value : value.toFixed(1)
+                              : value}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
         )}
 
