@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { getApiPath } from '@/utils/api';
 import { hasCFPRankings, getHistoricalCFPPoll } from '@/data/cfp-historical';
+import { getTeamById } from '@/data/teams';
 
 interface RankedTeam {
   current: number;
@@ -245,9 +247,18 @@ export default function RankingsClient() {
                                   </div>
                                 )}
                               </div>
-                              <span className="font-medium text-gray-900">
-                                {team.team.displayName}
-                              </span>
+                              {(() => {
+                                const teamData = getTeamById(team.team.displayName || '');
+                                return teamData ? (
+                                  <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 hover:text-blue-600 hover:underline">
+                                    {team.team.displayName}
+                                  </Link>
+                                ) : (
+                                  <span className="font-medium text-gray-900">
+                                    {team.team.displayName}
+                                  </span>
+                                );
+                              })()}
                             </div>
                           </td>
                           <td className="px-4 py-3 text-center">

@@ -2,10 +2,12 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import StandingsSkeleton from '@/components/StandingsSkeleton';
 import { getApiPath } from '@/utils/api';
+import { getTeamById } from '@/data/teams';
 
 interface StandingsTeam {
   id: string;
@@ -403,9 +405,18 @@ export default function StandingsClient() {
                                         #{cfpRank}
                                       </span>
                                     )}
-                                    <span className="font-medium text-gray-900 truncate text-sm">
-                                      {team.name}
-                                    </span>
+                                    {(() => {
+                                      const teamData = getTeamById(team.name);
+                                      return teamData ? (
+                                        <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 truncate text-sm hover:text-blue-600 hover:underline">
+                                          {team.name}
+                                        </Link>
+                                      ) : (
+                                        <span className="font-medium text-gray-900 truncate text-sm">
+                                          {team.name}
+                                        </span>
+                                      );
+                                    })()}
                                   </div>
                                 </div>
                               </td>

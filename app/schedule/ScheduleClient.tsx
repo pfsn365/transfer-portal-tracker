@@ -3,10 +3,12 @@
 import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { getApiPath } from '@/utils/api';
 import { useLiveScores } from '@/hooks/useLiveScores';
+import { getTeamById } from '@/data/teams';
 
 interface GameLeader {
   name: string;
@@ -592,7 +594,16 @@ function ScheduleClientInner() {
                     {game.awayTeam.rank && game.awayTeam.rank <= 25 && (
                       <span className="text-sm text-gray-500">#{game.awayTeam.rank}</span>
                     )}
-                    <span className="truncate">{game.awayTeam.name}</span>
+                    {(() => {
+                      const awayTeamData = getTeamById(game.awayTeam.name);
+                      return awayTeamData ? (
+                        <Link href={`/teams/${awayTeamData.slug}`} className="truncate hover:text-blue-600 hover:underline">
+                          {game.awayTeam.name}
+                        </Link>
+                      ) : (
+                        <span className="truncate">{game.awayTeam.name}</span>
+                      );
+                    })()}
                     {game.awayTeam.record && (
                       <span className="text-sm font-normal text-gray-500">({game.awayTeam.record})</span>
                     )}
@@ -610,7 +621,16 @@ function ScheduleClientInner() {
                     {game.homeTeam.rank && game.homeTeam.rank <= 25 && (
                       <span className="text-sm text-gray-500">#{game.homeTeam.rank}</span>
                     )}
-                    <span className="truncate">{game.homeTeam.name}</span>
+                    {(() => {
+                      const homeTeamData = getTeamById(game.homeTeam.name);
+                      return homeTeamData ? (
+                        <Link href={`/teams/${homeTeamData.slug}`} className="truncate hover:text-blue-600 hover:underline">
+                          {game.homeTeam.name}
+                        </Link>
+                      ) : (
+                        <span className="truncate">{game.homeTeam.name}</span>
+                      );
+                    })()}
                     {game.homeTeam.record && (
                       <span className="text-sm font-normal text-gray-500">({game.homeTeam.record})</span>
                     )}

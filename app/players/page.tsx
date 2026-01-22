@@ -14,12 +14,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CFB Players - Player Profiles & Stats',
     description: 'Browse college football player profiles with bio information, stats, and transfer portal history.',
+    url: 'https://www.profootballnetwork.com/cfb-hq/players',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'CFB Players - Player Profiles & Stats',
     description: 'Browse college football player profiles with bio information, stats, and transfer portal history.',
+  },
+  alternates: {
+    canonical: 'https://www.profootballnetwork.com/cfb-hq/players',
   },
 };
 

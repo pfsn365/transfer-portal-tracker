@@ -15,8 +15,7 @@ import { getWatchlist } from '@/utils/watchlist';
 import { exportToCSV } from '@/utils/csvExport';
 import { isFCSConference } from '@/utils/conferenceHelpers';
 import { CLASS_ORDER } from '@/utils/constants';
-import { Download, Star, X, ChevronDown, ChevronUp, Filter } from 'lucide-react';
-import Link from 'next/link';
+import { Download, Star, X } from 'lucide-react';
 
 export default function TransferPortalClient() {
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
@@ -32,7 +31,6 @@ export default function TransferPortalClient() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [showWatchlistOnly, setShowWatchlistOnly] = useState<boolean>(false);
   const [watchlist, setWatchlist] = useState<string[]>([]);
-  const [filtersExpanded, setFiltersExpanded] = useState<boolean>(false);
 
   // Sorting state
   type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate' | 'commitDate';
@@ -374,130 +372,96 @@ export default function TransferPortalClient() {
         </div>
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
-          {/* Collapsible Search & Filter Section */}
-          <div className="bg-white rounded-lg shadow-md mb-6">
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 p-4 sm:p-6">
-              <button
-                onClick={() => setFiltersExpanded(!filtersExpanded)}
-                className="flex items-center gap-3 text-left hover:opacity-80 transition-opacity flex-1 min-w-0 cursor-pointer"
+          {/* Search & Filter Section */}
+          <div className="bg-white rounded-lg shadow-md mb-6 p-4 sm:p-6">
+            {/* Search Bar */}
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search by player name or school..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              <svg
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <Filter className="w-5 h-5 text-gray-600 flex-shrink-0" />
-                <span className="font-semibold text-gray-800">Search & Filters</span>
-                {hasActiveFilters && (
-                  <span className="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
-                    Active
-                  </span>
-                )}
-                {filtersExpanded ? (
-                  <ChevronUp className="w-5 h-5 text-gray-600 flex-shrink-0 ml-auto" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-gray-600 flex-shrink-0 ml-auto" />
-                )}
-              </button>
-
-              <Link
-                href="/transfer-portal-tracker/teams"
-                className="flex items-center justify-center px-4 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-center text-sm sm:text-base whitespace-nowrap"
-                aria-label="Browse all team transfer pages"
-              >
-                Browse Team Transfer Pages
-              </Link>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 cursor-pointer"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
             </div>
 
-            {filtersExpanded && (
-              <div className="px-4 sm:px-6 pb-4 sm:pb-6 border-t border-gray-200">
-                {/* Search Bar */}
-                <div className="pt-4 sm:pt-6">
-                  <div className="relative">
-                    <input
-                      type="text"
-                      placeholder="Search by player name or school..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                    <svg
-                      className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                    {searchQuery && (
-                      <button
-                        type="button"
-                        onClick={() => setSearchQuery('')}
-                        className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700 cursor-pointer"
-                      >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                      </button>
-                    )}
-                  </div>
-                </div>
+            <div className="mt-4">
+              <FilterBar
+                selectedStatus={selectedStatus}
+                selectedSchool={selectedSchool}
+                selectedClass={selectedClass}
+                selectedPosition={selectedPosition}
+                selectedConference={selectedConference}
+                onStatusChange={setSelectedStatus}
+                onSchoolChange={setSelectedSchool}
+                onClassChange={setSelectedClass}
+                onPositionChange={setSelectedPosition}
+                onConferenceChange={setSelectedConference}
+              />
+            </div>
 
-                <div className="mt-4">
-                  <FilterBar
-                    selectedStatus={selectedStatus}
-                    selectedSchool={selectedSchool}
-                    selectedClass={selectedClass}
-                    selectedPosition={selectedPosition}
-                    selectedConference={selectedConference}
-                    onStatusChange={setSelectedStatus}
-                    onSchoolChange={setSelectedSchool}
-                    onClassChange={setSelectedClass}
-                    onPositionChange={setSelectedPosition}
-                    onConferenceChange={setSelectedConference}
-                  />
-                </div>
+            {/* Action Buttons */}
+            <div className="mt-4 flex flex-wrap gap-3">
+              {/* Watchlist Toggle */}
+              <button
+                onClick={() => setShowWatchlistOnly(!showWatchlistOnly)}
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
+                  showWatchlistOnly
+                    ? 'bg-yellow-500 text-white hover:bg-yellow-600'
+                    : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-yellow-500 hover:text-yellow-600'
+                }`}
+              >
+                <Star className={`w-4 h-4 ${showWatchlistOnly ? 'fill-white' : ''}`} />
+                My Watchlist ({watchlist.length})
+              </button>
 
-                {/* Action Buttons */}
-                <div className="mt-4 flex flex-wrap gap-3">
-                  {/* Watchlist Toggle */}
-                  <button
-                    onClick={() => setShowWatchlistOnly(!showWatchlistOnly)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
-                      showWatchlistOnly
-                        ? 'bg-yellow-500 text-white hover:bg-yellow-600'
-                        : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-yellow-500 hover:text-yellow-600'
-                    }`}
-                  >
-                    <Star className={`w-4 h-4 ${showWatchlistOnly ? 'fill-white' : ''}`} />
-                    My Watchlist ({watchlist.length})
-                  </button>
+              {/* Export to CSV */}
+              <button
+                onClick={handleExport}
+                disabled={paginatedPlayers.length === 0}
+                className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              >
+                <Download className="w-4 h-4" />
+                Export to CSV
+              </button>
 
-                  {/* Export to CSV */}
-                  <button
-                    onClick={handleExport}
-                    disabled={paginatedPlayers.length === 0}
-                    className="flex items-center gap-2 px-4 py-2 bg-white text-gray-700 border-2 border-gray-300 rounded-lg font-medium hover:border-green-500 hover:text-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                  >
-                    <Download className="w-4 h-4" />
-                    Export to CSV
-                  </button>
-
-                  {/* Clear Filters */}
-                  <button
-                    onClick={handleClearFilters}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
-                      hasActiveFilters
-                        ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
-                        : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
-                    }`}
-                  >
-                    <X className="w-4 h-4" />
-                    Clear Filters
-                  </button>
-                </div>
-              </div>
-            )}
+              {/* Clear Filters */}
+              <button
+                onClick={handleClearFilters}
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors cursor-pointer ${
+                  hasActiveFilters
+                    ? 'bg-red-500 text-white hover:bg-red-600 border-2 border-red-500'
+                    : 'bg-white text-gray-700 border-2 border-gray-300 hover:border-red-500 hover:text-red-600'
+                }`}
+              >
+                <X className="w-4 h-4" />
+                Clear Filters
+              </button>
+            </div>
           </div>
 
           <div className="mt-6">

@@ -48,7 +48,7 @@ export default function NotFound() {
               Search the transfer portal
             </Link>
             {' '}or{' '}
-            <Link href="/transfer-portal-tracker/teams" className="text-blue-600 hover:text-blue-700 font-medium underline">
+            <Link href="/teams" className="text-blue-600 hover:text-blue-700 font-medium underline">
               browse all teams
             </Link>
             .

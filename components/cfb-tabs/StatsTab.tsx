@@ -103,7 +103,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
         <p className="text-red-600 mb-4">{error}</p>
         <button
           onClick={() => window.location.reload()}
-          className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+          className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors cursor-pointer"
         >
           Try Again
         </button>
@@ -171,6 +171,13 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
             <StatRow label="Fumbles Forced" value={stats.defense.fumblesForced} />
             <StatRow label="Fumbles Recovered" value={stats.defense.fumblesRecovered} />
             <StatRow label="Total Takeaways" value={stats.defense.takeaways} />
+            {/* Turnover Margin */}
+            <div className="flex justify-between items-center py-2 border-t border-gray-200 mt-2 pt-3">
+              <span className="text-gray-600 text-sm font-medium">Turnover Margin</span>
+              <span className={`font-bold ${stats.defense.takeaways - stats.offense.turnovers >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                {stats.defense.takeaways - stats.offense.turnovers >= 0 ? '+' : ''}{stats.defense.takeaways - stats.offense.turnovers}
+              </span>
+            </div>
           </div>
         </div>
 
@@ -186,19 +193,6 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
             <StatRow label="Kick Return Avg" value={stats.specialTeams.kickReturnAvg} suffix=" yds" />
             <StatRow label="Punt Return Avg" value={stats.specialTeams.puntReturnAvg} suffix=" yds" />
           </div>
-        </div>
-      </div>
-
-      {/* Turnover Margin */}
-      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-        <h3 className="text-lg font-bold text-gray-900 mb-4">Turnover Margin</h3>
-        <div className="text-center">
-          <p className={`text-4xl font-bold ${stats.defense.takeaways - stats.offense.turnovers >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-            {stats.defense.takeaways - stats.offense.turnovers >= 0 ? '+' : ''}{stats.defense.takeaways - stats.offense.turnovers}
-          </p>
-          <p className="text-sm text-gray-600 mt-2">
-            {stats.defense.takeaways} Takeaways - {stats.offense.turnovers} Turnovers
-          </p>
         </div>
       </div>
     </div>

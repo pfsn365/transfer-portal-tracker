@@ -34,6 +34,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     { title: 'CFB Postseason Hub', url: '/postseason', external: false },
     { title: 'CFB Power Rankings Builder', url: '/power-rankings-builder', external: false },
     { title: 'CFB Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
+    { title: 'CFB Player Pages', url: '/players', external: false },
   ];
 
   const isBrowseTeamsPage = isActivePage('/teams') || pathname.startsWith('/teams');

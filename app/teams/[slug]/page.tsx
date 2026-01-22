@@ -27,9 +27,26 @@ export async function generateMetadata({ params }: TeamPageProps): Promise<Metad
     };
   }
 
+  const title = `${team.name} Football | CFB HQ`;
+  const description = `${team.name} football team page. View roster, schedule, stats, transfer portal activity, and more for the ${team.conference}.`;
+  const url = `https://www.profootballnetwork.com/cfb-hq/teams/${slug}`;
+
   return {
-    title: `${team.name} | CFB HQ`,
-    description: `${team.name} football team page. View roster, schedule, stats, transfer portal activity, and standings for the ${team.conference}.`,
+    title,
+    description,
+    keywords: [team.name, team.conference, 'College Football', 'CFB', `${team.name} Roster`, `${team.name} Schedule`, `${team.name} Transfer Portal`],
+    openGraph: {
+      title,
+      description,
+      url,
+    },
+    twitter: {
+      title,
+      description,
+    },
+    alternates: {
+      canonical: url,
+    },
   };
 }
 

@@ -221,7 +221,26 @@ export function getTeamById(id: string): Team | undefined {
 
   // 3. Try partial match - check if search term starts with team ID
   // e.g., "Northern Illinois Huskies" starts with "northern illinois"
-  team = allTeams.find(t => searchTerm.startsWith(t.id.toLowerCase()));
+  // But exclude cases where the remaining text indicates a different school
+  // (e.g., "North Carolina A&T" should NOT match "North Carolina")
+  const schoolModifiers = ['a&t', 'a&m', 'state', 'tech', 'central', 'southern', 'northern', 'western', 'eastern'];
+  team = allTeams.find(t => {
+    const teamId = t.id.toLowerCase();
+    if (!searchTerm.startsWith(teamId)) return false;
+
+    // Get the remaining text after the team ID
+    const remaining = searchTerm.slice(teamId.length).trim().toLowerCase();
+
+    // If nothing remains, it's a match
+    if (!remaining) return true;
+
+    // If remaining starts with a school modifier, it's a different school
+    const startsWithModifier = schoolModifiers.some(mod => remaining.startsWith(mod));
+    if (startsWithModifier) return false;
+
+    // Otherwise, it's likely a mascot suffix, so it's a match
+    return true;
+  });
   if (team) {
     fuzzyLookupCache.set(searchTerm, team);
     return team;

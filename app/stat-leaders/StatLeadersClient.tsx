@@ -2,11 +2,13 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import StatLeadersSkeleton from '@/components/StatLeadersSkeleton';
 import { getApiPath } from '@/utils/api';
 import { createPlayerSlug, getPlayerInitials } from '@/utils/playerHelpers';
+import { getTeamById } from '@/data/teams';
 
 // Player headshot component with local image fallback
 function PlayerHeadshot({ name, className = "w-10 h-10" }: { name: string; className?: string }) {
@@ -476,7 +478,16 @@ export default function StatLeadersClient() {
                                       />
                                     </div>
                                   )}
-                                  <span className="text-gray-700 truncate">{leader.teamName}</span>
+                                  {(() => {
+                                    const teamData = getTeamById(leader.teamName);
+                                    return teamData ? (
+                                      <Link href={`/teams/${teamData.slug}`} className="text-gray-700 truncate hover:text-blue-600 hover:underline">
+                                        {leader.teamName}
+                                      </Link>
+                                    ) : (
+                                      <span className="text-gray-700 truncate">{leader.teamName}</span>
+                                    );
+                                  })()}
                                 </div>
                               </td>
                               <td className="hidden lg:table-cell px-4 py-4 text-center">

@@ -266,25 +266,25 @@ export default function CFBHomePageContent() {
                 </div>
               </Link>
 
-              {/* Stat Leaders */}
+              {/* CFB Rankings */}
               <Link
-                href="/stat-leaders"
+                href="/rankings"
                 className="group relative bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-[#800000] hover:bg-white transition-all duration-300 hover:shadow-lg flex flex-col h-full"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#800000] transition-colors">
-                    Stat Leaders
+                    CFB Rankings
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm mb-4">
-                  Statistical leaders across all categories
+                  AP, Coaches, and CFP rankings
                 </p>
                 <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg p-4 text-center flex-grow flex flex-col justify-center">
-                  <p className="text-sm font-semibold text-gray-700">Top Performers</p>
-                  <p className="text-xs text-gray-600 mt-1">Passing, rushing, receiving & more</p>
+                  <p className="text-sm font-semibold text-gray-700">Top 25 Polls</p>
+                  <p className="text-xs text-gray-600 mt-1">Weekly updated rankings</p>
                 </div>
                 <div className="mt-4 flex items-center text-[#800000] opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="text-sm font-medium">View Leaders</span>
+                  <span className="text-sm font-medium">View Rankings</span>
                   <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -316,21 +316,30 @@ export default function CFBHomePageContent() {
                 </div>
               </Link>
 
-              {/* Coming Soon Placeholder */}
-              <div className="group relative bg-gray-50 rounded-xl p-6 border border-gray-200 opacity-60 flex flex-col h-full">
+              {/* CFB Player Pages */}
+              <Link
+                href="/players"
+                className="group relative bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-[#800000] hover:bg-white transition-all duration-300 hover:shadow-lg flex flex-col h-full"
+              >
                 <div className="flex items-center gap-3 mb-4">
-                  <h3 className="text-xl font-bold text-gray-500">
-                    More Coming Soon
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#800000] transition-colors">
+                    CFB Player Pages
                   </h3>
                 </div>
-                <p className="text-gray-500 text-sm mb-4">
-                  Additional tools and features in development
+                <p className="text-gray-600 text-sm mb-4">
+                  Browse player profiles and stats
                 </p>
-                <div className="bg-gray-100 rounded-lg p-4 text-center flex-grow flex flex-col justify-center">
-                  <p className="text-sm font-semibold text-gray-500">Stay Tuned</p>
-                  <p className="text-xs text-gray-500 mt-1">New features coming</p>
+                <div className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-lg p-4 text-center flex-grow flex flex-col justify-center">
+                  <p className="text-sm font-semibold text-gray-700">Player Directory</p>
+                  <p className="text-xs text-gray-600 mt-1">Search by name or position</p>
                 </div>
-              </div>
+                <div className="mt-4 flex items-center text-[#800000] opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="text-sm font-medium">Browse Players</span>
+                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -341,7 +350,7 @@ export default function CFBHomePageContent() {
                 Featured Teams
               </h2>
               <Link
-                href="/transfer-portal-tracker/teams"
+                href="/teams"
                 className="hidden md:flex items-center gap-2 text-[#800000] hover:text-[#600000] font-semibold text-sm transition-colors"
               >
                 View All Teams →
@@ -352,7 +361,7 @@ export default function CFBHomePageContent() {
               {FEATURED_TEAMS.map((team) => (
                 <Link
                   key={team.id}
-                  href={`/transfer-portal-tracker/teams/${team.id}`}
+                  href={`/teams/${team.id}`}
                   className="group relative bg-gray-50 rounded-xl p-3 border border-gray-200 hover:border-[#800000] hover:bg-white transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col items-center justify-center aspect-square"
                 >
                   <div className="relative w-12 h-12 sm:w-14 sm:h-14 mb-1">
@@ -376,7 +385,7 @@ export default function CFBHomePageContent() {
             {/* View all teams button for mobile */}
             <div className="mt-6 md:hidden text-center">
               <Link
-                href="/transfer-portal-tracker/teams"
+                href="/teams"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#800000] hover:bg-[#600000] text-white font-medium rounded-lg transition-colors"
               >
                 View All Teams

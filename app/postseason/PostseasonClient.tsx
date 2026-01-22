@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
+import { getTeamById } from '@/data/teams';
 import {
   playoffTeams2025,
   bowlGames2025,
@@ -226,7 +228,16 @@ export default function PostseasonClient() {
                             </div>
                           )}
                           <div>
-                            <div className="font-bold text-gray-900">{team.team}</div>
+                            {(() => {
+                              const teamData = getTeamById(team.team);
+                              return teamData ? (
+                                <Link href={`/teams/${teamData.slug}`} className="font-bold text-gray-900 hover:text-blue-600 hover:underline">
+                                  {team.team}
+                                </Link>
+                              ) : (
+                                <div className="font-bold text-gray-900">{team.team}</div>
+                              );
+                            })()}
                             <div className="text-sm text-gray-600">{team.record}</div>
                           </div>
                         </div>
@@ -507,10 +518,20 @@ export default function PostseasonClient() {
                                     />
                                   </div>
                                 )}
-                                <span className={game.team1Score > game.team2Score ? 'font-bold' : ''}>
-                                  {game.team1Rank && <span className="text-gray-500">#{game.team1Rank} </span>}
-                                  {game.team1}
-                                </span>
+                                {(() => {
+                                  const team1Data = getTeamById(game.team1);
+                                  return team1Data ? (
+                                    <Link href={`/teams/${team1Data.slug}`} className={`hover:text-blue-600 hover:underline ${game.team1Score > game.team2Score ? 'font-bold' : ''}`}>
+                                      {game.team1Rank && <span className="text-gray-500">#{game.team1Rank} </span>}
+                                      {game.team1}
+                                    </Link>
+                                  ) : (
+                                    <span className={game.team1Score > game.team2Score ? 'font-bold' : ''}>
+                                      {game.team1Rank && <span className="text-gray-500">#{game.team1Rank} </span>}
+                                      {game.team1}
+                                    </span>
+                                  );
+                                })()}
                               </div>
                               <span className="text-gray-400">vs</span>
                               <div className="flex items-center gap-1.5">
@@ -525,10 +546,20 @@ export default function PostseasonClient() {
                                     />
                                   </div>
                                 )}
-                                <span className={game.team2Score > game.team1Score ? 'font-bold' : ''}>
-                                  {game.team2Rank && <span className="text-gray-500">#{game.team2Rank} </span>}
-                                  {game.team2}
-                                </span>
+                                {(() => {
+                                  const team2Data = getTeamById(game.team2);
+                                  return team2Data ? (
+                                    <Link href={`/teams/${team2Data.slug}`} className={`hover:text-blue-600 hover:underline ${game.team2Score > game.team1Score ? 'font-bold' : ''}`}>
+                                      {game.team2Rank && <span className="text-gray-500">#{game.team2Rank} </span>}
+                                      {game.team2}
+                                    </Link>
+                                  ) : (
+                                    <span className={game.team2Score > game.team1Score ? 'font-bold' : ''}>
+                                      {game.team2Rank && <span className="text-gray-500">#{game.team2Rank} </span>}
+                                      {game.team2}
+                                    </span>
+                                  );
+                                })()}
                               </div>
                             </div>
                           </td>

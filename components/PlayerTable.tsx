@@ -316,7 +316,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       {(() => {
                         const formerTeam = getTeamById(player.formerSchool);
                         return formerTeam ? (
-                          <Link href={`/transfer-portal-tracker/teams/${formerTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                          <Link href={`/teams/${formerTeam.slug}/transfers`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
                             <div className="relative h-7 w-7 flex-shrink-0">
                               <Image
                                 src={getTeamLogo(player.formerSchool.toLowerCase())}
@@ -360,7 +360,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         (() => {
                           const newTeam = getTeamById(player.newSchool!);
                           return newTeam ? (
-                            <Link href={`/transfer-portal-tracker/teams/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                            <Link href={`/teams/${newTeam.slug}/transfers`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
                               <div className="relative h-7 w-7 flex-shrink-0">
                                 <Image
                                   src={getTeamLogo(player.newSchool.toLowerCase())}
@@ -561,7 +561,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   {(() => {
                     const formerTeam = getTeamById(player.formerSchool);
                     return formerTeam ? (
-                      <Link href={`/transfer-portal-tracker/teams/${formerTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                      <Link href={`/teams/${formerTeam.slug}/transfers`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
                         <div className="relative h-5 w-5 flex-shrink-0">
                           <Image
                             src={getTeamLogo(player.formerSchool.toLowerCase())}
@@ -603,7 +603,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       {(() => {
                         const newTeam = getTeamById(player.newSchool!);
                         return newTeam ? (
-                          <Link href={`/transfer-portal-tracker/teams/${newTeam.slug}`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
+                          <Link href={`/teams/${newTeam.slug}/transfers`} className="flex items-center gap-2 hover:opacity-75 transition-opacity">
                             <div className="relative h-5 w-5 flex-shrink-0">
                               <Image
                                 src={getTeamLogo(player.newSchool.toLowerCase())}

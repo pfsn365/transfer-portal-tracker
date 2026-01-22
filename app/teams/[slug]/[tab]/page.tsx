@@ -44,9 +44,34 @@ export async function generateMetadata({ params }: TeamTabPageProps): Promise<Me
     transfers: 'Transfer Portal',
   };
 
+  const tabDescriptions: Record<string, string> = {
+    overview: `team overview including record, standings, and key stats`,
+    roster: `complete roster with player positions, heights, weights, and hometowns`,
+    schedule: `full schedule with game results, scores, and upcoming matchups`,
+    stats: `offensive and defensive statistics for the season`,
+    transfers: `transfer portal activity including incoming and outgoing players`,
+  };
+
+  const title = `${team.name} ${tabTitles[tab]} | CFB HQ`;
+  const description = `${team.name} ${tabDescriptions[tab]} for the ${team.conference}.`;
+  const url = `https://www.profootballnetwork.com/cfb-hq/teams/${slug}/${tab}`;
+
   return {
-    title: `${team.name} ${tabTitles[tab]} | CFB HQ`,
-    description: `${team.name} ${tabTitles[tab].toLowerCase()} - View ${tabTitles[tab].toLowerCase()} information for ${team.name} of the ${team.conference}.`,
+    title,
+    description,
+    keywords: [team.name, team.conference, 'College Football', 'CFB', `${team.name} ${tabTitles[tab]}`],
+    openGraph: {
+      title,
+      description,
+      url,
+    },
+    twitter: {
+      title,
+      description,
+    },
+    alternates: {
+      canonical: url,
+    },
   };
 }
 

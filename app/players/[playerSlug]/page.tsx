@@ -14,6 +14,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 
+  const url = `https://www.profootballnetwork.com/cfb-hq/players/${playerSlug}`;
+
   return {
     title: `${playerName} - CFB Player Profile`,
     description: `View ${playerName}'s complete college football player profile with bio, stats, and transfer portal history.`,
@@ -27,12 +29,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${playerName} - CFB Player Profile`,
       description: `View ${playerName}'s complete college football player profile.`,
+      url,
       type: 'profile',
     },
     twitter: {
       card: 'summary',
       title: `${playerName} - CFB Player Profile`,
       description: `View ${playerName}'s complete college football player profile.`,
+    },
+    alternates: {
+      canonical: url,
     },
   };
 }
