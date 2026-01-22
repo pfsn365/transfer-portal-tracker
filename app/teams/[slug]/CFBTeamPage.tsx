@@ -1,12 +1,14 @@
 'use client';
 
-import { useState, useEffect, Suspense, useMemo } from 'react';
+import { useState, Suspense, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import useSWR from 'swr';
 import { Team } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { getTeamColor } from '@/utils/teamColors';
+import { fetcher } from '@/utils/swr';
 import CFBNavigationTabs from '@/components/cfb-tabs/CFBNavigationTabs';
 import OverviewTab from '@/components/cfb-tabs/OverviewTab';
 import RosterTab from '@/components/cfb-tabs/RosterTab';
@@ -95,86 +97,63 @@ function TeamHeroSection({ team, teamColor, record, conferenceRank, headCoach }:
 function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
-  const [teamRecord, setTeamRecord] = useState<TeamRecord | null>(null);
-  const [conferenceRank, setConferenceRank] = useState<string | null>(null);
-  const [headCoach, setHeadCoach] = useState<string | null>(null);
-  const [schedule, setSchedule] = useState<any[]>([]);
 
   const teamColor = getTeamColor(team.id);
 
-  // Fetch team schedule and calculate record
-  useEffect(() => {
-    const fetchSchedule = async () => {
-      try {
-        const response = await fetch(`/cfb-hq/api/teams/schedule/${team.slug}`);
-        if (response.ok) {
-          const data = await response.json();
-          setSchedule(data.schedule || []);
+  // SWR hooks for data fetching with automatic caching and deduplication
+  const { data: scheduleData } = useSWR(
+    `/cfb-hq/api/teams/schedule/${team.slug}`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
 
-          // Calculate record from schedule
-          const completedGames = (data.schedule || []).filter((g: any) => g.result);
-          const wins = completedGames.filter((g: any) => g.result === 'W').length;
-          const losses = completedGames.filter((g: any) => g.result === 'L').length;
+  const { data: standingsData } = useSWR(
+    `/cfb-hq/api/standings?conference=${encodeURIComponent(team.conference)}`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
 
-          // Calculate conference record
-          const confGames = completedGames.filter((g: any) => g.isConference);
-          const confWins = confGames.filter((g: any) => g.result === 'W').length;
-          const confLosses = confGames.filter((g: any) => g.result === 'L').length;
+  const { data: rosterData } = useSWR(
+    `/cfb-hq/api/teams/roster/${team.slug}`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
 
-          setTeamRecord({ wins, losses, confWins, confLosses });
-        }
-      } catch (error) {
-        console.error('Failed to fetch schedule:', error);
-      }
-    };
+  // Derive schedule from SWR data
+  const schedule = useMemo(() => scheduleData?.schedule || [], [scheduleData]);
 
-    fetchSchedule();
-  }, [team.slug]);
+  // Calculate team record from schedule
+  const teamRecord = useMemo(() => {
+    if (!schedule.length) return null;
 
-  // Fetch conference standings for rank
-  useEffect(() => {
-    const fetchStandings = async () => {
-      try {
-        const response = await fetch(`/cfb-hq/api/standings?conference=${encodeURIComponent(team.conference)}`);
-        if (response.ok) {
-          const data = await response.json();
-          const standings = data.standings || [];
-          const teamIndex = standings.findIndex((t: any) =>
-            t.name?.toLowerCase().includes(team.id.toLowerCase()) ||
-            t.team?.toLowerCase().includes(team.id.toLowerCase())
-          );
-          if (teamIndex !== -1) {
-            const rank = teamIndex + 1;
-            const suffix = rank === 1 ? 'st' : rank === 2 ? 'nd' : rank === 3 ? 'rd' : 'th';
-            setConferenceRank(`${rank}${suffix}`);
-          }
-        }
-      } catch (error) {
-        console.error('Failed to fetch standings:', error);
-      }
-    };
+    const completedGames = schedule.filter((g: any) => g.result);
+    const wins = completedGames.filter((g: any) => g.result === 'W').length;
+    const losses = completedGames.filter((g: any) => g.result === 'L').length;
 
-    fetchStandings();
-  }, [team.conference, team.id]);
+    const confGames = completedGames.filter((g: any) => g.isConference);
+    const confWins = confGames.filter((g: any) => g.result === 'W').length;
+    const confLosses = confGames.filter((g: any) => g.result === 'L').length;
 
-  // Fetch head coach from roster endpoint
-  useEffect(() => {
-    const fetchHeadCoach = async () => {
-      try {
-        const response = await fetch(`/cfb-hq/api/teams/roster/${team.slug}`);
-        if (response.ok) {
-          const data = await response.json();
-          if (data.headCoach) {
-            setHeadCoach(data.headCoach);
-          }
-        }
-      } catch (error) {
-        console.error('Failed to fetch head coach:', error);
-      }
-    };
+    return { wins, losses, confWins, confLosses };
+  }, [schedule]);
 
-    fetchHeadCoach();
-  }, [team.slug]);
+  // Calculate conference rank from standings
+  const conferenceRank = useMemo(() => {
+    const standings = standingsData?.standings || [];
+    const teamIndex = standings.findIndex((t: any) =>
+      t.name?.toLowerCase().includes(team.id.toLowerCase()) ||
+      t.team?.toLowerCase().includes(team.id.toLowerCase())
+    );
+    if (teamIndex !== -1) {
+      const rank = teamIndex + 1;
+      const suffix = rank === 1 ? 'st' : rank === 2 ? 'nd' : rank === 3 ? 'rd' : 'th';
+      return `${rank}${suffix}`;
+    }
+    return null;
+  }, [standingsData, team.id]);
+
+  // Get head coach from roster data
+  const headCoach = rosterData?.headCoach || null;
 
   const handleTabChange = (tab: string) => {
     if (tab === activeTab) return;
@@ -195,7 +174,7 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
       case 'roster':
         return <RosterTab team={team} teamColor={teamColor} />;
       case 'schedule':
-        return <ScheduleTab team={team} teamColor={teamColor} />;
+        return <ScheduleTab team={team} teamColor={teamColor} initialSchedule={schedule} />;
       case 'transfers':
         return <TransfersTab team={team} teamColor={teamColor} />;
       default:

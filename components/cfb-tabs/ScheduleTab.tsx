@@ -10,6 +10,7 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 interface ScheduleTabProps {
   team: Team;
   teamColor: string;
+  initialSchedule?: Game[];
 }
 
 interface Game {
@@ -33,14 +34,21 @@ interface Game {
   isBye?: boolean;
 }
 
-export default function ScheduleTab({ team, teamColor }: ScheduleTabProps) {
-  const [schedule, setSchedule] = useState<Game[]>([]);
-  const [loading, setLoading] = useState(true);
+export default function ScheduleTab({ team, teamColor, initialSchedule }: ScheduleTabProps) {
+  const [schedule, setSchedule] = useState<Game[]>(initialSchedule || []);
+  const [loading, setLoading] = useState(!initialSchedule);
   const [error, setError] = useState<string | null>(null);
   const [showCompleted, setShowCompleted] = useState(true);
   const [showUpcoming, setShowUpcoming] = useState(true);
 
   useEffect(() => {
+    // Skip fetch if we already have schedule data from props
+    if (initialSchedule && initialSchedule.length > 0) {
+      setSchedule(initialSchedule);
+      setLoading(false);
+      return;
+    }
+
     const fetchSchedule = async () => {
       try {
         setLoading(true);
@@ -63,7 +71,7 @@ export default function ScheduleTab({ team, teamColor }: ScheduleTabProps) {
     };
 
     fetchSchedule();
-  }, [team.slug]);
+  }, [team.slug, initialSchedule]);
 
   // Calculate team record (include all completed games for overall, exclude postseason for conference)
   const completedGames = schedule.filter(g => g.result && !g.isBye);

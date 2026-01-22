@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { TransferPortalAPIResponse } from '@/types/api';
 import { transformAPIData } from '@/utils/dataTransform';
 
@@ -6,7 +6,9 @@ const API_URL = 'https://staticj.profootballnetwork.com/assets/sheets/tools/cfb-
 
 export const revalidate = 3600;
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url);
+  const teamFilter = searchParams.get('team')?.toLowerCase();
   try {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 10000);
@@ -80,7 +82,22 @@ export async function GET() {
       );
     }
 
-    const players = transformAPIData(sheetData);
+    let players = transformAPIData(sheetData);
+
+    // Filter by team if parameter provided (much more efficient than client-side filtering)
+    if (teamFilter) {
+      players = players.filter((player: any) => {
+        const newSchoolLower = (player.newSchool || '').toLowerCase();
+        const formerSchoolLower = (player.formerSchool || '').toLowerCase();
+
+        const isIncoming = newSchoolLower === teamFilter ||
+                          newSchoolLower.includes(teamFilter);
+        const isOutgoing = formerSchoolLower === teamFilter ||
+                          formerSchoolLower.includes(teamFilter);
+
+        return isIncoming || isOutgoing;
+      });
+    }
 
     return NextResponse.json({
       players,

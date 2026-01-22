@@ -1,13 +1,15 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
+import useSWR from 'swr';
 import { Team } from '@/data/teams';
 import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition } from '@/types/player';
 import PlayerTable from '@/components/PlayerTable';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import { exportToCSV } from '@/utils/csvExport';
 import { CLASS_ORDER } from '@/utils/constants';
+import { fetcher } from '@/utils/swr';
 import { Download, X } from 'lucide-react';
 
 interface TransfersTabProps {
@@ -20,9 +22,14 @@ type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSc
 type SortDirection = 'asc' | 'desc';
 
 export default function TransfersTab({ team, teamColor }: TransfersTabProps) {
-  const [players, setPlayers] = useState<TransferPlayer[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  // SWR for data fetching with caching
+  const { data, error, isLoading: loading } = useSWR(
+    `/cfb-hq/api/transfer-portal?team=${encodeURIComponent(team.id)}`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
+
+  const players: TransferPlayer[] = data?.players || [];
 
   // Filter state
   const [selectedStatus, setSelectedStatus] = useState<PlayerStatus | 'All'>('All');
@@ -34,31 +41,6 @@ export default function TransfersTab({ team, teamColor }: TransfersTabProps) {
   const [sortField, setSortField] = useState<SortField | null>('announcedDate');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
-  useEffect(() => {
-    const fetchPlayers = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        const response = await fetch('/cfb-hq/api/transfer-portal');
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch transfer portal data');
-        }
-
-        const data = await response.json();
-        setPlayers(data.players || []);
-      } catch (err) {
-        console.error('Error fetching transfers:', err);
-        setError(err instanceof Error ? err.message : 'Failed to load transfer data');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPlayers();
-  }, []);
-
   // Handle sorting
   const handleSort = (field: SortField) => {
     if (sortField === field) {
@@ -69,25 +51,25 @@ export default function TransfersTab({ team, teamColor }: TransfersTabProps) {
     }
   };
 
-  // Filter players for this team
+  // Helper to check if player is incoming/outgoing (used for type filter and counts)
+  const isPlayerIncoming = useCallback((player: TransferPlayer) => {
+    const teamIdLower = team.id.toLowerCase();
+    const newSchoolLower = (player.newSchool || '').toLowerCase();
+    return newSchoolLower === teamIdLower || newSchoolLower.includes(teamIdLower);
+  }, [team.id]);
+
+  const isPlayerOutgoing = useCallback((player: TransferPlayer) => {
+    const teamIdLower = team.id.toLowerCase();
+    const formerSchoolLower = player.formerSchool.toLowerCase();
+    return formerSchoolLower === teamIdLower || formerSchoolLower.includes(teamIdLower);
+  }, [team.id]);
+
+  // Filter players (team filtering already done server-side, just apply UI filters)
   const filteredPlayers = useMemo(() => {
     return players.filter(player => {
-      const teamNameLower = team.name.toLowerCase();
-      const teamIdLower = team.id.toLowerCase();
-      const newSchoolLower = (player.newSchool || '').toLowerCase();
-      const formerSchoolLower = player.formerSchool.toLowerCase();
-
-      const isIncoming = newSchoolLower === teamIdLower ||
-                        newSchoolLower === teamNameLower ||
-                        newSchoolLower.includes(teamIdLower);
-      const isOutgoing = formerSchoolLower === teamIdLower ||
-                        formerSchoolLower === teamNameLower ||
-                        formerSchoolLower.includes(teamIdLower);
-
       // Apply Type filter
-      if (selectedType === 'Incoming' && !isIncoming) return false;
-      if (selectedType === 'Outgoing' && !isOutgoing) return false;
-      if (selectedType === 'All' && !isIncoming && !isOutgoing) return false;
+      if (selectedType === 'Incoming' && !isPlayerIncoming(player)) return false;
+      if (selectedType === 'Outgoing' && !isPlayerOutgoing(player)) return false;
 
       // Apply other filters
       if (selectedStatus !== 'All' && player.status !== selectedStatus) return false;
@@ -103,32 +85,16 @@ export default function TransfersTab({ team, teamColor }: TransfersTabProps) {
 
       return true;
     });
-  }, [players, team, selectedStatus, selectedClass, selectedPosition, selectedType]);
+  }, [players, selectedStatus, selectedClass, selectedPosition, selectedType, isPlayerIncoming, isPlayerOutgoing]);
 
-  // Calculate counts
+  // Calculate counts using helper functions
   const incomingCount = useMemo(() => {
-    const teamNameLower = team.name.toLowerCase();
-    const teamIdLower = team.id.toLowerCase();
-
-    return players.filter(player => {
-      const newSchoolLower = (player.newSchool || '').toLowerCase();
-      return newSchoolLower === teamIdLower ||
-             newSchoolLower === teamNameLower ||
-             newSchoolLower.includes(teamIdLower);
-    }).length;
-  }, [players, team]);
+    return players.filter(isPlayerIncoming).length;
+  }, [players, isPlayerIncoming]);
 
   const outgoingCount = useMemo(() => {
-    const teamNameLower = team.name.toLowerCase();
-    const teamIdLower = team.id.toLowerCase();
-
-    return players.filter(player => {
-      const formerSchoolLower = player.formerSchool.toLowerCase();
-      return formerSchoolLower === teamIdLower ||
-             formerSchoolLower === teamNameLower ||
-             formerSchoolLower.includes(teamIdLower);
-    }).length;
-  }, [players, team]);
+    return players.filter(isPlayerOutgoing).length;
+  }, [players, isPlayerOutgoing]);
 
   // Sort players
   const sortedPlayers = useMemo(() => {

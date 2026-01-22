@@ -1,8 +1,10 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import useSWR from 'swr';
 import { Team } from '@/data/teams';
+import { fetcher } from '@/utils/swr';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface RosterTabProps {
@@ -58,36 +60,17 @@ const positionOrder = [
 ];
 
 export default function RosterTab({ team, teamColor }: RosterTabProps) {
-  const [roster, setRoster] = useState<Player[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  // SWR for data fetching with caching
+  const { data, error, isLoading: loading } = useSWR(
+    `/cfb-hq/api/teams/roster/${team.slug}`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
+
+  const roster: Player[] = data?.roster || [];
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPosition, setSelectedPosition] = useState<string>('All');
-
-  useEffect(() => {
-    const fetchRoster = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        const response = await fetch(`/cfb-hq/api/teams/roster/${team.slug}`);
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch roster');
-        }
-
-        const data = await response.json();
-        setRoster(data.roster || []);
-      } catch (err) {
-        console.error('Error fetching roster:', err);
-        setError(err instanceof Error ? err.message : 'Failed to load roster');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchRoster();
-  }, [team.slug]);
 
   // Filter and group roster
   const filteredRoster = useMemo(() => {

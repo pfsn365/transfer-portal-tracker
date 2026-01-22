@@ -1,10 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import useSWR from 'swr';
 import { Team } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
+import { fetcher } from '@/utils/swr';
 
 interface OverviewTabProps {
   team: Team;
@@ -109,123 +111,86 @@ function TransfersCardSkeleton() {
 }
 
 export default function OverviewTab({ team, schedule, teamColor }: OverviewTabProps) {
-  const [recentGames, setRecentGames] = useState<any[]>([]);
-  const [standings, setStandings] = useState<Standing[]>([]);
-  const [transfers, setTransfers] = useState<{ incoming: TransferPlayer[]; outgoing: TransferPlayer[] }>({ incoming: [], outgoing: [] });
-  const [loadingStandings, setLoadingStandings] = useState(true);
-  const [loadingTransfers, setLoadingTransfers] = useState(true);
-  const [scheduleReady, setScheduleReady] = useState(false);
+  // SWR hooks for data fetching with caching
+  const { data: standingsData, isLoading: loadingStandings } = useSWR(
+    `/cfb-hq/api/cfb/standings?group=80`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
 
-  useEffect(() => {
-    // Get recent completed games (last 5)
-    const completed = schedule.filter(g => g.result).slice(-5).reverse();
-    setRecentGames(completed);
-    setScheduleReady(true);
+  // Use team-filtered endpoint for transfers (much smaller payload)
+  const { data: transfersData, isLoading: loadingTransfers } = useSWR(
+    `/cfb-hq/api/transfer-portal?team=${encodeURIComponent(team.id)}`,
+    fetcher,
+    { revalidateOnFocus: false, dedupingInterval: 300000 }
+  );
+
+  // Derive recent games from schedule prop
+  const recentGames = useMemo(() => {
+    return schedule.filter(g => g.result).slice(-5).reverse();
   }, [schedule]);
 
-  // Fetch conference standings
-  useEffect(() => {
-    const fetchStandings = async () => {
-      setLoadingStandings(true);
-      try {
-        const response = await fetch(`/cfb-hq/api/cfb/standings?group=80`);
-        if (response.ok) {
-          const data = await response.json();
-          const conferences = data.conferences || [];
+  const scheduleReady = schedule.length > 0 || recentGames.length === 0;
 
-          // Find the team's conference
-          const teamConference = conferences.find((conf: any) =>
-            conf.name === team.conference || conf.shortName === team.conference
-          );
+  // Process standings data
+  const standings = useMemo(() => {
+    if (!standingsData?.conferences) return [];
 
-          if (teamConference && teamConference.teams) {
-            const confTeams = teamConference.teams;
+    const conferences = standingsData.conferences;
+    const teamConference = conferences.find((conf: any) =>
+      conf.name === team.conference || conf.shortName === team.conference
+    );
 
-            // Map to Standing format
-            const allStandings: Standing[] = confTeams.map((t: any) => ({
-              team: t.name,
-              teamId: t.id,
-              logo: t.logo,
-              wins: t.conferenceWins || 0,
-              losses: t.conferenceLosses || 0,
-              pct: t.conferenceWins + t.conferenceLosses > 0
-                ? (t.conferenceWins / (t.conferenceWins + t.conferenceLosses)).toFixed(3)
-                : '.000',
-            }));
+    if (!teamConference?.teams) return [];
 
-            // Find current team's position in standings
-            const teamIndex = allStandings.findIndex((s: Standing) =>
-              s.team?.toLowerCase().includes(team.id.toLowerCase()) ||
-              s.teamId === team.id ||
-              team.name.toLowerCase().includes(s.team?.toLowerCase() || '')
-            );
+    const confTeams = teamConference.teams;
+    const allStandings: Standing[] = confTeams.map((t: any) => ({
+      team: t.name,
+      teamId: t.id,
+      logo: t.logo,
+      wins: t.conferenceWins || 0,
+      losses: t.conferenceLosses || 0,
+      pct: t.conferenceWins + t.conferenceLosses > 0
+        ? (t.conferenceWins / (t.conferenceWins + t.conferenceLosses)).toFixed(3)
+        : '.000',
+    }));
 
-            // Get 5 teams around the current team (2 above, team, 2 below)
-            let startIdx = 0;
-            if (teamIndex !== -1) {
-              startIdx = Math.max(0, teamIndex - 2);
-              // Adjust if near the end
-              if (startIdx + 5 > allStandings.length) {
-                startIdx = Math.max(0, allStandings.length - 5);
-              }
-            }
+    // Find current team's position in standings
+    const teamIndex = allStandings.findIndex((s: Standing) =>
+      s.team?.toLowerCase().includes(team.id.toLowerCase()) ||
+      s.teamId === team.id ||
+      team.name.toLowerCase().includes(s.team?.toLowerCase() || '')
+    );
 
-            setStandings(allStandings.slice(startIdx, startIdx + 5));
-          }
-        }
-      } catch (error) {
-        console.error('Failed to fetch standings:', error);
-      } finally {
-        setLoadingStandings(false);
+    // Get 5 teams around the current team (2 above, team, 2 below)
+    let startIdx = 0;
+    if (teamIndex !== -1) {
+      startIdx = Math.max(0, teamIndex - 2);
+      if (startIdx + 5 > allStandings.length) {
+        startIdx = Math.max(0, allStandings.length - 5);
       }
-    };
+    }
 
-    fetchStandings();
-  }, [team.conference, team.id, team.name]);
+    return allStandings.slice(startIdx, startIdx + 5);
+  }, [standingsData, team.conference, team.id, team.name]);
 
+  // Process transfers data
+  const transfers = useMemo(() => {
+    const players = transfersData?.players || [];
+    const teamIdLower = team.id.toLowerCase();
 
-  // Fetch transfer portal data
-  useEffect(() => {
-    const fetchTransfers = async () => {
-      setLoadingTransfers(true);
-      try {
-        const response = await fetch(`/cfb-hq/api/transfer-portal`);
-        if (response.ok) {
-          const data = await response.json();
-          const players = data.players || [];
+    const incoming = players.filter((p: any) => {
+      const newSchoolLower = (p.newSchool || '').toLowerCase();
+      return newSchoolLower === teamIdLower || newSchoolLower.includes(teamIdLower);
+    }).slice(0, 5);
 
-          const teamNameLower = team.name.toLowerCase();
-          const teamIdLower = team.id.toLowerCase();
+    const outgoing = players.filter((p: any) => {
+      const formerSchoolLower = p.formerSchool.toLowerCase();
+      return formerSchoolLower === teamIdLower || formerSchoolLower.includes(teamIdLower);
+    }).slice(0, 5);
 
-          const incoming = players.filter((p: any) =>
-            (p.newSchool || '').toLowerCase() === teamIdLower ||
-            (p.newSchool || '').toLowerCase() === teamNameLower ||
-            (p.newSchool || '').toLowerCase().includes(team.id.toLowerCase())
-          ).slice(0, 5);
-
-          const outgoing = players.filter((p: any) =>
-            p.formerSchool.toLowerCase() === teamIdLower ||
-            p.formerSchool.toLowerCase() === teamNameLower ||
-            p.formerSchool.toLowerCase().includes(team.id.toLowerCase())
-          ).slice(0, 5);
-
-          setTransfers({ incoming, outgoing });
-        }
-      } catch (error) {
-        console.error('Failed to fetch transfers:', error);
-      } finally {
-        setLoadingTransfers(false);
-      }
-    };
-
-    fetchTransfers();
-  }, [team.id, team.name]);
-
-  // Find team's position in standings
-  const teamStandingIndex = standings.findIndex(s =>
-    s.team?.toLowerCase().includes(team.id.toLowerCase()) ||
-    s.teamId === team.id
-  );
+    return { incoming, outgoing };
+  }, [transfersData, team.id]);
 
   // Helper to get player initials
   const getInitials = (name: string) => {
