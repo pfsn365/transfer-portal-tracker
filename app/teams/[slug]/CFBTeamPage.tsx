@@ -32,9 +32,10 @@ interface TeamHeroSectionProps {
   teamColor: string;
   record?: TeamRecord;
   conferenceRank?: string;
+  headCoach?: string;
 }
 
-function TeamHeroSection({ team, teamColor, record, conferenceRank }: TeamHeroSectionProps) {
+function TeamHeroSection({ team, teamColor, record, conferenceRank, headCoach }: TeamHeroSectionProps) {
   return (
     <div style={{ backgroundColor: teamColor }} className="text-white">
       <div className="container mx-auto px-4 py-6 lg:py-8">
@@ -60,6 +61,9 @@ function TeamHeroSection({ team, teamColor, record, conferenceRank }: TeamHeroSe
                   team.conference
                 )}
               </p>
+              {headCoach && (
+                <p className="text-sm sm:text-base opacity-75 mt-1">HC: {headCoach}</p>
+              )}
             </div>
           </div>
 
@@ -94,6 +98,7 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
   const [teamRecord, setTeamRecord] = useState<TeamRecord | null>(null);
   const [conferenceRank, setConferenceRank] = useState<string | null>(null);
+  const [headCoach, setHeadCoach] = useState<string | null>(null);
   const [schedule, setSchedule] = useState<any[]>([]);
 
   const teamColor = getTeamColor(team.id);
@@ -153,6 +158,25 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
     fetchStandings();
   }, [team.conference, team.id]);
 
+  // Fetch head coach from roster endpoint
+  useEffect(() => {
+    const fetchHeadCoach = async () => {
+      try {
+        const response = await fetch(`/cfb-hq/api/teams/roster/${team.slug}`);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.headCoach) {
+            setHeadCoach(data.headCoach);
+          }
+        }
+      } catch (error) {
+        console.error('Failed to fetch head coach:', error);
+      }
+    };
+
+    fetchHeadCoach();
+  }, [team.slug]);
+
   const handleTabChange = (tab: string) => {
     if (tab === activeTab) return;
 
@@ -189,6 +213,7 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
         teamColor={teamColor}
         record={teamRecord || undefined}
         conferenceRank={conferenceRank || undefined}
+        headCoach={headCoach || undefined}
       />
 
       <CFBNavigationTabs activeTab={activeTab} onTabChange={handleTabChange} team={team} teamColor={teamColor} />

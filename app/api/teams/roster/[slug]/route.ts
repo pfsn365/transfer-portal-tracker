@@ -34,8 +34,16 @@ interface ESPNPositionGroup {
   items: ESPNAthlete[];
 }
 
+interface ESPNCoach {
+  id: string;
+  firstName: string;
+  lastName: string;
+  experience?: number;
+}
+
 interface ESPNRosterResponse {
   athletes?: ESPNPositionGroup[];
+  coach?: ESPNCoach[];
   team?: {
     id: string;
     name: string;
@@ -119,10 +127,16 @@ export async function GET(
       };
     });
 
+    // Get head coach info
+    const headCoach = data.coach?.[0]
+      ? `${data.coach[0].firstName} ${data.coach[0].lastName}`
+      : undefined;
+
     return NextResponse.json({
       team: team.name,
       roster,
       totalPlayers: roster.length,
+      headCoach,
     });
   } catch (error) {
     console.error('Error fetching roster:', error);
