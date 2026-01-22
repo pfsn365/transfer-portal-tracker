@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
-import { allTeams, getTeamsByConference } from '@/data/teams';
+import { getAllConferences, getTeamsByConference } from '@/data/teams';
+import { Conference } from '@/types/player';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface Player {
@@ -35,20 +36,19 @@ interface PaginationInfo {
 
 const POSITIONS = [
   { value: 'all', label: 'All Positions' },
-  { value: 'QB', label: 'Quarterback' },
-  { value: 'RB', label: 'Running Back' },
-  { value: 'WR', label: 'Wide Receiver' },
-  { value: 'TE', label: 'Tight End' },
-  { value: 'OL', label: 'Offensive Line' },
-  { value: 'DL', label: 'Defensive Line' },
-  { value: 'LB', label: 'Linebacker' },
-  { value: 'CB', label: 'Cornerback' },
-  { value: 'S', label: 'Safety' },
-  { value: 'K', label: 'Kicker' },
-  { value: 'P', label: 'Punter' },
+  { value: 'QB', label: 'QB' },
+  { value: 'RB', label: 'RB' },
+  { value: 'WR', label: 'WR' },
+  { value: 'TE', label: 'TE' },
+  { value: 'OL', label: 'OL' },
+  { value: 'DT', label: 'DT' },
+  { value: 'EDGE', label: 'EDGE' },
+  { value: 'LB', label: 'LB' },
+  { value: 'CB', label: 'CB' },
+  { value: 'SAF', label: 'SAF' },
+  { value: 'K', label: 'K' },
+  { value: 'P', label: 'P' },
 ];
-
-const FBS_CONFERENCES = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'American', 'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Pac-12', 'Independent'];
 
 function getPositionColor(position: string): string {
   const pos = position.toUpperCase();
@@ -56,7 +56,7 @@ function getPositionColor(position: string): string {
   if (pos === 'RB' || pos === 'FB') return 'bg-green-100 text-green-700';
   if (pos === 'WR') return 'bg-blue-100 text-blue-700';
   if (pos === 'TE') return 'bg-orange-100 text-orange-700';
-  if (['OT', 'OG', 'C', 'T', 'G', 'OL', 'OC'].includes(pos)) return 'bg-yellow-100 text-yellow-700';
+  if (['OT', 'OG', 'C', 'T', 'G', 'OL', 'OC', 'IOL'].includes(pos)) return 'bg-yellow-100 text-yellow-700';
   if (['DE', 'DT', 'NT', 'EDGE', 'DL'].includes(pos)) return 'bg-red-100 text-red-700';
   if (pos === 'LB' || pos === 'ILB' || pos === 'MLB' || pos === 'OLB') return 'bg-indigo-100 text-indigo-700';
   if (pos === 'CB') return 'bg-teal-100 text-teal-700';
@@ -65,8 +65,135 @@ function getPositionColor(position: string): string {
   return 'bg-gray-100 text-gray-700';
 }
 
+// Custom School Dropdown Component (same as transfer portal tracker)
+function CustomSchoolDropdown({
+  selectedSchool,
+  onSchoolChange
+}: {
+  selectedSchool: string;
+  onSchoolChange: (school: string) => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedConference, setSelectedConference] = useState<Conference | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+        setSelectedConference(null);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleConferenceClick = (conference: Conference) => {
+    setSelectedConference(conference);
+  };
+
+  const handleTeamClick = (teamSlug: string) => {
+    onSchoolChange(teamSlug);
+    setIsOpen(false);
+    setSelectedConference(null);
+  };
+
+  const handleAllClick = () => {
+    onSchoolChange('all');
+    setIsOpen(false);
+    setSelectedConference(null);
+  };
+
+  const handleBackClick = () => {
+    setSelectedConference(null);
+  };
+
+  // Find the team name if a team is selected
+  let displayText = 'All Teams';
+  if (selectedSchool !== 'all') {
+    const allConfs = getAllConferences();
+    for (const conf of allConfs) {
+      const teams = getTeamsByConference(conf);
+      const team = teams.find(t => t.slug === selectedSchool);
+      if (team) {
+        displayText = team.name;
+        break;
+      }
+    }
+  }
+
+  return (
+    <div ref={dropdownRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#800000] focus:border-[#800000] bg-white text-gray-900 text-left flex items-center justify-between cursor-pointer"
+      >
+        <span className="truncate">{displayText}</span>
+        <svg className="w-4 h-4 ml-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {isOpen && (
+        <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-64 overflow-y-auto">
+          {!selectedConference ? (
+            // Conference Selection
+            <>
+              <button
+                type="button"
+                onClick={handleAllClick}
+                className="w-full text-left px-3 py-2 hover:bg-gray-100 text-base text-gray-900 font-medium transition-colors cursor-pointer border-b border-gray-200"
+              >
+                All Teams
+              </button>
+              <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50 sticky top-0">
+                Select Conference
+              </div>
+              {getAllConferences().map(conference => (
+                <button
+                  key={conference}
+                  type="button"
+                  onClick={() => handleConferenceClick(conference)}
+                  className="w-full text-left px-3 py-2 hover:bg-gray-100 text-base text-gray-900 transition-colors cursor-pointer"
+                >
+                  {conference}
+                </button>
+              ))}
+            </>
+          ) : (
+            // Team Selection
+            <>
+              <button
+                type="button"
+                onClick={handleBackClick}
+                className="w-full text-left px-3 py-2 text-base font-semibold text-[#800000] hover:bg-gray-100 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
+              >
+                ← Back to Conferences
+              </button>
+              <div className="px-3 py-2 text-sm font-semibold text-gray-500 bg-gray-50">
+                {selectedConference} Teams
+              </div>
+              {getTeamsByConference(selectedConference).map(team => (
+                <button
+                  key={team.id}
+                  type="button"
+                  onClick={() => handleTeamClick(team.slug)}
+                  className="w-full text-left px-3 py-2 hover:bg-gray-100 text-base text-gray-900 transition-colors cursor-pointer"
+                >
+                  {team.name}
+                </button>
+              ))}
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function PlayersDirectoryClient() {
-  const fbsTeams = allTeams.filter(team => FBS_CONFERENCES.includes(team.conference));
   const [players, setPlayers] = useState<Player[]>([]);
   const [pagination, setPagination] = useState<PaginationInfo | null>(null);
   const [loading, setLoading] = useState(true);
@@ -189,22 +316,15 @@ export default function PlayersDirectoryClient() {
                 />
               </div>
 
-              {/* Team Filter */}
+              {/* Team Filter - Custom Dropdown */}
               <div>
-                <label htmlFor="team" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-gray-700 mb-2">
                   Team
                 </label>
-                <select
-                  id="team"
-                  value={selectedTeam}
-                  onChange={(e) => setSelectedTeam(e.target.value)}
-                  className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#800000] focus:border-[#800000] cursor-pointer"
-                >
-                  <option value="all">All Teams</option>
-                  {fbsTeams.map((team) => (
-                    <option key={team.id} value={team.slug}>{team.name}</option>
-                  ))}
-                </select>
+                <CustomSchoolDropdown
+                  selectedSchool={selectedTeam}
+                  onSchoolChange={setSelectedTeam}
+                />
               </div>
 
               {/* Position Filter */}
@@ -334,6 +454,9 @@ export default function PlayersDirectoryClient() {
                         <p className="text-sm text-gray-700">
                           Page <span className="font-medium">{currentPage}</span> of{' '}
                           <span className="font-medium">{totalPages}</span>
+                          {pagination.totalPlayers > 0 && (
+                            <span className="ml-2">({pagination.totalPlayers.toLocaleString()} players)</span>
+                          )}
                         </p>
                         {/* Items Per Page */}
                         <div className="flex items-center gap-2">

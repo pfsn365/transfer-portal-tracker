@@ -17,28 +17,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `https://www.profootballnetwork.com/cfb-hq/players/${playerSlug}`;
 
   return {
-    title: `${playerName} - CFB Player Profile`,
-    description: `View ${playerName}'s complete college football player profile with bio, stats, and transfer portal history.`,
+    title: `${playerName} - College Football Player Profile & Stats 2025`,
+    description: `${playerName} college football player profile with career stats, game log, bio information, and transfer history. View ${playerName}'s complete stats and player info.`,
     keywords: [
       playerName,
+      `${playerName} stats`,
+      `${playerName} college football`,
       'College Football Player',
-      'CFB Stats',
+      'CFB Player Stats',
       'Player Profile',
-      'Transfer Portal',
+      'Game Log',
+      'Career Stats',
     ],
     openGraph: {
-      title: `${playerName} - CFB Player Profile`,
-      description: `View ${playerName}'s complete college football player profile.`,
+      title: `${playerName} - College Football Player Profile`,
+      description: `View ${playerName}'s college football stats, game log, and career history.`,
       url,
       type: 'profile',
+      siteName: 'CFB HQ - Pro Football Network',
     },
     twitter: {
       card: 'summary',
       title: `${playerName} - CFB Player Profile`,
-      description: `View ${playerName}'s complete college football player profile.`,
+      description: `${playerName} college football player profile with stats and game log.`,
     },
     alternates: {
       canonical: url,
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
