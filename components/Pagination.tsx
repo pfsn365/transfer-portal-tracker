@@ -7,6 +7,7 @@ interface PaginationProps {
   totalItems: number;
   onPageChange: (page: number) => void;
   onItemsPerPageChange: (items: number) => void;
+  itemsPerPageOptions?: number[];
 }
 
 export default function Pagination({
@@ -16,6 +17,7 @@ export default function Pagination({
   totalItems,
   onPageChange,
   onItemsPerPageChange,
+  itemsPerPageOptions = [25, 50, 100],
 }: PaginationProps) {
   const getPageNumbers = () => {
     const pages: number[] = [];
@@ -59,11 +61,11 @@ export default function Pagination({
             id="itemsPerPage"
             value={itemsPerPage}
             onChange={(e) => onItemsPerPageChange(Number(e.target.value))}
-            className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 text-sm cursor-pointer"
+            className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 text-sm cursor-pointer"
           >
-            <option value={25}>25</option>
-            <option value={50}>50</option>
-            <option value={100}>100</option>
+            {itemsPerPageOptions.map(opt => (
+              <option key={opt} value={opt}>{opt}</option>
+            ))}
           </select>
           <span className="text-base text-gray-600 hidden sm:inline">
             {totalItems > 0 ? `${startItem}-${endItem} of ${totalItems}` : '0 players'}
@@ -92,7 +94,7 @@ export default function Pagination({
                 onClick={() => onPageChange(page)}
                 className={`min-w-[36px] sm:min-w-[40px] px-2 sm:px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   page === currentPage
-                    ? 'bg-blue-600 text-white cursor-default'
+                    ? 'bg-[#800000] text-white cursor-default'
                     : 'border border-gray-300 hover:bg-gray-50 text-gray-700 cursor-pointer'
                 }`}
               >

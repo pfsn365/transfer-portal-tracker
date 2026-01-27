@@ -186,6 +186,16 @@ const POSITION_GROUPS: Record<string, string[]> = {
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
+
+    // Lightweight slugs-only mode: returns just the set of valid player slugs
+    if (searchParams.get('slugsOnly') === 'true') {
+      const allPlayers = await getPlayersCache();
+      const slugs = allPlayers.map(p => p.slug);
+      return NextResponse.json({ slugs }, {
+        headers: { 'Cache-Control': 'public, s-maxage=600, stale-while-revalidate=300' },
+      });
+    }
+
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '24');
     const search = searchParams.get('search') || '';

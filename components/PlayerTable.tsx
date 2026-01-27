@@ -108,9 +108,10 @@ interface PlayerTableProps {
   sortDirection: SortDirection;
   onSort: (field: SortField) => void;
   onWatchlistChange?: () => void;
+  validPlayerSlugs?: Set<string>;
 }
 
-export default function PlayerTable({ players, sortField, sortDirection, onSort, onWatchlistChange }: PlayerTableProps) {
+export default function PlayerTable({ players, sortField, sortDirection, onSort, onWatchlistChange, validPlayerSlugs }: PlayerTableProps) {
   // Watchlist state
   const [watchlist, setWatchlist] = useState<string[]>([]);
 
@@ -295,9 +296,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                         size="lg"
                       />
                       <div className="ml-4">
-                        <Link href={`/players/${createPlayerSlug(player.name)}`} className="text-sm font-bold text-gray-900 hover:text-[#800000] transition-colors">
-                          {player.name}
-                        </Link>
+                        {!validPlayerSlugs || validPlayerSlugs.has(createPlayerSlug(player.name)) ? (
+                          <Link href={`/players/${createPlayerSlug(player.name)}`} className="text-sm font-bold text-gray-900 hover:text-[#800000] transition-colors">
+                            {player.name}
+                          </Link>
+                        ) : (
+                          <span className="text-sm font-bold text-gray-900">{player.name}</span>
+                        )}
                         <div className="flex items-center gap-1.5 mt-1">
                           <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
                             {player.position}
@@ -514,9 +519,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     size="md"
                   />
                 <div className="flex-1 min-w-0">
-                  <Link href={`/players/${createPlayerSlug(player.name)}`} className="font-bold text-gray-900 text-base leading-tight mb-1.5 hover:text-[#800000] transition-colors block">
-                    {player.name}
-                  </Link>
+                  {!validPlayerSlugs || validPlayerSlugs.has(createPlayerSlug(player.name)) ? (
+                    <Link href={`/players/${createPlayerSlug(player.name)}`} className="font-bold text-gray-900 text-base leading-tight mb-1.5 hover:text-[#800000] transition-colors block">
+                      {player.name}
+                    </Link>
+                  ) : (
+                    <span className="font-bold text-gray-900 text-base leading-tight mb-1.5 block">{player.name}</span>
+                  )}
                   <div className="flex items-center gap-1.5 flex-wrap">
                     <span className="text-sm text-gray-600 font-medium">{player.class}</span>
                     <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>

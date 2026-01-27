@@ -42,6 +42,9 @@ export default function TransferPortalClient() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(25);
 
+  // Valid player slugs (players that have roster pages)
+  const [validPlayerSlugs, setValidPlayerSlugs] = useState<Set<string>>(new Set());
+
   // Load data on component mount
   useEffect(() => {
     const abortController = new AbortController();
@@ -89,6 +92,16 @@ export default function TransferPortalClient() {
       abortController.abort();
     };
   }, [refreshKey]);
+
+  // Fetch valid player slugs
+  useEffect(() => {
+    fetch('/cfb-hq/api/players?slugsOnly=true')
+      .then(res => res.json())
+      .then(data => {
+        if (data.slugs) setValidPlayerSlugs(new Set(data.slugs));
+      })
+      .catch(() => {});
+  }, []);
 
   // Handle retry
   const handleRetry = () => {
@@ -471,6 +484,7 @@ export default function TransferPortalClient() {
               sortDirection={sortDirection}
               onSort={handleSort}
               onWatchlistChange={() => setWatchlist(getWatchlist())}
+              validPlayerSlugs={validPlayerSlugs.size > 0 ? validPlayerSlugs : undefined}
             />
           </div>
 
