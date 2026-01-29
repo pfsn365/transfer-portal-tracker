@@ -137,7 +137,8 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
 
   // Get current category data
   const currentCategory = availableCategories.find(cat => cat.key === selectedCategory);
-  const currentData = currentCategory?.data || [];
+  const currentTeamData: TeamStat[] = viewType === 'team' ? (currentCategory?.data as TeamStat[] || []) : [];
+  const currentPlayerData: PlayerStat[] = viewType === 'players' ? (currentCategory?.data as PlayerStat[] || []) : [];
 
   // Get player initials for avatar fallback
   const getInitials = (name: string) => {
@@ -226,7 +227,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
                 </tr>
               </thead>
               <tbody>
-                {currentData.map((stat: TeamStat, idx: number) => (
+                {currentTeamData.map((stat, idx) => (
                   <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="py-2 px-2">
                       <span className="text-sm font-medium text-gray-900">{stat.displayName}</span>
@@ -238,7 +239,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
                 ))}
               </tbody>
             </table>
-            {currentData.length === 0 && (
+            {currentTeamData.length === 0 && (
               <p className="text-center text-gray-500 py-8">No stats available</p>
             )}
           </div>
@@ -254,7 +255,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
                 </tr>
               </thead>
               <tbody>
-                {currentData.map((player: PlayerStat, idx: number) => (
+                {currentPlayerData.map((player, idx) => (
                   <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="py-2 px-2">
                       <div className="flex items-center gap-2">
@@ -292,7 +293,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
                 ))}
               </tbody>
             </table>
-            {currentData.length === 0 && (
+            {currentPlayerData.length === 0 && (
               <p className="text-center text-gray-500 py-8">No player stats available</p>
             )}
           </div>
