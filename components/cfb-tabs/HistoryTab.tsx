@@ -655,24 +655,8 @@ export default function HistoryTab({ team, teamColor }: HistoryTabProps) {
                         <span className="text-sm text-gray-400">-</span>
                       )}
                     </td>
-                    <td className="py-3 px-3 hidden lg:table-cell relative">
-                      <button
-                        onClick={() => setSelectedCoach(selectedCoach === record.coach ? null : record.coach)}
-                        className="text-sm text-gray-600 hover:text-gray-900 hover:underline cursor-pointer select-none"
-                      >
-                        {record.coach}
-                      </button>
-                      {selectedCoach === record.coach && (() => {
-                        const detailedStats = getCoachDetailedStats(record.coach);
-                        return detailedStats ? (
-                          <CoachPopup
-                            coach={detailedStats}
-                            teamColor={teamColor}
-                            onClose={() => setSelectedCoach(null)}
-                            anchorRef={{ current: null }}
-                          />
-                        ) : null;
-                      })()}
+                    <td className="py-3 px-3 hidden lg:table-cell">
+                      <span className="text-sm text-gray-600">{record.coach}</span>
                     </td>
                     <td className="py-3 px-3">
                       {record.bowl ? (
