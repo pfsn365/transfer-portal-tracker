@@ -1,0 +1,27 @@
+{
+  "teamId": "arizona",
+  "teamSlug": "arizona-wildcats",
+  "teamName": "Arizona Wildcats",
+  "draftPicks": [
+    {"year": 2025, "round": 1, "pick": 8, "name": "Tetairoa McMillan", "position": "WR", "nflTeam": "Carolina Panthers"},
+    {"year": 2025, "round": 2, "pick": 37, "name": "Jonah Savaiinaea", "position": "OL", "nflTeam": "Miami Dolphins"},
+    {"year": 2025, "round": 6, "pick": 186, "name": "Tyler Loop", "position": "K", "nflTeam": "Baltimore Ravens"},
+    {"year": 2025, "round": 7, "pick": 245, "name": "Jacory Croskey-Merritt", "position": "RB", "nflTeam": "Washington Commanders"},
+    {"year": 2024, "round": 1, "pick": 25, "name": "Jordan Morgan", "position": "OL", "nflTeam": "Green Bay Packers"},
+    {"year": 2024, "round": 4, "pick": 135, "name": "Jacob Cowing", "position": "WR", "nflTeam": "San Francisco 49ers"},
+    {"year": 2024, "round": 6, "pick": 194, "name": "Tanner McLachlan", "position": "TE", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2021, "round": 6, "pick": 195, "name": "Roy Lopez", "position": "DT", "nflTeam": "Houston Texans"},
+    {"year": 2021, "round": 6, "pick": 196, "name": "Gary Brightwell", "position": "RB", "nflTeam": "New York Giants"},
+    {"year": 2019, "round": 7, "pick": 224, "name": "P.J. Johnson", "position": "DT", "nflTeam": "Detroit Lions"},
+    {"year": 2016, "round": 6, "pick": 184, "name": "Will Parks", "position": "SAF", "nflTeam": "Denver Broncos"},
+    {"year": 2016, "round": 7, "pick": 250, "name": "Scooby Wright III", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2014, "round": 4, "pick": 117, "name": "Ka'Deem Carey", "position": "RB", "nflTeam": "Chicago Bears"},
+    {"year": 2014, "round": 6, "pick": 197, "name": "Marquis Flowers", "position": "LB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2012, "round": 3, "pick": 88, "name": "Nick Foles", "position": "QB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2010, "round": 2, "pick": 42, "name": "Rob Gronkowski", "position": "TE", "nflTeam": "New England Patriots"},
+    {"year": 2003, "round": 3, "pick": 68, "name": "Lance Briggs", "position": "LB", "nflTeam": "Chicago Bears"},
+    {"year": 2003, "round": 5, "pick": 153, "name": "Bobby Wade", "position": "WR", "nflTeam": "Chicago Bears"},
+    {"year": 2000, "round": 1, "pick": 28, "name": "Trung Canidate", "position": "RB", "nflTeam": "St. Louis Rams"},
+    {"year": 2000, "round": 2, "pick": 39, "name": "Dennis Northcutt", "position": "WR", "nflTeam": "Cleveland Browns"}
+  ]
+}

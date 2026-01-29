@@ -1,0 +1,14 @@
+{
+  "teamId": "umass",
+  "teamSlug": "umass-minutemen",
+  "teamName": "UMass Minutemen",
+  "draftPicks": [
+    {"year": 2021, "round": 7, "pick": 231, "name": "Larnel Coleman", "position": "T", "nflTeam": "Miami Dolphins"},
+    {"year": 2020, "round": 6, "pick": 211, "name": "Isaiah Rodgers", "position": "CB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2019, "round": 2, "pick": 62, "name": "Andy Isabella", "position": "WR", "nflTeam": "Arizona Cardinals"},
+    {"year": 2016, "round": 5, "pick": 140, "name": "Tajae Sharpe", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2014, "round": 7, "pick": 230, "name": "Rob Blanchflower", "position": "TE", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2013, "round": 7, "pick": 253, "name": "Michael Cox", "position": "RB", "nflTeam": "New York Giants"},
+    {"year": 2010, "round": 2, "pick": 61, "name": "Vlad Ducasse", "position": "T", "nflTeam": "New York Jets"}
+  ]
+}

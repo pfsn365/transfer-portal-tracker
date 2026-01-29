@@ -1,0 +1,27 @@
+{
+  "teamId": "nevada",
+  "teamSlug": "nevada-wolf-pack",
+  "teamName": "Nevada Wolf Pack",
+  "draftPicks": [
+    {"year": 2025, "round": 7, "pick": 225, "name": "Kitan Crawford", "position": "S", "nflTeam": "Arizona Cardinals"},
+    {"year": 2022, "round": 4, "pick": 132, "name": "Romeo Doubs", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2022, "round": 5, "pick": 149, "name": "Cole Turner", "position": "TE", "nflTeam": "Washington Commanders"},
+    {"year": 2018, "round": 2, "pick": 33, "name": "Austin Corbett", "position": "C", "nflTeam": "Cleveland Browns"},
+    {"year": 2014, "round": 2, "pick": 35, "name": "Joel Bitonio", "position": "G", "nflTeam": "Cleveland Browns"},
+    {"year": 2013, "round": 4, "pick": 105, "name": "Duke Williams", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2013, "round": 6, "pick": 202, "name": "Khalid Wooten", "position": "DB", "nflTeam": "Tennessee Titans"},
+    {"year": 2012, "round": 4, "pick": 120, "name": "James-Michael Johnson", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2012, "round": 5, "pick": 142, "name": "Brandon Marshall", "position": "LB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2012, "round": 6, "pick": 184, "name": "Isaiah Frey", "position": "DB", "nflTeam": "Chicago Bears"},
+    {"year": 2012, "round": 7, "pick": 227, "name": "Rishard Matthews", "position": "WR", "nflTeam": "Miami Dolphins"},
+    {"year": 2011, "round": 2, "pick": 36, "name": "Colin Kaepernick", "position": "QB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2011, "round": 3, "pick": 66, "name": "Dontay Moch", "position": "LB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2011, "round": 7, "pick": 204, "name": "Virgil Green", "position": "TE", "nflTeam": "Denver Broncos"},
+    {"year": 2009, "round": 7, "pick": 243, "name": "Marko Mitchell", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2007, "round": 5, "pick": 151, "name": "Jeff Rowe", "position": "QB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2006, "round": 5, "pick": 165, "name": "Tony Moll", "position": "T", "nflTeam": "Green Bay Packers"},
+    {"year": 2004, "round": 3, "pick": 86, "name": "Jorge Cordova", "position": "LB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2004, "round": 5, "pick": 149, "name": "Maurice Mann", "position": "WR", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2003, "round": 3, "pick": 71, "name": "Nate Burleson", "position": "WR", "nflTeam": "Minnesota Vikings"}
+  ]
+}

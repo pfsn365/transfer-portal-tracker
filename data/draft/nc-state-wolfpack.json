@@ -1,0 +1,22 @@
+{
+  "teamId": "nc-state",
+  "teamSlug": "nc-state-wolfpack",
+  "teamName": "NC State Wolfpack",
+  "draftPicks": [
+    {"year": 2025, "round": 2, "pick": 54, "name": "Anthony Belton", "position": "OL", "nflTeam": "Green Bay Packers"},
+    {"year": 2024, "round": 3, "pick": 98, "name": "Payton Wilson", "position": "LB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2024, "round": 6, "pick": 190, "name": "Dylan McMahon", "position": "OL", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2023, "round": 4, "pick": 114, "name": "Chandler Zavala", "position": "OL", "nflTeam": "Carolina Panthers"},
+    {"year": 2022, "round": 1, "pick": 6, "name": "Ikem Ekwonu", "position": "OL", "nflTeam": "Carolina Panthers"},
+    {"year": 2022, "round": 7, "pick": 255, "name": "Trenton Gill", "position": "P", "nflTeam": "Chicago Bears"},
+    {"year": 2021, "round": 3, "pick": 72, "name": "Alim McNeill", "position": "DT", "nflTeam": "Detroit Lions"},
+    {"year": 2020, "round": 5, "pick": 174, "name": "Larrell Murchison", "position": "DT", "nflTeam": "Tennessee Titans"},
+    {"year": 2020, "round": 7, "pick": 229, "name": "James Smith-Williams", "position": "DE", "nflTeam": "Washington Football Team"},
+    {"year": 2019, "round": 1, "pick": 18, "name": "Garrett Bradbury", "position": "C", "nflTeam": "Minnesota Vikings"},
+    {"year": 2019, "round": 3, "pick": 72, "name": "Germaine Pratt", "position": "LB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2019, "round": 4, "pick": 104, "name": "Ryan Finley", "position": "QB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2019, "round": 6, "pick": 206, "name": "Kelvin Harmon", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2018, "round": 1, "pick": 5, "name": "Bradley Chubb", "position": "DE", "nflTeam": "Denver Broncos"},
+    {"year": 2006, "round": 1, "pick": 1, "name": "Mario Williams", "position": "DE", "nflTeam": "Houston Texans"}
+  ]
+}

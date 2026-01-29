@@ -1,0 +1,33 @@
+{
+  "teamId": "usc",
+  "teamSlug": "usc-trojans",
+  "teamName": "USC Trojans",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 16, "apPost": 15, "cfpFinal": null, "coach": "Lincoln Riley", "bowl": "Alamo Bowl (L)"},
+    {"year": 2024, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Lincoln Riley", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2023, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 6, "apPost": 20, "cfpFinal": null, "coach": "Lincoln Riley", "bowl": "Holiday Bowl (W)"},
+    {"year": 2022, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 14, "apPost": 12, "cfpFinal": 8, "coach": "Lincoln Riley", "bowl": "Cotton Bowl (L)"},
+    {"year": 2021, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 6, "apPre": 15, "apPost": null, "cfpFinal": null, "coach": "Clay Helton / Donte Williams", "bowl": null},
+    {"year": 2020, "wins": 5, "losses": 1, "confWins": 5, "confLosses": 0, "apPre": 17, "apPost": 21, "cfpFinal": null, "coach": "Clay Helton", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 7, "confLosses": 2, "apPre": 21, "apPost": 22, "cfpFinal": null, "coach": "Clay Helton", "bowl": "Holiday Bowl (L)"},
+    {"year": 2018, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 5, "apPre": 15, "apPost": null, "cfpFinal": null, "coach": "Clay Helton", "bowl": null},
+    {"year": 2017, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 4, "apPost": 12, "cfpFinal": 8, "coach": "Clay Helton", "bowl": "Cotton Bowl (L)"},
+    {"year": 2016, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 20, "apPost": 3, "cfpFinal": 3, "coach": "Clay Helton", "bowl": "Rose Bowl (W)"},
+    {"year": 2015, "wins": 8, "losses": 6, "confWins": 6, "confLosses": 3, "apPre": 8, "apPost": 20, "cfpFinal": null, "coach": "Steve Sarkisian / Clay Helton", "bowl": "Holiday Bowl (L)"},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 15, "apPost": 20, "cfpFinal": null, "coach": "Steve Sarkisian", "bowl": "Holiday Bowl (W)"},
+    {"year": 2013, "wins": 10, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 24, "apPost": 19, "cfpFinal": null, "coach": "Lane Kiffin / Ed Orgeron / Clay Helton", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2012, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 4, "apPre": 1, "apPost": null, "cfpFinal": null, "coach": "Lane Kiffin", "bowl": "Sun Bowl (L)"},
+    {"year": 2011, "wins": 10, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 25, "apPost": 6, "cfpFinal": null, "coach": "Lane Kiffin", "bowl": null},
+    {"year": 2010, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 14, "apPost": null, "cfpFinal": null, "coach": "Lane Kiffin", "bowl": null},
+    {"year": 2009, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 4, "apPost": 22, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Emerald Bowl (W)"},
+    {"year": 2008, "wins": 12, "losses": 1, "confWins": 8, "confLosses": 1, "apPre": 3, "apPost": 3, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Rose Bowl (W)"},
+    {"year": 2007, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 1, "apPost": 3, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Rose Bowl (W)"},
+    {"year": 2006, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 6, "apPost": 4, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Rose Bowl (W)"},
+    {"year": 2005, "wins": 12, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 2, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Rose Bowl (L)"},
+    {"year": 2004, "wins": 13, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 1, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Orange Bowl (W)"},
+    {"year": 2003, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 8, "apPost": 1, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Rose Bowl (W)"},
+    {"year": 2002, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 20, "apPost": 4, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Orange Bowl (W)"},
+    {"year": 2001, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Pete Carroll", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2000, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": 15, "apPost": null, "cfpFinal": null, "coach": "Paul Hackett", "bowl": null}
+  ]
+}

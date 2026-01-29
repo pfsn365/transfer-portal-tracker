@@ -1,0 +1,33 @@
+{
+  "teamId": "byu",
+  "teamSlug": "byu-cougars",
+  "teamName": "BYU Cougars",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 8, "apPost": 7, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Pop-Tarts Bowl (W)"},
+    {"year": 2024, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 6, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Alamo Bowl (W)"},
+    {"year": 2023, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": null},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": 25, "apPost": 12, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2021, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 10, "apPost": 12, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Independence Bowl (L)"},
+    {"year": 2020, "wins": 11, "losses": 1, "confWins": 0, "confLosses": 0, "apPre": 8, "apPost": 13, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Boca Raton Bowl (W)"},
+    {"year": 2019, "wins": 7, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Famous Idaho Potato Bowl (W)"},
+    {"year": 2017, "wins": 4, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": null},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kalani Sitake", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2015, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": 19, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Miami Beach Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Fight Hunger Bowl (L)"},
+    {"year": 2012, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2011, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2009, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 20, "apPost": 12, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2008, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 16, "apPost": 25, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2007, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 14, "apPost": 14, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2006, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 16, "apPost": 16, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2005, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2004, "wins": 5, "losses": 6, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Crowton", "bowl": null},
+    {"year": 2003, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Crowton", "bowl": null},
+    {"year": 2002, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Crowton", "bowl": null},
+    {"year": 2001, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 0, "apPre": 8, "apPost": 25, "cfpFinal": null, "coach": "Gary Crowton", "bowl": "Liberty Bowl (L)"},
+    {"year": 2000, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "LaVell Edwards", "bowl": null}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamId": "ole-miss",
+  "teamSlug": "ole-miss-rebels",
+  "teamName": "Ole Miss Rebels",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 13, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 21, "apPost": 3, "cfpFinal": 4, "coach": "Lane Kiffin / Pete Golding", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2024, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 6, "apPost": 11, "cfpFinal": null, "coach": "Lane Kiffin", "bowl": "Gator Bowl (W)"},
+    {"year": 2023, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 22, "apPost": 9, "cfpFinal": 9, "coach": "Lane Kiffin", "bowl": "Peach Bowl (W)"},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Lane Kiffin", "bowl": "Texas Bowl (L)"},
+    {"year": 2021, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 8, "apPost": 8, "cfpFinal": 11, "coach": "Lane Kiffin", "bowl": "Sugar Bowl (L)"},
+    {"year": 2020, "wins": 5, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Lane Kiffin", "bowl": "Outback Bowl (W)"},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Matt Luke", "bowl": null},
+    {"year": 2018, "wins": 5, "losses": 7, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Matt Luke", "bowl": null},
+    {"year": 2017, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Matt Luke", "bowl": null},
+    {"year": 2016, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": null},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 17, "apPost": 10, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "Sugar Bowl (W)"},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 18, "apPost": 17, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "Peach Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "Music City Bowl (W)"},
+    {"year": 2012, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "BBVA Compass Bowl (W)"},
+    {"year": 2011, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Houston Nutt", "bowl": null},
+    {"year": 2010, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Houston Nutt", "bowl": null},
+    {"year": 2009, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 8, "apPost": 20, "cfpFinal": null, "coach": "Houston Nutt", "bowl": "Cotton Bowl (W)"},
+    {"year": 2008, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 14, "apPost": 14, "cfpFinal": null, "coach": "Houston Nutt", "bowl": "Cotton Bowl (W)"},
+    {"year": 2007, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ed Orgeron", "bowl": null},
+    {"year": 2006, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ed Orgeron", "bowl": null},
+    {"year": 2005, "wins": 3, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ed Orgeron", "bowl": null},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "David Cutcliffe", "bowl": null},
+    {"year": 2003, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 13, "apPost": 13, "cfpFinal": null, "coach": "David Cutcliffe", "bowl": "Cotton Bowl (W)"},
+    {"year": 2002, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "David Cutcliffe", "bowl": "Independence Bowl (W)"},
+    {"year": 2001, "wins": 7, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "David Cutcliffe", "bowl": null},
+    {"year": 2000, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "David Cutcliffe", "bowl": "Music City Bowl (L)"}
+  ]
+}

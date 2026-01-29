@@ -1,0 +1,33 @@
+{
+  "teamId": "penn-state",
+  "teamSlug": "penn-state-nittany-lions",
+  "teamName": "Penn State Nittany Lions",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "James Franklin / Terry Smith", "bowl": "Pinstripe Bowl (W)"},
+    {"year": 2024, "wins": 13, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 8, "apPost": 4, "cfpFinal": 6, "coach": "James Franklin", "bowl": "Orange Bowl (L)"},
+    {"year": 2023, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 10, "cfpFinal": null, "coach": "James Franklin", "bowl": "Peach Bowl (L)"},
+    {"year": 2022, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 11, "cfpFinal": null, "coach": "James Franklin", "bowl": "Rose Bowl (W)"},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 19, "apPost": null, "cfpFinal": null, "coach": "James Franklin", "bowl": "Outback Bowl (L)"},
+    {"year": 2020, "wins": 4, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "James Franklin", "bowl": null},
+    {"year": 2019, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 15, "apPost": 10, "cfpFinal": 9, "coach": "James Franklin", "bowl": "Cotton Bowl (W)"},
+    {"year": 2018, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 10, "apPost": 12, "cfpFinal": null, "coach": "James Franklin", "bowl": "Citrus Bowl (L)"},
+    {"year": 2017, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 6, "apPost": 9, "cfpFinal": 9, "coach": "James Franklin", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2016, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 5, "apPost": 5, "cfpFinal": 5, "coach": "James Franklin", "bowl": "Rose Bowl (L)"},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "James Franklin", "bowl": "TaxSlayer Bowl (L)"},
+    {"year": 2014, "wins": 7, "losses": 6, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "James Franklin", "bowl": "Pinstripe Bowl (W)"},
+    {"year": 2013, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill O'Brien", "bowl": null},
+    {"year": 2012, "wins": 8, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill O'Brien", "bowl": null},
+    {"year": 2011, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": 12, "cfpFinal": null, "coach": "Joe Paterno / Tom Bradley", "bowl": "Ticket City Bowl (L)"},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 19, "apPost": 18, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Outback Bowl (L)"},
+    {"year": 2009, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 9, "apPost": 9, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Capital One Bowl (W)"},
+    {"year": 2008, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 22, "apPost": 8, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Rose Bowl (L)"},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 17, "apPost": 10, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Alamo Bowl (W)"},
+    {"year": 2006, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 19, "apPost": 24, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Outback Bowl (W)"},
+    {"year": 2005, "wins": 11, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 3, "apPost": 3, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Orange Bowl (W)"},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Paterno", "bowl": null},
+    {"year": 2003, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Paterno", "bowl": null},
+    {"year": 2002, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 24, "apPost": 16, "cfpFinal": null, "coach": "Joe Paterno", "bowl": "Capital One Bowl (L)"},
+    {"year": 2001, "wins": 5, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Paterno", "bowl": null},
+    {"year": 2000, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Joe Paterno", "bowl": null}
+  ]
+}

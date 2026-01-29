@@ -1,0 +1,33 @@
+{
+  "teamId": "navy",
+  "teamSlug": "navy-midshipmen",
+  "teamName": "Navy Midshipmen",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 23, "cfpFinal": null, "coach": "Brian Newberry", "bowl": "Liberty Bowl (W)"},
+    {"year": 2024, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Newberry", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2023, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Newberry", "bowl": null},
+    {"year": 2022, "wins": 4, "losses": 8, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": null},
+    {"year": 2021, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": null},
+    {"year": 2020, "wins": 3, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": null},
+    {"year": 2019, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 20, "apPost": 23, "cfpFinal": 23, "coach": "Ken Niumatalolo", "bowl": "Liberty Bowl (W)"},
+    {"year": 2018, "wins": 3, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": null},
+    {"year": 2017, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Military Bowl (W)"},
+    {"year": 2016, "wins": 9, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": 20, "apPost": 25, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2015, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 16, "apPost": 15, "cfpFinal": 21, "coach": "Ken Niumatalolo", "bowl": "Military Bowl (W)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2012, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Fight Hunger Bowl (L)"},
+    {"year": 2011, "wins": 5, "losses": 7, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": null},
+    {"year": 2010, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Poinsettia Bowl (L)"},
+    {"year": 2009, "wins": 10, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "Texas Bowl (W)"},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Niumatalolo", "bowl": "EagleBank Bowl (L)"},
+    {"year": 2007, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Johnson / Ken Niumatalolo", "bowl": "Poinsettia Bowl (L)"},
+    {"year": 2006, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Johnson", "bowl": "Meineke Car Care Bowl (L)"},
+    {"year": 2005, "wins": 8, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Johnson", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2004, "wins": 10, "losses": 2, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": 24, "cfpFinal": null, "coach": "Paul Johnson", "bowl": "Emerald Bowl (W)"},
+    {"year": 2003, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Johnson", "bowl": "Houston Bowl (L)"},
+    {"year": 2002, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Johnson", "bowl": null},
+    {"year": 2001, "wins": 0, "losses": 10, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weatherbie / Rick Lantz", "bowl": null},
+    {"year": 2000, "wins": 1, "losses": 10, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weatherbie", "bowl": null}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "teamId": "smu",
+  "teamSlug": "smu-mustangs",
+  "teamName": "SMU Mustangs",
+  "draftPicks": [
+    {"year": 2025, "round": 5, "pick": 157, "name": "Elijah Roberts", "position": "DT", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2025, "round": 7, "pick": 228, "name": "Brashard Smith", "position": "RB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2023, "round": 2, "pick": 55, "name": "Rashee Rice", "position": "WR", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2022, "round": 3, "pick": 105, "name": "Danny Gray", "position": "WR", "nflTeam": "San Francisco 49ers"},
+    {"year": 2022, "round": 6, "pick": 198, "name": "Grant Calcaterra", "position": "TE", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2021, "round": 3, "pick": 104, "name": "Brandon Stephens", "position": "CB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2021, "round": 4, "pick": 127, "name": "Kylen Granson", "position": "TE", "nflTeam": "Indianapolis Colts"},
+    {"year": 2020, "round": 6, "pick": 201, "name": "James Proche", "position": "WR", "nflTeam": "Baltimore Ravens"},
+    {"year": 2018, "round": 2, "pick": 40, "name": "Courtland Sutton", "position": "WR", "nflTeam": "Denver Broncos"},
+    {"year": 2018, "round": 7, "pick": 244, "name": "Justin Lawler", "position": "DE", "nflTeam": "Los Angeles Rams"},
+    {"year": 2018, "round": 7, "pick": 256, "name": "Trey Quinn", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2014, "round": 6, "pick": 180, "name": "Kenneth Acker", "position": "DB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2014, "round": 6, "pick": 214, "name": "Garrett Gilbert", "position": "QB", "nflTeam": "St. Louis Rams"},
+    {"year": 2013, "round": 2, "pick": 53, "name": "Margus Hunt", "position": "DE", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2012, "round": 3, "pick": 71, "name": "Josh LeRibeus", "position": "OL", "nflTeam": "Washington Redskins"},
+    {"year": 2012, "round": 5, "pick": 145, "name": "Taylor Thompson", "position": "TE", "nflTeam": "Tennessee Titans"},
+    {"year": 2012, "round": 7, "pick": 213, "name": "Richard Crawford", "position": "DB", "nflTeam": "Washington Redskins"},
+    {"year": 2012, "round": 7, "pick": 248, "name": "Kelvin Beachum", "position": "OL", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2011, "round": 6, "pick": 178, "name": "Aldrick Robinson", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2010, "round": 3, "pick": 82, "name": "Emmanuel Sanders", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2009, "round": 5, "pick": 164, "name": "Thomas Morstead", "position": "P", "nflTeam": "New Orleans Saints"},
+    {"year": 2007, "round": 6, "pick": 180, "name": "Justin Rogers", "position": "LB", "nflTeam": "New England Patriots"},
+    {"year": 2003, "round": 5, "pick": 172, "name": "Kevin Garrett", "position": "DB", "nflTeam": "St. Louis Rams"}
+  ]
+}

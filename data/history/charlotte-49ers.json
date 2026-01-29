@@ -1,0 +1,18 @@
+{
+  "teamId": "charlotte",
+  "teamSlug": "charlotte-49ers",
+  "teamName": "Charlotte 49ers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 1, "losses": 11, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Albin", "bowl": null},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Biff Poggi / Tim Brewster", "bowl": null},
+    {"year": 2023, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Biff Poggi", "bowl": null},
+    {"year": 2022, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Healy / Peter Rossomando", "bowl": null},
+    {"year": 2021, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Healy", "bowl": null},
+    {"year": 2020, "wins": 2, "losses": 4, "confWins": 2, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Healy", "bowl": null},
+    {"year": 2019, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Healy", "bowl": "Bahamas Bowl (L)"},
+    {"year": 2018, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brad Lambert", "bowl": null},
+    {"year": 2017, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brad Lambert", "bowl": null},
+    {"year": 2016, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brad Lambert", "bowl": null},
+    {"year": 2015, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brad Lambert", "bowl": null}
+  ]
+}

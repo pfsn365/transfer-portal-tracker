@@ -1,0 +1,33 @@
+{
+  "teamId": "pittsburgh",
+  "teamSlug": "pittsburgh-panthers",
+  "teamName": "Pittsburgh Panthers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": 23, "apPost": 22, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Military Bowl (L)"},
+    {"year": 2024, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 18, "apPost": 18, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "GameAbove Sports Bowl (L)"},
+    {"year": 2023, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": null},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 17, "apPost": 22, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Sun Bowl (W)"},
+    {"year": 2021, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 13, "apPost": 12, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Peach Bowl (L)"},
+    {"year": 2020, "wins": 6, "losses": 5, "confWins": 5, "confLosses": 5, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Quick Lane Bowl (W)"},
+    {"year": 2018, "wins": 7, "losses": 7, "confWins": 6, "confLosses": 2, "apPre": 24, "apPost": 24, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Sun Bowl (L)"},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": null},
+    {"year": 2016, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 22, "apPost": 23, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Pinstripe Bowl (L)"},
+    {"year": 2015, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Pat Narduzzi", "bowl": "Military Bowl (L)"},
+    {"year": 2014, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Chryst / Joe Rudolph", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2013, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "Little Caesars Bowl (W)"},
+    {"year": 2012, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "BBVA Compass Bowl (L)"},
+    {"year": 2011, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Graham / Keith Patterson", "bowl": "BBVA Compass Bowl (L)"},
+    {"year": 2010, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": 15, "apPost": 15, "cfpFinal": null, "coach": "Dave Wannstedt / Phil Bennett", "bowl": "BBVA Compass Bowl (W)"},
+    {"year": 2009, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 2, "apPre": 8, "apPost": 15, "cfpFinal": null, "coach": "Dave Wannstedt", "bowl": "Meineke Car Care Bowl (W)"},
+    {"year": 2008, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 2, "apPre": 25, "apPost": 17, "cfpFinal": null, "coach": "Dave Wannstedt", "bowl": "Sun Bowl (L)"},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Wannstedt", "bowl": null},
+    {"year": 2006, "wins": 6, "losses": 6, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Wannstedt", "bowl": null},
+    {"year": 2005, "wins": 5, "losses": 6, "confWins": 4, "confLosses": 3, "apPre": 23, "apPost": 23, "cfpFinal": null, "coach": "Dave Wannstedt", "bowl": null},
+    {"year": 2004, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 2, "apPre": 19, "apPost": 25, "cfpFinal": null, "coach": "Walt Harris", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2003, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": 10, "apPost": 9, "cfpFinal": null, "coach": "Walt Harris", "bowl": "Continental Tire Bowl (L)"},
+    {"year": 2002, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 2, "apPre": 17, "apPost": 19, "cfpFinal": null, "coach": "Walt Harris", "bowl": "Insight Bowl (W)"},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Walt Harris", "bowl": "Tangerine Bowl (W)"},
+    {"year": 2000, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Walt Harris", "bowl": "Insight Bowl (L)"}
+  ]
+}

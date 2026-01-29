@@ -1,0 +1,33 @@
+{
+  "teamId": "minnesota",
+  "teamSlug": "minnesota-golden-gophers",
+  "teamName": "Minnesota Golden Gophers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Rate Bowl (W)"},
+    {"year": 2024, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Duke's Mayo Bowl (W)"},
+    {"year": 2023, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Quick Lane Bowl (W)"},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Pinstripe Bowl (W)"},
+    {"year": 2021, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Guaranteed Rate Bowl (W)"},
+    {"year": 2020, "wins": 3, "losses": 4, "confWins": 3, "confLosses": 4, "apPre": 19, "apPost": 19, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": null},
+    {"year": 2019, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 8, "cfpFinal": 18, "coach": "P.J. Fleck", "bowl": "Outback Bowl (W)"},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Quick Lane Bowl (W)"},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": null},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tracy Claeys", "bowl": "Holiday Bowl (W)"},
+    {"year": 2015, "wins": 6, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Kill / Tracy Claeys", "bowl": "Quick Lane Bowl (W)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 22, "apPost": 25, "cfpFinal": 18, "coach": "Jerry Kill", "bowl": "Citrus Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Kill", "bowl": "Texas Bowl (L)"},
+    {"year": 2012, "wins": 6, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Kill", "bowl": "Meineke Car Care Bowl (L)"},
+    {"year": 2011, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Kill", "bowl": null},
+    {"year": 2010, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Brewster / Jeff Horton", "bowl": null},
+    {"year": 2009, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Brewster", "bowl": "Insight Bowl (L)"},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "Tim Brewster", "bowl": "Insight Bowl (L)"},
+    {"year": 2007, "wins": 1, "losses": 11, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Brewster", "bowl": null},
+    {"year": 2006, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Glen Mason", "bowl": "Insight Bowl (L)"},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Glen Mason", "bowl": "Music City Bowl (L)"},
+    {"year": 2004, "wins": 7, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": 25, "apPost": 13, "cfpFinal": null, "coach": "Glen Mason", "bowl": "Music City Bowl (W)"},
+    {"year": 2003, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 17, "apPost": 20, "cfpFinal": null, "coach": "Glen Mason", "bowl": "Sun Bowl (W)"},
+    {"year": 2002, "wins": 8, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Glen Mason", "bowl": "Music City Bowl (W)"},
+    {"year": 2001, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Glen Mason", "bowl": null},
+    {"year": 2000, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Glen Mason", "bowl": "Micron PC Bowl (L)"}
+  ]
+}

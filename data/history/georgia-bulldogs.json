@@ -1,0 +1,33 @@
+{
+  "teamId": "georgia",
+  "teamSlug": "georgia-bulldogs",
+  "teamName": "Georgia Bulldogs",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 5, "apPost": 6, "cfpFinal": 3, "coach": "Kirby Smart", "bowl": "Sugar Bowl (L)"},
+    {"year": 2024, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 1, "apPost": 6, "cfpFinal": 2, "coach": "Kirby Smart", "bowl": "Sugar Bowl (L)"},
+    {"year": 2023, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 4, "cfpFinal": 5, "coach": "Kirby Smart", "bowl": "Orange Bowl (W)"},
+    {"year": 2022, "wins": 15, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 3, "apPost": 1, "cfpFinal": 1, "coach": "Kirby Smart", "bowl": "CFP National Championship (W)"},
+    {"year": 2021, "wins": 14, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 5, "apPost": 1, "cfpFinal": 3, "coach": "Kirby Smart", "bowl": "CFP National Championship (W)"},
+    {"year": 2020, "wins": 8, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 4, "apPost": 7, "cfpFinal": 9, "coach": "Kirby Smart", "bowl": "Peach Bowl (W)"},
+    {"year": 2019, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 3, "apPost": 4, "cfpFinal": 5, "coach": "Kirby Smart", "bowl": "Sugar Bowl (W)"},
+    {"year": 2018, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 3, "apPost": 7, "cfpFinal": 5, "coach": "Kirby Smart", "bowl": "Sugar Bowl (L)"},
+    {"year": 2017, "wins": 13, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 15, "apPost": 2, "cfpFinal": 3, "coach": "Kirby Smart", "bowl": "CFP National Championship (L)"},
+    {"year": 2016, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Kirby Smart", "bowl": "Liberty Bowl (W)"},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 9, "apPost": 18, "cfpFinal": null, "coach": "Mark Richt", "bowl": "TaxSlayer Bowl (W)"},
+    {"year": 2014, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 12, "apPost": 9, "cfpFinal": 13, "coach": "Mark Richt", "bowl": "Belk Bowl (W)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 5, "apPost": null, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Gator Bowl (L)"},
+    {"year": 2012, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 6, "apPost": 5, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Capital One Bowl (W)"},
+    {"year": 2011, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": 19, "apPost": 19, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Outback Bowl (L)"},
+    {"year": 2010, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Liberty Bowl (L)"},
+    {"year": 2009, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 13, "apPost": null, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Independence Bowl (W)"},
+    {"year": 2008, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 1, "apPost": 13, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Capital One Bowl (W)"},
+    {"year": 2007, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 13, "apPost": 2, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Sugar Bowl (W)"},
+    {"year": 2006, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 15, "apPost": 23, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Chick-fil-A Bowl (W)"},
+    {"year": 2005, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 13, "apPost": 10, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Sugar Bowl (L)"},
+    {"year": 2004, "wins": 10, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 3, "apPost": 7, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Outback Bowl (W)"},
+    {"year": 2003, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 11, "apPost": 7, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Capital One Bowl (W)"},
+    {"year": 2002, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 8, "apPost": 3, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Sugar Bowl (W)"},
+    {"year": 2001, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 15, "apPost": 22, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Music City Bowl (L)"},
+    {"year": 2000, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 10, "apPost": 20, "cfpFinal": null, "coach": "Jim Donnan", "bowl": "Oahu Classic (W)"}
+  ]
+}

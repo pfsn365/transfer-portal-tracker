@@ -1,0 +1,33 @@
+{
+  "teamId": "houston",
+  "teamSlug": "houston-cougars",
+  "teamName": "Houston Cougars",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 3, "apPre": 22, "apPost": 21, "cfpFinal": null, "coach": "Willie Fritz", "bowl": "Texas Bowl (W)"},
+    {"year": 2024, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": null},
+    {"year": 2023, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dana Holgorsen", "bowl": null},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 24, "apPost": 24, "cfpFinal": null, "coach": "Dana Holgorsen", "bowl": "Independence Bowl (W)"},
+    {"year": 2021, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 16, "apPost": 20, "cfpFinal": null, "coach": "Dana Holgorsen", "bowl": "Birmingham Bowl (W)"},
+    {"year": 2020, "wins": 3, "losses": 5, "confWins": 3, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dana Holgorsen", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dana Holgorsen", "bowl": null},
+    {"year": 2018, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": 17, "cfpFinal": null, "coach": "Major Applewhite", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2017, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Major Applewhite", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 15, "apPost": 20, "cfpFinal": null, "coach": "Tom Herman / Major Applewhite", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2015, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 8, "apPost": 18, "cfpFinal": null, "coach": "Tom Herman", "bowl": "Peach Bowl (W)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Levine / David Gibbs", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Levine", "bowl": "BBVA Compass Bowl (L)"},
+    {"year": 2012, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Levine", "bowl": null},
+    {"year": 2011, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 7, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin / Tony Levine", "bowl": "Ticket City Bowl (W)"},
+    {"year": 2010, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": null},
+    {"year": 2009, "wins": 10, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 12, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2007, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Thurmond / Art Briles", "bowl": "Texas Bowl (L)"},
+    {"year": 2006, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Art Briles", "bowl": "Liberty Bowl (L)"},
+    {"year": 2005, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Art Briles", "bowl": "Fort Worth Bowl (L)"},
+    {"year": 2004, "wins": 3, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Art Briles", "bowl": null},
+    {"year": 2003, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Art Briles", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2002, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dana Dimel", "bowl": null},
+    {"year": 2001, "wins": 0, "losses": 11, "confWins": 0, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dana Dimel", "bowl": null},
+    {"year": 2000, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dana Dimel", "bowl": null}
+  ]
+}

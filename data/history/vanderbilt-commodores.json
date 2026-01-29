@@ -1,0 +1,33 @@
+{
+  "teamId": "vanderbilt",
+  "teamSlug": "vanderbilt-commodores",
+  "teamName": "Vanderbilt Commodores",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 9, "apPost": 14, "cfpFinal": 14, "coach": "Clark Lea", "bowl": "ReliaQuest Bowl (L)"},
+    {"year": 2024, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Clark Lea", "bowl": "Birmingham Bowl (W)"},
+    {"year": 2023, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Clark Lea", "bowl": null},
+    {"year": 2022, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Clark Lea", "bowl": null},
+    {"year": 2021, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Clark Lea", "bowl": null},
+    {"year": 2020, "wins": 0, "losses": 9, "confWins": 0, "confLosses": 9, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason / Todd Fitch", "bowl": null},
+    {"year": 2019, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason", "bowl": null},
+    {"year": 2018, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason", "bowl": "Texas Bowl (L)"},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason", "bowl": null},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason", "bowl": "Independence Bowl (L)"},
+    {"year": 2015, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason", "bowl": null},
+    {"year": 2014, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Derek Mason", "bowl": null},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 24, "apPost": 24, "cfpFinal": null, "coach": "James Franklin", "bowl": "BBVA Compass Bowl (W)"},
+    {"year": 2012, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 23, "apPost": 23, "cfpFinal": null, "coach": "James Franklin", "bowl": "Music City Bowl (W)"},
+    {"year": 2011, "wins": 6, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "James Franklin", "bowl": "Liberty Bowl (L)"},
+    {"year": 2010, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Robbie Caldwell", "bowl": null},
+    {"year": 2009, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 13, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": "Music City Bowl (W)"},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2006, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2005, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2004, "wins": 2, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2003, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2002, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Johnson", "bowl": null},
+    {"year": 2001, "wins": 2, "losses": 9, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Woody Widenhofer", "bowl": null},
+    {"year": 2000, "wins": 3, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Woody Widenhofer", "bowl": null}
+  ]
+}

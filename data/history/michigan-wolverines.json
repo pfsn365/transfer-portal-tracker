@@ -1,0 +1,33 @@
+{
+  "teamId": "michigan",
+  "teamSlug": "michigan-wolverines",
+  "teamName": "Michigan Wolverines",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 14, "apPost": 21, "cfpFinal": 18, "coach": "Sherrone Moore", "bowl": "Citrus Bowl (L)"},
+    {"year": 2024, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Sherrone Moore", "bowl": "ReliaQuest Bowl (W)"},
+    {"year": 2023, "wins": 15, "losses": 0, "confWins": 9, "confLosses": 0, "apPre": 2, "apPost": 1, "cfpFinal": 1, "coach": "Jim Harbaugh", "bowl": "CFP National Championship (W)"},
+    {"year": 2022, "wins": 13, "losses": 1, "confWins": 9, "confLosses": 0, "apPre": 8, "apPost": 3, "cfpFinal": 2, "coach": "Jim Harbaugh", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2021, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 2, "apPost": 2, "cfpFinal": null, "coach": "Jim Harbaugh", "bowl": "Orange Bowl (L)"},
+    {"year": 2020, "wins": 2, "losses": 4, "confWins": 2, "confLosses": 4, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Jim Harbaugh", "bowl": null},
+    {"year": 2019, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 7, "apPost": 18, "cfpFinal": 14, "coach": "Jim Harbaugh", "bowl": "Citrus Bowl (L)"},
+    {"year": 2018, "wins": 10, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 14, "apPost": 14, "cfpFinal": 7, "coach": "Jim Harbaugh", "bowl": "Peach Bowl (L)"},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 11, "apPost": 24, "cfpFinal": null, "coach": "Jim Harbaugh", "bowl": "Outback Bowl (L)"},
+    {"year": 2016, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 10, "cfpFinal": 6, "coach": "Jim Harbaugh", "bowl": "Orange Bowl (L)"},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 12, "apPost": 10, "cfpFinal": 14, "coach": "Jim Harbaugh", "bowl": "Citrus Bowl (W)"},
+    {"year": 2014, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": null},
+    {"year": 2013, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": "Buffalo Wild Wings Bowl (L)"},
+    {"year": 2012, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": 8, "apPost": 24, "cfpFinal": null, "coach": "Brady Hoke", "bowl": "Outback Bowl (L)"},
+    {"year": 2011, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 11, "apPost": 12, "cfpFinal": null, "coach": "Brady Hoke", "bowl": "Sugar Bowl (W)"},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "Gator Bowl (L)"},
+    {"year": 2009, "wins": 5, "losses": 7, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": null},
+    {"year": 2008, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": null},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 5, "apPost": 18, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Capital One Bowl (W)"},
+    {"year": 2006, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 14, "apPost": 8, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Rose Bowl (L)"},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 4, "apPost": null, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Alamo Bowl (L)"},
+    {"year": 2004, "wins": 9, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 8, "apPost": 14, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Rose Bowl (L)"},
+    {"year": 2003, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 4, "apPost": 6, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Rose Bowl (L)"},
+    {"year": 2002, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 12, "apPost": 9, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Outback Bowl (W)"},
+    {"year": 2001, "wins": 8, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 12, "apPost": 20, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Citrus Bowl (L)"},
+    {"year": 2000, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 6, "apPost": 11, "cfpFinal": null, "coach": "Lloyd Carr", "bowl": "Citrus Bowl (W)"}
+  ]
+}

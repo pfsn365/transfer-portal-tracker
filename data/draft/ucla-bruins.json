@@ -1,0 +1,33 @@
+{
+  "teamId": "ucla",
+  "teamSlug": "ucla-bruins",
+  "teamName": "UCLA Bruins",
+  "draftPicks": [
+    {"year": 2025, "round": 2, "pick": 33, "name": "Carson Schwesinger", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2025, "round": 2, "pick": 52, "name": "Oluwafemi Oladejo", "position": "DE", "nflTeam": "Tennessee Titans"},
+    {"year": 2025, "round": 6, "pick": 205, "name": "Kain Medrano", "position": "LB", "nflTeam": "Washington Commanders"},
+    {"year": 2025, "round": 7, "pick": 217, "name": "Jay Toia", "position": "DT", "nflTeam": "Dallas Cowboys"},
+    {"year": 2025, "round": 7, "pick": 248, "name": "Moliki Matavao", "position": "TE", "nflTeam": "New Orleans Saints"},
+    {"year": 2024, "round": 1, "pick": 15, "name": "Laiatu Latu", "position": "DL", "nflTeam": "Indianapolis Colts"},
+    {"year": 2024, "round": 6, "pick": 183, "name": "Darius Muasau", "position": "LB", "nflTeam": "New York Giants"},
+    {"year": 2023, "round": 2, "pick": 52, "name": "Zach Charbonnet", "position": "RB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2023, "round": 4, "pick": 122, "name": "Jon Gaines", "position": "OL", "nflTeam": "Arizona Cardinals"},
+    {"year": 2023, "round": 5, "pick": 140, "name": "Dorian Thompson-Robinson", "position": "QB", "nflTeam": "Cleveland Browns"},
+    {"year": 2023, "round": 5, "pick": 144, "name": "Atonio Mafi", "position": "OL", "nflTeam": "New England Patriots"},
+    {"year": 2022, "round": 3, "pick": 80, "name": "Greg Dulcich", "position": "TE", "nflTeam": "Denver Broncos"},
+    {"year": 2022, "round": 3, "pick": 92, "name": "Sean Rhyan", "position": "OL", "nflTeam": "Green Bay Packers"},
+    {"year": 2022, "round": 5, "pick": 160, "name": "Otito Ogbonnia", "position": "DT", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2022, "round": 5, "pick": 163, "name": "Kyle Philips", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2022, "round": 6, "pick": 211, "name": "Quentin Lake", "position": "DB", "nflTeam": "Los Angeles Rams"},
+    {"year": 2022, "round": 7, "pick": 250, "name": "Brittain Brown", "position": "RB", "nflTeam": "Las Vegas Raiders"},
+    {"year": 2021, "round": 3, "pick": 75, "name": "Osa Odighizuwa", "position": "DL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2021, "round": 6, "pick": 211, "name": "Demetric Felton", "position": "RB", "nflTeam": "Cleveland Browns"},
+    {"year": 2020, "round": 3, "pick": 91, "name": "Devin Asiasi", "position": "TE", "nflTeam": "New England Patriots"},
+    {"year": 2020, "round": 4, "pick": 110, "name": "Darnay Holmes", "position": "CB", "nflTeam": "New York Giants"},
+    {"year": 2020, "round": 4, "pick": 112, "name": "Joshua Kelley", "position": "RB", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2018, "round": 1, "pick": 10, "name": "Josh Rosen", "position": "QB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2016, "round": 1, "pick": 27, "name": "Kenny Clark", "position": "DT", "nflTeam": "Green Bay Packers"},
+    {"year": 2015, "round": 2, "pick": 45, "name": "Eric Kendricks", "position": "LB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2014, "round": 1, "pick": 9, "name": "Anthony Barr", "position": "LB", "nflTeam": "Minnesota Vikings"}
+  ]
+}

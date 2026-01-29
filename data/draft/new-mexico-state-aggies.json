@@ -1,0 +1,14 @@
+{
+  "teamId": "new-mexico-state",
+  "teamSlug": "new-mexico-state-aggies",
+  "teamName": "New Mexico State Aggies",
+  "draftPicks": [
+    {"year": 2020, "round": 5, "pick": 172, "name": "Jason Huntley", "position": "RB", "nflTeam": "Detroit Lions"},
+    {"year": 2018, "round": 4, "pick": 132, "name": "Jaleel Scott", "position": "WR", "nflTeam": "Baltimore Ravens"},
+    {"year": 2013, "round": 7, "pick": 208, "name": "Jeremy Harris", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2012, "round": 6, "pick": 196, "name": "Jonte Green", "position": "DB", "nflTeam": "Detroit Lions"},
+    {"year": 2011, "round": 4, "pick": 131, "name": "Davon House", "position": "DB", "nflTeam": "Green Bay Packers"},
+    {"year": 2003, "round": 7, "pick": 246, "name": "Siddeeq Shabazz", "position": "DB", "nflTeam": "Oakland Raiders"},
+    {"year": 2001, "round": 5, "pick": 161, "name": "Chris Barnes", "position": "RB", "nflTeam": "Baltimore Ravens"}
+  ]
+}

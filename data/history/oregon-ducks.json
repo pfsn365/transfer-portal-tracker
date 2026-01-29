@@ -1,0 +1,33 @@
+{
+  "teamId": "oregon",
+  "teamSlug": "oregon-ducks",
+  "teamName": "Oregon Ducks",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 13, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 7, "apPost": 4, "cfpFinal": 4, "coach": "Dan Lanning", "bowl": "Peach Bowl (L)"},
+    {"year": 2024, "wins": 13, "losses": 1, "confWins": 9, "confLosses": 0, "apPre": 3, "apPost": 3, "cfpFinal": 1, "coach": "Dan Lanning", "bowl": "Rose Bowl (L)"},
+    {"year": 2023, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 15, "apPost": 6, "cfpFinal": 8, "coach": "Dan Lanning", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2022, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 11, "apPost": 15, "cfpFinal": null, "coach": "Dan Lanning", "bowl": "Holiday Bowl (W)"},
+    {"year": 2021, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 11, "apPost": 22, "cfpFinal": null, "coach": "Mario Cristobal", "bowl": "Alamo Bowl (L)"},
+    {"year": 2020, "wins": 4, "losses": 3, "confWins": 3, "confLosses": 2, "apPre": 9, "apPost": 15, "cfpFinal": 25, "coach": "Mario Cristobal", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2019, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 11, "apPost": 5, "cfpFinal": 6, "coach": "Mario Cristobal", "bowl": "Rose Bowl (W)"},
+    {"year": 2018, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Mario Cristobal", "bowl": "Redbox Bowl (W)"},
+    {"year": 2017, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Willie Taggart", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2016, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Mark Helfrich", "bowl": null},
+    {"year": 2015, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 19, "cfpFinal": null, "coach": "Mark Helfrich", "bowl": "Alamo Bowl (L)"},
+    {"year": 2014, "wins": 13, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 3, "apPost": 2, "cfpFinal": 2, "coach": "Mark Helfrich", "bowl": "CFP National Championship (L)"},
+    {"year": 2013, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 3, "apPost": 9, "cfpFinal": null, "coach": "Mark Helfrich", "bowl": "Alamo Bowl (W)"},
+    {"year": 2012, "wins": 12, "losses": 1, "confWins": 8, "confLosses": 1, "apPre": 5, "apPost": 2, "cfpFinal": null, "coach": "Chip Kelly", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2011, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 3, "apPost": 4, "cfpFinal": null, "coach": "Chip Kelly", "bowl": "Rose Bowl (W)"},
+    {"year": 2010, "wins": 12, "losses": 1, "confWins": 9, "confLosses": 0, "apPre": 11, "apPost": 3, "cfpFinal": null, "coach": "Chip Kelly", "bowl": "BCS Championship (L)"},
+    {"year": 2009, "wins": 10, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 16, "apPost": 11, "cfpFinal": null, "coach": "Chip Kelly", "bowl": "Rose Bowl (L)"},
+    {"year": 2008, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 21, "apPost": 10, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Holiday Bowl (W)"},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 2, "apPost": 23, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Sun Bowl (W)"},
+    {"year": 2006, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2005, "wins": 10, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 6, "apPost": 12, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Holiday Bowl (L)"},
+    {"year": 2004, "wins": 5, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": null},
+    {"year": 2003, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 10, "apPost": null, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Sun Bowl (L)"},
+    {"year": 2002, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 15, "apPost": null, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Seattle Bowl (L)"},
+    {"year": 2001, "wins": 11, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 7, "apPost": 2, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2000, "wins": 10, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 5, "apPost": 7, "cfpFinal": null, "coach": "Mike Bellotti", "bowl": "Holiday Bowl (W)"}
+  ]
+}

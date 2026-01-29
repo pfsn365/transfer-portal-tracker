@@ -1,0 +1,16 @@
+{
+  "teamId": "ball-state",
+  "teamSlug": "ball-state-cardinals",
+  "teamName": "Ball State Cardinals",
+  "draftPicks": [
+    {"year": 2023, "round": 7, "pick": 250, "name": "Nic Jones", "position": "CB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2020, "round": 5, "pick": 149, "name": "Danny Pinter", "position": "G", "nflTeam": "Indianapolis Colts"},
+    {"year": 2014, "round": 5, "pick": 166, "name": "Jonathan Newsome", "position": "LB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2014, "round": 6, "pick": 194, "name": "Keith Wenning", "position": "QB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2009, "round": 3, "pick": 75, "name": "Robert Brewster", "position": "T", "nflTeam": "Dallas Cowboys"},
+    {"year": 2009, "round": 5, "pick": 171, "name": "Nate Davis", "position": "QB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2005, "round": 6, "pick": 192, "name": "Dante Ridgeway", "position": "WR", "nflTeam": "St. Louis Rams"},
+    {"year": 2005, "round": 6, "pick": 208, "name": "Justin Beriault", "position": "DB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2005, "round": 6, "pick": 210, "name": "Reggie Hodges", "position": "P", "nflTeam": "St. Louis Rams"}
+  ]
+}

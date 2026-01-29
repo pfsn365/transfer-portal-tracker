@@ -1,0 +1,12 @@
+{
+  "teamId": "ulm",
+  "teamSlug": "ulm-warhawks",
+  "teamName": "ULM Warhawks",
+  "draftPicks": [
+    {"year": 2019, "round": 6, "pick": 203, "name": "Marcus Green", "position": "WR", "nflTeam": "Atlanta Falcons"},
+    {"year": 2016, "round": 5, "pick": 173, "name": "Trey Caldwell", "position": "DB", "nflTeam": "Cleveland Browns"},
+    {"year": 2007, "round": 5, "pick": 167, "name": "Kevin Payne", "position": "DB", "nflTeam": "Chicago Bears"},
+    {"year": 2005, "round": 6, "pick": 181, "name": "Chris Harris", "position": "DB", "nflTeam": "Chicago Bears"},
+    {"year": 2000, "round": 5, "pick": 162, "name": "Pat Dennis", "position": "DB", "nflTeam": "Kansas City Chiefs"}
+  ]
+}

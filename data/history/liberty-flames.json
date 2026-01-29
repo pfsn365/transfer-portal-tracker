@@ -1,0 +1,15 @@
+{
+  "teamId": "liberty",
+  "teamSlug": "liberty-flames",
+  "teamName": "Liberty Flames",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jamey Chadwell", "bowl": null},
+    {"year": 2024, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jamey Chadwell", "bowl": "Bahamas Bowl (L)"},
+    {"year": 2023, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": 23, "cfpFinal": 23, "coach": "Jamey Chadwell", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Hugh Freeze / Josh Aldridge", "bowl": "Boca Raton Bowl (L)"},
+    {"year": 2021, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "LendingTree Bowl (W)"},
+    {"year": 2020, "wins": 10, "losses": 1, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": 17, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "Cure Bowl (W)"},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Hugh Freeze", "bowl": "Cure Bowl (W)"},
+    {"year": 2018, "wins": 6, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Turner Gill", "bowl": null}
+  ]
+}

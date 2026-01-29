@@ -1,0 +1,14 @@
+{
+  "teamId": "texas-state",
+  "teamSlug": "texas-state-bobcats",
+  "teamName": "Texas State Bobcats",
+  "draftPicks": [
+    {"year": 2015, "round": 3, "pick": 83, "name": "Craig Mager", "position": "CB", "nflTeam": "San Diego Chargers"},
+    {"year": 2015, "round": 5, "pick": 169, "name": "David Mayo", "position": "LB", "nflTeam": "Carolina Panthers"},
+    {"year": 2006, "round": 7, "pick": 212, "name": "Fred Evans", "position": "DT", "nflTeam": "Miami Dolphins"},
+    {"year": 2002, "round": 6, "pick": 180, "name": "Clenton Ballard", "position": "DT", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2000, "round": 6, "pick": 183, "name": "Spergon Wynn", "position": "QB", "nflTeam": "Cleveland Browns"},
+    {"year": 2000, "round": 7, "pick": 211, "name": "Darrick Vaughn", "position": "DB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2000, "round": 7, "pick": 231, "name": "Clifton Black", "position": "DB", "nflTeam": "Oakland Raiders"}
+  ]
+}

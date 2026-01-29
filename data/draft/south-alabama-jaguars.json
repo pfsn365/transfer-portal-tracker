@@ -1,0 +1,11 @@
+{
+  "teamId": "south-alabama",
+  "teamSlug": "south-alabama-jaguars",
+  "teamName": "South Alabama Jaguars",
+  "draftPicks": [
+    {"year": 2023, "round": 5, "pick": 155, "name": "Darrell Luter", "position": "CB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2022, "round": 3, "pick": 88, "name": "Jalen Tolbert", "position": "WR", "nflTeam": "Dallas Cowboys"},
+    {"year": 2021, "round": 7, "pick": 255, "name": "Kawaan Baker", "position": "WR", "nflTeam": "New Orleans Saints"},
+    {"year": 2017, "round": 2, "pick": 44, "name": "Gerald Everett", "position": "TE", "nflTeam": "Los Angeles Rams"}
+  ]
+}

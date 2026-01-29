@@ -1,0 +1,20 @@
+{
+  "teamId": "kansas-state",
+  "teamSlug": "kansas-state-wildcats",
+  "teamName": "Kansas State Wildcats",
+  "draftPicks": [
+    {"year": 2025, "round": 3, "pick": 84, "name": "Jacob Parrish", "position": "CB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2025, "round": 5, "pick": 151, "name": "DJ Giddens", "position": "RB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2025, "round": 5, "pick": 160, "name": "Marques Sigle", "position": "SAF", "nflTeam": "San Francisco 49ers"},
+    {"year": 2024, "round": 2, "pick": 53, "name": "Ben Sinnott", "position": "TE", "nflTeam": "Washington Commanders"},
+    {"year": 2024, "round": 3, "pick": 73, "name": "Cooper Beebe", "position": "OL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2024, "round": 7, "pick": 254, "name": "KT Leveston", "position": "OL", "nflTeam": "Los Angeles Rams"},
+    {"year": 2023, "round": 1, "pick": 31, "name": "Felix Anudike-Uzomah", "position": "DE", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2023, "round": 2, "pick": 44, "name": "Julius Brents", "position": "DB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2023, "round": 6, "pick": 181, "name": "Josh Hayes", "position": "CB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2023, "round": 6, "pick": 212, "name": "Deuce Vaughn", "position": "RB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2009, "round": 1, "pick": 17, "name": "Josh Freeman", "position": "QB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2008, "round": 2, "pick": 36, "name": "Jordy Nelson", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2003, "round": 1, "pick": 5, "name": "Terence Newman", "position": "DB", "nflTeam": "Dallas Cowboys"}
+  ]
+}

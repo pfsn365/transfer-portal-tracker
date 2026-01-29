@@ -1,0 +1,33 @@
+{
+  "teamId": "virginia",
+  "teamSlug": "virginia-cavaliers",
+  "teamName": "Virginia Cavaliers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 12, "apPost": 14, "cfpFinal": null, "coach": "Tony Elliott", "bowl": "Gator Bowl (W)"},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Elliott", "bowl": null},
+    {"year": 2023, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Elliott", "bowl": null},
+    {"year": 2022, "wins": 3, "losses": 7, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Elliott", "bowl": null},
+    {"year": 2021, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": null},
+    {"year": 2020, "wins": 5, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": null},
+    {"year": 2019, "wins": 9, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": 18, "apPost": 24, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Orange Bowl (L)"},
+    {"year": 2018, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 23, "apPost": 25, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Belk Bowl (W)"},
+    {"year": 2017, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": "Military Bowl (L)"},
+    {"year": 2016, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": null},
+    {"year": 2015, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike London", "bowl": null},
+    {"year": 2014, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike London", "bowl": null},
+    {"year": 2013, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike London", "bowl": null},
+    {"year": 2012, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike London", "bowl": null},
+    {"year": 2011, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": 24, "cfpFinal": null, "coach": "Mike London", "bowl": "Chick-fil-A Bowl (L)"},
+    {"year": 2010, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike London", "bowl": null},
+    {"year": 2009, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Groh", "bowl": null},
+    {"year": 2008, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Groh", "bowl": null},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Al Groh", "bowl": "Gator Bowl (L)"},
+    {"year": 2006, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Groh", "bowl": null},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": 25, "apPost": 19, "cfpFinal": null, "coach": "Al Groh", "bowl": "Music City Bowl (W)"},
+    {"year": 2004, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 16, "apPost": 6, "cfpFinal": null, "coach": "Al Groh", "bowl": "MPC Computers Bowl (L)"},
+    {"year": 2003, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 18, "apPost": 15, "cfpFinal": null, "coach": "Al Groh", "bowl": "Continental Tire Bowl (W)"},
+    {"year": 2002, "wins": 9, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": 22, "apPost": 22, "cfpFinal": null, "coach": "Al Groh", "bowl": "Continental Tire Bowl (W)"},
+    {"year": 2001, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Groh", "bowl": null},
+    {"year": 2000, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "George Welsh", "bowl": "Oahu Classic (L)"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "teamId": "louisiana-tech",
+  "teamSlug": "louisiana-tech-bulldogs",
+  "teamName": "Louisiana Tech Bulldogs",
+  "draftPicks": [
+    {"year": 2021, "round": 3, "pick": 73, "name": "Milton Williams", "position": "DL", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2020, "round": 4, "pick": 138, "name": "L'Jarius Sneed", "position": "S", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2020, "round": 4, "pick": 139, "name": "Amik Robertson", "position": "CB", "nflTeam": "Las Vegas Raiders"},
+    {"year": 2019, "round": 3, "pick": 85, "name": "Jaylon Ferguson", "position": "DE", "nflTeam": "Baltimore Ravens"},
+    {"year": 2018, "round": 6, "pick": 201, "name": "Boston Scott", "position": "RB", "nflTeam": "New Orleans Saints"},
+    {"year": 2017, "round": 3, "pick": 82, "name": "Carlos Henderson", "position": "WR", "nflTeam": "Denver Broncos"},
+    {"year": 2017, "round": 5, "pick": 177, "name": "Trent Taylor", "position": "WR", "nflTeam": "San Francisco 49ers"},
+    {"year": 2017, "round": 6, "pick": 191, "name": "Xavier Woods", "position": "S", "nflTeam": "Dallas Cowboys"},
+    {"year": 2016, "round": 1, "pick": 30, "name": "Vernon Butler", "position": "DT", "nflTeam": "Carolina Panthers"},
+    {"year": 2016, "round": 4, "pick": 134, "name": "Kenneth Dixon", "position": "RB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2016, "round": 6, "pick": 207, "name": "Jeff Driskel", "position": "QB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2014, "round": 4, "pick": 107, "name": "Justin Ellis", "position": "DT", "nflTeam": "Oakland Raiders"},
+    {"year": 2014, "round": 6, "pick": 210, "name": "IK Enemkpali", "position": "DT", "nflTeam": "New York Jets"},
+    {"year": 2013, "round": 4, "pick": 128, "name": "Quinton Patton", "position": "WR", "nflTeam": "San Francisco 49ers"},
+    {"year": 2013, "round": 5, "pick": 163, "name": "Jordan Mills", "position": "T", "nflTeam": "Chicago Bears"},
+    {"year": 2010, "round": 3, "pick": 74, "name": "D'Anthony Smith", "position": "DT", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2010, "round": 6, "pick": 174, "name": "Dennis Morris", "position": "RB", "nflTeam": "Washington Redskins"},
+    {"year": 2007, "round": 7, "pick": 254, "name": "Jonathan Holland", "position": "WR", "nflTeam": "Oakland Raiders"},
+    {"year": 2005, "round": 3, "pick": 77, "name": "Ryan Moats", "position": "RB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2004, "round": 4, "pick": 106, "name": "Luke McCown", "position": "QB", "nflTeam": "Cleveland Browns"},
+    {"year": 2004, "round": 5, "pick": 137, "name": "Josh Scobee", "position": "K", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2002, "round": 5, "pick": 140, "name": "Bobby Gray", "position": "DB", "nflTeam": "Chicago Bears"},
+    {"year": 2000, "round": 4, "pick": 123, "name": "Joey Chustz", "position": "T", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2000, "round": 7, "pick": 212, "name": "Tim Rattay", "position": "QB", "nflTeam": "San Francisco 49ers"}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "teamId": "utah",
+  "teamSlug": "utah-utes",
+  "teamName": "Utah Utes",
+  "draftPicks": [
+    {"year": 2025, "round": 7, "pick": 241, "name": "Caleb Lohner", "position": "TE", "nflTeam": "Denver Broncos"},
+    {"year": 2024, "round": 2, "pick": 60, "name": "Cole Bishop", "position": "SAF", "nflTeam": "Buffalo Bills"},
+    {"year": 2024, "round": 3, "pick": 76, "name": "Jonah Elliss", "position": "DE", "nflTeam": "Denver Broncos"},
+    {"year": 2024, "round": 4, "pick": 132, "name": "Sione Vaki", "position": "SAF", "nflTeam": "Detroit Lions"},
+    {"year": 2024, "round": 6, "pick": 179, "name": "Sataoa Laumea", "position": "OL", "nflTeam": "Seattle Seahawks"},
+    {"year": 2024, "round": 7, "pick": 235, "name": "Devaughn Vele", "position": "WR", "nflTeam": "Denver Broncos"},
+    {"year": 2023, "round": 1, "pick": 25, "name": "Dalton Kincaid", "position": "TE", "nflTeam": "Buffalo Bills"},
+    {"year": 2023, "round": 4, "pick": 113, "name": "Clark Phillips", "position": "CB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2023, "round": 4, "pick": 118, "name": "Braeden Daniels", "position": "OL", "nflTeam": "Washington Commanders"},
+    {"year": 2022, "round": 1, "pick": 27, "name": "Devin Lloyd", "position": "LB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2020, "round": 2, "pick": 50, "name": "Jaylon Johnson", "position": "CB", "nflTeam": "Chicago Bears"},
+    {"year": 2020, "round": 3, "pick": 85, "name": "Julian Blackmon", "position": "SAF", "nflTeam": "Indianapolis Colts"},
+    {"year": 2020, "round": 3, "pick": 86, "name": "Zack Moss", "position": "RB", "nflTeam": "Buffalo Bills"},
+    {"year": 2020, "round": 3, "pick": 104, "name": "Terrell Burgess", "position": "SAF", "nflTeam": "Los Angeles Rams"},
+    {"year": 2020, "round": 4, "pick": 114, "name": "Leki Fotu", "position": "DT", "nflTeam": "Arizona Cardinals"},
+    {"year": 2020, "round": 5, "pick": 179, "name": "Bradlee Anae", "position": "DE", "nflTeam": "Dallas Cowboys"},
+    {"year": 2020, "round": 6, "pick": 197, "name": "John Penisini", "position": "DT", "nflTeam": "Detroit Lions"}
+  ]
+}

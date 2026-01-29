@@ -1,0 +1,21 @@
+{
+  "teamId": "miami",
+  "teamSlug": "miami-hurricanes",
+  "teamName": "Miami Hurricanes",
+  "draftPicks": [
+    {"year": 2025, "round": 1, "pick": 1, "name": "Cam Ward", "position": "QB", "nflTeam": "Tennessee Titans"},
+    {"year": 2025, "round": 2, "pick": 50, "name": "Elijah Arroyo", "position": "TE", "nflTeam": "Seattle Seahawks"},
+    {"year": 2025, "round": 5, "pick": 153, "name": "Jalen Rivers", "position": "OL", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2025, "round": 5, "pick": 162, "name": "Francisco Mauigoa", "position": "LB", "nflTeam": "New York Jets"},
+    {"year": 2025, "round": 5, "pick": 176, "name": "Tyler Baron", "position": "DE", "nflTeam": "New York Jets"},
+    {"year": 2025, "round": 6, "pick": 182, "name": "Andres Borregales", "position": "K", "nflTeam": "New England Patriots"},
+    {"year": 2025, "round": 7, "pick": 223, "name": "Damien Martinez", "position": "RB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2024, "round": 3, "pick": 99, "name": "Kamren Kinchens", "position": "SAF", "nflTeam": "Los Angeles Rams"},
+    {"year": 2024, "round": 7, "pick": 226, "name": "Jaden Davis", "position": "DB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2024, "round": 7, "pick": 237, "name": "Matt Lee", "position": "C", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2024, "round": 7, "pick": 242, "name": "James Williams", "position": "SAF", "nflTeam": "Tennessee Titans"},
+    {"year": 2023, "round": 2, "pick": 56, "name": "Tyrique Stevenson", "position": "CB", "nflTeam": "Chicago Bears"},
+    {"year": 2023, "round": 5, "pick": 162, "name": "Will Mallory", "position": "TE", "nflTeam": "Indianapolis Colts"},
+    {"year": 2023, "round": 7, "pick": 246, "name": "DJ Ivey", "position": "CB", "nflTeam": "Cincinnati Bengals"}
+  ]
+}

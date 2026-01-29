@@ -14,6 +14,9 @@ import OverviewTab from '@/components/cfb-tabs/OverviewTab';
 import RosterTab from '@/components/cfb-tabs/RosterTab';
 import ScheduleTab from '@/components/cfb-tabs/ScheduleTab';
 import TransfersTab from '@/components/cfb-tabs/TransfersTab';
+import StatsTab from '@/components/cfb-tabs/StatsTab';
+import HistoryTab from '@/components/cfb-tabs/HistoryTab';
+import DraftTab from '@/components/cfb-tabs/DraftTab';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface CFBTeamPageProps {
@@ -177,6 +180,12 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
         return <ScheduleTab team={team} teamColor={teamColor} initialSchedule={schedule} />;
       case 'transfers':
         return <TransfersTab team={team} teamColor={teamColor} />;
+      case 'stats':
+        return <StatsTab team={team} teamColor={teamColor} />;
+      case 'history':
+        return <HistoryTab team={team} teamColor={teamColor} />;
+      case 'draft':
+        return <DraftTab team={team} teamColor={teamColor} />;
       default:
         return <OverviewTab team={team} schedule={schedule} teamColor={teamColor} />;
     }

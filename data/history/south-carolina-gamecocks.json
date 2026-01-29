@@ -1,0 +1,33 @@
+{
+  "teamId": "south-carolina",
+  "teamSlug": "south-carolina-gamecocks",
+  "teamName": "South Carolina Gamecocks",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": 13, "apPost": null, "cfpFinal": null, "coach": "Shane Beamer", "bowl": null},
+    {"year": 2024, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 13, "apPost": 14, "cfpFinal": null, "coach": "Shane Beamer", "bowl": "Citrus Bowl (L)"},
+    {"year": 2023, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shane Beamer", "bowl": null},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 20, "apPost": 19, "cfpFinal": null, "coach": "Shane Beamer", "bowl": "Gator Bowl (L)"},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shane Beamer", "bowl": "Duke's Mayo Bowl (W)"},
+    {"year": 2020, "wins": 2, "losses": 8, "confWins": 2, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Muschamp / Mike Bobo", "bowl": null},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Muschamp", "bowl": null},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Will Muschamp", "bowl": "Belk Bowl (L)"},
+    {"year": 2017, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Will Muschamp", "bowl": "Outback Bowl (W)"},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Will Muschamp", "bowl": "Birmingham Bowl (L)"},
+    {"year": 2015, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier / Shawn Elliott", "bowl": null},
+    {"year": 2014, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Independence Bowl (W)"},
+    {"year": 2013, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 6, "apPost": 4, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Capital One Bowl (W)"},
+    {"year": 2012, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 9, "apPost": 8, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Outback Bowl (W)"},
+    {"year": 2011, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 12, "apPost": 9, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Capital One Bowl (W)"},
+    {"year": 2010, "wins": 9, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 10, "apPost": 22, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Chick-fil-A Bowl (L)"},
+    {"year": 2009, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "PapaJohns.com Bowl (L)"},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Outback Bowl (L)"},
+    {"year": 2007, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 6, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": null},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Liberty Bowl (W)"},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 19, "apPost": null, "cfpFinal": null, "coach": "Steve Spurrier", "bowl": "Independence Bowl (L)"},
+    {"year": 2004, "wins": 6, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Lou Holtz", "bowl": null},
+    {"year": 2003, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Lou Holtz", "bowl": null},
+    {"year": 2002, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Lou Holtz", "bowl": null},
+    {"year": 2001, "wins": 9, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 21, "apPost": 13, "cfpFinal": null, "coach": "Lou Holtz", "bowl": "Outback Bowl (W)"},
+    {"year": 2000, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 17, "apPost": 19, "cfpFinal": null, "coach": "Lou Holtz", "bowl": "Outback Bowl (W)"}
+  ]
+}

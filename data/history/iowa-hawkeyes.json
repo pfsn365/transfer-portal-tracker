@@ -1,0 +1,33 @@
+{
+  "teamId": "iowa",
+  "teamSlug": "iowa-hawkeyes",
+  "teamName": "Iowa Hawkeyes",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 17, "apPost": 20, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "ReliaQuest Bowl (W)"},
+    {"year": 2024, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 3, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Music City Bowl (L)"},
+    {"year": 2023, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 25, "apPost": 17, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Citrus Bowl (L)"},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Music City Bowl (W)"},
+    {"year": 2021, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 18, "apPost": 15, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Citrus Bowl (L)"},
+    {"year": 2020, "wins": 6, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 24, "apPost": 15, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": null},
+    {"year": 2019, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 3, "apPre": 20, "apPost": 16, "cfpFinal": 15, "coach": "Kirk Ferentz", "bowl": "Holiday Bowl (W)"},
+    {"year": 2018, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 18, "apPost": 16, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Outback Bowl (W)"},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Pinstripe Bowl (W)"},
+    {"year": 2016, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 3, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Outback Bowl (L)"},
+    {"year": 2015, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 3, "apPost": null, "cfpFinal": 5, "coach": "Kirk Ferentz", "bowl": "Rose Bowl (L)"},
+    {"year": 2014, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "TaxSlayer Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Outback Bowl (L)"},
+    {"year": 2012, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": null},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Insight Bowl (L)"},
+    {"year": 2010, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Insight Bowl (W)"},
+    {"year": 2009, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Orange Bowl (W)"},
+    {"year": 2008, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Outback Bowl (W)"},
+    {"year": 2007, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": null},
+    {"year": 2006, "wins": 6, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Alamo Bowl (L)"},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 11, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Outback Bowl (L)"},
+    {"year": 2004, "wins": 10, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 19, "apPost": 8, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Capital One Bowl (W)"},
+    {"year": 2003, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 8, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Outback Bowl (W)"},
+    {"year": 2002, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 3, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Orange Bowl (L)"},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": "Alamo Bowl (W)"},
+    {"year": 2000, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kirk Ferentz", "bowl": null}
+  ]
+}

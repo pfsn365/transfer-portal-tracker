@@ -1,0 +1,33 @@
+{
+  "teamId": "ucla",
+  "teamSlug": "ucla-bruins",
+  "teamName": "UCLA Bruins",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Deshaun Foster / Tim Skipper", "bowl": null},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Deshaun Foster", "bowl": null},
+    {"year": 2023, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": 18, "apPost": 19, "cfpFinal": null, "coach": "Chip Kelly", "bowl": "LA Bowl (W)"},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 9, "apPost": 18, "cfpFinal": null, "coach": "Chip Kelly", "bowl": "Sun Bowl (L)"},
+    {"year": 2021, "wins": 8, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": null, "apPost": 13, "cfpFinal": null, "coach": "Chip Kelly", "bowl": null},
+    {"year": 2020, "wins": 3, "losses": 4, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chip Kelly", "bowl": null},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chip Kelly", "bowl": null},
+    {"year": 2018, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chip Kelly", "bowl": null},
+    {"year": 2017, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim Mora / Jedd Fisch", "bowl": "Cactus Bowl (L)"},
+    {"year": 2016, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Jim Mora", "bowl": null},
+    {"year": 2015, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 13, "apPost": 19, "cfpFinal": null, "coach": "Jim Mora", "bowl": "Foster Farms Bowl (L)"},
+    {"year": 2014, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 3, "apPre": 7, "apPost": 14, "cfpFinal": null, "coach": "Jim Mora", "bowl": "Alamo Bowl (W)"},
+    {"year": 2013, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 3, "apPre": 21, "apPost": 16, "cfpFinal": null, "coach": "Jim Mora", "bowl": "Sun Bowl (W)"},
+    {"year": 2012, "wins": 9, "losses": 5, "confWins": 6, "confLosses": 3, "apPre": null, "apPost": 15, "cfpFinal": null, "coach": "Jim Mora", "bowl": "Holiday Bowl (L)"},
+    {"year": 2011, "wins": 6, "losses": 8, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Neuheisel / Mike Johnson", "bowl": "Fight Hunger Bowl (L)"},
+    {"year": 2010, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Neuheisel", "bowl": null},
+    {"year": 2009, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Neuheisel", "bowl": "EagleBank Bowl (W)"},
+    {"year": 2008, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 6, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Rick Neuheisel", "bowl": null},
+    {"year": 2007, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 4, "apPre": 14, "apPost": null, "cfpFinal": null, "coach": "Karl Dorrell / DeWayne Walker", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2006, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Karl Dorrell", "bowl": "Emerald Bowl (L)"},
+    {"year": 2005, "wins": 10, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 7, "apPost": 16, "cfpFinal": null, "coach": "Karl Dorrell", "bowl": "Sun Bowl (W)"},
+    {"year": 2004, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Karl Dorrell", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2003, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Karl Dorrell", "bowl": "Silicon Valley Bowl (L)"},
+    {"year": 2002, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo / Ed Kezirian", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2001, "wins": 7, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo", "bowl": null},
+    {"year": 2000, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 6, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo", "bowl": "Sun Bowl (L)"}
+  ]
+}

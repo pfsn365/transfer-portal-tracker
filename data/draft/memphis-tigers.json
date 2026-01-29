@@ -1,0 +1,33 @@
+{
+  "teamId": "memphis",
+  "teamSlug": "memphis-tigers",
+  "teamName": "Memphis Tigers",
+  "draftPicks": [
+    {"year": 2025, "round": 7, "pick": 257, "name": "Kobee Minor", "position": "DB", "nflTeam": "New England Patriots"},
+    {"year": 2022, "round": 3, "pick": 90, "name": "Dylan Parham", "position": "OL", "nflTeam": "Las Vegas Raiders"},
+    {"year": 2022, "round": 4, "pick": 138, "name": "Calvin Austin III", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2021, "round": 5, "pick": 150, "name": "Kenneth Gainwell", "position": "RB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2020, "round": 3, "pick": 66, "name": "Antonio Gibson", "position": "RB", "nflTeam": "Washington Football Team"},
+    {"year": 2020, "round": 7, "pick": 223, "name": "Chris Claybrooks", "position": "CB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2020, "round": 7, "pick": 230, "name": "Dustin Woodard", "position": "C", "nflTeam": "New England Patriots"},
+    {"year": 2019, "round": 3, "pick": 70, "name": "Darrell Henderson", "position": "RB", "nflTeam": "Los Angeles Rams"},
+    {"year": 2019, "round": 4, "pick": 128, "name": "Tony Pollard", "position": "RB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2018, "round": 2, "pick": 51, "name": "Anthony Miller", "position": "WR", "nflTeam": "Chicago Bears"},
+    {"year": 2018, "round": 5, "pick": 150, "name": "Genard Avery", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2017, "round": 5, "pick": 153, "name": "Jake Elliott", "position": "K", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2016, "round": 1, "pick": 26, "name": "Paxton Lynch", "position": "QB", "nflTeam": "Denver Broncos"},
+    {"year": 2015, "round": 5, "pick": 145, "name": "Bobby McCain", "position": "CB", "nflTeam": "Miami Dolphins"},
+    {"year": 2015, "round": 7, "pick": 227, "name": "Martin Ifedi", "position": "DE", "nflTeam": "St. Louis Rams"},
+    {"year": 2014, "round": 7, "pick": 256, "name": "Lonnie Ballentine", "position": "DB", "nflTeam": "Houston Texans"},
+    {"year": 2012, "round": 1, "pick": 11, "name": "Dontari Poe", "position": "DT", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2009, "round": 7, "pick": 249, "name": "Clinton McDonald", "position": "DT", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2007, "round": 5, "pick": 140, "name": "Brandon McDonald", "position": "DB", "nflTeam": "Cleveland Browns"},
+    {"year": 2006, "round": 1, "pick": 27, "name": "DeAngelo Williams", "position": "RB", "nflTeam": "Carolina Panthers"},
+    {"year": 2006, "round": 4, "pick": 118, "name": "Stephen Gostkowski", "position": "K", "nflTeam": "New England Patriots"},
+    {"year": 2004, "round": 7, "pick": 212, "name": "Eric Taylor", "position": "DT", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2003, "round": 3, "pick": 78, "name": "Wade Smith", "position": "OL", "nflTeam": "Miami Dolphins"},
+    {"year": 2001, "round": 2, "pick": 37, "name": "Idrees Bashir", "position": "DB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2001, "round": 2, "pick": 54, "name": "Michael Stone", "position": "DB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2001, "round": 4, "pick": 123, "name": "Marcus Bell", "position": "DT", "nflTeam": "Arizona Cardinals"}
+  ]
+}

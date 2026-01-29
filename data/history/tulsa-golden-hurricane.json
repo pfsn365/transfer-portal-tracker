@@ -1,0 +1,33 @@
+{
+  "teamId": "tulsa",
+  "teamSlug": "tulsa-golden-hurricane",
+  "teamName": "Tulsa Golden Hurricane",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tre Lamb", "bowl": null},
+    {"year": 2024, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Wilson / Ryan Switzer", "bowl": null},
+    {"year": 2023, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Wilson", "bowl": null},
+    {"year": 2022, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": null},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": "Myrtle Beach Bowl (W)"},
+    {"year": 2020, "wins": 6, "losses": 3, "confWins": 6, "confLosses": 0, "apPre": 18, "apPost": 24, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": null},
+    {"year": 2018, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": null},
+    {"year": 2017, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": null},
+    {"year": 2016, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": "Miami Beach Bowl (W)"},
+    {"year": 2015, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Philip Montgomery", "bowl": "Independence Bowl (L)"},
+    {"year": 2014, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Blankenship", "bowl": null},
+    {"year": 2013, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Blankenship", "bowl": null},
+    {"year": 2012, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Blankenship", "bowl": "Liberty Bowl (W)"},
+    {"year": 2011, "wins": 8, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Blankenship", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2010, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": 24, "cfpFinal": null, "coach": "Todd Graham", "bowl": "Hawaii Bowl (W)"},
+    {"year": 2009, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Graham", "bowl": null},
+    {"year": 2008, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 19, "cfpFinal": null, "coach": "Todd Graham", "bowl": "GMAC Bowl (W)"},
+    {"year": 2007, "wins": 10, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Graham", "bowl": "GMAC Bowl (W)"},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2005, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": "Liberty Bowl (W)"},
+    {"year": 2004, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": null},
+    {"year": 2003, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": "Humanitarian Bowl (L)"},
+    {"year": 2002, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Keith Burns", "bowl": null},
+    {"year": 2001, "wins": 1, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Keith Burns", "bowl": null},
+    {"year": 2000, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Keith Burns", "bowl": null}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamId": "texas-am",
+  "teamSlug": "texas-am-aggies",
+  "teamName": "Texas A&M Aggies",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 19, "apPost": 8, "cfpFinal": 8, "coach": "Mike Elko", "bowl": "CFP First Round (L)"},
+    {"year": 2024, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 20, "apPost": 14, "cfpFinal": null, "coach": "Mike Elko", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2023, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Jimbo Fisher / Elijah Robinson", "bowl": "Texas Bowl (L)"},
+    {"year": 2022, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": 6, "apPost": null, "cfpFinal": null, "coach": "Jimbo Fisher", "bowl": null},
+    {"year": 2021, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 6, "apPost": 11, "cfpFinal": null, "coach": "Jimbo Fisher", "bowl": null},
+    {"year": 2020, "wins": 9, "losses": 1, "confWins": 8, "confLosses": 1, "apPre": 13, "apPost": 4, "cfpFinal": 5, "coach": "Jimbo Fisher", "bowl": "Orange Bowl (W)"},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 12, "apPost": null, "cfpFinal": null, "coach": "Jimbo Fisher", "bowl": "Texas Bowl (W)"},
+    {"year": 2018, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 16, "apPost": 19, "cfpFinal": null, "coach": "Jimbo Fisher", "bowl": "Gator Bowl (W)"},
+    {"year": 2017, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin / Jeff Banks", "bowl": "Belk Bowl (L)"},
+    {"year": 2016, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 6, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Texas Bowl (L)"},
+    {"year": 2015, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 9, "apPost": 19, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Music City Bowl (L)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": 21, "apPost": 24, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Liberty Bowl (W)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 7, "apPost": 18, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Chick-fil-A Bowl (W)"},
+    {"year": 2012, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 5, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": "Cotton Bowl (W)"},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 8, "apPost": null, "cfpFinal": null, "coach": "Mike Sherman / Tim DeRuyter", "bowl": "Meineke Car Care Bowl (W)"},
+    {"year": 2010, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 17, "apPost": 19, "cfpFinal": null, "coach": "Mike Sherman", "bowl": "Cotton Bowl (L)"},
+    {"year": 2009, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Sherman", "bowl": "Independence Bowl (L)"},
+    {"year": 2008, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Sherman", "bowl": null},
+    {"year": 2007, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Dennis Franchione / Gary Darnell", "bowl": "Alamo Bowl (L)"},
+    {"year": 2006, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": 21, "cfpFinal": null, "coach": "Dennis Franchione", "bowl": "Holiday Bowl (L)"},
+    {"year": 2005, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Dennis Franchione", "bowl": null},
+    {"year": 2004, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Dennis Franchione", "bowl": "Cotton Bowl (L)"},
+    {"year": 2003, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dennis Franchione", "bowl": null},
+    {"year": 2002, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "R.C. Slocum", "bowl": null},
+    {"year": 2001, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 24, "cfpFinal": null, "coach": "R.C. Slocum", "bowl": "Gallery Furniture Bowl (W)"},
+    {"year": 2000, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "R.C. Slocum", "bowl": "Independence Bowl (L)"}
+  ]
+}

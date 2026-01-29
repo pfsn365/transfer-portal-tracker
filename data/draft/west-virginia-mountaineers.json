@@ -1,0 +1,28 @@
+{
+  "teamId": "west-virginia",
+  "teamSlug": "west-virginia-mountaineers",
+  "teamName": "West Virginia Mountaineers",
+  "draftPicks": [
+    {"year": 2025, "round": 3, "pick": 89, "name": "Wyatt Milum", "position": "OL", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2024, "round": 2, "pick": 51, "name": "Zach Frazier", "position": "OL", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2023, "round": 6, "pick": 213, "name": "Dante Stills", "position": "DT", "nflTeam": "Arizona Cardinals"},
+    {"year": 2021, "round": 5, "pick": 153, "name": "Tony Fields", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2020, "round": 5, "pick": 152, "name": "Kenny Robinson Jr.", "position": "SAF", "nflTeam": "Carolina Panthers"},
+    {"year": 2020, "round": 5, "pick": 153, "name": "Colton McKivitz", "position": "OL", "nflTeam": "San Francisco 49ers"},
+    {"year": 2019, "round": 3, "pick": 100, "name": "Will Grier", "position": "QB", "nflTeam": "Carolina Panthers"},
+    {"year": 2019, "round": 3, "pick": 101, "name": "Yodny Cajuste", "position": "OL", "nflTeam": "New England Patriots"},
+    {"year": 2018, "round": 4, "pick": 119, "name": "Kyzir White", "position": "SAF", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2017, "round": 3, "pick": 99, "name": "Rasul Douglas", "position": "CB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2017, "round": 5, "pick": 166, "name": "Shelton Gibson", "position": "WR", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2016, "round": 1, "pick": 14, "name": "Karl Joseph", "position": "SAF", "nflTeam": "Oakland Raiders"},
+    {"year": 2015, "round": 1, "pick": 7, "name": "Kevin White", "position": "WR", "nflTeam": "Chicago Bears"},
+    {"year": 2013, "round": 1, "pick": 8, "name": "Tavon Austin", "position": "WR", "nflTeam": "St. Louis Rams"},
+    {"year": 2013, "round": 2, "pick": 39, "name": "Geno Smith", "position": "QB", "nflTeam": "New York Jets"},
+    {"year": 2012, "round": 1, "pick": 15, "name": "Bruce Irvin", "position": "DE", "nflTeam": "Seattle Seahawks"},
+    {"year": 2009, "round": 2, "pick": 44, "name": "Pat White", "position": "QB", "nflTeam": "Miami Dolphins"},
+    {"year": 2009, "round": 7, "pick": 222, "name": "Pat McAfee", "position": "K", "nflTeam": "Indianapolis Colts"},
+    {"year": 2008, "round": 3, "pick": 89, "name": "Steve Slaton", "position": "RB", "nflTeam": "Houston Texans"},
+    {"year": 2008, "round": 6, "pick": 193, "name": "Ryan Mundy", "position": "DB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2005, "round": 1, "pick": 6, "name": "Adam Jones", "position": "DB", "nflTeam": "Tennessee Titans"}
+  ]
+}

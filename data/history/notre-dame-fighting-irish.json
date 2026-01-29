@@ -1,0 +1,33 @@
+{
+  "teamId": "notre-dame",
+  "teamSlug": "notre-dame-fighting-irish",
+  "teamName": "Notre Dame Fighting Irish",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 10, "losses": 2, "confWins": 0, "confLosses": 0, "apPre": 6, "apPost": 11, "cfpFinal": null, "coach": "Marcus Freeman", "bowl": null},
+    {"year": 2024, "wins": 14, "losses": 2, "confWins": 0, "confLosses": 0, "apPre": 7, "apPost": 2, "cfpFinal": 5, "coach": "Marcus Freeman", "bowl": "CFP National Championship (L)"},
+    {"year": 2023, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 13, "apPost": 14, "cfpFinal": null, "coach": "Marcus Freeman", "bowl": "Sun Bowl (W)"},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": 5, "apPost": 18, "cfpFinal": null, "coach": "Marcus Freeman", "bowl": "Gator Bowl (W)"},
+    {"year": 2021, "wins": 11, "losses": 2, "confWins": 0, "confLosses": 0, "apPre": 9, "apPost": 8, "cfpFinal": 5, "coach": "Brian Kelly", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2020, "wins": 10, "losses": 2, "confWins": 9, "confLosses": 0, "apPre": 10, "apPost": 5, "cfpFinal": 4, "coach": "Brian Kelly", "bowl": "Rose Bowl (L)"},
+    {"year": 2019, "wins": 11, "losses": 2, "confWins": 0, "confLosses": 0, "apPre": 9, "apPost": 12, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Camping World Bowl (W)"},
+    {"year": 2018, "wins": 12, "losses": 1, "confWins": 0, "confLosses": 0, "apPre": 12, "apPost": 5, "cfpFinal": 3, "coach": "Brian Kelly", "bowl": "Cotton Bowl (L)"},
+    {"year": 2017, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 3, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Citrus Bowl (W)"},
+    {"year": 2016, "wins": 4, "losses": 8, "confWins": 0, "confLosses": 0, "apPre": 10, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": null},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 11, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Music City Bowl (W)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": 14, "apPost": 20, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Pinstripe Bowl (W)"},
+    {"year": 2012, "wins": 12, "losses": 1, "confWins": 0, "confLosses": 0, "apPre": 1, "apPost": 4, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "BCS Championship (L)"},
+    {"year": 2011, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Champs Sports Bowl (L)"},
+    {"year": 2010, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Sun Bowl (W)"},
+    {"year": 2009, "wins": 6, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Charlie Weis", "bowl": null},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weis", "bowl": "Hawaii Bowl (W)"},
+    {"year": 2007, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weis", "bowl": null},
+    {"year": 2006, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 2, "apPost": 17, "cfpFinal": null, "coach": "Charlie Weis", "bowl": "Sugar Bowl (L)"},
+    {"year": 2005, "wins": 9, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 5, "apPost": 9, "cfpFinal": null, "coach": "Charlie Weis", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2004, "wins": 6, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Tyrone Willingham", "bowl": "Insight Bowl (L)"},
+    {"year": 2003, "wins": 5, "losses": 7, "confWins": 0, "confLosses": 0, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "Tyrone Willingham", "bowl": null},
+    {"year": 2002, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 4, "apPost": 17, "cfpFinal": null, "coach": "Tyrone Willingham", "bowl": "Gator Bowl (L)"},
+    {"year": 2001, "wins": 5, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2000, "wins": 9, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": 10, "apPost": 15, "cfpFinal": null, "coach": "Bob Davie", "bowl": "Fiesta Bowl (L)"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamId": "arizona",
+  "teamSlug": "arizona-wildcats",
+  "teamName": "Arizona Wildcats",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 21, "apPost": 17, "cfpFinal": null, "coach": "Brent Brennan", "bowl": "Holiday Bowl (L)"},
+    {"year": 2024, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Brent Brennan", "bowl": null},
+    {"year": 2023, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 11, "apPost": 14, "cfpFinal": null, "coach": "Jedd Fisch", "bowl": "Alamo Bowl (W)"},
+    {"year": 2022, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jedd Fisch", "bowl": null},
+    {"year": 2021, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jedd Fisch", "bowl": null},
+    {"year": 2020, "wins": 0, "losses": 5, "confWins": 0, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": null},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": null},
+    {"year": 2018, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kevin Sumlin", "bowl": null},
+    {"year": 2017, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 4, "apPre": 23, "apPost": 22, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "Foster Farms Bowl (L)"},
+    {"year": 2016, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": null},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 6, "apPre": 22, "apPost": 16, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2014, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 8, "apPost": 10, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "AdvoCare V100 Bowl (W)"},
+    {"year": 2012, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2011, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops / Tim Kish", "bowl": null},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops", "bowl": "Alamo Bowl (L)"},
+    {"year": 2009, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 3, "apPre": null, "apPost": 18, "cfpFinal": null, "coach": "Mike Stoops", "bowl": "Holiday Bowl (L)"},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops", "bowl": null},
+    {"year": 2006, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops", "bowl": null},
+    {"year": 2005, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops", "bowl": null},
+    {"year": 2004, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Stoops", "bowl": null},
+    {"year": 2003, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Mackovic / Mike Hankwitz", "bowl": null},
+    {"year": 2002, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Mackovic", "bowl": null},
+    {"year": 2001, "wins": 5, "losses": 6, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Mackovic", "bowl": null},
+    {"year": 2000, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Dick Tomey", "bowl": null}
+  ]
+}

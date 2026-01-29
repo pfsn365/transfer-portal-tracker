@@ -1,0 +1,13 @@
+{
+  "teamId": "james-madison",
+  "teamSlug": "james-madison-dukes",
+  "teamName": "James Madison Dukes",
+  "draftPicks": [
+    {"year": 2020, "round": 7, "pick": 231, "name": "Ben DiNucci", "position": "QB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2019, "round": 7, "pick": 227, "name": "Jimmy Moreland", "position": "CB", "nflTeam": "Washington Redskins"},
+    {"year": 2013, "round": 4, "pick": 116, "name": "Earl Watford", "position": "OL", "nflTeam": "Arizona Cardinals"},
+    {"year": 2010, "round": 6, "pick": 178, "name": "Arthur Moats", "position": "LB", "nflTeam": "Buffalo Bills"},
+    {"year": 2010, "round": 6, "pick": 203, "name": "Scotty McGee", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2000, "round": 4, "pick": 97, "name": "Curtis Keaton", "position": "RB", "nflTeam": "Cincinnati Bengals"}
+  ]
+}

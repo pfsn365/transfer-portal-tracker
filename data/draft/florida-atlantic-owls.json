@@ -1,0 +1,17 @@
+{
+  "teamId": "florida-atlantic",
+  "teamSlug": "florida-atlantic-owls",
+  "teamName": "Florida Atlantic Owls",
+  "draftPicks": [
+    {"year": 2020, "round": 4, "pick": 115, "name": "Harrison Bryant", "position": "TE", "nflTeam": "Cleveland Browns"},
+    {"year": 2019, "round": 3, "pick": 74, "name": "Devin Singletary", "position": "RB", "nflTeam": "Buffalo Bills"},
+    {"year": 2019, "round": 7, "pick": 222, "name": "Kerrith Whyte Jr.", "position": "RB", "nflTeam": "Chicago Bears"},
+    {"year": 2017, "round": 3, "pick": 103, "name": "Trey Hendrickson", "position": "OLB", "nflTeam": "New Orleans Saints"},
+    {"year": 2015, "round": 3, "pick": 65, "name": "D'Joun Smith", "position": "CB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2014, "round": 5, "pick": 170, "name": "Keith Reaser", "position": "DB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2014, "round": 7, "pick": 221, "name": "Randell Johnson", "position": "LB", "nflTeam": "Buffalo Bills"},
+    {"year": 2012, "round": 6, "pick": 173, "name": "Alfred Morris", "position": "RB", "nflTeam": "Washington Redskins"},
+    {"year": 2011, "round": 3, "pick": 69, "name": "Rob Housler", "position": "TE", "nflTeam": "Arizona Cardinals"},
+    {"year": 2010, "round": 6, "pick": 176, "name": "Rusty Smith", "position": "QB", "nflTeam": "Tennessee Titans"}
+  ]
+}

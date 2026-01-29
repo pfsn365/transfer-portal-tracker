@@ -1,0 +1,20 @@
+{
+  "teamId": "unlv",
+  "teamSlug": "unlv-rebels",
+  "teamName": "UNLV Rebels",
+  "draftPicks": [
+    {"year": 2025, "round": 7, "pick": 238, "name": "Ricky White", "position": "WR", "nflTeam": "Seattle Seahawks"},
+    {"year": 2010, "round": 4, "pick": 117, "name": "Joe Hawley", "position": "C", "nflTeam": "Atlanta Falcons"},
+    {"year": 2009, "round": 5, "pick": 169, "name": "Frank Summers", "position": "RB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2008, "round": 4, "pick": 104, "name": "Beau Bell", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2007, "round": 2, "pick": 53, "name": "Eric Wright", "position": "DB", "nflTeam": "Cleveland Browns"},
+    {"year": 2005, "round": 5, "pick": 149, "name": "Adam Seward", "position": "LB", "nflTeam": "Carolina Panthers"},
+    {"year": 2005, "round": 5, "pick": 170, "name": "Ryan Claridge", "position": "LB", "nflTeam": "New England Patriots"},
+    {"year": 2004, "round": 7, "pick": 243, "name": "Dominic Furio", "position": "C", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2002, "round": 2, "pick": 60, "name": "Anton Palepoi", "position": "DE", "nflTeam": "Seattle Seahawks"},
+    {"year": 2002, "round": 4, "pick": 131, "name": "Sam Brandon", "position": "DB", "nflTeam": "Denver Broncos"},
+    {"year": 2002, "round": 6, "pick": 176, "name": "Kevin Thomas", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2002, "round": 7, "pick": 261, "name": "Ahmad Miller", "position": "DT", "nflTeam": "Houston Texans"},
+    {"year": 2000, "round": 5, "pick": 155, "name": "Quincy Sanders", "position": "DB", "nflTeam": "Washington Redskins"}
+  ]
+}

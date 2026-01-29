@@ -1,0 +1,24 @@
+{
+  "teamId": "utep",
+  "teamSlug": "utep-miners",
+  "teamName": "UTEP Miners",
+  "draftPicks": [
+    {"year": 2024, "round": 4, "pick": 118, "name": "Tyrice Knight", "position": "LB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2024, "round": 6, "pick": 220, "name": "Elijah Klein", "position": "G", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2018, "round": 2, "pick": 34, "name": "Will Hernandez", "position": "G", "nflTeam": "New York Giants"},
+    {"year": 2017, "round": 5, "pick": 182, "name": "Aaron Jones", "position": "RB", "nflTeam": "Green Bay Packers"},
+    {"year": 2008, "round": 3, "pick": 99, "name": "Oniel Cousins", "position": "G", "nflTeam": "Baltimore Ravens"},
+    {"year": 2008, "round": 4, "pick": 117, "name": "Quintin Demps", "position": "DB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2008, "round": 5, "pick": 166, "name": "Marcus Thomas", "position": "RB", "nflTeam": "San Diego Chargers"},
+    {"year": 2007, "round": 3, "pick": 99, "name": "Johnnie Lee Higgins", "position": "WR", "nflTeam": "Oakland Raiders"},
+    {"year": 2007, "round": 6, "pick": 205, "name": "Jordan Palmer", "position": "QB", "nflTeam": "Washington Redskins"},
+    {"year": 2006, "round": 2, "pick": 38, "name": "Thomas Howard", "position": "LB", "nflTeam": "Oakland Raiders"},
+    {"year": 2005, "round": 7, "pick": 219, "name": "Adrian Ward", "position": "DB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2004, "round": 4, "pick": 131, "name": "Trey Darilek", "position": "G", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2002, "round": 6, "pick": 202, "name": "Lee Mays", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2001, "round": 6, "pick": 191, "name": "Menson Holloway", "position": "DE", "nflTeam": "San Francisco 49ers"},
+    {"year": 2000, "round": 5, "pick": 132, "name": "Paul Smith", "position": "RB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2000, "round": 5, "pick": 139, "name": "Brian Young", "position": "DT", "nflTeam": "St. Louis Rams"},
+    {"year": 2000, "round": 6, "pick": 194, "name": "Leif Larsen", "position": "DT", "nflTeam": "Buffalo Bills"}
+  ]
+}

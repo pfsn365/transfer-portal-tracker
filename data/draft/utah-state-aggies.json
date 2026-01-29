@@ -1,0 +1,25 @@
+{
+  "teamId": "utah-state",
+  "teamSlug": "utah-state-aggies",
+  "teamName": "Utah State Aggies",
+  "draftPicks": [
+    {"year": 2025, "round": 4, "pick": 133, "name": "Jalen Royals", "position": "WR", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2020, "round": 1, "pick": 26, "name": "Jordan Love", "position": "QB", "nflTeam": "Green Bay Packers"},
+    {"year": 2019, "round": 6, "pick": 214, "name": "Darwin Thompson", "position": "RB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2017, "round": 7, "pick": 238, "name": "Devante Mays", "position": "RB", "nflTeam": "Green Bay Packers"},
+    {"year": 2016, "round": 3, "pick": 87, "name": "Nick Vigil", "position": "LB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2016, "round": 3, "pick": 88, "name": "Kyler Fackrell", "position": "LB", "nflTeam": "Green Bay Packers"},
+    {"year": 2014, "round": 4, "pick": 110, "name": "Maurice Alexander", "position": "DB", "nflTeam": "St. Louis Rams"},
+    {"year": 2014, "round": 4, "pick": 133, "name": "Nevin Lawson", "position": "DB", "nflTeam": "Detroit Lions"},
+    {"year": 2013, "round": 3, "pick": 93, "name": "Will Davis", "position": "DB", "nflTeam": "Miami Dolphins"},
+    {"year": 2013, "round": 7, "pick": 230, "name": "Kerwynn Williams", "position": "RB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2012, "round": 2, "pick": 47, "name": "Bobby Wagner", "position": "LB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2012, "round": 4, "pick": 106, "name": "Robert Turbin", "position": "RB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2012, "round": 7, "pick": 212, "name": "Michael Smith", "position": "RB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2011, "round": 3, "pick": 90, "name": "Curtis Marsh", "position": "DB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2008, "round": 4, "pick": 110, "name": "Shawn Murphy", "position": "OL", "nflTeam": "Miami Dolphins"},
+    {"year": 2008, "round": 6, "pick": 182, "name": "Kevin Robinson", "position": "WR", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2004, "round": 3, "pick": 81, "name": "Chris Cooley", "position": "TE", "nflTeam": "Washington Redskins"},
+    {"year": 2003, "round": 3, "pick": 74, "name": "Kevin Curtis", "position": "WR", "nflTeam": "St. Louis Rams"}
+  ]
+}

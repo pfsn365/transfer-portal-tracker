@@ -1,0 +1,25 @@
+{
+  "teamId": "san-jose-state",
+  "teamSlug": "san-jose-state-spartans",
+  "teamName": "San Jose State Spartans",
+  "draftPicks": [
+    {"year": 2023, "round": 4, "pick": 129, "name": "Viliami Fehoko", "position": "DL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2019, "round": 3, "pick": 69, "name": "Josh Oliver", "position": "TE", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2018, "round": 7, "pick": 222, "name": "Jermaine Kelly Jr.", "position": "CB", "nflTeam": "Houston Texans"},
+    {"year": 2016, "round": 4, "pick": 119, "name": "Tyler Ervin", "position": "RB", "nflTeam": "Houston Texans"},
+    {"year": 2016, "round": 6, "pick": 195, "name": "Wes Schweitzer", "position": "OL", "nflTeam": "Atlanta Falcons"},
+    {"year": 2015, "round": 7, "pick": 249, "name": "Akeem King", "position": "DB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2014, "round": 5, "pick": 148, "name": "Bene Benwikere", "position": "DB", "nflTeam": "Carolina Panthers"},
+    {"year": 2014, "round": 6, "pick": 183, "name": "David Fales", "position": "QB", "nflTeam": "Chicago Bears"},
+    {"year": 2013, "round": 6, "pick": 176, "name": "David Quessenberry", "position": "OL", "nflTeam": "Houston Texans"},
+    {"year": 2009, "round": 3, "pick": 68, "name": "Jarron Gilbert", "position": "DT", "nflTeam": "Chicago Bears"},
+    {"year": 2009, "round": 3, "pick": 90, "name": "Chris Owens", "position": "DB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2009, "round": 6, "pick": 191, "name": "Coye Francies", "position": "DB", "nflTeam": "Cleveland Browns"},
+    {"year": 2008, "round": 4, "pick": 113, "name": "Dwight Lowery", "position": "DB", "nflTeam": "New York Jets"},
+    {"year": 2007, "round": 3, "pick": 78, "name": "James Jones", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2007, "round": 7, "pick": 229, "name": "John Broussard", "position": "WR", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2004, "round": 7, "pick": 245, "name": "Courtney Anderson", "position": "TE", "nflTeam": "Oakland Raiders"},
+    {"year": 2003, "round": 6, "pick": 209, "name": "Tim Provost", "position": "OL", "nflTeam": "Miami Dolphins"},
+    {"year": 2001, "round": 3, "pick": 66, "name": "Sean Brewer", "position": "TE", "nflTeam": "Cincinnati Bengals"}
+  ]
+}

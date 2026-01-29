@@ -1,0 +1,31 @@
+{
+  "teamId": "colorado-state",
+  "teamSlug": "colorado-state-rams",
+  "teamName": "Colorado State Rams",
+  "draftPicks": [
+    {"year": 2025, "round": 5, "pick": 166, "name": "Tory Horton", "position": "WR", "nflTeam": "Seattle Seahawks"},
+    {"year": 2024, "round": 5, "pick": 158, "name": "Mohamed Kamara", "position": "DL", "nflTeam": "Miami Dolphins"},
+    {"year": 2022, "round": 2, "pick": 55, "name": "Trey McBride", "position": "TE", "nflTeam": "Arizona Cardinals"},
+    {"year": 2019, "round": 7, "pick": 247, "name": "Olabisi Johnson", "position": "WR", "nflTeam": "Minnesota Vikings"},
+    {"year": 2018, "round": 3, "pick": 81, "name": "Michael Gallup", "position": "WR", "nflTeam": "Dallas Cowboys"},
+    {"year": 2016, "round": 5, "pick": 172, "name": "Rashard Higgins", "position": "WR", "nflTeam": "Cleveland Browns"},
+    {"year": 2016, "round": 6, "pick": 194, "name": "Cory James", "position": "LB", "nflTeam": "Oakland Raiders"},
+    {"year": 2015, "round": 2, "pick": 59, "name": "Ty Sambrailo", "position": "OL", "nflTeam": "Denver Broncos"},
+    {"year": 2015, "round": 3, "pick": 75, "name": "Garrett Grayson", "position": "QB", "nflTeam": "New Orleans Saints"},
+    {"year": 2014, "round": 2, "pick": 43, "name": "Weston Richburg", "position": "OL", "nflTeam": "New York Giants"},
+    {"year": 2014, "round": 3, "pick": 99, "name": "Crockett Gillmore", "position": "TE", "nflTeam": "Baltimore Ravens"},
+    {"year": 2010, "round": 6, "pick": 187, "name": "Shelley Smith", "position": "OL", "nflTeam": "Houston Texans"},
+    {"year": 2009, "round": 4, "pick": 134, "name": "Gartrell Johnson", "position": "RB", "nflTeam": "San Diego Chargers"},
+    {"year": 2007, "round": 5, "pick": 171, "name": "Clint Oldenburg", "position": "OL", "nflTeam": "New England Patriots"},
+    {"year": 2006, "round": 7, "pick": 251, "name": "David Anderson", "position": "WR", "nflTeam": "Houston Texans"},
+    {"year": 2005, "round": 6, "pick": 198, "name": "Joel Dreessen", "position": "TE", "nflTeam": "New York Jets"},
+    {"year": 2004, "round": 6, "pick": 192, "name": "Dexter Wynn", "position": "DB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2004, "round": 7, "pick": 250, "name": "Bradlee Van Pelt", "position": "QB", "nflTeam": "Denver Broncos"},
+    {"year": 2004, "round": 7, "pick": 255, "name": "Andre Sommersell", "position": "LB", "nflTeam": "Oakland Raiders"},
+    {"year": 2002, "round": 5, "pick": 148, "name": "Kevin McCadam", "position": "DB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2001, "round": 4, "pick": 117, "name": "John Howell", "position": "DB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2001, "round": 6, "pick": 188, "name": "Rick Crowell", "position": "LB", "nflTeam": "Miami Dolphins"},
+    {"year": 2000, "round": 5, "pick": 137, "name": "Clark Haggans", "position": "LB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2000, "round": 7, "pick": 236, "name": "Erik Olson", "position": "DB", "nflTeam": "Jacksonville Jaguars"}
+  ]
+}

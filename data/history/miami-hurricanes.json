@@ -1,0 +1,33 @@
+{
+  "teamId": "miami",
+  "teamSlug": "miami-hurricanes",
+  "teamName": "Miami Hurricanes",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 13, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 10, "apPost": 10, "cfpFinal": 10, "coach": "Mario Cristobal", "bowl": "CFP National Championship (L)"},
+    {"year": 2024, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 19, "apPost": 13, "cfpFinal": null, "coach": "Mario Cristobal", "bowl": "Pop-Tarts Bowl (L)"},
+    {"year": 2023, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Mario Cristobal", "bowl": "Pinstripe Bowl (L)"},
+    {"year": 2022, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Mario Cristobal", "bowl": null},
+    {"year": 2021, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 14, "apPost": null, "cfpFinal": null, "coach": "Manny Diaz", "bowl": null},
+    {"year": 2020, "wins": 8, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 10, "cfpFinal": 9, "coach": "Manny Diaz", "bowl": "Cheez-It Bowl (L)"},
+    {"year": 2019, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Manny Diaz", "bowl": "Independence Bowl (L)"},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 8, "apPost": null, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Pinstripe Bowl (L)"},
+    {"year": 2017, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 18, "apPost": 10, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Orange Bowl (L)"},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 10, "apPost": 20, "cfpFinal": null, "coach": "Mark Richt", "bowl": "Russell Athletic Bowl (W)"},
+    {"year": 2015, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Golden / Larry Scott", "bowl": "Sun Bowl (L)"},
+    {"year": 2014, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Golden", "bowl": "Independence Bowl (L)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 7, "apPost": null, "cfpFinal": null, "coach": "Al Golden", "bowl": "Russell Athletic Bowl (L)"},
+    {"year": 2012, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Golden", "bowl": null},
+    {"year": 2011, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Al Golden", "bowl": null},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": 13, "apPost": null, "cfpFinal": null, "coach": "Randy Shannon", "bowl": "Sun Bowl (L)"},
+    {"year": 2009, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 8, "apPost": 19, "cfpFinal": null, "coach": "Randy Shannon", "bowl": "Champs Sports Bowl (L)"},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Randy Shannon", "bowl": "Emerald Bowl (L)"},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Randy Shannon", "bowl": null},
+    {"year": 2006, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 12, "apPost": null, "cfpFinal": null, "coach": "Larry Coker", "bowl": "MPC Computers Bowl (W)"},
+    {"year": 2005, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 9, "apPost": 17, "cfpFinal": null, "coach": "Larry Coker", "bowl": "Peach Bowl (L)"},
+    {"year": 2004, "wins": 9, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 6, "apPost": 11, "cfpFinal": null, "coach": "Larry Coker", "bowl": "Peach Bowl (W)"},
+    {"year": 2003, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 1, "apPre": 3, "apPost": 5, "cfpFinal": null, "coach": "Larry Coker", "bowl": "Orange Bowl (W)"},
+    {"year": 2002, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 0, "apPre": 1, "apPost": 2, "cfpFinal": null, "coach": "Larry Coker", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2001, "wins": 12, "losses": 0, "confWins": 7, "confLosses": 0, "apPre": 2, "apPost": 1, "cfpFinal": null, "coach": "Larry Coker", "bowl": "Rose Bowl (W)"},
+    {"year": 2000, "wins": 11, "losses": 1, "confWins": 7, "confLosses": 0, "apPre": 5, "apPost": 2, "cfpFinal": null, "coach": "Butch Davis", "bowl": "Sugar Bowl (W)"}
+  ]
+}

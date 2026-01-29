@@ -1,0 +1,20 @@
+{
+  "teamId": "purdue",
+  "teamSlug": "purdue-boilermakers",
+  "teamName": "Purdue Boilermakers",
+  "draftPicks": [
+    {"year": 2025, "round": 5, "pick": 154, "name": "Marcus Mbow", "position": "OL", "nflTeam": "New York Giants"},
+    {"year": 2024, "round": 5, "pick": 166, "name": "Tyrone Tracy Jr.", "position": "RB", "nflTeam": "New York Giants"},
+    {"year": 2024, "round": 7, "pick": 250, "name": "Sanoussi Kane", "position": "SAF", "nflTeam": "Baltimore Ravens"},
+    {"year": 2023, "round": 4, "pick": 131, "name": "Charlie Jones", "position": "WR", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2023, "round": 4, "pick": 135, "name": "Aidan O'Connell", "position": "QB", "nflTeam": "Las Vegas Raiders"},
+    {"year": 2023, "round": 5, "pick": 171, "name": "Payne Durham", "position": "TE", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2023, "round": 7, "pick": 241, "name": "Cory Trice", "position": "CB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2023, "round": 7, "pick": 255, "name": "Jalen Graham", "position": "SAF", "nflTeam": "San Francisco 49ers"},
+    {"year": 2022, "round": 1, "pick": 30, "name": "George Karlaftis", "position": "DE", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2022, "round": 3, "pick": 99, "name": "David Bell", "position": "WR", "nflTeam": "Cleveland Browns"},
+    {"year": 2022, "round": 7, "pick": 260, "name": "Zander Horvath", "position": "RB", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2011, "round": 1, "pick": 16, "name": "Ryan Kerrigan", "position": "DE", "nflTeam": "Washington Redskins"},
+    {"year": 2005, "round": 4, "pick": 106, "name": "Kyle Orton", "position": "QB", "nflTeam": "Chicago Bears"}
+  ]
+}

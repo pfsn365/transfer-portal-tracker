@@ -1,0 +1,12 @@
+{
+  "teamId": "liberty",
+  "teamSlug": "liberty-flames",
+  "teamName": "Liberty Flames",
+  "draftPicks": [
+    {"year": 2023, "round": 6, "pick": 210, "name": "DeMario Douglas", "position": "WR", "nflTeam": "New England Patriots"},
+    {"year": 2022, "round": 3, "pick": 86, "name": "Malik Willis", "position": "QB", "nflTeam": "Tennessee Titans"},
+    {"year": 2020, "round": 4, "pick": 142, "name": "Antonio Gandy-Golden", "position": "WR", "nflTeam": "Washington Football Team"},
+    {"year": 2014, "round": 4, "pick": 125, "name": "Walt Aikens", "position": "DB", "nflTeam": "Miami Dolphins"},
+    {"year": 2009, "round": 7, "pick": 250, "name": "Rashad Jennings", "position": "RB", "nflTeam": "Jacksonville Jaguars"}
+  ]
+}

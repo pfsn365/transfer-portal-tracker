@@ -1,0 +1,13 @@
+{
+  "teamId": "sam-houston",
+  "teamSlug": "sam-houston-bearkats",
+  "teamName": "Sam Houston Bearkats",
+  "draftPicks": [
+    {"year": 2022, "round": 5, "pick": 157, "name": "Zyon McCollum", "position": "DB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2018, "round": 2, "pick": 57, "name": "P.J. Hall", "position": "DT", "nflTeam": "Oakland Raiders"},
+    {"year": 2016, "round": 7, "pick": 235, "name": "Lac Edwards", "position": "P", "nflTeam": "New York Jets"},
+    {"year": 2009, "round": 5, "pick": 151, "name": "Rhett Bomar", "position": "QB", "nflTeam": "New York Giants"},
+    {"year": 2002, "round": 3, "pick": 81, "name": "Josh McCown", "position": "QB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2002, "round": 6, "pick": 174, "name": "Keith Heinrich", "position": "TE", "nflTeam": "Carolina Panthers"}
+  ]
+}

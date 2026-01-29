@@ -1,0 +1,33 @@
+{
+  "teamId": "utah",
+  "teamSlug": "utah-utes",
+  "teamName": "Utah Utes",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 13, "apPost": 12, "cfpFinal": null, "coach": "Kyle Whittingham / Morgan Scalley", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 7, "apPre": 12, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": null},
+    {"year": 2023, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 14, "apPost": 18, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2022, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 7, "apPost": 10, "cfpFinal": 12, "coach": "Kyle Whittingham", "bowl": "Rose Bowl (L)"},
+    {"year": 2021, "wins": 10, "losses": 4, "confWins": 8, "confLosses": 1, "apPre": 24, "apPost": 12, "cfpFinal": 11, "coach": "Kyle Whittingham", "bowl": "Rose Bowl (L)"},
+    {"year": 2020, "wins": 3, "losses": 2, "confWins": 3, "confLosses": 2, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": null},
+    {"year": 2019, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 14, "apPost": 16, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Alamo Bowl (L)"},
+    {"year": 2018, "wins": 9, "losses": 5, "confWins": 6, "confLosses": 3, "apPre": 16, "apPost": 17, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Holiday Bowl (L)"},
+    {"year": 2017, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 6, "apPre": 20, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Heart of Dallas Bowl (W)"},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 11, "apPost": 12, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Foster Farms Bowl (W)"},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 3, "apPre": 3, "apPost": 10, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 18, "apPost": 17, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2013, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": null},
+    {"year": 2012, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": null},
+    {"year": 2011, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Sun Bowl (W)"},
+    {"year": 2010, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 6, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Maaco Bowl (L)"},
+    {"year": 2009, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 19, "apPost": 18, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2008, "wins": 13, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 2, "apPost": 2, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Sugar Bowl (W)"},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Kyle Whittingham", "bowl": "Emerald Bowl (W)"},
+    {"year": 2004, "wins": 12, "losses": 0, "confWins": 7, "confLosses": 0, "apPre": 20, "apPost": 4, "cfpFinal": null, "coach": "Urban Meyer / Kyle Whittingham", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2003, "wins": 10, "losses": 2, "confWins": 6, "confLosses": 1, "apPre": 21, "apPost": 21, "cfpFinal": null, "coach": "Urban Meyer", "bowl": "Liberty Bowl (W)"},
+    {"year": 2002, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ron McBride", "bowl": null},
+    {"year": 2001, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ron McBride", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2000, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ron McBride", "bowl": null}
+  ]
+}

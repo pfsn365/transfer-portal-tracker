@@ -1,0 +1,33 @@
+{
+  "teamId": "kansas-state",
+  "teamSlug": "kansas-state-wildcats",
+  "teamName": "Kansas State Wildcats",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 4, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Chris Klieman", "bowl": null},
+    {"year": 2024, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 18, "apPost": 16, "cfpFinal": null, "coach": "Chris Klieman", "bowl": "Rate Bowl (W)"},
+    {"year": 2023, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 16, "apPost": 25, "cfpFinal": null, "coach": "Chris Klieman", "bowl": "Pop-Tarts Bowl (W)"},
+    {"year": 2022, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 11, "apPost": 9, "cfpFinal": null, "coach": "Chris Klieman", "bowl": "Sugar Bowl (L)"},
+    {"year": 2021, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 5, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Chris Klieman", "bowl": "Texas Bowl (W)"},
+    {"year": 2020, "wins": 4, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Chris Klieman", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 20, "apPost": 16, "cfpFinal": null, "coach": "Chris Klieman", "bowl": "Liberty Bowl (L)"},
+    {"year": 2018, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": null},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 20, "apPost": 18, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Cactus Bowl (W)"},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Texas Bowl (W)"},
+    {"year": 2015, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Liberty Bowl (L)"},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 20, "apPost": 11, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Alamo Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Buffalo Wild Wings Bowl (W)"},
+    {"year": 2012, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 22, "apPost": 12, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2011, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 10, "apPost": 15, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Cotton Bowl (L)"},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Pinstripe Bowl (L)"},
+    {"year": 2009, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": null},
+    {"year": 2008, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ron Prince", "bowl": null},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 24, "apPost": null, "cfpFinal": null, "coach": "Ron Prince", "bowl": null},
+    {"year": 2006, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ron Prince", "bowl": "Texas Bowl (L)"},
+    {"year": 2005, "wins": 5, "losses": 6, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Snyder", "bowl": null},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": 13, "apPost": 13, "cfpFinal": null, "coach": "Bill Snyder", "bowl": null},
+    {"year": 2003, "wins": 11, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 7, "apPost": 14, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2002, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 6, "apPost": 7, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Holiday Bowl (W)"},
+    {"year": 2001, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 13, "apPost": 11, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Insight Bowl (L)"},
+    {"year": 2000, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 8, "apPost": 9, "cfpFinal": null, "coach": "Bill Snyder", "bowl": "Cotton Bowl (W)"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "teamId": "georgia-state",
+  "teamSlug": "georgia-state-panthers",
+  "teamName": "Georgia State Panthers",
+  "draftPicks": [
+    {"year": 2024, "round": 6, "pick": 202, "name": "Travis Glover", "position": "OT", "nflTeam": "Green Bay Packers"},
+    {"year": 2017, "round": 6, "pick": 209, "name": "Robert Davis", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2014, "round": 7, "pick": 232, "name": "Ulrick John", "position": "OL", "nflTeam": "Indianapolis Colts"},
+    {"year": 2012, "round": 6, "pick": 189, "name": "Christo Bilukidi", "position": "DE", "nflTeam": "Oakland Raiders"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamId": "tulane",
+  "teamSlug": "tulane-green-wave",
+  "teamName": "Tulane Green Wave",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 17, "apPost": 20, "cfpFinal": null, "coach": "Jon Sumrall", "bowl": "CFP First Round (L)"},
+    {"year": 2024, "wins": 9, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Jon Sumrall", "bowl": "Gasparilla Bowl (L)"},
+    {"year": 2023, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 0, "apPre": 24, "apPost": 22, "cfpFinal": null, "coach": "Willie Fritz", "bowl": "Military Bowl (L)"},
+    {"year": 2022, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 9, "apPost": 16, "cfpFinal": null, "coach": "Willie Fritz", "bowl": "Cotton Bowl (W)"},
+    {"year": 2021, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": null},
+    {"year": 2020, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": "Famous Idaho Potato Bowl (L)"},
+    {"year": 2019, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": "Cure Bowl (W)"},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": null},
+    {"year": 2016, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Willie Fritz", "bowl": null},
+    {"year": 2015, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Curtis Johnson", "bowl": null},
+    {"year": 2014, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Curtis Johnson", "bowl": null},
+    {"year": 2013, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Curtis Johnson", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2012, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Curtis Johnson", "bowl": null},
+    {"year": 2011, "wins": 2, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo / Mark Hutson", "bowl": null},
+    {"year": 2010, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo", "bowl": null},
+    {"year": 2009, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo", "bowl": null},
+    {"year": 2008, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo", "bowl": null},
+    {"year": 2007, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Toledo", "bowl": null},
+    {"year": 2006, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": null},
+    {"year": 2005, "wins": 2, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": null},
+    {"year": 2004, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": null},
+    {"year": 2003, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": null},
+    {"year": 2002, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": "Hawaii Bowl (W)"},
+    {"year": 2001, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": null},
+    {"year": 2000, "wins": 6, "losses": 5, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Scelfo", "bowl": null}
+  ]
+}

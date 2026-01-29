@@ -1,0 +1,12 @@
+{
+  "teamId": "utsa",
+  "teamSlug": "utsa-roadrunners",
+  "teamName": "UTSA Roadrunners",
+  "draftPicks": [
+    {"year": 2025, "round": 5, "pick": 169, "name": "Zah Frazier", "position": "CB", "nflTeam": "Chicago Bears"},
+    {"year": 2022, "round": 4, "pick": 134, "name": "Spencer Burford", "position": "OL", "nflTeam": "San Francisco 49ers"},
+    {"year": 2022, "round": 5, "pick": 153, "name": "Riq Woolen", "position": "CB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2018, "round": 1, "pick": 14, "name": "Marcus Davenport", "position": "DE", "nflTeam": "New Orleans Saints"},
+    {"year": 2016, "round": 6, "pick": 188, "name": "David Morgan", "position": "TE", "nflTeam": "Minnesota Vikings"}
+  ]
+}

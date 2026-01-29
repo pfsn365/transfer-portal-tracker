@@ -1,0 +1,12 @@
+{
+  "teamId": "old-dominion",
+  "teamSlug": "old-dominion-monarchs",
+  "teamName": "Old Dominion Monarchs",
+  "draftPicks": [
+    {"year": 2023, "round": 4, "pick": 103, "name": "Nick Saldiveri", "position": "OL", "nflTeam": "New Orleans Saints"},
+    {"year": 2023, "round": 6, "pick": 209, "name": "Tre Hawkins", "position": "CB", "nflTeam": "New York Giants"},
+    {"year": 2023, "round": 7, "pick": 220, "name": "Zack Kuntz", "position": "TE", "nflTeam": "New York Jets"},
+    {"year": 2019, "round": 3, "pick": 95, "name": "Oshane Ximines", "position": "DE", "nflTeam": "New York Giants"},
+    {"year": 2019, "round": 6, "pick": 184, "name": "Travis Fulgham", "position": "WR", "nflTeam": "Detroit Lions"}
+  ]
+}

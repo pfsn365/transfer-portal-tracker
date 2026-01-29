@@ -1,0 +1,16 @@
+{
+  "teamId": "eastern-michigan",
+  "teamSlug": "eastern-michigan-eagles",
+  "teamName": "Eastern Michigan Eagles",
+  "draftPicks": [
+    {"year": 2023, "round": 4, "pick": 117, "name": "Sidy Sow", "position": "OL", "nflTeam": "New England Patriots"},
+    {"year": 2023, "round": 6, "pick": 196, "name": "Jose Ramirez", "position": "DL", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2019, "round": 4, "pick": 106, "name": "Maxx Crosby", "position": "DE", "nflTeam": "Oakland Raiders"},
+    {"year": 2017, "round": 7, "pick": 250, "name": "Pat O'Connor", "position": "DE", "nflTeam": "Detroit Lions"},
+    {"year": 2016, "round": 6, "pick": 216, "name": "Darius Jackson", "position": "RB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2009, "round": 4, "pick": 109, "name": "T.J. Lang", "position": "T", "nflTeam": "Green Bay Packers"},
+    {"year": 2008, "round": 2, "pick": 54, "name": "Jason Jones", "position": "DE", "nflTeam": "Tennessee Titans"},
+    {"year": 2005, "round": 7, "pick": 237, "name": "Chris Roberson", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2003, "round": 7, "pick": 255, "name": "Kevin Walter", "position": "WR", "nflTeam": "New York Giants"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamId": "lsu",
+  "teamSlug": "lsu-tigers",
+  "teamName": "LSU Tigers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly / Frank Wilson", "bowl": "Texas Bowl (L)"},
+    {"year": 2024, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 13, "apPost": 15, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Texas Bowl (W)"},
+    {"year": 2023, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 5, "apPost": 12, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "ReliaQuest Bowl (W)"},
+    {"year": 2022, "wins": 10, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 6, "apPost": 5, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Citrus Bowl (W)"},
+    {"year": 2021, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Ed Orgeron / Brad Davis", "bowl": "Texas Bowl (L)"},
+    {"year": 2020, "wins": 5, "losses": 5, "confWins": 5, "confLosses": 5, "apPre": 6, "apPost": null, "cfpFinal": null, "coach": "Ed Orgeron", "bowl": null},
+    {"year": 2019, "wins": 15, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 6, "apPost": 1, "cfpFinal": 1, "coach": "Ed Orgeron", "bowl": "CFP National Championship (W)"},
+    {"year": 2018, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 25, "apPost": 6, "cfpFinal": 6, "coach": "Ed Orgeron", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2017, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 13, "apPost": 18, "cfpFinal": null, "coach": "Ed Orgeron", "bowl": "Citrus Bowl (L)"},
+    {"year": 2016, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 5, "apPost": 13, "cfpFinal": null, "coach": "Les Miles / Ed Orgeron", "bowl": "Citrus Bowl (W)"},
+    {"year": 2015, "wins": 9, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 14, "apPost": 16, "cfpFinal": null, "coach": "Les Miles", "bowl": "Texas Bowl (W)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 13, "apPost": 16, "cfpFinal": null, "coach": "Les Miles", "bowl": "Music City Bowl (L)"},
+    {"year": 2013, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 12, "apPost": 14, "cfpFinal": null, "coach": "Les Miles", "bowl": "Outback Bowl (W)"},
+    {"year": 2012, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 3, "apPost": 14, "cfpFinal": null, "coach": "Les Miles", "bowl": "Chick-fil-A Bowl (L)"},
+    {"year": 2011, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 4, "apPost": 2, "cfpFinal": null, "coach": "Les Miles", "bowl": "BCS Championship (L)"},
+    {"year": 2010, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 21, "apPost": 8, "cfpFinal": null, "coach": "Les Miles", "bowl": "Cotton Bowl (W)"},
+    {"year": 2009, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 11, "apPost": 17, "cfpFinal": null, "coach": "Les Miles", "bowl": "Capital One Bowl (L)"},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": 7, "apPost": null, "cfpFinal": null, "coach": "Les Miles", "bowl": "Chick-fil-A Bowl (W)"},
+    {"year": 2007, "wins": 12, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 2, "apPost": 1, "cfpFinal": null, "coach": "Les Miles", "bowl": "BCS Championship (W)"},
+    {"year": 2006, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 8, "apPost": 3, "cfpFinal": null, "coach": "Les Miles", "bowl": "Sugar Bowl (W)"},
+    {"year": 2005, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 5, "apPost": 6, "cfpFinal": null, "coach": "Les Miles", "bowl": "Peach Bowl (W)"},
+    {"year": 2004, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 4, "apPost": 16, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Capital One Bowl (L)"},
+    {"year": 2003, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 14, "apPost": 2, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Sugar Bowl (W)"},
+    {"year": 2002, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 14, "apPost": 10, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Cotton Bowl (L)"},
+    {"year": 2001, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 14, "apPost": 7, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Sugar Bowl (W)"},
+    {"year": 2000, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 22, "apPost": 22, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Peach Bowl (W)"}
+  ]
+}

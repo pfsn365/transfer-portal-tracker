@@ -1,0 +1,15 @@
+{
+  "teamId": "akron",
+  "teamSlug": "akron-zips",
+  "teamName": "Akron Zips",
+  "draftPicks": [
+    {"year": 2019, "round": 6, "pick": 207, "name": "Ulysees Gilbert", "position": "LB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2016, "round": 5, "pick": 175, "name": "Jatavis Brown", "position": "LB", "nflTeam": "San Diego Chargers"},
+    {"year": 2008, "round": 4, "pick": 114, "name": "Reggie Corner", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2007, "round": 3, "pick": 88, "name": "Andy Alleman", "position": "OL", "nflTeam": "New Orleans Saints"},
+    {"year": 2006, "round": 4, "pick": 130, "name": "Domenik Hixon", "position": "WR", "nflTeam": "Denver Broncos"},
+    {"year": 2005, "round": 3, "pick": 67, "name": "Charlie Frye", "position": "QB", "nflTeam": "Cleveland Browns"},
+    {"year": 2002, "round": 5, "pick": 151, "name": "Jake Schifino", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2001, "round": 3, "pick": 84, "name": "Dwight Smith", "position": "DB", "nflTeam": "Tampa Bay Buccaneers"}
+  ]
+}

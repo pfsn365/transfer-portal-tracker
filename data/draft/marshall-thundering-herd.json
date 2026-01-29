@@ -1,0 +1,31 @@
+{
+  "teamId": "marshall",
+  "teamSlug": "marshall-thundering-herd",
+  "teamName": "Marshall Thundering Herd",
+  "draftPicks": [
+    {"year": 2025, "round": 2, "pick": 59, "name": "Mike Green", "position": "DE", "nflTeam": "Baltimore Ravens"},
+    {"year": 2024, "round": 5, "pick": 165, "name": "Rasheen Ali", "position": "RB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2024, "round": 6, "pick": 201, "name": "Micah Abraham", "position": "CB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2022, "round": 7, "pick": 259, "name": "Nazeeh Johnson", "position": "SAF", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2021, "round": 4, "pick": 138, "name": "Josh Ball", "position": "OL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2020, "round": 5, "pick": 159, "name": "Justin Rohrwasser", "position": "K", "nflTeam": "New England Patriots"},
+    {"year": 2020, "round": 7, "pick": 243, "name": "Chris Jackson", "position": "SAF", "nflTeam": "Tennessee Titans"},
+    {"year": 2015, "round": 7, "pick": 247, "name": "Darryl Roberts", "position": "CB", "nflTeam": "New England Patriots"},
+    {"year": 2014, "round": 6, "pick": 199, "name": "Garrett Scott", "position": "OL", "nflTeam": "Seattle Seahawks"},
+    {"year": 2013, "round": 2, "pick": 59, "name": "Aaron Dobson", "position": "WR", "nflTeam": "New England Patriots"},
+    {"year": 2012, "round": 2, "pick": 59, "name": "Vinny Curry", "position": "DE", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2011, "round": 5, "pick": 159, "name": "Lee Smith", "position": "TE", "nflTeam": "New England Patriots"},
+    {"year": 2007, "round": 7, "pick": 250, "name": "Ahmad Bradshaw", "position": "RB", "nflTeam": "New York Giants"},
+    {"year": 2005, "round": 6, "pick": 206, "name": "Jonathan Goddard", "position": "DE", "nflTeam": "Detroit Lions"},
+    {"year": 2004, "round": 2, "pick": 54, "name": "Darius Watts", "position": "WR", "nflTeam": "Denver Broncos"},
+    {"year": 2003, "round": 1, "pick": 7, "name": "Byron Leftwich", "position": "QB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2003, "round": 3, "pick": 84, "name": "Chris Crocker", "position": "DB", "nflTeam": "Cleveland Browns"},
+    {"year": 2003, "round": 4, "pick": 122, "name": "Steve Sciullo", "position": "OL", "nflTeam": "Indianapolis Colts"},
+    {"year": 2002, "round": 7, "pick": 243, "name": "Chris Massey", "position": "RB", "nflTeam": "St. Louis Rams"},
+    {"year": 2001, "round": 2, "pick": 51, "name": "Paul Toviessi", "position": "DE", "nflTeam": "Denver Broncos"},
+    {"year": 2000, "round": 1, "pick": 18, "name": "Chad Pennington", "position": "QB", "nflTeam": "New York Jets"},
+    {"year": 2000, "round": 2, "pick": 43, "name": "Rogers Beckett", "position": "DB", "nflTeam": "San Diego Chargers"},
+    {"year": 2000, "round": 3, "pick": 88, "name": "Doug Chapman", "position": "RB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2000, "round": 6, "pick": 175, "name": "James Williams", "position": "WR", "nflTeam": "Seattle Seahawks"}
+  ]
+}

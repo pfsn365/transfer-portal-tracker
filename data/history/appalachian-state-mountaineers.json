@@ -1,0 +1,19 @@
+{
+  "teamId": "appalachian-state",
+  "teamSlug": "appalachian-state-mountaineers",
+  "teamName": "Appalachian State Mountaineers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 5, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dowell Loggains", "bowl": "Birmingham Bowl (L)"},
+    {"year": 2024, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shawn Clark", "bowl": null},
+    {"year": 2023, "wins": 9, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shawn Clark", "bowl": "Cure Bowl (W)"},
+    {"year": 2022, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shawn Clark", "bowl": null},
+    {"year": 2021, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shawn Clark", "bowl": "Boca Raton Bowl (L)"},
+    {"year": 2020, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shawn Clark", "bowl": "Myrtle Beach Bowl (W)"},
+    {"year": 2019, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 19, "apPost": 20, "cfpFinal": 20, "coach": "Eli Drinkwitz / Shawn Clark", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2018, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 25, "cfpFinal": null, "coach": "Scott Satterfield / Mark Ivey", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2017, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": "Dollar General Bowl (W)"},
+    {"year": 2016, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": "Camellia Bowl (W)"},
+    {"year": 2015, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": "Camellia Bowl (W)"},
+    {"year": 2014, "wins": 7, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": null}
+  ]
+}

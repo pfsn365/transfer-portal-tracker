@@ -1,0 +1,23 @@
+{
+  "teamId": "louisville",
+  "teamSlug": "louisville-cardinals",
+  "teamName": "Louisville Cardinals",
+  "draftPicks": [
+    {"year": 2025, "round": 2, "pick": 40, "name": "Tyler Shough", "position": "QB", "nflTeam": "New Orleans Saints"},
+    {"year": 2025, "round": 3, "pick": 66, "name": "Ashton Gillotte", "position": "DE", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2025, "round": 4, "pick": 131, "name": "Quincy Riley", "position": "CB", "nflTeam": "New Orleans Saints"},
+    {"year": 2024, "round": 4, "pick": 129, "name": "Isaac Guerendo", "position": "RB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2024, "round": 5, "pick": 146, "name": "Jarvis Brownlee", "position": "DB", "nflTeam": "Tennessee Titans"},
+    {"year": 2024, "round": 5, "pick": 156, "name": "Jamari Thrash", "position": "WR", "nflTeam": "Cleveland Browns"},
+    {"year": 2024, "round": 6, "pick": 205, "name": "Jawhar Jordan", "position": "RB", "nflTeam": "Houston Texans"},
+    {"year": 2023, "round": 3, "pick": 82, "name": "YaYa Diaby", "position": "DL", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2023, "round": 5, "pick": 136, "name": "Yasir Abdullah", "position": "LB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2023, "round": 6, "pick": 180, "name": "Kei'Trel Clark", "position": "DB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2021, "round": 2, "pick": 57, "name": "Tutu Atwell", "position": "WR", "nflTeam": "Los Angeles Rams"},
+    {"year": 2021, "round": 4, "pick": 109, "name": "Dez Fitzpatrick", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2020, "round": 1, "pick": 11, "name": "Mekhi Becton", "position": "OL", "nflTeam": "New York Jets"},
+    {"year": 2018, "round": 1, "pick": 18, "name": "Jaire Alexander", "position": "CB", "nflTeam": "Green Bay Packers"},
+    {"year": 2018, "round": 1, "pick": 32, "name": "Lamar Jackson", "position": "QB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2014, "round": 1, "pick": 32, "name": "Teddy Bridgewater", "position": "QB", "nflTeam": "Minnesota Vikings"}
+  ]
+}

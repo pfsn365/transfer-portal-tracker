@@ -1,0 +1,33 @@
+{
+  "teamId": "tulane",
+  "teamSlug": "tulane-green-wave",
+  "teamName": "Tulane Green Wave",
+  "draftPicks": [
+    {"year": 2025, "round": 3, "pick": 88, "name": "Caleb Ransaw", "position": "SAF", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2025, "round": 7, "pick": 237, "name": "Micah Robinson", "position": "CB", "nflTeam": "Green Bay Packers"},
+    {"year": 2024, "round": 6, "pick": 182, "name": "Jha'Quan Jackson", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2024, "round": 7, "pick": 245, "name": "Michael Pratt", "position": "QB", "nflTeam": "Green Bay Packers"},
+    {"year": 2023, "round": 3, "pick": 81, "name": "Tyjae Spears", "position": "RB", "nflTeam": "Tennessee Titans"},
+    {"year": 2023, "round": 3, "pick": 91, "name": "Dorian Williams", "position": "LB", "nflTeam": "Buffalo Bills"},
+    {"year": 2021, "round": 4, "pick": 111, "name": "Cameron Sample", "position": "DE", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2021, "round": 7, "pick": 234, "name": "Patrick Johnson", "position": "DE", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2020, "round": 5, "pick": 173, "name": "Darnell Mooney", "position": "WR", "nflTeam": "Chicago Bears"},
+    {"year": 2020, "round": 7, "pick": 237, "name": "Thakarius Keyes", "position": "CB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2019, "round": 7, "pick": 221, "name": "Donnie Lewis", "position": "CB", "nflTeam": "Cleveland Browns"},
+    {"year": 2018, "round": 6, "pick": 179, "name": "Parry Nickerson", "position": "CB", "nflTeam": "New York Jets"},
+    {"year": 2018, "round": 6, "pick": 218, "name": "Ade Aruna", "position": "DE", "nflTeam": "Minnesota Vikings"},
+    {"year": 2017, "round": 6, "pick": 189, "name": "Tanzel Smart", "position": "DT", "nflTeam": "Los Angeles Rams"},
+    {"year": 2015, "round": 5, "pick": 164, "name": "Lorenzo Doss", "position": "CB", "nflTeam": "Denver Broncos"},
+    {"year": 2015, "round": 7, "pick": 251, "name": "Taurean Nixon", "position": "DB", "nflTeam": "Denver Broncos"},
+    {"year": 2014, "round": 5, "pick": 142, "name": "Ryan Grant", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2009, "round": 4, "pick": 135, "name": "Troy Kropog", "position": "OL", "nflTeam": "Tennessee Titans"},
+    {"year": 2008, "round": 2, "pick": 44, "name": "Matt Forte", "position": "RB", "nflTeam": "Chicago Bears"},
+    {"year": 2006, "round": 7, "pick": 247, "name": "Anthony Cannon", "position": "LB", "nflTeam": "Detroit Lions"},
+    {"year": 2005, "round": 4, "pick": 136, "name": "Roydell Williams", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2004, "round": 1, "pick": 22, "name": "J.P. Losman", "position": "QB", "nflTeam": "Buffalo Bills"},
+    {"year": 2004, "round": 4, "pick": 119, "name": "Mewelde Moore", "position": "RB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2002, "round": 1, "pick": 32, "name": "Patrick Ramsey", "position": "QB", "nflTeam": "Washington Redskins"},
+    {"year": 2001, "round": 5, "pick": 138, "name": "Bernard Robertson", "position": "OL", "nflTeam": "Chicago Bears"},
+    {"year": 2000, "round": 3, "pick": 79, "name": "JaJuan Dawson", "position": "WR", "nflTeam": "Cleveland Browns"}
+  ]
+}

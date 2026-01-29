@@ -1,0 +1,33 @@
+{
+  "teamId": "ohio-state",
+  "teamSlug": "ohio-state-buckeyes",
+  "teamName": "Ohio State Buckeyes",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 12, "losses": 2, "confWins": 9, "confLosses": 0, "apPre": 3, "apPost": null, "cfpFinal": 2, "coach": "Ryan Day", "bowl": "Cotton Bowl (L)"},
+    {"year": 2024, "wins": 14, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 2, "apPost": 1, "cfpFinal": 6, "coach": "Ryan Day", "bowl": "CFP National Championship (W)"},
+    {"year": 2023, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 3, "apPost": 10, "cfpFinal": 7, "coach": "Ryan Day", "bowl": "Cotton Bowl (L)"},
+    {"year": 2022, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 2, "apPost": 4, "cfpFinal": 4, "coach": "Ryan Day", "bowl": "Peach Bowl (L)"},
+    {"year": 2021, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 4, "apPost": 6, "cfpFinal": 6, "coach": "Ryan Day", "bowl": "Rose Bowl (W)"},
+    {"year": 2020, "wins": 7, "losses": 1, "confWins": 5, "confLosses": 0, "apPre": 2, "apPost": 2, "cfpFinal": 3, "coach": "Ryan Day", "bowl": "CFP National Championship (L)"},
+    {"year": 2019, "wins": 13, "losses": 1, "confWins": 9, "confLosses": 0, "apPre": 5, "apPost": 3, "cfpFinal": 2, "coach": "Ryan Day", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2018, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 1, "apPre": 5, "apPost": 3, "cfpFinal": 6, "coach": "Urban Meyer", "bowl": "Rose Bowl (W)"},
+    {"year": 2017, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 2, "apPost": 5, "cfpFinal": 5, "coach": "Urban Meyer", "bowl": "Cotton Bowl (W)"},
+    {"year": 2016, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 6, "apPost": 6, "cfpFinal": 3, "coach": "Urban Meyer", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2015, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 1, "apPost": 4, "cfpFinal": 7, "coach": "Urban Meyer", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2014, "wins": 14, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 5, "apPost": 1, "cfpFinal": 4, "coach": "Urban Meyer", "bowl": "CFP National Championship (W)"},
+    {"year": 2013, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 2, "apPost": 12, "cfpFinal": null, "coach": "Urban Meyer", "bowl": "Orange Bowl (L)"},
+    {"year": 2012, "wins": 12, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 18, "apPost": 3, "cfpFinal": null, "coach": "Urban Meyer", "bowl": null},
+    {"year": 2011, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Luke Fickell", "bowl": "Gator Bowl (L)"},
+    {"year": 2010, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 5, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Sugar Bowl (W)"},
+    {"year": 2009, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 6, "apPost": 5, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Rose Bowl (W)"},
+    {"year": 2008, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 9, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2007, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 11, "apPost": 5, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "BCS Championship (L)"},
+    {"year": 2006, "wins": 12, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 2, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "BCS Championship (L)"},
+    {"year": 2005, "wins": 10, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 6, "apPost": 4, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2004, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 9, "apPost": 20, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Alamo Bowl (W)"},
+    {"year": 2003, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 2, "apPost": 4, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2002, "wins": 14, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 13, "apPost": 1, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 23, "apPost": 21, "cfpFinal": null, "coach": "Jim Tressel", "bowl": "Outback Bowl (L)"},
+    {"year": 2000, "wins": 8, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "John Cooper", "bowl": "Outback Bowl (L)"}
+  ]
+}

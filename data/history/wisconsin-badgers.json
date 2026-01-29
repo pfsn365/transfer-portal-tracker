@@ -1,0 +1,33 @@
+{
+  "teamId": "wisconsin",
+  "teamSlug": "wisconsin-badgers",
+  "teamName": "Wisconsin Badgers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Luke Fickell", "bowl": null},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Luke Fickell", "bowl": null},
+    {"year": 2023, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 4, "apPre": 19, "apPost": null, "cfpFinal": null, "coach": "Luke Fickell", "bowl": "ReliaQuest Bowl (L)"},
+    {"year": 2022, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 5, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Paul Chryst / Jim Leonhard / Luke Fickell", "bowl": "Guaranteed Rate Bowl (W)"},
+    {"year": 2021, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 3, "apPre": 12, "apPost": 14, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2020, "wins": 4, "losses": 3, "confWins": 3, "confLosses": 3, "apPre": 12, "apPost": 16, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "Duke's Mayo Bowl (W)"},
+    {"year": 2019, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 2, "apPre": 19, "apPost": 11, "cfpFinal": 8, "coach": "Paul Chryst", "bowl": "Rose Bowl (L)"},
+    {"year": 2018, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 4, "apPost": null, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "Pinstripe Bowl (W)"},
+    {"year": 2017, "wins": 13, "losses": 1, "confWins": 9, "confLosses": 0, "apPre": 9, "apPost": 7, "cfpFinal": 6, "coach": "Paul Chryst", "bowl": "Orange Bowl (W)"},
+    {"year": 2016, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 5, "apPost": 6, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "Cotton Bowl (W)"},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 20, "apPost": 21, "cfpFinal": null, "coach": "Paul Chryst", "bowl": "Holiday Bowl (W)"},
+    {"year": 2014, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 14, "apPost": 13, "cfpFinal": null, "coach": "Gary Andersen / Barry Alvarez", "bowl": "Outback Bowl (W)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 23, "apPost": 22, "cfpFinal": null, "coach": "Gary Andersen", "bowl": "Capital One Bowl (L)"},
+    {"year": 2012, "wins": 8, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 12, "apPost": null, "cfpFinal": null, "coach": "Bret Bielema / Barry Alvarez", "bowl": "Rose Bowl (L)"},
+    {"year": 2011, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 11, "apPost": 10, "cfpFinal": null, "coach": "Bret Bielema", "bowl": "Rose Bowl (L)"},
+    {"year": 2010, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 12, "apPost": 7, "cfpFinal": null, "coach": "Bret Bielema", "bowl": "Rose Bowl (L)"},
+    {"year": 2009, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 16, "apPost": 16, "cfpFinal": null, "coach": "Bret Bielema", "bowl": "Champs Sports Bowl (W)"},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": 13, "apPost": null, "cfpFinal": null, "coach": "Bret Bielema", "bowl": "Champs Sports Bowl (L)"},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 7, "apPost": 24, "cfpFinal": null, "coach": "Bret Bielema", "bowl": "Outback Bowl (L)"},
+    {"year": 2006, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 6, "apPost": 7, "cfpFinal": null, "coach": "Bret Bielema", "bowl": "Capital One Bowl (W)"},
+    {"year": 2005, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 14, "apPost": 15, "cfpFinal": null, "coach": "Barry Alvarez", "bowl": "Capital One Bowl (W)"},
+    {"year": 2004, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 21, "apPost": 17, "cfpFinal": null, "coach": "Barry Alvarez", "bowl": "Outback Bowl (L)"},
+    {"year": 2003, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Barry Alvarez", "bowl": "Music City Bowl (L)"},
+    {"year": 2002, "wins": 8, "losses": 6, "confWins": 2, "confLosses": 6, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Barry Alvarez", "bowl": "Alamo Bowl (W)"},
+    {"year": 2001, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "Barry Alvarez", "bowl": null},
+    {"year": 2000, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 4, "apPost": 23, "cfpFinal": null, "coach": "Barry Alvarez", "bowl": "Sun Bowl (W)"}
+  ]
+}

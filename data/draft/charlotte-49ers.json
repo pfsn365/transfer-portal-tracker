@@ -1,0 +1,12 @@
+{
+  "teamId": "charlotte",
+  "teamSlug": "charlotte-49ers",
+  "teamName": "Charlotte 49ers",
+  "draftPicks": [
+    {"year": 2023, "round": 7, "pick": 256, "name": "Grant Dubose", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2020, "round": 3, "pick": 102, "name": "Alex Highsmith", "position": "LB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2020, "round": 4, "pick": 129, "name": "Cameron Clark", "position": "T", "nflTeam": "New York Jets"},
+    {"year": 2019, "round": 3, "pick": 82, "name": "Nate Davis", "position": "G", "nflTeam": "Tennessee Titans"},
+    {"year": 2017, "round": 3, "pick": 65, "name": "Larry Ogunjobi", "position": "DT", "nflTeam": "Cleveland Browns"}
+  ]
+}

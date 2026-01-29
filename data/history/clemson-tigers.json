@@ -1,0 +1,33 @@
+{
+  "teamId": "clemson",
+  "teamSlug": "clemson-tigers",
+  "teamName": "Clemson Tigers",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 4, "apPost": null, "cfpFinal": null, "coach": "Dabo Swinney", "bowl": "Pinstripe Bowl (L)"},
+    {"year": 2024, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": 14, "apPost": 14, "cfpFinal": 16, "coach": "Dabo Swinney", "bowl": "CFP First Round (L)"},
+    {"year": 2023, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 9, "apPost": 20, "cfpFinal": 22, "coach": "Dabo Swinney", "bowl": "Gator Bowl (W)"},
+    {"year": 2022, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 0, "apPre": 4, "apPost": 13, "cfpFinal": 7, "coach": "Dabo Swinney", "bowl": "Orange Bowl (L)"},
+    {"year": 2021, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 3, "apPost": 14, "cfpFinal": 19, "coach": "Dabo Swinney", "bowl": "Cheez-It Bowl (W)"},
+    {"year": 2020, "wins": 10, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 1, "apPost": 3, "cfpFinal": 2, "coach": "Dabo Swinney", "bowl": "Sugar Bowl (L)"},
+    {"year": 2019, "wins": 14, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 2, "cfpFinal": 3, "coach": "Dabo Swinney", "bowl": "CFP National Championship (L)"},
+    {"year": 2018, "wins": 15, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 2, "apPost": 1, "cfpFinal": 2, "coach": "Dabo Swinney", "bowl": "CFP National Championship (W)"},
+    {"year": 2017, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 5, "apPost": 4, "cfpFinal": 1, "coach": "Dabo Swinney", "bowl": "Sugar Bowl (L)"},
+    {"year": 2016, "wins": 14, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 1, "cfpFinal": 2, "coach": "Dabo Swinney", "bowl": "CFP National Championship (W)"},
+    {"year": 2015, "wins": 14, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 12, "apPost": 2, "cfpFinal": 1, "coach": "Dabo Swinney", "bowl": "CFP National Championship (L)"},
+    {"year": 2014, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 16, "apPost": 15, "cfpFinal": 17, "coach": "Dabo Swinney", "bowl": "Russell Athletic Bowl (W)"},
+    {"year": 2013, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 8, "apPost": 8, "cfpFinal": null, "coach": "Dabo Swinney", "bowl": "Orange Bowl (W)"},
+    {"year": 2012, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 14, "apPost": 11, "cfpFinal": null, "coach": "Dabo Swinney", "bowl": "Chick-fil-A Bowl (W)"},
+    {"year": 2011, "wins": 10, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 6, "apPost": 22, "cfpFinal": null, "coach": "Dabo Swinney", "bowl": "Orange Bowl (L)"},
+    {"year": 2010, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dabo Swinney", "bowl": "Meineke Car Care Bowl (L)"},
+    {"year": 2009, "wins": 9, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": 15, "apPost": 24, "cfpFinal": null, "coach": "Dabo Swinney", "bowl": "Music City Bowl (W)"},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Tommy Bowden / Dabo Swinney", "bowl": "Gator Bowl (L)"},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 13, "apPost": 21, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Chick-fil-A Bowl (L)"},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Music City Bowl (L)"},
+    {"year": 2005, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 20, "apPost": 21, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Champs Sports Bowl (W)"},
+    {"year": 2004, "wins": 6, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 15, "apPost": null, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": null},
+    {"year": 2003, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 22, "apPost": 22, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Peach Bowl (W)"},
+    {"year": 2002, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Tangerine Bowl (L)"},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 19, "apPost": null, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Humanitarian Bowl (W)"},
+    {"year": 2000, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 17, "apPost": 16, "cfpFinal": null, "coach": "Tommy Bowden", "bowl": "Gator Bowl (L)"}
+  ]
+}

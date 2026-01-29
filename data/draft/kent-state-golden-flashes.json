@@ -1,0 +1,14 @@
+{
+  "teamId": "kent-state",
+  "teamSlug": "kent-state-golden-flashes",
+  "teamName": "Kent State Golden Flashes",
+  "draftPicks": [
+    {"year": 2014, "round": 3, "pick": 97, "name": "Dri Archer", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2013, "round": 3, "pick": 72, "name": "Brian Winters", "position": "OL", "nflTeam": "New York Jets"},
+    {"year": 2010, "round": 7, "pick": 245, "name": "Jameson Konz", "position": "TE", "nflTeam": "Seattle Seahawks"},
+    {"year": 2009, "round": 7, "pick": 232, "name": "Julian Edelman", "position": "WR", "nflTeam": "New England Patriots"},
+    {"year": 2008, "round": 4, "pick": 119, "name": "Jack Williams", "position": "DB", "nflTeam": "Denver Broncos"},
+    {"year": 2007, "round": 3, "pick": 66, "name": "Usama Young", "position": "DB", "nflTeam": "New Orleans Saints"},
+    {"year": 2000, "round": 6, "pick": 204, "name": "Jason Gavadza", "position": "TE", "nflTeam": "Pittsburgh Steelers"}
+  ]
+}

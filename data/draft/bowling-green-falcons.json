@@ -1,0 +1,15 @@
+{
+  "teamId": "bowling-green",
+  "teamSlug": "bowling-green-falcons",
+  "teamName": "Bowling Green Falcons",
+  "draftPicks": [
+    {"year": 2025, "round": 3, "pick": 67, "name": "Harold Fannin", "position": "TE", "nflTeam": "Cleveland Browns"},
+    {"year": 2023, "round": 6, "pick": 179, "name": "Karl Brooks", "position": "DT", "nflTeam": "Green Bay Packers"},
+    {"year": 2019, "round": 6, "pick": 208, "name": "Scott Miller", "position": "WR", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2013, "round": 6, "pick": 198, "name": "Chris Jones", "position": "DT", "nflTeam": "Houston Texans"},
+    {"year": 2008, "round": 4, "pick": 108, "name": "Kory Lichtensteiger", "position": "C", "nflTeam": "Denver Broncos"},
+    {"year": 2006, "round": 5, "pick": 164, "name": "Omar Jacobs", "position": "QB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2005, "round": 7, "pick": 242, "name": "Scott Mruczkowski", "position": "C", "nflTeam": "San Diego Chargers"},
+    {"year": 2004, "round": 6, "pick": 187, "name": "Josh Harris", "position": "QB", "nflTeam": "Baltimore Ravens"}
+  ]
+}

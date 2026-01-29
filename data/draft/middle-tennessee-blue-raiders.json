@@ -1,0 +1,15 @@
+{
+  "teamId": "middle-tennessee",
+  "teamSlug": "middle-tennessee-blue-raiders",
+  "teamName": "Middle Tennessee Blue Raiders",
+  "draftPicks": [
+    {"year": 2018, "round": 7, "pick": 240, "name": "Richie James", "position": "WR", "nflTeam": "San Francisco 49ers"},
+    {"year": 2016, "round": 3, "pick": 64, "name": "Kevin Byard", "position": "S", "nflTeam": "Tennessee Titans"},
+    {"year": 2014, "round": 5, "pick": 172, "name": "Jimmy Staten", "position": "DT", "nflTeam": "Seattle Seahawks"},
+    {"year": 2011, "round": 5, "pick": 147, "name": "Rod Issac", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2010, "round": 7, "pick": 212, "name": "Chris McCoy", "position": "DE", "nflTeam": "Miami Dolphins"},
+    {"year": 2008, "round": 6, "pick": 167, "name": "Erik Walden", "position": "DE", "nflTeam": "Dallas Cowboys"},
+    {"year": 2003, "round": 2, "pick": 60, "name": "Tyrone Calico", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2002, "round": 7, "pick": 222, "name": "Kendall Newson", "position": "WR", "nflTeam": "Jacksonville Jaguars"}
+  ]
+}

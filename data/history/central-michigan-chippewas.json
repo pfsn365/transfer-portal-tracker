@@ -1,0 +1,33 @@
+{
+  "teamId": "central-michigan",
+  "teamSlug": "central-michigan-chippewas",
+  "teamName": "Central Michigan Chippewas",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Matt Drinkall", "bowl": "GameAbove Sports Bowl (L)"},
+    {"year": 2024, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": null},
+    {"year": 2023, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": null},
+    {"year": 2022, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": null},
+    {"year": 2021, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": "Sun Bowl (W)"},
+    {"year": 2020, "wins": 3, "losses": 3, "confWins": 3, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2018, "wins": 1, "losses": 11, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Bonamego", "bowl": null},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Bonamego", "bowl": "Famous Idaho Potato Bowl (L)"},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Bonamego", "bowl": "Miami Beach Bowl (L)"},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "John Bonamego", "bowl": "Quick Lane Bowl (L)"},
+    {"year": 2014, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Enos", "bowl": "Bahamas Bowl (L)"},
+    {"year": 2013, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Enos", "bowl": null},
+    {"year": 2012, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Enos", "bowl": "Little Caesars Bowl (W)"},
+    {"year": 2011, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Enos", "bowl": null},
+    {"year": 2010, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Enos", "bowl": null},
+    {"year": 2009, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": 23, "cfpFinal": null, "coach": "Butch Jones / Steve Stripling", "bowl": "GMAC Bowl (W)"},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Butch Jones", "bowl": "Motor City Bowl (L)"},
+    {"year": 2007, "wins": 8, "losses": 6, "confWins": 6, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Butch Jones", "bowl": "Motor City Bowl (L)"},
+    {"year": 2006, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly / Jeff Quinn", "bowl": "Motor City Bowl (W)"},
+    {"year": 2005, "wins": 6, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": null},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Kelly", "bowl": null},
+    {"year": 2003, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike DeBord", "bowl": null},
+    {"year": 2002, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike DeBord", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike DeBord", "bowl": null},
+    {"year": 2000, "wins": 2, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike DeBord", "bowl": null}
+  ]
+}

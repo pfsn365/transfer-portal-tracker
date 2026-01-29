@@ -1,0 +1,21 @@
+{
+  "teamId": "new-mexico",
+  "teamSlug": "new-mexico-lobos",
+  "teamName": "New Mexico Lobos",
+  "draftPicks": [
+    {"year": 2023, "round": 6, "pick": 198, "name": "Jerrick Reed", "position": "SAF", "nflTeam": "Seattle Seahawks"},
+    {"year": 2018, "round": 7, "pick": 229, "name": "Jason Sanders", "position": "K", "nflTeam": "Miami Dolphins"},
+    {"year": 2010, "round": 7, "pick": 229, "name": "Erik Cook", "position": "C", "nflTeam": "Washington Redskins"},
+    {"year": 2009, "round": 4, "pick": 112, "name": "Glover Quin", "position": "DB", "nflTeam": "Houston Texans"},
+    {"year": 2009, "round": 6, "pick": 200, "name": "DeAndre Wright", "position": "DB", "nflTeam": "New York Giants"},
+    {"year": 2008, "round": 4, "pick": 106, "name": "Marcus Smith", "position": "WR", "nflTeam": "Baltimore Ravens"},
+    {"year": 2007, "round": 3, "pick": 68, "name": "Quincy Black", "position": "LB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2006, "round": 2, "pick": 51, "name": "Ryan Cook", "position": "C", "nflTeam": "Minnesota Vikings"},
+    {"year": 2006, "round": 7, "pick": 216, "name": "Terrance Pennington", "position": "OL", "nflTeam": "Buffalo Bills"},
+    {"year": 2005, "round": 4, "pick": 134, "name": "Claude Terrell", "position": "OL", "nflTeam": "St. Louis Rams"},
+    {"year": 2005, "round": 6, "pick": 176, "name": "Nick Speegle", "position": "LB", "nflTeam": "Cleveland Browns"},
+    {"year": 2002, "round": 5, "pick": 136, "name": "Jarrod Baxter", "position": "FB", "nflTeam": "Houston Texans"},
+    {"year": 2001, "round": 6, "pick": 194, "name": "Joe Maese", "position": "C", "nflTeam": "Baltimore Ravens"},
+    {"year": 2000, "round": 1, "pick": 9, "name": "Brian Urlacher", "position": "LB", "nflTeam": "Chicago Bears"}
+  ]
+}

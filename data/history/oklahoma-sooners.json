@@ -1,0 +1,33 @@
+{
+  "teamId": "oklahoma",
+  "teamSlug": "oklahoma-sooners",
+  "teamName": "Oklahoma Sooners",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 18, "apPost": 13, "cfpFinal": 12, "coach": "Brent Venables", "bowl": "CFP First Round (L)"},
+    {"year": 2024, "wins": 6, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Brent Venables", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2023, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 2, "apPre": 20, "apPost": 15, "cfpFinal": null, "coach": "Brent Venables", "bowl": "Alamo Bowl (L)"},
+    {"year": 2022, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": 9, "apPost": null, "cfpFinal": null, "coach": "Brent Venables", "bowl": "Cheez-It Bowl (L)"},
+    {"year": 2021, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 2, "apPost": 10, "cfpFinal": null, "coach": "Lincoln Riley / Bob Stoops", "bowl": "Alamo Bowl (W)"},
+    {"year": 2020, "wins": 9, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 5, "apPost": 6, "cfpFinal": 6, "coach": "Lincoln Riley", "bowl": "Cotton Bowl (W)"},
+    {"year": 2019, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 4, "apPost": 7, "cfpFinal": 4, "coach": "Lincoln Riley", "bowl": "Peach Bowl (L)"},
+    {"year": 2018, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 7, "apPost": 4, "cfpFinal": 4, "coach": "Lincoln Riley", "bowl": "Orange Bowl (L)"},
+    {"year": 2017, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 7, "apPost": 3, "cfpFinal": 2, "coach": "Lincoln Riley", "bowl": "Rose Bowl (L)"},
+    {"year": 2016, "wins": 11, "losses": 2, "confWins": 9, "confLosses": 0, "apPre": 3, "apPost": 5, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Sugar Bowl (W)"},
+    {"year": 2015, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 1, "apPre": 19, "apPost": 5, "cfpFinal": 4, "coach": "Bob Stoops", "bowl": "Orange Bowl (L)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 4, "apPre": 4, "apPost": 15, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Russell Athletic Bowl (L)"},
+    {"year": 2013, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 2, "apPre": 16, "apPost": 6, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Sugar Bowl (W)"},
+    {"year": 2012, "wins": 10, "losses": 3, "confWins": 8, "confLosses": 1, "apPre": 4, "apPost": 15, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Cotton Bowl (L)"},
+    {"year": 2011, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 3, "apPre": 1, "apPost": 16, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Insight Bowl (W)"},
+    {"year": 2010, "wins": 12, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 7, "apPost": 6, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Fiesta Bowl (W)"},
+    {"year": 2009, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": 3, "apPost": null, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Sun Bowl (W)"},
+    {"year": 2008, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 4, "apPost": 5, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "BCS Championship (L)"},
+    {"year": 2007, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 8, "apPost": 8, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2006, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 10, "apPost": 11, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Fiesta Bowl (L)"},
+    {"year": 2005, "wins": 8, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 7, "apPost": null, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Holiday Bowl (W)"},
+    {"year": 2004, "wins": 12, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 2, "apPost": 3, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Orange Bowl (L)"},
+    {"year": 2003, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 3, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Sugar Bowl (L)"},
+    {"year": 2002, "wins": 12, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 2, "apPost": 5, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Rose Bowl (W)"},
+    {"year": 2001, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 3, "apPost": 6, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Cotton Bowl (W)"},
+    {"year": 2000, "wins": 13, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 19, "apPost": 1, "cfpFinal": null, "coach": "Bob Stoops", "bowl": "Orange Bowl (W)"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "teamId": "san-diego-state",
+  "teamSlug": "san-diego-state-aztecs",
+  "teamName": "San Diego State Aztecs",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sean Lewis", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2024, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sean Lewis", "bowl": null},
+    {"year": 2023, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": null},
+    {"year": 2022, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2021, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 19, "cfpFinal": 24, "coach": "Brady Hoke", "bowl": "Frisco Bowl (W)"},
+    {"year": 2020, "wins": 4, "losses": 4, "confWins": 4, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": null},
+    {"year": 2019, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": 24, "cfpFinal": null, "coach": "Rocky Long", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Frisco Bowl (L)"},
+    {"year": 2017, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": 19, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2016, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": 25, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2015, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Hawaii Bowl (W)"},
+    {"year": 2014, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Poinsettia Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Famous Idaho Potato Bowl (W)"},
+    {"year": 2012, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Poinsettia Bowl (L)"},
+    {"year": 2011, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2010, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": "Poinsettia Bowl (W)"},
+    {"year": 2009, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brady Hoke", "bowl": null},
+    {"year": 2008, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Long", "bowl": null},
+    {"year": 2007, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Long", "bowl": null},
+    {"year": 2006, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Long", "bowl": null},
+    {"year": 2005, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tom Craft", "bowl": null},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tom Craft", "bowl": null},
+    {"year": 2003, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tom Craft", "bowl": null},
+    {"year": 2002, "wins": 4, "losses": 9, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tom Craft", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ted Tollner", "bowl": null},
+    {"year": 2000, "wins": 3, "losses": 8, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ted Tollner", "bowl": null}
+  ]
+}

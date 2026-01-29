@@ -1,0 +1,33 @@
+{
+  "teamId": "louisville",
+  "teamSlug": "louisville-cardinals",
+  "teamName": "Louisville Cardinals",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 14, "apPost": null, "cfpFinal": null, "coach": "Jeff Brohm", "bowl": "Boca Raton Bowl (W)"},
+    {"year": 2024, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 15, "apPost": null, "cfpFinal": null, "coach": "Jeff Brohm", "bowl": "Sun Bowl (W)"},
+    {"year": 2023, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": 9, "apPost": 10, "cfpFinal": null, "coach": "Jeff Brohm", "bowl": "Holiday Bowl (L)"},
+    {"year": 2022, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 25, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield / Deion Branch", "bowl": "Fenway Bowl (W)"},
+    {"year": 2021, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": "First Responder Bowl (L)"},
+    {"year": 2020, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 7, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": "Music City Bowl (W)"},
+    {"year": 2018, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Petrino / Lorenzo Ward", "bowl": null},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 16, "apPost": 14, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "TaxSlayer Bowl (L)"},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": 19, "apPost": 13, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "Citrus Bowl (L)"},
+    {"year": 2015, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "Music City Bowl (W)"},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 20, "apPost": 21, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "Belk Bowl (L)"},
+    {"year": 2013, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 9, "apPost": 15, "cfpFinal": null, "coach": "Charlie Strong", "bowl": "Russell Athletic Bowl (W)"},
+    {"year": 2012, "wins": 11, "losses": 2, "confWins": 5, "confLosses": 2, "apPre": 25, "apPost": 13, "cfpFinal": null, "coach": "Charlie Strong", "bowl": "Sugar Bowl (W)"},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Strong", "bowl": "Belk Bowl (L)"},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Strong", "bowl": "Beef O'Brady's Bowl (W)"},
+    {"year": 2009, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": null},
+    {"year": 2008, "wins": 5, "losses": 7, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": null},
+    {"year": 2007, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": 10, "apPost": 8, "cfpFinal": null, "coach": "Steve Kragthorpe", "bowl": null},
+    {"year": 2006, "wins": 12, "losses": 1, "confWins": 6, "confLosses": 1, "apPre": 13, "apPost": 6, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "Orange Bowl (W)"},
+    {"year": 2005, "wins": 9, "losses": 3, "confWins": 5, "confLosses": 2, "apPre": 12, "apPost": 19, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "Gator Bowl (L)"},
+    {"year": 2004, "wins": 11, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 6, "apPost": 6, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "Liberty Bowl (W)"},
+    {"year": 2003, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Petrino", "bowl": "GMAC Bowl (L)"},
+    {"year": 2002, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": 17, "apPost": 17, "cfpFinal": null, "coach": "John L. Smith", "bowl": "GMAC Bowl (L)"},
+    {"year": 2001, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 1, "apPre": 17, "apPost": 17, "cfpFinal": null, "coach": "John L. Smith", "bowl": "Liberty Bowl (W)"},
+    {"year": 2000, "wins": 9, "losses": 3, "confWins": 6, "confLosses": 1, "apPre": 22, "apPost": null, "cfpFinal": null, "coach": "John L. Smith", "bowl": "Liberty Bowl (L)"}
+  ]
+}

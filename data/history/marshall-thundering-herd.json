@@ -1,0 +1,33 @@
+{
+  "teamId": "marshall",
+  "teamSlug": "marshall-thundering-herd",
+  "teamName": "Marshall Thundering Herd",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tony Gibson", "bowl": null},
+    {"year": 2024, "wins": 10, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charles Huff", "bowl": null},
+    {"year": 2023, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charles Huff", "bowl": "Frisco Bowl (L)"},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charles Huff", "bowl": "Myrtle Beach Bowl (W)"},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charles Huff", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2020, "wins": 7, "losses": 3, "confWins": 4, "confLosses": 1, "apPre": null, "apPost": 21, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "Camellia Bowl (L)"},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "Gasparilla Bowl (L)"},
+    {"year": 2018, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "Gasparilla Bowl (W)"},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2016, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": null},
+    {"year": 2015, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "St. Petersburg Bowl (W)"},
+    {"year": 2014, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 23, "cfpFinal": 24, "coach": "Doc Holliday", "bowl": "Boca Raton Bowl (W)"},
+    {"year": 2013, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "Military Bowl (W)"},
+    {"year": 2012, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": null},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": "Beef O'Brady's Bowl (W)"},
+    {"year": 2010, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Doc Holliday", "bowl": null},
+    {"year": 2009, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Snyder", "bowl": "Little Caesars Bowl (W)"},
+    {"year": 2008, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Snyder", "bowl": null},
+    {"year": 2007, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Snyder", "bowl": null},
+    {"year": 2006, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Snyder", "bowl": null},
+    {"year": 2005, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Snyder", "bowl": null},
+    {"year": 2004, "wins": 6, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Pruett", "bowl": "Fort Worth Bowl (L)"},
+    {"year": 2003, "wins": 8, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Pruett", "bowl": null},
+    {"year": 2002, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 16, "cfpFinal": null, "coach": "Bob Pruett", "bowl": "GMAC Bowl (W)"},
+    {"year": 2001, "wins": 11, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": 20, "cfpFinal": null, "coach": "Bob Pruett", "bowl": "GMAC Bowl (W)"},
+    {"year": 2000, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Pruett", "bowl": "Motor City Bowl (W)"}
+  ]
+}

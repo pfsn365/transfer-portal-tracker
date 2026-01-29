@@ -1,0 +1,33 @@
+{
+  "teamId": "western-michigan",
+  "teamSlug": "western-michigan-broncos",
+  "teamName": "Western Michigan Broncos",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Lance Taylor", "bowl": "Myrtle Beach Bowl (W)"},
+    {"year": 2024, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Lance Taylor", "bowl": "Salute to Veterans Bowl (L)"},
+    {"year": 2023, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Lance Taylor", "bowl": null},
+    {"year": 2022, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Lester", "bowl": null},
+    {"year": 2021, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Lester", "bowl": "Quick Lane Bowl (W)"},
+    {"year": 2020, "wins": 4, "losses": 2, "confWins": 4, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Lester", "bowl": null},
+    {"year": 2019, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Lester", "bowl": "First Responder Bowl (L)"},
+    {"year": 2018, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Lester", "bowl": "Famous Idaho Potato Bowl (L)"},
+    {"year": 2017, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Lester", "bowl": null},
+    {"year": 2016, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": 15, "cfpFinal": 15, "coach": "P.J. Fleck", "bowl": "Cotton Bowl (L)"},
+    {"year": 2015, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Bahamas Bowl (W)"},
+    {"year": 2014, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": "Famous Idaho Potato Bowl (L)"},
+    {"year": 2013, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "P.J. Fleck", "bowl": null},
+    {"year": 2012, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": null},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": "Little Caesars Bowl (L)"},
+    {"year": 2010, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": null},
+    {"year": 2009, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": null},
+    {"year": 2008, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": "Texas Bowl (L)"},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": null},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": "International Bowl (L)"},
+    {"year": 2005, "wins": 7, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bill Cubit", "bowl": null},
+    {"year": 2004, "wins": 1, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Darnell", "bowl": null},
+    {"year": 2003, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Darnell", "bowl": null},
+    {"year": 2002, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Darnell", "bowl": null},
+    {"year": 2001, "wins": 5, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Darnell", "bowl": null},
+    {"year": 2000, "wins": 9, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Gary Darnell", "bowl": null}
+  ]
+}

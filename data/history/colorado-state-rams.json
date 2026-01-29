@@ -1,0 +1,33 @@
+{
+  "teamId": "colorado-state",
+  "teamSlug": "colorado-state-rams",
+  "teamName": "Colorado State Rams",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell / Tyson Summers", "bowl": null},
+    {"year": 2024, "wins": 8, "losses": 5, "confWins": 6, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": "Arizona Bowl (L)"},
+    {"year": 2023, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": null},
+    {"year": 2022, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": null},
+    {"year": 2021, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Addazio", "bowl": null},
+    {"year": 2020, "wins": 1, "losses": 3, "confWins": 1, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Addazio", "bowl": null},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Bobo", "bowl": null},
+    {"year": 2018, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Bobo", "bowl": null},
+    {"year": 2017, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Bobo", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2016, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Bobo", "bowl": "Famous Idaho Potato Bowl (L)"},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Bobo", "bowl": "Arizona Bowl (L)"},
+    {"year": 2014, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": 21, "cfpFinal": null, "coach": "Jim McElwain", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2013, "wins": 8, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2012, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jim McElwain", "bowl": null},
+    {"year": 2011, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Fairchild", "bowl": null},
+    {"year": 2010, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Fairchild", "bowl": null},
+    {"year": 2009, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Fairchild", "bowl": null},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Steve Fairchild", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2007, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": null},
+    {"year": 2006, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": null},
+    {"year": 2005, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": "Poinsettia Bowl (L)"},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": null},
+    {"year": 2003, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": 23, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": "San Francisco Bowl (L)"},
+    {"year": 2002, "wins": 10, "losses": 4, "confWins": 6, "confLosses": 1, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": "Liberty Bowl (L)"},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": 24, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2000, "wins": 10, "losses": 2, "confWins": 6, "confLosses": 1, "apPre": 14, "apPost": 14, "cfpFinal": null, "coach": "Sonny Lubick", "bowl": "Liberty Bowl (W)"}
+  ]
+}

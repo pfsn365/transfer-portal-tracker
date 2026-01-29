@@ -1,0 +1,33 @@
+{
+  "teamId": "wyoming",
+  "teamSlug": "wyoming-cowboys",
+  "teamName": "Wyoming Cowboys",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Sawvel", "bowl": null},
+    {"year": 2024, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Sawvel", "bowl": null},
+    {"year": 2023, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": "Arizona Bowl (W)"},
+    {"year": 2022, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": "Arizona Bowl (L)"},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": "Famous Idaho Potato Bowl (W)"},
+    {"year": 2020, "wins": 2, "losses": 4, "confWins": 2, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": "Arizona Bowl (W)"},
+    {"year": 2018, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": null},
+    {"year": 2017, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": "Famous Idaho Potato Bowl (W)"},
+    {"year": 2016, "wins": 8, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": "Poinsettia Bowl (L)"},
+    {"year": 2015, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": null},
+    {"year": 2014, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Craig Bohl", "bowl": null},
+    {"year": 2013, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Christensen", "bowl": null},
+    {"year": 2012, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Christensen", "bowl": null},
+    {"year": 2011, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Christensen", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2010, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Christensen", "bowl": null},
+    {"year": 2009, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dave Christensen", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2008, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Glenn", "bowl": null},
+    {"year": 2007, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Glenn", "bowl": null},
+    {"year": 2006, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Glenn", "bowl": null},
+    {"year": 2005, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Glenn", "bowl": null},
+    {"year": 2004, "wins": 7, "losses": 5, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Glenn", "bowl": "Las Vegas Bowl (W)"},
+    {"year": 2003, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Glenn", "bowl": null},
+    {"year": 2002, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Vic Koenning", "bowl": null},
+    {"year": 2001, "wins": 2, "losses": 9, "confWins": 0, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Vic Koenning", "bowl": null},
+    {"year": 2000, "wins": 1, "losses": 10, "confWins": 0, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Vic Koenning", "bowl": null}
+  ]
+}

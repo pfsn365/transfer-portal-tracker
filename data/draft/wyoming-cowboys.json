@@ -1,0 +1,22 @@
+{
+  "teamId": "wyoming",
+  "teamSlug": "wyoming-cowboys",
+  "teamName": "Wyoming Cowboys",
+  "draftPicks": [
+    {"year": 2022, "round": 3, "pick": 70, "name": "Chad Muma", "position": "LB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2020, "round": 3, "pick": 65, "name": "Logan Wilson", "position": "LB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2020, "round": 6, "pick": 204, "name": "Cassh Maluia", "position": "LB", "nflTeam": "New England Patriots"},
+    {"year": 2019, "round": 6, "pick": 191, "name": "Marcus Epps", "position": "SAF", "nflTeam": "Minnesota Vikings"},
+    {"year": 2018, "round": 1, "pick": 7, "name": "Josh Allen", "position": "QB", "nflTeam": "Buffalo Bills"},
+    {"year": 2017, "round": 5, "pick": 156, "name": "Brian Hill", "position": "RB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2017, "round": 6, "pick": 199, "name": "Chase Roullier", "position": "C", "nflTeam": "Washington Redskins"},
+    {"year": 2015, "round": 7, "pick": 236, "name": "Mark Nzeocha", "position": "LB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2014, "round": 4, "pick": 122, "name": "Marqueston Huff", "position": "DB", "nflTeam": "Tennessee Titans"},
+    {"year": 2014, "round": 6, "pick": 185, "name": "Robert Herron", "position": "WR", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2011, "round": 4, "pick": 121, "name": "Chris Prosinski", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2007, "round": 6, "pick": 184, "name": "John Wendling", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2006, "round": 6, "pick": 208, "name": "Derrick Martin", "position": "DB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2004, "round": 7, "pick": 218, "name": "Casey Bramlet", "position": "QB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2001, "round": 5, "pick": 157, "name": "Patrick Chukwurah", "position": "LB", "nflTeam": "Minnesota Vikings"}
+  ]
+}

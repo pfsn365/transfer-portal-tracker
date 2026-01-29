@@ -1,0 +1,33 @@
+{
+  "teamId": "louisiana",
+  "teamSlug": "louisiana-ragin-cajuns",
+  "teamName": "Louisiana Ragin' Cajuns",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Michael Desormeaux", "bowl": "68 Ventures Bowl (L)"},
+    {"year": 2024, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Michael Desormeaux", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2023, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Michael Desormeaux", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2022, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Michael Desormeaux", "bowl": "Independence Bowl (L)"},
+    {"year": 2021, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 23, "apPost": 16, "cfpFinal": 23, "coach": "Billy Napier / Michael Desormeaux", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2020, "wins": 10, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 15, "apPost": 19, "cfpFinal": 19, "coach": "Billy Napier", "bowl": "First Responder Bowl (W)"},
+    {"year": 2019, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Billy Napier", "bowl": "LendingTree Bowl (W)"},
+    {"year": 2018, "wins": 7, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Billy Napier", "bowl": "Cure Bowl (L)"},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": null},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2015, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": null},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2012, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2011, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Hudspeth", "bowl": "New Orleans Bowl (W)"},
+    {"year": 2010, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2009, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2008, "wins": 6, "losses": 6, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2007, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2006, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2005, "wins": 6, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2003, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2002, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rickey Bustle", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Baldwin", "bowl": null},
+    {"year": 2000, "wins": 1, "losses": 10, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Baldwin", "bowl": null}
+  ]
+}

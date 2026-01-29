@@ -1,0 +1,21 @@
+{
+  "teamId": "utsa",
+  "teamSlug": "utsa-roadrunners",
+  "teamName": "UTSA Roadrunners",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Traylor", "bowl": "First Responder Bowl (W)"},
+    {"year": 2024, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Traylor", "bowl": "Myrtle Beach Bowl (W)"},
+    {"year": 2023, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Traylor", "bowl": "Frisco Bowl (W)"},
+    {"year": 2022, "wins": 11, "losses": 3, "confWins": 8, "confLosses": 0, "apPre": 22, "apPost": 25, "cfpFinal": 25, "coach": "Jeff Traylor", "bowl": "Cure Bowl (L)"},
+    {"year": 2021, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 15, "apPost": 22, "cfpFinal": null, "coach": "Jeff Traylor", "bowl": "Frisco Bowl (L)"},
+    {"year": 2020, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Traylor", "bowl": "First Responder Bowl (L)"},
+    {"year": 2019, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Frank Wilson", "bowl": null},
+    {"year": 2018, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Frank Wilson", "bowl": null},
+    {"year": 2017, "wins": 6, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Frank Wilson", "bowl": null},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Frank Wilson", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2015, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Larry Coker", "bowl": null},
+    {"year": 2014, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Larry Coker", "bowl": null},
+    {"year": 2013, "wins": 7, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Larry Coker", "bowl": null},
+    {"year": 2012, "wins": 8, "losses": 4, "confWins": 3, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Larry Coker", "bowl": null}
+  ]
+}

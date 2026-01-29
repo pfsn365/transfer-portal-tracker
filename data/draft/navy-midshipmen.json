@@ -1,0 +1,11 @@
+{
+  "teamId": "navy",
+  "teamSlug": "navy-midshipmen",
+  "teamName": "Navy Midshipmen",
+  "draftPicks": [
+    {"year": 2025, "round": 6, "pick": 200, "name": "Rayuan Lane", "position": "SAF", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2020, "round": 7, "pick": 246, "name": "Malcolm Perry", "position": "RB", "nflTeam": "Miami Dolphins"},
+    {"year": 2016, "round": 6, "pick": 182, "name": "Keenan Reynolds", "position": "RB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2015, "round": 5, "pick": 166, "name": "Joe Cardona", "position": "LS", "nflTeam": "New England Patriots"}
+  ]
+}

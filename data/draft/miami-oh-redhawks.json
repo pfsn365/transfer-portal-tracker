@@ -1,0 +1,22 @@
+{
+  "teamId": "miami-oh",
+  "teamSlug": "miami-oh-redhawks",
+  "teamName": "Miami (OH) RedHawks",
+  "draftPicks": [
+    {"year": 2022, "round": 5, "pick": 174, "name": "Dominique Robinson", "position": "DE", "nflTeam": "Chicago Bears"},
+    {"year": 2021, "round": 5, "pick": 161, "name": "Tommy Doyle", "position": "OL", "nflTeam": "Buffalo Bills"},
+    {"year": 2020, "round": 7, "pick": 248, "name": "Sam Sloman", "position": "K", "nflTeam": "Los Angeles Rams"},
+    {"year": 2015, "round": 2, "pick": 62, "name": "Quinten Rollins", "position": "CB", "nflTeam": "Green Bay Packers"},
+    {"year": 2013, "round": 7, "pick": 234, "name": "Zac Dysert", "position": "QB", "nflTeam": "Denver Broncos"},
+    {"year": 2012, "round": 3, "pick": 76, "name": "Brandon Brooks", "position": "OL", "nflTeam": "Houston Texans"},
+    {"year": 2009, "round": 7, "pick": 237, "name": "Jake O'Connell", "position": "TE", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2007, "round": 4, "pick": 118, "name": "Ryne Robinson", "position": "WR", "nflTeam": "Carolina Panthers"},
+    {"year": 2006, "round": 5, "pick": 137, "name": "Terna Nande", "position": "LB", "nflTeam": "Tennessee Titans"},
+    {"year": 2005, "round": 5, "pick": 147, "name": "Alphonso Hodge", "position": "DB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2004, "round": 1, "pick": 11, "name": "Ben Roethlisberger", "position": "QB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2004, "round": 5, "pick": 138, "name": "Jacob Bell", "position": "OL", "nflTeam": "Tennessee Titans"},
+    {"year": 2001, "round": 6, "pick": 176, "name": "Alex Sulfsted", "position": "OL", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2000, "round": 3, "pick": 63, "name": "Travis Prentice", "position": "RB", "nflTeam": "Cleveland Browns"},
+    {"year": 2000, "round": 4, "pick": 111, "name": "Trevor Gaylor", "position": "WR", "nflTeam": "San Diego Chargers"}
+  ]
+}

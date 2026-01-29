@@ -1,0 +1,20 @@
+{
+  "teamId": "duke",
+  "teamSlug": "duke-blue-devils",
+  "teamName": "Duke Blue Devils",
+  "draftPicks": [
+    {"year": 2024, "round": 1, "pick": 26, "name": "Graham Barton", "position": "OL", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2024, "round": 3, "pick": 95, "name": "DeWayne Carter", "position": "DT", "nflTeam": "Buffalo Bills"},
+    {"year": 2024, "round": 5, "pick": 163, "name": "Jacob Monk", "position": "OL", "nflTeam": "Green Bay Packers"},
+    {"year": 2021, "round": 4, "pick": 118, "name": "Chris Rumph", "position": "DE", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2021, "round": 5, "pick": 154, "name": "Michael Carter II", "position": "SAF", "nflTeam": "New York Jets"},
+    {"year": 2021, "round": 5, "pick": 162, "name": "Noah Gray", "position": "TE", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2021, "round": 6, "pick": 210, "name": "Victor Dimukeje", "position": "DE", "nflTeam": "Arizona Cardinals"},
+    {"year": 2019, "round": 1, "pick": 6, "name": "Daniel Jones", "position": "QB", "nflTeam": "New York Giants"},
+    {"year": 2015, "round": 1, "pick": 28, "name": "Laken Tomlinson", "position": "OL", "nflTeam": "Detroit Lions"},
+    {"year": 2015, "round": 4, "pick": 105, "name": "Jamison Crowder", "position": "WR", "nflTeam": "Washington Redskins"},
+    {"year": 2014, "round": 4, "pick": 109, "name": "Ross Cockrell", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2013, "round": 7, "pick": 249, "name": "Sean Renfree", "position": "QB", "nflTeam": "Atlanta Falcons"},
+    {"year": 2000, "round": 6, "pick": 173, "name": "Chris Combs", "position": "DE", "nflTeam": "Pittsburgh Steelers"}
+  ]
+}

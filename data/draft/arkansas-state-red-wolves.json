@@ -1,0 +1,16 @@
+{
+  "teamId": "arkansas-state",
+  "teamSlug": "arkansas-state-red-wolves",
+  "teamName": "Arkansas State Red Wolves",
+  "draftPicks": [
+    {"year": 2014, "round": 5, "pick": 165, "name": "Ryan Carrethers", "position": "DT", "nflTeam": "San Diego Chargers"},
+    {"year": 2013, "round": 7, "pick": 250, "name": "Don Jones", "position": "DB", "nflTeam": "Miami Dolphins"},
+    {"year": 2012, "round": 3, "pick": 77, "name": "Demario Davis", "position": "LB", "nflTeam": "New York Jets"},
+    {"year": 2011, "round": 7, "pick": 214, "name": "Derek Newton", "position": "T", "nflTeam": "Houston Texans"},
+    {"year": 2010, "round": 3, "pick": 72, "name": "Alex Carrington", "position": "DE", "nflTeam": "Buffalo Bills"},
+    {"year": 2009, "round": 7, "pick": 241, "name": "David Johnson", "position": "TE", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2008, "round": 2, "pick": 43, "name": "Tyrell Johnson", "position": "DB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2007, "round": 6, "pick": 175, "name": "Oren O'Neal", "position": "FB", "nflTeam": "Oakland Raiders"},
+    {"year": 2004, "round": 6, "pick": 179, "name": "Corey Williams", "position": "DT", "nflTeam": "Green Bay Packers"}
+  ]
+}

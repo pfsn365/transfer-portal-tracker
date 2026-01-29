@@ -1,0 +1,21 @@
+{
+  "teamId": "usc",
+  "teamSlug": "usc-trojans",
+  "teamName": "USC Trojans",
+  "draftPicks": [
+    {"year": 2025, "round": 3, "pick": 97, "name": "Jaylin Smith", "position": "CB", "nflTeam": "Houston Texans"},
+    {"year": 2025, "round": 4, "pick": 116, "name": "Woody Marks", "position": "RB", "nflTeam": "Houston Texans"},
+    {"year": 2025, "round": 7, "pick": 221, "name": "Jonah Monheim", "position": "OL", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2024, "round": 1, "pick": 1, "name": "Caleb Williams", "position": "QB", "nflTeam": "Chicago Bears"},
+    {"year": 2024, "round": 3, "pick": 78, "name": "Calen Bullock", "position": "SAF", "nflTeam": "Houston Texans"},
+    {"year": 2024, "round": 3, "pick": 88, "name": "MarShawn Lloyd", "position": "RB", "nflTeam": "Green Bay Packers"},
+    {"year": 2024, "round": 6, "pick": 215, "name": "Jarrett Kingston", "position": "OL", "nflTeam": "San Francisco 49ers"},
+    {"year": 2024, "round": 7, "pick": 225, "name": "Brenden Rice", "position": "WR", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2024, "round": 7, "pick": 238, "name": "Solomon Byrd", "position": "DE", "nflTeam": "Houston Texans"},
+    {"year": 2024, "round": 7, "pick": 241, "name": "Tahj Washington", "position": "WR", "nflTeam": "Miami Dolphins"},
+    {"year": 2023, "round": 1, "pick": 23, "name": "Jordan Addison", "position": "WR", "nflTeam": "Minnesota Vikings"},
+    {"year": 2023, "round": 2, "pick": 54, "name": "Tuli Tuipulotu", "position": "DL", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2023, "round": 3, "pick": 102, "name": "Mekhi Blackmon", "position": "CB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2023, "round": 7, "pick": 229, "name": "Andrew Vorhees", "position": "OL", "nflTeam": "Baltimore Ravens"}
+  ]
+}

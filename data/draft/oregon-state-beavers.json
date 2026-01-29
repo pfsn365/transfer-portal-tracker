@@ -1,0 +1,21 @@
+{
+  "teamId": "oregon-state",
+  "teamSlug": "oregon-state-beavers",
+  "teamName": "Oregon State Beavers",
+  "draftPicks": [
+    {"year": 2024, "round": 1, "pick": 14, "name": "Taliese Fuaga", "position": "OL", "nflTeam": "New Orleans Saints"},
+    {"year": 2024, "round": 5, "pick": 142, "name": "Anthony Gould", "position": "WR", "nflTeam": "Indianapolis Colts"},
+    {"year": 2024, "round": 5, "pick": 169, "name": "Kitan Oladapo", "position": "DB", "nflTeam": "Green Bay Packers"},
+    {"year": 2023, "round": 2, "pick": 42, "name": "Luke Musgrave", "position": "TE", "nflTeam": "Green Bay Packers"},
+    {"year": 2023, "round": 7, "pick": 252, "name": "Alex Austin", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2022, "round": 5, "pick": 170, "name": "Teagan Quitoriano", "position": "TE", "nflTeam": "Houston Texans"},
+    {"year": 2021, "round": 3, "pick": 99, "name": "Nahshon Wright", "position": "DB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2021, "round": 7, "pick": 257, "name": "Jermar Jefferson", "position": "RB", "nflTeam": "Detroit Lions"},
+    {"year": 2020, "round": 6, "pick": 189, "name": "Jake Luton", "position": "QB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2020, "round": 6, "pick": 203, "name": "Blake Brandel", "position": "OL", "nflTeam": "Minnesota Vikings"},
+    {"year": 2020, "round": 6, "pick": 207, "name": "Isaiah Hodgins", "position": "WR", "nflTeam": "Buffalo Bills"},
+    {"year": 2014, "round": 1, "pick": 20, "name": "Brandin Cooks", "position": "WR", "nflTeam": "New Orleans Saints"},
+    {"year": 2004, "round": 1, "pick": 24, "name": "Steven Jackson", "position": "RB", "nflTeam": "St. Louis Rams"},
+    {"year": 2003, "round": 1, "pick": 29, "name": "Nick Barnett", "position": "LB", "nflTeam": "Green Bay Packers"}
+  ]
+}

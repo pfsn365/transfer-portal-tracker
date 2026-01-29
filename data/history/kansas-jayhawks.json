@@ -1,0 +1,33 @@
+{
+  "teamId": "kansas",
+  "teamSlug": "kansas-jayhawks",
+  "teamName": "Kansas Jayhawks",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Lance Leipold", "bowl": null},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 5, "apPre": 22, "apPost": 19, "cfpFinal": null, "coach": "Lance Leipold", "bowl": null},
+    {"year": 2023, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 4, "apPre": 19, "apPost": 16, "cfpFinal": null, "coach": "Lance Leipold", "bowl": "Guaranteed Rate Bowl (W)"},
+    {"year": 2022, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": 19, "cfpFinal": null, "coach": "Lance Leipold", "bowl": "Liberty Bowl (L)"},
+    {"year": 2021, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Lance Leipold", "bowl": null},
+    {"year": 2020, "wins": 0, "losses": 9, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Les Miles", "bowl": null},
+    {"year": 2019, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Les Miles", "bowl": null},
+    {"year": 2018, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "David Beaty", "bowl": null},
+    {"year": 2017, "wins": 1, "losses": 11, "confWins": 0, "confLosses": 9, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "David Beaty", "bowl": null},
+    {"year": 2016, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "David Beaty", "bowl": null},
+    {"year": 2015, "wins": 0, "losses": 12, "confWins": 0, "confLosses": 9, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "David Beaty", "bowl": null},
+    {"year": 2014, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weis / Clint Bowen", "bowl": null},
+    {"year": 2013, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weis", "bowl": null},
+    {"year": 2012, "wins": 1, "losses": 11, "confWins": 0, "confLosses": 9, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charlie Weis", "bowl": null},
+    {"year": 2011, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 9, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Turner Gill", "bowl": null},
+    {"year": 2010, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Turner Gill", "bowl": null},
+    {"year": 2009, "wins": 5, "losses": 7, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": 16, "cfpFinal": null, "coach": "Mark Mangino", "bowl": null},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 13, "cfpFinal": null, "coach": "Mark Mangino", "bowl": "Insight Bowl (W)"},
+    {"year": 2007, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 7, "cfpFinal": null, "coach": "Mark Mangino", "bowl": "Orange Bowl (W)"},
+    {"year": 2006, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Mangino", "bowl": null},
+    {"year": 2005, "wins": 7, "losses": 5, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Mangino", "bowl": "Fort Worth Bowl (W)"},
+    {"year": 2004, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Mangino", "bowl": null},
+    {"year": 2003, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Mangino", "bowl": "Tangerine Bowl (L)"},
+    {"year": 2002, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Mangino", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Terry Allen / Tom Hayes", "bowl": null},
+    {"year": 2000, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Terry Allen", "bowl": null}
+  ]
+}

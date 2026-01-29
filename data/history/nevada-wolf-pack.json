@@ -1,0 +1,33 @@
+{
+  "teamId": "nevada",
+  "teamSlug": "nevada-wolf-pack",
+  "teamName": "Nevada Wolf Pack",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Choate", "bowl": null},
+    {"year": 2024, "wins": 3, "losses": 10, "confWins": 0, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Choate", "bowl": null},
+    {"year": 2023, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Wilson", "bowl": null},
+    {"year": 2022, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Ken Wilson", "bowl": null},
+    {"year": 2021, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": "Quick Lane Bowl (L)"},
+    {"year": 2020, "wins": 7, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": "Famous Idaho Potato Bowl (W)"},
+    {"year": 2019, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": "Famous Idaho Potato Bowl (L)"},
+    {"year": 2018, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": "Arizona Bowl (W)"},
+    {"year": 2017, "wins": 3, "losses": 9, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jay Norvell", "bowl": null},
+    {"year": 2016, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Polian", "bowl": null},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Polian", "bowl": "Arizona Bowl (W)"},
+    {"year": 2014, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Polian", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2013, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Polian", "bowl": null},
+    {"year": 2012, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2010, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 11, "cfpFinal": null, "coach": "Chris Ault", "bowl": "Fight Hunger Bowl (W)"},
+    {"year": 2009, "wins": 8, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2008, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "Humanitarian Bowl (L)"},
+    {"year": 2007, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "MPC Computers Bowl (L)"},
+    {"year": 2005, "wins": 9, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": "Hawaii Bowl (W)"},
+    {"year": 2004, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Ault", "bowl": null},
+    {"year": 2003, "wins": 6, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Tormey", "bowl": null},
+    {"year": 2002, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Tormey", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Tormey", "bowl": null},
+    {"year": 2000, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chris Tormey", "bowl": null}
+  ]
+}

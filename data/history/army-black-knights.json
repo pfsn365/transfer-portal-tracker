@@ -1,0 +1,33 @@
+{
+  "teamId": "army",
+  "teamSlug": "army-black-knights",
+  "teamName": "Army Black Knights",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": "Fenway Bowl (W)"},
+    {"year": 2024, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 16, "apPost": 19, "cfpFinal": 22, "coach": "Jeff Monken", "bowl": "Independence Bowl (W)"},
+    {"year": 2023, "wins": 6, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": null},
+    {"year": 2022, "wins": 6, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": null},
+    {"year": 2021, "wins": 9, "losses": 4, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2020, "wins": 9, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": 22, "cfpFinal": null, "coach": "Jeff Monken", "bowl": "Liberty Bowl (L)"},
+    {"year": 2019, "wins": 5, "losses": 8, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": null},
+    {"year": 2018, "wins": 11, "losses": 2, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": 19, "cfpFinal": 19, "coach": "Jeff Monken", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2017, "wins": 10, "losses": 3, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2016, "wins": 8, "losses": 5, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": "Heart of Dallas Bowl (W)"},
+    {"year": 2015, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": null},
+    {"year": 2014, "wins": 4, "losses": 8, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Monken", "bowl": null},
+    {"year": 2013, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Ellerson", "bowl": null},
+    {"year": 2012, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Ellerson", "bowl": null},
+    {"year": 2011, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Ellerson", "bowl": null},
+    {"year": 2010, "wins": 7, "losses": 6, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Ellerson", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2009, "wins": 5, "losses": 7, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Ellerson", "bowl": null},
+    {"year": 2008, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Stan Brock", "bowl": null},
+    {"year": 2007, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Stan Brock", "bowl": null},
+    {"year": 2006, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Ross", "bowl": null},
+    {"year": 2005, "wins": 4, "losses": 7, "confWins": 0, "confLosses": 0, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Ross", "bowl": null},
+    {"year": 2004, "wins": 2, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bobby Ross", "bowl": null},
+    {"year": 2003, "wins": 0, "losses": 13, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Berry / John Mumford", "bowl": null},
+    {"year": 2002, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Berry", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Berry", "bowl": null},
+    {"year": 2000, "wins": 1, "losses": 10, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Todd Berry", "bowl": null}
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "teamId": "kansas",
+  "teamSlug": "kansas-jayhawks",
+  "teamName": "Kansas Jayhawks",
+  "draftPicks": [
+    {"year": 2025, "round": 6, "pick": 184, "name": "Devin Neal", "position": "RB", "nflTeam": "New Orleans Saints"},
+    {"year": 2025, "round": 6, "pick": 192, "name": "Bryce Cabeldue", "position": "OL", "nflTeam": "Seattle Seahawks"},
+    {"year": 2024, "round": 3, "pick": 86, "name": "Dominick Puni", "position": "OL", "nflTeam": "San Francisco 49ers"},
+    {"year": 2024, "round": 5, "pick": 144, "name": "Austin Booker", "position": "DL", "nflTeam": "Chicago Bears"},
+    {"year": 2022, "round": 6, "pick": 181, "name": "Kyron Johnson", "position": "DE", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2020, "round": 6, "pick": 180, "name": "Hakeem Adeniji", "position": "OL", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2018, "round": 4, "pick": 116, "name": "Dorance Armstrong Jr.", "position": "DE", "nflTeam": "Dallas Cowboys"},
+    {"year": 2015, "round": 5, "pick": 140, "name": "Ben Heeney", "position": "LB", "nflTeam": "Oakland Raiders"},
+    {"year": 2015, "round": 6, "pick": 191, "name": "JaCorey Shepherd", "position": "CB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2015, "round": 7, "pick": 242, "name": "Dexter McDonald", "position": "CB", "nflTeam": "Oakland Raiders"},
+    {"year": 2013, "round": 5, "pick": 156, "name": "Tanner Hawkinson", "position": "OL", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2010, "round": 4, "pick": 110, "name": "Darrell Stuckey", "position": "DB", "nflTeam": "San Diego Chargers"},
+    {"year": 2010, "round": 5, "pick": 165, "name": "Kerry Meier", "position": "WR", "nflTeam": "Atlanta Falcons"},
+    {"year": 2010, "round": 6, "pick": 191, "name": "Dezmon Briscoe", "position": "WR", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2008, "round": 1, "pick": 20, "name": "Aqib Talib", "position": "DB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2008, "round": 4, "pick": 112, "name": "Anthony Collins", "position": "OL", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2008, "round": 4, "pick": 132, "name": "Derek Fine", "position": "TE", "nflTeam": "Buffalo Bills"},
+    {"year": 2008, "round": 6, "pick": 171, "name": "Marcus Henry", "position": "WR", "nflTeam": "New York Jets"},
+    {"year": 2005, "round": 5, "pick": 139, "name": "David McMillan", "position": "DE", "nflTeam": "Cleveland Browns"},
+    {"year": 2004, "round": 4, "pick": 132, "name": "Adrian Jones", "position": "OL", "nflTeam": "New York Jets"},
+    {"year": 2002, "round": 4, "pick": 113, "name": "Nate Dwyer", "position": "DT", "nflTeam": "Arizona Cardinals"},
+    {"year": 2002, "round": 6, "pick": 187, "name": "Justin Hartwig", "position": "C", "nflTeam": "Tennessee Titans"},
+    {"year": 2001, "round": 4, "pick": 115, "name": "Moran Norris", "position": "FB", "nflTeam": "New Orleans Saints"}
+  ]
+}

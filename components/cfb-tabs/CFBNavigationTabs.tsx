@@ -19,6 +19,9 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
     { id: 'transfers', label: 'Transfer Portal' },
     { id: 'roster', label: 'Roster' },
     { id: 'schedule', label: 'Schedule' },
+    { id: 'stats', label: 'Stats' },
+    { id: 'history', label: 'History' },
+    { id: 'draft', label: 'NFL Draft' },
   ], []);
 
   // Scroll active tab into view when activeTab changes

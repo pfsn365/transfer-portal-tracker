@@ -1,0 +1,28 @@
+{
+  "teamId": "wisconsin",
+  "teamSlug": "wisconsin-badgers",
+  "teamName": "Wisconsin Badgers",
+  "draftPicks": [
+    {"year": 2025, "round": 7, "pick": 218, "name": "Jack Nelson", "position": "OL", "nflTeam": "Atlanta Falcons"},
+    {"year": 2025, "round": 7, "pick": 232, "name": "Hunter Wohler", "position": "SAF", "nflTeam": "Indianapolis Colts"},
+    {"year": 2024, "round": 4, "pick": 117, "name": "Tanor Bortolini", "position": "OL", "nflTeam": "Indianapolis Colts"},
+    {"year": 2024, "round": 4, "pick": 134, "name": "Braelon Allen", "position": "RB", "nflTeam": "New York Jets"},
+    {"year": 2023, "round": 2, "pick": 43, "name": "Joe Tippmann", "position": "OL", "nflTeam": "New York Jets"},
+    {"year": 2023, "round": 2, "pick": 49, "name": "Keeanu Benton", "position": "DT", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2023, "round": 4, "pick": 132, "name": "Nick Herbig", "position": "LB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2022, "round": 3, "pick": 103, "name": "Leo Chenal", "position": "LB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2022, "round": 3, "pick": 104, "name": "Logan Bruss", "position": "OL", "nflTeam": "Los Angeles Rams"},
+    {"year": 2022, "round": 4, "pick": 129, "name": "Jake Ferguson", "position": "TE", "nflTeam": "Dallas Cowboys"},
+    {"year": 2022, "round": 6, "pick": 206, "name": "Matt Henningsen", "position": "DE", "nflTeam": "Denver Broncos"},
+    {"year": 2022, "round": 7, "pick": 232, "name": "Faion Hicks", "position": "CB", "nflTeam": "Denver Broncos"},
+    {"year": 2021, "round": 5, "pick": 156, "name": "Isaiahh Loudermilk", "position": "DE", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2021, "round": 6, "pick": 213, "name": "Rachad Wildgoose", "position": "CB", "nflTeam": "Buffalo Bills"},
+    {"year": 2021, "round": 6, "pick": 214, "name": "Cole Van Lanen", "position": "OL", "nflTeam": "Green Bay Packers"},
+    {"year": 2020, "round": 2, "pick": 41, "name": "Jonathan Taylor", "position": "RB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2020, "round": 3, "pick": 74, "name": "Zack Baun", "position": "LB", "nflTeam": "New Orleans Saints"},
+    {"year": 2020, "round": 4, "pick": 146, "name": "Tyler Biadasz", "position": "C", "nflTeam": "Dallas Cowboys"},
+    {"year": 2020, "round": 5, "pick": 166, "name": "Quintez Cephus", "position": "WR", "nflTeam": "Detroit Lions"},
+    {"year": 2017, "round": 1, "pick": 30, "name": "T.J. Watt", "position": "LB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2012, "round": 3, "pick": 75, "name": "Russell Wilson", "position": "QB", "nflTeam": "Seattle Seahawks"}
+  ]
+}

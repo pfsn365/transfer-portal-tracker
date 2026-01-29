@@ -1,0 +1,33 @@
+{
+  "teamId": "mississippi-state",
+  "teamSlug": "mississippi-state-bulldogs",
+  "teamName": "Mississippi State Bulldogs",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 5, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Lebby", "bowl": "Duke's Mayo Bowl (L)"},
+    {"year": 2024, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jeff Lebby", "bowl": null},
+    {"year": 2023, "wins": 5, "losses": 7, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Zach Arnett / Greg Knox", "bowl": null},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": 16, "apPost": 22, "cfpFinal": null, "coach": "Mike Leach / Zach Arnett", "bowl": "ReliaQuest Bowl (W)"},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 17, "cfpFinal": null, "coach": "Mike Leach", "bowl": "Liberty Bowl (L)"},
+    {"year": 2020, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Leach", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2019, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Moorhead", "bowl": "Music City Bowl (L)"},
+    {"year": 2018, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 18, "cfpFinal": null, "coach": "Joe Moorhead", "bowl": "Outback Bowl (L)"},
+    {"year": 2017, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 23, "cfpFinal": null, "coach": "Dan Mullen / Greg Knox", "bowl": "TaxSlayer Bowl (W)"},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Mullen", "bowl": "St. Petersburg Bowl (W)"},
+    {"year": 2015, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 20, "cfpFinal": null, "coach": "Dan Mullen", "bowl": "Belk Bowl (W)"},
+    {"year": 2014, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 1, "apPost": 7, "cfpFinal": 11, "coach": "Dan Mullen", "bowl": "Orange Bowl (L)"},
+    {"year": 2013, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Mullen", "bowl": "Liberty Bowl (W)"},
+    {"year": 2012, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 13, "cfpFinal": null, "coach": "Dan Mullen", "bowl": "Gator Bowl (L)"},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Mullen", "bowl": "Music City Bowl (W)"},
+    {"year": 2010, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 15, "cfpFinal": null, "coach": "Dan Mullen", "bowl": "Gator Bowl (W)"},
+    {"year": 2009, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Dan Mullen", "bowl": null},
+    {"year": 2008, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sylvester Croom", "bowl": null},
+    {"year": 2007, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sylvester Croom", "bowl": "Liberty Bowl (W)"},
+    {"year": 2006, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sylvester Croom", "bowl": null},
+    {"year": 2005, "wins": 3, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sylvester Croom", "bowl": null},
+    {"year": 2004, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Sylvester Croom", "bowl": null},
+    {"year": 2003, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jackie Sherrill", "bowl": null},
+    {"year": 2002, "wins": 3, "losses": 9, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jackie Sherrill", "bowl": null},
+    {"year": 2001, "wins": 3, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jackie Sherrill", "bowl": null},
+    {"year": 2000, "wins": 8, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": 13, "cfpFinal": null, "coach": "Jackie Sherrill", "bowl": "Independence Bowl (W)"}
+  ]
+}

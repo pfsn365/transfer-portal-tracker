@@ -1,0 +1,18 @@
+{
+  "teamId": "tulsa",
+  "teamSlug": "tulsa-golden-hurricane",
+  "teamName": "Tulsa Golden Hurricane",
+  "draftPicks": [
+    {"year": 2022, "round": 1, "pick": 24, "name": "Tyler Smith", "position": "OL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2022, "round": 7, "pick": 230, "name": "Chris Paul", "position": "OL", "nflTeam": "Washington Commanders"},
+    {"year": 2021, "round": 1, "pick": 16, "name": "Zaven Collins", "position": "LB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2020, "round": 4, "pick": 123, "name": "Reggie Robinson II", "position": "CB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2020, "round": 5, "pick": 155, "name": "Trevis Gipson", "position": "DE", "nflTeam": "Chicago Bears"},
+    {"year": 2011, "round": 6, "pick": 174, "name": "Charles Clay", "position": "TE", "nflTeam": "Miami Dolphins"},
+    {"year": 2008, "round": 7, "pick": 228, "name": "Chris Chamberlain", "position": "DB", "nflTeam": "St. Louis Rams"},
+    {"year": 2006, "round": 4, "pick": 106, "name": "Garrett Mills", "position": "FB", "nflTeam": "New England Patriots"},
+    {"year": 2005, "round": 7, "pick": 229, "name": "James Kilian", "position": "QB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2002, "round": 7, "pick": 244, "name": "Kevin Shaffer", "position": "OL", "nflTeam": "Atlanta Falcons"},
+    {"year": 2000, "round": 5, "pick": 145, "name": "Todd Franz", "position": "DB", "nflTeam": "Detroit Lions"}
+  ]
+}

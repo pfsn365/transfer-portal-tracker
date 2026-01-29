@@ -1,0 +1,33 @@
+{
+  "teamId": "cincinnati",
+  "teamSlug": "cincinnati-bearcats",
+  "teamName": "Cincinnati Bearcats",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 4, "apPre": 17, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": "Liberty Bowl (L)"},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": null},
+    {"year": 2023, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Scott Satterfield", "bowl": null},
+    {"year": 2022, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 23, "apPost": 24, "cfpFinal": null, "coach": "Luke Fickell / Kerry Coombs", "bowl": "Fenway Bowl (L)"},
+    {"year": 2021, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 8, "apPost": 4, "cfpFinal": 4, "coach": "Luke Fickell", "bowl": "Cotton Bowl (L)"},
+    {"year": 2020, "wins": 9, "losses": 1, "confWins": 6, "confLosses": 0, "apPre": 20, "apPost": 8, "cfpFinal": null, "coach": "Luke Fickell", "bowl": "Peach Bowl (L)"},
+    {"year": 2019, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": 17, "apPost": 17, "cfpFinal": null, "coach": "Luke Fickell", "bowl": "Birmingham Bowl (W)"},
+    {"year": 2018, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 19, "apPost": 24, "cfpFinal": null, "coach": "Luke Fickell", "bowl": "Military Bowl (W)"},
+    {"year": 2017, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Luke Fickell", "bowl": null},
+    {"year": 2016, "wins": 4, "losses": 8, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tommy Tuberville", "bowl": null},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tommy Tuberville", "bowl": "Hawaii Bowl (L)"},
+    {"year": 2014, "wins": 9, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tommy Tuberville", "bowl": "Military Bowl (L)"},
+    {"year": 2013, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tommy Tuberville", "bowl": "Belk Bowl (L)"},
+    {"year": 2012, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 2, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Butch Jones / Steve Stripling", "bowl": "Belk Bowl (W)"},
+    {"year": 2011, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 2, "apPre": 23, "apPost": 25, "cfpFinal": null, "coach": "Butch Jones", "bowl": "Liberty Bowl (W)"},
+    {"year": 2010, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Butch Jones", "bowl": null},
+    {"year": 2009, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 0, "apPre": 4, "apPost": 8, "cfpFinal": null, "coach": "Brian Kelly / Jeff Quinn", "bowl": "Sugar Bowl (L)"},
+    {"year": 2008, "wins": 11, "losses": 3, "confWins": 6, "confLosses": 1, "apPre": 12, "apPost": 17, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "Orange Bowl (L)"},
+    {"year": 2007, "wins": 10, "losses": 3, "confWins": 4, "confLosses": 3, "apPre": 15, "apPost": 17, "cfpFinal": null, "coach": "Brian Kelly", "bowl": "PapaJohns.com Bowl (W)"},
+    {"year": 2006, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Dantonio / Brian Kelly", "bowl": "International Bowl (W)"},
+    {"year": 2005, "wins": 4, "losses": 7, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Dantonio", "bowl": null},
+    {"year": 2004, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mark Dantonio", "bowl": "Fort Worth Bowl (W)"},
+    {"year": 2003, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Minter", "bowl": null},
+    {"year": 2002, "wins": 7, "losses": 7, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Minter", "bowl": "New Orleans Bowl (L)"},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Minter", "bowl": "Motor City Bowl (L)"},
+    {"year": 2000, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rick Minter", "bowl": "Motor City Bowl (L)"}
+  ]
+}

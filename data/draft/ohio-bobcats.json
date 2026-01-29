@@ -1,0 +1,17 @@
+{
+  "teamId": "ohio",
+  "teamSlug": "ohio-bobcats",
+  "teamName": "Ohio Bobcats",
+  "draftPicks": [
+    {"year": 2018, "round": 7, "pick": 227, "name": "Quentin Poling", "position": "LB", "nflTeam": "Miami Dolphins"},
+    {"year": 2017, "round": 3, "pick": 80, "name": "Tarell Basham", "position": "DE", "nflTeam": "Indianapolis Colts"},
+    {"year": 2017, "round": 5, "pick": 148, "name": "Blair Brown", "position": "LB", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2014, "round": 7, "pick": 219, "name": "T.J. Carrie", "position": "DB", "nflTeam": "Oakland Raiders"},
+    {"year": 2013, "round": 7, "pick": 225, "name": "Eric Herman", "position": "OL", "nflTeam": "New York Giants"},
+    {"year": 2012, "round": 6, "pick": 206, "name": "LaVon Brazill", "position": "WR", "nflTeam": "Indianapolis Colts"},
+    {"year": 2010, "round": 3, "pick": 90, "name": "Taylor Price", "position": "WR", "nflTeam": "New England Patriots"},
+    {"year": 2009, "round": 2, "pick": 47, "name": "Mike Mitchell", "position": "DB", "nflTeam": "Oakland Raiders"},
+    {"year": 2008, "round": 7, "pick": 216, "name": "Landon Cohen", "position": "DT", "nflTeam": "Detroit Lions"},
+    {"year": 2002, "round": 4, "pick": 112, "name": "Dave Zastudil", "position": "P", "nflTeam": "Baltimore Ravens"}
+  ]
+}

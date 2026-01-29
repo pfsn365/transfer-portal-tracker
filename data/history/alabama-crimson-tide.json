@@ -1,0 +1,33 @@
+{
+  "teamId": "alabama",
+  "teamSlug": "alabama-crimson-tide",
+  "teamName": "Alabama Crimson Tide",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 11, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": 8, "apPost": 9, "cfpFinal": 9, "coach": "Kalen DeBoer", "bowl": "Rose Bowl (L)"},
+    {"year": 2024, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 5, "apPost": 17, "cfpFinal": 11, "coach": "Kalen DeBoer", "bowl": "ReliaQuest Bowl (L)"},
+    {"year": 2023, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 4, "apPost": 5, "cfpFinal": 4, "coach": "Nick Saban", "bowl": "Rose Bowl (L)"},
+    {"year": 2022, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 1, "apPost": 5, "cfpFinal": 5, "coach": "Nick Saban", "bowl": "Sugar Bowl (W)"},
+    {"year": 2021, "wins": 13, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 1, "apPost": 2, "cfpFinal": 1, "coach": "Nick Saban", "bowl": "CFP National Championship (L)"},
+    {"year": 2020, "wins": 13, "losses": 0, "confWins": 10, "confLosses": 0, "apPre": 3, "apPost": 1, "cfpFinal": 1, "coach": "Nick Saban", "bowl": "CFP National Championship (W)"},
+    {"year": 2019, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 2, "apPost": 8, "cfpFinal": 13, "coach": "Nick Saban", "bowl": "Citrus Bowl (W)"},
+    {"year": 2018, "wins": 14, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 2, "cfpFinal": 1, "coach": "Nick Saban", "bowl": "CFP National Championship (L)"},
+    {"year": 2017, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 1, "apPost": 1, "cfpFinal": 4, "coach": "Nick Saban", "bowl": "CFP National Championship (W)"},
+    {"year": 2016, "wins": 14, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": 1, "apPost": 2, "cfpFinal": 1, "coach": "Nick Saban", "bowl": "CFP National Championship (L)"},
+    {"year": 2015, "wins": 14, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 3, "apPost": 1, "cfpFinal": 2, "coach": "Nick Saban", "bowl": "CFP National Championship (W)"},
+    {"year": 2014, "wins": 12, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 4, "cfpFinal": 1, "coach": "Nick Saban", "bowl": "Sugar Bowl (L)"},
+    {"year": 2013, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 1, "apPost": 7, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Sugar Bowl (L)"},
+    {"year": 2012, "wins": 13, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 1, "cfpFinal": null, "coach": "Nick Saban", "bowl": "BCS Championship (W)"},
+    {"year": 2011, "wins": 12, "losses": 1, "confWins": 7, "confLosses": 1, "apPre": 2, "apPost": 1, "cfpFinal": null, "coach": "Nick Saban", "bowl": "BCS Championship (W)"},
+    {"year": 2010, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": 1, "apPost": 10, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Capital One Bowl (W)"},
+    {"year": 2009, "wins": 14, "losses": 0, "confWins": 8, "confLosses": 0, "apPre": 5, "apPost": 1, "cfpFinal": null, "coach": "Nick Saban", "bowl": "BCS Championship (W)"},
+    {"year": 2008, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 24, "apPost": 6, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Sugar Bowl (L)"},
+    {"year": 2007, "wins": 7, "losses": 6, "confWins": 4, "confLosses": 4, "apPre": 16, "apPost": null, "cfpFinal": null, "coach": "Nick Saban", "bowl": "Independence Bowl (W)"},
+    {"year": 2006, "wins": 6, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Shula", "bowl": "Independence Bowl (L)"},
+    {"year": 2005, "wins": 10, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 4, "apPost": 8, "cfpFinal": null, "coach": "Mike Shula", "bowl": "Cotton Bowl (W)"},
+    {"year": 2004, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Shula", "bowl": "Music City Bowl (L)"},
+    {"year": 2003, "wins": 4, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": 21, "apPost": null, "cfpFinal": null, "coach": "Mike Shula", "bowl": null},
+    {"year": 2002, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": 9, "apPost": 11, "cfpFinal": null, "coach": "Dennis Franchione", "bowl": null},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": 25, "apPost": 25, "cfpFinal": null, "coach": "Dennis Franchione", "bowl": "Independence Bowl (W)"},
+    {"year": 2000, "wins": 3, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": 3, "apPost": null, "cfpFinal": null, "coach": "Mike DuBose", "bowl": null}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "teamId": "toledo",
+  "teamSlug": "toledo-rockets",
+  "teamName": "Toledo Rockets",
+  "draftPicks": [
+    {"year": 2025, "round": 3, "pick": 65, "name": "Darius Alexander", "position": "DT", "nflTeam": "New York Giants"},
+    {"year": 2024, "round": 1, "pick": 22, "name": "Quinyon Mitchell", "position": "CB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2023, "round": 7, "pick": 259, "name": "Desjuan Johnson", "position": "DT", "nflTeam": "Los Angeles Rams"},
+    {"year": 2022, "round": 5, "pick": 166, "name": "Tycen Anderson", "position": "SAF", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2022, "round": 5, "pick": 172, "name": "Samuel Womack", "position": "CB", "nflTeam": "San Francisco 49ers"},
+    {"year": 2019, "round": 3, "pick": 66, "name": "Diontae Johnson", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2019, "round": 6, "pick": 185, "name": "Ka'dar Hollman", "position": "CB", "nflTeam": "Green Bay Packers"},
+    {"year": 2018, "round": 7, "pick": 249, "name": "Logan Woodside", "position": "QB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2017, "round": 3, "pick": 86, "name": "Kareem Hunt", "position": "RB", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2017, "round": 4, "pick": 127, "name": "Michael Roberts", "position": "TE", "nflTeam": "Detroit Lions"},
+    {"year": 2017, "round": 7, "pick": 244, "name": "Treyvon Hester", "position": "DT", "nflTeam": "Oakland Raiders"},
+    {"year": 2008, "round": 3, "pick": 65, "name": "John Greco", "position": "OL", "nflTeam": "St. Louis Rams"},
+    {"year": 2008, "round": 6, "pick": 176, "name": "Jalen Parmele", "position": "RB", "nflTeam": "Miami Dolphins"},
+    {"year": 2006, "round": 6, "pick": 194, "name": "Bruce Gradkowski", "position": "QB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2005, "round": 3, "pick": 100, "name": "Nick Kaczur", "position": "OL", "nflTeam": "New England Patriots"},
+    {"year": 2003, "round": 7, "pick": 256, "name": "Carl Ford", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2002, "round": 6, "pick": 207, "name": "Chester Taylor", "position": "RB", "nflTeam": "Baltimore Ravens"}
+  ]
+}

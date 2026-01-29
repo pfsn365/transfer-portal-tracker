@@ -1,0 +1,33 @@
+{
+  "teamId": "air-force",
+  "teamSlug": "air-force-falcons",
+  "teamName": "Air Force Falcons",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": null},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": null},
+    {"year": 2023, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 17, "apPost": 25, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2022, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2021, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "First Responder Bowl (W)"},
+    {"year": 2020, "wins": 3, "losses": 3, "confWins": 2, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": null},
+    {"year": 2019, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": 22, "apPost": 22, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Cheez-It Bowl (W)"},
+    {"year": 2018, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": null},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": null},
+    {"year": 2016, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Arizona Bowl (W)"},
+    {"year": 2015, "wins": 8, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2014, "wins": 10, "losses": 3, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Famous Idaho Potato Bowl (W)"},
+    {"year": 2013, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": null},
+    {"year": 2012, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2011, "wins": 7, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Military Bowl (L)"},
+    {"year": 2010, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Independence Bowl (W)"},
+    {"year": 2009, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (W)"},
+    {"year": 2008, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Troy Calhoun", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2006, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": null},
+    {"year": 2005, "wins": 4, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": null},
+    {"year": 2004, "wins": 5, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": null},
+    {"year": 2003, "wins": 7, "losses": 5, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": null},
+    {"year": 2002, "wins": 8, "losses": 5, "confWins": 4, "confLosses": 3, "apPre": 18, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": "San Francisco Bowl (L)"},
+    {"year": 2001, "wins": 6, "losses": 6, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": null},
+    {"year": 2000, "wins": 9, "losses": 3, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Fisher DeBerry", "bowl": "Silicon Valley Bowl (W)"}
+  ]
+}

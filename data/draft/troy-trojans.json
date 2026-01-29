@@ -1,0 +1,25 @@
+{
+  "teamId": "troy",
+  "teamSlug": "troy-trojans",
+  "teamName": "Troy Trojans",
+  "draftPicks": [
+    {"year": 2024, "round": 5, "pick": 168, "name": "Javon Solomon", "position": "DE", "nflTeam": "Buffalo Bills"},
+    {"year": 2024, "round": 6, "pick": 181, "name": "Kimani Vidal", "position": "RB", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2023, "round": 4, "pick": 107, "name": "Jake Andrews", "position": "OL", "nflTeam": "New England Patriots"},
+    {"year": 2017, "round": 3, "pick": 85, "name": "Antonio Garcia", "position": "T", "nflTeam": "New England Patriots"},
+    {"year": 2012, "round": 5, "pick": 164, "name": "Jonathan Massaquoi", "position": "DE", "nflTeam": "Atlanta Falcons"},
+    {"year": 2011, "round": 3, "pick": 83, "name": "Jerrel Jernigan", "position": "WR", "nflTeam": "New York Giants"},
+    {"year": 2010, "round": 5, "pick": 142, "name": "Cameron Sheffield", "position": "DE", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2010, "round": 6, "pick": 201, "name": "Jorrick Calvin", "position": "DB", "nflTeam": "Arizona Cardinals"},
+    {"year": 2010, "round": 7, "pick": 209, "name": "Levi Brown", "position": "QB", "nflTeam": "Buffalo Bills"},
+    {"year": 2009, "round": 2, "pick": 59, "name": "Sherrod Martin", "position": "DB", "nflTeam": "Carolina Panthers"},
+    {"year": 2008, "round": 1, "pick": 11, "name": "Leodis McKelvin", "position": "DB", "nflTeam": "Buffalo Bills"},
+    {"year": 2007, "round": 4, "pick": 131, "name": "Brannon Condren", "position": "DB", "nflTeam": "Indianapolis Colts"},
+    {"year": 2005, "round": 1, "pick": 11, "name": "DeMarcus Ware", "position": "LB", "nflTeam": "Dallas Cowboys"},
+    {"year": 2003, "round": 2, "pick": 56, "name": "Osi Umenyiora", "position": "DE", "nflTeam": "New York Giants"},
+    {"year": 2003, "round": 7, "pick": 248, "name": "Davern Williams", "position": "DT", "nflTeam": "Miami Dolphins"},
+    {"year": 2001, "round": 5, "pick": 162, "name": "Jonathan Carter", "position": "WR", "nflTeam": "New York Giants"},
+    {"year": 2000, "round": 4, "pick": 129, "name": "Michael Moore", "position": "G", "nflTeam": "Washington Redskins"},
+    {"year": 2000, "round": 6, "pick": 172, "name": "Mareno Philyaw", "position": "WR", "nflTeam": "Atlanta Falcons"}
+  ]
+}

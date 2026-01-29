@@ -1,0 +1,33 @@
+{
+  "teamId": "oklahoma",
+  "teamSlug": "oklahoma-sooners",
+  "teamName": "Oklahoma Sooners",
+  "draftPicks": [
+    {"year": 2025, "round": 4, "pick": 112, "name": "Danny Stutsman", "position": "LB", "nflTeam": "New Orleans Saints"},
+    {"year": 2025, "round": 4, "pick": 118, "name": "Billy Bowman", "position": "SAF", "nflTeam": "Atlanta Falcons"},
+    {"year": 2024, "round": 1, "pick": 29, "name": "Tyler Guyton", "position": "OL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2024, "round": 6, "pick": 177, "name": "Walter Rouse", "position": "OL", "nflTeam": "Minnesota Vikings"},
+    {"year": 2024, "round": 7, "pick": 234, "name": "Jonah Laulu", "position": "DL", "nflTeam": "Indianapolis Colts"},
+    {"year": 2023, "round": 1, "pick": 27, "name": "Anton Harrison", "position": "OL", "nflTeam": "Jacksonville Jaguars"},
+    {"year": 2023, "round": 2, "pick": 63, "name": "Marvin Mims", "position": "WR", "nflTeam": "Denver Broncos"},
+    {"year": 2023, "round": 3, "pick": 92, "name": "Wanya Morris", "position": "OL", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2023, "round": 5, "pick": 172, "name": "Eric Gray", "position": "RB", "nflTeam": "New York Giants"},
+    {"year": 2023, "round": 7, "pick": 247, "name": "Brayden Willis", "position": "TE", "nflTeam": "San Francisco 49ers"},
+    {"year": 2022, "round": 2, "pick": 64, "name": "Nik Bonitto", "position": "LB", "nflTeam": "Denver Broncos"},
+    {"year": 2022, "round": 3, "pick": 66, "name": "Brian Asamoah", "position": "LB", "nflTeam": "Minnesota Vikings"},
+    {"year": 2022, "round": 4, "pick": 108, "name": "Perrion Winfrey", "position": "DT", "nflTeam": "Cleveland Browns"},
+    {"year": 2022, "round": 5, "pick": 152, "name": "Delarrin Turner-Yell", "position": "SAF", "nflTeam": "Denver Broncos"},
+    {"year": 2022, "round": 6, "pick": 202, "name": "Michael Woods II", "position": "WR", "nflTeam": "Cleveland Browns"},
+    {"year": 2022, "round": 7, "pick": 223, "name": "Isaiah Thomas", "position": "DE", "nflTeam": "Cleveland Browns"},
+    {"year": 2022, "round": 7, "pick": 257, "name": "Marquis Hayes", "position": "OL", "nflTeam": "Arizona Cardinals"},
+    {"year": 2021, "round": 2, "pick": 63, "name": "Creed Humphrey", "position": "OL", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2021, "round": 3, "pick": 96, "name": "Ronnie Perkins", "position": "DE", "nflTeam": "New England Patriots"},
+    {"year": 2021, "round": 4, "pick": 120, "name": "Rhamondre Stevenson", "position": "RB", "nflTeam": "New England Patriots"},
+    {"year": 2021, "round": 4, "pick": 137, "name": "Tre Brown", "position": "CB", "nflTeam": "Seattle Seahawks"},
+    {"year": 2021, "round": 7, "pick": 245, "name": "Tre Norwood", "position": "DB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2020, "round": 1, "pick": 17, "name": "CeeDee Lamb", "position": "WR", "nflTeam": "Dallas Cowboys"},
+    {"year": 2020, "round": 1, "pick": 23, "name": "Kenneth Murray", "position": "LB", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2020, "round": 2, "pick": 53, "name": "Jalen Hurts", "position": "QB", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2020, "round": 3, "pick": 82, "name": "Neville Gallimore", "position": "DT", "nflTeam": "Dallas Cowboys"}
+  ]
+}

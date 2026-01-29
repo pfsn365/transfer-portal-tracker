@@ -1,0 +1,28 @@
+{
+  "teamId": "western-michigan",
+  "teamSlug": "western-michigan-broncos",
+  "teamName": "Western Michigan Broncos",
+  "draftPicks": [
+    {"year": 2025, "round": 6, "pick": 178, "name": "Bilhal Kone", "position": "CB", "nflTeam": "Baltimore Ravens"},
+    {"year": 2024, "round": 2, "pick": 56, "name": "Marshawn Kneeland", "position": "DL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2023, "round": 6, "pick": 184, "name": "Zaire Barnes", "position": "LB", "nflTeam": "New York Jets"},
+    {"year": 2022, "round": 2, "pick": 54, "name": "Skyy Moore", "position": "WR", "nflTeam": "Kansas City Chiefs"},
+    {"year": 2021, "round": 2, "pick": 56, "name": "D'Wayne Eskridge", "position": "WR", "nflTeam": "Seattle Seahawks"},
+    {"year": 2021, "round": 5, "pick": 155, "name": "Jaylon Moore", "position": "T", "nflTeam": "San Francisco 49ers"},
+    {"year": 2018, "round": 3, "pick": 65, "name": "Sam Beal", "position": "DB", "nflTeam": "New York Giants"},
+    {"year": 2018, "round": 3, "pick": 92, "name": "Chukwuma Okorafor", "position": "T", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2018, "round": 5, "pick": 170, "name": "Darius Phillips", "position": "CB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2017, "round": 1, "pick": 5, "name": "Corey Davis", "position": "WR", "nflTeam": "Tennessee Titans"},
+    {"year": 2017, "round": 2, "pick": 64, "name": "Taylor Moton", "position": "G", "nflTeam": "Carolina Panthers"},
+    {"year": 2017, "round": 7, "pick": 248, "name": "Keion Adams", "position": "OLB", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2016, "round": 4, "pick": 121, "name": "Willie Beavers", "position": "T", "nflTeam": "Minnesota Vikings"},
+    {"year": 2016, "round": 7, "pick": 230, "name": "Daniel Braverman", "position": "WR", "nflTeam": "Chicago Bears"},
+    {"year": 2012, "round": 7, "pick": 244, "name": "Jordan White", "position": "WR", "nflTeam": "New York Jets"},
+    {"year": 2012, "round": 7, "pick": 251, "name": "John Potter", "position": "K", "nflTeam": "Buffalo Bills"},
+    {"year": 2009, "round": 2, "pick": 33, "name": "Louis Delmas", "position": "DB", "nflTeam": "Detroit Lions"},
+    {"year": 2009, "round": 7, "pick": 217, "name": "E.J. Biggers", "position": "DB", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2006, "round": 2, "pick": 52, "name": "Greg Jennings", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2006, "round": 2, "pick": 61, "name": "Tony Scheffler", "position": "TE", "nflTeam": "Denver Broncos"},
+    {"year": 2004, "round": 1, "pick": 27, "name": "Jason Babin", "position": "LB", "nflTeam": "Houston Texans"}
+  ]
+}

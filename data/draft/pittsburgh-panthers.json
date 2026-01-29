@@ -1,0 +1,17 @@
+{
+  "teamId": "pittsburgh",
+  "teamSlug": "pittsburgh-panthers",
+  "teamName": "Pittsburgh Panthers",
+  "draftPicks": [
+    {"year": 2025, "round": 6, "pick": 199, "name": "Branson Taylor", "position": "OL", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2025, "round": 6, "pick": 202, "name": "Gavin Bartholomew", "position": "TE", "nflTeam": "Minnesota Vikings"},
+    {"year": 2025, "round": 7, "pick": 242, "name": "Konata Mumpfield", "position": "WR", "nflTeam": "Los Angeles Rams"},
+    {"year": 2024, "round": 3, "pick": 79, "name": "Matt Goncalves", "position": "OL", "nflTeam": "Indianapolis Colts"},
+    {"year": 2024, "round": 5, "pick": 170, "name": "Bub Means", "position": "WR", "nflTeam": "New Orleans Saints"},
+    {"year": 2024, "round": 7, "pick": 229, "name": "M.J. Devonshire", "position": "DB", "nflTeam": "Las Vegas Raiders"},
+    {"year": 2023, "round": 1, "pick": 19, "name": "Calijah Kancey", "position": "DL", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2023, "round": 4, "pick": 120, "name": "Carter Warren", "position": "OL", "nflTeam": "New York Jets"},
+    {"year": 2023, "round": 5, "pick": 143, "name": "Israel Abanikanda", "position": "RB", "nflTeam": "New York Jets"},
+    {"year": 2022, "round": 1, "pick": 20, "name": "Kenny Pickett", "position": "QB", "nflTeam": "Pittsburgh Steelers"}
+  ]
+}

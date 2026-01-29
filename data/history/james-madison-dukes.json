@@ -1,0 +1,11 @@
+{
+  "teamId": "james-madison",
+  "teamSlug": "james-madison-dukes",
+  "teamName": "James Madison Dukes",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 12, "losses": 2, "confWins": 8, "confLosses": 0, "apPre": 19, "apPost": 24, "cfpFinal": 24, "coach": "Bob Chesney", "bowl": "CFP First Round (L)"},
+    {"year": 2024, "wins": 9, "losses": 4, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Chesney", "bowl": "Boca Raton Bowl (W)"},
+    {"year": 2023, "wins": 11, "losses": 2, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": 18, "cfpFinal": null, "coach": "Curt Cignetti / Damian Wroblewski", "bowl": "Armed Forces Bowl (L)"},
+    {"year": 2022, "wins": 8, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": 25, "cfpFinal": null, "coach": "Curt Cignetti", "bowl": null}
+  ]
+}

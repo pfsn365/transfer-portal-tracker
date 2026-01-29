@@ -1,0 +1,10 @@
+{
+  "teamId": "air-force",
+  "teamSlug": "air-force-falcons",
+  "teamName": "Air Force Falcons",
+  "draftPicks": [
+    {"year": 2024, "round": 7, "pick": 223, "name": "Trey Taylor", "position": "SAF", "nflTeam": "Las Vegas Raiders"},
+    {"year": 2022, "round": 6, "pick": 194, "name": "Jordan Jackson", "position": "DT", "nflTeam": "New Orleans Saints"},
+    {"year": 2019, "round": 7, "pick": 250, "name": "Austin Cutting", "position": "LS", "nflTeam": "Minnesota Vikings"}
+  ]
+}

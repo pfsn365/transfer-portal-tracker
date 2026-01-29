@@ -1,0 +1,33 @@
+{
+  "teamId": "miami-oh",
+  "teamSlug": "miami-oh-redhawks",
+  "teamName": "Miami (OH) RedHawks",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 7, "losses": 7, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "Arizona Bowl (L)"},
+    {"year": 2024, "wins": 9, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "Arizona Bowl (W)"},
+    {"year": 2023, "wins": 11, "losses": 3, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "Cure Bowl (L)"},
+    {"year": 2022, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "Bahamas Bowl (L)"},
+    {"year": 2021, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "Frisco Classic (W)"},
+    {"year": 2020, "wins": 2, "losses": 1, "confWins": 2, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": null},
+    {"year": 2019, "wins": 8, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "LendingTree Bowl (L)"},
+    {"year": 2018, "wins": 6, "losses": 6, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": null},
+    {"year": 2017, "wins": 5, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": null},
+    {"year": 2016, "wins": 6, "losses": 7, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": "St. Petersburg Bowl (L)"},
+    {"year": 2015, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": null},
+    {"year": 2014, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Chuck Martin", "bowl": null},
+    {"year": 2013, "wins": 0, "losses": 12, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Don Treadwell / John Bath", "bowl": null},
+    {"year": 2012, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Don Treadwell", "bowl": null},
+    {"year": 2011, "wins": 4, "losses": 8, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Don Treadwell", "bowl": null},
+    {"year": 2010, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Michael Haywood / Lance Guidry", "bowl": "GoDaddy Bowl (W)"},
+    {"year": 2009, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Michael Haywood", "bowl": null},
+    {"year": 2008, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shane Montgomery", "bowl": null},
+    {"year": 2007, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shane Montgomery", "bowl": null},
+    {"year": 2006, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shane Montgomery", "bowl": null},
+    {"year": 2005, "wins": 7, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Shane Montgomery", "bowl": null},
+    {"year": 2004, "wins": 8, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Terry Hoeppner", "bowl": "Independence Bowl (L)"},
+    {"year": 2003, "wins": 13, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": 10, "cfpFinal": null, "coach": "Terry Hoeppner", "bowl": "GMAC Bowl (W)"},
+    {"year": 2002, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Terry Hoeppner", "bowl": null},
+    {"year": 2001, "wins": 7, "losses": 5, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Terry Hoeppner", "bowl": null},
+    {"year": 2000, "wins": 6, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Terry Hoeppner", "bowl": null}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "teamId": "nebraska",
+  "teamSlug": "nebraska-cornhuskers",
+  "teamName": "Nebraska Cornhuskers",
+  "draftPicks": [
+    {"year": 2025, "round": 4, "pick": 111, "name": "Ty Robinson", "position": "DT", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2025, "round": 7, "pick": 219, "name": "Thomas Fidone", "position": "TE", "nflTeam": "New York Giants"},
+    {"year": 2023, "round": 6, "pick": 189, "name": "Ochaun Mathis", "position": "DE", "nflTeam": "Los Angeles Rams"},
+    {"year": 2023, "round": 6, "pick": 191, "name": "Trey Palmer", "position": "WR", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2022, "round": 2, "pick": 51, "name": "Cam Jurgens", "position": "OL", "nflTeam": "Philadelphia Eagles"},
+    {"year": 2022, "round": 2, "pick": 60, "name": "Cam Taylor-Britt", "position": "CB", "nflTeam": "Cincinnati Bengals"},
+    {"year": 2022, "round": 7, "pick": 258, "name": "Samori Toure", "position": "WR", "nflTeam": "Green Bay Packers"},
+    {"year": 2021, "round": 5, "pick": 159, "name": "Brenden Jaimes", "position": "OL", "nflTeam": "Los Angeles Chargers"},
+    {"year": 2021, "round": 7, "pick": 238, "name": "Matt Farniok", "position": "OL", "nflTeam": "Dallas Cowboys"},
+    {"year": 2020, "round": 6, "pick": 194, "name": "Khalil Davis", "position": "DT", "nflTeam": "Tampa Bay Buccaneers"},
+    {"year": 2020, "round": 7, "pick": 232, "name": "Carlos Davis", "position": "DT", "nflTeam": "Pittsburgh Steelers"},
+    {"year": 2018, "round": 6, "pick": 203, "name": "Tanner Lee", "position": "QB", "nflTeam": "Jacksonville Jaguars"}
+  ]
+}

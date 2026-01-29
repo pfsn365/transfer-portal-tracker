@@ -1,0 +1,33 @@
+{
+  "teamId": "new-mexico",
+  "teamSlug": "new-mexico-lobos",
+  "teamName": "New Mexico Lobos",
+  "yearlyRecords": [
+    {"year": 2025, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jason Eck", "bowl": "Rate Bowl (L)"},
+    {"year": 2024, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bronco Mendenhall", "bowl": null},
+    {"year": 2023, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Danny Gonzales", "bowl": null},
+    {"year": 2022, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Danny Gonzales", "bowl": null},
+    {"year": 2021, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Danny Gonzales", "bowl": null},
+    {"year": 2020, "wins": 2, "losses": 5, "confWins": 2, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Danny Gonzales", "bowl": null},
+    {"year": 2019, "wins": 2, "losses": 10, "confWins": 0, "confLosses": 8, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2018, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2017, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2016, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2015, "wins": 7, "losses": 6, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2014, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2013, "wins": 3, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2012, "wins": 4, "losses": 9, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Bob Davie", "bowl": null},
+    {"year": 2011, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Locksley / George Barlow", "bowl": null},
+    {"year": 2010, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Locksley", "bowl": null},
+    {"year": 2009, "wins": 1, "losses": 11, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Mike Locksley", "bowl": null},
+    {"year": 2008, "wins": 4, "losses": 8, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": null},
+    {"year": 2007, "wins": 9, "losses": 4, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "New Mexico Bowl (W)"},
+    {"year": 2006, "wins": 6, "losses": 7, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "New Mexico Bowl (L)"},
+    {"year": 2005, "wins": 6, "losses": 5, "confWins": 4, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": null},
+    {"year": 2004, "wins": 7, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Emerald Bowl (L)"},
+    {"year": 2003, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2002, "wins": 7, "losses": 7, "confWins": 5, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": "Las Vegas Bowl (L)"},
+    {"year": 2001, "wins": 6, "losses": 5, "confWins": 4, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": null},
+    {"year": 2000, "wins": 5, "losses": 7, "confWins": 3, "confLosses": 4, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rocky Long", "bowl": null}
+  ]
+}
