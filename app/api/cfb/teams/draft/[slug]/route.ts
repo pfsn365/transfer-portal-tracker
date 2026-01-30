@@ -53,9 +53,12 @@ function getDraftData(teamSlug: string): DraftData | null {
   return null;
 }
 
-// Get draft statistics summary
-function getDraftStats(picks: DraftPick[]) {
-  if (!picks.length) {
+// Get draft statistics summary (for recent picks since 2020)
+function getDraftStats(allPicks: DraftPick[]) {
+  // Filter to only recent picks (2020+) for summary stats
+  const recentPicks = allPicks.filter(p => p.year >= 2020);
+
+  if (!recentPicks.length) {
     return {
       totalPicks: 0,
       firstRoundPicks: 0,
@@ -67,35 +70,34 @@ function getDraftStats(picks: DraftPick[]) {
     };
   }
 
-  const firstRoundPicks = picks.filter(p => p.round === 1).length;
-  const topTenPicks = picks.filter(p => p.round === 1 && p.pick <= 10).length;
-  const recentPicks = picks.filter(p => p.year >= 2020).length;
+  const firstRoundPicks = recentPicks.filter(p => p.round === 1).length;
+  const topTenPicks = recentPicks.filter(p => p.round === 1 && p.pick <= 10).length;
 
-  // Picks by round
+  // Picks by round (recent only)
   const picksByRound: Record<number, number> = {};
-  picks.forEach(p => {
+  recentPicks.forEach(p => {
     picksByRound[p.round] = (picksByRound[p.round] || 0) + 1;
   });
 
-  // Picks by position
+  // Picks by position (recent only)
   const picksByPosition: Record<string, number> = {};
-  picks.forEach(p => {
+  recentPicks.forEach(p => {
     const pos = p.position || 'Unknown';
     picksByPosition[pos] = (picksByPosition[pos] || 0) + 1;
   });
 
-  // Picks by decade
+  // Picks by decade (for all picks - useful context)
   const picksByDecade: Record<string, number> = {};
-  picks.forEach(p => {
+  allPicks.forEach(p => {
     const decade = `${Math.floor(p.year / 10) * 10}s`;
     picksByDecade[decade] = (picksByDecade[decade] || 0) + 1;
   });
 
   return {
-    totalPicks: picks.length,
+    totalPicks: recentPicks.length,
     firstRoundPicks,
     topTenPicks,
-    recentPicks,
+    recentPicks: recentPicks.length,
     picksByRound,
     picksByPosition,
     picksByDecade,
