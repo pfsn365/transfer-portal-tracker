@@ -3,14 +3,113 @@
   "teamSlug": "coastal-carolina-chanticleers",
   "teamName": "Coastal Carolina Chanticleers",
   "yearlyRecords": [
-    {"year": 2025, "wins": 6, "losses": 7, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Beck / Jeremiah Johnson", "bowl": "Independence Bowl (L)"},
-    {"year": 2024, "wins": 6, "losses": 7, "confWins": 3, "confLosses": 5, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Beck", "bowl": "Myrtle Beach Bowl (L)"},
-    {"year": 2023, "wins": 8, "losses": 5, "confWins": 5, "confLosses": 3, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Tim Beck", "bowl": "Hawaii Bowl (W)"},
-    {"year": 2022, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": 23, "apPost": null, "cfpFinal": null, "coach": "Jamey Chadwell / Chad Staggs", "bowl": "Birmingham Bowl (L)"},
-    {"year": 2021, "wins": 11, "losses": 2, "confWins": 6, "confLosses": 2, "apPre": 22, "apPost": 14, "cfpFinal": null, "coach": "Jamey Chadwell", "bowl": "Cure Bowl (W)"},
-    {"year": 2020, "wins": 11, "losses": 1, "confWins": 8, "confLosses": 0, "apPre": null, "apPost": 12, "cfpFinal": 12, "coach": "Jamey Chadwell", "bowl": "Cure Bowl (L)"},
-    {"year": 2019, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jamey Chadwell", "bowl": null},
-    {"year": 2018, "wins": 5, "losses": 7, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Joe Moglia", "bowl": null},
-    {"year": 2017, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jamey Chadwell", "bowl": null}
+    {
+      "year": 2025,
+      "wins": 6,
+      "losses": 7,
+      "confWins": 5,
+      "confLosses": 3,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Tim Beck / Jeremiah Johnson",
+      "bowl": "Independence Bowl (L)"
+    },
+    {
+      "year": 2024,
+      "wins": 6,
+      "losses": 7,
+      "confWins": 3,
+      "confLosses": 5,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Tim Beck",
+      "bowl": "Myrtle Beach Bowl (L)"
+    },
+    {
+      "year": 2023,
+      "wins": 8,
+      "losses": 5,
+      "confWins": 5,
+      "confLosses": 3,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Tim Beck",
+      "bowl": "Hawaii Bowl (W)"
+    },
+    {
+      "year": 2022,
+      "wins": 9,
+      "losses": 4,
+      "confWins": 6,
+      "confLosses": 2,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Jamey Chadwell / Chad Staggs",
+      "bowl": "Birmingham Bowl (L)"
+    },
+    {
+      "year": 2021,
+      "wins": 11,
+      "losses": 2,
+      "confWins": 6,
+      "confLosses": 2,
+      "apPre": 22,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Jamey Chadwell",
+      "bowl": "Cure Bowl (W)"
+    },
+    {
+      "year": 2020,
+      "wins": 11,
+      "losses": 1,
+      "confWins": 8,
+      "confLosses": 0,
+      "apPre": null,
+      "apPost": 14,
+      "cfpFinal": 12,
+      "coach": "Jamey Chadwell",
+      "bowl": "Cure Bowl (L)"
+    },
+    {
+      "year": 2019,
+      "wins": 5,
+      "losses": 7,
+      "confWins": 2,
+      "confLosses": 6,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Jamey Chadwell",
+      "bowl": null
+    },
+    {
+      "year": 2018,
+      "wins": 5,
+      "losses": 7,
+      "confWins": 2,
+      "confLosses": 6,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Joe Moglia",
+      "bowl": null
+    },
+    {
+      "year": 2017,
+      "wins": 3,
+      "losses": 9,
+      "confWins": 2,
+      "confLosses": 6,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Jamey Chadwell",
+      "bowl": null
+    }
   ]
 }

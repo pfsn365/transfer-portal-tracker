@@ -99,8 +99,12 @@ function getHistoryStats(records: YearlyRecord[]) {
   ).length;
 
   // Unique coaches with their records
+  // Skip combined coach entries (e.g., "Tommy Bowden / Dabo Swinney") - these are transition years
   const coachMap = new Map<string, { wins: number; losses: number; years: number[] }>();
   records.forEach(r => {
+    // Skip combined coach entries for the coaching summary
+    if (r.coach.includes(' / ')) return;
+
     const existing = coachMap.get(r.coach) || { wins: 0, losses: 0, years: [] };
     existing.wins += r.wins;
     existing.losses += r.losses;

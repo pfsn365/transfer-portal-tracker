@@ -3,8 +3,41 @@
   "teamSlug": "sam-houston-bearkats",
   "teamName": "Sam Houston Bearkats",
   "yearlyRecords": [
-    {"year": 2025, "wins": 2, "losses": 10, "confWins": 1, "confLosses": 7, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Phil Longo", "bowl": null},
-    {"year": 2024, "wins": 10, "losses": 3, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "K.C. Keeler / Brad Cornelsen", "bowl": "New Orleans Bowl (W)"},
-    {"year": 2023, "wins": 3, "losses": 9, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "K.C. Keeler", "bowl": null}
+    {
+      "year": 2025,
+      "wins": 2,
+      "losses": 10,
+      "confWins": 1,
+      "confLosses": 7,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Phil Longo",
+      "bowl": null
+    },
+    {
+      "year": 2024,
+      "wins": 10,
+      "losses": 3,
+      "confWins": 6,
+      "confLosses": 2,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "K.C. Keeler / Brad Cornelsen",
+      "bowl": "New Orleans Bowl (W)"
+    },
+    {
+      "year": 2023,
+      "wins": 3,
+      "losses": 9,
+      "confWins": 2,
+      "confLosses": 6,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "K.C. Keeler",
+      "bowl": null
+    }
   ]
 }

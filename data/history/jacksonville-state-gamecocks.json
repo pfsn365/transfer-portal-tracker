@@ -3,8 +3,41 @@
   "teamSlug": "jacksonville-state-gamecocks",
   "teamName": "Jacksonville State Gamecocks",
   "yearlyRecords": [
-    {"year": 2025, "wins": 9, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Charles Kelly", "bowl": "Salute to Veterans Bowl (W)"},
-    {"year": 2024, "wins": 9, "losses": 5, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez / Rod Smith", "bowl": "Cure Bowl (L)"},
-    {"year": 2023, "wins": 9, "losses": 4, "confWins": 6, "confLosses": 2, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Rich Rodriguez", "bowl": "New Orleans Bowl (W)"}
+    {
+      "year": 2025,
+      "wins": 9,
+      "losses": 5,
+      "confWins": 7,
+      "confLosses": 1,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Charles Kelly",
+      "bowl": "Salute to Veterans Bowl (W)"
+    },
+    {
+      "year": 2024,
+      "wins": 9,
+      "losses": 5,
+      "confWins": 7,
+      "confLosses": 1,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Rich Rodriguez / Rod Smith",
+      "bowl": "Cure Bowl (L)"
+    },
+    {
+      "year": 2023,
+      "wins": 9,
+      "losses": 4,
+      "confWins": 6,
+      "confLosses": 2,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Rich Rodriguez",
+      "bowl": "New Orleans Bowl (W)"
+    }
   ]
 }

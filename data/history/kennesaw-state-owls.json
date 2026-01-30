@@ -3,7 +3,29 @@
   "teamSlug": "kennesaw-state-owls",
   "teamName": "Kennesaw State Owls",
   "yearlyRecords": [
-    {"year": 2025, "wins": 10, "losses": 4, "confWins": 7, "confLosses": 1, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Jerry Mack", "bowl": "Myrtle Beach Bowl (L)"},
-    {"year": 2024, "wins": 2, "losses": 10, "confWins": 2, "confLosses": 6, "apPre": null, "apPost": null, "cfpFinal": null, "coach": "Brian Bohannon / Chandler Burks", "bowl": null}
+    {
+      "year": 2025,
+      "wins": 10,
+      "losses": 4,
+      "confWins": 7,
+      "confLosses": 1,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Jerry Mack",
+      "bowl": "Myrtle Beach Bowl (L)"
+    },
+    {
+      "year": 2024,
+      "wins": 2,
+      "losses": 10,
+      "confWins": 2,
+      "confLosses": 6,
+      "apPre": null,
+      "apPost": null,
+      "cfpFinal": null,
+      "coach": "Brian Bohannon / Chandler Burks",
+      "bowl": null
+    }
   ]
 }
