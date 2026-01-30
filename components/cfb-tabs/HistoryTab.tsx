@@ -377,10 +377,10 @@ export default function HistoryTab({ team, teamColor }: HistoryTabProps) {
     });
   }, [data?.yearlyRecords, filterCoach, filterDecade, showRankedOnly, sortColumn, sortDirection]);
 
-  // Calculate winning seasons
+  // Calculate winning seasons (since 2000 only to match stats header)
   const winningSeasons = useMemo(() => {
     if (!data?.yearlyRecords) return 0;
-    return data.yearlyRecords.filter(r => r.wins > r.losses).length;
+    return data.yearlyRecords.filter(r => r.year >= 2000 && r.wins > r.losses).length;
   }, [data?.yearlyRecords]);
 
   if (isLoading) {
