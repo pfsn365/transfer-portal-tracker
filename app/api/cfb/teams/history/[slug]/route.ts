@@ -212,7 +212,10 @@ export async function GET(
 
     // Sort records by year (most recent first)
     const sortedRecords = [...historyData.yearlyRecords].sort((a, b) => b.year - a.year);
-    const stats = getHistoryStats(sortedRecords);
+
+    // Filter to 2000+ for stats calculation (matches "Since 2000" header in UI)
+    const recentRecords = sortedRecords.filter(r => r.year >= 2000);
+    const stats = getHistoryStats(recentRecords);
 
     return NextResponse.json({
       team: team.name,
