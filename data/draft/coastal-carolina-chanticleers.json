@@ -1,16 +1,79 @@
 {
-  "teamId": "coastal-carolina",
+  "teamId": "coastalcarolina",
   "teamSlug": "coastal-carolina-chanticleers",
   "teamName": "Coastal Carolina Chanticleers",
   "draftPicks": [
-    {"year": 2022, "round": 4, "pick": 139, "name": "Isaiah Likely", "position": "TE", "nflTeam": "Baltimore Ravens"},
-    {"year": 2022, "round": 7, "pick": 252, "name": "Jeff Gunter", "position": "LB", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2021, "round": 6, "pick": 191, "name": "Tarron Jackson", "position": "DE", "nflTeam": "Philadelphia Eagles"},
-    {"year": 2017, "round": 6, "pick": 203, "name": "De'Angelo Henderson", "position": "RB", "nflTeam": "Denver Broncos"},
-    {"year": 2014, "round": 4, "pick": 138, "name": "Lorenzo Taliaferro", "position": "RB", "nflTeam": "Baltimore Ravens"},
-    {"year": 2014, "round": 6, "pick": 190, "name": "Matt Hazel", "position": "WR", "nflTeam": "Miami Dolphins"},
-    {"year": 2012, "round": 5, "pick": 143, "name": "Josh Norman", "position": "DB", "nflTeam": "Carolina Panthers"},
-    {"year": 2008, "round": 2, "pick": 46, "name": "Jerome Simpson", "position": "WR", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2007, "round": 7, "pick": 217, "name": "Tyler Thigpen", "position": "QB", "nflTeam": "Minnesota Vikings"}
+    {
+      "year": 2022,
+      "round": 4,
+      "pick": 139,
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 2022,
+      "round": 7,
+      "pick": 252,
+      "name": "Jeff Gunter",
+      "position": "OLB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2021,
+      "round": 6,
+      "pick": 191,
+      "name": "Tarron Jackson",
+      "position": "DE",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 2017,
+      "round": 6,
+      "pick": 203,
+      "name": "De'Angelo Henderson",
+      "position": "RB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2014,
+      "round": 4,
+      "pick": 138,
+      "name": "Lorenzo Taliaferro",
+      "position": "RB",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 2014,
+      "round": 6,
+      "pick": 190,
+      "name": "Matt Hazel",
+      "position": "WR",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2012,
+      "round": 5,
+      "pick": 143,
+      "name": "Josh Norman",
+      "position": "DB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2008,
+      "round": 2,
+      "pick": 46,
+      "name": "Jerome Simpson",
+      "position": "WR",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2007,
+      "round": 7,
+      "pick": 217,
+      "name": "Tyler Thigpen",
+      "position": "QB",
+      "nflTeam": "Minnesota Vikings"
+    }
   ]
 }

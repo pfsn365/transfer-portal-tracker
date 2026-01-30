@@ -3,16 +3,205 @@
   "teamSlug": "rice-owls",
   "teamName": "Rice Owls",
   "draftPicks": [
-    {"year": 2024, "round": 3, "pick": 100, "name": "Luke McCaffrey", "position": "WR", "nflTeam": "Washington Commanders"},
-    {"year": 2015, "round": 6, "pick": 216, "name": "Christian Covington", "position": "DT", "nflTeam": "Houston Texans"},
-    {"year": 2014, "round": 3, "pick": 87, "name": "Phillip Gaines", "position": "DB", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2013, "round": 2, "pick": 55, "name": "Vance McDonald", "position": "TE", "nflTeam": "San Francisco 49ers"},
-    {"year": 2013, "round": 5, "pick": 158, "name": "Luke Willson", "position": "TE", "nflTeam": "Seattle Seahawks"},
-    {"year": 2012, "round": 7, "pick": 211, "name": "Scott Solomon", "position": "DE", "nflTeam": "Tennessee Titans"},
-    {"year": 2011, "round": 7, "pick": 254, "name": "Cheta Ozougwu", "position": "DE", "nflTeam": "Houston Texans"},
-    {"year": 2009, "round": 5, "pick": 144, "name": "Jarett Dillard", "position": "WR", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2009, "round": 5, "pick": 152, "name": "James Casey", "position": "TE", "nflTeam": "Houston Texans"},
-    {"year": 2003, "round": 5, "pick": 142, "name": "Ryan Pontbriand", "position": "C", "nflTeam": "Cleveland Browns"},
-    {"year": 2003, "round": 6, "pick": 176, "name": "Brandon Green", "position": "DE", "nflTeam": "Jacksonville Jaguars"}
+    {
+      "year": 2024,
+      "round": 3,
+      "pick": 100,
+      "name": "Luke McCaffrey",
+      "position": "WR",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 2015,
+      "round": 6,
+      "pick": 216,
+      "name": "Christian Covington",
+      "position": "DT",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2014,
+      "round": 3,
+      "pick": 87,
+      "name": "Phillip Gaines",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2013,
+      "round": 2,
+      "pick": 55,
+      "name": "Vance McDonald",
+      "position": "TE",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2013,
+      "round": 5,
+      "pick": 158,
+      "name": "Luke Willson",
+      "position": "TE",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2012,
+      "round": 7,
+      "pick": 211,
+      "name": "Scott Solomon",
+      "position": "DE",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2011,
+      "round": 7,
+      "pick": 254,
+      "name": "Cheta Ozougwu",
+      "position": "DE",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2009,
+      "round": 5,
+      "pick": 144,
+      "name": "Jarett Dillard",
+      "position": "WR",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2009,
+      "round": 5,
+      "pick": 152,
+      "name": "James Casey",
+      "position": "TE",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2003,
+      "round": 5,
+      "pick": 142,
+      "name": "Ryan Pontbriand",
+      "position": "C",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2003,
+      "round": 6,
+      "pick": 176,
+      "name": "Brandon Green",
+      "position": "DE",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 1997,
+      "round": 5,
+      "pick": 152,
+      "name": "N.D. Kalu",
+      "position": "DE",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1994,
+      "round": 2,
+      "pick": 45,
+      "name": "Bert Emanuel",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1992,
+      "round": 10,
+      "pick": 280,
+      "name": "Tony Barker",
+      "position": "LB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1991,
+      "round": 4,
+      "pick": 99,
+      "name": "Donald Hollas",
+      "position": "QB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1989,
+      "round": 2,
+      "pick": 37,
+      "name": "Courtney Hall",
+      "position": "C",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1981,
+      "round": 8,
+      "pick": 209,
+      "name": "Frank Wilson",
+      "position": "TE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1981,
+      "round": 9,
+      "pick": 231,
+      "name": "Darryl Grant",
+      "position": "DT",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1980,
+      "round": 1,
+      "pick": 13,
+      "name": "Earl Cooper",
+      "position": "RB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1977,
+      "round": 1,
+      "pick": 27,
+      "name": "Tommy Kramer",
+      "position": "QB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1976,
+      "round": 7,
+      "pick": 206,
+      "name": "Larry Brune",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1975,
+      "round": 10,
+      "pick": 246,
+      "name": "Alan Pringle",
+      "position": "K",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1974,
+      "round": 16,
+      "pick": 407,
+      "name": "Preston Anderson",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1973,
+      "round": 2,
+      "pick": 27,
+      "name": "Gary Butler",
+      "position": "TE",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1973,
+      "round": 7,
+      "pick": 176,
+      "name": "Rodrigo Barnes",
+      "position": "LB",
+      "nflTeam": "Dallas Cowboys"
+    }
   ]
 }

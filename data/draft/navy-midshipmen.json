@@ -3,9 +3,69 @@
   "teamSlug": "navy-midshipmen",
   "teamName": "Navy Midshipmen",
   "draftPicks": [
-    {"year": 2025, "round": 6, "pick": 200, "name": "Rayuan Lane", "position": "SAF", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2020, "round": 7, "pick": 246, "name": "Malcolm Perry", "position": "RB", "nflTeam": "Miami Dolphins"},
-    {"year": 2016, "round": 6, "pick": 182, "name": "Keenan Reynolds", "position": "RB", "nflTeam": "Baltimore Ravens"},
-    {"year": 2015, "round": 5, "pick": 166, "name": "Joe Cardona", "position": "LS", "nflTeam": "New England Patriots"}
+    {
+      "year": 2025,
+      "round": 6,
+      "pick": 200,
+      "name": "Rayuan Lane",
+      "position": "FS",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 246,
+      "name": "Malcolm Perry",
+      "position": "RB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2016,
+      "round": 6,
+      "pick": 182,
+      "name": "Keenan Reynolds",
+      "position": "RB",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 2015,
+      "round": 5,
+      "pick": 166,
+      "name": "Joe Cardona",
+      "position": "LS",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1995,
+      "round": 6,
+      "pick": 186,
+      "name": "Kevin Hickman",
+      "position": "TE",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1994,
+      "round": 6,
+      "pick": 168,
+      "name": "Max Lane",
+      "position": "T",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1993,
+      "round": 7,
+      "pick": 183,
+      "name": "Bob Kuberski",
+      "position": "DT",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1986,
+      "round": 4,
+      "pick": 108,
+      "name": "Napoleon McCallum",
+      "position": "RB",
+      "nflTeam": "Los Angeles Raiders"
+    }
   ]
 }

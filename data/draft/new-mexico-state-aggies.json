@@ -1,14 +1,191 @@
 {
-  "teamId": "new-mexico-state",
+  "teamId": "newmexicost",
   "teamSlug": "new-mexico-state-aggies",
   "teamName": "New Mexico State Aggies",
   "draftPicks": [
-    {"year": 2020, "round": 5, "pick": 172, "name": "Jason Huntley", "position": "RB", "nflTeam": "Detroit Lions"},
-    {"year": 2018, "round": 4, "pick": 132, "name": "Jaleel Scott", "position": "WR", "nflTeam": "Baltimore Ravens"},
-    {"year": 2013, "round": 7, "pick": 208, "name": "Jeremy Harris", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2012, "round": 6, "pick": 196, "name": "Jonte Green", "position": "DB", "nflTeam": "Detroit Lions"},
-    {"year": 2011, "round": 4, "pick": 131, "name": "Davon House", "position": "DB", "nflTeam": "Green Bay Packers"},
-    {"year": 2003, "round": 7, "pick": 246, "name": "Siddeeq Shabazz", "position": "DB", "nflTeam": "Oakland Raiders"},
-    {"year": 2001, "round": 5, "pick": 161, "name": "Chris Barnes", "position": "RB", "nflTeam": "Baltimore Ravens"}
+    {
+      "year": 2020,
+      "round": 5,
+      "pick": 172,
+      "name": "Jason Huntley",
+      "position": "RB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2018,
+      "round": 4,
+      "pick": 132,
+      "name": "Jaleel Scott",
+      "position": "WR",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 208,
+      "name": "Jeremy Harris",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2012,
+      "round": 6,
+      "pick": 196,
+      "name": "Jonte Green",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2011,
+      "round": 4,
+      "pick": 131,
+      "name": "Davon House",
+      "position": "DB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2003,
+      "round": 7,
+      "pick": 246,
+      "name": "Siddeeq Shabazz",
+      "position": "DB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1996,
+      "round": 7,
+      "pick": 239,
+      "name": "Sean Manuel",
+      "position": "TE",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1995,
+      "round": 6,
+      "pick": 177,
+      "name": "Troy Sienkiewicz",
+      "position": "G",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1994,
+      "round": 5,
+      "pick": 137,
+      "name": "Aaron Laing",
+      "position": "TE",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1988,
+      "round": 4,
+      "pick": 91,
+      "name": "Joe Campbell",
+      "position": "DE",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1984,
+      "round": 3,
+      "pick": 76,
+      "name": "Fredd Young",
+      "position": "LB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1984,
+      "round": 7,
+      "pick": 177,
+      "name": "Leo Barker",
+      "position": "LB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1983,
+      "round": 9,
+      "pick": 247,
+      "name": "Bobby Humphery",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1982,
+      "round": 6,
+      "pick": 145,
+      "name": "Kerry Locklin",
+      "position": "TE",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1978,
+      "round": 11,
+      "pick": 280,
+      "name": "Ray Milo",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1977,
+      "round": 2,
+      "pick": 42,
+      "name": "Walt Williams",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1977,
+      "round": 5,
+      "pick": 128,
+      "name": "Cliff Olander",
+      "position": "QB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1976,
+      "round": 3,
+      "pick": 80,
+      "name": "Duriel Harris",
+      "position": "WR",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1973,
+      "round": 4,
+      "pick": 93,
+      "name": "Andy Dorris",
+      "position": "DE",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1972,
+      "round": 4,
+      "pick": 92,
+      "name": "Po James",
+      "position": "RB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1972,
+      "round": 6,
+      "pick": 139,
+      "name": "Joey Jackson",
+      "position": "DE",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1969,
+      "round": 4,
+      "pick": 96,
+      "name": "Roy Gerela",
+      "position": "K",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1968,
+      "round": 4,
+      "pick": 96,
+      "name": "Joe Schmiesing",
+      "position": "DE",
+      "nflTeam": "St. Louis Cardinals"
+    }
   ]
 }

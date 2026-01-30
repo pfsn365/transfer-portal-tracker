@@ -1,24 +1,167 @@
 {
-  "teamId": "central-michigan",
+  "teamId": "centralmichigan",
   "teamSlug": "central-michigan-chippewas",
   "teamName": "Central Michigan Chippewas",
   "draftPicks": [
-    {"year": 2025, "round": 7, "pick": 229, "name": "Donte Kent", "position": "CB", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2023, "round": 7, "pick": 235, "name": "Lew Nichols", "position": "RB", "nflTeam": "Green Bay Packers"},
-    {"year": 2022, "round": 2, "pick": 57, "name": "Luke Goedeke", "position": "OL", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2022, "round": 3, "pick": 77, "name": "Bernhard Raimann", "position": "OL", "nflTeam": "Indianapolis Colts"},
-    {"year": 2019, "round": 2, "pick": 39, "name": "Sean Murphy-Bunting", "position": "CB", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2019, "round": 6, "pick": 195, "name": "Xavier Crawford", "position": "CB", "nflTeam": "Houston Texans"},
-    {"year": 2018, "round": 5, "pick": 157, "name": "Tyler Conklin", "position": "TE", "nflTeam": "Minnesota Vikings"},
-    {"year": 2016, "round": 6, "pick": 212, "name": "Kavon Frazier", "position": "SAF", "nflTeam": "Dallas Cowboys"},
-    {"year": 2015, "round": 6, "pick": 199, "name": "Leterrius Walton", "position": "DT", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2013, "round": 1, "pick": 1, "name": "Eric Fisher", "position": "OL", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2010, "round": 6, "pick": 181, "name": "Dan LeFevour", "position": "QB", "nflTeam": "Chicago Bears"},
-    {"year": 2010, "round": 6, "pick": 195, "name": "Antonio Brown", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2007, "round": 1, "pick": 28, "name": "Joe Staley", "position": "OL", "nflTeam": "San Francisco 49ers"},
-    {"year": 2007, "round": 2, "pick": 62, "name": "Dan Bazuin", "position": "DE", "nflTeam": "Chicago Bears"},
-    {"year": 2007, "round": 6, "pick": 199, "name": "Drew Mormino", "position": "C", "nflTeam": "Miami Dolphins"},
-    {"year": 2005, "round": 4, "pick": 119, "name": "Eric Ghiaciuc", "position": "C", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2005, "round": 5, "pick": 153, "name": "Adam Kieft", "position": "OL", "nflTeam": "Cincinnati Bengals"}
+    {
+      "year": 2025,
+      "round": 7,
+      "pick": 229,
+      "name": "Donte Kent",
+      "position": "CB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2023,
+      "round": 7,
+      "pick": 235,
+      "name": "Lew Nichols",
+      "position": "RB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2022,
+      "round": 2,
+      "pick": 57,
+      "name": "Luke Goedeke",
+      "position": "OL",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2022,
+      "round": 3,
+      "pick": 77,
+      "name": "Bernhard Raimann",
+      "position": "OL",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2019,
+      "round": 2,
+      "pick": 39,
+      "name": "Sean Murphy-Bunting",
+      "position": "CB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2019,
+      "round": 6,
+      "pick": 195,
+      "name": "Xavier Crawford",
+      "position": "CB",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2018,
+      "round": 5,
+      "pick": 157,
+      "name": "Tyler Conklin",
+      "position": "TE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2016,
+      "round": 6,
+      "pick": 212,
+      "name": "Kavon Frazier",
+      "position": "S",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2015,
+      "round": 6,
+      "pick": 199,
+      "name": "Leterrius Walton",
+      "position": "DT",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2013,
+      "round": 1,
+      "pick": 1,
+      "name": "Eric Fisher",
+      "position": "T",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 181,
+      "name": "Dan LeFevour",
+      "position": "QB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 195,
+      "name": "Antonio Brown",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2007,
+      "round": 1,
+      "pick": 28,
+      "name": "Joe Staley",
+      "position": "T",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2005,
+      "round": 4,
+      "pick": 119,
+      "name": "Eric Ghiaciuc",
+      "position": "C",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1997,
+      "round": 7,
+      "pick": 230,
+      "name": "Scott Rehberg",
+      "position": "G",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1985,
+      "round": 2,
+      "pick": 52,
+      "name": "Jim Bowman",
+      "position": "DB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1985,
+      "round": 8,
+      "pick": 207,
+      "name": "Curtis Adams",
+      "position": "RB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1981,
+      "round": 11,
+      "pick": 285,
+      "name": "Robert Jackson",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1980,
+      "round": 5,
+      "pick": 133,
+      "name": "Gary Hogeboom",
+      "position": "QB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1975,
+      "round": 3,
+      "pick": 54,
+      "name": "Mike Franckowiak",
+      "position": "RB",
+      "nflTeam": "Denver Broncos"
+    }
   ]
 }

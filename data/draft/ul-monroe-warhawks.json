@@ -1,0 +1,231 @@
+{
+  "teamId": "lamonroe",
+  "teamSlug": "ul-monroe-warhawks",
+  "teamName": "UL Monroe Warhawks",
+  "draftPicks": [
+    {
+      "year": 2019,
+      "round": 6,
+      "pick": 203,
+      "name": "Marcus Green",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2016,
+      "round": 5,
+      "pick": 173,
+      "name": "Trey Caldwell",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2007,
+      "round": 5,
+      "pick": 167,
+      "name": "Kevin Payne",
+      "position": "DB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2005,
+      "round": 6,
+      "pick": 181,
+      "name": "Chris Harris",
+      "position": "DB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2000,
+      "round": 5,
+      "pick": 162,
+      "name": "Pat Dennis",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1999,
+      "round": 3,
+      "pick": 78,
+      "name": "Marty Booker",
+      "position": "WR",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1999,
+      "round": 6,
+      "pick": 176,
+      "name": "Lionel Barnes",
+      "position": "DE",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 1998,
+      "round": 3,
+      "pick": 75,
+      "name": "Steve Foley",
+      "position": "LB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1996,
+      "round": 3,
+      "pick": 94,
+      "name": "Stepfret Williams",
+      "position": "WR",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1995,
+      "round": 2,
+      "pick": 36,
+      "name": "Shawn King",
+      "position": "DE",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 1994,
+      "round": 2,
+      "pick": 52,
+      "name": "James Folston",
+      "position": "LB",
+      "nflTeam": "Los Angeles Raiders"
+    },
+    {
+      "year": 1994,
+      "round": 4,
+      "pick": 110,
+      "name": "Larry Whigham",
+      "position": "DB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1993,
+      "round": 2,
+      "pick": 49,
+      "name": "Roosevelt Potts",
+      "position": "RB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1993,
+      "round": 2,
+      "pick": 56,
+      "name": "Vincent Brisby",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1993,
+      "round": 8,
+      "pick": 197,
+      "name": "Jeff Blackshear",
+      "position": "G",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1993,
+      "round": 8,
+      "pick": 208,
+      "name": "Greg Robinson",
+      "position": "RB",
+      "nflTeam": "Los Angeles Raiders"
+    },
+    {
+      "year": 1990,
+      "round": 4,
+      "pick": 102,
+      "name": "Jackie Harris",
+      "position": "TE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1988,
+      "round": 4,
+      "pick": 100,
+      "name": "Teddy Garcia",
+      "position": "K",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1988,
+      "round": 6,
+      "pick": 159,
+      "name": "Stan Humphries",
+      "position": "QB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1987,
+      "round": 5,
+      "pick": 138,
+      "name": "Will Johnson",
+      "position": "LB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1986,
+      "round": 3,
+      "pick": 67,
+      "name": "Bubby Brister",
+      "position": "QB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1985,
+      "round": 8,
+      "pick": 215,
+      "name": "Ronnie Washington",
+      "position": "LB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1981,
+      "round": 5,
+      "pick": 126,
+      "name": "Ken Poole",
+      "position": "DE",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1980,
+      "round": 8,
+      "pick": 204,
+      "name": "Vic Minor",
+      "position": "DB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1979,
+      "round": 4,
+      "pick": 104,
+      "name": "John Floyd",
+      "position": "WR",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1976,
+      "round": 5,
+      "pick": 142,
+      "name": "Fred Coleman",
+      "position": "TE",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1972,
+      "round": 12,
+      "pick": 300,
+      "name": "Don Zimmerman",
+      "position": "WR",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1971,
+      "round": 1,
+      "pick": 7,
+      "name": "Joe Profit",
+      "position": "RB",
+      "nflTeam": "Atlanta Falcons"
+    }
+  ]
+}

@@ -3,31 +3,557 @@
   "teamSlug": "memphis-tigers",
   "teamName": "Memphis Tigers",
   "draftPicks": [
-    {"year": 2025, "round": 7, "pick": 257, "name": "Kobee Minor", "position": "DB", "nflTeam": "New England Patriots"},
-    {"year": 2022, "round": 3, "pick": 90, "name": "Dylan Parham", "position": "OL", "nflTeam": "Las Vegas Raiders"},
-    {"year": 2022, "round": 4, "pick": 138, "name": "Calvin Austin III", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2021, "round": 5, "pick": 150, "name": "Kenneth Gainwell", "position": "RB", "nflTeam": "Philadelphia Eagles"},
-    {"year": 2020, "round": 3, "pick": 66, "name": "Antonio Gibson", "position": "RB", "nflTeam": "Washington Football Team"},
-    {"year": 2020, "round": 7, "pick": 223, "name": "Chris Claybrooks", "position": "CB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2020, "round": 7, "pick": 230, "name": "Dustin Woodard", "position": "C", "nflTeam": "New England Patriots"},
-    {"year": 2019, "round": 3, "pick": 70, "name": "Darrell Henderson", "position": "RB", "nflTeam": "Los Angeles Rams"},
-    {"year": 2019, "round": 4, "pick": 128, "name": "Tony Pollard", "position": "RB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2018, "round": 2, "pick": 51, "name": "Anthony Miller", "position": "WR", "nflTeam": "Chicago Bears"},
-    {"year": 2018, "round": 5, "pick": 150, "name": "Genard Avery", "position": "LB", "nflTeam": "Cleveland Browns"},
-    {"year": 2017, "round": 5, "pick": 153, "name": "Jake Elliott", "position": "K", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2016, "round": 1, "pick": 26, "name": "Paxton Lynch", "position": "QB", "nflTeam": "Denver Broncos"},
-    {"year": 2015, "round": 5, "pick": 145, "name": "Bobby McCain", "position": "CB", "nflTeam": "Miami Dolphins"},
-    {"year": 2015, "round": 7, "pick": 227, "name": "Martin Ifedi", "position": "DE", "nflTeam": "St. Louis Rams"},
-    {"year": 2014, "round": 7, "pick": 256, "name": "Lonnie Ballentine", "position": "DB", "nflTeam": "Houston Texans"},
-    {"year": 2012, "round": 1, "pick": 11, "name": "Dontari Poe", "position": "DT", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2009, "round": 7, "pick": 249, "name": "Clinton McDonald", "position": "DT", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2007, "round": 5, "pick": 140, "name": "Brandon McDonald", "position": "DB", "nflTeam": "Cleveland Browns"},
-    {"year": 2006, "round": 1, "pick": 27, "name": "DeAngelo Williams", "position": "RB", "nflTeam": "Carolina Panthers"},
-    {"year": 2006, "round": 4, "pick": 118, "name": "Stephen Gostkowski", "position": "K", "nflTeam": "New England Patriots"},
-    {"year": 2004, "round": 7, "pick": 212, "name": "Eric Taylor", "position": "DT", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2003, "round": 3, "pick": 78, "name": "Wade Smith", "position": "OL", "nflTeam": "Miami Dolphins"},
-    {"year": 2001, "round": 2, "pick": 37, "name": "Idrees Bashir", "position": "DB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2001, "round": 2, "pick": 54, "name": "Michael Stone", "position": "DB", "nflTeam": "Arizona Cardinals"},
-    {"year": 2001, "round": 4, "pick": 123, "name": "Marcus Bell", "position": "DT", "nflTeam": "Arizona Cardinals"}
+    {
+      "year": 2025,
+      "round": 7,
+      "pick": 257,
+      "name": "Kobee Minor",
+      "position": "DB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2022,
+      "round": 3,
+      "pick": 90,
+      "name": "Dylan Parham",
+      "position": "OL",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 2022,
+      "round": 4,
+      "pick": 138,
+      "name": "Calvin Austin III",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2021,
+      "round": 5,
+      "pick": 150,
+      "name": "Kenneth Gainwell",
+      "position": "RB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 2020,
+      "round": 3,
+      "pick": 66,
+      "name": "Antonio Gibson",
+      "position": "RB",
+      "nflTeam": "Washington Football Team"
+    },
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 223,
+      "name": "Chris Claybrooks",
+      "position": "CB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 230,
+      "name": "Dustin Woodard",
+      "position": "C",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2019,
+      "round": 3,
+      "pick": 70,
+      "name": "Darrell Henderson",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 2019,
+      "round": 4,
+      "pick": 128,
+      "name": "Tony Pollard",
+      "position": "RB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2018,
+      "round": 2,
+      "pick": 51,
+      "name": "Anthony Miller",
+      "position": "WR",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2018,
+      "round": 5,
+      "pick": 150,
+      "name": "Genard Avery",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2017,
+      "round": 5,
+      "pick": 153,
+      "name": "Jake Elliott",
+      "position": "K",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2016,
+      "round": 1,
+      "pick": 26,
+      "name": "Paxton Lynch",
+      "position": "QB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2015,
+      "round": 5,
+      "pick": 145,
+      "name": "Bobby McCain",
+      "position": "CB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2015,
+      "round": 7,
+      "pick": 227,
+      "name": "Martin Ifedi",
+      "position": "DE",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2014,
+      "round": 7,
+      "pick": 256,
+      "name": "Lonnie Ballentine",
+      "position": "DB",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2012,
+      "round": 1,
+      "pick": 11,
+      "name": "Dontari Poe",
+      "position": "DT",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2009,
+      "round": 7,
+      "pick": 249,
+      "name": "Clinton McDonald",
+      "position": "DT",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2007,
+      "round": 5,
+      "pick": 140,
+      "name": "Brandon McDonald",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2006,
+      "round": 1,
+      "pick": 27,
+      "name": "DeAngelo Williams",
+      "position": "RB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2006,
+      "round": 4,
+      "pick": 118,
+      "name": "Stephen Gostkowski",
+      "position": "K",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2004,
+      "round": 7,
+      "pick": 212,
+      "name": "Eric Taylor",
+      "position": "DT",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2003,
+      "round": 3,
+      "pick": 78,
+      "name": "Wade Smith",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2001,
+      "round": 2,
+      "pick": 37,
+      "name": "Idrees Bashir",
+      "position": "DB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2001,
+      "round": 2,
+      "pick": 54,
+      "name": "Michael Stone",
+      "position": "DB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2001,
+      "round": 4,
+      "pick": 123,
+      "name": "Marcus Bell",
+      "position": "DT",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1999,
+      "round": 3,
+      "pick": 87,
+      "name": "Mike McKenzie",
+      "position": "DB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1997,
+      "round": 5,
+      "pick": 151,
+      "name": "Tony Williams",
+      "position": "DT",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1997,
+      "round": 7,
+      "pick": 233,
+      "name": "Marvin Thomas",
+      "position": "DE",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1996,
+      "round": 1,
+      "pick": 28,
+      "name": "Jerome Woods",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1995,
+      "round": 4,
+      "pick": 109,
+      "name": "Ken Irvin",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1994,
+      "round": 2,
+      "pick": 33,
+      "name": "Isaac Bruce",
+      "position": "WR",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1994,
+      "round": 5,
+      "pick": 154,
+      "name": "Tony Semple",
+      "position": "G",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1994,
+      "round": 7,
+      "pick": 199,
+      "name": "Steve Matthews",
+      "position": "QB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1993,
+      "round": 4,
+      "pick": 111,
+      "name": "Russell Copeland",
+      "position": "WR",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1991,
+      "round": 5,
+      "pick": 126,
+      "name": "Reggie Jones",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1990,
+      "round": 5,
+      "pick": 132,
+      "name": "Charles Wilson",
+      "position": "WR",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1990,
+      "round": 8,
+      "pick": 195,
+      "name": "Tory Epps",
+      "position": "NT",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1989,
+      "round": 12,
+      "pick": 309,
+      "name": "James Cribbs",
+      "position": "DE",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1988,
+      "round": 9,
+      "pick": 233,
+      "name": "Scott Dill",
+      "position": "T",
+      "nflTeam": "Phoenix Cardinals"
+    },
+    {
+      "year": 1987,
+      "round": 3,
+      "pick": 60,
+      "name": "David Brandon",
+      "position": "LB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1986,
+      "round": 3,
+      "pick": 70,
+      "name": "Jeff Walker",
+      "position": "T",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1986,
+      "round": 4,
+      "pick": 84,
+      "name": "Tim Harris",
+      "position": "LB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1986,
+      "round": 6,
+      "pick": 152,
+      "name": "Gary Hunt",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1986,
+      "round": 8,
+      "pick": 198,
+      "name": "Trell Hooper",
+      "position": "DB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1985,
+      "round": 1,
+      "pick": 14,
+      "name": "Derrick Burroughs",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1985,
+      "round": 3,
+      "pick": 66,
+      "name": "Tim Long",
+      "position": "C",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1985,
+      "round": 3,
+      "pick": 67,
+      "name": "Donnie Elder",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1985,
+      "round": 6,
+      "pick": 159,
+      "name": "Jack Oliver",
+      "position": "T",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1983,
+      "round": 2,
+      "pick": 56,
+      "name": "Richard Williams",
+      "position": "RB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1979,
+      "round": 2,
+      "pick": 36,
+      "name": "Earnest Gray",
+      "position": "WR",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1979,
+      "round": 2,
+      "pick": 54,
+      "name": "Eddie Hill",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1979,
+      "round": 7,
+      "pick": 177,
+      "name": "Judson Flint",
+      "position": "DB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1978,
+      "round": 1,
+      "pick": 9,
+      "name": "Keith Simpson",
+      "position": "DB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1978,
+      "round": 2,
+      "pick": 36,
+      "name": "Keith Butler",
+      "position": "LB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1978,
+      "round": 5,
+      "pick": 122,
+      "name": "Keith Wright",
+      "position": "WR",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1977,
+      "round": 1,
+      "pick": 24,
+      "name": "Bob Rush",
+      "position": "C",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1977,
+      "round": 3,
+      "pick": 80,
+      "name": "Terdell Middleton",
+      "position": "RB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1977,
+      "round": 4,
+      "pick": 104,
+      "name": "Eric Harris",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1975,
+      "round": 9,
+      "pick": 224,
+      "name": "Ed Taylor",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1974,
+      "round": 3,
+      "pick": 62,
+      "name": "Cliff Taylor",
+      "position": "RB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1973,
+      "round": 11,
+      "pick": 268,
+      "name": "Jay Douglas",
+      "position": "C",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1973,
+      "round": 13,
+      "pick": 315,
+      "name": "Stan Davis",
+      "position": "WR",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1972,
+      "round": 5,
+      "pick": 129,
+      "name": "Charlie Babb",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1970,
+      "round": 5,
+      "pick": 121,
+      "name": "Danny Pierce",
+      "position": "RB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1970,
+      "round": 9,
+      "pick": 217,
+      "name": "Preston Riley",
+      "position": "WR",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1968,
+      "round": 5,
+      "pick": 137,
+      "name": "Francis Winkler",
+      "position": "DE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1968,
+      "round": 11,
+      "pick": 289,
+      "name": "Rich Coady",
+      "position": "C",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1968,
+      "round": 14,
+      "pick": 361,
+      "name": "Chuck DeVleigher",
+      "position": "DT",
+      "nflTeam": "Buffalo Bills"
+    }
   ]
 }

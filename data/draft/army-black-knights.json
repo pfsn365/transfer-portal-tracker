@@ -3,6 +3,13 @@
   "teamSlug": "army-black-knights",
   "teamName": "Army Black Knights",
   "draftPicks": [
-    {"year": 2008, "round": 7, "pick": 218, "name": "Caleb Campbell", "position": "DB", "nflTeam": "Detroit Lions"}
+    {
+      "year": 2008,
+      "round": 7,
+      "pick": 218,
+      "name": "Caleb Campbell",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    }
   ]
 }

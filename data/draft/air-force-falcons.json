@@ -1,10 +1,55 @@
 {
-  "teamId": "air-force",
+  "teamId": "airforce",
   "teamSlug": "air-force-falcons",
   "teamName": "Air Force Falcons",
   "draftPicks": [
-    {"year": 2024, "round": 7, "pick": 223, "name": "Trey Taylor", "position": "SAF", "nflTeam": "Las Vegas Raiders"},
-    {"year": 2022, "round": 6, "pick": 194, "name": "Jordan Jackson", "position": "DT", "nflTeam": "New Orleans Saints"},
-    {"year": 2019, "round": 7, "pick": 250, "name": "Austin Cutting", "position": "LS", "nflTeam": "Minnesota Vikings"}
+    {
+      "year": 2024,
+      "round": 7,
+      "pick": 223,
+      "name": "Trey Taylor",
+      "position": "FS",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 2022,
+      "round": 6,
+      "pick": 194,
+      "name": "Jordan Jackson",
+      "position": "DT",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 2019,
+      "round": 7,
+      "pick": 250,
+      "name": "Austin Cutting",
+      "position": "LS",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1999,
+      "round": 7,
+      "pick": 248,
+      "name": "Bryce Fisher",
+      "position": "DE",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1995,
+      "round": 7,
+      "pick": 218,
+      "name": "Steve Russ",
+      "position": "LB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1988,
+      "round": 11,
+      "pick": 290,
+      "name": "Chad Hennings",
+      "position": "DT",
+      "nflTeam": "Dallas Cowboys"
+    }
   ]
 }

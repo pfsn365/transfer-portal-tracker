@@ -1,9 +1,175 @@
 {
-  "teamId": "north-texas",
+  "teamId": "notexas",
   "teamSlug": "north-texas-mean-green",
   "teamName": "North Texas Mean Green",
   "draftPicks": [
-    {"year": 2021, "round": 4, "pick": 129, "name": "Jaelon Darden", "position": "WR", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2004, "round": 6, "pick": 182, "name": "Cody Spencer", "position": "LB", "nflTeam": "Oakland Raiders"}
+    {
+      "year": 2021,
+      "round": 4,
+      "pick": 129,
+      "name": "Jaelon Darden",
+      "position": "WR",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2004,
+      "round": 6,
+      "pick": 182,
+      "name": "Cody Spencer",
+      "position": "LB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1991,
+      "round": 6,
+      "pick": 145,
+      "name": "Erric Pegram",
+      "position": "RB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1989,
+      "round": 3,
+      "pick": 79,
+      "name": "Kim Phillips",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1983,
+      "round": 11,
+      "pick": 297,
+      "name": "Mark Witte",
+      "position": "TE",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1982,
+      "round": 4,
+      "pick": 100,
+      "name": "Louis Haynes",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1982,
+      "round": 5,
+      "pick": 114,
+      "name": "Tony Elliott",
+      "position": "NT",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1981,
+      "round": 7,
+      "pick": 175,
+      "name": "Ron Battle",
+      "position": "TE",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1979,
+      "round": 3,
+      "pick": 78,
+      "name": "Reggie Lewis",
+      "position": "DE",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1976,
+      "round": 9,
+      "pick": 264,
+      "name": "Beasley Reece",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1973,
+      "round": 14,
+      "pick": 355,
+      "name": "Hurles Scales",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1971,
+      "round": 1,
+      "pick": 26,
+      "name": "Lenny Dunlap",
+      "position": "DB",
+      "nflTeam": "Baltimore Colts"
+    },
+    {
+      "year": 1971,
+      "round": 3,
+      "pick": 75,
+      "name": "Willie Parker",
+      "position": "C",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1971,
+      "round": 14,
+      "pick": 357,
+      "name": "Thomas Gipson",
+      "position": "DT",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1970,
+      "round": 1,
+      "pick": 9,
+      "name": "Cedrick Hardman",
+      "position": "DE",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1970,
+      "round": 2,
+      "pick": 28,
+      "name": "Ron Shanklin",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1970,
+      "round": 5,
+      "pick": 126,
+      "name": "Steve Ramsey",
+      "position": "QB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1970,
+      "round": 10,
+      "pick": 235,
+      "name": "Glen Holloway",
+      "position": "G",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1969,
+      "round": 1,
+      "pick": 4,
+      "name": "Joe Greene",
+      "position": "DT",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1969,
+      "round": 7,
+      "pick": 160,
+      "name": "Chuck Beatty",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1967,
+      "round": 7,
+      "pick": 172,
+      "name": "John Love",
+      "position": "WR",
+      "nflTeam": "Washington Redskins"
+    }
   ]
 }

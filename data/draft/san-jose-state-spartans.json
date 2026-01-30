@@ -1,25 +1,391 @@
 {
-  "teamId": "san-jose-state",
+  "teamId": "sanjosest",
   "teamSlug": "san-jose-state-spartans",
   "teamName": "San Jose State Spartans",
   "draftPicks": [
-    {"year": 2023, "round": 4, "pick": 129, "name": "Viliami Fehoko", "position": "DL", "nflTeam": "Dallas Cowboys"},
-    {"year": 2019, "round": 3, "pick": 69, "name": "Josh Oliver", "position": "TE", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2018, "round": 7, "pick": 222, "name": "Jermaine Kelly Jr.", "position": "CB", "nflTeam": "Houston Texans"},
-    {"year": 2016, "round": 4, "pick": 119, "name": "Tyler Ervin", "position": "RB", "nflTeam": "Houston Texans"},
-    {"year": 2016, "round": 6, "pick": 195, "name": "Wes Schweitzer", "position": "OL", "nflTeam": "Atlanta Falcons"},
-    {"year": 2015, "round": 7, "pick": 249, "name": "Akeem King", "position": "DB", "nflTeam": "Atlanta Falcons"},
-    {"year": 2014, "round": 5, "pick": 148, "name": "Bene Benwikere", "position": "DB", "nflTeam": "Carolina Panthers"},
-    {"year": 2014, "round": 6, "pick": 183, "name": "David Fales", "position": "QB", "nflTeam": "Chicago Bears"},
-    {"year": 2013, "round": 6, "pick": 176, "name": "David Quessenberry", "position": "OL", "nflTeam": "Houston Texans"},
-    {"year": 2009, "round": 3, "pick": 68, "name": "Jarron Gilbert", "position": "DT", "nflTeam": "Chicago Bears"},
-    {"year": 2009, "round": 3, "pick": 90, "name": "Chris Owens", "position": "DB", "nflTeam": "Atlanta Falcons"},
-    {"year": 2009, "round": 6, "pick": 191, "name": "Coye Francies", "position": "DB", "nflTeam": "Cleveland Browns"},
-    {"year": 2008, "round": 4, "pick": 113, "name": "Dwight Lowery", "position": "DB", "nflTeam": "New York Jets"},
-    {"year": 2007, "round": 3, "pick": 78, "name": "James Jones", "position": "WR", "nflTeam": "Green Bay Packers"},
-    {"year": 2007, "round": 7, "pick": 229, "name": "John Broussard", "position": "WR", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2004, "round": 7, "pick": 245, "name": "Courtney Anderson", "position": "TE", "nflTeam": "Oakland Raiders"},
-    {"year": 2003, "round": 6, "pick": 209, "name": "Tim Provost", "position": "OL", "nflTeam": "Miami Dolphins"},
-    {"year": 2001, "round": 3, "pick": 66, "name": "Sean Brewer", "position": "TE", "nflTeam": "Cincinnati Bengals"}
+    {
+      "year": 2023,
+      "round": 4,
+      "pick": 129,
+      "name": "Viliami Fehoko",
+      "position": "DL",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2019,
+      "round": 3,
+      "pick": 69,
+      "name": "Josh Oliver",
+      "position": "TE",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2018,
+      "round": 7,
+      "pick": 222,
+      "name": "Jermaine Kelly Jr.",
+      "position": "CB",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2016,
+      "round": 4,
+      "pick": 119,
+      "name": "Tyler Ervin",
+      "position": "RB",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2016,
+      "round": 6,
+      "pick": 195,
+      "name": "Wes Schweitzer",
+      "position": "G",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2015,
+      "round": 7,
+      "pick": 249,
+      "name": "Akeem King",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2014,
+      "round": 5,
+      "pick": 148,
+      "name": "Bene Benwikere",
+      "position": "DB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2014,
+      "round": 6,
+      "pick": 183,
+      "name": "David Fales",
+      "position": "QB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2013,
+      "round": 6,
+      "pick": 176,
+      "name": "David Quessenberry",
+      "position": "OL",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2009,
+      "round": 3,
+      "pick": 68,
+      "name": "Jarron Gilbert",
+      "position": "DT",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2009,
+      "round": 3,
+      "pick": 90,
+      "name": "Chris Owens",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2009,
+      "round": 6,
+      "pick": 191,
+      "name": "Coye Francies",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2008,
+      "round": 4,
+      "pick": 113,
+      "name": "Dwight Lowery",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2007,
+      "round": 3,
+      "pick": 78,
+      "name": "James Jones",
+      "position": "WR",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2007,
+      "round": 7,
+      "pick": 229,
+      "name": "John Broussard",
+      "position": "WR",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2004,
+      "round": 7,
+      "pick": 245,
+      "name": "Courtney Anderson",
+      "position": "TE",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2001,
+      "round": 3,
+      "pick": 66,
+      "name": "Sean Brewer",
+      "position": "TE",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1999,
+      "round": 3,
+      "pick": 90,
+      "name": "David Loverne",
+      "position": "G",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1999,
+      "round": 6,
+      "pick": 189,
+      "name": "Lyle West",
+      "position": "DB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1996,
+      "round": 3,
+      "pick": 81,
+      "name": "Brian Roche",
+      "position": "TE",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1991,
+      "round": 7,
+      "pick": 193,
+      "name": "Sheldon Canley",
+      "position": "RB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1990,
+      "round": 7,
+      "pick": 169,
+      "name": "Johnny Johnson",
+      "position": "RB",
+      "nflTeam": "Phoenix Cardinals"
+    },
+    {
+      "year": 1989,
+      "round": 6,
+      "pick": 150,
+      "name": "Jay Taylor",
+      "position": "DB",
+      "nflTeam": "Phoenix Cardinals"
+    },
+    {
+      "year": 1988,
+      "round": 6,
+      "pick": 139,
+      "name": "James Saxon",
+      "position": "FB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1984,
+      "round": 2,
+      "pick": 41,
+      "name": "Eric Richardson",
+      "position": "WR",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1983,
+      "round": 1,
+      "pick": 22,
+      "name": "Gill Byrd",
+      "position": "DB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1983,
+      "round": 7,
+      "pick": 173,
+      "name": "Ken Thomas",
+      "position": "RB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1983,
+      "round": 10,
+      "pick": 277,
+      "name": "Mervyn Fernandez",
+      "position": "WR",
+      "nflTeam": "Los Angeles Raiders"
+    },
+    {
+      "year": 1983,
+      "round": 11,
+      "pick": 303,
+      "name": "Tim Kearse",
+      "position": "WR",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1982,
+      "round": 1,
+      "pick": 21,
+      "name": "Gerald Willhite",
+      "position": "RB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1982,
+      "round": 3,
+      "pick": 63,
+      "name": "Stacey Bailey",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1981,
+      "round": 1,
+      "pick": 16,
+      "name": "Mark Nichols",
+      "position": "WR",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1980,
+      "round": 3,
+      "pick": 58,
+      "name": "Jewerl Thomas",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1980,
+      "round": 4,
+      "pick": 101,
+      "name": "Ed Luther",
+      "position": "QB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1979,
+      "round": 4,
+      "pick": 85,
+      "name": "Frank Manumaleuga",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1978,
+      "round": 4,
+      "pick": 93,
+      "name": "Gerald Small",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1978,
+      "round": 10,
+      "pick": 265,
+      "name": "Randy Gill",
+      "position": "LB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1977,
+      "round": 1,
+      "pick": 20,
+      "name": "Wilson Faumuina",
+      "position": "DT",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1977,
+      "round": 3,
+      "pick": 69,
+      "name": "Rick Kane",
+      "position": "RB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1977,
+      "round": 10,
+      "pick": 275,
+      "name": "Steve DeBerg",
+      "position": "QB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1976,
+      "round": 1,
+      "pick": 19,
+      "name": "Kim Bokamper",
+      "position": "DE",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1976,
+      "round": 5,
+      "pick": 128,
+      "name": "Carl Ekern",
+      "position": "LB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1975,
+      "round": 1,
+      "pick": 17,
+      "name": "Louis Wright",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1974,
+      "round": 17,
+      "pick": 418,
+      "name": "Charles DeJurnett",
+      "position": "NT",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1973,
+      "round": 5,
+      "pick": 115,
+      "name": "Cody Jones",
+      "position": "DT",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1969,
+      "round": 9,
+      "pick": 209,
+      "name": "Steve Alexakos",
+      "position": "G",
+      "nflTeam": "Boston Patriots"
+    },
+    {
+      "year": 1967,
+      "round": 9,
+      "pick": 226,
+      "name": "Tommie Smith",
+      "position": "WR",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1967,
+      "round": 14,
+      "pick": 355,
+      "name": "Marty Baccaglio",
+      "position": "DE",
+      "nflTeam": "San Diego Chargers"
+    }
   ]
 }

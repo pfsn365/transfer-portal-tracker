@@ -3,23 +3,237 @@
   "teamSlug": "troy-trojans",
   "teamName": "Troy Trojans",
   "draftPicks": [
-    {"year": 2024, "round": 5, "pick": 168, "name": "Javon Solomon", "position": "DE", "nflTeam": "Buffalo Bills"},
-    {"year": 2024, "round": 6, "pick": 181, "name": "Kimani Vidal", "position": "RB", "nflTeam": "Los Angeles Chargers"},
-    {"year": 2023, "round": 4, "pick": 107, "name": "Jake Andrews", "position": "OL", "nflTeam": "New England Patriots"},
-    {"year": 2017, "round": 3, "pick": 85, "name": "Antonio Garcia", "position": "T", "nflTeam": "New England Patriots"},
-    {"year": 2012, "round": 5, "pick": 164, "name": "Jonathan Massaquoi", "position": "DE", "nflTeam": "Atlanta Falcons"},
-    {"year": 2011, "round": 3, "pick": 83, "name": "Jerrel Jernigan", "position": "WR", "nflTeam": "New York Giants"},
-    {"year": 2010, "round": 5, "pick": 142, "name": "Cameron Sheffield", "position": "DE", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2010, "round": 6, "pick": 201, "name": "Jorrick Calvin", "position": "DB", "nflTeam": "Arizona Cardinals"},
-    {"year": 2010, "round": 7, "pick": 209, "name": "Levi Brown", "position": "QB", "nflTeam": "Buffalo Bills"},
-    {"year": 2009, "round": 2, "pick": 59, "name": "Sherrod Martin", "position": "DB", "nflTeam": "Carolina Panthers"},
-    {"year": 2008, "round": 1, "pick": 11, "name": "Leodis McKelvin", "position": "DB", "nflTeam": "Buffalo Bills"},
-    {"year": 2007, "round": 4, "pick": 131, "name": "Brannon Condren", "position": "DB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2005, "round": 1, "pick": 11, "name": "DeMarcus Ware", "position": "LB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2003, "round": 2, "pick": 56, "name": "Osi Umenyiora", "position": "DE", "nflTeam": "New York Giants"},
-    {"year": 2003, "round": 7, "pick": 248, "name": "Davern Williams", "position": "DT", "nflTeam": "Miami Dolphins"},
-    {"year": 2001, "round": 5, "pick": 162, "name": "Jonathan Carter", "position": "WR", "nflTeam": "New York Giants"},
-    {"year": 2000, "round": 4, "pick": 129, "name": "Michael Moore", "position": "G", "nflTeam": "Washington Redskins"},
-    {"year": 2000, "round": 6, "pick": 172, "name": "Mareno Philyaw", "position": "WR", "nflTeam": "Atlanta Falcons"}
+    {
+      "year": 2024,
+      "round": 5,
+      "pick": 168,
+      "name": "Javon Solomon",
+      "position": "DE",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2024,
+      "round": 6,
+      "pick": 181,
+      "name": "Kimani Vidal",
+      "position": "RB",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 2023,
+      "round": 4,
+      "pick": 107,
+      "name": "Jake Andrews",
+      "position": "OL",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2017,
+      "round": 3,
+      "pick": 85,
+      "name": "Antonio Garcia",
+      "position": "T",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2012,
+      "round": 5,
+      "pick": 164,
+      "name": "Jonathan Massaquoi",
+      "position": "DE",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2011,
+      "round": 3,
+      "pick": 83,
+      "name": "Jerrel Jernigan",
+      "position": "WR",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2010,
+      "round": 5,
+      "pick": 142,
+      "name": "Cameron Sheffield",
+      "position": "DE",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 201,
+      "name": "Jorrick Calvin",
+      "position": "DB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2010,
+      "round": 7,
+      "pick": 209,
+      "name": "Levi Brown",
+      "position": "QB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2009,
+      "round": 2,
+      "pick": 59,
+      "name": "Sherrod Martin",
+      "position": "DB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2008,
+      "round": 1,
+      "pick": 11,
+      "name": "Leodis McKelvin",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2007,
+      "round": 4,
+      "pick": 131,
+      "name": "Brannon Condren",
+      "position": "DB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2005,
+      "round": 1,
+      "pick": 11,
+      "name": "DeMarcus Ware",
+      "position": "LB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2003,
+      "round": 2,
+      "pick": 56,
+      "name": "Osi Umenyiora",
+      "position": "DE",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2003,
+      "round": 7,
+      "pick": 248,
+      "name": "Davern Williams",
+      "position": "DT",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2001,
+      "round": 5,
+      "pick": 162,
+      "name": "Jonathan Carter",
+      "position": "WR",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2000,
+      "round": 4,
+      "pick": 129,
+      "name": "Michael Moore",
+      "position": "G",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 2000,
+      "round": 6,
+      "pick": 172,
+      "name": "Mareno Philyaw",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1999,
+      "round": 6,
+      "pick": 174,
+      "name": "Marcus Spriggs",
+      "position": "DT",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1997,
+      "round": 4,
+      "pick": 107,
+      "name": "Pratt Lyons",
+      "position": "DE",
+      "nflTeam": "Tennessee Oilers"
+    },
+    {
+      "year": 1994,
+      "round": 4,
+      "pick": 117,
+      "name": "Orlando Parker",
+      "position": "WR",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1992,
+      "round": 3,
+      "pick": 84,
+      "name": "Leonard Wheeler",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1989,
+      "round": 6,
+      "pick": 153,
+      "name": "Titus Dixon",
+      "position": "WR",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1986,
+      "round": 9,
+      "pick": 234,
+      "name": "Anthony Henton",
+      "position": "LB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1981,
+      "round": 8,
+      "pick": 217,
+      "name": "Willie Tullis",
+      "position": "DB",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1980,
+      "round": 10,
+      "pick": 270,
+      "name": "Virgil Seay",
+      "position": "WR",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1978,
+      "round": 11,
+      "pick": 287,
+      "name": "Willie McCray",
+      "position": "DE",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1977,
+      "round": 5,
+      "pick": 116,
+      "name": "Perry Griggs",
+      "position": "WR",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1971,
+      "round": 6,
+      "pick": 133,
+      "name": "Jack Smith",
+      "position": "DB",
+      "nflTeam": "Philadelphia Eagles"
+    }
   ]
 }

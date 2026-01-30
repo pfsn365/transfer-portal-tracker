@@ -1,22 +1,199 @@
 {
-  "teamId": "miami-oh",
+  "teamId": "miami(oh)",
   "teamSlug": "miami-oh-redhawks",
   "teamName": "Miami (OH) RedHawks",
   "draftPicks": [
-    {"year": 2022, "round": 5, "pick": 174, "name": "Dominique Robinson", "position": "DE", "nflTeam": "Chicago Bears"},
-    {"year": 2021, "round": 5, "pick": 161, "name": "Tommy Doyle", "position": "OL", "nflTeam": "Buffalo Bills"},
-    {"year": 2020, "round": 7, "pick": 248, "name": "Sam Sloman", "position": "K", "nflTeam": "Los Angeles Rams"},
-    {"year": 2015, "round": 2, "pick": 62, "name": "Quinten Rollins", "position": "CB", "nflTeam": "Green Bay Packers"},
-    {"year": 2013, "round": 7, "pick": 234, "name": "Zac Dysert", "position": "QB", "nflTeam": "Denver Broncos"},
-    {"year": 2012, "round": 3, "pick": 76, "name": "Brandon Brooks", "position": "OL", "nflTeam": "Houston Texans"},
-    {"year": 2009, "round": 7, "pick": 237, "name": "Jake O'Connell", "position": "TE", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2007, "round": 4, "pick": 118, "name": "Ryne Robinson", "position": "WR", "nflTeam": "Carolina Panthers"},
-    {"year": 2006, "round": 5, "pick": 137, "name": "Terna Nande", "position": "LB", "nflTeam": "Tennessee Titans"},
-    {"year": 2005, "round": 5, "pick": 147, "name": "Alphonso Hodge", "position": "DB", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2004, "round": 1, "pick": 11, "name": "Ben Roethlisberger", "position": "QB", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2004, "round": 5, "pick": 138, "name": "Jacob Bell", "position": "OL", "nflTeam": "Tennessee Titans"},
-    {"year": 2001, "round": 6, "pick": 176, "name": "Alex Sulfsted", "position": "OL", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2000, "round": 3, "pick": 63, "name": "Travis Prentice", "position": "RB", "nflTeam": "Cleveland Browns"},
-    {"year": 2000, "round": 4, "pick": 111, "name": "Trevor Gaylor", "position": "WR", "nflTeam": "San Diego Chargers"}
+    {
+      "year": 2022,
+      "round": 5,
+      "pick": 174,
+      "name": "Dominique Robinson",
+      "position": "DE",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2021,
+      "round": 5,
+      "pick": 161,
+      "name": "Tommy Doyle",
+      "position": "OL",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 248,
+      "name": "Sam Sloman",
+      "position": "K",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 2015,
+      "round": 2,
+      "pick": 62,
+      "name": "Quinten Rollins",
+      "position": "CB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 234,
+      "name": "Zac Dysert",
+      "position": "QB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2012,
+      "round": 3,
+      "pick": 76,
+      "name": "Brandon Brooks",
+      "position": "G",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2009,
+      "round": 7,
+      "pick": 237,
+      "name": "Jake O'Connell",
+      "position": "TE",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2007,
+      "round": 4,
+      "pick": 118,
+      "name": "Ryne Robinson",
+      "position": "WR",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2006,
+      "round": 5,
+      "pick": 137,
+      "name": "Terna Nande",
+      "position": "LB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2004,
+      "round": 1,
+      "pick": 11,
+      "name": "Ben Roethlisberger",
+      "position": "QB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2004,
+      "round": 5,
+      "pick": 138,
+      "name": "Jacob Bell",
+      "position": "G",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2001,
+      "round": 6,
+      "pick": 176,
+      "name": "Alex Sulfsted",
+      "position": "T",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2000,
+      "round": 3,
+      "pick": 63,
+      "name": "Travis Prentice",
+      "position": "RB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2000,
+      "round": 4,
+      "pick": 111,
+      "name": "Trevor Gaylor",
+      "position": "WR",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1999,
+      "round": 7,
+      "pick": 224,
+      "name": "JoJuan Armour",
+      "position": "DB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1988,
+      "round": 3,
+      "pick": 62,
+      "name": "Sheldon White",
+      "position": "DB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1988,
+      "round": 10,
+      "pick": 260,
+      "name": "Andy Schillinger",
+      "position": "WR",
+      "nflTeam": "Phoenix Cardinals"
+    },
+    {
+      "year": 1987,
+      "round": 5,
+      "pick": 118,
+      "name": "George Swarn",
+      "position": "RB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1977,
+      "round": 3,
+      "pick": 84,
+      "name": "Rob Carpenter",
+      "position": "RB",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1976,
+      "round": 2,
+      "pick": 58,
+      "name": "Sherman Smith",
+      "position": "RB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1970,
+      "round": 5,
+      "pick": 124,
+      "name": "Gary Arthur",
+      "position": "TE",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1969,
+      "round": 1,
+      "pick": 18,
+      "name": "Bob Babich",
+      "position": "LB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1968,
+      "round": 16,
+      "pick": 430,
+      "name": "Bob Smith",
+      "position": "DB",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1967,
+      "round": 4,
+      "pick": 101,
+      "name": "Ed Philpott",
+      "position": "LB",
+      "nflTeam": "Boston Patriots"
+    }
   ]
 }

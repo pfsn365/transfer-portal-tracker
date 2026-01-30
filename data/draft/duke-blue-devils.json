@@ -3,18 +3,293 @@
   "teamSlug": "duke-blue-devils",
   "teamName": "Duke Blue Devils",
   "draftPicks": [
-    {"year": 2024, "round": 1, "pick": 26, "name": "Graham Barton", "position": "OL", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2024, "round": 3, "pick": 95, "name": "DeWayne Carter", "position": "DT", "nflTeam": "Buffalo Bills"},
-    {"year": 2024, "round": 5, "pick": 163, "name": "Jacob Monk", "position": "OL", "nflTeam": "Green Bay Packers"},
-    {"year": 2021, "round": 4, "pick": 118, "name": "Chris Rumph", "position": "DE", "nflTeam": "Los Angeles Chargers"},
-    {"year": 2021, "round": 5, "pick": 154, "name": "Michael Carter II", "position": "SAF", "nflTeam": "New York Jets"},
-    {"year": 2021, "round": 5, "pick": 162, "name": "Noah Gray", "position": "TE", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2021, "round": 6, "pick": 210, "name": "Victor Dimukeje", "position": "DE", "nflTeam": "Arizona Cardinals"},
-    {"year": 2019, "round": 1, "pick": 6, "name": "Daniel Jones", "position": "QB", "nflTeam": "New York Giants"},
-    {"year": 2015, "round": 1, "pick": 28, "name": "Laken Tomlinson", "position": "OL", "nflTeam": "Detroit Lions"},
-    {"year": 2015, "round": 4, "pick": 105, "name": "Jamison Crowder", "position": "WR", "nflTeam": "Washington Redskins"},
-    {"year": 2014, "round": 4, "pick": 109, "name": "Ross Cockrell", "position": "DB", "nflTeam": "Buffalo Bills"},
-    {"year": 2013, "round": 7, "pick": 249, "name": "Sean Renfree", "position": "QB", "nflTeam": "Atlanta Falcons"},
-    {"year": 2000, "round": 6, "pick": 173, "name": "Chris Combs", "position": "DE", "nflTeam": "Pittsburgh Steelers"}
+    {
+      "year": 2024,
+      "round": 1,
+      "pick": 26,
+      "name": "Graham Barton",
+      "position": "OL",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2024,
+      "round": 3,
+      "pick": 95,
+      "name": "DeWayne Carter",
+      "position": "DT",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2024,
+      "round": 5,
+      "pick": 163,
+      "name": "Jacob Monk",
+      "position": "OL",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2021,
+      "round": 4,
+      "pick": 118,
+      "name": "Chris Rumph",
+      "position": "DE",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 2021,
+      "round": 5,
+      "pick": 154,
+      "name": "Michael Carter II",
+      "position": "S",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2021,
+      "round": 5,
+      "pick": 162,
+      "name": "Noah Gray",
+      "position": "TE",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2021,
+      "round": 6,
+      "pick": 210,
+      "name": "Victor Dimukeje",
+      "position": "DE",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2019,
+      "round": 1,
+      "pick": 6,
+      "name": "Daniel Jones",
+      "position": "QB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2015,
+      "round": 1,
+      "pick": 28,
+      "name": "Laken Tomlinson",
+      "position": "G",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2015,
+      "round": 4,
+      "pick": 105,
+      "name": "Jamison Crowder",
+      "position": "WR",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 2014,
+      "round": 4,
+      "pick": 109,
+      "name": "Ross Cockrell",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 249,
+      "name": "Sean Renfree",
+      "position": "QB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2000,
+      "round": 6,
+      "pick": 173,
+      "name": "Chris Combs",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1999,
+      "round": 2,
+      "pick": 61,
+      "name": "Lennie Friedman",
+      "position": "G",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1998,
+      "round": 6,
+      "pick": 189,
+      "name": "Patrick Mannelly",
+      "position": "T",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1996,
+      "round": 4,
+      "pick": 121,
+      "name": "Ray Farmer",
+      "position": "LB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1990,
+      "round": 12,
+      "pick": 320,
+      "name": "Chris Port",
+      "position": "G",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1989,
+      "round": 3,
+      "pick": 74,
+      "name": "Anthony Dilweg",
+      "position": "QB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1987,
+      "round": 1,
+      "pick": 5,
+      "name": "Mike Junkin",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1984,
+      "round": 6,
+      "pick": 148,
+      "name": "Ben Bennett",
+      "position": "QB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1983,
+      "round": 5,
+      "pick": 123,
+      "name": "Chris Castor",
+      "position": "WR",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1982,
+      "round": 3,
+      "pick": 56,
+      "name": "Cedric Jones",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1982,
+      "round": 4,
+      "pick": 108,
+      "name": "Charles Bowser",
+      "position": "LB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1979,
+      "round": 9,
+      "pick": 234,
+      "name": "Carl McGee",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1978,
+      "round": 3,
+      "pick": 64,
+      "name": "Lyman Smith",
+      "position": "DT",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1977,
+      "round": 4,
+      "pick": 101,
+      "name": "Bill Bryan",
+      "position": "C",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1977,
+      "round": 6,
+      "pick": 142,
+      "name": "Tony Benjamin",
+      "position": "RB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1977,
+      "round": 7,
+      "pick": 171,
+      "name": "Bob Grupp",
+      "position": "P",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1973,
+      "round": 5,
+      "pick": 129,
+      "name": "Steve Jones",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1973,
+      "round": 6,
+      "pick": 156,
+      "name": "Ed Newman",
+      "position": "G",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1972,
+      "round": 7,
+      "pick": 164,
+      "name": "Ernie Jackson",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1971,
+      "round": 3,
+      "pick": 59,
+      "name": "Leo Hart",
+      "position": "QB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1971,
+      "round": 7,
+      "pick": 163,
+      "name": "Wes Chesson",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1969,
+      "round": 2,
+      "pick": 52,
+      "name": "Al Woodall",
+      "position": "QB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1967,
+      "round": 1,
+      "pick": 18,
+      "name": "Bob Matheson",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1967,
+      "round": 2,
+      "pick": 41,
+      "name": "Dave Dunaway",
+      "position": "WR",
+      "nflTeam": "Green Bay Packers"
+    }
   ]
 }

@@ -1,16 +1,207 @@
 {
-  "teamId": "arkansas-state",
+  "teamId": "arkansasst",
   "teamSlug": "arkansas-state-red-wolves",
   "teamName": "Arkansas State Red Wolves",
   "draftPicks": [
-    {"year": 2014, "round": 5, "pick": 165, "name": "Ryan Carrethers", "position": "DT", "nflTeam": "San Diego Chargers"},
-    {"year": 2013, "round": 7, "pick": 250, "name": "Don Jones", "position": "DB", "nflTeam": "Miami Dolphins"},
-    {"year": 2012, "round": 3, "pick": 77, "name": "Demario Davis", "position": "LB", "nflTeam": "New York Jets"},
-    {"year": 2011, "round": 7, "pick": 214, "name": "Derek Newton", "position": "T", "nflTeam": "Houston Texans"},
-    {"year": 2010, "round": 3, "pick": 72, "name": "Alex Carrington", "position": "DE", "nflTeam": "Buffalo Bills"},
-    {"year": 2009, "round": 7, "pick": 241, "name": "David Johnson", "position": "TE", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2008, "round": 2, "pick": 43, "name": "Tyrell Johnson", "position": "DB", "nflTeam": "Minnesota Vikings"},
-    {"year": 2007, "round": 6, "pick": 175, "name": "Oren O'Neal", "position": "FB", "nflTeam": "Oakland Raiders"},
-    {"year": 2004, "round": 6, "pick": 179, "name": "Corey Williams", "position": "DT", "nflTeam": "Green Bay Packers"}
+    {
+      "year": 2014,
+      "round": 5,
+      "pick": 165,
+      "name": "Ryan Carrethers",
+      "position": "DT",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 250,
+      "name": "Don Jones",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2012,
+      "round": 3,
+      "pick": 77,
+      "name": "Demario Davis",
+      "position": "LB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2011,
+      "round": 7,
+      "pick": 214,
+      "name": "Derek Newton",
+      "position": "T",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2010,
+      "round": 3,
+      "pick": 72,
+      "name": "Alex Carrington",
+      "position": "DE",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2009,
+      "round": 7,
+      "pick": 241,
+      "name": "David Johnson",
+      "position": "TE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2008,
+      "round": 2,
+      "pick": 43,
+      "name": "Tyrell Johnson",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2007,
+      "round": 6,
+      "pick": 175,
+      "name": "Oren O'Neal",
+      "position": "FB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2004,
+      "round": 6,
+      "pick": 179,
+      "name": "Corey Williams",
+      "position": "DT",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1996,
+      "round": 7,
+      "pick": 242,
+      "name": "Carlos Emmons",
+      "position": "LB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1991,
+      "round": 9,
+      "pick": 228,
+      "name": "Jeff Fields",
+      "position": "DT",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1990,
+      "round": 3,
+      "pick": 77,
+      "name": "Fred Barnett",
+      "position": "WR",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1987,
+      "round": 3,
+      "pick": 67,
+      "name": "Michael Adams",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1987,
+      "round": 11,
+      "pick": 292,
+      "name": "Elbert Shelley",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1986,
+      "round": 8,
+      "pick": 201,
+      "name": "Ray Brown",
+      "position": "G",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1977,
+      "round": 5,
+      "pick": 123,
+      "name": "Leroy Harris",
+      "position": "RB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1977,
+      "round": 10,
+      "pick": 268,
+      "name": "Oren Middlebrook",
+      "position": "WR",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1976,
+      "round": 2,
+      "pick": 45,
+      "name": "Ken Jones",
+      "position": "T",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1976,
+      "round": 7,
+      "pick": 190,
+      "name": "Jerry Muckensturm",
+      "position": "LB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1975,
+      "round": 2,
+      "pick": 49,
+      "name": "Stan Winfrey",
+      "position": "RB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1975,
+      "round": 4,
+      "pick": 91,
+      "name": "Steve Burks",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1972,
+      "round": 6,
+      "pick": 143,
+      "name": "Dennis Meyer",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1970,
+      "round": 3,
+      "pick": 62,
+      "name": "Clovis Swinney",
+      "position": "DT",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1969,
+      "round": 2,
+      "pick": 31,
+      "name": "Bill Bergey",
+      "position": "LB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1969,
+      "round": 14,
+      "pick": 348,
+      "name": "Gary Crane",
+      "position": "LB",
+      "nflTeam": "Denver Broncos"
+    }
   ]
 }

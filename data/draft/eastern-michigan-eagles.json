@@ -1,16 +1,167 @@
 {
-  "teamId": "eastern-michigan",
+  "teamId": "eastmichigan",
   "teamSlug": "eastern-michigan-eagles",
   "teamName": "Eastern Michigan Eagles",
   "draftPicks": [
-    {"year": 2023, "round": 4, "pick": 117, "name": "Sidy Sow", "position": "OL", "nflTeam": "New England Patriots"},
-    {"year": 2023, "round": 6, "pick": 196, "name": "Jose Ramirez", "position": "DL", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2019, "round": 4, "pick": 106, "name": "Maxx Crosby", "position": "DE", "nflTeam": "Oakland Raiders"},
-    {"year": 2017, "round": 7, "pick": 250, "name": "Pat O'Connor", "position": "DE", "nflTeam": "Detroit Lions"},
-    {"year": 2016, "round": 6, "pick": 216, "name": "Darius Jackson", "position": "RB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2009, "round": 4, "pick": 109, "name": "T.J. Lang", "position": "T", "nflTeam": "Green Bay Packers"},
-    {"year": 2008, "round": 2, "pick": 54, "name": "Jason Jones", "position": "DE", "nflTeam": "Tennessee Titans"},
-    {"year": 2005, "round": 7, "pick": 237, "name": "Chris Roberson", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2003, "round": 7, "pick": 255, "name": "Kevin Walter", "position": "WR", "nflTeam": "New York Giants"}
+    {
+      "year": 2023,
+      "round": 4,
+      "pick": 117,
+      "name": "Sidy Sow",
+      "position": "OL",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2023,
+      "round": 6,
+      "pick": 196,
+      "name": "Jose Ramirez",
+      "position": "DL",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2019,
+      "round": 4,
+      "pick": 106,
+      "name": "Maxx Crosby",
+      "position": "DE",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2017,
+      "round": 7,
+      "pick": 250,
+      "name": "Pat O'Connor",
+      "position": "DE",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2016,
+      "round": 6,
+      "pick": 216,
+      "name": "Darius Jackson",
+      "position": "RB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2009,
+      "round": 4,
+      "pick": 109,
+      "name": "T.J. Lang",
+      "position": "T",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2008,
+      "round": 2,
+      "pick": 54,
+      "name": "Jason Jones",
+      "position": "DE",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2005,
+      "round": 7,
+      "pick": 237,
+      "name": "Chris Roberson",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2003,
+      "round": 7,
+      "pick": 255,
+      "name": "Kevin Walter",
+      "position": "WR",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1999,
+      "round": 1,
+      "pick": 21,
+      "name": "L.J. Shelton",
+      "position": "T",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1998,
+      "round": 2,
+      "pick": 60,
+      "name": "Charlie Batch",
+      "position": "QB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1978,
+      "round": 1,
+      "pick": 22,
+      "name": "Ron Johnson",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1976,
+      "round": 7,
+      "pick": 204,
+      "name": "Clarence Chapman",
+      "position": "DB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1974,
+      "round": 6,
+      "pick": 132,
+      "name": "Jim Pietrzak",
+      "position": "C",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1974,
+      "round": 11,
+      "pick": 285,
+      "name": "Dave Boone",
+      "position": "DE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1973,
+      "round": 7,
+      "pick": 167,
+      "name": "Bill DuLac",
+      "position": "G",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1973,
+      "round": 10,
+      "pick": 260,
+      "name": "Ron Fernandes",
+      "position": "DE",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1972,
+      "round": 6,
+      "pick": 142,
+      "name": "Dave Pureifory",
+      "position": "DE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1972,
+      "round": 7,
+      "pick": 170,
+      "name": "Will Foster",
+      "position": "LB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1971,
+      "round": 3,
+      "pick": 72,
+      "name": "Al Clark",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    }
   ]
 }

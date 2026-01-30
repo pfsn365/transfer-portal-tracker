@@ -1,26 +1,247 @@
 {
-  "teamId": "louisiana",
+  "teamId": "lalafayette",
   "teamSlug": "louisiana-ragin-cajuns",
   "teamName": "Louisiana Ragin' Cajuns",
   "draftPicks": [
-    {"year": 2024, "round": 7, "pick": 233, "name": "Nathan Thomas", "position": "OL", "nflTeam": "Dallas Cowboys"},
-    {"year": 2023, "round": 7, "pick": 233, "name": "Andre Jones", "position": "DE", "nflTeam": "Washington Commanders"},
-    {"year": 2022, "round": 4, "pick": 111, "name": "Max Mitchell", "position": "T", "nflTeam": "New York Jets"},
-    {"year": 2022, "round": 4, "pick": 113, "name": "Percy Butler", "position": "S", "nflTeam": "Washington Commanders"},
-    {"year": 2021, "round": 6, "pick": 194, "name": "Elijah Mitchell", "position": "RB", "nflTeam": "San Francisco 49ers"},
-    {"year": 2020, "round": 2, "pick": 39, "name": "Robert Hunt", "position": "G", "nflTeam": "Miami Dolphins"},
-    {"year": 2020, "round": 4, "pick": 135, "name": "Kevin Dotson", "position": "G", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2020, "round": 7, "pick": 245, "name": "Raymond Calais", "position": "RB", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2018, "round": 3, "pick": 82, "name": "Tracy Walker", "position": "S", "nflTeam": "Detroit Lions"},
-    {"year": 2018, "round": 6, "pick": 188, "name": "Simeon Thomas", "position": "CB", "nflTeam": "Cleveland Browns"},
-    {"year": 2017, "round": 6, "pick": 188, "name": "Elijah McGuire", "position": "RB", "nflTeam": "New York Jets"},
-    {"year": 2015, "round": 6, "pick": 210, "name": "Christian Ringo", "position": "DE", "nflTeam": "Green Bay Packers"},
-    {"year": 2012, "round": 3, "pick": 85, "name": "Bill Bentley", "position": "DB", "nflTeam": "Detroit Lions"},
-    {"year": 2012, "round": 4, "pick": 110, "name": "Ladarius Green", "position": "TE", "nflTeam": "San Diego Chargers"},
-    {"year": 2010, "round": 5, "pick": 149, "name": "Hall Davis", "position": "DE", "nflTeam": "St. Louis Rams"},
-    {"year": 2005, "round": 6, "pick": 188, "name": "C.C. Brown", "position": "DB", "nflTeam": "Houston Texans"},
-    {"year": 2003, "round": 2, "pick": 35, "name": "Charles Tillman", "position": "DB", "nflTeam": "Chicago Bears"},
-    {"year": 2003, "round": 4, "pick": 125, "name": "Ike Taylor", "position": "DB", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2002, "round": 7, "pick": 258, "name": "Brad Franklin", "position": "DB", "nflTeam": "Carolina Panthers"}
+    {
+      "year": 2024,
+      "round": 7,
+      "pick": 233,
+      "name": "Nathan Thomas",
+      "position": "OL",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2023,
+      "round": 7,
+      "pick": 233,
+      "name": "Andre Jones",
+      "position": "DE",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 2022,
+      "round": 4,
+      "pick": 111,
+      "name": "Max Mitchell",
+      "position": "T",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2022,
+      "round": 4,
+      "pick": 113,
+      "name": "Percy Butler",
+      "position": "S",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 2021,
+      "round": 6,
+      "pick": 194,
+      "name": "Elijah Mitchell",
+      "position": "RB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2020,
+      "round": 2,
+      "pick": 39,
+      "name": "Robert Hunt",
+      "position": "G",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2020,
+      "round": 4,
+      "pick": 135,
+      "name": "Kevin Dotson",
+      "position": "G",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 245,
+      "name": "Raymond Calais",
+      "position": "RB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2018,
+      "round": 3,
+      "pick": 82,
+      "name": "Tracy Walker",
+      "position": "S",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2018,
+      "round": 6,
+      "pick": 188,
+      "name": "Simeon Thomas",
+      "position": "CB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2017,
+      "round": 6,
+      "pick": 188,
+      "name": "Elijah McGuire",
+      "position": "RB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2015,
+      "round": 6,
+      "pick": 210,
+      "name": "Christian Ringo",
+      "position": "DE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2012,
+      "round": 3,
+      "pick": 85,
+      "name": "Bill Bentley",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2012,
+      "round": 4,
+      "pick": 110,
+      "name": "Ladarius Green",
+      "position": "TE",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 2010,
+      "round": 5,
+      "pick": 149,
+      "name": "Hall Davis",
+      "position": "DE",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2005,
+      "round": 6,
+      "pick": 188,
+      "name": "C.C. Brown",
+      "position": "DB",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2003,
+      "round": 2,
+      "pick": 35,
+      "name": "Charles Tillman",
+      "position": "DB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2003,
+      "round": 4,
+      "pick": 125,
+      "name": "Ike Taylor",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2002,
+      "round": 7,
+      "pick": 258,
+      "name": "Brad Franklin",
+      "position": "DB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 1999,
+      "round": 4,
+      "pick": 105,
+      "name": "Brandon Stokley",
+      "position": "WR",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 1998,
+      "round": 2,
+      "pick": 36,
+      "name": "Anthony Clement",
+      "position": "T",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1996,
+      "round": 6,
+      "pick": 179,
+      "name": "Keno Hills",
+      "position": "G",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1995,
+      "round": 2,
+      "pick": 42,
+      "name": "Orlando Thomas",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1992,
+      "round": 11,
+      "pick": 304,
+      "name": "Louis Age",
+      "position": "T",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1991,
+      "round": 6,
+      "pick": 163,
+      "name": "Todd Scott",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1990,
+      "round": 5,
+      "pick": 130,
+      "name": "Brian Mitchell",
+      "position": "RB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1989,
+      "round": 3,
+      "pick": 73,
+      "name": "Chris Gannon",
+      "position": "DE",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1989,
+      "round": 7,
+      "pick": 169,
+      "name": "Mark Hall",
+      "position": "DE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1985,
+      "round": 7,
+      "pick": 190,
+      "name": "Charles Bennett",
+      "position": "DE",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1977,
+      "round": 10,
+      "pick": 258,
+      "name": "Rafael Septien",
+      "position": "K",
+      "nflTeam": "New Orleans Saints"
+    }
   ]
 }

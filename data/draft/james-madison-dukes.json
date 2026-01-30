@@ -1,13 +1,79 @@
 {
-  "teamId": "james-madison",
+  "teamId": "jamesmadison",
   "teamSlug": "james-madison-dukes",
   "teamName": "James Madison Dukes",
   "draftPicks": [
-    {"year": 2020, "round": 7, "pick": 231, "name": "Ben DiNucci", "position": "QB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2019, "round": 7, "pick": 227, "name": "Jimmy Moreland", "position": "CB", "nflTeam": "Washington Redskins"},
-    {"year": 2013, "round": 4, "pick": 116, "name": "Earl Watford", "position": "OL", "nflTeam": "Arizona Cardinals"},
-    {"year": 2010, "round": 6, "pick": 178, "name": "Arthur Moats", "position": "LB", "nflTeam": "Buffalo Bills"},
-    {"year": 2010, "round": 6, "pick": 203, "name": "Scotty McGee", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2000, "round": 4, "pick": 97, "name": "Curtis Keaton", "position": "RB", "nflTeam": "Cincinnati Bengals"}
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 231,
+      "name": "Ben DiNucci",
+      "position": "QB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2019,
+      "round": 7,
+      "pick": 227,
+      "name": "Jimmy Moreland",
+      "position": "CB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 2013,
+      "round": 4,
+      "pick": 116,
+      "name": "Earl Watford",
+      "position": "G",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 178,
+      "name": "Arthur Moats",
+      "position": "LB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2000,
+      "round": 4,
+      "pick": 97,
+      "name": "Curtis Keaton",
+      "position": "RB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1997,
+      "round": 4,
+      "pick": 127,
+      "name": "Macey Brooks",
+      "position": "WR",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1997,
+      "round": 6,
+      "pick": 177,
+      "name": "Ed Perry",
+      "position": "TE",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1987,
+      "round": 6,
+      "pick": 167,
+      "name": "Warren Marshall",
+      "position": "RB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1986,
+      "round": 4,
+      "pick": 96,
+      "name": "Charles Haley",
+      "position": "DE",
+      "nflTeam": "San Francisco 49ers"
+    }
   ]
 }

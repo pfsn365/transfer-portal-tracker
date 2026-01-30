@@ -1,25 +1,199 @@
 {
-  "teamId": "appalachian-state",
+  "teamId": "appalachianst",
   "teamSlug": "appalachian-state-mountaineers",
   "teamName": "Appalachian State Mountaineers",
   "draftPicks": [
-    {"year": 2023, "round": 5, "pick": 161, "name": "Nick Hampton", "position": "LB", "nflTeam": "Los Angeles Rams"},
-    {"year": 2023, "round": 7, "pick": 226, "name": "Cooper Hodges", "position": "OL", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2022, "round": 5, "pick": 161, "name": "D'Marco Jackson", "position": "LB", "nflTeam": "New Orleans Saints"},
-    {"year": 2021, "round": 5, "pick": 178, "name": "Shemar Jean-Charles", "position": "DB", "nflTeam": "Green Bay Packers"},
-    {"year": 2020, "round": 3, "pick": 93, "name": "Darrynton Evans", "position": "RB", "nflTeam": "Tennessee Titans"},
-    {"year": 2020, "round": 4, "pick": 107, "name": "Akeem Davis-Gaither", "position": "LB", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2018, "round": 6, "pick": 213, "name": "Colby Gossett", "position": "OL", "nflTeam": "Minnesota Vikings"},
-    {"year": 2016, "round": 5, "pick": 142, "name": "Ronald Blair", "position": "DE", "nflTeam": "San Francisco 49ers"},
-    {"year": 2013, "round": 5, "pick": 165, "name": "Sam Martin", "position": "P", "nflTeam": "Detroit Lions"},
-    {"year": 2013, "round": 7, "pick": 210, "name": "Demetrius McCray", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2012, "round": 2, "pick": 33, "name": "Brian Quick", "position": "WR", "nflTeam": "St. Louis Rams"},
-    {"year": 2011, "round": 5, "pick": 156, "name": "Mark LeGree", "position": "DB", "nflTeam": "Seattle Seahawks"},
-    {"year": 2011, "round": 5, "pick": 163, "name": "Daniel Kilgore", "position": "OL", "nflTeam": "San Francisco 49ers"},
-    {"year": 2011, "round": 6, "pick": 186, "name": "D.J. Smith", "position": "LB", "nflTeam": "Green Bay Packers"},
-    {"year": 2010, "round": 3, "pick": 89, "name": "Armanti Edwards", "position": "WR", "nflTeam": "Carolina Panthers"},
-    {"year": 2008, "round": 2, "pick": 58, "name": "Dexter Jackson", "position": "WR", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2008, "round": 6, "pick": 177, "name": "Corey Lynch", "position": "DB", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2001, "round": 7, "pick": 215, "name": "Corey Hall", "position": "DB", "nflTeam": "Atlanta Falcons"}
+    {
+      "year": 2023,
+      "round": 5,
+      "pick": 161,
+      "name": "Nick Hampton",
+      "position": "OLB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 2023,
+      "round": 7,
+      "pick": 226,
+      "name": "Cooper Hodges",
+      "position": "OL",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2022,
+      "round": 5,
+      "pick": 161,
+      "name": "D'Marco Jackson",
+      "position": "LB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 2021,
+      "round": 5,
+      "pick": 178,
+      "name": "Shemar Jean-Charles",
+      "position": "DB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2020,
+      "round": 3,
+      "pick": 93,
+      "name": "Darrynton Evans",
+      "position": "RB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2020,
+      "round": 4,
+      "pick": 107,
+      "name": "Akeem Davis-Gaither",
+      "position": "LB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2018,
+      "round": 6,
+      "pick": 213,
+      "name": "Colby Gossett",
+      "position": "G",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2016,
+      "round": 5,
+      "pick": 142,
+      "name": "Ronald Blair",
+      "position": "DE",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2013,
+      "round": 5,
+      "pick": 165,
+      "name": "Sam Martin",
+      "position": "P",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 210,
+      "name": "Demetrius McCray",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2012,
+      "round": 2,
+      "pick": 33,
+      "name": "Brian Quick",
+      "position": "WR",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2011,
+      "round": 5,
+      "pick": 156,
+      "name": "Mark LeGree",
+      "position": "DB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2011,
+      "round": 5,
+      "pick": 163,
+      "name": "Daniel Kilgore",
+      "position": "G",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2011,
+      "round": 6,
+      "pick": 186,
+      "name": "D.J. Smith",
+      "position": "LB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2010,
+      "round": 3,
+      "pick": 89,
+      "name": "Armanti Edwards",
+      "position": "WR",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2008,
+      "round": 2,
+      "pick": 58,
+      "name": "Dexter Jackson",
+      "position": "WR",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2008,
+      "round": 6,
+      "pick": 177,
+      "name": "Corey Lynch",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2001,
+      "round": 7,
+      "pick": 215,
+      "name": "Corey Hall",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1997,
+      "round": 3,
+      "pick": 65,
+      "name": "Dexter Coakley",
+      "position": "LB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1996,
+      "round": 3,
+      "pick": 87,
+      "name": "Matt Stevens",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1993,
+      "round": 3,
+      "pick": 67,
+      "name": "Harold Alexander",
+      "position": "P",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1992,
+      "round": 7,
+      "pick": 178,
+      "name": "Mike Frier",
+      "position": "DE",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1990,
+      "round": 5,
+      "pick": 124,
+      "name": "Derrick Graham",
+      "position": "G",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1986,
+      "round": 2,
+      "pick": 35,
+      "name": "Dino Hackett",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    }
   ]
 }

@@ -1,17 +1,95 @@
 {
-  "teamId": "georgia-southern",
+  "teamId": "georgiaso",
   "teamSlug": "georgia-southern-eagles",
   "teamName": "Georgia Southern Eagles",
   "draftPicks": [
-    {"year": 2020, "round": 5, "pick": 163, "name": "Kindle Vildor", "position": "CB", "nflTeam": "Chicago Bears"},
-    {"year": 2020, "round": 6, "pick": 188, "name": "Tyler Bass", "position": "K", "nflTeam": "Buffalo Bills"},
-    {"year": 2017, "round": 5, "pick": 183, "name": "Ukeme Eligwe", "position": "LB", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2016, "round": 5, "pick": 169, "name": "Antwione Williams", "position": "LB", "nflTeam": "Detroit Lions"},
-    {"year": 2014, "round": 3, "pick": 96, "name": "Jerick McKinnon", "position": "RB", "nflTeam": "Minnesota Vikings"},
-    {"year": 2014, "round": 7, "pick": 252, "name": "Lavelle Westbrooks", "position": "DB", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2013, "round": 3, "pick": 80, "name": "J.J. Wilcox", "position": "DB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2003, "round": 6, "pick": 179, "name": "David Young", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2002, "round": 6, "pick": 199, "name": "Adrian Peterson", "position": "RB", "nflTeam": "Chicago Bears"},
-    {"year": 2000, "round": 5, "pick": 159, "name": "Kiwaukee Thomas", "position": "DB", "nflTeam": "Jacksonville Jaguars"}
+    {
+      "year": 2020,
+      "round": 5,
+      "pick": 163,
+      "name": "Kindle Vildor",
+      "position": "CB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2020,
+      "round": 6,
+      "pick": 188,
+      "name": "Tyler Bass",
+      "position": "K",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2017,
+      "round": 5,
+      "pick": 183,
+      "name": "Ukeme Eligwe",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2016,
+      "round": 5,
+      "pick": 169,
+      "name": "Antwione Williams",
+      "position": "LB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2014,
+      "round": 3,
+      "pick": 96,
+      "name": "Jerick McKinnon",
+      "position": "RB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2014,
+      "round": 7,
+      "pick": 252,
+      "name": "Lavelle Westbrooks",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2013,
+      "round": 3,
+      "pick": 80,
+      "name": "J.J. Wilcox",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2003,
+      "round": 6,
+      "pick": 179,
+      "name": "David Young",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2002,
+      "round": 6,
+      "pick": 199,
+      "name": "Adrian Peterson",
+      "position": "RB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2000,
+      "round": 5,
+      "pick": 159,
+      "name": "Kiwaukee Thomas",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 1987,
+      "round": 12,
+      "pick": 332,
+      "name": "Fred Stokes",
+      "position": "DE",
+      "nflTeam": "Los Angeles Rams"
+    }
   ]
 }

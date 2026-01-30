@@ -1,14 +1,143 @@
 {
-  "teamId": "texas-state",
+  "teamId": "texasst",
   "teamSlug": "texas-state-bobcats",
   "teamName": "Texas State Bobcats",
   "draftPicks": [
-    {"year": 2015, "round": 3, "pick": 83, "name": "Craig Mager", "position": "CB", "nflTeam": "San Diego Chargers"},
-    {"year": 2015, "round": 5, "pick": 169, "name": "David Mayo", "position": "LB", "nflTeam": "Carolina Panthers"},
-    {"year": 2006, "round": 7, "pick": 212, "name": "Fred Evans", "position": "DT", "nflTeam": "Miami Dolphins"},
-    {"year": 2002, "round": 6, "pick": 180, "name": "Clenton Ballard", "position": "DT", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2000, "round": 6, "pick": 183, "name": "Spergon Wynn", "position": "QB", "nflTeam": "Cleveland Browns"},
-    {"year": 2000, "round": 7, "pick": 211, "name": "Darrick Vaughn", "position": "DB", "nflTeam": "Atlanta Falcons"},
-    {"year": 2000, "round": 7, "pick": 231, "name": "Clifton Black", "position": "DB", "nflTeam": "Oakland Raiders"}
+    {
+      "year": 2015,
+      "round": 3,
+      "pick": 83,
+      "name": "Craig Mager",
+      "position": "CB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 2015,
+      "round": 5,
+      "pick": 169,
+      "name": "David Mayo",
+      "position": "LB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2006,
+      "round": 7,
+      "pick": 212,
+      "name": "Fred Evans",
+      "position": "DT",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2000,
+      "round": 6,
+      "pick": 183,
+      "name": "Spergon Wynn",
+      "position": "QB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2000,
+      "round": 7,
+      "pick": 211,
+      "name": "Darrick Vaughn",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1990,
+      "round": 7,
+      "pick": 172,
+      "name": "Jeff Novak",
+      "position": "G",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1989,
+      "round": 6,
+      "pick": 149,
+      "name": "A.J. Johnson",
+      "position": "DB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1989,
+      "round": 12,
+      "pick": 311,
+      "name": "Bill Jones",
+      "position": "RB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1984,
+      "round": 5,
+      "pick": 135,
+      "name": "Van Hughes",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1982,
+      "round": 2,
+      "pick": 42,
+      "name": "Bobby Watkins",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1982,
+      "round": 9,
+      "pick": 226,
+      "name": "Ken Coffey",
+      "position": "DB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1979,
+      "round": 12,
+      "pick": 314,
+      "name": "Paul Darby",
+      "position": "WR",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1974,
+      "round": 12,
+      "pick": 305,
+      "name": "Noe Gonzalez",
+      "position": "RB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1973,
+      "round": 2,
+      "pick": 47,
+      "name": "Jim Stienke",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1969,
+      "round": 13,
+      "pick": 314,
+      "name": "Wade Key",
+      "position": "G",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1968,
+      "round": 3,
+      "pick": 66,
+      "name": "Reece Morrison",
+      "position": "RB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1968,
+      "round": 13,
+      "pick": 339,
+      "name": "Mack Sauls",
+      "position": "DB",
+      "nflTeam": "St. Louis Cardinals"
+    }
   ]
 }

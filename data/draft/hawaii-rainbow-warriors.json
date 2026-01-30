@@ -3,33 +3,421 @@
   "teamSlug": "hawaii-rainbow-warriors",
   "teamName": "Hawaii Rainbow Warriors",
   "draftPicks": [
-    {"year": 2020, "round": 7, "pick": 224, "name": "Cole McDonald", "position": "QB", "nflTeam": "Tennessee Titans"},
-    {"year": 2019, "round": 2, "pick": 43, "name": "Jahlani Tavai", "position": "LB", "nflTeam": "Detroit Lions"},
-    {"year": 2019, "round": 7, "pick": 236, "name": "John Ursua", "position": "WR", "nflTeam": "Seattle Seahawks"},
-    {"year": 2015, "round": 7, "pick": 231, "name": "Joey Iosefa", "position": "FB", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2012, "round": 7, "pick": 209, "name": "Aaron Brown", "position": "LB", "nflTeam": "St. Louis Rams"},
-    {"year": 2011, "round": 3, "pick": 96, "name": "Alex Green", "position": "RB", "nflTeam": "Green Bay Packers"},
-    {"year": 2011, "round": 4, "pick": 112, "name": "Greg Salas", "position": "WR", "nflTeam": "St. Louis Rams"},
-    {"year": 2011, "round": 5, "pick": 132, "name": "Kealoha Pilares", "position": "WR", "nflTeam": "Carolina Panthers"},
-    {"year": 2009, "round": 2, "pick": 52, "name": "David Veikune", "position": "LB", "nflTeam": "Cleveland Browns"},
-    {"year": 2009, "round": 3, "pick": 94, "name": "Ryan Mouton", "position": "DB", "nflTeam": "Tennessee Titans"},
-    {"year": 2009, "round": 6, "pick": 198, "name": "Jake Ingram", "position": "C", "nflTeam": "New England Patriots"},
-    {"year": 2008, "round": 6, "pick": 186, "name": "Colt Brennan", "position": "QB", "nflTeam": "Washington Redskins"},
-    {"year": 2007, "round": 2, "pick": 58, "name": "Ikaika Alama-Francis", "position": "DE", "nflTeam": "Detroit Lions"},
-    {"year": 2007, "round": 2, "pick": 60, "name": "Samson Satele", "position": "C", "nflTeam": "Miami Dolphins"},
-    {"year": 2007, "round": 6, "pick": 181, "name": "Reagan Maui'a", "position": "RB", "nflTeam": "Miami Dolphins"},
-    {"year": 2007, "round": 6, "pick": 200, "name": "Melila Purcell", "position": "DE", "nflTeam": "Cleveland Browns"},
-    {"year": 2007, "round": 7, "pick": 236, "name": "Nate Ilaoa", "position": "RB", "nflTeam": "Philadelphia Eagles"},
-    {"year": 2005, "round": 6, "pick": 185, "name": "Chad Owens", "position": "WR", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2004, "round": 2, "pick": 42, "name": "Travis LaBoy", "position": "DE", "nflTeam": "Tennessee Titans"},
-    {"year": 2004, "round": 4, "pick": 104, "name": "Isaac Sopoaga", "position": "DT", "nflTeam": "San Francisco 49ers"},
-    {"year": 2003, "round": 2, "pick": 43, "name": "Pisa Tinoisamoa", "position": "LB", "nflTeam": "St. Louis Rams"},
-    {"year": 2003, "round": 3, "pick": 72, "name": "Vince Manuwai", "position": "OL", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2003, "round": 3, "pick": 73, "name": "Wayne Hunter", "position": "OL", "nflTeam": "Seattle Seahawks"},
-    {"year": 2002, "round": 1, "pick": 19, "name": "Ashley Lelie", "position": "WR", "nflTeam": "Denver Broncos"},
-    {"year": 2001, "round": 7, "pick": 219, "name": "Kynan Forney", "position": "OL", "nflTeam": "Atlanta Falcons"},
-    {"year": 2000, "round": 2, "pick": 46, "name": "Adrian Klemm", "position": "OL", "nflTeam": "New England Patriots"},
-    {"year": 2000, "round": 3, "pick": 86, "name": "Jeff Ulbrich", "position": "LB", "nflTeam": "San Francisco 49ers"},
-    {"year": 2000, "round": 4, "pick": 104, "name": "Kaulana Noa", "position": "OL", "nflTeam": "St. Louis Rams"}
+    {
+      "year": 2020,
+      "round": 7,
+      "pick": 224,
+      "name": "Cole McDonald",
+      "position": "QB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2019,
+      "round": 2,
+      "pick": 43,
+      "name": "Jahlani Tavai",
+      "position": "LB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2019,
+      "round": 7,
+      "pick": 236,
+      "name": "John Ursua",
+      "position": "WR",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2015,
+      "round": 7,
+      "pick": 231,
+      "name": "Joey Iosefa",
+      "position": "FB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2012,
+      "round": 7,
+      "pick": 209,
+      "name": "Aaron Brown",
+      "position": "LB",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2011,
+      "round": 3,
+      "pick": 96,
+      "name": "Alex Green",
+      "position": "RB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2011,
+      "round": 4,
+      "pick": 112,
+      "name": "Greg Salas",
+      "position": "WR",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2011,
+      "round": 5,
+      "pick": 132,
+      "name": "Kealoha Pilares",
+      "position": "WR",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2009,
+      "round": 2,
+      "pick": 52,
+      "name": "David Veikune",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2009,
+      "round": 3,
+      "pick": 94,
+      "name": "Ryan Mouton",
+      "position": "DB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2009,
+      "round": 6,
+      "pick": 198,
+      "name": "Jake Ingram",
+      "position": "C",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2008,
+      "round": 6,
+      "pick": 186,
+      "name": "Colt Brennan",
+      "position": "QB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 2007,
+      "round": 2,
+      "pick": 58,
+      "name": "Ikaika Alama-Francis",
+      "position": "DE",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2007,
+      "round": 2,
+      "pick": 60,
+      "name": "Samson Satele",
+      "position": "C",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2007,
+      "round": 6,
+      "pick": 181,
+      "name": "Reagan Maui'a",
+      "position": "RB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2005,
+      "round": 6,
+      "pick": 185,
+      "name": "Chad Owens",
+      "position": "WR",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2004,
+      "round": 2,
+      "pick": 42,
+      "name": "Travis LaBoy",
+      "position": "DE",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2004,
+      "round": 4,
+      "pick": 104,
+      "name": "Isaac Sopoaga",
+      "position": "DT",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2003,
+      "round": 2,
+      "pick": 43,
+      "name": "Pisa Tinoisamoa",
+      "position": "LB",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2003,
+      "round": 3,
+      "pick": 72,
+      "name": "Vince Manuwai",
+      "position": "G",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2003,
+      "round": 3,
+      "pick": 73,
+      "name": "Wayne Hunter",
+      "position": "T",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2002,
+      "round": 1,
+      "pick": 19,
+      "name": "Ashley Lelie",
+      "position": "WR",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2001,
+      "round": 7,
+      "pick": 219,
+      "name": "Kynan Forney",
+      "position": "G",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2000,
+      "round": 2,
+      "pick": 46,
+      "name": "Adrian Klemm",
+      "position": "G",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2000,
+      "round": 3,
+      "pick": 86,
+      "name": "Jeff Ulbrich",
+      "position": "LB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1994,
+      "round": 4,
+      "pick": 122,
+      "name": "Ta'ase Faumui",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1993,
+      "round": 3,
+      "pick": 70,
+      "name": "Jason Elam",
+      "position": "K",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1993,
+      "round": 8,
+      "pick": 209,
+      "name": "Maa Tanuvasa",
+      "position": "DE",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1992,
+      "round": 6,
+      "pick": 160,
+      "name": "Jeff Sydner",
+      "position": "WR",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1990,
+      "round": 3,
+      "pick": 60,
+      "name": "Leo Goeas",
+      "position": "G",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1988,
+      "round": 3,
+      "pick": 71,
+      "name": "Al Noga",
+      "position": "DE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1987,
+      "round": 3,
+      "pick": 70,
+      "name": "Colin Scotts",
+      "position": "DT",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1987,
+      "round": 4,
+      "pick": 87,
+      "name": "Ron Hall",
+      "position": "TE",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1987,
+      "round": 9,
+      "pick": 243,
+      "name": "M.L. Johnson",
+      "position": "LB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1986,
+      "round": 2,
+      "pick": 45,
+      "name": "Walter Murray",
+      "position": "WR",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1986,
+      "round": 9,
+      "pick": 245,
+      "name": "Nuu Faaola",
+      "position": "RB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1985,
+      "round": 5,
+      "pick": 122,
+      "name": "Raphel Cherry",
+      "position": "DB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1985,
+      "round": 6,
+      "pick": 166,
+      "name": "Rich Miano",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1985,
+      "round": 7,
+      "pick": 170,
+      "name": "Mike Akiu",
+      "position": "WR",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1984,
+      "round": 8,
+      "pick": 201,
+      "name": "Niko Noga",
+      "position": "LB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1983,
+      "round": 9,
+      "pick": 225,
+      "name": "Jim Mills",
+      "position": "T",
+      "nflTeam": "Baltimore Colts"
+    },
+    {
+      "year": 1983,
+      "round": 11,
+      "pick": 289,
+      "name": "Jesse Sapolu",
+      "position": "C",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1982,
+      "round": 6,
+      "pick": 148,
+      "name": "Gary Allen",
+      "position": "RB",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1982,
+      "round": 8,
+      "pick": 199,
+      "name": "Mark Kafentzis",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1982,
+      "round": 10,
+      "pick": 269,
+      "name": "Dana McLemore",
+      "position": "DB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1980,
+      "round": 9,
+      "pick": 223,
+      "name": "Tom Tuinei",
+      "position": "DT",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1979,
+      "round": 8,
+      "pick": 210,
+      "name": "Wilbert Haslip",
+      "position": "RB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1977,
+      "round": 4,
+      "pick": 106,
+      "name": "Dan Audick",
+      "position": "T",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1976,
+      "round": 3,
+      "pick": 76,
+      "name": "John Woodcock",
+      "position": "DT",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1974,
+      "round": 2,
+      "pick": 52,
+      "name": "Jeris White",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1969,
+      "round": 8,
+      "pick": 187,
+      "name": "Tim Buchanan",
+      "position": "LB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1968,
+      "round": 16,
+      "pick": 428,
+      "name": "Larry Cole",
+      "position": "DE",
+      "nflTeam": "Dallas Cowboys"
+    }
   ]
 }

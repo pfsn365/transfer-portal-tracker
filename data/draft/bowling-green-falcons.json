@@ -1,15 +1,159 @@
 {
-  "teamId": "bowling-green",
+  "teamId": "bowlinggreen",
   "teamSlug": "bowling-green-falcons",
   "teamName": "Bowling Green Falcons",
   "draftPicks": [
-    {"year": 2025, "round": 3, "pick": 67, "name": "Harold Fannin", "position": "TE", "nflTeam": "Cleveland Browns"},
-    {"year": 2023, "round": 6, "pick": 179, "name": "Karl Brooks", "position": "DT", "nflTeam": "Green Bay Packers"},
-    {"year": 2019, "round": 6, "pick": 208, "name": "Scott Miller", "position": "WR", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2013, "round": 6, "pick": 198, "name": "Chris Jones", "position": "DT", "nflTeam": "Houston Texans"},
-    {"year": 2008, "round": 4, "pick": 108, "name": "Kory Lichtensteiger", "position": "C", "nflTeam": "Denver Broncos"},
-    {"year": 2006, "round": 5, "pick": 164, "name": "Omar Jacobs", "position": "QB", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2005, "round": 7, "pick": 242, "name": "Scott Mruczkowski", "position": "C", "nflTeam": "San Diego Chargers"},
-    {"year": 2004, "round": 6, "pick": 187, "name": "Josh Harris", "position": "QB", "nflTeam": "Baltimore Ravens"}
+    {
+      "year": 2025,
+      "round": 3,
+      "pick": 67,
+      "name": "Harold Fannin",
+      "position": "TE",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2023,
+      "round": 6,
+      "pick": 179,
+      "name": "Karl Brooks",
+      "position": "DT",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2019,
+      "round": 6,
+      "pick": 208,
+      "name": "Scott Miller",
+      "position": "WR",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2013,
+      "round": 6,
+      "pick": 198,
+      "name": "Chris Jones",
+      "position": "DT",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2008,
+      "round": 4,
+      "pick": 108,
+      "name": "Kory Lichtensteiger",
+      "position": "C",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2005,
+      "round": 7,
+      "pick": 242,
+      "name": "Scott Mruczkowski",
+      "position": "C",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1995,
+      "round": 3,
+      "pick": 92,
+      "name": "Charlie Williams",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1990,
+      "round": 5,
+      "pick": 116,
+      "name": "Reggie Thornton",
+      "position": "WR",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1989,
+      "round": 5,
+      "pick": 114,
+      "name": "Kyle Kramer",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1986,
+      "round": 12,
+      "pick": 313,
+      "name": "Brian McClure",
+      "position": "QB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1984,
+      "round": 4,
+      "pick": 101,
+      "name": "Martin Bayless",
+      "position": "DB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1979,
+      "round": 8,
+      "pick": 206,
+      "name": "Jeff Groth",
+      "position": "WR",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1978,
+      "round": 3,
+      "pick": 68,
+      "name": "Mark Miller",
+      "position": "QB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1977,
+      "round": 12,
+      "pick": 333,
+      "name": "Dave Preston",
+      "position": "RB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1974,
+      "round": 12,
+      "pick": 293,
+      "name": "Roger Wallace",
+      "position": "WR",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1973,
+      "round": 3,
+      "pick": 59,
+      "name": "Fred Sturt",
+      "position": "G",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1971,
+      "round": 2,
+      "pick": 45,
+      "name": "Phil Villapiano",
+      "position": "LB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1967,
+      "round": 5,
+      "pick": 123,
+      "name": "Jamie Rivers",
+      "position": "LB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1967,
+      "round": 9,
+      "pick": 218,
+      "name": "Mike Weger",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    }
   ]
 }

@@ -1,21 +1,239 @@
 {
-  "teamId": "northern-illinois",
+  "teamId": "noillinois",
   "teamSlug": "northern-illinois-huskies",
   "teamName": "Northern Illinois Huskies",
   "draftPicks": [
-    {"year": 2019, "round": 2, "pick": 55, "name": "Max Scharping", "position": "T", "nflTeam": "Houston Texans"},
-    {"year": 2019, "round": 6, "pick": 175, "name": "Sutton Smith", "position": "DE", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2017, "round": 3, "pick": 96, "name": "Kenny Golladay", "position": "WR", "nflTeam": "Detroit Lions"},
-    {"year": 2015, "round": 7, "pick": 233, "name": "Da'Ron Brown", "position": "WR", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2014, "round": 1, "pick": 30, "name": "Jimmie Ward", "position": "DB", "nflTeam": "San Francisco 49ers"},
-    {"year": 2014, "round": 7, "pick": 251, "name": "Ken Bishop", "position": "DT", "nflTeam": "Dallas Cowboys"},
-    {"year": 2012, "round": 7, "pick": 253, "name": "Chandler Harnish", "position": "QB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2009, "round": 1, "pick": 16, "name": "Larry English", "position": "LB", "nflTeam": "San Diego Chargers"},
-    {"year": 2007, "round": 3, "pick": 93, "name": "Garrett Wolfe", "position": "RB", "nflTeam": "Chicago Bears"},
-    {"year": 2007, "round": 4, "pick": 122, "name": "Doug Free", "position": "T", "nflTeam": "Dallas Cowboys"},
-    {"year": 2004, "round": 5, "pick": 154, "name": "Michael Turner", "position": "RB", "nflTeam": "San Diego Chargers"},
-    {"year": 2002, "round": 7, "pick": 225, "name": "Darrell Hill", "position": "WR", "nflTeam": "Tennessee Titans"},
-    {"year": 2001, "round": 4, "pick": 118, "name": "Ryan Diem", "position": "T", "nflTeam": "Indianapolis Colts"},
-    {"year": 2001, "round": 4, "pick": 124, "name": "Justin McCareins", "position": "WR", "nflTeam": "Tennessee Titans"}
+    {
+      "year": 2019,
+      "round": 2,
+      "pick": 55,
+      "name": "Max Scharping",
+      "position": "T",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2019,
+      "round": 6,
+      "pick": 175,
+      "name": "Sutton Smith",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2017,
+      "round": 3,
+      "pick": 96,
+      "name": "Kenny Golladay",
+      "position": "WR",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2015,
+      "round": 7,
+      "pick": 233,
+      "name": "Da'Ron Brown",
+      "position": "WR",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2014,
+      "round": 1,
+      "pick": 30,
+      "name": "Jimmie Ward",
+      "position": "DB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2014,
+      "round": 7,
+      "pick": 251,
+      "name": "Ken Bishop",
+      "position": "DT",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2012,
+      "round": 7,
+      "pick": 253,
+      "name": "Chandler Harnish",
+      "position": "QB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2009,
+      "round": 1,
+      "pick": 16,
+      "name": "Larry English",
+      "position": "LB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 2007,
+      "round": 3,
+      "pick": 93,
+      "name": "Garrett Wolfe",
+      "position": "RB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2007,
+      "round": 4,
+      "pick": 122,
+      "name": "Doug Free",
+      "position": "T",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2004,
+      "round": 5,
+      "pick": 154,
+      "name": "Michael Turner",
+      "position": "RB",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 2002,
+      "round": 7,
+      "pick": 225,
+      "name": "Darrell Hill",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2001,
+      "round": 4,
+      "pick": 118,
+      "name": "Ryan Diem",
+      "position": "T",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2001,
+      "round": 4,
+      "pick": 124,
+      "name": "Justin McCareins",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1994,
+      "round": 3,
+      "pick": 84,
+      "name": "LeShon Johnson",
+      "position": "RB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1987,
+      "round": 4,
+      "pick": 91,
+      "name": "Doug Bartlett",
+      "position": "DT",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1987,
+      "round": 8,
+      "pick": 219,
+      "name": "Clarence Vaughn",
+      "position": "DB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1987,
+      "round": 11,
+      "pick": 285,
+      "name": "Todd Peat",
+      "position": "G",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1986,
+      "round": 5,
+      "pick": 117,
+      "name": "Scott Kellar",
+      "position": "NT",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1986,
+      "round": 6,
+      "pick": 155,
+      "name": "Curt Pardridge",
+      "position": "WR",
+      "nflTeam": "San Diego Chargers"
+    },
+    {
+      "year": 1981,
+      "round": 9,
+      "pick": 229,
+      "name": "Jim Hannula",
+      "position": "T",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1980,
+      "round": 8,
+      "pick": 215,
+      "name": "Randy Clark",
+      "position": "C",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1977,
+      "round": 5,
+      "pick": 138,
+      "name": "Ken Moore",
+      "position": "TE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1976,
+      "round": 12,
+      "pick": 333,
+      "name": "Jerry Golsteyn",
+      "position": "QB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1976,
+      "round": 15,
+      "pick": 411,
+      "name": "Jerry Meyers",
+      "position": "DE",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1975,
+      "round": 11,
+      "pick": 280,
+      "name": "Jerry Latin",
+      "position": "RB",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1974,
+      "round": 6,
+      "pick": 155,
+      "name": "Mark Kellar",
+      "position": "RB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1972,
+      "round": 8,
+      "pick": 200,
+      "name": "Tom Wittum",
+      "position": "P",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1969,
+      "round": 3,
+      "pick": 64,
+      "name": "John Spilis",
+      "position": "WR",
+      "nflTeam": "Green Bay Packers"
+    }
   ]
 }

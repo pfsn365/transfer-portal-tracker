@@ -3,10 +3,85 @@
   "teamSlug": "liberty-flames",
   "teamName": "Liberty Flames",
   "draftPicks": [
-    {"year": 2023, "round": 6, "pick": 210, "name": "DeMario Douglas", "position": "WR", "nflTeam": "New England Patriots"},
-    {"year": 2022, "round": 3, "pick": 86, "name": "Malik Willis", "position": "QB", "nflTeam": "Tennessee Titans"},
-    {"year": 2020, "round": 4, "pick": 142, "name": "Antonio Gandy-Golden", "position": "WR", "nflTeam": "Washington Football Team"},
-    {"year": 2014, "round": 4, "pick": 125, "name": "Walt Aikens", "position": "DB", "nflTeam": "Miami Dolphins"},
-    {"year": 2009, "round": 7, "pick": 250, "name": "Rashad Jennings", "position": "RB", "nflTeam": "Jacksonville Jaguars"}
+    {
+      "year": 2023,
+      "round": 6,
+      "pick": 210,
+      "name": "DeMario Douglas",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2022,
+      "round": 3,
+      "pick": 86,
+      "name": "Malik Willis",
+      "position": "QB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2020,
+      "round": 4,
+      "pick": 142,
+      "name": "Antonio Gandy-Golden",
+      "position": "WR",
+      "nflTeam": "Washington Football Team"
+    },
+    {
+      "year": 2014,
+      "round": 4,
+      "pick": 125,
+      "name": "Walt Aikens",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2009,
+      "round": 7,
+      "pick": 250,
+      "name": "Rashad Jennings",
+      "position": "RB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 1990,
+      "round": 1,
+      "pick": 21,
+      "name": "Eric Green",
+      "position": "TE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1990,
+      "round": 10,
+      "pick": 271,
+      "name": "Donald Smith",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1989,
+      "round": 11,
+      "pick": 292,
+      "name": "Richard Shelton",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1986,
+      "round": 4,
+      "pick": 88,
+      "name": "Kelvin Edwards",
+      "position": "WR",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1985,
+      "round": 8,
+      "pick": 203,
+      "name": "Fred Banks",
+      "position": "WR",
+      "nflTeam": "Cleveland Browns"
+    }
   ]
 }

@@ -1,14 +1,127 @@
 {
-  "teamId": "umass",
+  "teamId": "massachusetts",
   "teamSlug": "umass-minutemen",
   "teamName": "UMass Minutemen",
   "draftPicks": [
-    {"year": 2021, "round": 7, "pick": 231, "name": "Larnel Coleman", "position": "T", "nflTeam": "Miami Dolphins"},
-    {"year": 2020, "round": 6, "pick": 211, "name": "Isaiah Rodgers", "position": "CB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2019, "round": 2, "pick": 62, "name": "Andy Isabella", "position": "WR", "nflTeam": "Arizona Cardinals"},
-    {"year": 2016, "round": 5, "pick": 140, "name": "Tajae Sharpe", "position": "WR", "nflTeam": "Tennessee Titans"},
-    {"year": 2014, "round": 7, "pick": 230, "name": "Rob Blanchflower", "position": "TE", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2013, "round": 7, "pick": 253, "name": "Michael Cox", "position": "RB", "nflTeam": "New York Giants"},
-    {"year": 2010, "round": 2, "pick": 61, "name": "Vlad Ducasse", "position": "T", "nflTeam": "New York Jets"}
+    {
+      "year": 2021,
+      "round": 7,
+      "pick": 231,
+      "name": "Larnel Coleman",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2020,
+      "round": 6,
+      "pick": 211,
+      "name": "Isaiah Rodgers",
+      "position": "CB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2019,
+      "round": 2,
+      "pick": 62,
+      "name": "Andy Isabella",
+      "position": "WR",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2016,
+      "round": 5,
+      "pick": 140,
+      "name": "Tajae Sharpe",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2014,
+      "round": 7,
+      "pick": 230,
+      "name": "Rob Blanchflower",
+      "position": "TE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 253,
+      "name": "Michael Cox",
+      "position": "RB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2010,
+      "round": 2,
+      "pick": 61,
+      "name": "Vlad Ducasse",
+      "position": "T",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1999,
+      "round": 5,
+      "pick": 144,
+      "name": "Khari Samuel",
+      "position": "LB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1980,
+      "round": 10,
+      "pick": 252,
+      "name": "Sandro Vitiello",
+      "position": "K",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1979,
+      "round": 7,
+      "pick": 192,
+      "name": "Bruce Kimball",
+      "position": "G",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1976,
+      "round": 8,
+      "pick": 237,
+      "name": "Ed McAleney",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1975,
+      "round": 10,
+      "pick": 244,
+      "name": "Bill Cooke",
+      "position": "DT",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1974,
+      "round": 17,
+      "pick": 421,
+      "name": "Tim Berra",
+      "position": "WR",
+      "nflTeam": "Baltimore Colts"
+    },
+    {
+      "year": 1971,
+      "round": 4,
+      "pick": 92,
+      "name": "Bubba Pena",
+      "position": "G",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1968,
+      "round": 1,
+      "pick": 11,
+      "name": "Greg Landry",
+      "position": "QB",
+      "nflTeam": "Detroit Lions"
+    }
   ]
 }

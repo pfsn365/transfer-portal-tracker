@@ -1,20 +1,135 @@
 {
-  "teamId": "uab",
+  "teamId": "alabirmingham",
   "teamSlug": "uab-blazers",
   "teamName": "UAB Blazers",
   "draftPicks": [
-    {"year": 2024, "round": 6, "pick": 191, "name": "Tejhaun Palmer", "position": "WR", "nflTeam": "Arizona Cardinals"},
-    {"year": 2023, "round": 7, "pick": 222, "name": "DeWayne McBride", "position": "RB", "nflTeam": "Minnesota Vikings"},
-    {"year": 2022, "round": 3, "pick": 78, "name": "Alex Wright", "position": "DE", "nflTeam": "Cleveland Browns"},
-    {"year": 2021, "round": 4, "pick": 121, "name": "Jordan Smith", "position": "OLB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2015, "round": 5, "pick": 159, "name": "JJ Nelson", "position": "WR", "nflTeam": "Arizona Cardinals"},
-    {"year": 2015, "round": 6, "pick": 213, "name": "Kennard Backman", "position": "TE", "nflTeam": "Green Bay Packers"},
-    {"year": 2012, "round": 6, "pick": 201, "name": "Matt McCants", "position": "T", "nflTeam": "New York Giants"},
-    {"year": 2010, "round": 6, "pick": 199, "name": "Joe Webb", "position": "WR", "nflTeam": "Minnesota Vikings"},
-    {"year": 2005, "round": 1, "pick": 27, "name": "Roddy White", "position": "WR", "nflTeam": "Atlanta Falcons"},
-    {"year": 2002, "round": 1, "pick": 22, "name": "Bryan Thomas", "position": "DE", "nflTeam": "New York Jets"},
-    {"year": 2002, "round": 2, "pick": 43, "name": "Eddie Freeman", "position": "DE", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2001, "round": 6, "pick": 187, "name": "Otis Leverette", "position": "DE", "nflTeam": "Miami Dolphins"},
-    {"year": 2000, "round": 7, "pick": 238, "name": "Rodregis Brooks", "position": "DB", "nflTeam": "Indianapolis Colts"}
+    {
+      "year": 2024,
+      "round": 6,
+      "pick": 191,
+      "name": "Tejhaun Palmer",
+      "position": "WR",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2023,
+      "round": 7,
+      "pick": 222,
+      "name": "DeWayne McBride",
+      "position": "RB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2022,
+      "round": 3,
+      "pick": 78,
+      "name": "Alex Wright",
+      "position": "DE",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2021,
+      "round": 4,
+      "pick": 121,
+      "name": "Jordan Smith",
+      "position": "OLB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2015,
+      "round": 5,
+      "pick": 159,
+      "name": "JJ Nelson",
+      "position": "WR",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 2015,
+      "round": 6,
+      "pick": 213,
+      "name": "Kennard Backman",
+      "position": "TE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2012,
+      "round": 6,
+      "pick": 201,
+      "name": "Matt McCants",
+      "position": "T",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 199,
+      "name": "Joe Webb",
+      "position": "WR",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2005,
+      "round": 1,
+      "pick": 27,
+      "name": "Roddy White",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2002,
+      "round": 1,
+      "pick": 22,
+      "name": "Bryan Thomas",
+      "position": "DE",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2002,
+      "round": 2,
+      "pick": 43,
+      "name": "Eddie Freeman",
+      "position": "DE",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2001,
+      "round": 6,
+      "pick": 187,
+      "name": "Otis Leverette",
+      "position": "DE",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2000,
+      "round": 7,
+      "pick": 238,
+      "name": "Rodregis Brooks",
+      "position": "DB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1999,
+      "round": 7,
+      "pick": 251,
+      "name": "Pernell Davis",
+      "position": "DT",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1998,
+      "round": 3,
+      "pick": 77,
+      "name": "Dainon Sidney",
+      "position": "DB",
+      "nflTeam": "Tennessee Oilers"
+    },
+    {
+      "year": 1998,
+      "round": 6,
+      "pick": 188,
+      "name": "Izell Reese",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    }
   ]
 }

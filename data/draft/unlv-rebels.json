@@ -3,18 +3,285 @@
   "teamSlug": "unlv-rebels",
   "teamName": "UNLV Rebels",
   "draftPicks": [
-    {"year": 2025, "round": 7, "pick": 238, "name": "Ricky White", "position": "WR", "nflTeam": "Seattle Seahawks"},
-    {"year": 2010, "round": 4, "pick": 117, "name": "Joe Hawley", "position": "C", "nflTeam": "Atlanta Falcons"},
-    {"year": 2009, "round": 5, "pick": 169, "name": "Frank Summers", "position": "RB", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2008, "round": 4, "pick": 104, "name": "Beau Bell", "position": "LB", "nflTeam": "Cleveland Browns"},
-    {"year": 2007, "round": 2, "pick": 53, "name": "Eric Wright", "position": "DB", "nflTeam": "Cleveland Browns"},
-    {"year": 2005, "round": 5, "pick": 149, "name": "Adam Seward", "position": "LB", "nflTeam": "Carolina Panthers"},
-    {"year": 2005, "round": 5, "pick": 170, "name": "Ryan Claridge", "position": "LB", "nflTeam": "New England Patriots"},
-    {"year": 2004, "round": 7, "pick": 243, "name": "Dominic Furio", "position": "C", "nflTeam": "Philadelphia Eagles"},
-    {"year": 2002, "round": 2, "pick": 60, "name": "Anton Palepoi", "position": "DE", "nflTeam": "Seattle Seahawks"},
-    {"year": 2002, "round": 4, "pick": 131, "name": "Sam Brandon", "position": "DB", "nflTeam": "Denver Broncos"},
-    {"year": 2002, "round": 6, "pick": 176, "name": "Kevin Thomas", "position": "DB", "nflTeam": "Buffalo Bills"},
-    {"year": 2002, "round": 7, "pick": 261, "name": "Ahmad Miller", "position": "DT", "nflTeam": "Houston Texans"},
-    {"year": 2000, "round": 5, "pick": 155, "name": "Quincy Sanders", "position": "DB", "nflTeam": "Washington Redskins"}
+    {
+      "year": 2025,
+      "round": 7,
+      "pick": 238,
+      "name": "Ricky White",
+      "position": "WR",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2010,
+      "round": 4,
+      "pick": 117,
+      "name": "Joe Hawley",
+      "position": "C",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2009,
+      "round": 5,
+      "pick": 169,
+      "name": "Frank Summers",
+      "position": "RB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2008,
+      "round": 4,
+      "pick": 104,
+      "name": "Beau Bell",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2007,
+      "round": 2,
+      "pick": 53,
+      "name": "Eric Wright",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2005,
+      "round": 5,
+      "pick": 149,
+      "name": "Adam Seward",
+      "position": "LB",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2002,
+      "round": 2,
+      "pick": 60,
+      "name": "Anton Palepoi",
+      "position": "DE",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2002,
+      "round": 4,
+      "pick": 131,
+      "name": "Sam Brandon",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2002,
+      "round": 6,
+      "pick": 176,
+      "name": "Kevin Thomas",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1999,
+      "round": 6,
+      "pick": 185,
+      "name": "Talance Sawyer",
+      "position": "DE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1995,
+      "round": 7,
+      "pick": 235,
+      "name": "Henry Bailey",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1994,
+      "round": 6,
+      "pick": 184,
+      "name": "Jerry Reynolds",
+      "position": "T",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1993,
+      "round": 5,
+      "pick": 135,
+      "name": "Lonnie Palelei",
+      "position": "G",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1991,
+      "round": 12,
+      "pick": 326,
+      "name": "Keenan McCardell",
+      "position": "WR",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1990,
+      "round": 6,
+      "pick": 150,
+      "name": "Don Odegard",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1988,
+      "round": 2,
+      "pick": 31,
+      "name": "Ickey Woods",
+      "position": "RB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1988,
+      "round": 5,
+      "pick": 110,
+      "name": "Charles Dimry",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1988,
+      "round": 6,
+      "pick": 138,
+      "name": "George Thomas",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1985,
+      "round": 2,
+      "pick": 37,
+      "name": "Randall Cunningham",
+      "position": "QB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1985,
+      "round": 8,
+      "pick": 205,
+      "name": "Tom Polley",
+      "position": "LB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1984,
+      "round": 7,
+      "pick": 175,
+      "name": "Kirk Dodge",
+      "position": "LB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1982,
+      "round": 4,
+      "pick": 99,
+      "name": "Todd Liebenstein",
+      "position": "DE",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1982,
+      "round": 12,
+      "pick": 325,
+      "name": "Michael Morton",
+      "position": "RB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1981,
+      "round": 8,
+      "pick": 216,
+      "name": "Art Plunkett",
+      "position": "T",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1980,
+      "round": 4,
+      "pick": 99,
+      "name": "Ron Crews",
+      "position": "NT",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1980,
+      "round": 7,
+      "pick": 178,
+      "name": "Bobby Batton",
+      "position": "RB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1979,
+      "round": 2,
+      "pick": 55,
+      "name": "Aaron Mitchell",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1979,
+      "round": 5,
+      "pick": 117,
+      "name": "Cleveland Jackson",
+      "position": "TE",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1978,
+      "round": 10,
+      "pick": 263,
+      "name": "Ray Strong",
+      "position": "RB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1977,
+      "round": 2,
+      "pick": 54,
+      "name": "Glenn Carano",
+      "position": "QB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1977,
+      "round": 7,
+      "pick": 189,
+      "name": "Reggie Haynes",
+      "position": "TE",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1977,
+      "round": 7,
+      "pick": 193,
+      "name": "Blanchard Carter",
+      "position": "T",
+      "nflTeam": "Baltimore Colts"
+    },
+    {
+      "year": 1975,
+      "round": 5,
+      "pick": 108,
+      "name": "Mike Thomas",
+      "position": "RB",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 1975,
+      "round": 10,
+      "pick": 251,
+      "name": "Steve Haggerty",
+      "position": "WR",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1972,
+      "round": 16,
+      "pick": 403,
+      "name": "Nate Hawkins",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    }
   ]
 }

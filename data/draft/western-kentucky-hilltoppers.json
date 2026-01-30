@@ -1,25 +1,191 @@
 {
-  "teamId": "western-kentucky",
+  "teamId": "westkentucky",
   "teamSlug": "western-kentucky-hilltoppers",
   "teamName": "Western Kentucky Hilltoppers",
   "draftPicks": [
-    {"year": 2025, "round": 3, "pick": 100, "name": "Upton Stout", "position": "CB", "nflTeam": "San Francisco 49ers"},
-    {"year": 2024, "round": 3, "pick": 65, "name": "Malachi Corley", "position": "WR", "nflTeam": "New York Jets"},
-    {"year": 2023, "round": 3, "pick": 96, "name": "Brodric Martin", "position": "DT", "nflTeam": "Detroit Lions"},
-    {"year": 2022, "round": 3, "pick": 82, "name": "DeAngelo Malone", "position": "DE", "nflTeam": "Atlanta Falcons"},
-    {"year": 2022, "round": 4, "pick": 137, "name": "Bailey Zappe", "position": "QB", "nflTeam": "New England Patriots"},
-    {"year": 2018, "round": 4, "pick": 115, "name": "Joel Iyiegbuniwe", "position": "LB", "nflTeam": "Chicago Bears"},
-    {"year": 2018, "round": 5, "pick": 171, "name": "Mike White", "position": "QB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2017, "round": 2, "pick": 38, "name": "Forrest Lamp", "position": "G", "nflTeam": "Los Angeles Chargers"},
-    {"year": 2017, "round": 3, "pick": 72, "name": "Taywan Taylor", "position": "WR", "nflTeam": "Tennessee Titans"},
-    {"year": 2016, "round": 4, "pick": 110, "name": "Tyler Higbee", "position": "TE", "nflTeam": "Los Angeles Rams"},
-    {"year": 2016, "round": 7, "pick": 223, "name": "Brandon Doughty", "position": "QB", "nflTeam": "Miami Dolphins"},
-    {"year": 2016, "round": 7, "pick": 249, "name": "Prince Charles Iworah", "position": "CB", "nflTeam": "San Francisco 49ers"},
-    {"year": 2014, "round": 6, "pick": 203, "name": "Andrew Jackson", "position": "LB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2014, "round": 7, "pick": 247, "name": "Jonathan Dowling", "position": "DB", "nflTeam": "Oakland Raiders"},
-    {"year": 2013, "round": 5, "pick": 146, "name": "Quanterus Smith", "position": "DE", "nflTeam": "Denver Broncos"},
-    {"year": 2003, "round": 4, "pick": 118, "name": "Jeremi Johnson", "position": "FB", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2002, "round": 3, "pick": 74, "name": "Joe Jefferson", "position": "DB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2002, "round": 5, "pick": 150, "name": "Mel Mitchell", "position": "DB", "nflTeam": "New Orleans Saints"}
+    {
+      "year": 2025,
+      "round": 3,
+      "pick": 100,
+      "name": "Upton Stout",
+      "position": "CB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2024,
+      "round": 3,
+      "pick": 65,
+      "name": "Malachi Corley",
+      "position": "WR",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2023,
+      "round": 3,
+      "pick": 96,
+      "name": "Brodric Martin",
+      "position": "DT",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 2022,
+      "round": 3,
+      "pick": 82,
+      "name": "DeAngelo Malone",
+      "position": "DE",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2022,
+      "round": 4,
+      "pick": 137,
+      "name": "Bailey Zappe",
+      "position": "QB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2018,
+      "round": 4,
+      "pick": 115,
+      "name": "Joel Iyiegbuniwe",
+      "position": "LB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2018,
+      "round": 5,
+      "pick": 171,
+      "name": "Mike White",
+      "position": "QB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2017,
+      "round": 2,
+      "pick": 38,
+      "name": "Forrest Lamp",
+      "position": "G",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 2017,
+      "round": 3,
+      "pick": 72,
+      "name": "Taywan Taylor",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2016,
+      "round": 4,
+      "pick": 110,
+      "name": "Tyler Higbee",
+      "position": "TE",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 2016,
+      "round": 7,
+      "pick": 223,
+      "name": "Brandon Doughty",
+      "position": "QB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2016,
+      "round": 7,
+      "pick": 249,
+      "name": "Prince Charles Iworah",
+      "position": "CB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2014,
+      "round": 6,
+      "pick": 203,
+      "name": "Andrew Jackson",
+      "position": "LB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2014,
+      "round": 7,
+      "pick": 247,
+      "name": "Jonathan Dowling",
+      "position": "DB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2013,
+      "round": 5,
+      "pick": 146,
+      "name": "Quanterus Smith",
+      "position": "DE",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2003,
+      "round": 4,
+      "pick": 118,
+      "name": "Jeremi Johnson",
+      "position": "FB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2002,
+      "round": 3,
+      "pick": 74,
+      "name": "Joe Jefferson",
+      "position": "DB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2002,
+      "round": 5,
+      "pick": 150,
+      "name": "Mel Mitchell",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1984,
+      "round": 10,
+      "pick": 264,
+      "name": "Paul Gray",
+      "position": "LB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1983,
+      "round": 8,
+      "pick": 217,
+      "name": "Davlin Mullen",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1977,
+      "round": 6,
+      "pick": 165,
+      "name": "David Carter",
+      "position": "C",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1975,
+      "round": 4,
+      "pick": 83,
+      "name": "Virgil Livers",
+      "position": "DB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1974,
+      "round": 16,
+      "pick": 395,
+      "name": "Jazz Jackson",
+      "position": "RB",
+      "nflTeam": "New York Jets"
+    }
   ]
 }

@@ -1,14 +1,167 @@
 {
-  "teamId": "kent-state",
+  "teamId": "kentst",
   "teamSlug": "kent-state-golden-flashes",
   "teamName": "Kent State Golden Flashes",
   "draftPicks": [
-    {"year": 2014, "round": 3, "pick": 97, "name": "Dri Archer", "position": "WR", "nflTeam": "Pittsburgh Steelers"},
-    {"year": 2013, "round": 3, "pick": 72, "name": "Brian Winters", "position": "OL", "nflTeam": "New York Jets"},
-    {"year": 2010, "round": 7, "pick": 245, "name": "Jameson Konz", "position": "TE", "nflTeam": "Seattle Seahawks"},
-    {"year": 2009, "round": 7, "pick": 232, "name": "Julian Edelman", "position": "WR", "nflTeam": "New England Patriots"},
-    {"year": 2008, "round": 4, "pick": 119, "name": "Jack Williams", "position": "DB", "nflTeam": "Denver Broncos"},
-    {"year": 2007, "round": 3, "pick": 66, "name": "Usama Young", "position": "DB", "nflTeam": "New Orleans Saints"},
-    {"year": 2000, "round": 6, "pick": 204, "name": "Jason Gavadza", "position": "TE", "nflTeam": "Pittsburgh Steelers"}
+    {
+      "year": 2014,
+      "round": 3,
+      "pick": 97,
+      "name": "Dri Archer",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 2013,
+      "round": 3,
+      "pick": 72,
+      "name": "Brian Winters",
+      "position": "G",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 2010,
+      "round": 7,
+      "pick": 245,
+      "name": "Jameson Konz",
+      "position": "TE",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2009,
+      "round": 7,
+      "pick": 232,
+      "name": "Julian Edelman",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2008,
+      "round": 4,
+      "pick": 119,
+      "name": "Jack Williams",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2007,
+      "round": 3,
+      "pick": 66,
+      "name": "Usama Young",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1999,
+      "round": 5,
+      "pick": 164,
+      "name": "Eugene Baker",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1998,
+      "round": 2,
+      "pick": 53,
+      "name": "Bob Hallen",
+      "position": "G",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1997,
+      "round": 3,
+      "pick": 70,
+      "name": "O.J. Santiago",
+      "position": "TE",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1991,
+      "round": 6,
+      "pick": 156,
+      "name": "Andy Harmon",
+      "position": "DT",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1989,
+      "round": 11,
+      "pick": 288,
+      "name": "Bert Weidner",
+      "position": "G",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1979,
+      "round": 5,
+      "pick": 127,
+      "name": "Mike Zele",
+      "position": "NT",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1977,
+      "round": 6,
+      "pick": 156,
+      "name": "Art Best",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1976,
+      "round": 7,
+      "pick": 188,
+      "name": "Abdul Salaam",
+      "position": "DT",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1976,
+      "round": 12,
+      "pick": 343,
+      "name": "Cedric Brown",
+      "position": "DB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1975,
+      "round": 9,
+      "pick": 213,
+      "name": "Larry Poole",
+      "position": "RB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1974,
+      "round": 2,
+      "pick": 44,
+      "name": "Gerald Tinker",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1974,
+      "round": 2,
+      "pick": 46,
+      "name": "Jack Lambert",
+      "position": "LB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1971,
+      "round": 17,
+      "pick": 441,
+      "name": "Don Nottingham",
+      "position": "RB",
+      "nflTeam": "Baltimore Colts"
+    },
+    {
+      "year": 1968,
+      "round": 14,
+      "pick": 363,
+      "name": "Lou Harris",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    }
   ]
 }

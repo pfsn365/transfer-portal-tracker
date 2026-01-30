@@ -1,16 +1,159 @@
 {
-  "teamId": "ball-state",
+  "teamId": "ballst",
   "teamSlug": "ball-state-cardinals",
   "teamName": "Ball State Cardinals",
   "draftPicks": [
-    {"year": 2023, "round": 7, "pick": 250, "name": "Nic Jones", "position": "CB", "nflTeam": "Kansas City Chiefs"},
-    {"year": 2020, "round": 5, "pick": 149, "name": "Danny Pinter", "position": "G", "nflTeam": "Indianapolis Colts"},
-    {"year": 2014, "round": 5, "pick": 166, "name": "Jonathan Newsome", "position": "LB", "nflTeam": "Indianapolis Colts"},
-    {"year": 2014, "round": 6, "pick": 194, "name": "Keith Wenning", "position": "QB", "nflTeam": "Baltimore Ravens"},
-    {"year": 2009, "round": 3, "pick": 75, "name": "Robert Brewster", "position": "T", "nflTeam": "Dallas Cowboys"},
-    {"year": 2009, "round": 5, "pick": 171, "name": "Nate Davis", "position": "QB", "nflTeam": "San Francisco 49ers"},
-    {"year": 2005, "round": 6, "pick": 192, "name": "Dante Ridgeway", "position": "WR", "nflTeam": "St. Louis Rams"},
-    {"year": 2005, "round": 6, "pick": 208, "name": "Justin Beriault", "position": "DB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2005, "round": 6, "pick": 210, "name": "Reggie Hodges", "position": "P", "nflTeam": "St. Louis Rams"}
+    {
+      "year": 2023,
+      "round": 7,
+      "pick": 250,
+      "name": "Nic Jones",
+      "position": "CB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2020,
+      "round": 5,
+      "pick": 149,
+      "name": "Danny Pinter",
+      "position": "G",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2014,
+      "round": 5,
+      "pick": 166,
+      "name": "Jonathan Newsome",
+      "position": "LB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2014,
+      "round": 6,
+      "pick": 194,
+      "name": "Keith Wenning",
+      "position": "QB",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 2009,
+      "round": 3,
+      "pick": 75,
+      "name": "Robert Brewster",
+      "position": "T",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2009,
+      "round": 5,
+      "pick": 171,
+      "name": "Nate Davis",
+      "position": "QB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2005,
+      "round": 6,
+      "pick": 192,
+      "name": "Dante Ridgeway",
+      "position": "WR",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2005,
+      "round": 6,
+      "pick": 210,
+      "name": "Reggie Hodges",
+      "position": "P",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 1997,
+      "round": 3,
+      "pick": 95,
+      "name": "Brad Maynard",
+      "position": "P",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1997,
+      "round": 4,
+      "pick": 124,
+      "name": "Cory Gilliard",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1996,
+      "round": 7,
+      "pick": 252,
+      "name": "Keith McKenzie",
+      "position": "DE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1993,
+      "round": 8,
+      "pick": 214,
+      "name": "Blaine Bishop",
+      "position": "DB",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1980,
+      "round": 10,
+      "pick": 255,
+      "name": "Rush Brown",
+      "position": "DT",
+      "nflTeam": "St. Louis Cardinals"
+    },
+    {
+      "year": 1979,
+      "round": 7,
+      "pick": 167,
+      "name": "Ken Kremer",
+      "position": "NT",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1978,
+      "round": 4,
+      "pick": 86,
+      "name": "Maurice Harvey",
+      "position": "DB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 1976,
+      "round": 2,
+      "pick": 33,
+      "name": "Shafer Suggs",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1976,
+      "round": 9,
+      "pick": 256,
+      "name": "Art Stringer",
+      "position": "LB",
+      "nflTeam": "Houston Oilers"
+    },
+    {
+      "year": 1974,
+      "round": 5,
+      "pick": 121,
+      "name": "Terry Schmidt",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1971,
+      "round": 13,
+      "pick": 314,
+      "name": "Don Burchfield",
+      "position": "TE",
+      "nflTeam": "New Orleans Saints"
+    }
   ]
 }

@@ -3,15 +3,93 @@
   "teamSlug": "buffalo-bulls",
   "teamName": "Buffalo Bulls",
   "draftPicks": [
-    {"year": 2021, "round": 3, "pick": 79, "name": "Malcolm Koonce", "position": "DE", "nflTeam": "Las Vegas Raiders"},
-    {"year": 2017, "round": 7, "pick": 251, "name": "Mason Schreck", "position": "TE", "nflTeam": "Cincinnati Bengals"},
-    {"year": 2015, "round": 6, "pick": 214, "name": "Kristjan Sokoli", "position": "DT", "nflTeam": "Seattle Seahawks"},
-    {"year": 2014, "round": 1, "pick": 5, "name": "Khalil Mack", "position": "LB", "nflTeam": "Oakland Raiders"},
-    {"year": 2013, "round": 5, "pick": 147, "name": "Steven Means", "position": "DE", "nflTeam": "Tampa Bay Buccaneers"},
-    {"year": 2011, "round": 5, "pick": 143, "name": "Josh Thomas", "position": "DB", "nflTeam": "Dallas Cowboys"},
-    {"year": 2010, "round": 6, "pick": 193, "name": "James Starks", "position": "RB", "nflTeam": "Green Bay Packers"},
-    {"year": 2008, "round": 6, "pick": 169, "name": "Trevor Scott", "position": "DE", "nflTeam": "Oakland Raiders"},
-    {"year": 2008, "round": 7, "pick": 236, "name": "Jamey Richard", "position": "OL", "nflTeam": "Indianapolis Colts"},
-    {"year": 2000, "round": 7, "pick": 233, "name": "Drew Haddad", "position": "WR", "nflTeam": "Buffalo Bills"}
+    {
+      "year": 2021,
+      "round": 3,
+      "pick": 79,
+      "name": "Malcolm Koonce",
+      "position": "DE",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 2017,
+      "round": 7,
+      "pick": 251,
+      "name": "Mason Schreck",
+      "position": "TE",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 2015,
+      "round": 6,
+      "pick": 214,
+      "name": "Kristjan Sokoli",
+      "position": "DT",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2014,
+      "round": 1,
+      "pick": 5,
+      "name": "Khalil Mack",
+      "position": "LB",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2013,
+      "round": 5,
+      "pick": 147,
+      "name": "Steven Means",
+      "position": "DE",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 2011,
+      "round": 5,
+      "pick": 143,
+      "name": "Josh Thomas",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 193,
+      "name": "James Starks",
+      "position": "RB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2008,
+      "round": 6,
+      "pick": 169,
+      "name": "Trevor Scott",
+      "position": "DE",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2008,
+      "round": 7,
+      "pick": 236,
+      "name": "Jamey Richard",
+      "position": "T",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2000,
+      "round": 7,
+      "pick": 233,
+      "name": "Drew Haddad",
+      "position": "WR",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1997,
+      "round": 4,
+      "pick": 125,
+      "name": "Ed Ellis",
+      "position": "T",
+      "nflTeam": "New England Patriots"
+    }
   ]
 }

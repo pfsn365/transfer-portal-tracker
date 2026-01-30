@@ -1,0 +1,239 @@
+{
+  "teamId": "soflorida",
+  "teamSlug": "usf-bulls",
+  "teamName": "USF Bulls",
+  "draftPicks": [
+    {
+      "year": 2018,
+      "round": 3,
+      "pick": 90,
+      "name": "Deadrin Senat",
+      "position": "DT",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2018,
+      "round": 5,
+      "pick": 174,
+      "name": "Marquez Valdes-Scantling",
+      "position": "WR",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2017,
+      "round": 4,
+      "pick": 143,
+      "name": "Marlon Mack",
+      "position": "RB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 2017,
+      "round": 5,
+      "pick": 170,
+      "name": "Rodney Adams",
+      "position": "WR",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2017,
+      "round": 6,
+      "pick": 212,
+      "name": "Kofi Amichia",
+      "position": "C",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2015,
+      "round": 6,
+      "pick": 211,
+      "name": "Reshard Cliett",
+      "position": "OLB",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2015,
+      "round": 7,
+      "pick": 222,
+      "name": "Austin Reiter",
+      "position": "C",
+      "nflTeam": "Washington Redskins"
+    },
+    {
+      "year": 2014,
+      "round": 5,
+      "pick": 150,
+      "name": "Aaron Lynch",
+      "position": "DE",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2013,
+      "round": 3,
+      "pick": 90,
+      "name": "Kayvon Webster",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 232,
+      "name": "Sam Barrington",
+      "position": "LB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 2013,
+      "round": 7,
+      "pick": 237,
+      "name": "B.J. Daniels",
+      "position": "QB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2011,
+      "round": 3,
+      "pick": 65,
+      "name": "Terrell McClain",
+      "position": "DT",
+      "nflTeam": "Carolina Panthers"
+    },
+    {
+      "year": 2011,
+      "round": 6,
+      "pick": 170,
+      "name": "Mistral Raymond",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 2011,
+      "round": 6,
+      "pick": 202,
+      "name": "Jacquian Williams",
+      "position": "LB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2010,
+      "round": 1,
+      "pick": 15,
+      "name": "Jason Pierre-Paul",
+      "position": "DE",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2010,
+      "round": 2,
+      "pick": 37,
+      "name": "Nate Allen",
+      "position": "DB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 2010,
+      "round": 3,
+      "pick": 65,
+      "name": "Jerome Murphy",
+      "position": "DB",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2010,
+      "round": 6,
+      "pick": 177,
+      "name": "Carlton Mitchell",
+      "position": "WR",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2010,
+      "round": 7,
+      "pick": 226,
+      "name": "George Selvie",
+      "position": "DE",
+      "nflTeam": "St. Louis Rams"
+    },
+    {
+      "year": 2009,
+      "round": 3,
+      "pick": 97,
+      "name": "Tyrone McKenzie",
+      "position": "LB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2008,
+      "round": 1,
+      "pick": 25,
+      "name": "Mike Jenkins",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2008,
+      "round": 5,
+      "pick": 159,
+      "name": "Trae Williams",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2007,
+      "round": 4,
+      "pick": 109,
+      "name": "Stephen Nicholas",
+      "position": "LB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2004,
+      "round": 4,
+      "pick": 129,
+      "name": "J.R. Reed",
+      "position": "DB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 2003,
+      "round": 2,
+      "pick": 47,
+      "name": "Kawika Mitchell",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2003,
+      "round": 4,
+      "pick": 129,
+      "name": "Shurron Pierson",
+      "position": "DE",
+      "nflTeam": "Oakland Raiders"
+    },
+    {
+      "year": 2001,
+      "round": 4,
+      "pick": 96,
+      "name": "Kenyatta Jones",
+      "position": "T",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2001,
+      "round": 4,
+      "pick": 97,
+      "name": "Anthony Henry",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2001,
+      "round": 4,
+      "pick": 98,
+      "name": "Bill Gramatica",
+      "position": "K",
+      "nflTeam": "Arizona Cardinals"
+    }
+  ]
+}

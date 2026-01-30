@@ -1,15 +1,119 @@
 {
-  "teamId": "middle-tennessee",
+  "teamId": "middletennst",
   "teamSlug": "middle-tennessee-blue-raiders",
   "teamName": "Middle Tennessee Blue Raiders",
   "draftPicks": [
-    {"year": 2018, "round": 7, "pick": 240, "name": "Richie James", "position": "WR", "nflTeam": "San Francisco 49ers"},
-    {"year": 2016, "round": 3, "pick": 64, "name": "Kevin Byard", "position": "S", "nflTeam": "Tennessee Titans"},
-    {"year": 2014, "round": 5, "pick": 172, "name": "Jimmy Staten", "position": "DT", "nflTeam": "Seattle Seahawks"},
-    {"year": 2011, "round": 5, "pick": 147, "name": "Rod Issac", "position": "DB", "nflTeam": "Jacksonville Jaguars"},
-    {"year": 2010, "round": 7, "pick": 212, "name": "Chris McCoy", "position": "DE", "nflTeam": "Miami Dolphins"},
-    {"year": 2008, "round": 6, "pick": 167, "name": "Erik Walden", "position": "DE", "nflTeam": "Dallas Cowboys"},
-    {"year": 2003, "round": 2, "pick": 60, "name": "Tyrone Calico", "position": "WR", "nflTeam": "Tennessee Titans"},
-    {"year": 2002, "round": 7, "pick": 222, "name": "Kendall Newson", "position": "WR", "nflTeam": "Jacksonville Jaguars"}
+    {
+      "year": 2018,
+      "round": 7,
+      "pick": 240,
+      "name": "Richie James",
+      "position": "WR",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 2016,
+      "round": 3,
+      "pick": 64,
+      "name": "Kevin Byard",
+      "position": "S",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2014,
+      "round": 5,
+      "pick": 172,
+      "name": "Jimmy Staten",
+      "position": "DT",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 2011,
+      "round": 5,
+      "pick": 147,
+      "name": "Rod Issac",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2008,
+      "round": 6,
+      "pick": 167,
+      "name": "Erik Walden",
+      "position": "DE",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 2003,
+      "round": 2,
+      "pick": 60,
+      "name": "Tyrone Calico",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2002,
+      "round": 7,
+      "pick": 222,
+      "name": "Kendall Newson",
+      "position": "WR",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 1998,
+      "round": 3,
+      "pick": 86,
+      "name": "Jonathan Quinn",
+      "position": "QB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 1993,
+      "round": 3,
+      "pick": 83,
+      "name": "Mike Caldwell",
+      "position": "LB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1991,
+      "round": 8,
+      "pick": 207,
+      "name": "Marty Carter",
+      "position": "DB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1987,
+      "round": 12,
+      "pick": 324,
+      "name": "Tony Burse",
+      "position": "RB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1986,
+      "round": 6,
+      "pick": 162,
+      "name": "Don Griffin",
+      "position": "DB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1983,
+      "round": 7,
+      "pick": 193,
+      "name": "James Griffin",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1973,
+      "round": 8,
+      "pick": 189,
+      "name": "Ray Oldham",
+      "position": "DB",
+      "nflTeam": "Baltimore Colts"
+    }
   ]
 }

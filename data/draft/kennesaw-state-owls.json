@@ -1,8 +1,15 @@
 {
-  "teamId": "kennesaw-state",
+  "teamId": "kennesawst",
   "teamSlug": "kennesaw-state-owls",
   "teamName": "Kennesaw State Owls",
   "draftPicks": [
-    {"year": 2023, "round": 7, "pick": 218, "name": "Travis Bell", "position": "DL", "nflTeam": "Chicago Bears"}
+    {
+      "year": 2023,
+      "round": 7,
+      "pick": 218,
+      "name": "Travis Bell",
+      "position": "DL",
+      "nflTeam": "Chicago Bears"
+    }
   ]
 }
