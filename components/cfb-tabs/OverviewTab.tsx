@@ -288,7 +288,7 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
                                 />
                               )}
                               <span className={`text-sm ${isCurrentTeam ? 'font-bold' : ''}`}>
-                                {standing.team?.split(' ').slice(0, -1).join(' ') || standing.team}
+                                {standing.team}
                               </span>
                             </div>
                           </td>
