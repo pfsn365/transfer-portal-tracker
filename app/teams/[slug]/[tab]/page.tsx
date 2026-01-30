@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: TeamTabPageProps): Promise<Me
     schedule: 'Schedule',
     stats: 'Stats',
     transfers: 'Transfer Portal',
-    history: 'History',
+    history: 'Record by Year',
     draft: 'NFL Draft History',
   };
 
