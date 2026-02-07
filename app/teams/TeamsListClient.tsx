@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getAllConferences, getTeamsByConference } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { Search } from 'lucide-react';
 
@@ -40,31 +39,24 @@ export default function TeamsListClient() {
   }, [fbsConferences, searchQuery]);
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0" style={{ touchAction: 'manipulation' }}>
+    <div style={{ touchAction: 'manipulation' }}>
         {/* Hero Section */}
-        <div className="bg-[#800000] text-white pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+        <header
+          className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               Browse All FBS Teams
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
+            <p className="text-lg opacity-90 font-medium">
               View team rosters, schedules, stats, and transfer portal activity
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -72,6 +64,7 @@ export default function TeamsListClient() {
         </div>
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">FBS Teams by Conference</h2>
           {/* Search Bar */}
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-8">
             <div className="relative max-w-xl">
@@ -132,8 +125,7 @@ export default function TeamsListClient() {
           )}
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
+      <Footer currentPage="CFB" />
     </div>
   );
 }

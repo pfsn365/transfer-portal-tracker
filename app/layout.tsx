@@ -7,6 +7,7 @@ import VideoPlayerScript from '@/components/VideoPlayerScript';
 import CanonicalURL from '@/components/CanonicalURL';
 import StructuredData from '@/components/StructuredData';
 import CFBScoreTicker from '@/components/CFBScoreTicker';
+import SidebarLayout from '@/components/SidebarLayout';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.profootballnetwork.com/cfb-hq'),
@@ -136,7 +137,7 @@ export default function RootLayout({
         <VideoPlayerScript />
         <StructuredData />
         <CFBScoreTicker />
-        {children}
+        <SidebarLayout>{children}</SidebarLayout>
       </body>
     </html>
   );

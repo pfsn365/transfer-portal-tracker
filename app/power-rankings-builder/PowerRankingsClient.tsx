@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import PowerRankingsSkeleton from '@/components/PowerRankingsSkeleton';
 import { getApiPath } from '@/utils/api';
@@ -153,22 +152,6 @@ export default function PowerRankingsClient() {
 
     return () => clearInterval(interval);
   }, [rankings, division]);
-
-  // Load draft on mount
-  useEffect(() => {
-    const draft = localStorage.getItem('cfb-power-rankings-draft');
-    if (draft) {
-      try {
-        const parsed = JSON.parse(draft);
-        // Only restore if draft is less than 24 hours old
-        if (Date.now() - parsed.timestamp < 24 * 60 * 60 * 1000) {
-          // We'll check this after initial load
-        }
-      } catch (e) {
-        console.error('Failed to parse draft:', e);
-      }
-    }
-  }, []);
 
   // Fetch standings and build rankings
   useEffect(() => {
@@ -1078,31 +1061,24 @@ export default function PowerRankingsClient() {
   }, []);
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+    <>
         {/* Hero Section */}
-        <div className="bg-[#800000] text-white pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+        <header
+          className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Power Rankings Builder
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
+            <p className="text-lg opacity-90 font-medium">
               Create your own custom {division === 'fbs' ? 'FBS' : 'FCS'} power rankings
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -1115,7 +1091,7 @@ export default function PowerRankingsClient() {
             <div className="flex gap-2">
               <button
                 onClick={() => setDivision('fbs')}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                   division === 'fbs'
                     ? 'bg-[#800000] text-white'
                     : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
@@ -1125,7 +1101,7 @@ export default function PowerRankingsClient() {
               </button>
               <button
                 onClick={() => setDivision('fcs')}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                   division === 'fcs'
                     ? 'bg-[#800000] text-white'
                     : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
@@ -1154,7 +1130,7 @@ export default function PowerRankingsClient() {
                   <button
                     key={conf}
                     onClick={() => setConferenceFilter(conf)}
-                    className={`px-3 py-1.5 text-sm rounded-lg font-medium transition-colors cursor-pointer ${
+                    className={`px-3 py-1.5 text-sm rounded-lg font-medium transition-all active:scale-[0.98] cursor-pointer ${
                       conferenceFilter === conf
                         ? 'bg-[#800000] text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -1376,7 +1352,7 @@ export default function PowerRankingsClient() {
                       <button
                         onClick={() => setShowExportMenu(!showExportMenu)}
                         disabled={isDownloading}
-                        className="px-3 py-2 text-sm bg-[#800000] hover:bg-[#600000] disabled:opacity-50 text-white rounded-lg font-medium flex items-center gap-1.5 cursor-pointer"
+                        className="px-3 py-2 text-sm bg-[#800000] hover:bg-[#600000] active:scale-[0.98] disabled:opacity-50 text-white rounded-lg font-medium flex items-center gap-1.5 transition-all cursor-pointer"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -1562,7 +1538,7 @@ export default function PowerRankingsClient() {
                           className={`border-b border-gray-200 transition-all ${!isMobile ? 'cursor-move' : ''} ${
                             draggedIndex === index ? 'opacity-50' : ''
                           } ${dragOverIndex === index ? 'bg-red-100' : ''} ${
-                            isSelected ? 'bg-blue-50' : isFocused ? 'bg-yellow-50' : 'hover:bg-gray-50'
+                            isSelected ? 'bg-red-50' : isFocused ? 'bg-yellow-50' : 'hover:bg-gray-50'
                           }`}
                         >
                           {conferenceFilter === 'All' && (
@@ -1702,8 +1678,7 @@ export default function PowerRankingsClient() {
           )}
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
+      <Footer currentPage="CFB" />
 
       {/* Reset Dialog */}
       {showResetDialog && (
@@ -1878,6 +1853,6 @@ export default function PowerRankingsClient() {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

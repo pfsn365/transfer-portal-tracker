@@ -334,6 +334,15 @@ body {
   margin-bottom: 40px;
 }
 
+@media (min-width: 1024px) {
+  .score-ticker {
+    transition: left 0.3s;
+  }
+  body.sidebar-collapsed .score-ticker {
+    left: 0 !important;
+  }
+}
+
 /* Optimize animations for performance */
 @media (prefers-reduced-motion: reduce) {
   *,

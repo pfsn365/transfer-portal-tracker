@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { getTeamById } from '@/data/teams';
 import {
@@ -113,34 +112,27 @@ export default function PostseasonClient() {
   );
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+    <>
         {/* Hero Section */}
-        <div className="bg-[#800000] text-white pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
-              CFB Postseason Hub
+        <header
+          className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
+              CFB Postseason HQ
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-200">
+            <p className="text-lg opacity-90 font-medium">
               {(() => {
                 const year = new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear();
                 return `${year}-${(year + 1).toString().slice(-2)}`;
               })()} College Football Playoff & Bowl Games
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -155,7 +147,7 @@ export default function PostseasonClient() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer whitespace-nowrap ${
+                  className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer whitespace-nowrap ${
                     activeTab === tab.id
                       ? 'bg-[#800000] text-white'
                       : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -231,7 +223,7 @@ export default function PostseasonClient() {
                             {(() => {
                               const teamData = getTeamById(team.team);
                               return teamData ? (
-                                <Link href={`/teams/${teamData.slug}`} className="font-bold text-gray-900 hover:text-blue-600 hover:underline">
+                                <Link href={`/teams/${teamData.slug}`} className="font-bold text-gray-900 hover:text-[#800000] hover:underline">
                                   {team.team}
                                 </Link>
                               ) : (
@@ -248,7 +240,7 @@ export default function PostseasonClient() {
                           </div>
                           <div className="flex justify-between">
                             <span className="text-gray-500">Qualification:</span>
-                            <span className={`font-medium ${team.qualification === 'Conference Champion' ? 'text-green-600' : 'text-blue-600'}`}>
+                            <span className={`font-medium ${team.qualification === 'Conference Champion' ? 'text-green-600' : 'text-[#800000]'}`}>
                               {team.qualification}
                             </span>
                           </div>
@@ -276,11 +268,11 @@ export default function PostseasonClient() {
                   <table className="w-full">
                     <thead className="bg-gray-50 border-b border-gray-200">
                       <tr>
-                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Seed</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">First Round</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Quarterfinals</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Semifinals</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Championship</th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Seed</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">First Round</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Quarterfinals</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Semifinals</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Championship</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
@@ -307,9 +299,9 @@ export default function PostseasonClient() {
                   <table className="w-full">
                     <thead className="bg-gray-50 border-b border-gray-200">
                       <tr>
-                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Seed</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Semifinals</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Championship</th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Seed</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Semifinals</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Championship</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
@@ -417,7 +409,7 @@ export default function PostseasonClient() {
               </div>
 
               {/* Tournament Bracket Note */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-800">
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-red-800">
                 <strong>About the FCS Playoff:</strong> The FCS Championship is a 24-team single-elimination playoff. Only the top 16 teams are seeded.
                 Seeds 1-8 receive first-round byes. Seeds 9-16 host first-round games against the 8 unseeded teams, paired by geographic proximity.
                 The championship game is held at a predetermined location (2025: Nashville, TN).
@@ -439,7 +431,7 @@ export default function PostseasonClient() {
                       <button
                         key={filter.id}
                         onClick={() => setBowlFilter(filter.id as typeof bowlFilter)}
-                        className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                        className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                           bowlFilter === filter.id
                             ? 'bg-[#800000] text-white'
                             : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
@@ -485,11 +477,11 @@ export default function PostseasonClient() {
                   <table className="w-full">
                     <thead className="bg-gray-50 border-b border-gray-200">
                       <tr>
-                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Bowl</th>
-                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Date</th>
-                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Matchup</th>
-                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Score</th>
-                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden md:table-cell">Location</th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Bowl</th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Date</th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Matchup</th>
+                        <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Score</th>
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden md:table-cell">Location</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100">
@@ -521,7 +513,7 @@ export default function PostseasonClient() {
                                 {(() => {
                                   const team1Data = getTeamById(game.team1);
                                   return team1Data ? (
-                                    <Link href={`/teams/${team1Data.slug}`} className={`hover:text-blue-600 hover:underline ${game.team1Score > game.team2Score ? 'font-bold' : ''}`}>
+                                    <Link href={`/teams/${team1Data.slug}`} className={`hover:text-[#800000] hover:underline ${game.team1Score > game.team2Score ? 'font-bold' : ''}`}>
                                       {game.team1Rank && <span className="text-gray-500">#{game.team1Rank} </span>}
                                       {game.team1}
                                     </Link>
@@ -549,7 +541,7 @@ export default function PostseasonClient() {
                                 {(() => {
                                   const team2Data = getTeamById(game.team2);
                                   return team2Data ? (
-                                    <Link href={`/teams/${team2Data.slug}`} className={`hover:text-blue-600 hover:underline ${game.team2Score > game.team1Score ? 'font-bold' : ''}`}>
+                                    <Link href={`/teams/${team2Data.slug}`} className={`hover:text-[#800000] hover:underline ${game.team2Score > game.team1Score ? 'font-bold' : ''}`}>
                                       {game.team2Rank && <span className="text-gray-500">#{game.team2Rank} </span>}
                                       {game.team2}
                                     </Link>
@@ -595,25 +587,25 @@ export default function PostseasonClient() {
                     <tr>
                       <th
                         onClick={() => handleConfSort('conference')}
-                        className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase cursor-pointer hover:bg-gray-100 transition-colors"
+                        className="px-4 py-3 text-left text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 transition-colors"
                       >
                         Conference<SortIcon field="conference" />
                       </th>
                       <th
                         onClick={() => handleConfSort('bowlEligible')}
-                        className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase cursor-pointer hover:bg-gray-100 transition-colors"
+                        className="px-4 py-3 text-center text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 transition-colors"
                       >
                         Bowl Eligible<SortIcon field="bowlEligible" />
                       </th>
                       <th
                         onClick={() => handleConfSort('bowlWins')}
-                        className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase cursor-pointer hover:bg-gray-100 transition-colors"
+                        className="px-4 py-3 text-center text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 transition-colors"
                       >
                         Bowl Record<SortIcon field="bowlWins" />
                       </th>
                       <th
                         onClick={() => handleConfSort('winPct')}
-                        className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase cursor-pointer hover:bg-gray-100 transition-colors"
+                        className="px-4 py-3 text-center text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 transition-colors"
                       >
                         Win %<SortIcon field="winPct" />
                       </th>
@@ -678,7 +670,7 @@ export default function PostseasonClient() {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setChampionsView('fbs')}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       championsView === 'fbs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
@@ -688,7 +680,7 @@ export default function PostseasonClient() {
                   </button>
                   <button
                     onClick={() => setChampionsView('fcs')}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       championsView === 'fcs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
@@ -732,9 +724,9 @@ export default function PostseasonClient() {
                       <table className="w-full">
                         <thead className="bg-gray-50 border-b border-gray-200">
                           <tr>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase w-20">Year</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Champion</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell">Selector</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 w-20">Year</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Champion</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden sm:table-cell">Selector</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
@@ -759,9 +751,9 @@ export default function PostseasonClient() {
                       <table className="w-full">
                         <thead className="bg-gray-50 border-b border-gray-200">
                           <tr>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase w-20">Year</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Champion</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell">Selector</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 w-20">Year</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Champion</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden sm:table-cell">Selector</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
@@ -786,9 +778,9 @@ export default function PostseasonClient() {
                       <table className="w-full">
                         <thead className="bg-gray-50 border-b border-gray-200 sticky top-0">
                           <tr>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase w-20 bg-gray-50">Year</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase bg-gray-50">Champion</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell bg-gray-50">Selector</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 w-20 bg-gray-50">Year</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50">Champion</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden sm:table-cell bg-gray-50">Selector</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
@@ -839,12 +831,12 @@ export default function PostseasonClient() {
                       <table className="w-full">
                         <thead className="bg-gray-50 border-b border-gray-200 sticky top-0">
                           <tr>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase w-16 bg-gray-50">Year</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase bg-gray-50">Champion</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden md:table-cell bg-gray-50">Coach</th>
-                            <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase bg-gray-50">Score</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell bg-gray-50">Runner-Up</th>
-                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden lg:table-cell bg-gray-50">Site</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 w-16 bg-gray-50">Year</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50">Champion</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden md:table-cell bg-gray-50">Coach</th>
+                            <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 bg-gray-50">Score</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden sm:table-cell bg-gray-50">Runner-Up</th>
+                            <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden lg:table-cell bg-gray-50">Site</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">
@@ -868,8 +860,7 @@ export default function PostseasonClient() {
           )}
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
-    </div>
+      <Footer currentPage="CFB" />
+    </>
   );
 }

@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { getAllConferences, getTeamsByConference } from '@/data/teams';
 import { Conference } from '@/types/player';
@@ -203,14 +202,20 @@ export default function PlayersDirectoryClient() {
   const [selectedTeam, setSelectedTeam] = useState('all');
   const [selectedPosition, setSelectedPosition] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(24);
+  const [itemsPerPage, setItemsPerPage] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('cfb-items-per-page');
+      if (saved) return Number(saved);
+    }
+    return 24;
+  });
   const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
 
   // Debounced search value
   const [debouncedSearch, setDebouncedSearch] = useState('');
 
   // Track previous filter values to detect changes
-  const prevFiltersRef = useRef({ team: 'all', position: 'all', search: '', itemsPerPage: 24 });
+  const prevFiltersRef = useRef({ team: 'all', position: 'all', search: '', itemsPerPage });
 
   // Debounce search input
   useEffect(() => {
@@ -294,38 +299,38 @@ export default function PlayersDirectoryClient() {
     return name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
   };
 
+  const handleItemsPerPageChange = (items: number) => {
+    setItemsPerPage(items);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cfb-items-per-page', String(items));
+    }
+  };
+
   const totalPages = pagination?.totalPages || 1;
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      {/* Main Content */}
-      <main id="main-content" className="flex-1 lg:ml-64 min-w-0">
-        {/* Header */}
-        <div className="bg-[#800000] text-white pt-[57px] lg:pt-0 pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+    <>
+      {/* Header */}
+      <header
+        className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Players
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
+            <p className="text-lg opacity-90 font-medium">
               Browse college football player profiles and stats
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Content */}
         <div className="mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-7xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Player Directory</h2>
           {/* Filters */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -406,7 +411,7 @@ export default function PlayersDirectoryClient() {
                         <Link
                           key={`${player.teamId}-${player.slug}`}
                           href={`/players/${player.slug}`}
-                          className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 hover:shadow-md transition-all"
+                          className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-[#800000] hover:bg-white hover:shadow-md transition-all cursor-pointer"
                         >
                           {/* Headshot */}
                           <div className="flex justify-center mb-3">
@@ -466,7 +471,7 @@ export default function PlayersDirectoryClient() {
                     itemsPerPage={itemsPerPage}
                     totalItems={pagination.totalPlayers}
                     onPageChange={setCurrentPage}
-                    onItemsPerPageChange={setItemsPerPage}
+                    onItemsPerPageChange={handleItemsPerPageChange}
                     itemsPerPageOptions={[24, 48, 96]}
                   />
                 )}
@@ -475,8 +480,7 @@ export default function PlayersDirectoryClient() {
           </div>
         </div>
 
-        <Footer />
-      </main>
-    </div>
+      <Footer />
+    </>
   );
 }

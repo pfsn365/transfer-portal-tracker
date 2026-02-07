@@ -4,7 +4,6 @@ import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import { getApiPath } from '@/utils/api';
 import { useLiveScores } from '@/hooks/useLiveScores';
@@ -597,7 +596,7 @@ function ScheduleClientInner() {
                     {(() => {
                       const awayTeamData = getTeamById(game.awayTeam.name);
                       return awayTeamData ? (
-                        <Link href={`/teams/${awayTeamData.slug}`} className="truncate hover:text-blue-600 hover:underline">
+                        <Link href={`/teams/${awayTeamData.slug}`} className="truncate hover:text-[#800000] hover:underline">
                           {game.awayTeam.name}
                         </Link>
                       ) : (
@@ -624,7 +623,7 @@ function ScheduleClientInner() {
                     {(() => {
                       const homeTeamData = getTeamById(game.homeTeam.name);
                       return homeTeamData ? (
-                        <Link href={`/teams/${homeTeamData.slug}`} className="truncate hover:text-blue-600 hover:underline">
+                        <Link href={`/teams/${homeTeamData.slug}`} className="truncate hover:text-[#800000] hover:underline">
                           {game.homeTeam.name}
                         </Link>
                       ) : (
@@ -816,31 +815,24 @@ function ScheduleClientInner() {
   const filteredDailyGames = filterGames(dailyGames);
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main id="main-content" className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+    <>
         {/* Header */}
-        <div className="bg-[#800000] text-white pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+        <header
+          className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Schedule
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
+            <p className="text-lg opacity-90 font-medium">
               View all College Football games, scores, and game details
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -855,7 +847,7 @@ function ScheduleClientInner() {
               <div className="flex items-center gap-2 bg-gray-100 rounded-lg p-1">
                 <button
                   onClick={() => setViewMode('daily')}
-                  className={`px-4 py-2 rounded-md font-medium text-sm transition-colors cursor-pointer ${
+                  className={`px-4 py-2 rounded-md font-medium text-sm transition-all active:scale-[0.98] cursor-pointer ${
                     viewMode === 'daily'
                       ? 'bg-white text-[#800000] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
@@ -865,7 +857,7 @@ function ScheduleClientInner() {
                 </button>
                 <button
                   onClick={() => setViewMode('weekly')}
-                  className={`px-4 py-2 rounded-md font-medium text-sm transition-colors cursor-pointer ${
+                  className={`px-4 py-2 rounded-md font-medium text-sm transition-all active:scale-[0.98] cursor-pointer ${
                     viewMode === 'weekly'
                       ? 'bg-white text-[#800000] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
@@ -875,7 +867,7 @@ function ScheduleClientInner() {
                 </button>
                 <button
                   onClick={() => setViewMode('monthly')}
-                  className={`px-4 py-2 rounded-md font-medium text-sm transition-colors cursor-pointer ${
+                  className={`px-4 py-2 rounded-md font-medium text-sm transition-all active:scale-[0.98] cursor-pointer ${
                     viewMode === 'monthly'
                       ? 'bg-white text-[#800000] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
@@ -891,7 +883,7 @@ function ScheduleClientInner() {
                 <div className="flex gap-1">
                   <button
                     onClick={() => setDivision('fbs')}
-                    className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fbs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
@@ -901,7 +893,7 @@ function ScheduleClientInner() {
                   </button>
                   <button
                     onClick={() => setDivision('fcs')}
-                    className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fcs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
@@ -955,7 +947,7 @@ function ScheduleClientInner() {
                 {!isToday && (
                   <button
                     onClick={goToToday}
-                    className="px-3 py-2 bg-[#800000] text-white rounded-lg font-medium text-sm hover:bg-[#600000] transition-colors cursor-pointer flex items-center gap-1.5"
+                    className="px-3 py-2 bg-[#800000] text-white rounded-lg font-medium text-sm hover:bg-[#600000] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -1311,9 +1303,8 @@ function ScheduleClientInner() {
           )}
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
-    </div>
+      <Footer currentPage="CFB" />
+    </>
   );
 }
 

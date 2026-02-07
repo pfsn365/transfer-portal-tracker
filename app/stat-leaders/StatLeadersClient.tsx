@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import StatLeadersSkeleton from '@/components/StatLeadersSkeleton';
 import { getApiPath } from '@/utils/api';
@@ -245,34 +244,27 @@ export default function StatLeadersClient() {
   }, [categories]);
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+    <>
         {/* Hero Section */}
-        <div className="bg-[#800000] text-white pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+        <header
+          className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Stat Leaders
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
+            <p className="text-lg opacity-90 font-medium">
               {(() => {
                 const year = new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear();
                 return `${year}-${(year + 1).toString().slice(-2)}`;
               })()} {division === 'fbs' ? 'FBS' : 'FCS'} statistical leaders
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -288,7 +280,7 @@ export default function StatLeadersClient() {
                 <div className="inline-flex rounded-lg overflow-hidden border border-gray-300">
                   <button
                     onClick={() => setDivision('fbs')}
-                    className={`px-4 py-2 font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-4 py-2 font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fbs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 hover:bg-gray-50'
@@ -298,7 +290,7 @@ export default function StatLeadersClient() {
                   </button>
                   <button
                     onClick={() => setDivision('fcs')}
-                    className={`px-4 py-2 font-semibold text-sm transition-all cursor-pointer border-l border-gray-300 ${
+                    className={`px-4 py-2 font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer border-l border-gray-300 ${
                       division === 'fcs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 hover:bg-gray-50'
@@ -324,7 +316,7 @@ export default function StatLeadersClient() {
               {/* Right side: Per-Game Toggle */}
               <button
                 onClick={() => setStatType(statType === 'total' ? 'perGame' : 'total')}
-                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all cursor-pointer ${
+                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all active:scale-[0.98] cursor-pointer ${
                   statType === 'perGame'
                     ? 'bg-[#800000] text-white'
                     : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
@@ -359,7 +351,7 @@ export default function StatLeadersClient() {
                         key={group.key}
                         onClick={() => setSelectedGroup(group.key)}
                         disabled={!hasCategories}
-                        className={`flex-shrink-0 px-6 py-3 font-semibold text-sm transition-all cursor-pointer border-b-2 ${
+                        className={`flex-shrink-0 px-6 py-3 font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer border-b-2 ${
                           isSelected
                             ? 'border-[#800000] text-[#800000] bg-gray-50'
                             : hasCategories
@@ -386,7 +378,7 @@ export default function StatLeadersClient() {
                             setSelectedCategory(category.name);
                             setDisplayCount(25);
                           }}
-                          className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
+                          className={`px-4 py-2 rounded-full text-sm font-semibold transition-all active:scale-[0.98] cursor-pointer ${
                             isSelected
                               ? 'bg-[#800000] text-white'
                               : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000]'
@@ -416,25 +408,25 @@ export default function StatLeadersClient() {
                     <table className="w-full">
                       <thead className="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
                         <tr>
-                          <th className="pl-6 pr-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 bg-gray-50">
+                          <th className="pl-6 pr-4 py-3 text-left text-xs font-semibold text-gray-600 w-16 bg-gray-50">
                             Rank
                           </th>
-                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50">
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50">
                             Player
                           </th>
-                          <th className="hidden sm:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-20 bg-gray-50">
+                          <th className="hidden sm:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-600 w-20 bg-gray-50">
                             Pos
                           </th>
-                          <th className="hidden md:table-cell px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50">
+                          <th className="hidden md:table-cell px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50">
                             Team
                           </th>
-                          <th className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 bg-gray-50">
+                          <th className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-600 w-16 bg-gray-50">
                             Class
                           </th>
-                          <th className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-16 bg-gray-50">
+                          <th className="hidden lg:table-cell px-4 py-3 text-center text-xs font-semibold text-gray-600 w-16 bg-gray-50">
                             GP
                           </th>
-                          <th className="px-4 py-3 text-right text-xs font-semibold text-gray-500 uppercase tracking-wider w-24 bg-gray-50">
+                          <th className="px-4 py-3 text-right text-xs font-semibold text-gray-600 w-24 bg-gray-50">
                             {CATEGORY_LABELS[selectedCategoryData.name]?.short || 'Value'}
                           </th>
                         </tr>
@@ -481,7 +473,7 @@ export default function StatLeadersClient() {
                                   {(() => {
                                     const teamData = getTeamById(leader.teamName);
                                     return teamData ? (
-                                      <Link href={`/teams/${teamData.slug}`} className="text-gray-700 truncate hover:text-blue-600 hover:underline">
+                                      <Link href={`/teams/${teamData.slug}`} className="text-gray-700 truncate hover:text-[#800000] hover:underline">
                                         {leader.teamName}
                                       </Link>
                                     ) : (
@@ -511,7 +503,7 @@ export default function StatLeadersClient() {
                       {displayCount < 50 && selectedCategoryData.leaders.length >= 26 && (
                         <button
                           onClick={() => setDisplayCount(50)}
-                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all bg-white border border-gray-300 hover:border-[#800000] hover:text-[#800000] text-gray-700"
+                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-white border border-gray-300 hover:border-[#800000] hover:text-[#800000] text-gray-700"
                         >
                           Show Top 50
                         </button>
@@ -519,7 +511,7 @@ export default function StatLeadersClient() {
                       {displayCount < 100 && selectedCategoryData.leaders.length >= 51 && (
                         <button
                           onClick={() => setDisplayCount(100)}
-                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all bg-white border border-gray-300 hover:border-[#800000] hover:text-[#800000] text-gray-700"
+                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-white border border-gray-300 hover:border-[#800000] hover:text-[#800000] text-gray-700"
                         >
                           Show Top 100
                         </button>
@@ -527,7 +519,7 @@ export default function StatLeadersClient() {
                       {displayCount > 25 && (
                         <button
                           onClick={() => setDisplayCount(25)}
-                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all bg-gray-100 hover:bg-gray-200 text-gray-600"
+                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-gray-100 hover:bg-gray-200 text-gray-600"
                         >
                           Show Less
                         </button>
@@ -547,8 +539,7 @@ export default function StatLeadersClient() {
           )}
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
-    </div>
+      <Footer currentPage="CFB" />
+    </>
   );
 }

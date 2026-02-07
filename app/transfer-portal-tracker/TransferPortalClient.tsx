@@ -5,7 +5,6 @@ import { TransferPlayer, PlayerStatus, PlayerClass, PlayerPosition, Conference }
 import FilterBar from '@/components/FilterBar';
 import PlayerTable from '@/components/PlayerTable';
 import Header from '@/components/Header';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
@@ -40,7 +39,13 @@ export default function TransferPortalClient() {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(25);
+  const [itemsPerPage, setItemsPerPage] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('cfb-items-per-page');
+      if (saved) return Number(saved);
+    }
+    return 25;
+  });
 
   // Valid player slugs (players that have roster pages)
   const [validPlayerSlugs, setValidPlayerSlugs] = useState<Set<string>>(new Set());
@@ -291,26 +296,16 @@ export default function TransferPortalClient() {
   const handleItemsPerPageChange = (items: number) => {
     setItemsPerPage(items);
     setCurrentPage(1);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('cfb-items-per-page', String(items));
+    }
   };
 
   // Show loading state
   if (loading) {
     return (
-      <div className="flex min-h-screen bg-gray-50">
-        {/* Desktop sidebar */}
-        <div className="hidden lg:block">
-          <div className="fixed top-0 left-0 w-64 h-screen z-10">
-            <CFBSidebar />
-          </div>
-        </div>
-
-        {/* Mobile sidebar */}
-        <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-          <CFBSidebar isMobile={true} />
-        </div>
-
-        <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
-          <Header />
+      <>
+        <Header />
 
           {/* Raptive Header Ad */}
           <div className="container mx-auto px-4 min-h-[110px]">
@@ -318,6 +313,7 @@ export default function TransferPortalClient() {
           </div>
 
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
             <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
                 {[...Array(5)].map((_, i) => (
@@ -331,53 +327,26 @@ export default function TransferPortalClient() {
 
             <TableSkeleton />
           </div>
-        </main>
-      </div>
+      </>
     );
   }
 
   // Show error state
   if (error) {
     return (
-      <div className="flex min-h-screen bg-gray-50">
-        {/* Desktop sidebar */}
-        <div className="hidden lg:block">
-          <div className="fixed top-0 left-0 w-64 h-screen z-10">
-            <CFBSidebar />
-          </div>
-        </div>
-
-        {/* Mobile sidebar */}
-        <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-          <CFBSidebar isMobile={true} />
-        </div>
-
-        <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
-          <Header />
+      <>
+        <Header />
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
             <ErrorMessage message={error} onRetry={handleRetry} />
           </div>
-        </main>
-      </div>
+      </>
     );
   }
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
-        <Header />
+    <>
+      <Header />
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -385,6 +354,7 @@ export default function TransferPortalClient() {
         </div>
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
           {/* Search & Filter Section */}
           <div className="bg-white rounded-lg shadow-md mb-6 p-4 sm:p-6">
             {/* Search Bar */}
@@ -500,8 +470,7 @@ export default function TransferPortalClient() {
           </div>
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
-    </div>
+      <Footer currentPage="CFB" />
+    </>
   );
 }

@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import CFBSidebar from '@/components/CFBSidebar';
 import CFBPlayoffBracket from '@/components/CFBPlayoffBracket';
 import Footer from '@/components/Footer';
 import { useState, useEffect } from 'react';
@@ -71,32 +70,24 @@ export default function CFBHomePageContent() {
   }, []);
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      {/* Main content */}
-      <main id="main-content" className="flex-1 lg:ml-64 min-w-0">
-        {/* Header */}
-        <div className="bg-[#800000] text-white pt-[52px] lg:pt-0 pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+    <>
+      {/* Header */}
+      <header
+        className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               College Football HQ
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl opacity-90">
+            <p className="text-lg opacity-90 font-medium">
               Your destination for college football tools, stats, and data
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -204,7 +195,7 @@ export default function CFBHomePageContent() {
                 <p className="text-gray-600 text-sm mb-4">
                   Track every player in the college football transfer portal
                 </p>
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 text-center flex-grow flex flex-col justify-center">
+                <div className="bg-gradient-to-br from-red-50 to-rose-50 rounded-lg p-4 text-center flex-grow flex flex-col justify-center">
                   <p className="text-sm font-semibold text-gray-700">Real-time Portal Updates</p>
                   <p className="text-xs text-gray-600 mt-1">Filter by position & school</p>
                 </div>
@@ -386,7 +377,7 @@ export default function CFBHomePageContent() {
             <div className="mt-6 md:hidden text-center">
               <Link
                 href="/teams"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#800000] hover:bg-[#600000] text-white font-medium rounded-lg transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#800000] hover:bg-[#600000] active:scale-[0.98] text-white font-medium rounded-lg transition-all cursor-pointer min-h-[44px]"
               >
                 View All Teams
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -398,8 +389,7 @@ export default function CFBHomePageContent() {
 
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
-    </div>
+      <Footer currentPage="CFB" />
+    </>
   );
 }

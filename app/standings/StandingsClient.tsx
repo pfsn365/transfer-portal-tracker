@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 import StandingsSkeleton from '@/components/StandingsSkeleton';
 import { getApiPath } from '@/utils/api';
@@ -190,34 +189,27 @@ export default function StandingsClient() {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      {/* Desktop sidebar */}
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-
-      {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-
-      <main className="flex-1 lg:ml-64 min-w-0 mt-[52px] lg:mt-0">
+    <>
         {/* Hero Section */}
-        <div className="bg-[#800000] text-white pb-4 lg:pb-6">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-10">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3">
+        <header
+          className="text-white shadow-lg"
+          style={{
+            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+            <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Standings
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-200">
+            <p className="text-lg opacity-90 font-medium">
               {(() => {
                 const year = new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear();
                 return `${year}-${(year + 1).toString().slice(-2)}`;
               })()} {division === 'fbs' ? 'FBS' : 'FCS'} conference standings
             </p>
           </div>
-        </div>
+        </header>
 
         {/* Raptive Header Ad */}
         <div className="container mx-auto px-4 min-h-[110px]">
@@ -233,7 +225,7 @@ export default function StandingsClient() {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setDivision('fbs')}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fbs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
@@ -243,7 +235,7 @@ export default function StandingsClient() {
                   </button>
                   <button
                     onClick={() => setDivision('fcs')}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
+                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fcs'
                         ? 'bg-[#800000] text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
@@ -341,22 +333,22 @@ export default function StandingsClient() {
                     <table className="w-full">
                       <thead className="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
                         <tr>
-                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider bg-gray-50">
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50">
                             Team
                           </th>
-                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider bg-gray-50">
+                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 bg-gray-50">
                             Conf
                           </th>
-                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider bg-gray-50">
+                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 bg-gray-50">
                             Overall
                           </th>
-                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden md:table-cell bg-gray-50">
+                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden md:table-cell bg-gray-50">
                             Home
                           </th>
-                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden md:table-cell bg-gray-50">
+                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden md:table-cell bg-gray-50">
                             Away
                           </th>
-                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden sm:table-cell bg-gray-50">
+                          <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden sm:table-cell bg-gray-50">
                             Streak
                           </th>
                         </tr>
@@ -408,7 +400,7 @@ export default function StandingsClient() {
                                     {(() => {
                                       const teamData = getTeamById(team.name);
                                       return teamData ? (
-                                        <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 truncate text-sm hover:text-blue-600 hover:underline">
+                                        <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 truncate text-sm hover:text-[#800000] hover:underline">
                                           {team.name}
                                         </Link>
                                       ) : (
@@ -491,8 +483,7 @@ export default function StandingsClient() {
           )}
         </div>
 
-        <Footer currentPage="CFB" />
-      </main>
-    </div>
+      <Footer currentPage="CFB" />
+    </>
   );
 }

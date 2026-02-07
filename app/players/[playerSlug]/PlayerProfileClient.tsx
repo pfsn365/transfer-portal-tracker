@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import CFBSidebar from '@/components/CFBSidebar';
 import Footer from '@/components/Footer';
 
 interface PlayerProfile {
@@ -171,95 +170,75 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
     return () => controller.abort();
   }, [selectedSeason, player, playerSlug]);
 
-  // Sidebar layout wrapper
-  const SidebarLayout = ({ children }: { children: React.ReactNode }) => (
-    <div className="flex min-h-screen bg-gray-50">
-      <div className="hidden lg:block">
-        <div className="fixed top-0 left-0 w-64 h-screen z-10">
-          <CFBSidebar />
-        </div>
-      </div>
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
-        <CFBSidebar isMobile={true} />
-      </div>
-      <main className="flex-1 lg:ml-64 min-w-0">
-        {children}
-        <Footer />
-      </main>
-    </div>
-  );
-
   if (loading) {
     return (
-      <SidebarLayout>
-        <div className="pt-[57px] lg:pt-0">
-          <div className="flex items-center justify-center py-24">
-            <div className="text-center">
-              <svg
-                className="animate-spin h-12 w-12 mx-auto mb-4 text-[#800000]"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                />
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                />
-              </svg>
-              <p className="text-gray-600 font-medium">Loading player profile...</p>
-            </div>
+      <>
+        <div className="flex items-center justify-center py-24">
+          <div className="text-center">
+            <svg
+              className="animate-spin h-12 w-12 mx-auto mb-4 text-[#800000]"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg>
+            <p className="text-gray-600 font-medium">Loading player profile...</p>
           </div>
         </div>
-      </SidebarLayout>
+        <Footer />
+      </>
     );
   }
 
   if (error || !player) {
     return (
-      <SidebarLayout>
-        <div className="pt-[57px] lg:pt-0">
-          <div className="max-w-7xl mx-auto px-4 py-12">
-            <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-              <div className="flex items-start gap-3">
-                <svg
-                  className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+      <>
+        <div className="max-w-7xl mx-auto px-4 py-12">
+          <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+            <div className="flex items-start gap-3">
+              <svg
+                className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <div>
+                <h3 className="text-red-800 font-semibold mb-1">
+                  {error === 'Player not found' ? 'Player Not Found' : 'Error Loading Player'}
+                </h3>
+                <p className="text-red-600 text-sm">{error}</p>
+                <Link
+                  href="/players"
+                  className="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 text-sm"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <div>
-                  <h3 className="text-red-800 font-semibold mb-1">
-                    {error === 'Player not found' ? 'Player Not Found' : 'Error Loading Player'}
-                  </h3>
-                  <p className="text-red-600 text-sm">{error}</p>
-                  <Link
-                    href="/players"
-                    className="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 text-sm"
-                  >
-                    Browse All Players
-                  </Link>
-                </div>
+                  Browse All Players
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </SidebarLayout>
+        <Footer />
+      </>
     );
   }
 
@@ -267,9 +246,9 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
   const selectedCategoryData = player.careerStats.find(c => c.category === selectedStatCategory);
 
   return (
-    <SidebarLayout>
+    <>
       {/* Hero Section with Team Primary Color */}
-      <div className="text-white pt-[57px] lg:pt-0" style={{ backgroundColor: player.team?.primaryColor || '#800000' }}>
+      <div className="text-white" style={{ backgroundColor: player.team?.primaryColor || '#800000' }}>
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center gap-5">
             {/* Player Headshot with circular white background */}
@@ -492,7 +471,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                     <button
                       key={cat.category}
                       onClick={() => setSelectedStatCategory(cat.category)}
-                      className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                      className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all active:scale-[0.98] cursor-pointer ${
                         selectedStatCategory === cat.category
                           ? 'bg-[#800000] text-white'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -587,6 +566,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
           </Link>
         </div>
       </div>
-    </SidebarLayout>
+      <Footer />
+    </>
   );
 }
