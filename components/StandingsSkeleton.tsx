@@ -16,22 +16,22 @@ export default function StandingsSkeleton() {
             <table className="w-full">
               <thead className="bg-gray-50 border-b border-gray-200">
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">
                     Team
                   </th>
-                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600">
                     Conf
                   </th>
-                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600">
                     Overall
                   </th>
-                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden md:table-cell">
                     Home
                   </th>
-                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden md:table-cell">
+                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden md:table-cell">
                     Away
                   </th>
-                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden sm:table-cell">
+                  <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden sm:table-cell">
                     Streak
                   </th>
                 </tr>

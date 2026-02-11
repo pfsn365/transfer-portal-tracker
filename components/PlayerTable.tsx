@@ -1,5 +1,5 @@
 import { TransferPlayer, PlayerPosition } from '@/types/player';
-import { ArrowRight, ChevronUp, ChevronDown, Star, Info } from 'lucide-react';
+import { ArrowRight, ArrowUp, ArrowDown, Star, Info } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -143,20 +143,12 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
     const isActive = sortField === field;
     return (
       <th
-        className={`px-6 py-4 ${centered ? 'text-center' : 'text-left'} text-xs font-bold text-gray-700 uppercase tracking-wider cursor-pointer hover:bg-gray-200 transition-colors select-none`}
+        className={`py-3 px-3 sm:px-4 ${centered ? 'text-center' : 'text-left'} text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 select-none`}
         onClick={() => onSort(field)}
       >
-        <div className={`flex items-center gap-1 ${centered ? 'justify-center' : ''}`}>
-          {children}
-          <div className="flex flex-col">
-            <ChevronUp
-              className={`w-3 h-3 -mb-1 ${isActive && sortDirection === 'asc' ? 'text-blue-600' : 'text-gray-500'}`}
-            />
-            <ChevronDown
-              className={`w-3 h-3 ${isActive && sortDirection === 'desc' ? 'text-blue-600' : 'text-gray-500'}`}
-            />
-          </div>
-        </div>
+        {children}
+        {isActive && sortDirection === 'asc' && <ArrowUp className="w-3 h-3 inline ml-1" />}
+        {isActive && sortDirection === 'desc' && <ArrowDown className="w-3 h-3 inline ml-1" />}
       </th>
     );
   };
@@ -225,13 +217,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
       <div className="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden content-auto">
         <div className="overflow-x-auto table-scroll-permanent">
           <table className="w-full">
-            <thead className="bg-gray-100 border-b-2 border-gray-200">
+            <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="px-4 py-4 w-16"></th>
+                <th className="py-3 px-3 sm:px-4 w-16"></th>
                 <SortableHeader field="name">Player</SortableHeader>
                 <SortableHeader field="status">Status</SortableHeader>
                 <SortableHeader field="formerSchool" centered>Previous School</SortableHeader>
-                <th className="px-2 py-4 w-8"></th>
+                <th className="py-3 px-2 w-8"></th>
                 <SortableHeader field="newSchool" centered>New School</SortableHeader>
                 <SortableHeader field="rating" centered>
                   <div className="flex items-center justify-center gap-1">
@@ -415,7 +407,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                               href={url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-lg font-bold text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                              className="text-lg font-bold text-[#800000] hover:text-[#600000] hover:underline transition-colors"
                             >
                               {player.rating.toFixed(1)}
                             </Link>
@@ -484,9 +476,9 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 className="px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
               >
                 {sortDirection === 'asc' ? (
-                  <ChevronUp className="w-5 h-5" />
+                  <ArrowUp className="w-5 h-5" />
                 ) : (
-                  <ChevronDown className="w-5 h-5" />
+                  <ArrowDown className="w-5 h-5" />
                 )}
               </button>
             )}
@@ -548,7 +540,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           href={url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                          className="text-[#800000] hover:text-[#600000] hover:underline transition-colors"
                         >
                           {player.rating.toFixed(1)}
                         </Link>

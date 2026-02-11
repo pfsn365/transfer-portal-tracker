@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
@@ -13,6 +13,11 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
   const [isCFBToolsExpanded, setIsCFBToolsExpanded] = useState(true);
   const [isOtherToolsExpanded, setIsOtherToolsExpanded] = useState(true);
   const pathname = usePathname();
+
+  // Auto-close mobile menu on navigation
+  useEffect(() => {
+    setIsExpanded(false);
+  }, [pathname]);
 
   const normalizePath = (path: string) => path.replace(/\/$/, '');
   const normalizedPathname = normalizePath(pathname);
@@ -31,7 +36,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     { title: 'CFB Standings', url: '/standings', external: false },
     { title: 'CFB Rankings', url: '/rankings', external: false },
     { title: 'CFB Stat Leaders', url: '/stat-leaders', external: false },
-    { title: 'CFB Postseason Hub', url: '/postseason', external: false },
+    { title: 'CFB Postseason HQ', url: '/postseason', external: false },
     { title: 'CFB Power Rankings Builder', url: '/power-rankings-builder', external: false },
     { title: 'CFB Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
     { title: 'CFB Player Pages', url: '/players', external: false },
@@ -51,6 +56,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     { title: 'MLB Playoff Predictor', url: 'https://www.profootballnetwork.com/mlb-playoff-predictor/' },
     { title: 'World Cup Simulator', url: 'https://www.profootballnetwork.com/fifa-world-cup-simulator' },
     { title: 'Tennis Simulator', url: 'https://www.profootballnetwork.com/tennis-simulator' },
+    { title: 'NASCAR Predictor', url: 'https://www.profootballnetwork.com/nascar-predictor/' },
   ];
 
   // Mobile version

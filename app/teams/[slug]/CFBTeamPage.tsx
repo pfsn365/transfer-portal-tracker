@@ -97,6 +97,16 @@ function TeamHeroSection({ team, teamColor, record, conferenceRank, headCoach }:
   );
 }
 
+const TAB_TITLES: Record<string, string> = {
+  overview: 'Overview',
+  transfers: 'Transfer Portal',
+  roster: 'Roster',
+  schedule: 'Schedule',
+  stats: 'Stats',
+  history: 'Record by Year',
+  draft: 'NFL Draft History',
+};
+
 function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(initialTab || 'overview');
@@ -209,6 +219,10 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
       </div>
 
       <div className="container mx-auto px-4 py-6 pb-24">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">
+          {team.name} {TAB_TITLES[activeTab] || 'Overview'}
+        </h2>
+        <div className="w-16 h-1 rounded-full mb-6" style={{ backgroundColor: teamColor }} />
         {renderActiveTab()}
       </div>
     </>

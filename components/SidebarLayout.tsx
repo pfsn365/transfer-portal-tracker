@@ -47,13 +47,13 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
       </button>
 
       {/* Mobile sidebar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-20">
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-30">
         <CFBSidebar isMobile />
       </div>
 
       {/* Content wrapper */}
       <div
-        className={`flex-1 min-w-0 mt-[52px] lg:mt-0 transition-all duration-300 ${
+        className={`flex-1 min-w-0 mt-[48px] lg:mt-0 transition-all duration-300 ${
           sidebarCollapsed ? 'lg:ml-0' : 'lg:ml-64'
         }`}
       >

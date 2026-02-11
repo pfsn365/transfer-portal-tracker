@@ -70,11 +70,10 @@ function StatCard({ label, value, subtext, teamColor }: { label: string; value: 
 
 // Sort indicator component
 function SortIndicator({ active, direction }: { active: boolean; direction: 'asc' | 'desc' }) {
-  return (
-    <span className={`ml-1 inline-block ${active ? 'text-gray-700' : 'text-gray-300'}`}>
-      {direction === 'asc' ? '▲' : '▼'}
-    </span>
-  );
+  if (!active) return null;
+  return direction === 'asc'
+    ? <svg className="w-3 h-3 inline ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    : <svg className="w-3 h-3 inline ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>;
 }
 
 type SortColumn = 'year' | 'round' | 'pick' | 'name' | 'position' | 'nflTeam';
@@ -292,7 +291,7 @@ export default function DraftTab({ team, teamColor }: DraftTabProps) {
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
-              <tr className="text-xs text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+              <tr className="text-xs font-semibold text-gray-600 border-b border-gray-200 bg-gray-50">
                 <th
                   className="text-left py-3 px-4 cursor-pointer hover:bg-gray-100 select-none"
                   onClick={() => handleSort('year')}

@@ -104,7 +104,6 @@ async function buildPlayerIndex(): Promise<void> {
 
   playerIndex = newIndex;
   playerIndexTimestamp = Date.now();
-  console.log(`CFB Player index built with ${newIndex.size} players`);
 }
 
 // Get or build the player index (with deduplication for concurrent requests)

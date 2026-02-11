@@ -190,13 +190,13 @@ export default function RosterTab({ team, teamColor }: RosterTabProps) {
               <table className="w-full">
                 <thead className="bg-gray-50 border-b border-gray-200">
                   <tr>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">#</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Name</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Pos</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell">Class</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden md:table-cell">Height</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden md:table-cell">Weight</th>
-                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden lg:table-cell">Hometown</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">#</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Name</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Pos</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden sm:table-cell">Class</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden md:table-cell">Height</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden md:table-cell">Weight</th>
+                    <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden lg:table-cell">Hometown</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">

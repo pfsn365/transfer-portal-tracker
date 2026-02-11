@@ -130,22 +130,22 @@ export default function RankingsClient() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Poll Tabs */}
           {!loading && data?.rankings && data.rankings.length > 0 && (
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 mb-6">
-              <div className="flex flex-wrap gap-2">
+            <div className="sticky top-[48px] lg:top-0 z-20 bg-white border-b border-gray-200 shadow-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-6">
+              <nav className="flex gap-2 overflow-x-auto scrollbar-hide py-2.5">
                 {data.rankings.map((poll) => (
                   <button
                     key={poll.name}
                     onClick={() => setSelectedPoll(poll.name)}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                       selectedPoll === poll.name
                         ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
                     {poll.shortName || poll.name}
                   </button>
                 ))}
-              </div>
+              </nav>
             </div>
           )}
 

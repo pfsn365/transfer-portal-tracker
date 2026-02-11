@@ -33,19 +33,19 @@ export default function PowerRankingsSkeleton() {
           <table className="w-full">
             <thead className="bg-gray-100 border-b border-gray-200">
               <tr>
-                <th className="w-12 px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase">
+                <th className="w-12 px-2 py-3 text-center text-xs font-semibold text-gray-600">
                   #
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">
+                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">
                   Team
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell">
+                <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 hidden sm:table-cell">
                   Record
                 </th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase hidden md:table-cell">
+                <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 hidden md:table-cell">
                   Conference
                 </th>
-                <th className="w-24 px-2 py-3 text-center text-xs font-semibold text-gray-600 uppercase hidden sm:table-cell">
+                <th className="w-24 px-2 py-3 text-center text-xs font-semibold text-gray-600 hidden sm:table-cell">
                   Move
                 </th>
               </tr>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CFBPlayoffBracket from '@/components/CFBPlayoffBracket';
 import Footer from '@/components/Footer';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { getApiPath } from '@/utils/api';
 
 // Featured FBS teams (popular/successful programs)
@@ -32,9 +32,103 @@ interface CategoryData {
   leaders: StatLeader[];
 }
 
+const SECTIONS = [
+  { id: 'playoff', label: 'Playoff' },
+  { id: 'stat-leaders', label: 'Stat Leaders' },
+  { id: 'tools', label: 'Tools' },
+  { id: 'teams', label: 'Teams' },
+] as const;
+
 export default function CFBHomePageContent() {
   const [statLeaders, setStatLeaders] = useState<CategoryData[]>([]);
   const [statLeadersLoading, setStatLeadersLoading] = useState(true);
+  const [activeSection, setActiveSection] = useState<string>(SECTIONS[0].id);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+  const pillNavRef = useRef<HTMLDivElement>(null);
+
+  // Update scroll indicators for pill nav
+  const updateScrollIndicators = useCallback(() => {
+    const nav = pillNavRef.current;
+    if (!nav) return;
+    setCanScrollLeft(nav.scrollLeft > 2);
+    setCanScrollRight(nav.scrollLeft < nav.scrollWidth - nav.clientWidth - 2);
+  }, []);
+
+  // Scroll active pill into view
+  const scrollActivePillIntoView = useCallback((sectionId: string) => {
+    const nav = pillNavRef.current;
+    if (!nav) return;
+    const pill = nav.querySelector(`[data-section="${sectionId}"]`) as HTMLElement | null;
+    if (!pill) return;
+    const navRect = nav.getBoundingClientRect();
+    const pillRect = pill.getBoundingClientRect();
+    if (pillRect.left < navRect.left) {
+      nav.scrollBy({ left: pillRect.left - navRect.left - 16, behavior: 'smooth' });
+    } else if (pillRect.right > navRect.right) {
+      nav.scrollBy({ left: pillRect.right - navRect.right + 16, behavior: 'smooth' });
+    }
+  }, []);
+
+  // IntersectionObserver scroll-spy
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    const visibleSections = new Map<string, number>();
+
+    SECTIONS.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.set(id, entry.intersectionRatio);
+            } else {
+              visibleSections.delete(id);
+            }
+          });
+          // Pick the section with the highest intersection ratio
+          let bestId = '';
+          let bestRatio = 0;
+          visibleSections.forEach((ratio, sId) => {
+            if (ratio > bestRatio) {
+              bestRatio = ratio;
+              bestId = sId;
+            }
+          });
+          if (bestId) {
+            setActiveSection(bestId);
+            scrollActivePillIntoView(bestId);
+          }
+        },
+        { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-120px 0px -40% 0px' }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, [scrollActivePillIntoView]);
+
+  // Track pill nav scroll indicators
+  useEffect(() => {
+    const nav = pillNavRef.current;
+    if (!nav) return;
+    updateScrollIndicators();
+    nav.addEventListener('scroll', updateScrollIndicators, { passive: true });
+    window.addEventListener('resize', updateScrollIndicators);
+    return () => {
+      nav.removeEventListener('scroll', updateScrollIndicators);
+      window.removeEventListener('resize', updateScrollIndicators);
+    };
+  }, [updateScrollIndicators]);
+
+  const handlePillClick = (sectionId: string) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   // Fetch all data on mount
   useEffect(() => {
@@ -94,13 +188,46 @@ export default function CFBHomePageContent() {
           <div className="raptive-pfn-header-90"></div>
         </div>
 
+        {/* Sticky Pill Navigation */}
+        <div className="sticky top-[88px] lg:top-[40px] z-10 bg-white border-b border-gray-200 shadow-sm">
+          <div className="container mx-auto px-4 relative">
+            {/* Left fade */}
+            {canScrollLeft && (
+              <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+            )}
+            {/* Right fade */}
+            {canScrollRight && (
+              <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+            )}
+            <div
+              ref={pillNavRef}
+              className="flex gap-2 py-2.5 overflow-x-auto scrollbar-hide"
+            >
+              {SECTIONS.map(({ id, label }) => (
+                <button
+                  key={id}
+                  data-section={id}
+                  onClick={() => handlePillClick(id)}
+                  className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
+                    activeSection === id
+                      ? 'bg-[#800000] text-white'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* CFB Playoff Bracket */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <div id="playoff" className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8 scroll-mt-[140px] lg:scroll-mt-[92px]">
           <CFBPlayoffBracket />
         </div>
 
         {/* Stat Leaders Section */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="stat-leaders" className="container mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-[140px] lg:scroll-mt-[92px]">
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-8">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">Stat Leaders</h2>
@@ -173,7 +300,7 @@ export default function CFBHomePageContent() {
         </div>
 
         {/* Tools & Features Grid */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="tools" className="container mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-[140px] lg:scroll-mt-[92px]">
           <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-8">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900">
@@ -335,7 +462,7 @@ export default function CFBHomePageContent() {
           </div>
 
           {/* Featured Teams Section */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-8">
+          <div id="teams" className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-8 scroll-mt-[140px] lg:scroll-mt-[92px]">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-gray-900">
                 Featured Teams

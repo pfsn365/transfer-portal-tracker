@@ -141,7 +141,6 @@ async function buildPlayersCache(): Promise<void> {
 
   playersCache = players;
   playersCacheTimestamp = Date.now();
-  console.log(`Players cache built with ${players.length} players`);
 }
 
 // Get or build players cache

@@ -273,7 +273,7 @@ export default function StatLeadersClient() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Controls Row */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 mb-6">
+          <div className="sticky top-[48px] lg:top-0 z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-3 mb-3 border-b border-gray-200 shadow-sm">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
               {/* Left side: Division Toggle & Conference Filter */}
               <div className="flex flex-wrap items-center gap-3">
@@ -341,8 +341,8 @@ export default function StatLeadersClient() {
           {!loading && !error && (
             <>
               {/* Stat Group Tabs */}
-              <div className="bg-white rounded-lg shadow-sm mb-6 overflow-hidden">
-                <div className="flex overflow-x-auto border-b border-gray-200">
+              <div className="sticky top-[96px] lg:top-[48px] z-[19] bg-white shadow-sm mb-6 overflow-hidden border-b border-gray-200 -mx-4 sm:-mx-6 lg:-mx-8">
+                <div className="flex overflow-x-auto scrollbar-hide border-b border-gray-200 px-4 sm:px-6 lg:px-8">
                   {STAT_GROUPS.map((group) => {
                     const isSelected = selectedGroup === group.key;
                     const hasCategories = categories.some(c => c.group === group.key);
@@ -366,8 +366,8 @@ export default function StatLeadersClient() {
                 </div>
 
                 {/* Category Selection within group */}
-                <div className="p-4 bg-gray-50">
-                  <div className="flex flex-wrap gap-2">
+                <div className="px-4 sm:px-6 lg:px-8 py-3 bg-gray-50">
+                  <div className="flex gap-2 overflow-x-auto scrollbar-hide">
                     {groupCategories.map((category) => {
                       const label = CATEGORY_LABELS[category.name] || { short: category.displayName, color: 'bg-gray-100 text-gray-800' };
                       const isSelected = selectedCategory === category.name;
@@ -378,10 +378,10 @@ export default function StatLeadersClient() {
                             setSelectedCategory(category.name);
                             setDisplayCount(25);
                           }}
-                          className={`px-4 py-2 rounded-full text-sm font-semibold transition-all active:scale-[0.98] cursor-pointer ${
+                          className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                             isSelected
                               ? 'bg-[#800000] text-white'
-                              : 'bg-white text-gray-700 border border-gray-200 hover:border-[#800000] hover:text-[#800000]'
+                              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                           }`}
                         >
                           {label.short}

@@ -1123,22 +1123,24 @@ export default function PowerRankingsClient() {
 
           {/* Conference Selector */}
           {!loading && (
-            <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
-              <div className="flex flex-wrap items-center gap-2 mb-2">
-                <span className="text-sm font-medium text-gray-700 mr-2">Rankings Mode:</span>
-                {currentConferences.map((conf) => (
-                  <button
-                    key={conf}
-                    onClick={() => setConferenceFilter(conf)}
-                    className={`px-3 py-1.5 text-sm rounded-lg font-medium transition-all active:scale-[0.98] cursor-pointer ${
-                      conferenceFilter === conf
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                    }`}
-                  >
-                    {conf}
-                  </button>
-                ))}
+            <div className="sticky top-[48px] lg:top-0 z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-3 mb-3 border-b border-gray-200 shadow-sm">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-sm font-medium text-gray-700 mr-2 whitespace-nowrap">Rankings Mode:</span>
+                <nav className="flex gap-2 overflow-x-auto scrollbar-hide">
+                  {currentConferences.map((conf) => (
+                    <button
+                      key={conf}
+                      onClick={() => setConferenceFilter(conf)}
+                      className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
+                        conferenceFilter === conf
+                          ? 'bg-[#800000] text-white'
+                          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      }`}
+                    >
+                      {conf}
+                    </button>
+                  ))}
+                </nav>
               </div>
               <p className="text-xs text-gray-500">
                 {conferenceFilter === 'All'
@@ -1416,21 +1418,21 @@ export default function PowerRankingsClient() {
                   {/* Poll Selector */}
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <span className="text-sm font-medium text-purple-900">Compare against:</span>
-                    <div className="flex gap-2">
+                    <nav className="flex gap-2 overflow-x-auto scrollbar-hide">
                       {(['ap', 'coaches', 'cfp'] as const).map((poll) => (
                         <button
                           key={poll}
                           onClick={() => changePoll(poll)}
-                          className={`px-3 py-1.5 text-sm rounded-lg font-medium cursor-pointer transition-colors ${
+                          className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap cursor-pointer transition-colors ${
                             selectedPoll === poll
                               ? 'bg-purple-600 text-white'
-                              : 'bg-white text-purple-700 border border-purple-300 hover:bg-purple-100'
+                              : 'bg-purple-50 text-purple-700 hover:bg-purple-100'
                           }`}
                         >
                           {poll === 'ap' ? 'AP Poll' : poll === 'coaches' ? 'Coaches Poll' : 'CFP Rankings'}
                         </button>
                       ))}
-                    </div>
+                    </nav>
                   </div>
 
                   {/* Comparison Stats */}
@@ -1438,16 +1440,16 @@ export default function PowerRankingsClient() {
                     const stats = getComparisonStats();
                     if (!stats) return null;
                     return (
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-                        <div className="bg-white rounded-lg p-3 border border-purple-200">
+                      <div className="flex overflow-x-auto scrollbar-hide gap-4 -mx-4 px-4 snap-x snap-mandatory pb-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:mx-0 sm:px-0 sm:overflow-visible sm:pb-0 sm:snap-none mb-4">
+                        <div className="min-w-[280px] w-[85vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink bg-white rounded-lg p-3 border border-purple-200">
                           <div className="text-2xl font-bold text-purple-700">{stats.matches}/25</div>
                           <div className="text-sm text-gray-600">Exact Matches</div>
                         </div>
-                        <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="min-w-[280px] w-[85vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink bg-white rounded-lg p-3 border border-purple-200">
                           <div className="text-2xl font-bold text-purple-700">{stats.avgDiff}</div>
                           <div className="text-sm text-gray-600">Avg. Position Diff</div>
                         </div>
-                        <div className="bg-white rounded-lg p-3 border border-purple-200">
+                        <div className="min-w-[280px] w-[85vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink bg-white rounded-lg p-3 border border-purple-200">
                           <div className="text-2xl font-bold text-purple-700">{stats.hotTakes.length}</div>
                           <div className="text-sm text-gray-600">Hot Takes (±5 spots)</div>
                         </div>

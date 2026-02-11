@@ -141,23 +141,25 @@ export default function PostseasonClient() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Tab Navigation */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-2 mb-6 overflow-x-auto">
-            <div className="flex gap-1 min-w-max">
+          <div className="sticky top-[48px] lg:top-0 z-20 bg-white border-b border-gray-200 shadow-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+            <nav className="flex gap-2 overflow-x-auto scrollbar-hide py-2.5">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer whitespace-nowrap ${
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                     activeTab === tab.id
                       ? 'bg-[#800000] text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-100'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                   }`}
                 >
                   {tab.label}
                 </button>
               ))}
-            </div>
+            </nav>
           </div>
+
+          <div className="h-6"></div>
 
           {/* Tab Content */}
           {activeTab === 'playoff' && (
@@ -196,11 +198,11 @@ export default function PostseasonClient() {
                   <h2 className="text-lg font-bold text-white">2025-26 College Football Playoff Teams</h2>
                 </div>
                 <div className="p-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="flex overflow-x-auto scrollbar-hide gap-4 -mx-4 px-4 snap-x snap-mandatory pb-2 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 sm:mx-0 sm:px-0 sm:overflow-visible sm:pb-0 sm:snap-none">
                     {playoffTeams2025.map((team) => (
                       <div
                         key={team.seed}
-                        className={`border rounded-lg p-4 ${
+                        className={`min-w-[280px] w-[85vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink border rounded-lg p-4 ${
                           team.result === 'National Champion'
                             ? 'border-amber-400 bg-amber-50'
                             : 'border-gray-200 bg-white'
@@ -355,11 +357,11 @@ export default function PostseasonClient() {
                   <h2 className="text-lg font-bold text-white">2025-26 FCS Playoff Teams (24-Team Bracket)</h2>
                 </div>
                 <div className="p-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                  <div className="flex overflow-x-auto scrollbar-hide gap-4 -mx-4 px-4 snap-x snap-mandatory pb-2 sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-3 sm:mx-0 sm:px-0 sm:overflow-visible sm:pb-0 sm:snap-none">
                     {fcsPlayoffTeams2025.map((team, index) => (
                       <div
                         key={team.team}
-                        className={`border rounded-lg p-3 ${
+                        className={`min-w-[280px] w-[85vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink border rounded-lg p-3 ${
                           team.result === 'National Champion'
                             ? 'border-amber-400 bg-amber-50'
                             : team.result === 'Lost in Championship'
@@ -422,7 +424,7 @@ export default function PostseasonClient() {
               {/* Bowl Filter */}
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
                 <div className="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-                  <div className="flex gap-2 flex-wrap">
+                  <nav className="flex gap-2 overflow-x-auto scrollbar-hide">
                     {[
                       { id: 'all', label: 'All Bowl Games' },
                       { id: 'cfp', label: 'CFP Games Only' },
@@ -431,16 +433,16 @@ export default function PostseasonClient() {
                       <button
                         key={filter.id}
                         onClick={() => setBowlFilter(filter.id as typeof bowlFilter)}
-                        className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
+                        className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                           bowlFilter === filter.id
                             ? 'bg-[#800000] text-white'
-                            : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                         }`}
                       >
                         {filter.label}
                       </button>
                     ))}
-                  </div>
+                  </nav>
                   <div className="relative">
                     <input
                       type="text"
@@ -667,28 +669,28 @@ export default function PostseasonClient() {
             <div className="space-y-6">
               {/* FBS/FCS Toggle */}
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-                <div className="flex gap-2">
+                <nav className="flex gap-2 overflow-x-auto scrollbar-hide">
                   <button
                     onClick={() => setChampionsView('fbs')}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                       championsView === 'fbs'
                         ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
                     FBS (Division I)
                   </button>
                   <button
                     onClick={() => setChampionsView('fcs')}
-                    className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
+                    className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                       championsView === 'fcs'
                         ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                     }`}
                   >
                     FCS (Division I-AA)
                   </button>
-                </div>
+                </nav>
               </div>
 
               {championsView === 'fbs' && (
@@ -699,11 +701,11 @@ export default function PostseasonClient() {
                       <h2 className="text-lg font-bold text-white">Most National Championships by School</h2>
                     </div>
                     <div className="p-4">
-                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                      <div className="flex overflow-x-auto scrollbar-hide gap-3 -mx-4 px-4 snap-x snap-mandatory pb-2 sm:grid sm:grid-cols-3 md:grid-cols-5 sm:gap-3 sm:mx-0 sm:px-0 sm:overflow-visible sm:pb-0 sm:snap-none">
                         {championshipCounts.map((school, idx) => (
                           <div
                             key={school.school}
-                            className={`text-center p-3 rounded-lg border ${
+                            className={`min-w-[140px] w-[40vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink text-center p-3 rounded-lg border ${
                               idx === 0 ? 'bg-amber-50 border-amber-300' : 'bg-gray-50 border-gray-200'
                             }`}
                           >
@@ -806,11 +808,11 @@ export default function PostseasonClient() {
                       <h2 className="text-lg font-bold text-white">Most FCS Championships by School</h2>
                     </div>
                     <div className="p-4">
-                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                      <div className="flex overflow-x-auto scrollbar-hide gap-3 -mx-4 px-4 snap-x snap-mandatory pb-2 sm:grid sm:grid-cols-3 md:grid-cols-5 sm:gap-3 sm:mx-0 sm:px-0 sm:overflow-visible sm:pb-0 sm:snap-none">
                         {fcsChampionshipCounts.map((school, idx) => (
                           <div
                             key={school.school}
-                            className={`text-center p-3 rounded-lg border ${
+                            className={`min-w-[140px] w-[40vw] flex-shrink-0 snap-start sm:min-w-0 sm:w-auto sm:flex-shrink text-center p-3 rounded-lg border ${
                               idx === 0 ? 'bg-amber-50 border-amber-300' : 'bg-gray-50 border-gray-200'
                             }`}
                           >

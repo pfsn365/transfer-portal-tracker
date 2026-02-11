@@ -19,31 +19,20 @@ export default function Pagination({
   onItemsPerPageChange,
   itemsPerPageOptions = [25, 50, 100],
 }: PaginationProps) {
-  const getPageNumbers = () => {
-    const pages: number[] = [];
-    const maxVisible = 3; // Show 3 pages at a time
-
-    if (totalPages <= maxVisible) {
-      // Show all pages if total is 3 or less
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      // Calculate which 3 pages to show based on current page
-      let startPage = Math.max(1, currentPage - 1);
-      let endPage = Math.min(totalPages, startPage + maxVisible - 1);
-
-      // Adjust if we're near the end
-      if (endPage === totalPages) {
-        startPage = Math.max(1, totalPages - maxVisible + 1);
-      }
-
-      for (let i = startPage; i <= endPage; i++) {
-        pages.push(i);
-      }
+  const getPageNumbers = (): (number | '...')[] => {
+    if (totalPages <= 7) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
     }
 
-    return pages;
+    if (currentPage <= 4) {
+      return [1, 2, 3, 4, 5, '...', totalPages];
+    }
+
+    if (currentPage >= totalPages - 3) {
+      return [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    }
+
+    return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
   };
 
   const startItem = (currentPage - 1) * itemsPerPage + 1;
@@ -72,45 +61,82 @@ export default function Pagination({
           </span>
         </div>
 
-        {/* Page numbers */}
+        {/* Page numbers - Desktop */}
         {totalPages > 1 && (
-          <div className="flex items-center gap-1 sm:gap-2 justify-center flex-wrap">
+          <div className="hidden sm:flex items-center gap-2 justify-center flex-wrap">
             {/* Previous button */}
             <button
               type="button"
               onClick={() => onPageChange(currentPage - 1)}
               disabled={currentPage === 1}
-              className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed transition-all cursor-pointer"
               aria-label="Previous page"
             >
-              <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+              <ChevronLeft className="w-5 h-5" />
             </button>
 
-            {/* Page numbers */}
-            {getPageNumbers().map((page) => (
-              <button
-                key={page}
-                type="button"
-                onClick={() => onPageChange(page)}
-                className={`min-w-[36px] sm:min-w-[40px] px-2 sm:px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  page === currentPage
-                    ? 'bg-[#800000] text-white cursor-default'
-                    : 'border border-gray-300 hover:bg-gray-50 text-gray-700 cursor-pointer'
-                }`}
-              >
-                {page}
-              </button>
-            ))}
+            {/* Page numbers with ellipsis */}
+            {getPageNumbers().map((page, index) =>
+              page === '...' ? (
+                <span key={`ellipsis-${index}`} className="text-gray-400 px-2 select-none">
+                  ...
+                </span>
+              ) : (
+                <button
+                  key={page}
+                  type="button"
+                  onClick={() => onPageChange(page)}
+                  className={`min-w-[40px] px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                    page === currentPage
+                      ? 'bg-[#800000] text-white cursor-default'
+                      : 'border border-gray-300 hover:bg-gray-50 active:scale-[0.98] text-gray-700 cursor-pointer'
+                  }`}
+                >
+                  {page}
+                </button>
+              )
+            )}
 
             {/* Next button */}
             <button
               type="button"
               onClick={() => onPageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed transition-all cursor-pointer"
               aria-label="Next page"
             >
-              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
+        )}
+
+        {/* Page numbers - Mobile */}
+        {totalPages > 1 && (
+          <div className="flex sm:hidden items-center gap-2 justify-center">
+            {/* Previous button */}
+            <button
+              type="button"
+              onClick={() => onPageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed transition-all cursor-pointer"
+              aria-label="Previous page"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+
+            <span className="text-sm font-medium text-gray-700">
+              Page {currentPage} / {totalPages}
+            </span>
+
+            {/* Next button */}
+            <button
+              type="button"
+              onClick={() => onPageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-lg border border-gray-300 hover:bg-gray-50 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed transition-all cursor-pointer"
+              aria-label="Next page"
+            >
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         )}

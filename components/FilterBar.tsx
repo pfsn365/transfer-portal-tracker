@@ -102,7 +102,7 @@ function CustomSchoolDropdown({
                   key={conference}
                   type="button"
                   onClick={() => handleConferenceClick(conference)}
-                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-base text-gray-900 transition-colors cursor-pointer"
+                  className="w-full text-left px-3 py-2 hover:bg-gray-50 text-base text-gray-900 transition-colors cursor-pointer"
                 >
                   {conference}
                 </button>
@@ -114,7 +114,7 @@ function CustomSchoolDropdown({
               <button
                 type="button"
                 onClick={handleBackClick}
-                className="w-full text-left px-3 py-2 text-base font-semibold text-blue-600 hover:bg-blue-50 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
+                className="w-full text-left px-3 py-2 text-base font-semibold text-[#800000] hover:bg-gray-50 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
               >
                 ← Back to Conferences
               </button>
@@ -126,7 +126,7 @@ function CustomSchoolDropdown({
                   key={team.id}
                   type="button"
                   onClick={() => handleTeamClick(team.name)}
-                  className="w-full text-left px-3 py-2 hover:bg-blue-50 text-base text-gray-900 transition-colors cursor-pointer"
+                  className="w-full text-left px-3 py-2 hover:bg-gray-50 text-base text-gray-900 transition-colors cursor-pointer"
                 >
                   {team.name}
                 </button>

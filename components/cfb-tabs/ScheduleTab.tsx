@@ -172,11 +172,11 @@ export default function ScheduleTab({ team, teamColor, initialSchedule }: Schedu
           <table className="w-full">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Week</th>
-                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Date</th>
-                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase">Opponent</th>
-                <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase">Result</th>
-                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase hidden md:table-cell">Venue</th>
+                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Week</th>
+                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Date</th>
+                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600">Opponent</th>
+                <th className="px-4 py-3 text-center text-xs font-semibold text-gray-600">Result</th>
+                <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 hidden md:table-cell">Venue</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">

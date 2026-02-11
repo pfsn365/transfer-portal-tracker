@@ -221,7 +221,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="text-xs text-gray-500 uppercase border-b border-gray-200">
+                <tr className="text-xs font-semibold text-gray-600 border-b border-gray-200">
                   <th className="text-left py-2 px-2">Statistic</th>
                   <th className="text-right py-2 px-2">Value</th>
                 </tr>
@@ -248,7 +248,7 @@ export default function StatsTab({ team, teamColor }: StatsTabProps) {
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="text-xs text-gray-500 uppercase border-b border-gray-200">
+                <tr className="text-xs font-semibold text-gray-600 border-b border-gray-200">
                   <th className="text-left py-2 px-2">Player</th>
                   <th className="text-left py-2 px-2">Pos</th>
                   <th className="text-right py-2 px-2">{currentCategory?.name || 'Value'}</th>

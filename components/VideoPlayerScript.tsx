@@ -47,13 +47,11 @@ function removeClass(element: HTMLElement | null, className: string) {
 function loadSTN(target: HTMLElement) {
   window.addEventListener('load', function() {
     if (typeof window.gtag === 'function') {
-      console.log('gtag triggered for stn');
       window.gtag('event', 'STN_Player_Segment', {
         'page_url': window.location.href,
       });
     }
   });
-  console.log('stn player loaded');
 
   const playerDiv = document.createElement('div');
   playerDiv.className = 's2nPlayer z6poo5gh';

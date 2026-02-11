@@ -54,11 +54,11 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
 
   return (
     <div
-      className="bg-white border-b border-gray-200 sticky top-0 lg:top-0 z-10"
+      className="bg-white border-b border-gray-200 shadow-sm sticky top-[48px] lg:top-0 z-20"
       style={{
         contain: 'layout style paint',
         contentVisibility: 'auto',
-        containIntrinsicSize: '0 57px'
+        containIntrinsicSize: '0 48px'
       }}
     >
       <div className="container mx-auto px-4">

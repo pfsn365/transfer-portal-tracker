@@ -218,7 +218,7 @@ export default function StandingsClient() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Controls Row */}
-          <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 mb-6">
+          <div className="sticky top-[48px] lg:top-0 z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-3 mb-3 border-b border-gray-200 shadow-sm">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
               {/* Left side: Division Toggle */}
               <div className="flex items-center gap-4">
