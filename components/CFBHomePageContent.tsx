@@ -189,7 +189,7 @@ export default function CFBHomePageContent() {
         </div>
 
         {/* Sticky Pill Navigation */}
-        <div className="sticky top-[88px] lg:top-[40px] z-10 bg-white border-b border-gray-200 shadow-sm">
+        <div className="lg:hidden sticky top-[88px] z-[9] bg-white border-b border-gray-200 shadow-sm">
           <div className="container mx-auto px-4 relative">
             {/* Left fade */}
             {canScrollLeft && (
