@@ -141,16 +141,16 @@ export default function PostseasonClient() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Tab Navigation */}
-          <div className="sticky top-[48px] lg:top-0 z-20 bg-white border-b border-gray-200 shadow-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
-            <nav className="flex gap-2 overflow-x-auto scrollbar-hide py-2.5">
+          <div className="sticky top-[48px] z-20 bg-white border-b border-gray-200 shadow-sm -mx-4 sm:-mx-6 px-4 sm:px-6 lg:mx-0 lg:px-0 lg:static lg:bg-white lg:rounded-xl lg:border lg:border-gray-200 lg:shadow-sm lg:p-2 lg:mb-6">
+            <nav className="flex gap-2 overflow-x-auto scrollbar-hide py-2.5 lg:py-0 lg:gap-1 lg:min-w-max">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer lg:rounded-lg lg:py-2 lg:font-semibold ${
                     activeTab === tab.id
                       ? 'bg-[#800000] text-white'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200 lg:bg-white lg:text-gray-700 lg:hover:bg-gray-100'
                   }`}
                 >
                   {tab.label}
@@ -159,7 +159,7 @@ export default function PostseasonClient() {
             </nav>
           </div>
 
-          <div className="h-6"></div>
+          <div className="h-6 lg:hidden"></div>
 
           {/* Tab Content */}
           {activeTab === 'playoff' && (

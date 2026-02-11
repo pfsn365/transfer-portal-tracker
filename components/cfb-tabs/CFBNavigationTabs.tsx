@@ -54,7 +54,7 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
 
   return (
     <div
-      className="bg-white border-b border-gray-200 shadow-sm sticky top-[48px] lg:top-0 z-20"
+      className="bg-white border-b border-gray-200 shadow-sm sticky top-[48px] lg:static z-20"
       style={{
         contain: 'layout style paint',
         contentVisibility: 'auto',

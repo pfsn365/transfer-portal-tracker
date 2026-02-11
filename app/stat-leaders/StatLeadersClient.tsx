@@ -273,7 +273,7 @@ export default function StatLeadersClient() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Controls Row */}
-          <div className="sticky top-[48px] lg:top-0 z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-3 mb-3 border-b border-gray-200 shadow-sm">
+          <div className="sticky top-[48px] z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 mb-3 border-b border-gray-200 shadow-sm lg:static lg:mx-0 lg:px-0 lg:bg-white lg:rounded-xl lg:border lg:border-gray-200 lg:shadow-sm lg:p-4 lg:mb-6 lg:backdrop-blur-none">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
               {/* Left side: Division Toggle & Conference Filter */}
               <div className="flex flex-wrap items-center gap-3">
@@ -341,7 +341,7 @@ export default function StatLeadersClient() {
           {!loading && !error && (
             <>
               {/* Stat Group Tabs */}
-              <div className="sticky top-[96px] lg:top-[48px] z-[19] bg-white shadow-sm mb-6 overflow-hidden border-b border-gray-200 -mx-4 sm:-mx-6 lg:-mx-8">
+              <div className="sticky top-[96px] z-[19] bg-white shadow-sm mb-6 overflow-hidden border-b border-gray-200 -mx-4 sm:-mx-6 lg:static lg:mx-0 lg:rounded-lg lg:border lg:border-gray-200">
                 <div className="flex overflow-x-auto scrollbar-hide border-b border-gray-200 px-4 sm:px-6 lg:px-8">
                   {STAT_GROUPS.map((group) => {
                     const isSelected = selectedGroup === group.key;

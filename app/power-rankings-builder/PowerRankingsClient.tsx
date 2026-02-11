@@ -1123,7 +1123,7 @@ export default function PowerRankingsClient() {
 
           {/* Conference Selector */}
           {!loading && (
-            <div className="sticky top-[48px] lg:top-0 z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-3 mb-3 border-b border-gray-200 shadow-sm">
+            <div className="sticky top-[48px] z-20 bg-gray-50/95 backdrop-blur-sm -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 mb-3 border-b border-gray-200 shadow-sm lg:static lg:mx-0 lg:px-0 lg:bg-white lg:rounded-lg lg:shadow-sm lg:p-4 lg:mb-6 lg:border lg:border-gray-200 lg:backdrop-blur-none">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-sm font-medium text-gray-700 mr-2 whitespace-nowrap">Rankings Mode:</span>
                 <nav className="flex gap-2 overflow-x-auto scrollbar-hide">
