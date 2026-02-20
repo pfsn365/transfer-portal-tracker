@@ -140,6 +140,7 @@ const cfbTeams: Record<string, string> = {
   'troy': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TROY.png',
 
   // Conference USA
+  'missouri state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MOST.png',
   'delaware': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UD.png',
   'florida international': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/FIU.png',
   'fiu': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/FIU.png',

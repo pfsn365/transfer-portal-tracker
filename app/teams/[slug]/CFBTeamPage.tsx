@@ -113,7 +113,7 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
 
   const teamColor = getTeamColor(team.id);
 
-  // SWR hooks for data fetching with automatic caching and deduplication
+  // SWR hooks - lazy fetch based on active tab (schedule always loads for hero record)
   const { data: scheduleData } = useSWR(
     `/cfb-hq/api/teams/schedule/${team.slug}`,
     fetcher,
@@ -121,13 +121,15 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
   );
 
   const { data: standingsData } = useSWR(
-    `/cfb-hq/api/standings?conference=${encodeURIComponent(team.conference)}`,
+    activeTab === 'overview' ? `/cfb-hq/api/standings?conference=${encodeURIComponent(team.conference)}` : null,
     fetcher,
     { revalidateOnFocus: false, dedupingInterval: 300000 }
   );
 
   const { data: rosterData } = useSWR(
-    `/cfb-hq/api/teams/roster/${team.slug}`,
+    activeTab === 'overview' || activeTab === 'roster'
+      ? `/cfb-hq/api/teams/roster/${team.slug}`
+      : null,
     fetcher,
     { revalidateOnFocus: false, dedupingInterval: 300000 }
   );

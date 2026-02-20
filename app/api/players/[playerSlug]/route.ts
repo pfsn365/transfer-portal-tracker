@@ -438,7 +438,9 @@ export async function GET(
       transferPortalHistory,
     };
 
-    return NextResponse.json(playerProfile);
+    return NextResponse.json(playerProfile, {
+      headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
+    });
   } catch (error) {
     console.error('Error fetching player:', error);
     return NextResponse.json(

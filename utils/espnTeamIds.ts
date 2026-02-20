@@ -126,6 +126,7 @@ export const teamSlugToEspnId: Record<string, number> = {
   'troy-trojans': 2653,
 
   // Conference USA
+  'missouri-state-bears': 2623,
   'delaware-fightin-blue-hens': 48,
   'fiu-panthers': 2229,
   'jacksonville-state-gamecocks': 55,

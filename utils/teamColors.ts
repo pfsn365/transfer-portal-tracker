@@ -109,6 +109,7 @@ export const teamColors: Record<string, string> = {
   'wyoming': '#492F24',
 
   // Conference USA
+  'missouri state': '#5F0000',
   'delaware': '#00539F',
   'florida international': '#081E3F',
   'fiu': '#081E3F',

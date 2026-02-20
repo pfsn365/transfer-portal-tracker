@@ -137,6 +137,8 @@ export async function GET(
       roster,
       totalPlayers: roster.length,
       headCoach,
+    }, {
+      headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
     });
   } catch (error) {
     console.error('Error fetching roster:', error);

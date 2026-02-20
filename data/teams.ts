@@ -134,6 +134,7 @@ export const allTeams: Team[] = [
   { id: 'troy', name: 'Troy Trojans', slug: 'troy-trojans', conference: 'Sun Belt' },
 
   // Conference USA
+  { id: 'missouri state', name: 'Missouri State Bears', slug: 'missouri-state-bears', conference: 'Conference USA' },
   { id: 'delaware', name: 'Delaware Fightin Blue Hens', slug: 'delaware-fightin-blue-hens', conference: 'Conference USA' },
   { id: 'florida international', name: 'FIU Panthers', slug: 'fiu-panthers', conference: 'Conference USA' },
   { id: 'jacksonville state', name: 'Jacksonville State Gamecocks', slug: 'jacksonville-state-gamecocks', conference: 'Conference USA' },

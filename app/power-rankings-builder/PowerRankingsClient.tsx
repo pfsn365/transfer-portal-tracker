@@ -134,23 +134,15 @@ export default function PowerRankingsClient() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Auto-save draft every 30 seconds
+  // Auto-save draft on changes
   useEffect(() => {
     if (rankings.length === 0) return;
 
-    const autoSave = () => {
-      localStorage.setItem('cfb-power-rankings-draft', JSON.stringify({
-        rankings,
-        division,
-        timestamp: Date.now()
-      }));
-    };
-
-    const interval = setInterval(autoSave, 30000);
-    // Also save on changes
-    autoSave();
-
-    return () => clearInterval(interval);
+    localStorage.setItem('cfb-power-rankings-draft', JSON.stringify({
+      rankings,
+      division,
+      timestamp: Date.now()
+    }));
   }, [rankings, division]);
 
   // Fetch standings and build rankings
@@ -1070,7 +1062,7 @@ export default function PowerRankingsClient() {
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
-          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-3 sm:pb-4 md:pb-5 lg:pb-6">
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Power Rankings Builder
             </h1>

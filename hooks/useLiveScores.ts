@@ -23,7 +23,12 @@ let listeners: Set<() => void> = new Set();
 let fetchInterval: NodeJS.Timeout | null = null;
 let subscriberCount = 0;
 
-const REFRESH_INTERVAL = 30000; // 30 seconds
+const LIVE_INTERVAL = 30000; // 30 seconds when games are live
+const IDLE_INTERVAL = 300000; // 5 minutes when no live games
+
+function hasLiveGames(): boolean {
+  return globalState.games.some(g => g.isLive);
+}
 
 async function fetchLiveScores() {
   try {
@@ -48,6 +53,13 @@ async function fetchLiveScores() {
 
   // Notify all subscribers
   listeners.forEach(listener => listener());
+
+  // Adjust polling interval based on live game status
+  if (subscriberCount > 0) {
+    const desiredInterval = hasLiveGames() ? LIVE_INTERVAL : IDLE_INTERVAL;
+    if (fetchInterval) clearInterval(fetchInterval);
+    fetchInterval = setInterval(fetchLiveScores, desiredInterval);
+  }
 }
 
 function subscribe(listener: () => void) {
@@ -57,7 +69,7 @@ function subscribe(listener: () => void) {
   // Start fetching if this is the first subscriber
   if (subscriberCount === 1) {
     fetchLiveScores();
-    fetchInterval = setInterval(fetchLiveScores, REFRESH_INTERVAL);
+    fetchInterval = setInterval(fetchLiveScores, IDLE_INTERVAL);
   }
 
   return () => {

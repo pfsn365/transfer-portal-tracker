@@ -275,6 +275,8 @@ export async function GET(
     return NextResponse.json({
       team: team.name,
       schedule: finalSchedule,
+    }, {
+      headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
     });
   } catch (error) {
     console.error('Error fetching schedule:', error);

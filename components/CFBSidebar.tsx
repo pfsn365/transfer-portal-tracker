@@ -32,6 +32,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
 
   const cfbTools = [
     { title: 'CFB Transfer Portal Tracker', url: '/transfer-portal-tracker', external: false },
+    { title: 'CFB Spring Game Schedule', url: '/spring-games', external: false },
     { title: 'CFB Schedule', url: '/schedule', external: false },
     { title: 'CFB Standings', url: '/standings', external: false },
     { title: 'CFB Rankings', url: '/rankings', external: false },

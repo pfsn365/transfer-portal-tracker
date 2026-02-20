@@ -45,42 +45,7 @@ export default function StandingsClient() {
   const [sortOption, setSortOption] = useState<SortOption>('conference');
   const [cfpRankings, setCfpRankings] = useState<Record<string, number>>({});
 
-  // Fetch CFP rankings from rankings API
-  useEffect(() => {
-    async function fetchCfpRankings() {
-      try {
-        const response = await fetch(getApiPath('api/cfb/rankings'));
-        if (!response.ok) return;
-        const data = await response.json();
-
-        const rankings: Record<string, number> = {};
-        // Find CFP rankings (or AP Poll as fallback)
-        const polls = data.rankings || [];
-        let targetPoll = polls.find((p: { name?: string }) =>
-          p.name?.toLowerCase().includes('playoff') || p.name?.toLowerCase().includes('cfp')
-        );
-
-        // Fallback to AP Poll if CFP not available
-        if (!targetPoll) {
-          targetPoll = polls.find((p: { name?: string }) => p.name?.toLowerCase().includes('ap'));
-        }
-
-        if (targetPoll?.ranks) {
-          for (const rank of targetPoll.ranks) {
-            if (rank.team?.id && rank.current <= 25) {
-              rankings[rank.team.id] = rank.current;
-            }
-          }
-        }
-        setCfpRankings(rankings);
-      } catch (err) {
-        console.error('Failed to fetch CFP rankings:', err);
-      }
-    }
-    fetchCfpRankings();
-  }, []);
-
-
+  // Fetch standings and CFP rankings in parallel
   useEffect(() => {
     const abortController = new AbortController();
 
@@ -90,28 +55,53 @@ export default function StandingsClient() {
         setSelectedConference('all');
         setTeamSearch('');
         const group = division === 'fbs' ? '80' : '81';
-        const response = await fetch(getApiPath(`api/cfb/standings?group=${group}`), {
-          signal: abortController.signal,
-        });
+
+        const [standingsResponse, rankingsResponse] = await Promise.all([
+          fetch(getApiPath(`api/cfb/standings?group=${group}`), { signal: abortController.signal }),
+          fetch(getApiPath('api/cfb/rankings'), { signal: abortController.signal }),
+        ]);
+
         if (abortController.signal.aborted) return;
-        if (!response.ok) throw new Error('Failed to fetch standings');
-        const data = await response.json();
 
-        // Sort conferences: priority first (for FBS), then alphabetically
-        const sorted = [...(data.conferences || [])].sort((a, b) => {
-          if (division === 'fbs') {
-            const aIndex = PRIORITY_CONFERENCES.indexOf(a.name);
-            const bIndex = PRIORITY_CONFERENCES.indexOf(b.name);
-
-            if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-            if (aIndex !== -1) return -1;
-            if (bIndex !== -1) return 1;
+        // Process standings
+        if (standingsResponse.ok) {
+          const data = await standingsResponse.json();
+          const sorted = [...(data.conferences || [])].sort((a, b) => {
+            if (division === 'fbs') {
+              const aIndex = PRIORITY_CONFERENCES.indexOf(a.name);
+              const bIndex = PRIORITY_CONFERENCES.indexOf(b.name);
+              if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+              if (aIndex !== -1) return -1;
+              if (bIndex !== -1) return 1;
+            }
+            return a.name.localeCompare(b.name);
+          });
+          if (!abortController.signal.aborted) {
+            setStandings(sorted);
           }
-          return a.name.localeCompare(b.name);
-        });
+        } else {
+          throw new Error('Failed to fetch standings');
+        }
 
-        if (!abortController.signal.aborted) {
-          setStandings(sorted);
+        // Process CFP rankings
+        if (rankingsResponse.ok) {
+          const data = await rankingsResponse.json();
+          const rankings: Record<string, number> = {};
+          const polls = data.rankings || [];
+          let targetPoll = polls.find((p: { name?: string }) =>
+            p.name?.toLowerCase().includes('playoff') || p.name?.toLowerCase().includes('cfp')
+          );
+          if (!targetPoll) {
+            targetPoll = polls.find((p: { name?: string }) => p.name?.toLowerCase().includes('ap'));
+          }
+          if (targetPoll?.ranks) {
+            for (const rank of targetPoll.ranks) {
+              if (rank.team?.id && rank.current <= 25) {
+                rankings[rank.team.id] = rank.current;
+              }
+            }
+          }
+          setCfpRankings(rankings);
         }
       } catch (err) {
         if (err instanceof Error && err.name === 'AbortError') return;
@@ -198,7 +188,7 @@ export default function StandingsClient() {
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
-          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-5 sm:pb-6 md:pb-7 lg:pb-8">
+          <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-3 sm:pb-4 md:pb-5 lg:pb-6">
             <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">
               CFB Standings
             </h1>

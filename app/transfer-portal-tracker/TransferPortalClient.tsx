@@ -100,12 +100,16 @@ export default function TransferPortalClient() {
 
   // Fetch valid player slugs
   useEffect(() => {
-    fetch('/cfb-hq/api/players?slugsOnly=true')
+    const controller = new AbortController();
+    fetch('/cfb-hq/api/players?slugsOnly=true', { signal: controller.signal })
       .then(res => res.json())
       .then(data => {
         if (data.slugs) setValidPlayerSlugs(new Set(data.slugs));
       })
-      .catch(() => {});
+      .catch((err) => {
+        if (err instanceof Error && err.name === 'AbortError') return;
+      });
+    return () => controller.abort();
   }, []);
 
   // Handle retry
