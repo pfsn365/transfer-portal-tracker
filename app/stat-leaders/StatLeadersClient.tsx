@@ -3,11 +3,14 @@
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import useSWR from 'swr';
 import Footer from '@/components/Footer';
 import StatLeadersSkeleton from '@/components/StatLeadersSkeleton';
 import { getApiPath } from '@/utils/api';
+import { fetcher, swrConfig } from '@/utils/swr';
 import { createPlayerSlug, getPlayerInitials } from '@/utils/playerHelpers';
 import { getTeamById } from '@/data/teams';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 
 // Player headshot component with local image fallback
 function PlayerHeadshot({ name, className = "w-10 h-10" }: { name: string; className?: string }) {
@@ -121,9 +124,6 @@ const FBS_CONFERENCES = [
 ];
 
 export default function StatLeadersClient() {
-  const [categories, setCategories] = useState<CategoryData[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
   const [selectedGroup, setSelectedGroup] = useState<string>('passing');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [displayCount, setDisplayCount] = useState(25);
@@ -131,44 +131,23 @@ export default function StatLeadersClient() {
   const [statType, setStatType] = useState<'total' | 'perGame'>('total');
   const [conferenceFilter, setConferenceFilter] = useState<string>('all');
 
+  const group = division === 'fbs' ? '80' : '81';
+
+  const { data: statLeadersRaw, error: swrError, isLoading: loading, mutate } = useSWR(
+    getApiPath(`api/cfb/stat-leaders?group=${group}&statType=total`),
+    fetcher,
+    swrConfig.stable
+  );
+
+  const categories = useMemo<CategoryData[]>(() => {
+    return statLeadersRaw?.categories || [];
+  }, [statLeadersRaw]);
+
+  const error = swrError ? 'Failed to load stat leaders' : null;
+
+  // Reset category selection when division changes
   useEffect(() => {
-    const abortController = new AbortController();
-
-    async function fetchData() {
-      try {
-        setLoading(true);
-        setSelectedCategory(null);
-        const group = division === 'fbs' ? '80' : '81';
-        const response = await fetch(getApiPath(`api/cfb/stat-leaders?group=${group}&statType=total`), {
-          signal: abortController.signal,
-        });
-        if (abortController.signal.aborted) return;
-        if (!response.ok) throw new Error('Failed to fetch stat leaders');
-
-        const data = await response.json();
-        if (!abortController.signal.aborted) {
-          setCategories(data.categories || []);
-          // Set first category of selected group
-          const groupCategories = (data.categories || []).filter((c: CategoryData) => c.group === selectedGroup);
-          if (groupCategories.length > 0) {
-            setSelectedCategory(groupCategories[0].name);
-          }
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        setError(err instanceof Error ? err.message : 'Failed to load stat leaders');
-      } finally {
-        if (!abortController.signal.aborted) {
-          setLoading(false);
-        }
-      }
-    }
-
-    fetchData();
-
-    return () => {
-      abortController.abort();
-    };
+    setSelectedCategory(null);
   }, [division]);
 
   // Update selected category when group changes
@@ -267,9 +246,7 @@ export default function StatLeadersClient() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Controls Row */}
@@ -332,8 +309,14 @@ export default function StatLeadersClient() {
 
           {/* Error State */}
           {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
-              {error}
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+              <p className="text-red-700 mb-3">{error}</p>
+              <button
+                onClick={() => mutate()}
+                className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer"
+              >
+                Try Again
+              </button>
             </div>
           )}
 

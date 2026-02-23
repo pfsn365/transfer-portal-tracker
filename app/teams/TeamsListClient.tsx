@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { getAllConferences, getTeamsByConference } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import Footer from '@/components/Footer';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import { Search } from 'lucide-react';
 
 // FBS conferences only
@@ -59,9 +60,7 @@ export default function TeamsListClient() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">FBS Teams by Conference</h2>

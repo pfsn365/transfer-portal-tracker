@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import { getApiPath } from '@/utils/api';
 import { getTeamById } from '@/data/teams';
 import { teamSlugToEspnId } from '@/utils/espnTeamIds';
@@ -156,10 +157,8 @@ export default function SpringGamesClient() {
         </div>
       </header>
 
-      {/* Ad Slot */}
-      <div className="container mx-auto px-4 min-h-[110px]">
-        <div className="raptive-pfn-header-90"></div>
-      </div>
+      {/* Raptive Header Ad */}
+      <RaptiveHeaderAd />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Stats Bar */}

@@ -470,7 +470,7 @@ export default function PlayersDirectoryClient() {
                     totalPages={totalPages}
                     itemsPerPage={itemsPerPage}
                     totalItems={pagination.totalPlayers}
-                    onPageChange={setCurrentPage}
+                    onPageChange={(page: number) => { setCurrentPage(page); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                     onItemsPerPageChange={handleItemsPerPageChange}
                     itemsPerPageOptions={[24, 48, 96]}
                   />

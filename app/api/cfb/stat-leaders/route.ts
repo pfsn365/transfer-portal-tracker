@@ -96,11 +96,25 @@ async function fetchJson(url: string, revalidate: number = 3600): Promise<unknow
   return null;
 }
 
+// Request-level fetch cache to prevent duplicate requests for the same URL
+// Multiple leaders on the same team/conference share a single fetch
+function createFetchCache() {
+  const cache = new Map<string, Promise<unknown | null>>();
+  return function cachedFetchJson(url: string, revalidate: number = 3600): Promise<unknown | null> {
+    const existing = cache.get(url);
+    if (existing) return existing;
+    const promise = fetchJson(url, revalidate);
+    cache.set(url, promise);
+    return promise;
+  };
+}
+
 // Process a single leader with batched fetches using Promise.all
 async function processLeader(
   leader: { athlete?: { $ref?: string; id?: string; displayName?: string; fullName?: string; position?: { abbreviation?: string }; team?: { $ref?: string }; experience?: { year?: number; abbreviation?: string } }; team?: { $ref?: string }; statistics?: { $ref?: string }; displayValue?: string; value?: number },
   divisionTeamIds: Set<string>,
-  statType: 'total' | 'perGame'
+  statType: 'total' | 'perGame',
+  cachedFetch: (url: string, revalidate?: number) => Promise<unknown | null>
 ): Promise<StatLeader | null> {
   const athlete = leader.athlete;
   if (!athlete) return null;
@@ -118,10 +132,10 @@ async function processLeader(
     return null;
   }
 
-  // Batch fetch athlete, stats in parallel
+  // Batch fetch athlete, stats in parallel (using request-level cache)
   const [athleteData, statsData] = await Promise.all([
-    athlete.$ref ? fetchJson(athlete.$ref, 3600) : Promise.resolve(athlete),
-    leader.statistics?.$ref ? fetchJson(leader.statistics.$ref, 3600) : Promise.resolve(null),
+    athlete.$ref ? cachedFetch(athlete.$ref, 3600) : Promise.resolve(athlete),
+    leader.statistics?.$ref ? cachedFetch(leader.statistics.$ref, 3600) : Promise.resolve(null),
   ]);
 
   const typedAthleteData = (athleteData || athlete) as {
@@ -133,10 +147,10 @@ async function processLeader(
     experience?: { year?: number; abbreviation?: string };
   };
 
-  // Fetch team data if we have a ref
+  // Fetch team data if we have a ref (cached — same team shared across leaders)
   let teamData = typedAthleteData.team || {};
   if (teamData.$ref) {
-    const fetchedTeam = await fetchJson(teamData.$ref, 3600);
+    const fetchedTeam = await cachedFetch(teamData.$ref, 3600);
     if (fetchedTeam) {
       teamData = fetchedTeam as typeof teamData;
     }
@@ -170,11 +184,11 @@ async function processLeader(
     displayValue = perGameValue.toFixed(1);
   }
 
-  // Fetch conference info (only if we have team data with groups ref)
+  // Fetch conference info (cached — same conference shared across many leaders)
   let conference = '';
   let conferenceId = '';
   if (teamData.groups?.$ref) {
-    const groupsData = await fetchJson(teamData.groups.$ref, 86400);
+    const groupsData = await cachedFetch(teamData.groups.$ref, 86400);
     if (groupsData) {
       const typedGroups = groupsData as { items?: { isConference?: boolean; shortName?: string; name?: string; id?: string }[] };
       const confGroup = typedGroups.items?.find((g) => g.isConference);
@@ -227,6 +241,9 @@ async function fetchLeadersData(group: '80' | '81' = '80', statType: 'total' | '
       // Fetch the list of teams in the requested division first
       const divisionTeamIds = await fetchDivisionTeams(group, year);
 
+      // Create a request-level cache so team/conference data is fetched once and shared
+      const cachedFetch = createFetchCache();
+
       // Fetch all leaders with increased limit (ESPN groups parameter doesn't filter properly)
       const url = `https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/${year}/types/2/leaders?limit=100`;
 
@@ -263,7 +280,7 @@ async function fetchLeadersData(group: '80' | '81' = '80', statType: 'total' | '
           for (let i = 0; i < Math.min(categoryLeaders.length, 100) && leaders.length < 50; i += BATCH_SIZE) {
             const batch = categoryLeaders.slice(i, i + BATCH_SIZE);
             const batchResults = await Promise.all(
-              batch.map(leader => processLeader(leader as Parameters<typeof processLeader>[0], divisionTeamIds, statType))
+              batch.map(leader => processLeader(leader as Parameters<typeof processLeader>[0], divisionTeamIds, statType, cachedFetch))
             );
 
             for (const result of batchResults) {

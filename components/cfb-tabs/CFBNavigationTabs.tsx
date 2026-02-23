@@ -40,12 +40,12 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
         if (linkLeft < nav.scrollLeft) {
           nav.scrollTo({
             left: linkLeft - 20,
-            behavior: 'auto'
+            behavior: 'smooth'
           });
         } else if (linkRight > nav.scrollLeft + navWidth) {
           nav.scrollTo({
             left: linkRight - navWidth + 20,
-            behavior: 'auto'
+            behavior: 'smooth'
           });
         }
       });
@@ -56,9 +56,7 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
     <div
       className="bg-white border-b border-gray-200 shadow-sm sticky top-[48px] lg:static z-20"
       style={{
-        contain: 'layout style paint',
-        contentVisibility: 'auto',
-        containIntrinsicSize: '0 48px'
+        contain: 'layout style paint'
       }}
     >
       <div className="container mx-auto px-4">
@@ -67,7 +65,7 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
             <a
               key={tab.id}
               ref={activeTab === tab.id ? activeLinkRef : null}
-              href={tab.id === 'overview' ? `/teams/${team.slug}/` : `/teams/${team.slug}/${tab.id}/`}
+              href={tab.id === 'overview' ? `/cfb-hq/teams/${team.slug}/` : `/cfb-hq/teams/${team.slug}/${tab.id}/`}
               onClick={(e) => {
                 e.preventDefault();
                 onTabChange(tab.id);

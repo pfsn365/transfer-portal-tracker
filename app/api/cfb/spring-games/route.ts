@@ -9,9 +9,6 @@ interface SpringGame {
   date: string;
 }
 
-let cache: { data: SpringGame[]; timestamp: number } | null = null;
-const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
-
 function parseCSV(csv: string): SpringGame[] {
   const lines = csv.trim().split('\n');
   // Skip header row
@@ -47,10 +44,6 @@ function parseCSV(csv: string): SpringGame[] {
 
 export async function GET() {
   try {
-    if (cache && Date.now() - cache.timestamp < CACHE_DURATION) {
-      return NextResponse.json({ games: cache.data });
-    }
-
     const response = await fetch(SHEET_CSV_URL, {
       next: { revalidate: 300 },
     });
@@ -62,16 +55,11 @@ export async function GET() {
     const csv = await response.text();
     const games = parseCSV(csv);
 
-    cache = { data: games, timestamp: Date.now() };
-
-    return NextResponse.json({ games });
+    return NextResponse.json({ games }, {
+      headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
+    });
   } catch (error) {
     console.error('Spring games API error:', error);
-
-    // Return cached data if available even if stale
-    if (cache) {
-      return NextResponse.json({ games: cache.data });
-    }
 
     return NextResponse.json(
       { error: 'Failed to fetch spring game schedule' },

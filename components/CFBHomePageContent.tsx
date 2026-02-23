@@ -4,8 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CFBPlayoffBracket from '@/components/CFBPlayoffBracket';
 import Footer from '@/components/Footer';
-import { useState, useEffect, useRef, useCallback } from 'react';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import useSWR from 'swr';
 import { getApiPath } from '@/utils/api';
+import { fetcher, swrConfig } from '@/utils/swr';
 
 // Featured FBS teams (popular/successful programs)
 const FEATURED_TEAMS = [
@@ -40,8 +43,16 @@ const SECTIONS = [
 ] as const;
 
 export default function CFBHomePageContent() {
-  const [statLeaders, setStatLeaders] = useState<CategoryData[]>([]);
-  const [statLeadersLoading, setStatLeadersLoading] = useState(true);
+  const { data: statLeadersRaw, isLoading: statLeadersLoading } = useSWR(
+    getApiPath('api/cfb/stat-leaders'),
+    fetcher,
+    swrConfig.stable
+  );
+
+  const statLeaders = useMemo<CategoryData[]>(() => {
+    return (statLeadersRaw?.categories || []).slice(0, 4);
+  }, [statLeadersRaw]);
+
   const [activeSection, setActiveSection] = useState<string>(SECTIONS[0].id);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -130,39 +141,6 @@ export default function CFBHomePageContent() {
     }
   };
 
-  // Fetch all data on mount
-  useEffect(() => {
-    const abortController = new AbortController();
-
-    async function fetchStatLeaders() {
-      try {
-        const response = await fetch(getApiPath('api/cfb/stat-leaders'), {
-          signal: abortController.signal,
-        });
-        if (abortController.signal.aborted) return;
-        if (response.ok) {
-          const data = await response.json();
-          // Get 4 main categories
-          const categories = (data.categories || []).slice(0, 4);
-          setStatLeaders(categories);
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        console.error('Error fetching stat leaders:', err);
-      } finally {
-        if (!abortController.signal.aborted) {
-          setStatLeadersLoading(false);
-        }
-      }
-    }
-
-    fetchStatLeaders();
-
-    return () => {
-      abortController.abort();
-    };
-  }, []);
-
   return (
     <>
       {/* Header */}
@@ -184,9 +162,7 @@ export default function CFBHomePageContent() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         {/* Sticky Pill Navigation */}
         <div className="lg:hidden sticky top-[88px] z-[9] bg-white border-b border-gray-200 shadow-sm">

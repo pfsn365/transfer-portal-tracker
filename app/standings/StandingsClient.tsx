@@ -3,10 +3,13 @@
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import useSWR from 'swr';
 import Footer from '@/components/Footer';
 import StandingsSkeleton from '@/components/StandingsSkeleton';
 import { getApiPath } from '@/utils/api';
+import { fetcher, swrConfig } from '@/utils/swr';
 import { getTeamById } from '@/data/teams';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 
 interface StandingsTeam {
   id: string;
@@ -36,88 +39,68 @@ const PRIORITY_CONFERENCES = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'Pac-12'];
 type SortOption = 'conference' | 'overall' | 'name';
 
 export default function StandingsClient() {
-  const [standings, setStandings] = useState<ConferenceStandings[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
   const [selectedConference, setSelectedConference] = useState<string>('all');
   const [division, setDivision] = useState<'fbs' | 'fcs'>('fbs');
   const [teamSearch, setTeamSearch] = useState('');
   const [sortOption, setSortOption] = useState<SortOption>('conference');
-  const [cfpRankings, setCfpRankings] = useState<Record<string, number>>({});
 
-  // Fetch standings and CFP rankings in parallel
-  useEffect(() => {
-    const abortController = new AbortController();
+  const group = division === 'fbs' ? '80' : '81';
 
-    async function fetchData() {
-      try {
-        setLoading(true);
-        setSelectedConference('all');
-        setTeamSearch('');
-        const group = division === 'fbs' ? '80' : '81';
+  // SWR hooks - fetch standings and rankings in parallel
+  const { data: standingsRaw, error: standingsError, isLoading: loading, mutate: mutateStandings } = useSWR(
+    getApiPath(`api/cfb/standings?group=${group}`),
+    fetcher,
+    swrConfig.stable
+  );
 
-        const [standingsResponse, rankingsResponse] = await Promise.all([
-          fetch(getApiPath(`api/cfb/standings?group=${group}`), { signal: abortController.signal }),
-          fetch(getApiPath('api/cfb/rankings'), { signal: abortController.signal }),
-        ]);
+  const { data: rankingsRaw } = useSWR(
+    getApiPath('api/cfb/rankings'),
+    fetcher,
+    swrConfig.stable
+  );
 
-        if (abortController.signal.aborted) return;
+  // Process standings data - sort conferences
+  const standings = useMemo<ConferenceStandings[]>(() => {
+    if (!standingsRaw?.conferences) return [];
+    return [...standingsRaw.conferences].sort((a: ConferenceStandings, b: ConferenceStandings) => {
+      if (division === 'fbs') {
+        const aIndex = PRIORITY_CONFERENCES.indexOf(a.name);
+        const bIndex = PRIORITY_CONFERENCES.indexOf(b.name);
+        if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+        if (aIndex !== -1) return -1;
+        if (bIndex !== -1) return 1;
+      }
+      return a.name.localeCompare(b.name);
+    });
+  }, [standingsRaw, division]);
 
-        // Process standings
-        if (standingsResponse.ok) {
-          const data = await standingsResponse.json();
-          const sorted = [...(data.conferences || [])].sort((a, b) => {
-            if (division === 'fbs') {
-              const aIndex = PRIORITY_CONFERENCES.indexOf(a.name);
-              const bIndex = PRIORITY_CONFERENCES.indexOf(b.name);
-              if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-              if (aIndex !== -1) return -1;
-              if (bIndex !== -1) return 1;
-            }
-            return a.name.localeCompare(b.name);
-          });
-          if (!abortController.signal.aborted) {
-            setStandings(sorted);
-          }
-        } else {
-          throw new Error('Failed to fetch standings');
-        }
-
-        // Process CFP rankings
-        if (rankingsResponse.ok) {
-          const data = await rankingsResponse.json();
-          const rankings: Record<string, number> = {};
-          const polls = data.rankings || [];
-          let targetPoll = polls.find((p: { name?: string }) =>
-            p.name?.toLowerCase().includes('playoff') || p.name?.toLowerCase().includes('cfp')
-          );
-          if (!targetPoll) {
-            targetPoll = polls.find((p: { name?: string }) => p.name?.toLowerCase().includes('ap'));
-          }
-          if (targetPoll?.ranks) {
-            for (const rank of targetPoll.ranks) {
-              if (rank.team?.id && rank.current <= 25) {
-                rankings[rank.team.id] = rank.current;
-              }
-            }
-          }
-          setCfpRankings(rankings);
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        setError(err instanceof Error ? err.message : 'Failed to load standings');
-      } finally {
-        if (!abortController.signal.aborted) {
-          setLoading(false);
+  // Process CFP rankings
+  const cfpRankings = useMemo<Record<string, number>>(() => {
+    if (!rankingsRaw?.rankings) return {};
+    const rankings: Record<string, number> = {};
+    const polls = rankingsRaw.rankings || [];
+    let targetPoll = polls.find((p: { name?: string }) =>
+      p.name?.toLowerCase().includes('playoff') || p.name?.toLowerCase().includes('cfp')
+    );
+    if (!targetPoll) {
+      targetPoll = polls.find((p: { name?: string }) => p.name?.toLowerCase().includes('ap'));
+    }
+    if (targetPoll?.ranks) {
+      for (const rank of targetPoll.ranks) {
+        if (rank.team?.id && rank.current <= 25) {
+          rankings[rank.team.id] = rank.current;
         }
       }
     }
+    return rankings;
+  }, [rankingsRaw]);
 
-    fetchData();
+  const error = standingsError ? 'Failed to load standings' : null;
 
-    return () => {
-      abortController.abort();
-    };
+  // Reset UI state when division changes
+  useEffect(() => {
+    setSelectedConference('all');
+    setTeamSearch('');
   }, [division]);
 
   // Sort teams within each conference based on sort option
@@ -202,9 +185,7 @@ export default function StandingsClient() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Controls Row */}
@@ -298,8 +279,14 @@ export default function StandingsClient() {
 
           {/* Error State */}
           {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
-              {error}
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+              <p className="text-red-700 mb-3">{error}</p>
+              <button
+                onClick={() => mutateStandings()}
+                className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer"
+              >
+                Try Again
+              </button>
             </div>
           )}
 

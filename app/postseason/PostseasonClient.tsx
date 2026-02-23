@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { getTeamById } from '@/data/teams';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import {
   playoffTeams2025,
   bowlGames2025,
@@ -80,8 +81,10 @@ export default function PostseasonClient() {
   };
 
   const sortedConferencePerformance = [...conferencePerformance2025].sort((a, b) => {
-    const aWinPct = a.bowlWins / (a.bowlWins + a.bowlLosses);
-    const bWinPct = b.bowlWins / (b.bowlWins + b.bowlLosses);
+    const aTotal = a.bowlWins + a.bowlLosses;
+    const bTotal = b.bowlWins + b.bowlLosses;
+    const aWinPct = aTotal > 0 ? a.bowlWins / aTotal : 0;
+    const bWinPct = bTotal > 0 ? b.bowlWins / bTotal : 0;
 
     let comparison = 0;
     switch (confSortField) {
@@ -135,9 +138,7 @@ export default function PostseasonClient() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Tab Navigation */}
@@ -615,7 +616,8 @@ export default function PostseasonClient() {
                   </thead>
                   <tbody className="divide-y divide-gray-100">
                     {sortedConferencePerformance.map((conf, idx) => {
-                      const winPct = conf.bowlWins / (conf.bowlWins + conf.bowlLosses);
+                      const total = conf.bowlWins + conf.bowlLosses;
+                      const winPct = total > 0 ? conf.bowlWins / total : 0;
                       return (
                         <tr key={conf.conference} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
                           <td className="px-4 py-3 font-medium text-gray-900">{conf.conference}</td>

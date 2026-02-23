@@ -1,12 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import useSWR from 'swr';
 import Footer from '@/components/Footer';
 import { getApiPath } from '@/utils/api';
+import { fetcher, swrConfig } from '@/utils/swr';
 import { hasCFPRankings, getHistoricalCFPPoll } from '@/data/cfp-historical';
 import { getTeamById } from '@/data/teams';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 
 interface RankedTeam {
   current: number;
@@ -33,57 +36,33 @@ interface RankingsData {
 }
 
 export default function RankingsClient() {
-  const [data, setData] = useState<RankingsData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const { data: rankingsRaw, error: swrError, isLoading: loading, mutate } = useSWR<RankingsData>(
+    getApiPath('api/cfb/rankings'),
+    fetcher,
+    swrConfig.stable
+  );
+
   const [selectedPoll, setSelectedPoll] = useState<string>('');
 
-  useEffect(() => {
-    const abortController = new AbortController();
-
-    async function fetchRankings() {
-      try {
-        setLoading(true);
-        const response = await fetch(getApiPath('api/cfb/rankings'), {
-          signal: abortController.signal,
-        });
-
-        if (abortController.signal.aborted) return;
-        if (!response.ok) throw new Error('Failed to fetch rankings');
-
-        const result: RankingsData = await response.json();
-
-        if (!abortController.signal.aborted) {
-          // Add historical CFP rankings if not present in API response
-          let rankings = result.rankings || [];
-          if (!hasCFPRankings(rankings)) {
-            const historicalCFP = getHistoricalCFPPoll();
-            // Add CFP at the beginning of the list
-            rankings = [historicalCFP, ...rankings];
-          }
-
-          setData({ rankings });
-          // Set default poll to first available
-          if (rankings.length > 0 && !selectedPoll) {
-            setSelectedPoll(rankings[0].name);
-          }
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        setError(err instanceof Error ? err.message : 'Failed to load rankings');
-      } finally {
-        if (!abortController.signal.aborted) {
-          setLoading(false);
-        }
-      }
+  // Process data - add historical CFP if not present
+  const data = useMemo<RankingsData | null>(() => {
+    if (!rankingsRaw) return null;
+    let rankings = rankingsRaw.rankings || [];
+    if (!hasCFPRankings(rankings)) {
+      const historicalCFP = getHistoricalCFPPoll();
+      rankings = [historicalCFP, ...rankings];
     }
+    return { rankings };
+  }, [rankingsRaw]);
 
-    fetchRankings();
+  const error = swrError ? 'Failed to load rankings' : null;
 
-    return () => {
-      abortController.abort();
-    };
-  }, []);
+  // Set default poll when data first loads
+  useEffect(() => {
+    if (data?.rankings?.length && !selectedPoll) {
+      setSelectedPoll(data.rankings[0].name);
+    }
+  }, [data, selectedPoll]);
 
   // Get the currently selected poll
   const currentPoll = data?.rankings?.find(p => p.name === selectedPoll);
@@ -123,9 +102,7 @@ export default function RankingsClient() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Poll Tabs */}
@@ -170,8 +147,14 @@ export default function RankingsClient() {
 
           {/* Error State */}
           {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
-              {error}
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+              <p className="text-red-700 mb-3">{error}</p>
+              <button
+                onClick={() => mutate()}
+                className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer"
+              >
+                Try Again
+              </button>
             </div>
           )}
 

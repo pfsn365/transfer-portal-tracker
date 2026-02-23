@@ -2,17 +2,8 @@ import { NextResponse } from 'next/server';
 
 const ESPN_RANKINGS_API = 'https://site.api.espn.com/apis/site/v2/sports/football/college-football/rankings';
 
-// Cache for rankings data
-let rankingsCache: { data: unknown; timestamp: number } | null = null;
-const CACHE_DURATION = 60 * 60 * 1000; // 1 hour cache
-
 export async function GET() {
   try {
-    // Check cache
-    if (rankingsCache && Date.now() - rankingsCache.timestamp < CACHE_DURATION) {
-      return NextResponse.json(rankingsCache.data);
-    }
-
     const response = await fetch(ESPN_RANKINGS_API, {
       next: { revalidate: 3600 } // Cache for 1 hour
     });
@@ -61,10 +52,9 @@ export async function GET() {
 
     const result = { rankings };
 
-    // Update cache
-    rankingsCache = { data: result, timestamp: Date.now() };
-
-    return NextResponse.json(result);
+    return NextResponse.json(result, {
+      headers: { 'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=1800' },
+    });
   } catch (error) {
     console.error('Error fetching rankings:', error);
     return NextResponse.json(

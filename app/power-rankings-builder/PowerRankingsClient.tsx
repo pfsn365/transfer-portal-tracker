@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 import PowerRankingsSkeleton from '@/components/PowerRankingsSkeleton';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import { getApiPath } from '@/utils/api';
 
 interface TeamWithRecord {
@@ -147,13 +148,15 @@ export default function PowerRankingsClient() {
 
   // Fetch standings and build rankings
   useEffect(() => {
+    const controller = new AbortController();
+
     async function fetchStandings() {
       try {
         setLoading(true);
         setConferenceFilter('All');
         setSelectedTeams(new Set());
         const group = division === 'fbs' ? '80' : '81';
-        const response = await fetch(getApiPath(`api/cfb/standings?group=${group}`));
+        const response = await fetch(getApiPath(`api/cfb/standings?group=${group}`), { signal: controller.signal });
         if (!response.ok) throw new Error('Failed to fetch standings');
 
         const data = await response.json();
@@ -236,6 +239,7 @@ export default function PowerRankingsClient() {
         setHistoryIndex(0);
         setLoading(false);
       } catch (err) {
+        if (controller.signal.aborted) return;
         console.error('Error fetching standings:', err);
         setLoading(false);
       }
@@ -243,6 +247,7 @@ export default function PowerRankingsClient() {
 
     fetchStandings();
     loadSavedRankings();
+    return () => controller.abort();
   }, [division]);
 
   // Pre-load logos
@@ -1073,9 +1078,7 @@ export default function PowerRankingsClient() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Division Toggle */}

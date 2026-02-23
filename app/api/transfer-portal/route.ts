@@ -103,6 +103,10 @@ export async function GET(request: NextRequest) {
       players,
       updatedTime: apiData.updatedTime || new Date().toISOString(),
       totalPlayers: players.length,
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=1800',
+      },
     });
 
   } catch (error) {

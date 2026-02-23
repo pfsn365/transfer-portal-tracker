@@ -6,6 +6,7 @@ import FilterBar from '@/components/FilterBar';
 import PlayerTable from '@/components/PlayerTable';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
 import Pagination from '@/components/Pagination';
@@ -131,7 +132,7 @@ export default function TransferPortalClient() {
 
   // Handle export to CSV
   const handleExport = () => {
-    exportToCSV(paginatedPlayers, 'transfer-portal-data.csv');
+    exportToCSV(sortedPlayers, 'transfer-portal-data.csv');
   };
 
   // Handle clear all filters
@@ -143,6 +144,8 @@ export default function TransferPortalClient() {
     setSelectedConference('All');
     setSearchQuery('');
     setShowWatchlistOnly(false);
+    setSortField('announcedDate');
+    setSortDirection('desc');
   };
 
   // Check if any filters are active
@@ -281,7 +284,7 @@ export default function TransferPortalClient() {
   // Reset to page 1 when filters change
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery]);
+  }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery, showWatchlistOnly]);
 
   // Calculate pagination
   const totalPages = Math.ceil(sortedPlayers.length / itemsPerPage);
@@ -312,9 +315,7 @@ export default function TransferPortalClient() {
         <Header />
 
           {/* Raptive Header Ad */}
-          <div className="container mx-auto px-4 min-h-[110px]">
-            <div className="raptive-pfn-header-90"></div>
-          </div>
+          <RaptiveHeaderAd />
 
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
@@ -353,9 +354,7 @@ export default function TransferPortalClient() {
       <Header />
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>

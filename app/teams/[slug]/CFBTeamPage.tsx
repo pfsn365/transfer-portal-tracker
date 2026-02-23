@@ -18,6 +18,7 @@ import StatsTab from '@/components/cfb-tabs/StatsTab';
 import HistoryTab from '@/components/cfb-tabs/HistoryTab';
 import DraftTab from '@/components/cfb-tabs/DraftTab';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 
 interface CFBTeamPageProps {
   team: Team;
@@ -74,7 +75,7 @@ function TeamHeroSection({ team, teamColor, record, conferenceRank, headCoach }:
           {/* Stats Card */}
           {record && (
             <div className="bg-white text-gray-800 rounded-lg p-4 sm:p-6 w-full lg:w-auto shadow-lg">
-              <h3 className="text-sm font-semibold mb-3 text-center text-gray-600 uppercase">2025-26 Record</h3>
+              <h3 className="text-sm font-semibold mb-3 text-center text-gray-600 uppercase">{(() => { const y = new Date().getMonth() < 8 ? new Date().getFullYear() - 1 : new Date().getFullYear(); return `${y}-${String(y + 1).slice(2)}`; })()} Record</h3>
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
                   <div className="text-2xl font-bold text-gray-900">
@@ -155,13 +156,20 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
   // Calculate conference rank from standings
   const conferenceRank = useMemo(() => {
     const standings = standingsData?.standings || [];
+    const teamIdLower = team.id.toLowerCase();
     const teamIndex = standings.findIndex((t: any) =>
-      t.name?.toLowerCase().includes(team.id.toLowerCase()) ||
-      t.team?.toLowerCase().includes(team.id.toLowerCase())
+      t.name?.toLowerCase() === teamIdLower ||
+      t.team?.toLowerCase() === teamIdLower ||
+      t.slug?.toLowerCase() === team.slug.toLowerCase()
     );
     if (teamIndex !== -1) {
       const rank = teamIndex + 1;
-      const suffix = rank === 1 ? 'st' : rank === 2 ? 'nd' : rank === 3 ? 'rd' : 'th';
+      const lastTwo = rank % 100;
+      const suffix = (lastTwo >= 11 && lastTwo <= 13) ? 'th'
+        : (rank % 10 === 1) ? 'st'
+        : (rank % 10 === 2) ? 'nd'
+        : (rank % 10 === 3) ? 'rd'
+        : 'th';
       return `${rank}${suffix}`;
     }
     return null;
@@ -216,9 +224,7 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
       <CFBNavigationTabs activeTab={activeTab} onTabChange={handleTabChange} team={team} teamColor={teamColor} />
 
       {/* Raptive Header Ad - Below Tabs */}
-      <div className="container mx-auto px-4 min-h-[110px]">
-        <div className="raptive-pfn-header-90"></div>
-      </div>
+      <RaptiveHeaderAd />
 
       <div className="container mx-auto px-4 py-6 pb-24">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">

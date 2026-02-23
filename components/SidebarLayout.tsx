@@ -22,7 +22,7 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
     <div className="flex flex-1 bg-gray-50">
       {/* Desktop sidebar */}
       <aside
-        className={`hidden lg:block fixed top-0 left-0 h-screen z-10 transition-all duration-300 ${
+        className={`hidden lg:block fixed top-0 left-0 h-screen z-30 transition-all duration-300 ${
           sidebarCollapsed ? 'w-0 overflow-hidden' : 'w-64'
         }`}
       >
@@ -32,7 +32,7 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
       {/* Desktop toggle button */}
       <button
         onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
-        className={`hidden lg:flex items-center justify-center fixed top-10 z-20 w-8 h-8 bg-black text-white transition-all duration-300 cursor-pointer hover:bg-gray-800 ${
+        className={`hidden lg:flex items-center justify-center fixed top-10 z-50 w-8 h-8 bg-black text-white transition-all duration-300 cursor-pointer hover:bg-gray-800 ${
           sidebarCollapsed
             ? 'left-0 rounded-tr-md rounded-br-md'
             : 'left-64 rounded-tr-md rounded-br-md'

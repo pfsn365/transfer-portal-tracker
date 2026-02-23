@@ -49,12 +49,14 @@ export default function ScheduleTab({ team, teamColor, initialSchedule }: Schedu
       return;
     }
 
+    const controller = new AbortController();
+
     const fetchSchedule = async () => {
       try {
         setLoading(true);
         setError(null);
 
-        const response = await fetch(`/cfb-hq/api/teams/schedule/${team.slug}`);
+        const response = await fetch(`/cfb-hq/api/teams/schedule/${team.slug}`, { signal: controller.signal });
 
         if (!response.ok) {
           throw new Error('Failed to fetch schedule');
@@ -63,14 +65,16 @@ export default function ScheduleTab({ team, teamColor, initialSchedule }: Schedu
         const data = await response.json();
         setSchedule(data.schedule || []);
       } catch (err) {
+        if (controller.signal.aborted) return;
         console.error('Error fetching schedule:', err);
         setError(err instanceof Error ? err.message : 'Failed to load schedule');
       } finally {
-        setLoading(false);
+        if (!controller.signal.aborted) setLoading(false);
       }
     };
 
     fetchSchedule();
+    return () => controller.abort();
   }, [team.slug, initialSchedule]);
 
   // Calculate team record (include all completed games for overall, exclude postseason for conference)

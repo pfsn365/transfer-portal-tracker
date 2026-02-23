@@ -256,6 +256,10 @@ export async function GET(request: Request) {
         hasNextPage: page < totalPages,
         hasPrevPage: page > 1,
       },
+    }, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=600, stale-while-revalidate=300',
+      },
     });
   } catch (error) {
     console.error('Error fetching players:', error);

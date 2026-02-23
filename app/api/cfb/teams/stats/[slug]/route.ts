@@ -180,13 +180,18 @@ async function fetchPlayerLeaders(espnId: number, year: number = 2025): Promise<
     // Process leaders for this category
     const leaders: PlayerStat[] = [];
 
-    for (const leader of category.leaders || []) {
-      // Fetch athlete details if we have a ref
-      let athleteData: any = null;
-      if (leader.athlete?.$ref) {
-        athleteData = await fetchJson<any>(leader.athlete.$ref, 86400);
-      }
-
+    const leaderEntries = category.leaders || [];
+    // Batch fetch all athlete data in parallel instead of one-by-one
+    const athleteDataList = await Promise.all(
+      leaderEntries.map((leader: any) =>
+        leader.athlete?.$ref
+          ? fetchJson<any>(leader.athlete.$ref, 86400)
+          : Promise.resolve(null)
+      )
+    );
+    for (let i = 0; i < leaderEntries.length; i++) {
+      const leader = leaderEntries[i] as any;
+      const athleteData = athleteDataList[i];
       const playerStat: PlayerStat = {
         playerId: athleteData?.id || leader.athlete?.id || '',
         name: athleteData?.displayName || athleteData?.fullName || 'Unknown',
@@ -195,7 +200,6 @@ async function fetchPlayerLeaders(espnId: number, year: number = 2025): Promise<
         displayValue: leader.displayValue || String(leader.value),
         value: leader.value || 0,
       };
-
       leaders.push(playerStat);
     }
 

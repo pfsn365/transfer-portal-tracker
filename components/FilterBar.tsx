@@ -94,9 +94,13 @@ function CustomSchoolDropdown({
           {!selectedConference ? (
             // Conference Selection
             <>
-              <div className="px-3 py-2 text-base font-semibold text-gray-600 bg-gray-50 sticky top-0">
-                Select Conference
-              </div>
+              <button
+                type="button"
+                onClick={() => handleTeamClick('All')}
+                className="w-full text-left px-3 py-2 text-base font-semibold text-[#800000] hover:bg-gray-50 bg-gray-50 sticky top-0 border-b border-gray-200 cursor-pointer"
+              >
+                All Schools
+              </button>
               {getAllConferences().map(conference => (
                 <button
                   key={conference}
@@ -118,7 +122,7 @@ function CustomSchoolDropdown({
               >
                 ← Back to Conferences
               </button>
-              <div className="px-3 py-2 text-base font-semibold text-gray-600 bg-gray-50 sticky top-0">
+              <div className="px-3 py-2 text-base font-semibold text-gray-600 bg-gray-50">
                 {selectedConference} Schools
               </div>
               {getTeamsByConference(selectedConference).map(team => (
@@ -152,7 +156,7 @@ export default function FilterBar({
   onConferenceChange,
 }: FilterBarProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 sm:p-6">
+    <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
         {/* Status Filter */}
         <div>

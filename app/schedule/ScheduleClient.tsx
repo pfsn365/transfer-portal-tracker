@@ -4,10 +4,13 @@ import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import useSWR from 'swr';
 import Footer from '@/components/Footer';
 import { getApiPath } from '@/utils/api';
+import { fetcher, swrConfig } from '@/utils/swr';
 import { useLiveScores } from '@/hooks/useLiveScores';
 import { getTeamById } from '@/data/teams';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 
 interface GameLeader {
   name: string;
@@ -178,13 +181,58 @@ function ScheduleClientInner() {
     urlView && ['daily', 'weekly', 'monthly'].includes(urlView) ? urlView : 'monthly'
   );
   const [selectedDate, setSelectedDate] = useState<string>(urlDate || getLocalDateString());
-  const [allGamesCache, setAllGamesCache] = useState<ScheduleGame[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
   const [division, setDivision] = useState<'fbs' | 'fcs'>('fbs');
   const [selectedConference, setSelectedConference] = useState('All Games');
   const [teamSearch, setTeamSearch] = useState('');
   const [expandedGame, setExpandedGame] = useState<string | null>(null);
+
+  const scheduleGroup = division === 'fbs' ? '80' : '81';
+
+  // Derive the selected month (YYYY-MM) from selectedDate
+  const selectedMonth = selectedDate.substring(0, 7);
+
+  // Determine if weekly view spans a month boundary and needs an adjacent month
+  const adjacentMonth = useMemo(() => {
+    if (viewMode !== 'weekly') return null;
+    const weekRange = getWeekRange(selectedDate);
+    const startMonth = weekRange.start.substring(0, 7);
+    const endMonth = weekRange.end.substring(0, 7);
+    if (startMonth !== endMonth) {
+      // The week spans two months — return whichever month isn't the selected one
+      return startMonth === selectedMonth ? endMonth : startMonth;
+    }
+    return null;
+  }, [viewMode, selectedDate, selectedMonth]);
+
+  // Primary SWR hook: fetch games for the selected month
+  const { data: scheduleRaw, error: swrError, isLoading: primaryLoading, mutate: mutateSchedule } = useSWR(
+    getApiPath(`api/cfb/schedule?month=${selectedMonth}&group=${scheduleGroup}`),
+    fetcher,
+    swrConfig.stable
+  );
+
+  // Adjacent month SWR hook: only active when weekly view crosses a month boundary
+  const { data: adjacentRaw, error: adjacentError, isLoading: adjacentLoading } = useSWR(
+    adjacentMonth ? getApiPath(`api/cfb/schedule?month=${adjacentMonth}&group=${scheduleGroup}`) : null,
+    fetcher,
+    swrConfig.stable
+  );
+
+  // Merge primary + adjacent month games, deduplicated by game ID
+  const allGamesCache: ScheduleGame[] = useMemo(() => {
+    const primaryGames: ScheduleGame[] = scheduleRaw?.games || [];
+    const adjGames: ScheduleGame[] = adjacentRaw?.games || [];
+    if (adjGames.length === 0) return primaryGames;
+    const merged = new Map<string, ScheduleGame>();
+    for (const game of primaryGames) merged.set(game.id, game);
+    for (const game of adjGames) {
+      if (!merged.has(game.id)) merged.set(game.id, game);
+    }
+    return Array.from(merged.values());
+  }, [scheduleRaw, adjacentRaw]);
+
+  const loading = primaryLoading || (adjacentMonth !== null && adjacentLoading);
+  const error = (swrError || adjacentError) ? 'Failed to load schedule. Please try again.' : null;
 
   const currentConferences = division === 'fbs' ? FBS_CONFERENCES : FCS_CONFERENCES;
   const isToday = selectedDate === getLocalDateString();
@@ -197,99 +245,49 @@ function ScheduleClientInner() {
     return allGamesCache.some(game => game.status.state === 'in');
   }, [allGamesCache]);
 
-  // Reset conference and team search when division changes
+  // Reset UI state when division changes
   useEffect(() => {
     setSelectedConference('All Games');
     setTeamSearch('');
+    setExpandedGame(null);
   }, [division]);
 
   // Sync cache with shared live scores (keeps ticker and schedule in sync)
   useEffect(() => {
     if (!liveGames.length || loading) return;
 
-    setAllGamesCache(prevCache => {
-      const updatedCache = [...prevCache];
+    mutateSchedule((currentData: { games?: ScheduleGame[] } | undefined) => {
+      if (!currentData?.games) return currentData;
+
+      const updatedGames = [...currentData.games];
       let hasChanges = false;
 
       for (const liveGame of liveGames) {
-        const index = updatedCache.findIndex(g => g.id === liveGame.id);
+        const index = updatedGames.findIndex(g => g.id === liveGame.id);
         if (index !== -1) {
-          const cached = updatedCache[index];
-          // Only update if scores changed
+          const cached = updatedGames[index];
           if (cached.awayTeam.score !== liveGame.awayTeam?.score ||
               cached.homeTeam.score !== liveGame.homeTeam?.score) {
             hasChanges = true;
-            // Map TickerGame status fields to ScheduleGame status
             const newStatus = {
               state: liveGame.isLive ? 'in' as const : liveGame.isFinal ? 'post' as const : 'pre' as const,
               detail: liveGame.statusDetail,
               shortDetail: liveGame.statusDetail,
               completed: liveGame.isFinal,
             };
-            updatedCache[index] = {
+            updatedGames[index] = {
               ...cached,
-              awayTeam: {
-                ...cached.awayTeam,
-                score: liveGame.awayTeam?.score,
-              },
-              homeTeam: {
-                ...cached.homeTeam,
-                score: liveGame.homeTeam?.score,
-              },
+              awayTeam: { ...cached.awayTeam, score: liveGame.awayTeam?.score },
+              homeTeam: { ...cached.homeTeam, score: liveGame.homeTeam?.score },
               status: newStatus,
             };
           }
         }
       }
 
-      return hasChanges ? updatedCache : prevCache;
-    });
-  }, [liveGames, liveScoresLastUpdated, loading]);
-
-  // Fetch ALL schedule data once when division changes (single API call)
-  useEffect(() => {
-    const abortController = new AbortController();
-
-    async function fetchAllScheduleData() {
-      setLoading(true);
-      setError(null);
-      setExpandedGame(null);
-
-      const group = division === 'fbs' ? '80' : '81';
-
-      try {
-        // Single API call to fetch all season games (server handles batching)
-        const response = await fetch(
-          getApiPath(`api/cfb/schedule?fetchAll=true&group=${group}`),
-          { signal: abortController.signal }
-        );
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch schedule');
-        }
-
-        const data = await response.json();
-
-        if (!abortController.signal.aborted) {
-          setAllGamesCache(data.games || []);
-        }
-      } catch (err) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        console.error('Error fetching schedule:', err);
-        setError('Failed to load schedule. Please try again.');
-      } finally {
-        if (!abortController.signal.aborted) {
-          setLoading(false);
-        }
-      }
-    }
-
-    fetchAllScheduleData();
-
-    return () => {
-      abortController.abort();
-    };
-  }, [division]); // Only re-fetch when division changes
+      return hasChanges ? { ...currentData, games: updatedGames } : currentData;
+    }, { revalidate: false });
+  }, [liveGames, liveScoresLastUpdated, loading, mutateSchedule]);
 
   // Derive daily games from cache (memoized)
   const dailyGames = useMemo(() => {
@@ -835,9 +833,7 @@ function ScheduleClientInner() {
         </header>
 
         {/* Raptive Header Ad */}
-        <div className="container mx-auto px-4 min-h-[110px]">
-          <div className="raptive-pfn-header-90"></div>
-        </div>
+        <RaptiveHeaderAd />
 
         {/* View Mode and Filters */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -1100,7 +1096,13 @@ function ScheduleClientInner() {
                 </div>
               ) : error ? (
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
-                  <p className="text-red-600">{error}</p>
+                  <p className="text-red-600 mb-3">{error}</p>
+                  <button
+                    onClick={() => mutateSchedule()}
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer"
+                  >
+                    Try Again
+                  </button>
                 </div>
               ) : filteredDailyGames.length === 0 ? (
                 <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-12 text-center">
@@ -1132,7 +1134,13 @@ function ScheduleClientInner() {
                 </div>
               ) : error ? (
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
-                  <p className="text-red-600">{error}</p>
+                  <p className="text-red-600 mb-3">{error}</p>
+                  <button
+                    onClick={() => mutateSchedule()}
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer"
+                  >
+                    Try Again
+                  </button>
                 </div>
               ) : (
                 <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
@@ -1179,7 +1187,7 @@ function ScheduleClientInner() {
                     ))}
                   </div>
                   <div className="grid grid-cols-7">
-                    {Array.from({ length: 35 }).map((_, i) => (
+                    {Array.from({ length: 42 }).map((_, i) => (
                       <div key={i} className="aspect-square border-r border-b border-gray-200 p-3">
                         <div className="h-6 w-6 bg-gray-200 rounded mb-2"></div>
                       </div>
@@ -1188,7 +1196,13 @@ function ScheduleClientInner() {
                 </div>
               ) : error ? (
                 <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
-                  <p className="text-red-600">{error}</p>
+                  <p className="text-red-600 mb-3">{error}</p>
+                  <button
+                    onClick={() => mutateSchedule()}
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium cursor-pointer"
+                  >
+                    Try Again
+                  </button>
                 </div>
               ) : (
                 <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">

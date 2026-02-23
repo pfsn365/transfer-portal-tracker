@@ -9,12 +9,25 @@ interface PlayerIndexEntry {
   teamSlug: string;
   espnTeamId: number;
   teamInfo: any;
+  prefetchedAthleteData?: any;
 }
 
 let playerIndex: Map<string, PlayerIndexEntry> | null = null;
 let playerIndexTimestamp = 0;
 const INDEX_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 let indexBuildPromise: Promise<void> | null = null;
+
+// Reverse lookup: ESPN team ID → internal team slug (lazily built)
+let espnIdToSlug: Map<number, string> | null = null;
+function getEspnIdToSlug(): Map<number, string> {
+  if (!espnIdToSlug) {
+    espnIdToSlug = new Map<number, string>();
+    for (const [slug, id] of Object.entries(teamSlugToEspnId) as [string, number][]) {
+      espnIdToSlug.set(id, slug);
+    }
+  }
+  return espnIdToSlug;
+}
 
 async function fetchWithRetry(url: string, retries = 2): Promise<Response> {
   for (let i = 0; i <= retries; i++) {
@@ -145,6 +158,98 @@ function slugify(name: string): string {
     .trim();
 }
 
+function slugToName(slug: string): string {
+  return slug
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+// Search ESPN for a player not found in the roster index
+async function searchPlayerFallback(playerSlug: string): Promise<PlayerIndexEntry | null> {
+  try {
+    const name = slugToName(playerSlug);
+    const searchUrl = `https://site.web.api.espn.com/apis/common/v3/search?query=${encodeURIComponent(name)}&limit=10&type=player`;
+    const searchResponse = await fetchWithRetry(searchUrl, 1);
+    if (!searchResponse.ok) return null;
+
+    const searchData = await searchResponse.json();
+
+    // Find matching college football player
+    const items = searchData?.items || [];
+    let matchedItem: any = null;
+    for (const item of items) {
+      // Filter to college football players
+      if (item.type !== 'player') continue;
+      const league = item.league?.slug || item.league?.name || '';
+      if (!league.includes('college-football') && league !== 'ncaaf') continue;
+
+      // Match by slugified display name
+      const displayName = item.displayName || item.name || '';
+      if (slugify(displayName) === playerSlug) {
+        matchedItem = item;
+        break;
+      }
+    }
+
+    if (!matchedItem) return null;
+
+    // Fetch the full athlete profile
+    const athleteId = matchedItem.id;
+    const athleteUrl = `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}`;
+    const athleteResponse = await fetchWithRetry(athleteUrl, 1);
+    if (!athleteResponse.ok) return null;
+
+    const athleteData = await athleteResponse.json();
+    const athlete = athleteData.athlete || athleteData;
+
+    // Resolve team info from the athlete's team
+    const athleteTeam = athlete.team || athlete.teams?.[0] || null;
+    const espnTeamId = athleteTeam?.id ? Number(athleteTeam.id) : 0;
+    const reverseMap = getEspnIdToSlug();
+    const teamSlug = reverseMap.get(espnTeamId) || '';
+    const teamData = allTeams.find((t) => t.slug === teamSlug);
+
+    // Resolve team color: prefer our mapping, fall back to ESPN color
+    const espnColor = athleteTeam?.color ? `#${athleteTeam.color}` : '#800000';
+    const teamColor = teamData?.id ? getTeamColor(teamData.id) : espnColor;
+
+    return {
+      player: {
+        id: athlete.id,
+        fullName: athlete.fullName || athlete.displayName,
+        firstName: athlete.firstName || '',
+        lastName: athlete.lastName || '',
+        displayName: athlete.displayName || '',
+        jersey: athlete.jersey || '',
+        position: athlete.position || {},
+        height: athlete.height,
+        displayHeight: athlete.displayHeight,
+        weight: athlete.weight,
+        displayWeight: athlete.displayWeight,
+        experience: athlete.experience || {},
+        headshot: athlete.headshot || {},
+        birthPlace: athlete.birthPlace || null,
+        dateOfBirth: athlete.dateOfBirth || '',
+      },
+      teamSlug,
+      espnTeamId,
+      teamInfo: athleteTeam
+        ? {
+            displayName: athleteTeam.displayName || athleteTeam.name || '',
+            abbreviation: athleteTeam.abbreviation || '',
+            logo: athleteTeam.logos?.[0]?.href || athleteTeam.logo || `https://a.espncdn.com/i/teamlogos/ncaa/500/${espnTeamId}.png`,
+            color: teamColor,
+          }
+        : null,
+      prefetchedAthleteData: athleteData,
+    };
+  } catch (error) {
+    console.error('ESPN search fallback failed:', error);
+    return null;
+  }
+}
+
 // Transfer portal data - fetched from the same source as the main transfer portal API
 const TRANSFER_PORTAL_API = 'https://staticj.profootballnetwork.com/assets/sheets/tools/cfb-transfer-portal-tracker/transferPortalTrackerData.json';
 
@@ -206,11 +311,15 @@ export async function GET(
     const index = await getPlayerIndex();
     const playerEntry = index.get(playerSlug);
 
-    if (!playerEntry) {
-      return NextResponse.json({ error: 'Player not found' }, { status: 404 });
+    let resolvedEntry: PlayerIndexEntry | undefined = playerEntry;
+    if (!resolvedEntry) {
+      resolvedEntry = (await searchPlayerFallback(playerSlug)) ?? undefined;
+      if (!resolvedEntry) {
+        return NextResponse.json({ error: 'Player not found' }, { status: 404 });
+      }
     }
 
-    const { player: foundPlayer, teamSlug: foundTeamSlug, espnTeamId: foundEspnTeamId, teamInfo: foundTeamInfo } = playerEntry;
+    const { player: foundPlayer, teamSlug: foundTeamSlug, espnTeamId: foundEspnTeamId, teamInfo: foundTeamInfo } = resolvedEntry;
     const athleteId = foundPlayer.id;
     const playerName = foundPlayer.fullName || foundPlayer.displayName;
 
@@ -223,20 +332,25 @@ export async function GET(
       : `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}/gamelog`;
 
     // Fetch additional player data from ESPN and transfer portal in parallel
+    // Skip athlete fetch if we already have prefetched data from the fallback search
+    const hasPrefetchedAthlete = !!resolvedEntry.prefetchedAthleteData;
+
     const [statsResponse, gameLogResponse, athleteResponse, transferPortalData] = await Promise.all([
       fetchWithRetry(
         `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}/stats`
       ).catch(() => null),
       fetchWithRetry(gameLogUrl).catch(() => null),
-      fetchWithRetry(
-        `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}`
-      ).catch(() => null),
+      hasPrefetchedAthlete
+        ? Promise.resolve(null)
+        : fetchWithRetry(
+            `https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/${athleteId}`
+          ).catch(() => null),
       getTransferPortalData(),
     ]);
 
     let statsData: any = null;
     let gameLogData: any = null;
-    let athleteData: any = null;
+    let athleteData: any = hasPrefetchedAthlete ? resolvedEntry.prefetchedAthleteData : null;
 
     if (statsResponse?.ok) {
       statsData = await statsResponse.json();
@@ -246,7 +360,7 @@ export async function GET(
       gameLogData = await gameLogResponse.json();
     }
 
-    if (athleteResponse?.ok) {
+    if (!hasPrefetchedAthlete && athleteResponse?.ok) {
       athleteData = await athleteResponse.json();
     }
 

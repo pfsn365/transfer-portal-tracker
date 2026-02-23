@@ -19,6 +19,14 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     setIsExpanded(false);
   }, [pathname]);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobile && isExpanded) {
+      document.body.style.overflow = 'hidden';
+      return () => { document.body.style.overflow = ''; };
+    }
+  }, [isMobile, isExpanded]);
+
   const normalizePath = (path: string) => path.replace(/\/$/, '');
   const normalizedPathname = normalizePath(pathname);
 
@@ -89,7 +97,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
 
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="sidebar-header-btn text-white p-1 cursor-pointer"
+            className="sidebar-header-btn text-white p-2.5 -m-1.5 cursor-pointer"
             aria-label="Toggle dropdown"
           >
             <svg
@@ -104,7 +112,13 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
         </div>
 
         {isExpanded && (
-          <div className="bg-black border-t border-gray-800">
+          <>
+          {/* Backdrop overlay — click outside to close */}
+          <div
+            className="fixed inset-0 top-[48px] z-[-1]"
+            onClick={() => setIsExpanded(false)}
+          />
+          <div className="bg-black border-t border-gray-800 max-h-[calc(100vh-48px)] overflow-y-auto">
             <div className="px-4 py-2 border-b border-gray-800">
               <div className="grid grid-cols-1 gap-1">
                 <Link
@@ -240,6 +254,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               )}
             </div>
           </div>
+          </>
         )}
       </div>
     );

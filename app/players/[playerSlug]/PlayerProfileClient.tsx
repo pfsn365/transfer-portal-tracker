@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
+import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 
 interface PlayerProfile {
   id: string;
@@ -155,10 +156,14 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
         if (response.ok) {
           const data = await response.json();
           setCurrentGameLog(data.gameLog || []);
+        } else {
+          // Clear game log and show empty state on error
+          setCurrentGameLog([]);
         }
       } catch (err) {
         if (err instanceof Error && err.name !== 'AbortError') {
           console.error('Error fetching game log:', err);
+          setCurrentGameLog([]);
         }
       } finally {
         setGameLogLoading(false);
@@ -258,8 +263,15 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 alt={player.name}
                 className="w-full h-full object-cover object-[center_20%]"
                 onError={(e) => {
+                  const img = e.target as HTMLImageElement;
                   // Fallback to ESPN headshot if local image doesn't exist
-                  (e.target as HTMLImageElement).src = player.headshot;
+                  // If already on ESPN fallback, stop to prevent infinite loop
+                  if (img.src === player.headshot || img.dataset.fallbackAttempted) {
+                    img.style.display = 'none';
+                    return;
+                  }
+                  img.dataset.fallbackAttempted = 'true';
+                  img.src = player.headshot;
                 }}
               />
             </div>
@@ -294,9 +306,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
       </div>
 
       {/* Raptive Header Ad */}
-      <div className="container mx-auto px-4 h-[120px] flex items-center justify-center">
-        <div className="raptive-pfn-header-90 w-full h-full"></div>
-      </div>
+      <RaptiveHeaderAd />
 
       {/* Content Area */}
       <div className="container mx-auto px-4 py-6">
@@ -334,11 +344,15 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
               <div>
                 <dt className="text-xs text-gray-500 uppercase tracking-wide">Birth Date</dt>
                 <dd className="font-medium text-gray-900">
-                  {new Date(player.birthDate).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric',
-                  })}
+                  {(() => {
+                    // Parse date parts directly to avoid timezone-related off-by-one
+                    const parts = player.birthDate.split('T')[0].split('-');
+                    if (parts.length === 3) {
+                      const d = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+                      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                    }
+                    return player.birthDate;
+                  })()}
                 </dd>
               </div>
             )}
@@ -526,15 +540,15 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                           const numericValues = values.filter(v => typeof v === 'number') as number[];
 
                           // Check if this is a rate/average stat (AVG, PCT, etc.)
-                          const isRateStat = cat.includes('AVG') || cat.includes('PCT') || cat.includes('%') || cat === 'YPC' || cat === 'YPR' || cat === 'YPA';
+                          const isRateStat = cat.includes('AVG') || cat.includes('PCT') || cat.includes('%') || cat === 'YPC' || cat === 'YPR' || cat === 'YPA' || cat === 'RTG' || cat === 'QBR';
 
                           let displayValue: string;
                           if (numericValues.length === 0) {
                             displayValue = '—';
                           } else if (isRateStat) {
-                            // For rate stats, show average
-                            const avg = numericValues.reduce((a, b) => a + b, 0) / numericValues.length;
-                            displayValue = avg.toFixed(1);
+                            // Rate stats can't be summed — show dash since a naive average
+                            // of per-season rates is misleading (not weighted by attempts)
+                            displayValue = '—';
                           } else {
                             // For counting stats, show sum
                             const sum = numericValues.reduce((a, b) => a + b, 0);
