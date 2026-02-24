@@ -129,6 +129,9 @@ export default function RootLayout({
         <meta name="HandheldFriendly" content="true" />
         <meta name="MobileOptimized" content="width" />
 
+        {/* Content tier signal */}
+        <meta property="article:content_tier" content="free" />
+
         {/* Performance and security */}
         <meta httpEquiv="X-DNS-Prefetch-Control" content="on" />
       </head>
