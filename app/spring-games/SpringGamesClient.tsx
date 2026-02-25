@@ -152,7 +152,7 @@ export default function SpringGamesClient() {
             Spring Game Schedule
           </h1>
           <p className="text-lg opacity-90 font-medium">
-            2025 college football spring games, showcases &amp; scrimmages
+            2026 college football spring games, showcases &amp; scrimmages
           </p>
         </div>
       </header>
