@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import { getApiPath } from '@/utils/api';
 import { getTeamById } from '@/data/teams';
-import { teamSlugToEspnId } from '@/utils/espnTeamIds';
+import { getTeamLogo } from '@/utils/teamLogos';
 
 interface SpringGame {
   program: string;
@@ -320,8 +320,7 @@ export default function SpringGamesClient() {
                         })
                         .map((game) => {
                           const teamData = getTeamById(game.program);
-                          const espnId = teamData ? teamSlugToEspnId[teamData.slug] : undefined;
-                          const logo = espnId ? `https://a.espncdn.com/i/teamlogos/ncaa/500/${espnId}.png` : undefined;
+                          const logo = getTeamLogo(game.program);
 
                           return (
                             <tr
