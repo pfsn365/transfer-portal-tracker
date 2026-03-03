@@ -62,7 +62,7 @@ export default function TeamsListClient() {
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">FBS Teams by Conference</h2>
           {/* Search Bar */}
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-8">

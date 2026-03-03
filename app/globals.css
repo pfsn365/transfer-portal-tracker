@@ -25,6 +25,10 @@ body {
   min-height: 100vh;
 }
 
+table {
+  font-variant-numeric: tabular-nums;
+}
+
 /* PFSN Header - Critical styles for SSR */
 .pfn-header-wrapper {
   display: flex;
@@ -229,7 +233,6 @@ body {
 
 .table-row-hover:hover {
   background-color: #f3f4f6;
-  transform: scale(1.002);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 

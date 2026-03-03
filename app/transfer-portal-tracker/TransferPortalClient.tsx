@@ -317,7 +317,7 @@ export default function TransferPortalClient() {
           {/* Raptive Header Ad */}
           <RaptiveHeaderAd />
 
-          <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
             <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
@@ -341,7 +341,7 @@ export default function TransferPortalClient() {
     return (
       <>
         <Header />
-          <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
             <ErrorMessage message={error} onRetry={handleRetry} />
           </div>
@@ -356,7 +356,7 @@ export default function TransferPortalClient() {
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
           {/* Search & Filter Section */}
           <div className="bg-white rounded-lg shadow-md mb-6 p-4 sm:p-6">

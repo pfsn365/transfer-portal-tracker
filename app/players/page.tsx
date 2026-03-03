@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import PlayersDirectoryClient from './PlayersDirectoryClient';
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     url: 'https://www.profootballnetwork.com/cfb-hq/players',
     type: 'website',
     siteName: 'CFB HQ - Pro Football Network',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

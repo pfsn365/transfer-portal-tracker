@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTeamBySlug, allTeams } from '@/data/teams';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import CFBTeamPage from './CFBTeamPage';
 
 interface TeamPageProps {
@@ -39,6 +40,7 @@ export async function generateMetadata({ params }: TeamPageProps): Promise<Metad
       title,
       description,
       url,
+      images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       title,

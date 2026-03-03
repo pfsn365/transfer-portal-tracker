@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import TransferPortalClient from './TransferPortalClient';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Track every college football transfer in real-time. Filter by status, school, position, class, and conference.',
     url: 'https://www.profootballnetwork.com/cfb-hq/transfer-portal-tracker',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

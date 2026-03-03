@@ -140,7 +140,7 @@ export default function PostseasonClient() {
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Tab Navigation */}
           <div className="sticky top-[48px] z-20 bg-white border-b border-gray-200 shadow-sm -mx-4 sm:-mx-6 px-4 sm:px-6 lg:mx-0 lg:px-0 lg:static lg:bg-white lg:rounded-xl lg:border lg:border-gray-200 lg:shadow-sm lg:p-2 lg:mb-6">
             <nav className="flex gap-2 overflow-x-auto scrollbar-hide py-2.5 lg:py-0 lg:gap-1 lg:min-w-max">

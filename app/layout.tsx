@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: 'CFB HQ',
     images: [
       {
-        url: '/cfb-hq/og-image.png',
+        url: 'https://statico.profootballnetwork.com/wp-content/uploads/2026/03/02165226/CFB-HQ.png',
         width: 1200,
         height: 630,
         alt: 'CFB HQ - College Football Tools',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     description: 'Your destination for college football tools and data. Access comprehensive CFB resources from PFSN, including the transfer portal, playoff, and more.',
     creator: '@PFSN365',
     site: '@PFSN365',
-    images: ['/cfb-hq/og-image.png'],
+    images: ['https://statico.profootballnetwork.com/wp-content/uploads/2026/03/02165226/CFB-HQ.png'],
   },
   alternates: {
     canonical: 'https://www.profootballnetwork.com/cfb-hq',

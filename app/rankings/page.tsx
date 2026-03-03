@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import RankingsClient from './RankingsClient';
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description: 'View the latest college football rankings including AP Top 25, Coaches Poll, and College Football Playoff rankings.',
     url: 'https://www.profootballnetwork.com/cfb-hq/rankings',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

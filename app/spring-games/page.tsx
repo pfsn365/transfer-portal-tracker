@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import SpringGamesClient from './SpringGamesClient';
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     description: 'Complete 2025 college football spring game schedule. Find dates for every FBS spring game, showcase, and scrimmage.',
     url: 'https://www.profootballnetwork.com/cfb-hq/spring-games',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

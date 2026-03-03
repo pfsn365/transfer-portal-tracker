@@ -310,7 +310,7 @@ export default function StandingsClient() {
                     <table className="w-full">
                       <thead className="bg-gray-50 border-b border-gray-200 sticky top-0 z-10">
                         <tr>
-                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50">
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-600 bg-gray-50 sticky left-0 z-[12] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)]">
                             Team
                           </th>
                           <th className="px-2 py-3 text-center text-xs font-semibold text-gray-600 bg-gray-50">
@@ -336,9 +336,11 @@ export default function StandingsClient() {
                           const bowlEligible = isBowlEligible(team);
 
                           // Determine row background color
-                          let rowBgClass = index % 2 === 0 ? 'bg-white' : 'bg-gray-50/50';
+                          let rowBgClass = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
+                          let stickyBgClass = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
                           if (bowlEligible && division === 'fbs') {
                             rowBgClass = 'bg-green-50 border-l-4 border-l-green-400';
+                            stickyBgClass = 'bg-green-50';
                           }
 
                           return (
@@ -346,7 +348,7 @@ export default function StandingsClient() {
                               key={team.id}
                               className={`hover:bg-gray-100 transition-colors ${rowBgClass}`}
                             >
-                              <td className="px-4 py-3">
+                              <td className={`px-4 py-3 sticky left-0 z-[2] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)] ${stickyBgClass}`}>
                                 <div className="flex items-center gap-2">
                                   <span className="text-sm font-medium text-gray-500 w-4 text-right">
                                     {index + 1}

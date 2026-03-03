@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import TeamsListClient from './TeamsListClient';
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     description: 'Browse all FBS college football teams. View team rosters, schedules, stats, transfer portal activity, and standings.',
     url: 'https://www.profootballnetwork.com/cfb-hq/teams',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

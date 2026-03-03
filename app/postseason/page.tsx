@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import PostseasonClient from './PostseasonClient';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Complete coverage of the 2025-26 college football postseason including playoff bracket, bowl games, and national champions history.',
     url: 'https://www.profootballnetwork.com/cfb-hq/postseason',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

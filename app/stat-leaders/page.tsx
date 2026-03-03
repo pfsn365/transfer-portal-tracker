@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import StatLeadersClient from './StatLeadersClient';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'View the top statistical leaders in college football. Browse passing, rushing, receiving, and defensive stats for FBS and FCS.',
     url: 'https://www.profootballnetwork.com/cfb-hq/stat-leaders',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import PlayerProfileClient from './PlayerProfileClient';
 
 interface Props {
@@ -35,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       type: 'profile',
       siteName: 'CFB HQ - Pro Football Network',
+      images: [DEFAULT_OG_IMAGE],
     },
     twitter: {
       card: 'summary',

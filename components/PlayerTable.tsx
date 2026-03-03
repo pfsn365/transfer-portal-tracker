@@ -139,11 +139,11 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
   };
 
   // Sortable header component
-  const SortableHeader = ({ field, children, centered = false }: { field: SortField; children: React.ReactNode; centered?: boolean }) => {
+  const SortableHeader = ({ field, children, centered = false, className: extraClassName = '' }: { field: SortField; children: React.ReactNode; centered?: boolean; className?: string }) => {
     const isActive = sortField === field;
     return (
       <th
-        className={`py-3 px-3 sm:px-4 ${centered ? 'text-center' : 'text-left'} text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 select-none`}
+        className={`py-3 px-3 sm:px-4 ${centered ? 'text-center' : 'text-left'} text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-100 select-none ${extraClassName}`}
         onClick={() => onSort(field)}
       >
         {children}
@@ -219,8 +219,8 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
           <table className="w-full">
             <thead className="bg-gray-50 border-b border-gray-200">
               <tr>
-                <th className="py-3 px-3 sm:px-4 w-16"></th>
-                <SortableHeader field="name">Player</SortableHeader>
+                <th className="py-3 px-3 sm:px-4 w-16 bg-gray-50 sticky left-0 z-[12]"></th>
+                <SortableHeader field="name" className="bg-gray-50 sticky left-16 z-[12] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)]">Player</SortableHeader>
                 <SortableHeader field="status">Status</SortableHeader>
                 <SortableHeader field="formerSchool" centered>Previous School</SortableHeader>
                 <th className="py-3 px-2 w-8"></th>
@@ -265,7 +265,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   key={player.id}
                   className={`table-row-hover ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                 >
-                  <td className="px-4 py-4 text-center">
+                  <td className={`px-4 py-4 text-center sticky left-0 z-[2] ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
                     <button
                       onClick={() => toggleWatchlist(player.id)}
                       className="hover:scale-110 transition-transform cursor-pointer"
@@ -280,7 +280,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       />
                     </button>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className={`px-6 py-4 whitespace-nowrap sticky left-16 z-[2] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)] ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
                     <div className="flex items-center">
                       <PlayerAvatar
                         playerName={player.name}

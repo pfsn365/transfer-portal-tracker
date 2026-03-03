@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import ScheduleClient from './ScheduleClient';
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description: 'View the complete 2025 college football schedule. Browse FBS and FCS games by week, check scores, TV broadcasts, and game times.',
     url: 'https://www.profootballnetwork.com/cfb-hq/schedule',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

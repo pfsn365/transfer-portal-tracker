@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import CFBHomePageContent from '@/components/CFBHomePageContent';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     title: 'College Football HQ - CFB Tools, Playoff Bracket & Transfer Portal',
     description: 'Your destination for college football tools and data at PFSN. Whether it is the latest schedule or indepth analytics, we have you covered.',
     url: 'https://www.profootballnetwork.com/cfb-hq',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     title: 'College Football HQ - CFB Tools, Playoff Bracket & Transfer Portal',

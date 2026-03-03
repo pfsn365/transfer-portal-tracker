@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import PowerRankingsClient from './PowerRankingsClient';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'Create and customize your own college football power rankings. Drag and drop teams, save multiple rankings, and download shareable images.',
     url: 'https://www.profootballnetwork.com/cfb-hq/power-rankings-builder',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

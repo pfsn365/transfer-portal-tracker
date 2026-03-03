@@ -104,7 +104,7 @@ export default function RankingsClient() {
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Poll Tabs */}
           {!loading && data?.rankings && data.rankings.length > 0 && (
             <div className="sticky top-[48px] z-20 bg-white border-b border-gray-200 shadow-sm -mx-4 sm:-mx-6 px-4 sm:px-6 mb-6 lg:static lg:mx-0 lg:px-0 lg:rounded-xl lg:border lg:border-gray-200 lg:shadow-sm lg:p-4">

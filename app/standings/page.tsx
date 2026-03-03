@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { DEFAULT_OG_IMAGE } from '@/lib/metadata';
 import StandingsClient from './StandingsClient';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description: 'View current college football standings for all FBS and FCS conferences. Track conference records, overall records, and winning streaks.',
     url: 'https://www.profootballnetwork.com/cfb-hq/standings',
     type: 'website',
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',

@@ -414,7 +414,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Date</th>
+                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap sticky left-0 z-[12] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)]">Date</th>
                       <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">OPP</th>
                       <th className="text-center py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Result</th>
                       {currentGameLog[0]?.stats.categories.slice(0, 8).map((cat) => (
@@ -430,9 +430,9 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                       return (
                         <tr
                           key={game.gameId}
-                          className={`border-b border-gray-100 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+                          className={`border-b border-gray-100 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                         >
-                          <td className="py-3 px-2 font-medium text-gray-900 whitespace-nowrap">
+                          <td className={`py-3 px-2 font-medium text-gray-900 whitespace-nowrap sticky left-0 z-[2] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)] ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
                             {gameDate.toLocaleDateString('en-US', {
                               month: 'short',
                               day: 'numeric',
@@ -503,7 +503,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b-2 border-gray-200">
-                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Season</th>
+                      <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap sticky left-0 z-[12] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)]">Season</th>
                       <th className="text-left py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">Team</th>
                       {selectedCategoryData.seasons[0]?.stats.categories.map((cat) => (
                         <th key={cat} className="text-center py-3 px-2 font-semibold text-gray-600 bg-gray-50 whitespace-nowrap">
@@ -516,9 +516,9 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                     {selectedCategoryData.seasons.map((season, idx) => (
                       <tr
                         key={`${season.season}-${idx}`}
-                        className={`border-b border-gray-100 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+                        className={`border-b border-gray-100 hover:bg-gray-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                       >
-                        <td className="py-3 px-2 font-medium text-gray-900 whitespace-nowrap">{season.season}</td>
+                        <td className={`py-3 px-2 font-medium text-gray-900 whitespace-nowrap sticky left-0 z-[2] shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)] ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>{season.season}</td>
                         <td className="py-3 px-2 text-gray-700 whitespace-nowrap">{season.teamAbbr || season.team}</td>
                         {season.stats.values.map((value, colIdx) => (
                           <td key={colIdx} className="py-3 px-2 text-center text-gray-700 whitespace-nowrap">
@@ -532,7 +532,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                     {/* Career Totals Row */}
                     {selectedCategoryData.seasons.length > 1 && (
                       <tr className="border-t-2 border-gray-300 bg-gray-100 font-semibold">
-                        <td className="py-3 px-2 text-gray-900 whitespace-nowrap">Career</td>
+                        <td className="py-3 px-2 text-gray-900 whitespace-nowrap sticky left-0 z-[2] bg-gray-100 shadow-[2px_0_4px_-1px_rgba(0,0,0,0.06)]">Career</td>
                         <td className="py-3 px-2 text-gray-700 whitespace-nowrap">—</td>
                         {selectedCategoryData.seasons[0]?.stats.categories.map((cat, colIdx) => {
                           // Sum up the values for this column across all seasons
