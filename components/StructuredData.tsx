@@ -177,7 +177,7 @@ export default function StructuredData() {
             "@type": "ListItem",
             "position": 2,
             "name": "College Football HQ",
-            "item": "https://www.profootballnetwork.com/cfb-hq/"
+            "item": "https://www.profootballnetwork.com/cfb-hq"
           }
         ]
       }

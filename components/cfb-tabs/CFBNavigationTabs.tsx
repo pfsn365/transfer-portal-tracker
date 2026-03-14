@@ -65,7 +65,7 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
             <a
               key={tab.id}
               ref={activeTab === tab.id ? activeLinkRef : null}
-              href={tab.id === 'overview' ? `/cfb-hq/teams/${team.slug}/` : `/cfb-hq/teams/${team.slug}/${tab.id}/`}
+              href={tab.id === 'overview' ? `/cfb-hq/teams/${team.slug}` : `/cfb-hq/teams/${team.slug}/${tab.id}`}
               onClick={(e) => {
                 e.preventDefault();
                 onTabChange(tab.id);

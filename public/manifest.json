@@ -2,7 +2,7 @@
   "name": "CFB HQ",
   "short_name": "CFB HQ",
   "description": "Your destination for college football tools and data",
-  "start_url": "/cfb-hq/",
+  "start_url": "/cfb-hq",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0050A0",
@@ -28,6 +28,6 @@
   "categories": ["sports", "news"],
   "lang": "en-US",
   "dir": "ltr",
-  "scope": "/cfb-hq/",
+  "scope": "/cfb-hq",
   "prefer_related_applications": false
 }

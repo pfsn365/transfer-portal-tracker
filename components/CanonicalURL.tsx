@@ -15,10 +15,11 @@ export default function CanonicalURL() {
       existingCanonical.remove();
     }
 
-    // Create and append new canonical link
+    // Build canonical URL: strip trailing slashes and query params
+    const cleanPath = pathname.replace(/\/+$/, '');
     const link = document.createElement('link');
     link.rel = 'canonical';
-    link.href = `${BASE_URL}${pathname}`;
+    link.href = `${BASE_URL}${cleanPath}`;
     document.head.appendChild(link);
 
     return () => {

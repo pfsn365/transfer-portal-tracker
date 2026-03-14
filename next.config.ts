@@ -5,6 +5,7 @@ const basePath = '/cfb-hq';
 const nextConfig: NextConfig = {
   basePath: basePath,
   assetPrefix: basePath ? `${basePath}/` : undefined,
+  trailingSlash: false,
   images: {
     remotePatterns: [
       {
