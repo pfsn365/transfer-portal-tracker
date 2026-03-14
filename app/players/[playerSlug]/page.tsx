@@ -7,6 +7,11 @@ interface Props {
   params: Promise<{ playerSlug: string }>;
 }
 
+interface PlayerResult {
+  data: any | null;
+  is404: boolean;
+}
+
 function slugToName(slug: string): string {
   return slug
     .split('-')
@@ -14,46 +19,39 @@ function slugToName(slug: string): string {
     .join(' ');
 }
 
-function slugify(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-}
-
-async function verifyPlayerExists(playerSlug: string): Promise<boolean> {
+async function getPlayerData(playerSlug: string): Promise<PlayerResult> {
   try {
-    const name = slugToName(playerSlug);
-    const searchUrl = `https://site.web.api.espn.com/apis/common/v3/search?query=${encodeURIComponent(name)}&limit=10&type=player`;
-    const response = await fetch(searchUrl, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; CFB-Hub/1.0)' },
-      next: { revalidate: 3600 },
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/cfb-hq/api/players/${playerSlug}`, {
+      next: { revalidate: 300 },
     });
 
-    if (!response.ok) return false;
-
-    const data = await response.json();
-    const items = data?.items || [];
-
-    for (const item of items) {
-      if (item.type !== 'player') continue;
-      const league = item.league?.slug || item.league?.name || '';
-      if (!league.includes('college-football') && league !== 'ncaaf') continue;
-      const displayName = item.displayName || item.name || '';
-      if (slugify(displayName) === playerSlug) return true;
+    if (response.status === 404) {
+      return { data: null, is404: true };
     }
 
-    return false;
+    if (!response.ok) {
+      return { data: null, is404: false };
+    }
+
+    const data = await response.json();
+    return { data, is404: false };
   } catch {
-    // On network errors, allow the page to render (client will handle the error)
-    return true;
+    return { data: null, is404: false };
   }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { playerSlug } = await params;
+  const { is404 } = await getPlayerData(playerSlug);
+
+  if (is404) {
+    return {
+      title: 'Player Not Found',
+      robots: { index: false, follow: false },
+    };
+  }
+
   const playerName = slugToName(playerSlug);
   const url = `https://www.profootballnetwork.com/cfb-hq/players/${playerSlug}`;
 
@@ -96,8 +94,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PlayerProfilePage({ params }: Props) {
   const { playerSlug } = await params;
 
-  const exists = await verifyPlayerExists(playerSlug);
-  if (!exists) {
+  const { is404 } = await getPlayerData(playerSlug);
+  if (is404) {
     notFound();
   }
 
