@@ -6,29 +6,12 @@ interface FooterProps {
   currentPage?: string;
 }
 
-const Footer = ({ currentPage = 'CFB' }: FooterProps) => {
+const Footer = (_props?: FooterProps) => {
   return (
     <>
       <footer className="pfsn-footer no-sidebar">
         <div className="pfsn-footer-container">
           <div className="footer-columns">
-            <div className="footer-column">
-              <h3 className="footer-column-title">News & Analysis</h3>
-              <ul className="footer-links">
-                <li className={currentPage === 'CBB' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/mens-cbb/" target="_blank" rel="noopener noreferrer">CBB</a></li>
-                <li className={currentPage === 'CFB' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/cfb/" target="_blank" rel="noopener noreferrer">CFB</a></li>
-                <li className={currentPage === 'Fantasy' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/fantasy-football/" target="_blank" rel="noopener noreferrer">Fantasy</a></li>
-                <li className={currentPage === 'MLB' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/mlb/" target="_blank" rel="noopener noreferrer">MLB</a></li>
-                <li className={currentPage === 'NASCAR' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/nascar/" target="_blank" rel="noopener noreferrer">NASCAR</a></li>
-                <li className={currentPage === 'NBA' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/nba/" target="_blank" rel="noopener noreferrer">NBA</a></li>
-                <li className={currentPage === 'NFL' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/nfl/" target="_blank" rel="noopener noreferrer">NFL</a></li>
-                <li className={currentPage === 'NHL' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/nhl/" target="_blank" rel="noopener noreferrer">NHL</a></li>
-                <li className={currentPage === 'Tennis' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/tennis/" target="_blank" rel="noopener noreferrer">Tennis</a></li>
-                <li className={currentPage === 'WNBA' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/wnba/" target="_blank" rel="noopener noreferrer">WNBA</a></li>
-                <li className={currentPage === 'WWE' ? 'current-page' : ''}><a href="https://www.profootballnetwork.com/wwe-player-guessing-game/" target="_blank" rel="noopener noreferrer">WWE</a></li>
-              </ul>
-            </div>
-
             <div className="footer-column">
               <h3 className="footer-column-title">NFL Tools</h3>
               <ul className="footer-links">
@@ -63,13 +46,7 @@ const Footer = ({ currentPage = 'CFB' }: FooterProps) => {
             </div>
 
             <div className="footer-column">
-              <h3 className="footer-column-title">Betting Tools</h3>
-              <ul className="footer-links">
-                <li><a href="https://www.profootballnetwork.com/betting-odds-calculator-cta/">Odds Calculator</a></li>
-                <li><a href="https://www.profootballnetwork.com/parlay-calculator-cta/">Parlay Calculator</a></li>
-              </ul>
-
-              <h3 className="footer-column-title footer-subheading">Company</h3>
+              <h3 className="footer-column-title">Company</h3>
               <ul className="footer-links">
                 <li><a href="https://www.profootballnetwork.com/about-us/">About PFSN</a></li>
                 <li><a href="https://www.profootballnetwork.com/contact-media-inquiries-pro-football-network/">Contact Us</a></li>
@@ -83,11 +60,6 @@ const Footer = ({ currentPage = 'CFB' }: FooterProps) => {
                 <li><a href="https://www.profootballnetwork.com/nfl-salary-cap-space-by-team">NFL Salary Cap Table</a></li>
               </ul>
 
-              <h3 className="footer-column-title footer-subheading">NBA Tools</h3>
-              <ul className="footer-links">
-                <li><a href="https://www.profootballnetwork.com/nba-mock-draft-simulator">NBA Mock Draft Simulator</a></li>
-                <li><a href="https://www.profootballnetwork.com/nba-player-guessing-game">NBA Player Guessing Game</a></li>
-              </ul>
             </div>
           </div>
 

@@ -11,7 +11,7 @@ interface CFBSidebarProps {
 const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isCFBToolsExpanded, setIsCFBToolsExpanded] = useState(true);
-  const [isOtherToolsExpanded, setIsOtherToolsExpanded] = useState(true);
+
   const pathname = usePathname();
 
   // Auto-close mobile menu on navigation
@@ -53,20 +53,6 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
 
   const isBrowseTeamsPage = isActivePage('/teams') || pathname.startsWith('/teams');
 
-  const otherTools = [
-    { title: 'NFL Mock Draft Simulator', url: 'https://www.profootballnetwork.com/mock-draft-simulator/' },
-    { title: 'NFL HQ', url: 'https://www.profootballnetwork.com/nfl-hq/' },
-    { title: 'NFL Free Agency Tracker', url: 'https://www.profootballnetwork.com/nfl-hq/free-agency-tracker' },
-    { title: 'NFL Draft HQ', url: 'https://www.profootballnetwork.com/nfl-draft-hq/' },
-    { title: 'NFL Ultimate GM Simulator', url: 'https://www.profootballnetwork.com/cta-ultimate-gm-simulator-nfl/' },
-    { title: 'Fantasy Football Hub', url: 'https://www.profootballnetwork.com/fantasy/football/' },
-    { title: 'NBA HQ', url: 'https://www.profootballnetwork.com/nba-hq/' },
-    { title: 'NBA Mock Draft Simulator', url: 'https://www.profootballnetwork.com/nba-mock-draft-simulator' },
-    { title: 'MLB Playoff Predictor', url: 'https://www.profootballnetwork.com/mlb-playoff-predictor/' },
-    { title: 'World Cup Simulator', url: 'https://www.profootballnetwork.com/fifa-world-cup-simulator' },
-    { title: 'Tennis Simulator', url: 'https://www.profootballnetwork.com/tennis-simulator' },
-    { title: 'NASCAR Predictor', url: 'https://www.profootballnetwork.com/nascar-predictor/' },
-  ];
 
   // Mobile version
   if (isMobile) {
@@ -212,47 +198,8 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               )}
             </div>
 
-            <div className="px-4 py-2">
-              <div
-                role="button"
-                tabIndex={0}
-                aria-expanded={isOtherToolsExpanded}
-                aria-controls="other-tools-menu"
-                className="flex items-center justify-between mb-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
-                onClick={() => setIsOtherToolsExpanded(!isOtherToolsExpanded)}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setIsOtherToolsExpanded(!isOtherToolsExpanded); } }}
-              >
-                <div className="text-[#800000] text-xs font-bold uppercase tracking-wider">Other Sports</div>
-                <svg
-                  className={`w-4 h-4 text-[#800000] transform transition-transform duration-300 ease-out ${isOtherToolsExpanded ? 'rotate-180' : ''}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-              {isOtherToolsExpanded && (
-                <div id="other-tools-menu" className="grid grid-cols-1 gap-1">
-                  {otherTools.map((tool) => (
-                    <a
-                      key={tool.title}
-                      href={tool.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-3 py-2.5 rounded text-sm transition-colors text-white hover:bg-gray-800"
-                    >
-                      <div className="text-sm flex items-center gap-1">
-                        {tool.title}
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-3 h-3 opacity-50">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+
+
           </div>
           </>
         )}
@@ -380,34 +327,8 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
             );
           })}
 
-          <li className="pt-6">
-            <div className="px-3 mb-2">
-              <div className="flex items-center justify-between min-w-0">
-                <div className="flex items-center gap-2 min-w-0 flex-shrink">
-                  <div className="h-0.5 w-3 bg-gray-600 rounded flex-shrink-0"></div>
-                  <span className="text-xs font-bold text-gray-100 uppercase tracking-wider truncate">Other Sports</span>
-                </div>
-                <div className="flex-1 ml-3 h-px bg-gradient-to-r from-gray-800 to-transparent flex-shrink-0"></div>
-              </div>
-            </div>
-          </li>
-          {otherTools.map((tool) => (
-            <li key={tool.title}>
-              <a
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 text-gray-100 hover:bg-gray-800/50 hover:text-white"
-              >
-                <span className="text-sm font-medium truncate flex items-center gap-2">
-                  {tool.title}
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-3 h-3 opacity-50">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </span>
-              </a>
-            </li>
-          ))}
+
+
         </ul>
       </nav>
 
