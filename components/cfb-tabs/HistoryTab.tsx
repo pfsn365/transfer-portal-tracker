@@ -638,7 +638,7 @@ export default function HistoryTab({ team, teamColor }: HistoryTabProps) {
                     </td>
                     <td className="py-3 px-3 text-center">
                       {record.apPost ? (
-                        <span className={`text-sm font-medium ${record.apPost <= 10 ? 'text-green-600' : record.apPost <= 25 ? 'text-blue-600' : 'text-gray-700'}`}>
+                        <span className="text-sm font-medium text-gray-700">
                           #{record.apPost}
                         </span>
                       ) : (

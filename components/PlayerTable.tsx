@@ -153,54 +153,16 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
     );
   };
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'Committed':
-        return 'bg-green-100 text-green-800 border-green-300';
-      case 'Entered':
-        return 'bg-yellow-100 text-yellow-800 border-yellow-300';
-      default:
-        return 'bg-yellow-100 text-yellow-800 border-yellow-300';
-    }
+  const getStatusColor = (_status: string) => {
+    return 'text-gray-700';
   };
 
   const getStatusDisplayName = (status: string) => {
     return status === 'Entered' ? 'In Portal' : status;
   };
 
-  const getPositionColor = (position: string) => {
-    // Quarterback
-    if (position === 'QB') return 'bg-purple-100 text-purple-800';
-
-    // Running Backs
-    if (position === 'RB') return 'bg-green-100 text-green-800';
-
-    // Wide Receivers
-    if (position === 'WR') return 'bg-blue-100 text-blue-800';
-
-    // Tight End
-    if (position === 'TE') return 'bg-cyan-100 text-cyan-800';
-
-    // Offensive Line
-    if (['OL', 'OT', 'OG', 'OC', 'IOL', 'T', 'C', 'G'].includes(position)) return 'bg-orange-100 text-orange-800';
-
-    // Defensive Line
-    if (['EDGE', 'DL', 'DT'].includes(position)) return 'bg-red-100 text-red-800';
-
-    // Linebackers
-    if (position === 'LB') return 'bg-amber-100 text-amber-800';
-
-    // Defensive Backs
-    if (['CB', 'S', 'DB'].includes(position)) return 'bg-teal-100 text-teal-800';
-
-    // Special Teams
-    if (['K', 'P'].includes(position)) return 'bg-gray-100 text-gray-800';
-
-    // Athletes
-    if (position === 'ATH') return 'bg-violet-100 text-violet-800';
-
-    // Default
-    return 'bg-slate-100 text-slate-800';
+  const getPositionColor = (_position: string) => {
+    return 'text-gray-600';
   };
 
   if (players.length === 0) {
@@ -296,7 +258,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           <span className="text-sm font-bold text-gray-900">{player.name}</span>
                         )}
                         <div className="flex items-center gap-1.5 mt-1">
-                          <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
+                          <span className="text-xs font-medium text-gray-600">
                             {player.position}
                           </span>
                           <span className="text-gray-400">·</span>
@@ -306,7 +268,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border ${getStatusColor(player.status)}`}>
+                    <span className="text-xs font-medium text-gray-700">
                       {getStatusDisplayName(player.status)}
                     </span>
                   </td>
@@ -520,10 +482,10 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   )}
                   <div className="flex items-center gap-1.5 flex-wrap">
                     <span className="text-sm text-gray-600 font-medium">{player.class}</span>
-                    <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getPositionColor(player.position)}`}>
+                    <span className="text-xs font-medium text-gray-600">
                       {player.position}
                     </span>
-                    <span className={`px-2 py-0.5 text-xs font-semibold rounded ${getStatusColor(player.status)}`}>
+                    <span className="text-xs font-medium text-gray-700">
                       {getStatusDisplayName(player.status)}
                     </span>
                   </div>

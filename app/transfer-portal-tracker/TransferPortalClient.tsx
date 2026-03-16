@@ -40,13 +40,13 @@ export default function TransferPortalClient() {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('cfb-items-per-page');
-      if (saved) return Number(saved);
-    }
-    return 25;
-  });
+  const [itemsPerPage, setItemsPerPage] = useState(25);
+
+  // Sync from localStorage after mount to avoid hydration mismatch
+  useEffect(() => {
+    const saved = localStorage.getItem('cfb-items-per-page');
+    if (saved) setItemsPerPage(Number(saved));
+  }, []);
 
   // Valid player slugs (players that have roster pages)
   const [validPlayerSlugs, setValidPlayerSlugs] = useState<Set<string>>(new Set());
@@ -281,9 +281,10 @@ export default function TransferPortalClient() {
     return sorted;
   }, [filteredPlayers, sortField, sortDirection]);
 
-  // Reset to page 1 when filters change
+  // Reset to page 1 and scroll to top when filters change
   useEffect(() => {
     setCurrentPage(1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [selectedStatus, selectedSchool, selectedClass, selectedPosition, selectedConference, searchQuery, showWatchlistOnly]);
 
   // Calculate pagination

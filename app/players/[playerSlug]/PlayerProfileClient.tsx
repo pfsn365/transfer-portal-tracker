@@ -257,7 +257,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center gap-5">
             {/* Player Headshot with circular white background */}
-            <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg">
+            <div className="w-28 h-28 lg:w-32 lg:h-32 rounded-full bg-white flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg relative">
               <img
                 src={getLocalHeadshotUrl(playerSlug)}
                 alt={player.name}
@@ -265,15 +265,19 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 onError={(e) => {
                   const img = e.target as HTMLImageElement;
                   // Fallback to ESPN headshot if local image doesn't exist
-                  // If already on ESPN fallback, stop to prevent infinite loop
+                  // If already on ESPN fallback, show initials instead
                   if (img.src === player.headshot || img.dataset.fallbackAttempted) {
-                    img.style.display = 'none';
+                    img.style.visibility = 'hidden';
                     return;
                   }
                   img.dataset.fallbackAttempted = 'true';
                   img.src = player.headshot;
                 }}
               />
+              {/* Initials fallback — always rendered behind image */}
+              <span className="absolute inset-0 flex items-center justify-center text-2xl font-bold text-gray-400 select-none" aria-hidden="true">
+                {player.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+              </span>
             </div>
 
             {/* Player Info */}

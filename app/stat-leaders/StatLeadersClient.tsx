@@ -60,20 +60,9 @@ interface CategoryData {
   leaders: StatLeader[];
 }
 
-// Position color helper based on position groups
-const getPositionStyle = (position: string): string => {
-  const pos = position.toUpperCase();
-  if (pos === 'QB') return 'bg-purple-100 text-purple-700';
-  if (['RB', 'FB', 'HB'].includes(pos)) return 'bg-green-100 text-green-700';
-  if (['WR', 'TE'].includes(pos)) return 'bg-blue-100 text-blue-700';
-  if (['OL', 'OT', 'OG', 'OC', 'IOL', 'T', 'G', 'C'].includes(pos)) return 'bg-amber-100 text-amber-700';
-  if (['K', 'P', 'LS', 'PK'].includes(pos)) return 'bg-slate-200 text-slate-700';
-  if (['DE', 'EDGE', 'OLB'].includes(pos)) return 'bg-red-100 text-red-700';
-  if (['DT', 'NT', 'DL'].includes(pos)) return 'bg-rose-100 text-rose-700';
-  if (['LB', 'ILB', 'MLB'].includes(pos)) return 'bg-orange-100 text-orange-700';
-  if (['CB'].includes(pos)) return 'bg-cyan-100 text-cyan-700';
-  if (['S', 'SAF', 'DB', 'FS', 'SS'].includes(pos)) return 'bg-teal-100 text-teal-700';
-  return 'bg-gray-100 text-gray-700';
+// Position style helper
+const getPositionStyle = (_position: string): string => {
+  return 'text-gray-600';
 };
 
 const CATEGORY_LABELS: Record<string, { short: string; color: string }> = {
@@ -436,7 +425,7 @@ export default function StatLeadersClient() {
                                 </Link>
                               </td>
                               <td className="hidden sm:table-cell px-4 py-4 text-center">
-                                <span className={`inline-flex items-center justify-center px-2.5 py-1 rounded-full text-xs font-semibold ${getPositionStyle(leader.position)}`}>
+                                <span className="text-xs font-medium text-gray-600">
                                   {leader.position}
                                 </span>
                               </td>

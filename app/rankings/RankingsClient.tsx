@@ -243,7 +243,7 @@ export default function RankingsClient() {
                           </td>
                           <td className="px-4 py-3 text-center">
                             {movement.direction === 'new' ? (
-                              <span className="inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-red-100 text-red-700">
+                              <span className="text-xs font-semibold text-gray-700">
                                 NEW
                               </span>
                             ) : movement.direction === 'up' ? (
@@ -302,7 +302,7 @@ export default function RankingsClient() {
                   <span className="text-gray-600">Moved down from previous ranking</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-red-100 text-red-700">
+                  <span className="text-xs font-semibold text-gray-700">
                     NEW
                   </span>
                   <span className="text-gray-600">Newly ranked</span>

@@ -1612,14 +1612,9 @@ export default function PowerRankingsClient() {
                             </div>
                           </td>
                           <td className="hidden md:table-cell px-4 py-4">
-                            {(() => {
-                              const style = getConferenceStyle(rankedTeam.team.conference);
-                              return (
-                                <span className={`px-2 py-1 rounded text-xs font-semibold ${style.color}`}>
-                                  {style.display}
-                                </span>
-                              );
-                            })()}
+                            <span className="text-xs font-medium text-gray-600">
+                              {getConferenceStyle(rankedTeam.team.conference).display}
+                            </span>
                           </td>
                           <td className="px-4 py-4 text-gray-700">
                             {rankedTeam.team.wins}-{rankedTeam.team.losses}
@@ -1820,7 +1815,7 @@ export default function PowerRankingsClient() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="font-semibold text-gray-900">{team.name}</div>
-                        <span className={`inline-block px-1.5 py-0.5 rounded text-xs font-medium ${getConferenceStyle(team.conference).color}`}>
+                        <span className="text-xs text-gray-500">
                           {getConferenceStyle(team.conference).display}
                         </span>
                       </div>

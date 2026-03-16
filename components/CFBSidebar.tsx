@@ -8,9 +8,14 @@ interface CFBSidebarProps {
   isMobile?: boolean;
 }
 
+interface NavItem {
+  title: string;
+  url: string;
+  external: boolean;
+}
+
 const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isCFBToolsExpanded, setIsCFBToolsExpanded] = useState(true);
 
   const pathname = usePathname();
 
@@ -37,64 +42,142 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
   };
 
   const isHomePage = normalizedPathname === '' || normalizedPathname === '/' || normalizedPathname === '/cfb-hq';
-
-  const cfbTools = [
-    { title: 'CFB Transfer Portal Tracker', url: '/transfer-portal-tracker', external: false },
-    { title: 'CFB Spring Game Schedule', url: '/spring-games', external: false },
-    { title: 'CFB Schedule', url: '/schedule', external: false },
-    { title: 'CFB Standings', url: '/standings', external: false },
-    { title: 'CFB Rankings', url: '/rankings', external: false },
-    { title: 'CFB Stat Leaders', url: '/stat-leaders', external: false },
-    { title: 'CFB Postseason HQ', url: '/postseason', external: false },
-    { title: 'CFB Power Rankings Builder', url: '/power-rankings-builder', external: false },
-    { title: 'CFB Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
-    { title: 'CFB Player Pages', url: '/players', external: false },
-  ];
-
   const isBrowseTeamsPage = isActivePage('/teams') || pathname.startsWith('/teams');
 
+  // ── Grouped navigation sections ─────────────────────────────────────
 
-  // Mobile version
+  const navSections = [
+    {
+      label: 'Season',
+      items: [
+        { title: 'Spring Game Schedule', url: '/spring-games', external: false },
+        { title: 'Schedule', url: '/schedule', external: false },
+        { title: 'Standings', url: '/standings', external: false },
+        { title: 'Rankings', url: '/rankings', external: false },
+        { title: 'Stat Leaders', url: '/stat-leaders', external: false },
+        { title: 'Player Pages', url: '/players', external: false },
+      ],
+    },
+    {
+      label: 'Postseason & Rankings',
+      items: [
+        { title: 'Postseason HQ', url: '/postseason', external: false },
+        { title: 'Power Rankings Builder', url: '/power-rankings-builder', external: false },
+        { title: 'Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
+      ],
+    },
+  ];
+
+  // ── Shared helpers ──────────────────────────────────────────────────
+
+  const ExternalIcon = () => (
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-3 h-3 opacity-50 flex-shrink-0">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+    </svg>
+  );
+
+  const renderNavItem = (item: NavItem, closeMobile = false) => {
+    const isActive = !item.external && isActivePage(item.url);
+    const linkContent = (
+      <span className="text-[13px] font-medium truncate flex items-center gap-2">
+        {item.title}
+        {item.external && <ExternalIcon />}
+      </span>
+    );
+
+    return (
+      <li key={item.title}>
+        {!item.external ? (
+          <Link
+            href={item.url}
+            onClick={closeMobile ? () => setIsExpanded(false) : undefined}
+            className={`relative flex items-center px-3 py-1.5 mx-1 rounded-md transition-all duration-200 ${
+              isActive
+                ? 'bg-[#800000] text-white'
+                : 'text-gray-400 hover:bg-gray-800/50 hover:text-white'
+            }`}
+          >
+            {linkContent}
+          </Link>
+        ) : (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex items-center px-3 py-1.5 mx-1 rounded-md transition-all duration-200 text-gray-400 hover:bg-gray-800/50 hover:text-white"
+          >
+            {linkContent}
+          </a>
+        )}
+      </li>
+    );
+  };
+
+  // Section header
+  const SectionHeader = ({ label }: { label: string }) => (
+    <li className="pt-8 mb-1">
+      <div className="px-3 mx-1 mb-2">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-bold text-gray-100 uppercase tracking-wider">{label}</span>
+          </div>
+          <div className="flex-1 ml-3 h-px bg-gradient-to-r from-gray-600 to-transparent"></div>
+        </div>
+      </div>
+    </li>
+  );
+
+  // Render all nav sections
+  const renderSections = (closeMobile = false) => (
+    <>
+      {navSections.map((section) => (
+        <React.Fragment key={section.label}>
+          <SectionHeader label={section.label} />
+          {section.items.map((item) => renderNavItem(item, closeMobile))}
+        </React.Fragment>
+      ))}
+    </>
+  );
+
+  // ══════════════════════════════════════════════════════════════════════
+  //  MOBILE
+  // ══════════════════════════════════════════════════════════════════════
+
   if (isMobile) {
     return (
       <div className="w-full bg-black">
-        <div className="flex items-center justify-between px-4 py-3 bg-black">
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="sidebar-header-btn text-white p-2.5 -m-1.5 rounded-lg hover:bg-white/10 active:bg-white/20 transition-colors cursor-pointer"
-              aria-label="Toggle menu"
-            >
+        <div className="flex items-center justify-between px-3 h-12 bg-black">
+          {/* Left — Hamburger / X */}
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-white p-2 cursor-pointer"
+            aria-label="Toggle menu"
+          >
+            {isExpanded ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-            </button>
-
-            <a href="https://www.profootballnetwork.com" target="_blank" rel="noopener noreferrer" className="sidebar-header-link flex items-center">
-              <img
-                src="https://statico.profootballnetwork.com/wp-content/uploads/2025/06/12093424/tools-navigation-06-12-25.jpg"
-                alt="PFSN Logo"
-                className="h-6 w-auto transition-all duration-300 hover:opacity-80"
-              />
-            </a>
-
-            <span className="text-white font-semibold text-sm">CFB HQ</span>
-          </div>
-
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="sidebar-header-btn text-white p-2.5 -m-1.5 cursor-pointer"
-            aria-label="Toggle dropdown"
-          >
-            <svg
-              className={`w-4 h-4 transform transition-transform duration-300 ease-out ${isExpanded ? 'rotate-180' : ''}`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
+            )}
           </button>
+
+          {/* Center — PFSN Logo */}
+          <a href="https://www.profootballnetwork.com" target="_blank" rel="noopener noreferrer" className="absolute left-1/2 transform -translate-x-1/2 h-8 flex items-center">
+            <img
+              src="https://statico.profootballnetwork.com/wp-content/uploads/2025/06/12093424/tools-navigation-06-12-25.jpg"
+              alt="PFSN Logo"
+              loading="lazy"
+              width="96"
+              height="24"
+              className="max-h-6 w-auto object-contain transition-all duration-300 hover:opacity-80"
+            />
+          </a>
+
+          {/* Right — spacer to balance layout */}
+          <div className="w-9" />
         </div>
 
         {isExpanded && (
@@ -104,102 +187,73 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
             className="fixed inset-0 top-[48px] z-[-1]"
             onClick={() => setIsExpanded(false)}
           />
-          <div className="bg-black border-t border-gray-800 max-h-[calc(100vh-48px)] overflow-y-auto">
-            <div className="px-4 py-2 border-b border-gray-800">
-              <div className="grid grid-cols-1 gap-1">
-                <Link
-                  href="/"
-                  className={`block px-3 py-2.5 rounded text-sm transition-colors ${
-                    isHomePage
-                      ? 'bg-[#800000] text-white'
-                      : 'text-white hover:bg-gray-800'
-                  }`}
-                >
-                  <div className="text-sm flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    Home
-                  </div>
-                </Link>
-                <Link
-                  href="/teams"
-                  className={`block px-3 py-2.5 rounded text-sm transition-colors ${
-                    isBrowseTeamsPage
-                      ? 'bg-[#800000] text-white'
-                      : 'text-white hover:bg-gray-800'
-                  }`}
-                >
-                  <div className="text-sm flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                    </svg>
-                    Browse All Teams
-                  </div>
-                </Link>
-              </div>
+          <div className="bg-black border-t border-gray-800 max-h-[calc(100vh-48px)] flex flex-col">
+            {/* Sticky top links */}
+            <div className="bg-black border-b border-gray-800 pt-4 pb-2 flex-shrink-0">
+              <ul className="space-y-0.5">
+                <li>
+                  <Link
+                    href="/"
+                    onClick={() => setIsExpanded(false)}
+                    className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
+                      isHomePage
+                        ? 'bg-[#800000] text-white'
+                        : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2 w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                      <span className="text-[13px] font-medium">Home</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/transfer-portal-tracker"
+                    onClick={() => setIsExpanded(false)}
+                    className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
+                      isActivePage('/transfer-portal-tracker')
+                        ? 'bg-[#800000] text-white'
+                        : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2 w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                      <span className="text-[13px] font-medium">Transfer Portal Tracker</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/teams"
+                    onClick={() => setIsExpanded(false)}
+                    className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
+                      isBrowseTeamsPage
+                        ? 'bg-[#800000] text-white'
+                        : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2 w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                      </svg>
+                      <span className="text-[13px] font-medium">Browse All Teams</span>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
             </div>
 
-            <div className="px-4 py-2 border-b border-gray-800">
-              <div
-                role="button"
-                tabIndex={0}
-                aria-expanded={isCFBToolsExpanded}
-                aria-controls="cfb-tools-menu"
-                className="flex items-center justify-between mb-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
-                onClick={() => setIsCFBToolsExpanded(!isCFBToolsExpanded)}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setIsCFBToolsExpanded(!isCFBToolsExpanded); } }}
-              >
-                <div className="text-[#800000] text-xs font-bold uppercase tracking-wider">CFB Tools</div>
-                <svg
-                  className={`w-4 h-4 text-[#800000] transform transition-transform duration-300 ease-out ${isCFBToolsExpanded ? 'rotate-180' : ''}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-              {isCFBToolsExpanded && (
-                <div id="cfb-tools-menu" className="grid grid-cols-1 gap-1">
-                  {cfbTools.map((tool) => {
-                    const isActive = !tool.external && isActivePage(tool.url);
-
-                    return (
-                      <React.Fragment key={tool.title}>
-                        {tool.external ? (
-                          <a
-                            href={tool.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block px-3 py-2.5 rounded text-sm transition-colors text-white hover:bg-gray-800"
-                          >
-                            <div className="text-sm flex items-center gap-1">
-                              {tool.title}
-                              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-3 h-3 opacity-50">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                              </svg>
-                            </div>
-                          </a>
-                        ) : (
-                          <Link
-                            href={tool.url}
-                            className={`block px-3 py-2.5 rounded text-sm transition-colors ${
-                              isActive ? 'bg-[#800000] text-white' : 'text-white hover:bg-gray-800'
-                            }`}
-                          >
-                            <div className="text-sm">{tool.title}</div>
-                          </Link>
-                        )}
-                      </React.Fragment>
-                    );
-                  })}
-                </div>
-              )}
+            {/* Scrollable nav */}
+            <div className="overflow-y-auto flex-1 py-4">
+              <ul className="space-y-0.5">
+                {renderSections(true)}
+              </ul>
             </div>
-
-
-
           </div>
           </>
         )}
@@ -207,22 +261,28 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     );
   }
 
-  // Desktop version
+  // ══════════════════════════════════════════════════════════════════════
+  //  DESKTOP
+  // ══════════════════════════════════════════════════════════════════════
+
   return (
     <div className="w-full h-full bg-black border-r border-gray-800 flex flex-col">
+      {/* Header with logo */}
       <div className="flex items-center justify-center px-4 py-4 border-b border-gray-800">
-        <a href="https://www.profootballnetwork.com" target="_blank" rel="noopener noreferrer" className="block">
+        <a href="https://www.profootballnetwork.com" target="_blank" rel="noopener noreferrer" className="block w-full">
           <img
             src="https://statico.profootballnetwork.com/wp-content/uploads/2025/06/12093424/tools-navigation-06-12-25.jpg"
             alt="PFSN Logo"
-            width={240}
-            height={48}
+            loading="lazy"
+            width="232"
+            height="58"
             className="w-full h-auto transition-all duration-300 hover:opacity-80"
           />
         </a>
       </div>
 
-      <nav className="flex-1 overflow-y-auto py-4 sidebar-scroll">
+      {/* Sticky top links */}
+      <div className="bg-black border-b border-gray-800 pt-4 pb-2">
         <ul className="space-y-0.5">
           <li>
             <Link
@@ -234,21 +294,27 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               }`}
             >
               <div className="flex items-center gap-2 w-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
-                <span className="text-sm font-medium">Home</span>
+                <span className="text-[13px] font-medium">Home</span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/transfer-portal-tracker"
+              className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
+                isActivePage('/transfer-portal-tracker')
+                  ? 'bg-[#800000] text-white'
+                  : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
+              }`}
+            >
+              <div className="flex items-center gap-2 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                <span className="text-[13px] font-medium">Transfer Portal Tracker</span>
               </div>
             </Link>
           </li>
@@ -262,76 +328,24 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               }`}
             >
               <div className="flex items-center gap-2 w-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                 </svg>
-                <span className="text-sm font-medium">Browse All Teams</span>
+                <span className="text-[13px] font-medium">Browse All Teams</span>
               </div>
             </Link>
           </li>
+        </ul>
+      </div>
 
-          <li className="mb-2 pt-4">
-            <div className="px-3 mb-2">
-              <div className="flex items-center justify-between min-w-0">
-                <div className="flex items-center gap-2 min-w-0 flex-shrink">
-                  <div className="h-0.5 w-3 bg-gray-600 rounded flex-shrink-0"></div>
-                  <span className="text-xs font-bold text-gray-100 uppercase tracking-wider truncate">CFB Tools</span>
-                </div>
-                <div className="flex-1 ml-3 h-px bg-gradient-to-r from-gray-800 to-transparent flex-shrink-0"></div>
-              </div>
-            </div>
-          </li>
-          {cfbTools.map((tool) => {
-            const isActive = !tool.external && isActivePage(tool.url);
-
-            return (
-              <li key={tool.title}>
-                {tool.external ? (
-                  <a
-                    href={tool.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 text-gray-100 hover:bg-gray-800/50 hover:text-white"
-                  >
-                    <span className="text-sm font-medium truncate flex items-center gap-2">
-                      {tool.title}
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-3 h-3 opacity-50">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </span>
-                  </a>
-                ) : (
-                  <Link
-                    href={tool.url}
-                    className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
-                      isActive
-                        ? 'bg-[#800000] text-white'
-                        : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
-                    }`}
-                  >
-                    <span className="text-sm font-medium truncate">{tool.title}</span>
-                  </Link>
-                )}
-              </li>
-            );
-          })}
-
-
-
+      {/* Navigation — scrollable section */}
+      <nav className="flex-1 overflow-y-auto py-4 sidebar-scroll">
+        <ul className="space-y-0.5">
+          {renderSections(false)}
         </ul>
       </nav>
 
+      {/* Bottom padding for footer ad */}
       <div className="h-[92px] bg-black border-t border-gray-800" aria-hidden="true"></div>
     </div>
   );

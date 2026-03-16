@@ -50,19 +50,8 @@ const POSITIONS = [
   { value: 'P', label: 'P' },
 ];
 
-function getPositionColor(position: string): string {
-  const pos = position.toUpperCase();
-  if (pos === 'QB') return 'bg-purple-100 text-purple-700';
-  if (pos === 'RB' || pos === 'FB') return 'bg-green-100 text-green-700';
-  if (pos === 'WR') return 'bg-blue-100 text-blue-700';
-  if (pos === 'TE') return 'bg-orange-100 text-orange-700';
-  if (['OT', 'OG', 'C', 'T', 'G', 'OL', 'OC', 'IOL'].includes(pos)) return 'bg-yellow-100 text-yellow-700';
-  if (['DE', 'DT', 'NT', 'EDGE', 'DL'].includes(pos)) return 'bg-red-100 text-red-700';
-  if (pos === 'LB' || pos === 'ILB' || pos === 'MLB' || pos === 'OLB') return 'bg-indigo-100 text-indigo-700';
-  if (pos === 'CB') return 'bg-teal-100 text-teal-700';
-  if (['S', 'FS', 'SS', 'SAF'].includes(pos)) return 'bg-cyan-100 text-cyan-700';
-  if (pos === 'K' || pos === 'P') return 'bg-gray-100 text-gray-700';
-  return 'bg-gray-100 text-gray-700';
+function getPositionColor(_position: string): string {
+  return 'text-gray-600';
 }
 
 // Custom School Dropdown Component (same as transfer portal tracker)
@@ -202,13 +191,13 @@ export default function PlayersDirectoryClient() {
   const [selectedTeam, setSelectedTeam] = useState('all');
   const [selectedPosition, setSelectedPosition] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('cfb-items-per-page');
-      if (saved) return Number(saved);
-    }
-    return 24;
-  });
+  const [itemsPerPage, setItemsPerPage] = useState(24);
+
+  // Sync from localStorage after mount to avoid hydration mismatch
+  useEffect(() => {
+    const saved = localStorage.getItem('cfb-items-per-page');
+    if (saved) setItemsPerPage(Number(saved));
+  }, []);
   const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
 
   // Debounced search value
@@ -249,6 +238,7 @@ export default function PlayersDirectoryClient() {
     const pageToFetch = filtersChanged ? 1 : currentPage;
     if (filtersChanged && currentPage !== 1) {
       setCurrentPage(1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return; // Let the next render handle the fetch with page 1
     }
 
@@ -437,7 +427,7 @@ export default function PlayersDirectoryClient() {
                               {player.name}
                             </h3>
                             <div className="flex items-center justify-center gap-2 mt-1">
-                              <span className={`px-2 py-0.5 rounded text-xs font-medium ${getPositionColor(player.position)}`}>
+                              <span className="text-xs font-medium text-gray-600">
                                 {player.position}
                               </span>
                               {player.jerseyNumber && (
