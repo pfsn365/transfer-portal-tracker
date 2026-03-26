@@ -1,0 +1,193 @@
+{
+  "_description": "Reference file: Sports data API endpoints for recruiting data. Tested and verified.",
+
+  "247sports": {
+    "_note": "No API key required. Public JSON endpoints.",
+    "recruits": {
+      "url": "https://247sports.com/Season/{year}-Football/Recruits.json?Items={items}&Page={page}",
+      "params": {
+        "year": "Recruiting class year (e.g., 2024, 2025, 2026)",
+        "items": "Results per page (max 300)",
+        "page": "Page number (1-5 typical, 5 pages x 300 = 1500 recruits)"
+      },
+      "response_fields": {
+        "Key": "Recruitment ID (use for individual recruit lookup)",
+        "Player.FullName": "Recruit full name",
+        "Player.Hometown.State": "Home state (full name)",
+        "Player.Hometown.City": "Home city",
+        "Player.Height": "Height string (e.g., '6-3')",
+        "Player.Weight": "Weight in pounds",
+        "Player.PrimaryPlayerPosition.Abbreviation": "Position (WR, CB, LB, etc.)",
+        "Player.PlayerHighSchool.Name": "High school name",
+        "Player.Rating": "247 rating (scale ~80-101)",
+        "Player.StarRating": "Star rating (2-5)",
+        "Player.NationalRank": "National ranking",
+        "Player.PositionRank": "Position ranking",
+        "Player.StateRank": "State ranking",
+        "Player.DefaultAssetUrl": "Headshot image URL",
+        "Player.Url": "247Sports player profile URL",
+        "Year": "Recruiting class year",
+        "CommitedInstitutionTeamImage": "Committed school logo URL",
+        "HighestRecruitInterestEventType": "Status (Enrolled, Signed, Committed, etc.)",
+        "RecruitInterestCount": "Number of schools showing interest"
+      }
+    },
+    "individual_recruit": {
+      "url": "https://247sports.com/Recruitment/{recruitment_id}.json",
+      "params": {
+        "recruitment_id": "The Key field from recruits endpoint"
+      }
+    }
+  },
+
+  "cfbd": {
+    "_note": "Requires API key. Register free at https://collegefootballdata.com/key. Use Bearer token auth.",
+    "base_url": "https://api.collegefootballdata.com",
+    "auth_header": "Authorization: Bearer {CFBD_API_KEY}",
+    "endpoints": {
+      "recruiting_players": {
+        "path": "/recruiting/players",
+        "params": "year, team, classification (HighSchool/JUCO/PrepSchool), position, state",
+        "fields": "id, athlete_id, recruit_type, year, ranking, name, school, committed_to, position, height, weight, stars, rating, city, state_province, country, hometown_info_latitude, hometown_info_longitude"
+      },
+      "recruiting_teams": {
+        "path": "/recruiting/teams",
+        "params": "year, team",
+        "fields": "year, rank, team, points"
+      },
+      "recruiting_position_groups": {
+        "path": "/recruiting/groups",
+        "params": "startYear, endYear, team, conference",
+        "fields": "team, conference, position_group, avg_rating, total_rating, commits, avg_stars"
+      },
+      "transfer_portal": {
+        "path": "/player/portal",
+        "params": "year",
+        "fields": "season, first_name, last_name, position, origin, destination, transfer_date, rating, stars, eligibility"
+      },
+      "team_roster": {
+        "path": "/roster",
+        "params": "year, team",
+        "fields": "athlete_id, first_name, last_name, team, weight, height, jersey, year, position, home_city, home_state, home_country, home_latitude, home_longitude"
+      },
+      "team_talent": {
+        "path": "/talent",
+        "params": "year",
+        "fields": "year, school, talent"
+      },
+      "venues": {
+        "path": "/venues",
+        "params": "none",
+        "fields": "id, name, capacity, grass, city, state, zip, country_code, location (lat/lng), elevation, year_constructed, dome, timezone"
+      }
+    },
+    "conference_abbreviations": {
+      "Power 4": ["ACC", "B12", "B1G", "SEC"],
+      "Group of 5": ["AAC", "CUSA", "MAC", "MWC", "SBC"],
+      "Other": ["PAC", "Ind"]
+    }
+  },
+
+  "espn": {
+    "_note": "No API key required. Public endpoints.",
+    "base_url": "https://site.api.espn.com",
+    "core_api": "https://sports.core.api.espn.com",
+    "endpoints": {
+      "roster": "/apis/site/v2/sports/football/college-football/teams/{espnId}/roster",
+      "standings": "/apis/v2/sports/football/college-football/standings?group={group}&season={year}",
+      "schedule": "/apis/site/v2/sports/football/college-football/teams/{espnId}/schedule?season={year}",
+      "team_stats": "/apis/site/v2/sports/football/college-football/teams/{espnId}/statistics",
+      "scoreboard": {
+        "url": "/apis/site/v2/sports/football/college-football/scoreboard",
+        "params": {
+          "dates": "Date filter (YYYYMMDD or YYYY-MM-DD)",
+          "groups": "Division group (80 = FBS, 81 = FCS)",
+          "week": "Week number",
+          "seasontype": "Season type (2 = regular, 3 = postseason)",
+          "limit": "Max results (default ~25, use 100 for full slate)"
+        },
+        "notes": "Returns events[] with competitions, status, situation (possession/down-distance). Used for ticker, schedule, and live scores."
+      },
+      "rankings": "/apis/site/v2/sports/football/college-football/rankings",
+      "stat_leaders": {
+        "url": "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/{year}/types/{seasonType}/leaders",
+        "params": {
+          "year": "Season year (e.g., 2025)",
+          "seasonType": "2 = regular season, 3 = full season (reg + post)",
+          "limit": "Number of leaders per category (default 10, use 100 for deeper list)"
+        },
+        "notes": "Returns categories[] (passingYards, rushingYards, receivingYards, totalTackles, sacks, interceptions, etc.). Each category has leaders[] with athlete $ref URLs. Must follow $ref to get athlete details (name, position, team)."
+      },
+      "team_player_leaders": {
+        "url": "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/{year}/types/{seasonType}/teams/{espnId}/leaders",
+        "params": {
+          "year": "Season year (e.g., 2025)",
+          "seasonType": "2 = regular season, 3 = full season (reg + post)",
+          "espnId": "ESPN team ID"
+        },
+        "notes": "Returns per-team stat leaders by category (passing, rushing, receiving, tackles, sacks, INTs). Leaders have athlete $ref URLs."
+      },
+      "division_teams": {
+        "url": "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/{year}/types/{seasonType}/groups/{group}/teams",
+        "params": {
+          "year": "Season year (e.g., 2025)",
+          "seasonType": "2 = regular season",
+          "group": "80 = FBS, 81 = FCS",
+          "limit": "Max results (use 200 to get all teams)"
+        },
+        "notes": "Returns items[] with $ref URLs containing team IDs. Useful for filtering stat leaders to FBS-only or FCS-only."
+      },
+      "team_logo": {
+        "url": "https://a.espncdn.com/i/teamlogos/ncaa/500/{espnId}.png",
+        "notes": "Direct image URL for team logo. Replace {espnId} with ESPN numeric team ID."
+      },
+      "recruits_list": "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/{year}/recruits?limit={limit}&page={page}",
+      "recruit_detail": "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/recruits/{recruitId}"
+    },
+    "scoreboard_params_note": "Scoreboard supports: dates, groups (80=FBS/81=FCS), week, seasontype (2=regular/3=post), limit.",
+    "recruit_fields": "athlete (id, firstName, lastName, displayName, height, weight, position, hometown, highSchool), grade, status, attributes (40YD, 3CD, 20YS), schools, recruitingClass",
+    "recruit_notes": "List endpoint returns $ref URLs. Must follow each $ref to get full recruit data. 5,473 total recruits for 2026 class."
+  },
+
+  "on3": {
+    "_note": "No API key. __NEXT_DATA__ extraction from server-rendered pages. Rivals redirects here.",
+    "rankings_url": "https://www.on3.com/rivals/rankings/industry-player/football/{year}/?page={page}",
+    "industry_comparison_url": "https://www.on3.com/db/rankings/industry-comparison/football/{year}/",
+    "data_path": "props.pageProps.playerData.list[]",
+    "pagination_path": "props.pageProps.playerData.pagination",
+    "pagination_info": "50 per page, 2894 total recruits for 2026 (58 pages)",
+    "fields": {
+      "person.name": "Full name",
+      "person.slug": "URL slug (unique ID)",
+      "positionAbbreviation": "Position (OT, QB, WR, etc.)",
+      "stateAbbreviation": "2-letter state code",
+      "person.homeTownName": "City, State",
+      "person.formattedHeight": "Height (e.g., 6-7.5)",
+      "person.weight": "Weight in lbs",
+      "person.age": "Age",
+      "person.classYear": "Graduation year",
+      "person.highSchool.name": "High school name",
+      "overallRank": "Overall ranking",
+      "positionRank": "Position ranking",
+      "stateRank": "State ranking",
+      "nilValue": "NIL valuation in dollars",
+      "fiveStarPlus": "Five-star plus designation (boolean)",
+      "person.status.isCommitted": "Committed (boolean)",
+      "person.status.isSigned": "Signed (boolean)",
+      "person.status.isEnrolled": "Enrolled (boolean)",
+      "person.status.committedOrganizationSlug": "Committed school slug"
+    },
+    "ratings_array": {
+      "_note": "Each player has ratings[] array with entries for each service",
+      "type_values": ["Industry", "Consensus", "On3", "247", "Espn", "Rivals"],
+      "entry_fields": "type, rating, stars, overallRank, positionRank, stateRank, fiveStarPlus"
+    },
+    "industry_comparison_note": "The /db/rankings/industry-comparison/ page is client-rendered (requires Puppeteer). The /rivals/rankings/industry-player/ page has the same data in __NEXT_DATA__."
+  },
+
+  "rivals": {
+    "_note": "Rivals now redirects to On3. Use On3 endpoints above.",
+    "redirect": "https://www.on3.com/rivals/",
+    "old_api": "https://n.rivals.com/api/v1/athletes (returns 500, deprecated)"
+  }
+}

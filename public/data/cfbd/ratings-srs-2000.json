@@ -1,0 +1,930 @@
+[
+  {
+    "year": 2000,
+    "team": "Florida State",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 1,
+    "rating": 29.1626269879054
+  },
+  {
+    "year": 2000,
+    "team": "Miami",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 2,
+    "rating": 28.8906849678488
+  },
+  {
+    "year": 2000,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 3,
+    "rating": 24.4674525779795
+  },
+  {
+    "year": 2000,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 4,
+    "rating": 23.33922945106
+  },
+  {
+    "year": 2000,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 5,
+    "rating": 23.2983512523282
+  },
+  {
+    "year": 2000,
+    "team": "Virginia Tech",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 6,
+    "rating": 20.9330074485394
+  },
+  {
+    "year": 2000,
+    "team": "Florida",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 7,
+    "rating": 20.3953293312109
+  },
+  {
+    "year": 2000,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 8,
+    "rating": 18.1940228164567
+  },
+  {
+    "year": 2000,
+    "team": "Texas",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 9,
+    "rating": 17.6019002866214
+  },
+  {
+    "year": 2000,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 10,
+    "rating": 17.3740435294364
+  },
+  {
+    "year": 2000,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 11,
+    "rating": 15.9888131817662
+  },
+  {
+    "year": 2000,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 12,
+    "rating": 15.4942498960617
+  },
+  {
+    "year": 2000,
+    "team": "TCU",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 13,
+    "rating": 14.9760327346762
+  },
+  {
+    "year": 2000,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 14,
+    "rating": 14.0900430318063
+  },
+  {
+    "year": 2000,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 15,
+    "rating": 13.8497192755139
+  },
+  {
+    "year": 2000,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 16,
+    "rating": 12.9540908925978
+  },
+  {
+    "year": 2000,
+    "team": "Clemson",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 17,
+    "rating": 12.88456807543
+  },
+  {
+    "year": 2000,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 18,
+    "rating": 12.8013140528835
+  },
+  {
+    "year": 2000,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 19,
+    "rating": 12.2751767587071
+  },
+  {
+    "year": 2000,
+    "team": "Georgia",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 20,
+    "rating": 12.1795184822101
+  },
+  {
+    "year": 2000,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 21,
+    "rating": 11.6425723209393
+  },
+  {
+    "year": 2000,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 22,
+    "rating": 11.5605311366903
+  },
+  {
+    "year": 2000,
+    "team": "Boise State",
+    "conference": "Big West",
+    "division": null,
+    "ranking": 23,
+    "rating": 11.0588218776377
+  },
+  {
+    "year": 2000,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 24,
+    "rating": 10.3905234696067
+  },
+  {
+    "year": 2000,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 25,
+    "rating": 10.0612736913513
+  },
+  {
+    "year": 2000,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 26,
+    "rating": 9.99071481279455
+  },
+  {
+    "year": 2000,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 27,
+    "rating": 9.8511063663995
+  },
+  {
+    "year": 2000,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 28,
+    "rating": 9.72760121555615
+  },
+  {
+    "year": 2000,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 29,
+    "rating": 9.50179282836468
+  },
+  {
+    "year": 2000,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 30,
+    "rating": 8.21234359246549
+  },
+  {
+    "year": 2000,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 31,
+    "rating": 7.99965932751821
+  },
+  {
+    "year": 2000,
+    "team": "Boston College",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 32,
+    "rating": 7.97532761905284
+  },
+  {
+    "year": 2000,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 33,
+    "rating": 7.84304631327301
+  },
+  {
+    "year": 2000,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 34,
+    "rating": 7.56481284996571
+  },
+  {
+    "year": 2000,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 35,
+    "rating": 6.79415367873812
+  },
+  {
+    "year": 2000,
+    "team": "Auburn",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 36,
+    "rating": 6.64323679310973
+  },
+  {
+    "year": 2000,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 37,
+    "rating": 6.00761087077263
+  },
+  {
+    "year": 2000,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 38,
+    "rating": 5.88195080199972
+  },
+  {
+    "year": 2000,
+    "team": "LSU",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 39,
+    "rating": 5.81338309182244
+  },
+  {
+    "year": 2000,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 40,
+    "rating": 5.54463641506675
+  },
+  {
+    "year": 2000,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 41,
+    "rating": 5.43308881051037
+  },
+  {
+    "year": 2000,
+    "team": "Louisville",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 42,
+    "rating": 5.30699495539836
+  },
+  {
+    "year": 2000,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 43,
+    "rating": 4.93200807232566
+  },
+  {
+    "year": 2000,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 44,
+    "rating": 4.86207964932165
+  },
+  {
+    "year": 2000,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 45,
+    "rating": 4.86157986727004
+  },
+  {
+    "year": 2000,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 46,
+    "rating": 4.37111556406781
+  },
+  {
+    "year": 2000,
+    "team": "USC",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 47,
+    "rating": 4.233373562104
+  },
+  {
+    "year": 2000,
+    "team": "California",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 48,
+    "rating": 3.85976216798793
+  },
+  {
+    "year": 2000,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 49,
+    "rating": 3.44927951598785
+  },
+  {
+    "year": 2000,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 50,
+    "rating": 3.30128108616774
+  },
+  {
+    "year": 2000,
+    "team": "NC State",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 51,
+    "rating": 3.14656340274163
+  },
+  {
+    "year": 2000,
+    "team": "Alabama",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 52,
+    "rating": 2.89994200519582
+  },
+  {
+    "year": 2000,
+    "team": "UTEP",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 53,
+    "rating": 2.7115339557958
+  },
+  {
+    "year": 2000,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 54,
+    "rating": 2.7065429366128
+  },
+  {
+    "year": 2000,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 55,
+    "rating": 2.55641080705033
+  },
+  {
+    "year": 2000,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 56,
+    "rating": 2.45114890610404
+  },
+  {
+    "year": 2000,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 57,
+    "rating": 2.15990196218457
+  },
+  {
+    "year": 2000,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 58,
+    "rating": 1.9591699104479
+  },
+  {
+    "year": 2000,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 59,
+    "rating": 1.12629095902082
+  },
+  {
+    "year": 2000,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 60,
+    "rating": 0.986376779155512
+  },
+  {
+    "year": 2000,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 61,
+    "rating": 0.89533783182158
+  },
+  {
+    "year": 2000,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 62,
+    "rating": 0.536215916758026
+  },
+  {
+    "year": 2000,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 63,
+    "rating": -0.140510501688787
+  },
+  {
+    "year": 2000,
+    "team": "Maryland",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 64,
+    "rating": -0.144703582315781
+  },
+  {
+    "year": 2000,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 65,
+    "rating": -0.456212462916172
+  },
+  {
+    "year": 2000,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 66,
+    "rating": -0.850637308348507
+  },
+  {
+    "year": 2000,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 67,
+    "rating": -0.867652597681637
+  },
+  {
+    "year": 2000,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 68,
+    "rating": -1.32102864029384
+  },
+  {
+    "year": 2000,
+    "team": "UCF",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 69,
+    "rating": -1.7531853974136
+  },
+  {
+    "year": 2000,
+    "team": "Virginia",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 70,
+    "rating": -1.84759650591768
+  },
+  {
+    "year": 2000,
+    "team": "Marshall",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 71,
+    "rating": -1.95733213214484
+  },
+  {
+    "year": 2000,
+    "team": "Cincinnati",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 72,
+    "rating": -2.17467255532609
+  },
+  {
+    "year": 2000,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 73,
+    "rating": -2.31382487371235
+  },
+  {
+    "year": 2000,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 74,
+    "rating": -2.33215469322633
+  },
+  {
+    "year": 2000,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 75,
+    "rating": -2.77770502715938
+  },
+  {
+    "year": 2000,
+    "team": "Temple",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 76,
+    "rating": -3.26297691231787
+  },
+  {
+    "year": 2000,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 77,
+    "rating": -5.02771617090548
+  },
+  {
+    "year": 2000,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 78,
+    "rating": -5.28346918666205
+  },
+  {
+    "year": 2000,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 79,
+    "rating": -5.65400497771234
+  },
+  {
+    "year": 2000,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 80,
+    "rating": -6.03682140921408
+  },
+  {
+    "year": 2000,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 81,
+    "rating": -6.16912149825533
+  },
+  {
+    "year": 2000,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 82,
+    "rating": -6.6359514619386
+  },
+  {
+    "year": 2000,
+    "team": "Middle Tennessee",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 83,
+    "rating": -6.90199924932846
+  },
+  {
+    "year": 2000,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 84,
+    "rating": -6.96779607846929
+  },
+  {
+    "year": 2000,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 85,
+    "rating": -7.92720459388936
+  },
+  {
+    "year": 2000,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 86,
+    "rating": -8.15364975672054
+  },
+  {
+    "year": 2000,
+    "team": "Rice",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 87,
+    "rating": -8.93108093950178
+  },
+  {
+    "year": 2000,
+    "team": "New Mexico State",
+    "conference": "Big West",
+    "division": null,
+    "ranking": 88,
+    "rating": -9.20585107203788
+  },
+  {
+    "year": 2000,
+    "team": "Tulsa",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 89,
+    "rating": -9.21966658841256
+  },
+  {
+    "year": 2000,
+    "team": "Idaho",
+    "conference": "Big West",
+    "division": null,
+    "ranking": 90,
+    "rating": -9.37036693318045
+  },
+  {
+    "year": 2000,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 91,
+    "rating": -9.87919521582009
+  },
+  {
+    "year": 2000,
+    "team": "Utah State",
+    "conference": "Big West",
+    "division": null,
+    "ranking": 92,
+    "rating": -11.0100714744293
+  },
+  {
+    "year": 2000,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 93,
+    "rating": -11.4033763456204
+  },
+  {
+    "year": 2000,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 94,
+    "rating": -11.4987416580438
+  },
+  {
+    "year": 2000,
+    "team": "Louisiana Tech",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 95,
+    "rating": -11.6602295052536
+  },
+  {
+    "year": 2000,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 96,
+    "rating": -12.2381537270394
+  },
+  {
+    "year": 2000,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 97,
+    "rating": -13.7574410226496
+  },
+  {
+    "year": 2000,
+    "team": "Arkansas State",
+    "conference": "Big West",
+    "division": null,
+    "ranking": 98,
+    "rating": -14.2635511017314
+  },
+  {
+    "year": 2000,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 99,
+    "rating": -15.1823323701003
+  },
+  {
+    "year": 2000,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 100,
+    "rating": -15.4073474071314
+  },
+  {
+    "year": 2000,
+    "team": "Army",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 101,
+    "rating": -15.9360337708841
+  },
+  {
+    "year": 2000,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 102,
+    "rating": -16.8901697949655
+  },
+  {
+    "year": 2000,
+    "team": "SMU",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 103,
+    "rating": -16.9553686595698
+  },
+  {
+    "year": 2000,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 104,
+    "rating": -17.6166333498187
+  },
+  {
+    "year": 2000,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 105,
+    "rating": -17.9034878794347
+  },
+  {
+    "year": 2000,
+    "team": "Duke",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 106,
+    "rating": -17.9424795105122
+  },
+  {
+    "year": 2000,
+    "team": "North Texas",
+    "conference": "Big West",
+    "division": null,
+    "ranking": 107,
+    "rating": -18.6894659626801
+  },
+  {
+    "year": 2000,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 108,
+    "rating": -20.7078429900455
+  },
+  {
+    "year": 2000,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 109,
+    "rating": -21.8464763034882
+  },
+  {
+    "year": 2000,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 110,
+    "rating": -23.1260793448898
+  },
+  {
+    "year": 2000,
+    "team": "Louisiana",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 111,
+    "rating": -24.3259844009225
+  },
+  {
+    "year": 2000,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 112,
+    "rating": -25.0547961335871
+  },
+  {
+    "year": 2000,
+    "team": "South Florida",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 113,
+    "rating": -26.2549020888504
+  },
+  {
+    "year": 2000,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 114,
+    "rating": -26.2923902887922
+  },
+  {
+    "year": 2000,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 115,
+    "rating": -27.9078291475912
+  },
+  {
+    "year": 2000,
+    "team": "UL Monroe",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 116,
+    "rating": -32.5260001676518
+  }
+]

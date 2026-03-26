@@ -17,6 +17,7 @@ import TransfersTab from '@/components/cfb-tabs/TransfersTab';
 import StatsTab from '@/components/cfb-tabs/StatsTab';
 import HistoryTab from '@/components/cfb-tabs/HistoryTab';
 import DraftTab from '@/components/cfb-tabs/DraftTab';
+import RecruitingTab from '@/components/cfb-tabs/RecruitingTab';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import TransferPortalBanner from '@/components/TransferPortalBanner';
@@ -107,6 +108,7 @@ const TAB_TITLES: Record<string, string> = {
   stats: 'Stats',
   history: 'Record by Year',
   draft: 'NFL Draft History',
+  recruiting: 'Recruiting',
 };
 
 function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
@@ -207,6 +209,8 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
         return <HistoryTab team={team} teamColor={teamColor} />;
       case 'draft':
         return <DraftTab team={team} teamColor={teamColor} />;
+      case 'recruiting':
+        return <RecruitingTab team={team} teamColor={teamColor} />;
       default:
         return <OverviewTab team={team} schedule={schedule} teamColor={teamColor} />;
     }

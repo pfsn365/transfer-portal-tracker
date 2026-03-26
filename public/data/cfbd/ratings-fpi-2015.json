@@ -1,0 +1,2562 @@
+[
+  {
+    "year": 2015,
+    "team": "Massachusetts",
+    "conference": "Mid-American",
+    "fpi": -12.699,
+    "resumeRanks": {
+      "strengthOfRecord": 114,
+      "fpi": 106,
+      "averageWinProbability": 88,
+      "strengthOfSchedule": 102,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 102
+    },
+    "efficiencies": {
+      "overall": 27.199,
+      "offense": 30.399,
+      "defense": 35.464,
+      "specialTeams": 38.246
+    }
+  },
+  {
+    "year": 2015,
+    "team": "New Mexico State",
+    "conference": "Sun Belt",
+    "fpi": -18.282,
+    "resumeRanks": {
+      "strengthOfRecord": 116,
+      "fpi": 122,
+      "averageWinProbability": 122,
+      "strengthOfSchedule": 107,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 18.689,
+      "offense": 29.834,
+      "defense": 18.421,
+      "specialTeams": 46.838
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Idaho",
+    "conference": "Sun Belt",
+    "fpi": -16.144,
+    "resumeRanks": {
+      "strengthOfRecord": 106,
+      "fpi": 114,
+      "averageWinProbability": 95,
+      "strengthOfSchedule": 100,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 104
+    },
+    "efficiencies": {
+      "overall": 22.591,
+      "offense": 41.651,
+      "defense": 16.446,
+      "specialTeams": 42.844
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "fpi": 19.138,
+    "resumeRanks": {
+      "strengthOfRecord": 10,
+      "fpi": 50,
+      "averageWinProbability": 30,
+      "strengthOfSchedule": 16,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 14
+    },
+    "efficiencies": {
+      "overall": 79.028,
+      "offense": 85.127,
+      "defense": 54.057,
+      "specialTeams": 68.547
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Georgia",
+    "conference": "SEC",
+    "fpi": 15.885,
+    "resumeRanks": {
+      "strengthOfRecord": 16,
+      "fpi": 19,
+      "averageWinProbability": 27,
+      "strengthOfSchedule": 44,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 19
+    },
+    "efficiencies": {
+      "overall": 72.725,
+      "offense": 54.787,
+      "defense": 79.561,
+      "specialTeams": 54.553
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Florida",
+    "conference": "SEC",
+    "fpi": 13.162,
+    "resumeRanks": {
+      "strengthOfRecord": 14,
+      "fpi": 29,
+      "averageWinProbability": 40,
+      "strengthOfSchedule": 18,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 22
+    },
+    "efficiencies": {
+      "overall": 66.568,
+      "offense": 46.525,
+      "defense": 77.421,
+      "specialTeams": 50.962
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "fpi": 20.53,
+    "resumeRanks": {
+      "strengthOfRecord": 26,
+      "fpi": 9,
+      "averageWinProbability": 4,
+      "strengthOfSchedule": 32,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 4
+    },
+    "efficiencies": {
+      "overall": 77.852,
+      "offense": 71.494,
+      "defense": 68.706,
+      "specialTeams": 70.908
+    }
+  },
+  {
+    "year": 2015,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "fpi": 4.283,
+    "resumeRanks": {
+      "strengthOfRecord": 81,
+      "fpi": 64,
+      "averageWinProbability": 113,
+      "strengthOfSchedule": 14,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 81
+    },
+    "efficiencies": {
+      "overall": 45.719,
+      "offense": 52.69,
+      "defense": 40.794,
+      "specialTeams": 50.669
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "fpi": 2.117,
+    "resumeRanks": {
+      "strengthOfRecord": 72,
+      "fpi": 69,
+      "averageWinProbability": 75,
+      "strengthOfSchedule": 51,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 65
+    },
+    "efficiencies": {
+      "overall": 42.881,
+      "offense": 47.665,
+      "defense": 42.308,
+      "specialTeams": 45.559
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "fpi": 1.546,
+    "resumeRanks": {
+      "strengthOfRecord": 69,
+      "fpi": 74,
+      "averageWinProbability": 101,
+      "strengthOfSchedule": 8,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 75
+    },
+    "efficiencies": {
+      "overall": 49.141,
+      "offense": 27.342,
+      "defense": 78.316,
+      "specialTeams": 33.406
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "fpi": 14.197,
+    "resumeRanks": {
+      "strengthOfRecord": 12,
+      "fpi": 24,
+      "averageWinProbability": 60,
+      "strengthOfSchedule": 38,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 43
+    },
+    "efficiencies": {
+      "overall": 69.672,
+      "offense": 70.066,
+      "defense": 61.138,
+      "specialTeams": 54.204
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "fpi": 5.24,
+    "resumeRanks": {
+      "strengthOfRecord": 59,
+      "fpi": 60,
+      "averageWinProbability": 82,
+      "strengthOfSchedule": 34,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 67
+    },
+    "efficiencies": {
+      "overall": 53.322,
+      "offense": 52.05,
+      "defense": 44.457,
+      "specialTeams": 72.752
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "fpi": 21.846,
+    "resumeRanks": {
+      "strengthOfRecord": 19,
+      "fpi": 6,
+      "averageWinProbability": 5,
+      "strengthOfSchedule": 60,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 7
+    },
+    "efficiencies": {
+      "overall": 79.177,
+      "offense": 82.731,
+      "defense": 67.287,
+      "specialTeams": 35.294
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "fpi": 0.639,
+    "resumeRanks": {
+      "strengthOfRecord": 79,
+      "fpi": 79,
+      "averageWinProbability": 81,
+      "strengthOfSchedule": 4,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 51
+    },
+    "efficiencies": {
+      "overall": 51.396,
+      "offense": 51.055,
+      "defense": 50.07,
+      "specialTeams": 53.473
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "fpi": 8.761,
+    "resumeRanks": {
+      "strengthOfRecord": 38,
+      "fpi": 42,
+      "averageWinProbability": 50,
+      "strengthOfSchedule": 25,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 25
+    },
+    "efficiencies": {
+      "overall": 62.813,
+      "offense": 84.21,
+      "defense": 26.331,
+      "specialTeams": 64.145
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "fpi": -18.872,
+    "resumeRanks": {
+      "strengthOfRecord": 127,
+      "fpi": 124,
+      "averageWinProbability": 128,
+      "strengthOfSchedule": 6,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 15.769,
+      "offense": 20.318,
+      "defense": 26.068,
+      "specialTeams": 31.57
+    }
+  },
+  {
+    "year": 2015,
+    "team": "TCU",
+    "conference": "Big 12",
+    "fpi": 20.514,
+    "resumeRanks": {
+      "strengthOfRecord": 7,
+      "fpi": 10,
+      "averageWinProbability": 41,
+      "strengthOfSchedule": 42,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 32
+    },
+    "efficiencies": {
+      "overall": 73.121,
+      "offense": 67.436,
+      "defense": 70.098,
+      "specialTeams": 53.115
+    }
+  },
+  {
+    "year": 2015,
+    "team": "West Virginia",
+    "conference": "Big 12",
+    "fpi": 14.447,
+    "resumeRanks": {
+      "strengthOfRecord": 36,
+      "fpi": 22,
+      "averageWinProbability": 38,
+      "strengthOfSchedule": 46,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 31
+    },
+    "efficiencies": {
+      "overall": 68.241,
+      "offense": 55.925,
+      "defense": 74.763,
+      "specialTeams": 46.586
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "fpi": -18.197,
+    "resumeRanks": {
+      "strengthOfRecord": 103,
+      "fpi": 121,
+      "averageWinProbability": 116,
+      "strengthOfSchedule": 122,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 16.659,
+      "offense": 16.93,
+      "defense": 29.674,
+      "specialTeams": 40.331
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "fpi": -13.994,
+    "resumeRanks": {
+      "strengthOfRecord": 99,
+      "fpi": 107,
+      "averageWinProbability": 100,
+      "strengthOfSchedule": 109,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 111
+    },
+    "efficiencies": {
+      "overall": 20.817,
+      "offense": 42.221,
+      "defense": 11.711,
+      "specialTeams": 50.061
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Oregon",
+    "conference": "Pac-12",
+    "fpi": 14.415,
+    "resumeRanks": {
+      "strengthOfRecord": 21,
+      "fpi": 23,
+      "averageWinProbability": 21,
+      "strengthOfSchedule": 22,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 9
+    },
+    "efficiencies": {
+      "overall": 72.944,
+      "offense": 83.929,
+      "defense": 49.723,
+      "specialTeams": 55.63
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Stanford",
+    "conference": "Pac-12",
+    "fpi": 21.382,
+    "resumeRanks": {
+      "strengthOfRecord": 5,
+      "fpi": 7,
+      "averageWinProbability": 16,
+      "strengthOfSchedule": 13,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 8
+    },
+    "efficiencies": {
+      "overall": 80.723,
+      "offense": 84.065,
+      "defense": 60.545,
+      "specialTeams": 65.703
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Washington",
+    "conference": "Pac-12",
+    "fpi": 13.31,
+    "resumeRanks": {
+      "strengthOfRecord": 45,
+      "fpi": 28,
+      "averageWinProbability": 45,
+      "strengthOfSchedule": 24,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 35
+    },
+    "efficiencies": {
+      "overall": 71.406,
+      "offense": 48.039,
+      "defense": 78.387,
+      "specialTeams": 66.869
+    }
+  },
+  {
+    "year": 2015,
+    "team": "California",
+    "conference": "Pac-12",
+    "fpi": 13.95,
+    "resumeRanks": {
+      "strengthOfRecord": 31,
+      "fpi": 25,
+      "averageWinProbability": 71,
+      "strengthOfSchedule": 11,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 44
+    },
+    "efficiencies": {
+      "overall": 69.559,
+      "offense": 79.476,
+      "defense": 54.999,
+      "specialTeams": 34.971
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Oregon State",
+    "conference": "Pac-12",
+    "fpi": -8.024,
+    "resumeRanks": {
+      "strengthOfRecord": 96,
+      "fpi": 97,
+      "averageWinProbability": 124,
+      "strengthOfSchedule": 10,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 96
+    },
+    "efficiencies": {
+      "overall": 29.43,
+      "offense": 33.259,
+      "defense": 35.247,
+      "specialTeams": 42.027
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UConn",
+    "conference": "American Athletic",
+    "fpi": -5.834,
+    "resumeRanks": {
+      "strengthOfRecord": 82,
+      "fpi": 92,
+      "averageWinProbability": 77,
+      "strengthOfSchedule": 74,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 86
+    },
+    "efficiencies": {
+      "overall": 41.438,
+      "offense": 26.37,
+      "defense": 59.391,
+      "specialTeams": 52.249
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Washington State",
+    "conference": "Pac-12",
+    "fpi": 7.083,
+    "resumeRanks": {
+      "strengthOfRecord": 29,
+      "fpi": 48,
+      "averageWinProbability": 36,
+      "strengthOfSchedule": 50,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 26
+    },
+    "efficiencies": {
+      "overall": 63.498,
+      "offense": 62.952,
+      "defense": 63.182,
+      "specialTeams": 35.332
+    }
+  },
+  {
+    "year": 2015,
+    "team": "USC",
+    "conference": "Pac-12",
+    "fpi": 18.785,
+    "resumeRanks": {
+      "strengthOfRecord": 33,
+      "fpi": 12,
+      "averageWinProbability": 52,
+      "strengthOfSchedule": 2,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 24
+    },
+    "efficiencies": {
+      "overall": 71.776,
+      "offense": 71.06,
+      "defense": 66.901,
+      "specialTeams": 43.757
+    }
+  },
+  {
+    "year": 2015,
+    "team": "BYU",
+    "conference": "FBS Independents",
+    "fpi": 9.004,
+    "resumeRanks": {
+      "strengthOfRecord": 35,
+      "fpi": 40,
+      "averageWinProbability": 59,
+      "strengthOfSchedule": 65,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 57
+    },
+    "efficiencies": {
+      "overall": 61.031,
+      "offense": 56.34,
+      "defense": 59.484,
+      "specialTeams": 56.581
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Auburn",
+    "conference": "SEC",
+    "fpi": 12.975,
+    "resumeRanks": {
+      "strengthOfRecord": 34,
+      "fpi": 30,
+      "averageWinProbability": 54,
+      "strengthOfSchedule": 5,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 27
+    },
+    "efficiencies": {
+      "overall": 65.377,
+      "offense": 59.006,
+      "defense": 63.705,
+      "specialTeams": 56.526
+    }
+  },
+  {
+    "year": 2015,
+    "team": "LSU",
+    "conference": "SEC",
+    "fpi": 20.581,
+    "resumeRanks": {
+      "strengthOfRecord": 9,
+      "fpi": 8,
+      "averageWinProbability": 24,
+      "strengthOfSchedule": 3,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 10
+    },
+    "efficiencies": {
+      "overall": 75.302,
+      "offense": 73.837,
+      "defense": 70.441,
+      "specialTeams": 43.184
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "fpi": -18.505,
+    "resumeRanks": {
+      "strengthOfRecord": 115,
+      "fpi": 123,
+      "averageWinProbability": 120,
+      "strengthOfSchedule": 103,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 19.095,
+      "offense": 14.521,
+      "defense": 40.008,
+      "specialTeams": 33.455
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "fpi": -4.216,
+    "resumeRanks": {
+      "strengthOfRecord": 76,
+      "fpi": 88,
+      "averageWinProbability": 33,
+      "strengthOfSchedule": 112,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 64
+    },
+    "efficiencies": {
+      "overall": 47.929,
+      "offense": 40.979,
+      "defense": 54.352,
+      "specialTeams": 55.728
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "fpi": -16.593,
+    "resumeRanks": {
+      "strengthOfRecord": 113,
+      "fpi": 115,
+      "averageWinProbability": 102,
+      "strengthOfSchedule": 97,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 109
+    },
+    "efficiencies": {
+      "overall": 22.445,
+      "offense": 8.294,
+      "defense": 53.788,
+      "specialTeams": 44.626
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "fpi": -6.536,
+    "resumeRanks": {
+      "strengthOfRecord": 74,
+      "fpi": 94,
+      "averageWinProbability": 46,
+      "strengthOfSchedule": 116,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 79
+    },
+    "efficiencies": {
+      "overall": 44.49,
+      "offense": 32.631,
+      "defense": 59.128,
+      "specialTeams": 49.287
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "fpi": 8.618,
+    "resumeRanks": {
+      "strengthOfRecord": 30,
+      "fpi": 43,
+      "averageWinProbability": 9,
+      "strengthOfSchedule": 87,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 23
+    },
+    "efficiencies": {
+      "overall": 65.784,
+      "offense": 57.272,
+      "defense": 67.47,
+      "specialTeams": 52.258
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UCLA",
+    "conference": "Pac-12",
+    "fpi": 14.684,
+    "resumeRanks": {
+      "strengthOfRecord": 39,
+      "fpi": 20,
+      "averageWinProbability": 42,
+      "strengthOfSchedule": 33,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 33
+    },
+    "efficiencies": {
+      "overall": 65.824,
+      "offense": 66.695,
+      "defense": 64.184,
+      "specialTeams": 34.695
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Utah",
+    "conference": "Pac-12",
+    "fpi": 13.42,
+    "resumeRanks": {
+      "strengthOfRecord": 15,
+      "fpi": 27,
+      "averageWinProbability": 20,
+      "strengthOfSchedule": 29,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 13
+    },
+    "efficiencies": {
+      "overall": 70.843,
+      "offense": 49.291,
+      "defense": 80.535,
+      "specialTeams": 58.004
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Arizona State",
+    "conference": "Pac-12",
+    "fpi": 9.667,
+    "resumeRanks": {
+      "strengthOfRecord": 51,
+      "fpi": 37,
+      "averageWinProbability": 48,
+      "strengthOfSchedule": 21,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 34
+    },
+    "efficiencies": {
+      "overall": 59.913,
+      "offense": 59.564,
+      "defense": 54.063,
+      "specialTeams": 56.622
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Arizona",
+    "conference": "Pac-12",
+    "fpi": 5.557,
+    "resumeRanks": {
+      "strengthOfRecord": 50,
+      "fpi": 54,
+      "averageWinProbability": 73,
+      "strengthOfSchedule": 61,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 62
+    },
+    "efficiencies": {
+      "overall": 50.809,
+      "offense": 65.609,
+      "defense": 35.466,
+      "specialTeams": 54.351
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Colorado",
+    "conference": "Pac-12",
+    "fpi": -0.74,
+    "resumeRanks": {
+      "strengthOfRecord": 94,
+      "fpi": 82,
+      "averageWinProbability": 97,
+      "strengthOfSchedule": 55,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 87
+    },
+    "efficiencies": {
+      "overall": 41.077,
+      "offense": 35.535,
+      "defense": 51.832,
+      "specialTeams": 46.501
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Middle Tennessee",
+    "conference": "Conference USA",
+    "fpi": 0.7,
+    "resumeRanks": {
+      "strengthOfRecord": 78,
+      "fpi": 78,
+      "averageWinProbability": 57,
+      "strengthOfSchedule": 91,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 73
+    },
+    "efficiencies": {
+      "overall": 47.426,
+      "offense": 53.889,
+      "defense": 39.977,
+      "specialTeams": 55.538
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Florida Atlantic",
+    "conference": "Conference USA",
+    "fpi": -9.564,
+    "resumeRanks": {
+      "strengthOfRecord": 117,
+      "fpi": 99,
+      "averageWinProbability": 78,
+      "strengthOfSchedule": 108,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 97
+    },
+    "efficiencies": {
+      "overall": 30.238,
+      "offense": 20.665,
+      "defense": 48.071,
+      "specialTeams": 56.767
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Florida International",
+    "conference": "Conference USA",
+    "fpi": -10.626,
+    "resumeRanks": {
+      "strengthOfRecord": 100,
+      "fpi": 102,
+      "averageWinProbability": 90,
+      "strengthOfSchedule": 115,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 106
+    },
+    "efficiencies": {
+      "overall": 28.849,
+      "offense": 31.019,
+      "defense": 30.411,
+      "specialTeams": 64.617
+    }
+  },
+  {
+    "year": 2015,
+    "team": "North Texas",
+    "conference": "Conference USA",
+    "fpi": -21.401,
+    "resumeRanks": {
+      "strengthOfRecord": 122,
+      "fpi": 127,
+      "averageWinProbability": 127,
+      "strengthOfSchedule": 71,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 8.47,
+      "offense": 9.084,
+      "defense": 17.018,
+      "specialTeams": 57.838
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UTSA",
+    "conference": "Conference USA",
+    "fpi": -16.657,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 116,
+      "averageWinProbability": 106,
+      "strengthOfSchedule": 106,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 113
+    },
+    "efficiencies": {
+      "overall": 23.954,
+      "offense": 23.571,
+      "defense": 35.864,
+      "specialTeams": 42.074
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Louisiana Tech",
+    "conference": "Conference USA",
+    "fpi": 4.741,
+    "resumeRanks": {
+      "strengthOfRecord": 57,
+      "fpi": 63,
+      "averageWinProbability": 29,
+      "strengthOfSchedule": 110,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 56
+    },
+    "efficiencies": {
+      "overall": 58.015,
+      "offense": 62.26,
+      "defense": 56.364,
+      "specialTeams": 35.558
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Western Kentucky",
+    "conference": "Conference USA",
+    "fpi": 12.178,
+    "resumeRanks": {
+      "strengthOfRecord": 28,
+      "fpi": 31,
+      "averageWinProbability": 10,
+      "strengthOfSchedule": 95,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 29
+    },
+    "efficiencies": {
+      "overall": 74.224,
+      "offense": 84.496,
+      "defense": 49.798,
+      "specialTeams": 55.099
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Temple",
+    "conference": "American Athletic",
+    "fpi": 6.404,
+    "resumeRanks": {
+      "strengthOfRecord": 44,
+      "fpi": 51,
+      "averageWinProbability": 53,
+      "strengthOfSchedule": 78,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 68
+    },
+    "efficiencies": {
+      "overall": 58.021,
+      "offense": 42.186,
+      "defense": 69.261,
+      "specialTeams": 54.009
+    }
+  },
+  {
+    "year": 2015,
+    "team": "South Florida",
+    "conference": "American Athletic",
+    "fpi": 5.334,
+    "resumeRanks": {
+      "strengthOfRecord": 61,
+      "fpi": 59,
+      "averageWinProbability": 32,
+      "strengthOfSchedule": 72,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 45
+    },
+    "efficiencies": {
+      "overall": 58.975,
+      "offense": 54.92,
+      "defense": 62.4,
+      "specialTeams": 42.214
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Cincinnati",
+    "conference": "American Athletic",
+    "fpi": 1.442,
+    "resumeRanks": {
+      "strengthOfRecord": 68,
+      "fpi": 76,
+      "averageWinProbability": 72,
+      "strengthOfSchedule": 69,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 78
+    },
+    "efficiencies": {
+      "overall": 47.143,
+      "offense": 58.471,
+      "defense": 39.178,
+      "specialTeams": 39.533
+    }
+  },
+  {
+    "year": 2015,
+    "team": "East Carolina",
+    "conference": "American Athletic",
+    "fpi": -0.264,
+    "resumeRanks": {
+      "strengthOfRecord": 89,
+      "fpi": 81,
+      "averageWinProbability": 68,
+      "strengthOfSchedule": 70,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 76
+    },
+    "efficiencies": {
+      "overall": 48.13,
+      "offense": 48.522,
+      "defense": 45.148,
+      "specialTeams": 60.412
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UCF",
+    "conference": "American Athletic",
+    "fpi": -18.96,
+    "resumeRanks": {
+      "strengthOfRecord": 127,
+      "fpi": 125,
+      "averageWinProbability": 125,
+      "strengthOfSchedule": 73,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 10.778,
+      "offense": 8.429,
+      "defense": 22.656,
+      "specialTeams": 60.227
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Houston",
+    "conference": "American Athletic",
+    "fpi": 10.851,
+    "resumeRanks": {
+      "strengthOfRecord": 13,
+      "fpi": 34,
+      "averageWinProbability": 7,
+      "strengthOfSchedule": 94,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 30
+    },
+    "efficiencies": {
+      "overall": 69.598,
+      "offense": 63.204,
+      "defense": 66.318,
+      "specialTeams": 59.151
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Navy",
+    "conference": "American Athletic",
+    "fpi": 8.44,
+    "resumeRanks": {
+      "strengthOfRecord": 23,
+      "fpi": 44,
+      "averageWinProbability": 15,
+      "strengthOfSchedule": 81,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 21
+    },
+    "efficiencies": {
+      "overall": 73.054,
+      "offense": 79.482,
+      "defense": 55.853,
+      "specialTeams": 48.659
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Memphis",
+    "conference": "American Athletic",
+    "fpi": 7.745,
+    "resumeRanks": {
+      "strengthOfRecord": 40,
+      "fpi": 46,
+      "averageWinProbability": 35,
+      "strengthOfSchedule": 67,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 42
+    },
+    "efficiencies": {
+      "overall": 67.032,
+      "offense": 68.948,
+      "defense": 52.933,
+      "specialTeams": 65.836
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Tulsa",
+    "conference": "American Athletic",
+    "fpi": -5.262,
+    "resumeRanks": {
+      "strengthOfRecord": 87,
+      "fpi": 91,
+      "averageWinProbability": 103,
+      "strengthOfSchedule": 80,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 108
+    },
+    "efficiencies": {
+      "overall": 35.848,
+      "offense": 54.059,
+      "defense": 26.724,
+      "specialTeams": 40.492
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Tulane",
+    "conference": "American Athletic",
+    "fpi": -16.006,
+    "resumeRanks": {
+      "strengthOfRecord": 108,
+      "fpi": 112,
+      "averageWinProbability": 104,
+      "strengthOfSchedule": 79,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 103
+    },
+    "efficiencies": {
+      "overall": 21.712,
+      "offense": 20.658,
+      "defense": 39.231,
+      "specialTeams": 28.115
+    }
+  },
+  {
+    "year": 2015,
+    "team": "SMU",
+    "conference": "American Athletic",
+    "fpi": -14.187,
+    "resumeRanks": {
+      "strengthOfRecord": 109,
+      "fpi": 108,
+      "averageWinProbability": 115,
+      "strengthOfSchedule": 64,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 98
+    },
+    "efficiencies": {
+      "overall": 22.242,
+      "offense": 40.73,
+      "defense": 17.083,
+      "specialTeams": 42.388
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Charlotte",
+    "conference": "Conference USA",
+    "fpi": -21.441,
+    "resumeRanks": {
+      "strengthOfRecord": 125,
+      "fpi": 128,
+      "averageWinProbability": 111,
+      "strengthOfSchedule": 124,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 13.483,
+      "offense": 9.358,
+      "defense": 35.534,
+      "specialTeams": 39.103
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "fpi": -12.271,
+    "resumeRanks": {
+      "strengthOfRecord": 112,
+      "fpi": 105,
+      "averageWinProbability": 114,
+      "strengthOfSchedule": 125,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 21.026,
+      "offense": 32.131,
+      "defense": 19.727,
+      "specialTeams": 51.252
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "fpi": 1.553,
+    "resumeRanks": {
+      "strengthOfRecord": 60,
+      "fpi": 73,
+      "averageWinProbability": 37,
+      "strengthOfSchedule": 114,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 69
+    },
+    "efficiencies": {
+      "overall": 53.484,
+      "offense": 42.189,
+      "defense": 60.107,
+      "specialTeams": 59.612
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "fpi": -16.884,
+    "resumeRanks": {
+      "strengthOfRecord": 123,
+      "fpi": 118,
+      "averageWinProbability": 123,
+      "strengthOfSchedule": 99,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 18.123,
+      "offense": 10.706,
+      "defense": 42.515,
+      "specialTeams": 37.906
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "fpi": -7.902,
+    "resumeRanks": {
+      "strengthOfRecord": 105,
+      "fpi": 96,
+      "averageWinProbability": 86,
+      "strengthOfSchedule": 93,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 94
+    },
+    "efficiencies": {
+      "overall": 37.725,
+      "offense": 32.212,
+      "defense": 44.475,
+      "specialTeams": 58.93
+    }
+  },
+  {
+    "year": 2015,
+    "team": "South Alabama",
+    "conference": "Sun Belt",
+    "fpi": -16.826,
+    "resumeRanks": {
+      "strengthOfRecord": 95,
+      "fpi": 117,
+      "averageWinProbability": 98,
+      "strengthOfSchedule": 92,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 105
+    },
+    "efficiencies": {
+      "overall": 23.476,
+      "offense": 25.178,
+      "defense": 36.15,
+      "specialTeams": 33.265
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Texas State",
+    "conference": "Sun Belt",
+    "fpi": -15.094,
+    "resumeRanks": {
+      "strengthOfRecord": 120,
+      "fpi": 110,
+      "averageWinProbability": 107,
+      "strengthOfSchedule": 105,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 19.898,
+      "offense": 32.323,
+      "defense": 14.813,
+      "specialTeams": 67.889
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Georgia State",
+    "conference": "Sun Belt",
+    "fpi": -10.45,
+    "resumeRanks": {
+      "strengthOfRecord": 98,
+      "fpi": 100,
+      "averageWinProbability": 79,
+      "strengthOfSchedule": 123,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 100
+    },
+    "efficiencies": {
+      "overall": 32.64,
+      "offense": 38.573,
+      "defense": 38.967,
+      "specialTeams": 31.786
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Georgia Southern",
+    "conference": "Sun Belt",
+    "fpi": 5.42,
+    "resumeRanks": {
+      "strengthOfRecord": 49,
+      "fpi": 55,
+      "averageWinProbability": 22,
+      "strengthOfSchedule": 104,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 46
+    },
+    "efficiencies": {
+      "overall": 64.377,
+      "offense": 60.015,
+      "defense": 62.38,
+      "specialTeams": 53.78
+    }
+  },
+  {
+    "year": 2015,
+    "team": "App State",
+    "conference": "Sun Belt",
+    "fpi": 5.38,
+    "resumeRanks": {
+      "strengthOfRecord": 41,
+      "fpi": 57,
+      "averageWinProbability": 14,
+      "strengthOfSchedule": 128,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 52
+    },
+    "efficiencies": {
+      "overall": 56.484,
+      "offense": 51.25,
+      "defense": 62.106,
+      "specialTeams": 41.367
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Alabama",
+    "conference": "SEC",
+    "fpi": 27.35,
+    "resumeRanks": {
+      "strengthOfRecord": 1,
+      "fpi": 1,
+      "averageWinProbability": 3,
+      "strengthOfSchedule": 1,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 1
+    },
+    "efficiencies": {
+      "overall": 89.982,
+      "offense": 74.736,
+      "defense": 91.622,
+      "specialTeams": 61.655
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "fpi": 23.601,
+    "resumeRanks": {
+      "strengthOfRecord": 8,
+      "fpi": 4,
+      "averageWinProbability": 6,
+      "strengthOfSchedule": 23,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 3
+    },
+    "efficiencies": {
+      "overall": 84.02,
+      "offense": 85.366,
+      "defense": 73.002,
+      "specialTeams": 45.888
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "fpi": 16.677,
+    "resumeRanks": {
+      "strengthOfRecord": 18,
+      "fpi": 17,
+      "averageWinProbability": 39,
+      "strengthOfSchedule": 12,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 20
+    },
+    "efficiencies": {
+      "overall": 76.305,
+      "offense": 78.007,
+      "defense": 65.578,
+      "specialTeams": 48.498
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "fpi": 17.389,
+    "resumeRanks": {
+      "strengthOfRecord": 25,
+      "fpi": 14,
+      "averageWinProbability": 34,
+      "strengthOfSchedule": 7,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 15
+    },
+    "efficiencies": {
+      "overall": 74.894,
+      "offense": 88.416,
+      "defense": 44.325,
+      "specialTeams": 49.891
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "fpi": 5.412,
+    "resumeRanks": {
+      "strengthOfRecord": 55,
+      "fpi": 56,
+      "averageWinProbability": 49,
+      "strengthOfSchedule": 75,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 60
+    },
+    "efficiencies": {
+      "overall": 55.358,
+      "offense": 66.66,
+      "defense": 37.394,
+      "specialTeams": 57.246
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "fpi": -11.819,
+    "resumeRanks": {
+      "strengthOfRecord": 110,
+      "fpi": 104,
+      "averageWinProbability": 118,
+      "strengthOfSchedule": 83,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 112
+    },
+    "efficiencies": {
+      "overall": 19.684,
+      "offense": 26.836,
+      "defense": 20.312,
+      "specialTeams": 61.27
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "fpi": -20.223,
+    "resumeRanks": {
+      "strengthOfRecord": 126,
+      "fpi": 126,
+      "averageWinProbability": 121,
+      "strengthOfSchedule": 113,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 13.725,
+      "offense": 35.159,
+      "defense": 8.761,
+      "specialTeams": 54.331
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "fpi": -1.872,
+    "resumeRanks": {
+      "strengthOfRecord": 77,
+      "fpi": 85,
+      "averageWinProbability": 74,
+      "strengthOfSchedule": 85,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 88
+    },
+    "efficiencies": {
+      "overall": 45.933,
+      "offense": 45.843,
+      "defense": 49.653,
+      "specialTeams": 44.329
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "fpi": -1.05,
+    "resumeRanks": {
+      "strengthOfRecord": 73,
+      "fpi": 83,
+      "averageWinProbability": 66,
+      "strengthOfSchedule": 88,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 80
+    },
+    "efficiencies": {
+      "overall": 47.507,
+      "offense": 36.918,
+      "defense": 59.287,
+      "specialTeams": 47.272
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "fpi": 2.563,
+    "resumeRanks": {
+      "strengthOfRecord": 52,
+      "fpi": 68,
+      "averageWinProbability": 26,
+      "strengthOfSchedule": 127,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 66
+    },
+    "efficiencies": {
+      "overall": 54.161,
+      "offense": 40.251,
+      "defense": 57.641,
+      "specialTeams": 74.151
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Old Dominion",
+    "conference": "Conference USA",
+    "fpi": -17.956,
+    "resumeRanks": {
+      "strengthOfRecord": 101,
+      "fpi": 120,
+      "averageWinProbability": 117,
+      "strengthOfSchedule": 118,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 17.577,
+      "offense": 26.48,
+      "defense": 23.424,
+      "specialTeams": 32.443
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "fpi": 3.57,
+    "resumeRanks": {
+      "strengthOfRecord": 63,
+      "fpi": 65,
+      "averageWinProbability": 31,
+      "strengthOfSchedule": 101,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 54
+    },
+    "efficiencies": {
+      "overall": 56.706,
+      "offense": 60.716,
+      "defense": 50.609,
+      "specialTeams": 46.949
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "fpi": -10.609,
+    "resumeRanks": {
+      "strengthOfRecord": 104,
+      "fpi": 101,
+      "averageWinProbability": 96,
+      "strengthOfSchedule": 126,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 115
+    },
+    "efficiencies": {
+      "overall": 30.903,
+      "offense": 32.243,
+      "defense": 39.689,
+      "specialTeams": 40.675
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Florida State",
+    "conference": "ACC",
+    "fpi": 18.007,
+    "resumeRanks": {
+      "strengthOfRecord": 24,
+      "fpi": 13,
+      "averageWinProbability": 12,
+      "strengthOfSchedule": 52,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 12
+    },
+    "efficiencies": {
+      "overall": 73.78,
+      "offense": 69.962,
+      "defense": 70.262,
+      "specialTeams": 48.768
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Boston College",
+    "conference": "ACC",
+    "fpi": 1.501,
+    "resumeRanks": {
+      "strengthOfRecord": 97,
+      "fpi": 75,
+      "averageWinProbability": 99,
+      "strengthOfSchedule": 58,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 89
+    },
+    "efficiencies": {
+      "overall": 45.47,
+      "offense": 13.052,
+      "defense": 84.091,
+      "specialTeams": 40.174
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Clemson",
+    "conference": "ACC",
+    "fpi": 22.273,
+    "resumeRanks": {
+      "strengthOfRecord": 2,
+      "fpi": 5,
+      "averageWinProbability": 1,
+      "strengthOfSchedule": 17,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 2
+    },
+    "efficiencies": {
+      "overall": 86.336,
+      "offense": 83.904,
+      "defense": 84.092,
+      "specialTeams": 30.771
+    }
+  },
+  {
+    "year": 2015,
+    "team": "NC State",
+    "conference": "ACC",
+    "fpi": 8.833,
+    "resumeRanks": {
+      "strengthOfRecord": 62,
+      "fpi": 41,
+      "averageWinProbability": 44,
+      "strengthOfSchedule": 63,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 47
+    },
+    "efficiencies": {
+      "overall": 61.372,
+      "offense": 69.943,
+      "defense": 48.006,
+      "specialTeams": 47.645
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "fpi": -3.393,
+    "resumeRanks": {
+      "strengthOfRecord": 92,
+      "fpi": 86,
+      "averageWinProbability": 119,
+      "strengthOfSchedule": 37,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 95
+    },
+    "efficiencies": {
+      "overall": 33.39,
+      "offense": 23.737,
+      "defense": 49.075,
+      "specialTeams": 56.734
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "fpi": 9.484,
+    "resumeRanks": {
+      "strengthOfRecord": 53,
+      "fpi": 38,
+      "averageWinProbability": 69,
+      "strengthOfSchedule": 43,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 59
+    },
+    "efficiencies": {
+      "overall": 58.681,
+      "offense": 45.125,
+      "defense": 63.777,
+      "specialTeams": 64.317
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Miami",
+    "conference": "ACC",
+    "fpi": 6.358,
+    "resumeRanks": {
+      "strengthOfRecord": 37,
+      "fpi": 52,
+      "averageWinProbability": 56,
+      "strengthOfSchedule": 30,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 40
+    },
+    "efficiencies": {
+      "overall": 59.51,
+      "offense": 55.65,
+      "defense": 57.045,
+      "specialTeams": 58.235
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "fpi": 10.211,
+    "resumeRanks": {
+      "strengthOfRecord": 86,
+      "fpi": 36,
+      "averageWinProbability": 85,
+      "strengthOfSchedule": 20,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 63
+    },
+    "efficiencies": {
+      "overall": 49.961,
+      "offense": 43.652,
+      "defense": 54.843,
+      "specialTeams": 54.609
+    }
+  },
+  {
+    "year": 2015,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "fpi": 16.992,
+    "resumeRanks": {
+      "strengthOfRecord": 20,
+      "fpi": 16,
+      "averageWinProbability": 13,
+      "strengthOfSchedule": 53,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 11
+    },
+    "efficiencies": {
+      "overall": 78.693,
+      "offense": 84.058,
+      "defense": 57.576,
+      "specialTeams": 69.944
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Virginia",
+    "conference": "ACC",
+    "fpi": 2.052,
+    "resumeRanks": {
+      "strengthOfRecord": 75,
+      "fpi": 70,
+      "averageWinProbability": 91,
+      "strengthOfSchedule": 15,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 70
+    },
+    "efficiencies": {
+      "overall": 49.097,
+      "offense": 52.401,
+      "defense": 50.688,
+      "specialTeams": 37.037
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Duke",
+    "conference": "ACC",
+    "fpi": 5.102,
+    "resumeRanks": {
+      "strengthOfRecord": 56,
+      "fpi": 61,
+      "averageWinProbability": 51,
+      "strengthOfSchedule": 68,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 61
+    },
+    "efficiencies": {
+      "overall": 53.419,
+      "offense": 48.564,
+      "defense": 51.752,
+      "specialTeams": 65.71
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "fpi": 7.151,
+    "resumeRanks": {
+      "strengthOfRecord": 47,
+      "fpi": 47,
+      "averageWinProbability": 28,
+      "strengthOfSchedule": 82,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 49
+    },
+    "efficiencies": {
+      "overall": 64.634,
+      "offense": 81.431,
+      "defense": 41.719,
+      "specialTeams": 34.494
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Missouri",
+    "conference": "SEC",
+    "fpi": 5.373,
+    "resumeRanks": {
+      "strengthOfRecord": 65,
+      "fpi": 58,
+      "averageWinProbability": 89,
+      "strengthOfSchedule": 31,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 74
+    },
+    "efficiencies": {
+      "overall": 49.182,
+      "offense": 25.007,
+      "defense": 72.545,
+      "specialTeams": 46.369
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "fpi": 14.64,
+    "resumeRanks": {
+      "strengthOfRecord": 32,
+      "fpi": 21,
+      "averageWinProbability": 55,
+      "strengthOfSchedule": 27,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 38
+    },
+    "efficiencies": {
+      "overall": 65.554,
+      "offense": 49.877,
+      "defense": 71.948,
+      "specialTeams": 60.966
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Syracuse",
+    "conference": "ACC",
+    "fpi": 0.071,
+    "resumeRanks": {
+      "strengthOfRecord": 80,
+      "fpi": 80,
+      "averageWinProbability": 87,
+      "strengthOfSchedule": 39,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 72
+    },
+    "efficiencies": {
+      "overall": 46.746,
+      "offense": 48.729,
+      "defense": 42.338,
+      "specialTeams": 61.218
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Pittsburgh",
+    "conference": "ACC",
+    "fpi": 8.389,
+    "resumeRanks": {
+      "strengthOfRecord": 43,
+      "fpi": 45,
+      "averageWinProbability": 76,
+      "strengthOfSchedule": 28,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 58
+    },
+    "efficiencies": {
+      "overall": 60.435,
+      "offense": 61.298,
+      "defense": 55.675,
+      "specialTeams": 50.223
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Utah State",
+    "conference": "Mountain West",
+    "fpi": 1.327,
+    "resumeRanks": {
+      "strengthOfRecord": 83,
+      "fpi": 77,
+      "averageWinProbability": 84,
+      "strengthOfSchedule": 76,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 90
+    },
+    "efficiencies": {
+      "overall": 44.195,
+      "offense": 36.39,
+      "defense": 56.55,
+      "specialTeams": 43.811
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Boise State",
+    "conference": "Mountain West",
+    "fpi": 12.164,
+    "resumeRanks": {
+      "strengthOfRecord": 58,
+      "fpi": 32,
+      "averageWinProbability": 18,
+      "strengthOfSchedule": 98,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 41
+    },
+    "efficiencies": {
+      "overall": 60.854,
+      "offense": 52.798,
+      "defense": 66.568,
+      "specialTeams": 48.52
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "fpi": -5.913,
+    "resumeRanks": {
+      "strengthOfRecord": 91,
+      "fpi": 93,
+      "averageWinProbability": 58,
+      "strengthOfSchedule": 117,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 92
+    },
+    "efficiencies": {
+      "overall": 38.338,
+      "offense": 47.948,
+      "defense": 30.903,
+      "specialTeams": 55.592
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "fpi": -16.028,
+    "resumeRanks": {
+      "strengthOfRecord": 121,
+      "fpi": 113,
+      "averageWinProbability": 126,
+      "strengthOfSchedule": 84,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 13.078,
+      "offense": 25.118,
+      "defense": 15.869,
+      "specialTeams": 33.345
+    }
+  },
+  {
+    "year": 2015,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "fpi": -7.894,
+    "resumeRanks": {
+      "strengthOfRecord": 85,
+      "fpi": 95,
+      "averageWinProbability": 67,
+      "strengthOfSchedule": 111,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 91
+    },
+    "efficiencies": {
+      "overall": 35.669,
+      "offense": 38.386,
+      "defense": 36.3,
+      "specialTeams": 56.215
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "fpi": 1.846,
+    "resumeRanks": {
+      "strengthOfRecord": 71,
+      "fpi": 71,
+      "averageWinProbability": 64,
+      "strengthOfSchedule": 86,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 77
+    },
+    "efficiencies": {
+      "overall": 50.913,
+      "offense": 58.961,
+      "defense": 43.8,
+      "specialTeams": 43.761
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Fresno State",
+    "conference": "Mountain West",
+    "fpi": -15.727,
+    "resumeRanks": {
+      "strengthOfRecord": 107,
+      "fpi": 111,
+      "averageWinProbability": 110,
+      "strengthOfSchedule": 77,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 107
+    },
+    "efficiencies": {
+      "overall": 19.528,
+      "offense": 17.883,
+      "defense": 31.363,
+      "specialTeams": 49.529
+    }
+  },
+  {
+    "year": 2015,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "fpi": 6.341,
+    "resumeRanks": {
+      "strengthOfRecord": 46,
+      "fpi": 53,
+      "averageWinProbability": 8,
+      "strengthOfSchedule": 121,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 36
+    },
+    "efficiencies": {
+      "overall": 60.459,
+      "offense": 47.496,
+      "defense": 65.973,
+      "specialTeams": 60.432
+    }
+  },
+  {
+    "year": 2015,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "fpi": -11.741,
+    "resumeRanks": {
+      "strengthOfRecord": 111,
+      "fpi": 103,
+      "averageWinProbability": 92,
+      "strengthOfSchedule": 90,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 101
+    },
+    "efficiencies": {
+      "overall": 28.486,
+      "offense": 36.204,
+      "defense": 26.642,
+      "specialTeams": 56.292
+    }
+  },
+  {
+    "year": 2015,
+    "team": "San José State",
+    "conference": "Mountain West",
+    "fpi": -4.118,
+    "resumeRanks": {
+      "strengthOfRecord": 93,
+      "fpi": 87,
+      "averageWinProbability": 65,
+      "strengthOfSchedule": 96,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 85
+    },
+    "efficiencies": {
+      "overall": 42.926,
+      "offense": 53.455,
+      "defense": 37.265,
+      "specialTeams": 41.2
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Nevada",
+    "conference": "Mountain West",
+    "fpi": -8.091,
+    "resumeRanks": {
+      "strengthOfRecord": 88,
+      "fpi": 98,
+      "averageWinProbability": 80,
+      "strengthOfSchedule": 119,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 99
+    },
+    "efficiencies": {
+      "overall": 33.968,
+      "offense": 36.332,
+      "defense": 36.954,
+      "specialTeams": 51.071
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Hawai'i",
+    "conference": "Mountain West",
+    "fpi": -17.484,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 119,
+      "averageWinProbability": 112,
+      "strengthOfSchedule": 89,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 114
+    },
+    "efficiencies": {
+      "overall": 19.523,
+      "offense": 16.536,
+      "defense": 27.992,
+      "specialTeams": 64.817
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Louisville",
+    "conference": "ACC",
+    "fpi": 10.274,
+    "resumeRanks": {
+      "strengthOfRecord": 42,
+      "fpi": 35,
+      "averageWinProbability": 63,
+      "strengthOfSchedule": 35,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 50
+    },
+    "efficiencies": {
+      "overall": 64.901,
+      "offense": 50.68,
+      "defense": 73.773,
+      "specialTeams": 47.236
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "fpi": 24.851,
+    "resumeRanks": {
+      "strengthOfRecord": 4,
+      "fpi": 3,
+      "averageWinProbability": 2,
+      "strengthOfSchedule": 57,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 5
+    },
+    "efficiencies": {
+      "overall": 82.84,
+      "offense": 69.399,
+      "defense": 79.976,
+      "specialTeams": 70.438
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "fpi": 16.558,
+    "resumeRanks": {
+      "strengthOfRecord": 6,
+      "fpi": 18,
+      "averageWinProbability": 25,
+      "strengthOfSchedule": 36,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 17
+    },
+    "efficiencies": {
+      "overall": 72.6,
+      "offense": 68.629,
+      "defense": 71.779,
+      "specialTeams": 38.612
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Maryland",
+    "conference": "Big Ten",
+    "fpi": -1.462,
+    "resumeRanks": {
+      "strengthOfRecord": 84,
+      "fpi": 84,
+      "averageWinProbability": 108,
+      "strengthOfSchedule": 19,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 82
+    },
+    "efficiencies": {
+      "overall": 42.056,
+      "offense": 36.728,
+      "defense": 50.463,
+      "specialTeams": 48.393
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Rutgers",
+    "conference": "Big Ten",
+    "fpi": -4.898,
+    "resumeRanks": {
+      "strengthOfRecord": 90,
+      "fpi": 90,
+      "averageWinProbability": 93,
+      "strengthOfSchedule": 62,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 83
+    },
+    "efficiencies": {
+      "overall": 34.758,
+      "offense": 51.598,
+      "defense": 21.134,
+      "specialTeams": 65.105
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "fpi": 17.226,
+    "resumeRanks": {
+      "strengthOfRecord": 22,
+      "fpi": 15,
+      "averageWinProbability": 19,
+      "strengthOfSchedule": 49,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 16
+    },
+    "efficiencies": {
+      "overall": 77.514,
+      "offense": 70.602,
+      "defense": 71.022,
+      "specialTeams": 65.103
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "fpi": 6.896,
+    "resumeRanks": {
+      "strengthOfRecord": 54,
+      "fpi": 49,
+      "averageWinProbability": 62,
+      "strengthOfSchedule": 56,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 53
+    },
+    "efficiencies": {
+      "overall": 54.629,
+      "offense": 41.176,
+      "defense": 69.22,
+      "specialTeams": 38.973
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "fpi": 1.713,
+    "resumeRanks": {
+      "strengthOfRecord": 66,
+      "fpi": 72,
+      "averageWinProbability": 61,
+      "strengthOfSchedule": 54,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 55
+    },
+    "efficiencies": {
+      "overall": 52.308,
+      "offense": 68.071,
+      "defense": 34.214,
+      "specialTeams": 51.284
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "fpi": 13.875,
+    "resumeRanks": {
+      "strengthOfRecord": 27,
+      "fpi": 26,
+      "averageWinProbability": 23,
+      "strengthOfSchedule": 66,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 28
+    },
+    "efficiencies": {
+      "overall": 68.446,
+      "offense": 53.439,
+      "defense": 74.675,
+      "specialTeams": 58.206
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "fpi": 3.36,
+    "resumeRanks": {
+      "strengthOfRecord": 64,
+      "fpi": 66,
+      "averageWinProbability": 94,
+      "strengthOfSchedule": 47,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 84
+    },
+    "efficiencies": {
+      "overall": 46.696,
+      "offense": 43.676,
+      "defense": 51.846,
+      "specialTeams": 46.949
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Nebraska",
+    "conference": "Big Ten",
+    "fpi": 9.375,
+    "resumeRanks": {
+      "strengthOfRecord": 67,
+      "fpi": 39,
+      "averageWinProbability": 47,
+      "strengthOfSchedule": 45,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 48
+    },
+    "efficiencies": {
+      "overall": 61.089,
+      "offense": 63.678,
+      "defense": 50.463,
+      "specialTeams": 59.863
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "fpi": 11.803,
+    "resumeRanks": {
+      "strengthOfRecord": 11,
+      "fpi": 33,
+      "averageWinProbability": 17,
+      "strengthOfSchedule": 59,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 18
+    },
+    "efficiencies": {
+      "overall": 71.319,
+      "offense": 64.355,
+      "defense": 71.428,
+      "specialTeams": 47.459
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "fpi": 3.104,
+    "resumeRanks": {
+      "strengthOfRecord": 70,
+      "fpi": 67,
+      "averageWinProbability": 83,
+      "strengthOfSchedule": 48,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 71
+    },
+    "efficiencies": {
+      "overall": 48.661,
+      "offense": 42.052,
+      "defense": 59.415,
+      "specialTeams": 41.81
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "fpi": 4.814,
+    "resumeRanks": {
+      "strengthOfRecord": 17,
+      "fpi": 62,
+      "averageWinProbability": 43,
+      "strengthOfSchedule": 41,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 37
+    },
+    "efficiencies": {
+      "overall": 60.121,
+      "offense": 31.848,
+      "defense": 80.085,
+      "specialTeams": 57.244
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "fpi": -4.329,
+    "resumeRanks": {
+      "strengthOfRecord": 102,
+      "fpi": 89,
+      "averageWinProbability": 109,
+      "strengthOfSchedule": 40,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 93
+    },
+    "efficiencies": {
+      "overall": 35.582,
+      "offense": 45.27,
+      "defense": 37.918,
+      "specialTeams": 29.711
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "fpi": -14.919,
+    "resumeRanks": {
+      "strengthOfRecord": 124,
+      "fpi": 109,
+      "averageWinProbability": 105,
+      "strengthOfSchedule": 120,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 20.888,
+      "offense": 26.689,
+      "defense": 26.503,
+      "specialTeams": 41.887
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Texas",
+    "conference": "Big 12",
+    "fpi": 6.747,
+    "resumeRanks": {
+      "strengthOfRecord": 48,
+      "fpi": 50,
+      "averageWinProbability": 70,
+      "strengthOfSchedule": 9,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 39
+    },
+    "efficiencies": {
+      "overall": 58.62,
+      "offense": 41.55,
+      "defense": 65.992,
+      "specialTeams": 61
+    }
+  },
+  {
+    "year": 2015,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "fpi": 26.244,
+    "resumeRanks": {
+      "strengthOfRecord": 3,
+      "fpi": 2,
+      "averageWinProbability": 11,
+      "strengthOfSchedule": 26,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 6
+    },
+    "efficiencies": {
+      "overall": 84.773,
+      "offense": 81.167,
+      "defense": 80.184,
+      "specialTeams": 44.339
+    }
+  }
+]

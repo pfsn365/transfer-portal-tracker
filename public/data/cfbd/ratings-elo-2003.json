@@ -1,0 +1,752 @@
+[
+  {
+    "year": 2003,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "elo": 1523
+  },
+  {
+    "year": 2003,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "elo": 1377
+  },
+  {
+    "year": 2003,
+    "team": "Alabama",
+    "conference": "SEC",
+    "elo": 1696
+  },
+  {
+    "year": 2003,
+    "team": "App State",
+    "conference": "Southern",
+    "elo": 1391
+  },
+  {
+    "year": 2003,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "elo": 1151
+  },
+  {
+    "year": 2003,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "elo": 1525
+  },
+  {
+    "year": 2003,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "elo": 1789
+  },
+  {
+    "year": 2003,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "elo": 831
+  },
+  {
+    "year": 2003,
+    "team": "Army",
+    "conference": "Conference USA",
+    "elo": 960
+  },
+  {
+    "year": 2003,
+    "team": "Auburn",
+    "conference": "SEC",
+    "elo": 1842
+  },
+  {
+    "year": 2003,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "elo": 1183
+  },
+  {
+    "year": 2003,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "elo": 994
+  },
+  {
+    "year": 2003,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "elo": 1983
+  },
+  {
+    "year": 2003,
+    "team": "Boston College",
+    "conference": "Big East",
+    "elo": 1721
+  },
+  {
+    "year": 2003,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "elo": 1644
+  },
+  {
+    "year": 2003,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "elo": 1008
+  },
+  {
+    "year": 2003,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "elo": 1309
+  },
+  {
+    "year": 2003,
+    "team": "California",
+    "conference": "Pac-10",
+    "elo": 1830
+  },
+  {
+    "year": 2003,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "elo": 1098
+  },
+  {
+    "year": 2003,
+    "team": "Cincinnati",
+    "conference": "Conference USA",
+    "elo": 1473
+  },
+  {
+    "year": 2003,
+    "team": "Clemson",
+    "conference": "ACC",
+    "elo": 1821
+  },
+  {
+    "year": 2003,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "elo": 1573
+  },
+  {
+    "year": 2003,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "elo": 1646
+  },
+  {
+    "year": 2003,
+    "team": "Duke",
+    "conference": "ACC",
+    "elo": 1259
+  },
+  {
+    "year": 2003,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "elo": 1203
+  },
+  {
+    "year": 2003,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "elo": 1079
+  },
+  {
+    "year": 2003,
+    "team": "Florida",
+    "conference": "SEC",
+    "elo": 1762
+  },
+  {
+    "year": 2003,
+    "team": "Florida Atlantic",
+    "conference": "FCS Independents",
+    "elo": 1304
+  },
+  {
+    "year": 2003,
+    "team": "Florida International",
+    "conference": "FCS Independents",
+    "elo": 1299
+  },
+  {
+    "year": 2003,
+    "team": "Florida State",
+    "conference": "ACC",
+    "elo": 1938
+  },
+  {
+    "year": 2003,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "elo": 1462
+  },
+  {
+    "year": 2003,
+    "team": "Georgia",
+    "conference": "SEC",
+    "elo": 1930
+  },
+  {
+    "year": 2003,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "elo": 1594
+  },
+  {
+    "year": 2003,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "elo": 1544
+  },
+  {
+    "year": 2003,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "elo": 1371
+  },
+  {
+    "year": 2003,
+    "team": "Idaho",
+    "conference": "Sun Belt",
+    "elo": 1254
+  },
+  {
+    "year": 2003,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "elo": 1247
+  },
+  {
+    "year": 2003,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "elo": 1109
+  },
+  {
+    "year": 2003,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "elo": 1921
+  },
+  {
+    "year": 2003,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "elo": 1141
+  },
+  {
+    "year": 2003,
+    "team": "James Madison",
+    "conference": "Atlantic 10",
+    "elo": 1374
+  },
+  {
+    "year": 2003,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "elo": 1317
+  },
+  {
+    "year": 2003,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "elo": 2165
+  },
+  {
+    "year": 2003,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "elo": 1245
+  },
+  {
+    "year": 2003,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "elo": 1555
+  },
+  {
+    "year": 2003,
+    "team": "Liberty",
+    "conference": "Big South",
+    "elo": 1031
+  },
+  {
+    "year": 2003,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "elo": 1166
+  },
+  {
+    "year": 2003,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "elo": 1199
+  },
+  {
+    "year": 2003,
+    "team": "Louisville",
+    "conference": "Conference USA",
+    "elo": 1545
+  },
+  {
+    "year": 2003,
+    "team": "LSU",
+    "conference": "SEC",
+    "elo": 2133
+  },
+  {
+    "year": 2003,
+    "team": "Marshall",
+    "conference": "Mid-American",
+    "elo": 1600
+  },
+  {
+    "year": 2003,
+    "team": "Maryland",
+    "conference": "ACC",
+    "elo": 1894
+  },
+  {
+    "year": 2003,
+    "team": "Massachusetts",
+    "conference": "Atlantic 10",
+    "elo": 1404
+  },
+  {
+    "year": 2003,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "elo": 1628
+  },
+  {
+    "year": 2003,
+    "team": "Miami",
+    "conference": "Big East",
+    "elo": 1953
+  },
+  {
+    "year": 2003,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "elo": 1986
+  },
+  {
+    "year": 2003,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "elo": 2012
+  },
+  {
+    "year": 2003,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "elo": 1648
+  },
+  {
+    "year": 2003,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "elo": 1292
+  },
+  {
+    "year": 2003,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "elo": 1802
+  },
+  {
+    "year": 2003,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "elo": 1114
+  },
+  {
+    "year": 2003,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "elo": 1737
+  },
+  {
+    "year": 2003,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "elo": 1455
+  },
+  {
+    "year": 2003,
+    "team": "NC State",
+    "conference": "ACC",
+    "elo": 1786
+  },
+  {
+    "year": 2003,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "elo": 1757
+  },
+  {
+    "year": 2003,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "elo": 1263
+  },
+  {
+    "year": 2003,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "elo": 1585
+  },
+  {
+    "year": 2003,
+    "team": "New Mexico State",
+    "conference": "Sun Belt",
+    "elo": 1190
+  },
+  {
+    "year": 2003,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "elo": 1262
+  },
+  {
+    "year": 2003,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "elo": 1589
+  },
+  {
+    "year": 2003,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "elo": 1501
+  },
+  {
+    "year": 2003,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "elo": 1388
+  },
+  {
+    "year": 2003,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "elo": 1552
+  },
+  {
+    "year": 2003,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "elo": 1286
+  },
+  {
+    "year": 2003,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "elo": 1852
+  },
+  {
+    "year": 2003,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "elo": 2248
+  },
+  {
+    "year": 2003,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "elo": 1659
+  },
+  {
+    "year": 2003,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "elo": 1779
+  },
+  {
+    "year": 2003,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "elo": 1570
+  },
+  {
+    "year": 2003,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "elo": 1819
+  },
+  {
+    "year": 2003,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "elo": 1605
+  },
+  {
+    "year": 2003,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "elo": 1700
+  },
+  {
+    "year": 2003,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "elo": 1766
+  },
+  {
+    "year": 2003,
+    "team": "Rice",
+    "conference": "Western Athletic",
+    "elo": 1371
+  },
+  {
+    "year": 2003,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "elo": 1426
+  },
+  {
+    "year": 2003,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "elo": 1439
+  },
+  {
+    "year": 2003,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "elo": 1096
+  },
+  {
+    "year": 2003,
+    "team": "SMU",
+    "conference": "Western Athletic",
+    "elo": 950
+  },
+  {
+    "year": 2003,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "elo": 1429
+  },
+  {
+    "year": 2003,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "elo": 1603
+  },
+  {
+    "year": 2003,
+    "team": "South Florida",
+    "conference": "Conference USA",
+    "elo": 1528
+  },
+  {
+    "year": 2003,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "elo": 1209
+  },
+  {
+    "year": 2003,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "elo": 1630
+  },
+  {
+    "year": 2003,
+    "team": "TCU",
+    "conference": "Conference USA",
+    "elo": 1638
+  },
+  {
+    "year": 2003,
+    "team": "Temple",
+    "conference": "Big East",
+    "elo": 1317
+  },
+  {
+    "year": 2003,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "elo": 1824
+  },
+  {
+    "year": 2003,
+    "team": "Texas",
+    "conference": "Big 12",
+    "elo": 2039
+  },
+  {
+    "year": 2003,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "elo": 1349
+  },
+  {
+    "year": 2003,
+    "team": "Texas State",
+    "conference": "Southland",
+    "elo": 1096
+  },
+  {
+    "year": 2003,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "elo": 1772
+  },
+  {
+    "year": 2003,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "elo": 1594
+  },
+  {
+    "year": 2003,
+    "team": "Troy",
+    "conference": "FBS Independents",
+    "elo": 1291
+  },
+  {
+    "year": 2003,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "elo": 1329
+  },
+  {
+    "year": 2003,
+    "team": "Tulsa",
+    "conference": "Western Athletic",
+    "elo": 1325
+  },
+  {
+    "year": 2003,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "elo": 1292
+  },
+  {
+    "year": 2003,
+    "team": "UCF",
+    "conference": "Mid-American",
+    "elo": 1248
+  },
+  {
+    "year": 2003,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "elo": 1512
+  },
+  {
+    "year": 2003,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "elo": 1659
+  },
+  {
+    "year": 2003,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "elo": 858
+  },
+  {
+    "year": 2003,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "elo": 1430
+  },
+  {
+    "year": 2003,
+    "team": "USC",
+    "conference": "Pac-10",
+    "elo": 2138
+  },
+  {
+    "year": 2003,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "elo": 1693
+  },
+  {
+    "year": 2003,
+    "team": "Utah State",
+    "conference": "Sun Belt",
+    "elo": 1301
+  },
+  {
+    "year": 2003,
+    "team": "UTEP",
+    "conference": "Western Athletic",
+    "elo": 891
+  },
+  {
+    "year": 2003,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "elo": 1232
+  },
+  {
+    "year": 2003,
+    "team": "Virginia",
+    "conference": "ACC",
+    "elo": 1771
+  },
+  {
+    "year": 2003,
+    "team": "Virginia Tech",
+    "conference": "Big East",
+    "elo": 1872
+  },
+  {
+    "year": 2003,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "elo": 1508
+  },
+  {
+    "year": 2003,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "elo": 1546
+  },
+  {
+    "year": 2003,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "elo": 1823
+  },
+  {
+    "year": 2003,
+    "team": "Western Kentucky",
+    "conference": "MVFC",
+    "elo": 1304
+  },
+  {
+    "year": 2003,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "elo": 1346
+  },
+  {
+    "year": 2003,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "elo": 1692
+  },
+  {
+    "year": 2003,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "elo": 1706
+  },
+  {
+    "year": 2003,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "elo": 1281
+  }
+]

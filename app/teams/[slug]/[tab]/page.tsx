@@ -8,7 +8,7 @@ interface TeamTabPageProps {
   params: Promise<{ slug: string; tab: string }>;
 }
 
-const validTabs = ['overview', 'roster', 'schedule', 'stats', 'transfers', 'history', 'draft'];
+const validTabs = ['overview', 'roster', 'schedule', 'stats', 'transfers', 'history', 'draft', 'recruiting'];
 
 export async function generateStaticParams() {
   const fbsConferences = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'American', 'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Pac-12', 'Independent'];
@@ -45,6 +45,7 @@ export async function generateMetadata({ params }: TeamTabPageProps): Promise<Me
     transfers: 'Transfer Portal',
     history: 'Record by Year',
     draft: 'NFL Draft History',
+    recruiting: 'Recruiting',
   };
 
   const tabDescriptions: Record<string, string> = {
@@ -55,6 +56,7 @@ export async function generateMetadata({ params }: TeamTabPageProps): Promise<Me
     transfers: `transfer portal activity including incoming and outgoing players`,
     history: `program history since 2000 including yearly records, bowl games, AP rankings, and coaching history`,
     draft: `NFL Draft history since 2000 including all drafted players, rounds, and NFL teams`,
+    recruiting: `recruiting class commits with star ratings, positions, and high school information`,
   };
 
   const title = `${team.name} ${tabTitles[tab]} | CFB HQ`;

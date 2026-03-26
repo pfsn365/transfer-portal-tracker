@@ -231,6 +231,24 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                 </li>
                 <li>
                   <Link
+                    href="/recruiting"
+                    onClick={() => setIsExpanded(false)}
+                    className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
+                      isActivePage('/recruiting')
+                        ? 'bg-[#0050A0] text-white'
+                        : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2 w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                      <span className="text-[13px] font-medium">Recruiting Hub</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/teams"
                     onClick={() => setIsExpanded(false)}
                     className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
@@ -317,6 +335,23 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
                 <span className="text-[13px] font-medium">Transfer Portal Tracker</span>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/recruiting"
+              className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
+                isActivePage('/recruiting')
+                  ? 'bg-[#0050A0] text-white'
+                  : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
+              }`}
+            >
+              <div className="flex items-center gap-2 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <span className="text-[13px] font-medium">Recruiting Hub</span>
               </div>
             </Link>
           </li>

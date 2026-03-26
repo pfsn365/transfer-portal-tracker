@@ -1,0 +1,962 @@
+[
+  {
+    "year": 2010,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 1,
+    "rating": 30.2025595405287
+  },
+  {
+    "year": 2010,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 2,
+    "rating": 29.5675674177457
+  },
+  {
+    "year": 2010,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 3,
+    "rating": 24.4089997210156
+  },
+  {
+    "year": 2010,
+    "team": "Alabama",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 4,
+    "rating": 24.1415533130997
+  },
+  {
+    "year": 2010,
+    "team": "Auburn",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 5,
+    "rating": 23.9077464914675
+  },
+  {
+    "year": 2010,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 6,
+    "rating": 22.5858692515002
+  },
+  {
+    "year": 2010,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 7,
+    "rating": 20.4038233074065
+  },
+  {
+    "year": 2010,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 8,
+    "rating": 19.1909002324414
+  },
+  {
+    "year": 2010,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 9,
+    "rating": 19.159315181035
+  },
+  {
+    "year": 2010,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 10,
+    "rating": 18.8345509857247
+  },
+  {
+    "year": 2010,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 11,
+    "rating": 18.7525309556168
+  },
+  {
+    "year": 2010,
+    "team": "LSU",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 12,
+    "rating": 17.2088909507702
+  },
+  {
+    "year": 2010,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 13,
+    "rating": 16.7359646481593
+  },
+  {
+    "year": 2010,
+    "team": "Florida State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 14,
+    "rating": 16.1030622418377
+  },
+  {
+    "year": 2010,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 15,
+    "rating": 15.6420496886701
+  },
+  {
+    "year": 2010,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 16,
+    "rating": 15.5477075142128
+  },
+  {
+    "year": 2010,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 17,
+    "rating": 15.495049263741
+  },
+  {
+    "year": 2010,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 18,
+    "rating": 14.7638520456008
+  },
+  {
+    "year": 2010,
+    "team": "USC",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 19,
+    "rating": 13.6046093938029
+  },
+  {
+    "year": 2010,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 20,
+    "rating": 13.0680791196049
+  },
+  {
+    "year": 2010,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 21,
+    "rating": 12.9606036549066
+  },
+  {
+    "year": 2010,
+    "team": "NC State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 22,
+    "rating": 12.916320978323
+  },
+  {
+    "year": 2010,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 23,
+    "rating": 12.8182379355305
+  },
+  {
+    "year": 2010,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 24,
+    "rating": 12.2304354611372
+  },
+  {
+    "year": 2010,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 25,
+    "rating": 12.1499634487033
+  },
+  {
+    "year": 2010,
+    "team": "Florida",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 26,
+    "rating": 11.8324701898255
+  },
+  {
+    "year": 2010,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 27,
+    "rating": 11.1587851366518
+  },
+  {
+    "year": 2010,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 28,
+    "rating": 10.6839703456963
+  },
+  {
+    "year": 2010,
+    "team": "Georgia",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 29,
+    "rating": 10.6132531988731
+  },
+  {
+    "year": 2010,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 30,
+    "rating": 10.0015968516504
+  },
+  {
+    "year": 2010,
+    "team": "California",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 31,
+    "rating": 9.84273155210496
+  },
+  {
+    "year": 2010,
+    "team": "Miami",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 32,
+    "rating": 9.77382274006486
+  },
+  {
+    "year": 2010,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 33,
+    "rating": 9.53449997757846
+  },
+  {
+    "year": 2010,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 34,
+    "rating": 8.95714637966134
+  },
+  {
+    "year": 2010,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 35,
+    "rating": 8.42010932117922
+  },
+  {
+    "year": 2010,
+    "team": "Clemson",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 36,
+    "rating": 8.26732227985404
+  },
+  {
+    "year": 2010,
+    "team": "Maryland",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 37,
+    "rating": 7.50187664990642
+  },
+  {
+    "year": 2010,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 38,
+    "rating": 7.44217572818902
+  },
+  {
+    "year": 2010,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 39,
+    "rating": 7.21856651105054
+  },
+  {
+    "year": 2010,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 40,
+    "rating": 6.69539531945563
+  },
+  {
+    "year": 2010,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 41,
+    "rating": 6.63779077258284
+  },
+  {
+    "year": 2010,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 42,
+    "rating": 6.62957084752404
+  },
+  {
+    "year": 2010,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 43,
+    "rating": 6.34001814983225
+  },
+  {
+    "year": 2010,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 44,
+    "rating": 5.10489842371101
+  },
+  {
+    "year": 2010,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 45,
+    "rating": 4.97475447937346
+  },
+  {
+    "year": 2010,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 46,
+    "rating": 3.9046673363323
+  },
+  {
+    "year": 2010,
+    "team": "Louisville",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 47,
+    "rating": 3.71467281656222
+  },
+  {
+    "year": 2010,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 48,
+    "rating": 3.54967455459851
+  },
+  {
+    "year": 2010,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 49,
+    "rating": 3.54016435153679
+  },
+  {
+    "year": 2010,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 50,
+    "rating": 3.43314523962103
+  },
+  {
+    "year": 2010,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 51,
+    "rating": 3.23628521210402
+  },
+  {
+    "year": 2010,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 52,
+    "rating": 2.37446805090891
+  },
+  {
+    "year": 2010,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 53,
+    "rating": 1.8095341357275
+  },
+  {
+    "year": 2010,
+    "team": "Boston College",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 54,
+    "rating": 1.36948392090888
+  },
+  {
+    "year": 2010,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 55,
+    "rating": 1.34557789367209
+  },
+  {
+    "year": 2010,
+    "team": "Texas",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 56,
+    "rating": 1.32300792874444
+  },
+  {
+    "year": 2010,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 57,
+    "rating": 0.941120292457713
+  },
+  {
+    "year": 2010,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 58,
+    "rating": 0.616507251523505
+  },
+  {
+    "year": 2010,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 59,
+    "rating": 0.585653587034724
+  },
+  {
+    "year": 2010,
+    "team": "South Florida",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 60,
+    "rating": 0.326103083495981
+  },
+  {
+    "year": 2010,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 61,
+    "rating": 0.0877895180189672
+  },
+  {
+    "year": 2010,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 62,
+    "rating": -0.059914744885873
+  },
+  {
+    "year": 2010,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 63,
+    "rating": -0.435827181359622
+  },
+  {
+    "year": 2010,
+    "team": "UConn",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 64,
+    "rating": -1.26320444723115
+  },
+  {
+    "year": 2010,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 65,
+    "rating": -1.70249001704263
+  },
+  {
+    "year": 2010,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 66,
+    "rating": -2.11449775557474
+  },
+  {
+    "year": 2010,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 67,
+    "rating": -2.15428219215051
+  },
+  {
+    "year": 2010,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 68,
+    "rating": -2.28399831146068
+  },
+  {
+    "year": 2010,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 69,
+    "rating": -2.34418456751181
+  },
+  {
+    "year": 2010,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 70,
+    "rating": -2.73483485300149
+  },
+  {
+    "year": 2010,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 71,
+    "rating": -3.0541543519529
+  },
+  {
+    "year": 2010,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 72,
+    "rating": -3.83906819655521
+  },
+  {
+    "year": 2010,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 73,
+    "rating": -4.72892499919655
+  },
+  {
+    "year": 2010,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 74,
+    "rating": -4.80485931115755
+  },
+  {
+    "year": 2010,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 75,
+    "rating": -4.9717760424258
+  },
+  {
+    "year": 2010,
+    "team": "Virginia",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 76,
+    "rating": -5.28735454884311
+  },
+  {
+    "year": 2010,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 77,
+    "rating": -5.38044274686713
+  },
+  {
+    "year": 2010,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 78,
+    "rating": -5.48985680563267
+  },
+  {
+    "year": 2010,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 79,
+    "rating": -5.7787886779321
+  },
+  {
+    "year": 2010,
+    "team": "Temple",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 80,
+    "rating": -5.79154453648922
+  },
+  {
+    "year": 2010,
+    "team": "Duke",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 81,
+    "rating": -6.13584260317528
+  },
+  {
+    "year": 2010,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 82,
+    "rating": -6.28000966657488
+  },
+  {
+    "year": 2010,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 83,
+    "rating": -6.37492644226897
+  },
+  {
+    "year": 2010,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 84,
+    "rating": -6.78255827236119
+  },
+  {
+    "year": 2010,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 85,
+    "rating": -7.51428819284081
+  },
+  {
+    "year": 2010,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 86,
+    "rating": -8.14632212330043
+  },
+  {
+    "year": 2010,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 87,
+    "rating": -8.48588683238235
+  },
+  {
+    "year": 2010,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 88,
+    "rating": -8.59626153866008
+  },
+  {
+    "year": 2010,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 89,
+    "rating": -9.02937483299886
+  },
+  {
+    "year": 2010,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 90,
+    "rating": -9.72774273610902
+  },
+  {
+    "year": 2010,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 91,
+    "rating": -10.4368133385435
+  },
+  {
+    "year": 2010,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 92,
+    "rating": -10.9585449843357
+  },
+  {
+    "year": 2010,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 93,
+    "rating": -10.9957347537416
+  },
+  {
+    "year": 2010,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 94,
+    "rating": -11.0707018084
+  },
+  {
+    "year": 2010,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 95,
+    "rating": -11.1784634812554
+  },
+  {
+    "year": 2010,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 96,
+    "rating": -12.1056036364184
+  },
+  {
+    "year": 2010,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 97,
+    "rating": -12.2495167853637
+  },
+  {
+    "year": 2010,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 98,
+    "rating": -12.3036995538969
+  },
+  {
+    "year": 2010,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 99,
+    "rating": -12.6291985313914
+  },
+  {
+    "year": 2010,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 100,
+    "rating": -14.1110354930603
+  },
+  {
+    "year": 2010,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 101,
+    "rating": -14.1845880697214
+  },
+  {
+    "year": 2010,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 102,
+    "rating": -14.3266060738687
+  },
+  {
+    "year": 2010,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 103,
+    "rating": -14.5442275847012
+  },
+  {
+    "year": 2010,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 104,
+    "rating": -15.5482394687451
+  },
+  {
+    "year": 2010,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 105,
+    "rating": -15.691268132737
+  },
+  {
+    "year": 2010,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 106,
+    "rating": -15.7393512027128
+  },
+  {
+    "year": 2010,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 107,
+    "rating": -15.8653403336787
+  },
+  {
+    "year": 2010,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 108,
+    "rating": -16.5081465809451
+  },
+  {
+    "year": 2010,
+    "team": "Western Kentucky",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 109,
+    "rating": -17.7793016387314
+  },
+  {
+    "year": 2010,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 110,
+    "rating": -17.8562917414926
+  },
+  {
+    "year": 2010,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 111,
+    "rating": -20.1948379465664
+  },
+  {
+    "year": 2010,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 112,
+    "rating": -20.3678260520263
+  },
+  {
+    "year": 2010,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 113,
+    "rating": -20.4219760187792
+  },
+  {
+    "year": 2010,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 114,
+    "rating": -20.4881897996436
+  },
+  {
+    "year": 2010,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 115,
+    "rating": -23.3171802877897
+  },
+  {
+    "year": 2010,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 116,
+    "rating": -23.8116234801572
+  },
+  {
+    "year": 2010,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 117,
+    "rating": -25.0586436946267
+  },
+  {
+    "year": 2010,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 118,
+    "rating": -26.0933606351972
+  },
+  {
+    "year": 2010,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 119,
+    "rating": -26.8921998583051
+  },
+  {
+    "year": 2010,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 120,
+    "rating": -28.1671242758212
+  }
+]

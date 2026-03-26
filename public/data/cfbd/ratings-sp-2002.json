@@ -1,0 +1,4603 @@
+[
+  {
+    "year": 2002,
+    "team": "USC",
+    "conference": "Big Ten",
+    "rating": 34.5,
+    "ranking": 1,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 1,
+      "rating": 47.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 4,
+      "rating": 15.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Miami",
+    "conference": "ACC",
+    "rating": 28.7,
+    "ranking": 2,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 3,
+      "rating": 46.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 18,
+      "rating": 21.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Oklahoma",
+    "conference": "SEC",
+    "rating": 27.2,
+    "ranking": 3,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 4,
+      "rating": 44.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 13,
+      "rating": 19.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "rating": 25.3,
+    "ranking": 4,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 5,
+      "rating": 44.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 21,
+      "rating": 21.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Georgia",
+    "conference": "SEC",
+    "rating": 25.2,
+    "ranking": 5,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 20,
+      "rating": 39.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 5,
+      "rating": 15.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "rating": 24.7,
+    "ranking": 6,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 33,
+      "rating": 37.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 1,
+      "rating": 13.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Texas",
+    "conference": "SEC",
+    "rating": 24.2,
+    "ranking": 7,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 13,
+      "rating": 41.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 6,
+      "rating": 18.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Florida State",
+    "conference": "ACC",
+    "rating": 23.7,
+    "ranking": 8,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 11,
+      "rating": 42.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 14,
+      "rating": 20.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Alabama",
+    "conference": "SEC",
+    "rating": 23.6,
+    "ranking": 9,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 32,
+      "rating": 37.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 2,
+      "rating": 14.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Washington State",
+    "conference": "Pac-12",
+    "rating": 21.6,
+    "ranking": 10,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 9,
+      "rating": 42.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 27,
+      "rating": 23.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "rating": 21,
+    "ranking": 11,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 24,
+      "rating": 39.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 9,
+      "rating": 19.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "rating": 20.8,
+    "ranking": 12,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 16,
+      "rating": 40.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 21,
+      "rating": 21.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "rating": 20.7,
+    "ranking": 13,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 7,
+      "rating": 43.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 31,
+      "rating": 25.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "rating": 19.8,
+    "ranking": 14,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 18,
+      "rating": 40,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 25,
+      "rating": 22.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "NC State",
+    "conference": "ACC",
+    "rating": 19.2,
+    "ranking": 15,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 28,
+      "rating": 38.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 15,
+      "rating": 20.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Auburn",
+    "conference": "SEC",
+    "rating": 19.2,
+    "ranking": 15,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 35,
+      "rating": 36.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 12,
+      "rating": 19.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "rating": 17.1,
+    "ranking": 17,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 73,
+      "rating": 31.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 3,
+      "rating": 15.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "rating": 16.8,
+    "ranking": 18,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 31,
+      "rating": 37.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 25,
+      "rating": 22.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Maryland",
+    "conference": "Big Ten",
+    "rating": 16.6,
+    "ranking": 19,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 35,
+      "rating": 36.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 24,
+      "rating": 22.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "rating": 16.1,
+    "ranking": 20,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 1,
+      "rating": 47.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 78,
+      "rating": 35.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UCLA",
+    "conference": "Big Ten",
+    "rating": 16,
+    "ranking": 21,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 18,
+      "rating": 40,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 35,
+      "rating": 26.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Florida",
+    "conference": "SEC",
+    "rating": 15.9,
+    "ranking": 22,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 47,
+      "rating": 35.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 20,
+      "rating": 21.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "South Florida",
+    "conference": "American Athletic",
+    "rating": 15.2,
+    "ranking": 23,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 50,
+      "rating": 35.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 18,
+      "rating": 21.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "rating": 15.2,
+    "ranking": 23,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 54,
+      "rating": 34.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 16,
+      "rating": 21,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "rating": 14.5,
+    "ranking": 25,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 17,
+      "rating": 40.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 40,
+      "rating": 28.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "LSU",
+    "conference": "SEC",
+    "rating": 14.5,
+    "ranking": 25,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 67,
+      "rating": 32.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 7,
+      "rating": 19,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Pittsburgh",
+    "conference": "ACC",
+    "rating": 14.5,
+    "ranking": 25,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 65,
+      "rating": 32.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 10,
+      "rating": 19.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Virginia",
+    "conference": "ACC",
+    "rating": 13.8,
+    "ranking": 28,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 25,
+      "rating": 39,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 35,
+      "rating": 26.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "West Virginia",
+    "conference": "Big 12",
+    "rating": 13.7,
+    "ranking": 29,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 26,
+      "rating": 38.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 33,
+      "rating": 26.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Oregon State",
+    "conference": "Pac-12",
+    "rating": 13.4,
+    "ranking": 30,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 30,
+      "rating": 37.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 32,
+      "rating": 25.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Boise State",
+    "conference": "Mountain West",
+    "rating": 13.1,
+    "ranking": 31,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 6,
+      "rating": 44.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 64,
+      "rating": 33.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "rating": 12.8,
+    "ranking": 32,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 44,
+      "rating": 35.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 29,
+      "rating": 24.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "California",
+    "conference": "ACC",
+    "rating": 12.6,
+    "ranking": 33,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 8,
+      "rating": 42.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 57,
+      "rating": 33,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Washington",
+    "conference": "Big Ten",
+    "rating": 12.4,
+    "ranking": 34,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 21,
+      "rating": 39.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 47,
+      "rating": 29.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Boston College",
+    "conference": "ACC",
+    "rating": 11.9,
+    "ranking": 35,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 49,
+      "rating": 35.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 30,
+      "rating": 25.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "rating": 11.3,
+    "ranking": 36,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 38,
+      "rating": 35.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 33,
+      "rating": 26.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Cincinnati",
+    "conference": "Big 12",
+    "rating": 10.7,
+    "ranking": 37,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 37,
+      "rating": 36.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 38,
+      "rating": 28.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "rating": 10.3,
+    "ranking": 38,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 87,
+      "rating": 28.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 11,
+      "rating": 19.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Arizona State",
+    "conference": "Big 12",
+    "rating": 10.2,
+    "ranking": 39,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 10,
+      "rating": 42.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 68,
+      "rating": 34.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "rating": 10.2,
+    "ranking": 39,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 34,
+      "rating": 36.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 41,
+      "rating": 28.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Missouri",
+    "conference": "SEC",
+    "rating": 8.5,
+    "ranking": 41,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 22,
+      "rating": 39.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 59,
+      "rating": 33.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "rating": 8.2,
+    "ranking": 42,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 83,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 23,
+      "rating": 22,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Nebraska",
+    "conference": "Big Ten",
+    "rating": 8.2,
+    "ranking": 42,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 56,
+      "rating": 34.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 39,
+      "rating": 28.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "rating": 7.9,
+    "ranking": 44,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 14,
+      "rating": 40.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 72,
+      "rating": 34.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "rating": 7.8,
+    "ranking": 45,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 52,
+      "rating": 35,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 42,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "rating": 7.6,
+    "ranking": 46,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 14,
+      "rating": 40.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 74,
+      "rating": 35.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "TCU",
+    "conference": "Big 12",
+    "rating": 7.5,
+    "ranking": 47,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 67,
+      "rating": 32.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 37,
+      "rating": 27,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "rating": 7.5,
+    "ranking": 47,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 50,
+      "rating": 35.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 46,
+      "rating": 29.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Clemson",
+    "conference": "ACC",
+    "rating": 7.4,
+    "ranking": 49,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 54,
+      "rating": 34.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 45,
+      "rating": 29.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "rating": 7.3,
+    "ranking": 50,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 38,
+      "rating": 35.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 50,
+      "rating": 31.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "rating": 6.2,
+    "ranking": 51,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 47,
+      "rating": 35.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 51,
+      "rating": 31.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "rating": 5.4,
+    "ranking": 52,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 60,
+      "rating": 34.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 49,
+      "rating": 30.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Oregon",
+    "conference": "Big Ten",
+    "rating": 5.3,
+    "ranking": 53,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 22,
+      "rating": 39.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 76,
+      "rating": 35.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "rating": 4.6,
+    "ranking": 54,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 29,
+      "rating": 38,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 68,
+      "rating": 34.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Southern Miss",
+    "conference": "Sun Belt",
+    "rating": 4,
+    "ranking": 55,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 104,
+      "rating": 24.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 17,
+      "rating": 21.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "rating": 4,
+    "ranking": 55,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 44,
+      "rating": 35.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 59,
+      "rating": 33.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "North Texas",
+    "conference": "American Athletic",
+    "rating": 3.7,
+    "ranking": 57,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 110,
+      "rating": 22,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 7,
+      "rating": 19,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "rating": 3.2,
+    "ranking": 58,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 38,
+      "rating": 35.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 65,
+      "rating": 34,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Louisville",
+    "conference": "ACC",
+    "rating": 3.1,
+    "ranking": 59,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 62,
+      "rating": 33.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 52,
+      "rating": 32,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "rating": 2.6,
+    "ranking": 60,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 44,
+      "rating": 35.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 67,
+      "rating": 34.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Hawai'i",
+    "conference": "Mountain West",
+    "rating": 2.5,
+    "ranking": 61,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 27,
+      "rating": 38.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 82,
+      "rating": 36.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "rating": 1.2,
+    "ranking": 62,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 12,
+      "rating": 41.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 99,
+      "rating": 39.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Tulane",
+    "conference": "American Athletic",
+    "rating": 1,
+    "ranking": 63,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 77,
+      "rating": 30.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 48,
+      "rating": 29.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UCF",
+    "conference": "Big 12",
+    "rating": 0.8,
+    "ranking": 64,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 38,
+      "rating": 35.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 74,
+      "rating": 35.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Marshall",
+    "conference": "Sun Belt",
+    "rating": 0.5,
+    "ranking": 65,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 38,
+      "rating": 35.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 78,
+      "rating": 35.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "rating": 0.4,
+    "ranking": 66,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 103,
+      "rating": 24.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 28,
+      "rating": 24.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Fresno State",
+    "conference": "Mountain West",
+    "rating": -0.4,
+    "ranking": 67,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 64,
+      "rating": 32.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 61,
+      "rating": 33.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Stanford",
+    "conference": "ACC",
+    "rating": -0.9,
+    "ranking": 68,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 63,
+      "rating": 33,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 65,
+      "rating": 34,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Arizona",
+    "conference": "Big 12",
+    "rating": -2.7,
+    "ranking": 69,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 97,
+      "rating": 26.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 42,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Syracuse",
+    "conference": "ACC",
+    "rating": -3.2,
+    "ranking": 70,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 38,
+      "rating": 35.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 91,
+      "rating": 38,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Temple",
+    "conference": "American Athletic",
+    "rating": -3.5,
+    "ranking": 71,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 81,
+      "rating": 29.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 55,
+      "rating": 32.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "rating": -3.9,
+    "ranking": 72,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 79,
+      "rating": 29.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 61,
+      "rating": 33.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "rating": -4.4,
+    "ranking": 73,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 91,
+      "rating": 28.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 54,
+      "rating": 32.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "rating": -4.4,
+    "ranking": 73,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 76,
+      "rating": 30.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 71,
+      "rating": 34.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "rating": -4.6,
+    "ranking": 75,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 58,
+      "rating": 34.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 88,
+      "rating": 37.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Utah",
+    "conference": "Big 12",
+    "rating": -5.4,
+    "ranking": 76,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 106,
+      "rating": 23.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 42,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "rating": -6.7,
+    "ranking": 77,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 75,
+      "rating": 30.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 83,
+      "rating": 36.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "rating": -6.7,
+    "ranking": 77,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 98,
+      "rating": 26.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 53,
+      "rating": 32.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "East Carolina",
+    "conference": "American Athletic",
+    "rating": -6.7,
+    "ranking": 77,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 56,
+      "rating": 34.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 94,
+      "rating": 39.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "rating": -6.8,
+    "ranking": 80,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 87,
+      "rating": 28.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 68,
+      "rating": 34.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Nevada",
+    "conference": "Mountain West",
+    "rating": -7.9,
+    "ranking": 81,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 67,
+      "rating": 32.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 92,
+      "rating": 38.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Duke",
+    "conference": "ACC",
+    "rating": -9,
+    "ranking": 82,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 99,
+      "rating": 25.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 61,
+      "rating": 33.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Houston",
+    "conference": "Big 12",
+    "rating": -9,
+    "ranking": 82,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 66,
+      "rating": 32.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 94,
+      "rating": 39.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "BYU",
+    "conference": "Big 12",
+    "rating": -10.2,
+    "ranking": 84,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 96,
+      "rating": 26.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 72,
+      "rating": 34.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Memphis",
+    "conference": "American Athletic",
+    "rating": -10.3,
+    "ranking": 85,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 93,
+      "rating": 27.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 81,
+      "rating": 35.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "rating": -10.4,
+    "ranking": 86,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 81,
+      "rating": 29.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 85,
+      "rating": 37.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "rating": -10.6,
+    "ranking": 87,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 95,
+      "rating": 27.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 80,
+      "rating": 35.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "rating": -11.1,
+    "ranking": 88,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 73,
+      "rating": 31.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 97,
+      "rating": 39.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "rating": -11.5,
+    "ranking": 89,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 107,
+      "rating": 22.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 57,
+      "rating": 33,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "rating": -11.5,
+    "ranking": 89,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 58,
+      "rating": 34.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 107,
+      "rating": 41.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "San José State",
+    "conference": "Mountain West",
+    "rating": -11.6,
+    "ranking": 91,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 52,
+      "rating": 35,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 110,
+      "rating": 42.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "New Mexico State",
+    "conference": "Conference USA",
+    "rating": -12.4,
+    "ranking": 92,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 90,
+      "rating": 28.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 88,
+      "rating": 37.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "rating": -12.8,
+    "ranking": 93,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 72,
+      "rating": 31.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 101,
+      "rating": 40.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "rating": -12.8,
+    "ranking": 93,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 71,
+      "rating": 31.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 102,
+      "rating": 40.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Middle Tennessee",
+    "conference": "Conference USA",
+    "rating": -13,
+    "ranking": 95,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 92,
+      "rating": 27.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 87,
+      "rating": 37.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Louisiana Tech",
+    "conference": "Conference USA",
+    "rating": -14.8,
+    "ranking": 96,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 70,
+      "rating": 32,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 108,
+      "rating": 42.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "rating": -14.8,
+    "ranking": 96,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 83,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 100,
+      "rating": 40.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UAB",
+    "conference": "American Athletic",
+    "rating": -15.6,
+    "ranking": 98,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 99,
+      "rating": 25.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 93,
+      "rating": 38.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Idaho",
+    "conference": "Big Sky",
+    "rating": -15.9,
+    "ranking": 99,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 83,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 105,
+      "rating": 41.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Utah State",
+    "conference": "Mountain West",
+    "rating": -16,
+    "ranking": 100,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 61,
+      "rating": 33.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 114,
+      "rating": 44,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "rating": -16,
+    "ranking": 100,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 89,
+      "rating": 28.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 104,
+      "rating": 40.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Navy",
+    "conference": "American Athletic",
+    "rating": -16.8,
+    "ranking": 102,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 80,
+      "rating": 29.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 110,
+      "rating": 42.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Rutgers",
+    "conference": "Big Ten",
+    "rating": -16.9,
+    "ranking": 103,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 111,
+      "rating": 20,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 76,
+      "rating": 35.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Rice",
+    "conference": "American Athletic",
+    "rating": -16.9,
+    "ranking": 103,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 108,
+      "rating": 22.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 86,
+      "rating": 37.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "rating": -18.7,
+    "ranking": 105,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 102,
+      "rating": 25.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 102,
+      "rating": 40.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "rating": -18.9,
+    "ranking": 106,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 117,
+      "rating": 14.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 55,
+      "rating": 32.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "rating": -19,
+    "ranking": 107,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 94,
+      "rating": 27.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 108,
+      "rating": 42.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "rating": -19.1,
+    "ranking": 108,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 109,
+      "rating": 22.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 94,
+      "rating": 39.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "rating": -19.6,
+    "ranking": 109,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 115,
+      "rating": 18.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 84,
+      "rating": 36.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "rating": -20.9,
+    "ranking": 110,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 83,
+      "rating": 29,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 113,
+      "rating": 43.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "rating": -20.9,
+    "ranking": 110,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 113,
+      "rating": 19.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 88,
+      "rating": 37.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "SMU",
+    "conference": "ACC",
+    "rating": -24.8,
+    "ranking": 112,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 116,
+      "rating": 18,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 98,
+      "rating": 39.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "rating": -26,
+    "ranking": 113,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 113,
+      "rating": 19.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 106,
+      "rating": 41.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "rating": -27,
+    "ranking": 114,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 101,
+      "rating": 25.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 115,
+      "rating": 45.5,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "rating": -27.8,
+    "ranking": 115,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 77,
+      "rating": 30.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 117,
+      "rating": 51.6,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Tulsa",
+    "conference": "American Athletic",
+    "rating": -28.5,
+    "ranking": 116,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 112,
+      "rating": 19.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 112,
+      "rating": 42.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "Army",
+    "conference": "American Athletic",
+    "rating": -29.2,
+    "ranking": 117,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 105,
+      "rating": 23.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 116,
+      "rating": 45.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  },
+  {
+    "year": 2002,
+    "team": "nationalAverages",
+    "rating": 1.4196581196581197,
+    "ranking": null,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": null,
+      "rating": 33.07179487179487,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": null,
+      "rating": 31.44102564102564,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": null
+    }
+  }
+]

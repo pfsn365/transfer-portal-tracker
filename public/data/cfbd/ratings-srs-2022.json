@@ -1,0 +1,2090 @@
+[
+  {
+    "year": 2022,
+    "team": "Georgia",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 1,
+    "rating": 27
+  },
+  {
+    "year": 2022,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 2,
+    "rating": 22.5
+  },
+  {
+    "year": 2022,
+    "team": "Alabama",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 3,
+    "rating": 21.3
+  },
+  {
+    "year": 2022,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 4,
+    "rating": 21.1
+  },
+  {
+    "year": 2022,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 5,
+    "rating": 19.9
+  },
+  {
+    "year": 2022,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 6,
+    "rating": 18.6
+  },
+  {
+    "year": 2022,
+    "team": "Texas",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 7,
+    "rating": 17.1
+  },
+  {
+    "year": 2022,
+    "team": "TCU",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 8,
+    "rating": 16.7
+  },
+  {
+    "year": 2022,
+    "team": "Utah",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 9,
+    "rating": 16.6
+  },
+  {
+    "year": 2022,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 10,
+    "rating": 15.5
+  },
+  {
+    "year": 2022,
+    "team": "LSU",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 11,
+    "rating": 14.8
+  },
+  {
+    "year": 2022,
+    "team": "Oregon State",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 12,
+    "rating": 14.6
+  },
+  {
+    "year": 2022,
+    "team": "Oregon",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 13,
+    "rating": 14.2
+  },
+  {
+    "year": 2022,
+    "team": "Florida State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 14,
+    "rating": 14.1
+  },
+  {
+    "year": 2022,
+    "team": "Clemson",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 15,
+    "rating": 13.9
+  },
+  {
+    "year": 2022,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 16,
+    "rating": 13.1
+  },
+  {
+    "year": 2022,
+    "team": "Washington",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 17,
+    "rating": 12
+  },
+  {
+    "year": 2022,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 18,
+    "rating": 11.7
+  },
+  {
+    "year": 2022,
+    "team": "USC",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 19,
+    "rating": 11.4
+  },
+  {
+    "year": 2022,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 20,
+    "rating": 10.7
+  },
+  {
+    "year": 2022,
+    "team": "Louisville",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 21,
+    "rating": 10.6
+  },
+  {
+    "year": 2022,
+    "team": "Tulane",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 22,
+    "rating": 10.5
+  },
+  {
+    "year": 2022,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 23,
+    "rating": 10.2
+  },
+  {
+    "year": 2022,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 24,
+    "rating": 10
+  },
+  {
+    "year": 2022,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 25,
+    "rating": 9.7
+  },
+  {
+    "year": 2022,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 25,
+    "rating": 9.7
+  },
+  {
+    "year": 2022,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 27,
+    "rating": 9.5
+  },
+  {
+    "year": 2022,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 28,
+    "rating": 9.2
+  },
+  {
+    "year": 2022,
+    "team": "UCLA",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 29,
+    "rating": 8.4
+  },
+  {
+    "year": 2022,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 30,
+    "rating": 8
+  },
+  {
+    "year": 2022,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 31,
+    "rating": 7.6
+  },
+  {
+    "year": 2022,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 32,
+    "rating": 7.4
+  },
+  {
+    "year": 2022,
+    "team": "Duke",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 33,
+    "rating": 7
+  },
+  {
+    "year": 2022,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 34,
+    "rating": 6.5
+  },
+  {
+    "year": 2022,
+    "team": "Florida",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 35,
+    "rating": 6.4
+  },
+  {
+    "year": 2022,
+    "team": "Pittsburgh",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 36,
+    "rating": 6.3
+  },
+  {
+    "year": 2022,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 36,
+    "rating": 6.3
+  },
+  {
+    "year": 2022,
+    "team": "Maryland",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 38,
+    "rating": 6.2
+  },
+  {
+    "year": 2022,
+    "team": "Cincinnati",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 39,
+    "rating": 5.7
+  },
+  {
+    "year": 2022,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 39,
+    "rating": 5.7
+  },
+  {
+    "year": 2022,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 41,
+    "rating": 5.5
+  },
+  {
+    "year": 2022,
+    "team": "NC State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 41,
+    "rating": 5.5
+  },
+  {
+    "year": 2022,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 43,
+    "rating": 5.4
+  },
+  {
+    "year": 2022,
+    "team": "Memphis",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 43,
+    "rating": 5.4
+  },
+  {
+    "year": 2022,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 45,
+    "rating": 5.1
+  },
+  {
+    "year": 2022,
+    "team": "James Madison",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 46,
+    "rating": 5
+  },
+  {
+    "year": 2022,
+    "team": "UCF",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 47,
+    "rating": 4.7
+  },
+  {
+    "year": 2022,
+    "team": "Washington State",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 47,
+    "rating": 4.7
+  },
+  {
+    "year": 2022,
+    "team": "Syracuse",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 49,
+    "rating": 4.5
+  },
+  {
+    "year": 2022,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "division": "Mountain",
+    "ranking": 50,
+    "rating": 4.2
+  },
+  {
+    "year": 2022,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 50,
+    "rating": 4.2
+  },
+  {
+    "year": 2022,
+    "team": "Missouri",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 50,
+    "rating": 4.2
+  },
+  {
+    "year": 2022,
+    "team": "West Virginia",
+    "conference": "Big 12",
+    "division": null,
+    "ranking": 53,
+    "rating": 3.9
+  },
+  {
+    "year": 2022,
+    "team": "East Carolina",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 54,
+    "rating": 3.8
+  },
+  {
+    "year": 2022,
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 55,
+    "rating": 3.3
+  },
+  {
+    "year": 2022,
+    "team": "Auburn",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 56,
+    "rating": 3.1
+  },
+  {
+    "year": 2022,
+    "team": "Houston",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 57,
+    "rating": 2.8
+  },
+  {
+    "year": 2022,
+    "team": "UTSA",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 58,
+    "rating": 2.7
+  },
+  {
+    "year": 2022,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 59,
+    "rating": 2.4
+  },
+  {
+    "year": 2022,
+    "team": "Fresno State",
+    "conference": "Mountain West",
+    "division": "West",
+    "ranking": 59,
+    "rating": 2.4
+  },
+  {
+    "year": 2022,
+    "team": "SMU",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 61,
+    "rating": 1.9
+  },
+  {
+    "year": 2022,
+    "team": "South Dakota State",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 62,
+    "rating": 1.1
+  },
+  {
+    "year": 2022,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 62,
+    "rating": 1.1
+  },
+  {
+    "year": 2022,
+    "team": "South Alabama",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 62,
+    "rating": 1.1
+  },
+  {
+    "year": 2022,
+    "team": "Boise State",
+    "conference": "Mountain West",
+    "division": "Mountain",
+    "ranking": 65,
+    "rating": 1
+  },
+  {
+    "year": 2022,
+    "team": "Marshall",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 66,
+    "rating": 0.6
+  },
+  {
+    "year": 2022,
+    "team": "Western Kentucky",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 67,
+    "rating": -0.1
+  },
+  {
+    "year": 2022,
+    "team": "BYU",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 68,
+    "rating": -0.3
+  },
+  {
+    "year": 2022,
+    "team": "App State",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 69,
+    "rating": -0.8
+  },
+  {
+    "year": 2022,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 70,
+    "rating": -1.1
+  },
+  {
+    "year": 2022,
+    "team": "California",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 71,
+    "rating": -1.3
+  },
+  {
+    "year": 2022,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 72,
+    "rating": -1.7
+  },
+  {
+    "year": 2022,
+    "team": "Nebraska",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 73,
+    "rating": -1.8
+  },
+  {
+    "year": 2022,
+    "team": "Navy",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 74,
+    "rating": -1.9
+  },
+  {
+    "year": 2022,
+    "team": "Arizona",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 75,
+    "rating": -2
+  },
+  {
+    "year": 2022,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 76,
+    "rating": -2.4
+  },
+  {
+    "year": 2022,
+    "team": "Sacramento State",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 77,
+    "rating": -3
+  },
+  {
+    "year": 2022,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 78,
+    "rating": -3.4
+  },
+  {
+    "year": 2022,
+    "team": "Liberty",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 79,
+    "rating": -3.5
+  },
+  {
+    "year": 2022,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 79,
+    "rating": -3.5
+  },
+  {
+    "year": 2022,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 81,
+    "rating": -3.6
+  },
+  {
+    "year": 2022,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 82,
+    "rating": -3.8
+  },
+  {
+    "year": 2022,
+    "team": "Arizona State",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 83,
+    "rating": -3.9
+  },
+  {
+    "year": 2022,
+    "team": "Miami",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 84,
+    "rating": -4.6
+  },
+  {
+    "year": 2022,
+    "team": "North Texas",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 84,
+    "rating": -4.6
+  },
+  {
+    "year": 2022,
+    "team": "Tulsa",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 86,
+    "rating": -4.7
+  },
+  {
+    "year": 2022,
+    "team": "Georgia Southern",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 87,
+    "rating": -4.8
+  },
+  {
+    "year": 2022,
+    "team": "Stanford",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 88,
+    "rating": -5.1
+  },
+  {
+    "year": 2022,
+    "team": "Southern Miss",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 89,
+    "rating": -5.2
+  },
+  {
+    "year": 2022,
+    "team": "Georgia State",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 89,
+    "rating": -5.2
+  },
+  {
+    "year": 2022,
+    "team": "Weber State",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 91,
+    "rating": -5.5
+  },
+  {
+    "year": 2022,
+    "team": "Florida Atlantic",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 92,
+    "rating": -5.9
+  },
+  {
+    "year": 2022,
+    "team": "Virginia",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 93,
+    "rating": -6
+  },
+  {
+    "year": 2022,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 93,
+    "rating": -6
+  },
+  {
+    "year": 2022,
+    "team": "North Dakota State",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 95,
+    "rating": -6.1
+  },
+  {
+    "year": 2022,
+    "team": "Coastal Carolina",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 96,
+    "rating": -6.4
+  },
+  {
+    "year": 2022,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 96,
+    "rating": -6.4
+  },
+  {
+    "year": 2022,
+    "team": "San José State",
+    "conference": "Mountain West",
+    "division": "West",
+    "ranking": 98,
+    "rating": -6.5
+  },
+  {
+    "year": 2022,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "division": "West",
+    "ranking": 99,
+    "rating": -6.9
+  },
+  {
+    "year": 2022,
+    "team": "UC Davis",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 100,
+    "rating": -7.1
+  },
+  {
+    "year": 2022,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "division": "West",
+    "ranking": 101,
+    "rating": -7.2
+  },
+  {
+    "year": 2022,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 102,
+    "rating": -7.3
+  },
+  {
+    "year": 2022,
+    "team": "Rutgers",
+    "conference": "Big Ten",
+    "division": "East",
+    "ranking": 102,
+    "rating": -7.3
+  },
+  {
+    "year": 2022,
+    "team": "Incarnate Word",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 104,
+    "rating": -7.4
+  },
+  {
+    "year": 2022,
+    "team": "Middle Tennessee",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 105,
+    "rating": -7.7
+  },
+  {
+    "year": 2022,
+    "team": "Montana State",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 106,
+    "rating": -7.8
+  },
+  {
+    "year": 2022,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 107,
+    "rating": -8.7
+  },
+  {
+    "year": 2022,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 108,
+    "rating": -9.2
+  },
+  {
+    "year": 2022,
+    "team": "Idaho",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 109,
+    "rating": -9.5
+  },
+  {
+    "year": 2022,
+    "team": "Old Dominion",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 110,
+    "rating": -9.6
+  },
+  {
+    "year": 2022,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "division": "Mountain",
+    "ranking": 111,
+    "rating": -10
+  },
+  {
+    "year": 2022,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "division": "West",
+    "ranking": 111,
+    "rating": -10
+  },
+  {
+    "year": 2022,
+    "team": "Boston College",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 113,
+    "rating": -10.2
+  },
+  {
+    "year": 2022,
+    "team": "Temple",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 113,
+    "rating": -10.2
+  },
+  {
+    "year": 2022,
+    "team": "William & Mary",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 115,
+    "rating": -11
+  },
+  {
+    "year": 2022,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 116,
+    "rating": -11.2
+  },
+  {
+    "year": 2022,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 117,
+    "rating": -11.3
+  },
+  {
+    "year": 2022,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 118,
+    "rating": -11.4
+  },
+  {
+    "year": 2022,
+    "team": "Furman",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 119,
+    "rating": -11.5
+  },
+  {
+    "year": 2022,
+    "team": "New Mexico State",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 120,
+    "rating": -11.6
+  },
+  {
+    "year": 2022,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 120,
+    "rating": -11.6
+  },
+  {
+    "year": 2022,
+    "team": "Jackson State",
+    "conference": "SWAC",
+    "division": "East",
+    "ranking": 122,
+    "rating": -11.7
+  },
+  {
+    "year": 2022,
+    "team": "Montana",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 123,
+    "rating": -11.8
+  },
+  {
+    "year": 2022,
+    "team": "Northern Iowa",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 124,
+    "rating": -11.9
+  },
+  {
+    "year": 2022,
+    "team": "South Florida",
+    "conference": "American Athletic",
+    "division": null,
+    "ranking": 125,
+    "rating": -12
+  },
+  {
+    "year": 2022,
+    "team": "Utah State",
+    "conference": "Mountain West",
+    "division": "Mountain",
+    "ranking": 126,
+    "rating": -12.1
+  },
+  {
+    "year": 2022,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 126,
+    "rating": -12.1
+  },
+  {
+    "year": 2022,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 128,
+    "rating": -12.2
+  },
+  {
+    "year": 2022,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 128,
+    "rating": -12.2
+  },
+  {
+    "year": 2022,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 128,
+    "rating": -12.2
+  },
+  {
+    "year": 2022,
+    "team": "Delaware",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 131,
+    "rating": -12.3
+  },
+  {
+    "year": 2022,
+    "team": "Texas State",
+    "conference": "Sun Belt",
+    "division": "West",
+    "ranking": 132,
+    "rating": -12.8
+  },
+  {
+    "year": 2022,
+    "team": "Samford",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 133,
+    "rating": -13.1
+  },
+  {
+    "year": 2022,
+    "team": "Mercer",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 134,
+    "rating": -13.2
+  },
+  {
+    "year": 2022,
+    "team": "Holy Cross",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 135,
+    "rating": -13.5
+  },
+  {
+    "year": 2022,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 136,
+    "rating": -13.6
+  },
+  {
+    "year": 2022,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 137,
+    "rating": -13.8
+  },
+  {
+    "year": 2022,
+    "team": "Richmond",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 138,
+    "rating": -13.9
+  },
+  {
+    "year": 2022,
+    "team": "Southern Illinois",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 139,
+    "rating": -14.1
+  },
+  {
+    "year": 2022,
+    "team": "Jacksonville State",
+    "conference": "Atlantic Sun",
+    "division": null,
+    "ranking": 140,
+    "rating": -14.2
+  },
+  {
+    "year": 2022,
+    "team": "Louisiana Tech",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 141,
+    "rating": -14.3
+  },
+  {
+    "year": 2022,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 141,
+    "rating": -14.3
+  },
+  {
+    "year": 2022,
+    "team": "Colorado",
+    "conference": "Pac-12",
+    "division": null,
+    "ranking": 143,
+    "rating": -14.7
+  },
+  {
+    "year": 2022,
+    "team": "Southeast Missouri State",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 143,
+    "rating": -14.7
+  },
+  {
+    "year": 2022,
+    "team": "Chattanooga",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 143,
+    "rating": -14.7
+  },
+  {
+    "year": 2022,
+    "team": "Elon",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 146,
+    "rating": -14.9
+  },
+  {
+    "year": 2022,
+    "team": "North Dakota",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 147,
+    "rating": -15
+  },
+  {
+    "year": 2022,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 147,
+    "rating": -15
+  },
+  {
+    "year": 2022,
+    "team": "Abilene Christian",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 149,
+    "rating": -16.6
+  },
+  {
+    "year": 2022,
+    "team": "Nevada",
+    "conference": "Mountain West",
+    "division": "West",
+    "ranking": 150,
+    "rating": -17.1
+  },
+  {
+    "year": 2022,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "division": "Mountain",
+    "ranking": 150,
+    "rating": -17.1
+  },
+  {
+    "year": 2022,
+    "team": "Gardner-Webb",
+    "conference": "Big South",
+    "division": null,
+    "ranking": 152,
+    "rating": -17.7
+  },
+  {
+    "year": 2022,
+    "team": "SE Louisiana",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 153,
+    "rating": -17.9
+  },
+  {
+    "year": 2022,
+    "team": "Princeton",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 154,
+    "rating": -18
+  },
+  {
+    "year": 2022,
+    "team": "Missouri State",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 154,
+    "rating": -18
+  },
+  {
+    "year": 2022,
+    "team": "Youngstown State",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 156,
+    "rating": -18.2
+  },
+  {
+    "year": 2022,
+    "team": "Rhode Island",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 157,
+    "rating": -18.3
+  },
+  {
+    "year": 2022,
+    "team": "Hawai'i",
+    "conference": "Mountain West",
+    "division": "West",
+    "ranking": 158,
+    "rating": -18.4
+  },
+  {
+    "year": 2022,
+    "team": "Charlotte",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 159,
+    "rating": -18.8
+  },
+  {
+    "year": 2022,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "division": "Mountain",
+    "ranking": 160,
+    "rating": -19.1
+  },
+  {
+    "year": 2022,
+    "team": "Yale",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 161,
+    "rating": -19.6
+  },
+  {
+    "year": 2022,
+    "team": "North Carolina Central",
+    "conference": "MEAC",
+    "division": null,
+    "ranking": 162,
+    "rating": -19.7
+  },
+  {
+    "year": 2022,
+    "team": "Fordham",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 163,
+    "rating": -20
+  },
+  {
+    "year": 2022,
+    "team": "UT Martin",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 164,
+    "rating": -20.9
+  },
+  {
+    "year": 2022,
+    "team": "St. Francis (PA)",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 165,
+    "rating": -21
+  },
+  {
+    "year": 2022,
+    "team": "Eastern Kentucky",
+    "conference": "Atlantic Sun",
+    "division": null,
+    "ranking": 165,
+    "rating": -21
+  },
+  {
+    "year": 2022,
+    "team": "Southern Utah",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 167,
+    "rating": -21.1
+  },
+  {
+    "year": 2022,
+    "team": "Campbell",
+    "conference": "Big South",
+    "division": null,
+    "ranking": 168,
+    "rating": -21.3
+  },
+  {
+    "year": 2022,
+    "team": "Austin Peay",
+    "conference": "Atlantic Sun",
+    "division": null,
+    "ranking": 168,
+    "rating": -21.3
+  },
+  {
+    "year": 2022,
+    "team": "New Hampshire",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 170,
+    "rating": -21.8
+  },
+  {
+    "year": 2022,
+    "team": "Central Arkansas",
+    "conference": "Atlantic Sun",
+    "division": null,
+    "ranking": 171,
+    "rating": -22.3
+  },
+  {
+    "year": 2022,
+    "team": "Illinois State",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 172,
+    "rating": -22.6
+  },
+  {
+    "year": 2022,
+    "team": "Florida International",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 173,
+    "rating": -22.8
+  },
+  {
+    "year": 2022,
+    "team": "South Dakota",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 174,
+    "rating": -23.3
+  },
+  {
+    "year": 2022,
+    "team": "Sam Houston",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 175,
+    "rating": -23.7
+  },
+  {
+    "year": 2022,
+    "team": "Massachusetts",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 176,
+    "rating": -23.8
+  },
+  {
+    "year": 2022,
+    "team": "Harvard",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 177,
+    "rating": -23.9
+  },
+  {
+    "year": 2022,
+    "team": "Pennsylvania",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 178,
+    "rating": -24.3
+  },
+  {
+    "year": 2022,
+    "team": "Utah Tech",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 179,
+    "rating": -25.4
+  },
+  {
+    "year": 2022,
+    "team": "Northern Arizona",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 180,
+    "rating": -25.5
+  },
+  {
+    "year": 2022,
+    "team": "North Carolina A&T",
+    "conference": "Big South",
+    "division": null,
+    "ranking": 181,
+    "rating": -26
+  },
+  {
+    "year": 2022,
+    "team": "Stephen F. Austin",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 182,
+    "rating": -26.2
+  },
+  {
+    "year": 2022,
+    "team": "Florida A&M",
+    "conference": "SWAC",
+    "division": "East",
+    "ranking": 183,
+    "rating": -26.5
+  },
+  {
+    "year": 2022,
+    "team": "Western Carolina",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 184,
+    "rating": -26.8
+  },
+  {
+    "year": 2022,
+    "team": "Villanova",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 185,
+    "rating": -27
+  },
+  {
+    "year": 2022,
+    "team": "Tarleton State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 186,
+    "rating": -27.1
+  },
+  {
+    "year": 2022,
+    "team": "Monmouth",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 187,
+    "rating": -27.5
+  },
+  {
+    "year": 2022,
+    "team": "East Tennessee State",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 188,
+    "rating": -27.8
+  },
+  {
+    "year": 2022,
+    "team": "Bryant",
+    "conference": "Big South",
+    "division": null,
+    "ranking": 189,
+    "rating": -28.2
+  },
+  {
+    "year": 2022,
+    "team": "Eastern Washington",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 190,
+    "rating": -28.3
+  },
+  {
+    "year": 2022,
+    "team": "Southern",
+    "conference": "SWAC",
+    "division": "West",
+    "ranking": 190,
+    "rating": -28.3
+  },
+  {
+    "year": 2022,
+    "team": "Portland State",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 192,
+    "rating": -28.5
+  },
+  {
+    "year": 2022,
+    "team": "St. Thomas (MN)",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 193,
+    "rating": -29.4
+  },
+  {
+    "year": 2022,
+    "team": "Kennesaw State",
+    "conference": "Atlantic Sun",
+    "division": null,
+    "ranking": 194,
+    "rating": -29.5
+  },
+  {
+    "year": 2022,
+    "team": "Indiana State",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 194,
+    "rating": -29.5
+  },
+  {
+    "year": 2022,
+    "team": "Columbia",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 196,
+    "rating": -29.6
+  },
+  {
+    "year": 2022,
+    "team": "Texas Southern",
+    "conference": "SWAC",
+    "division": "West",
+    "ranking": 196,
+    "rating": -29.6
+  },
+  {
+    "year": 2022,
+    "team": "Dartmouth",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 198,
+    "rating": -29.7
+  },
+  {
+    "year": 2022,
+    "team": "UAlbany",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 199,
+    "rating": -29.9
+  },
+  {
+    "year": 2022,
+    "team": "Prairie View A&M",
+    "conference": "SWAC",
+    "division": "West",
+    "ranking": 200,
+    "rating": -30
+  },
+  {
+    "year": 2022,
+    "team": "Towson",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 201,
+    "rating": -30.3
+  },
+  {
+    "year": 2022,
+    "team": "Howard",
+    "conference": "MEAC",
+    "division": null,
+    "ranking": 202,
+    "rating": -30.4
+  },
+  {
+    "year": 2022,
+    "team": "Wofford",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 203,
+    "rating": -31.3
+  },
+  {
+    "year": 2022,
+    "team": "East Texas A&M",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 204,
+    "rating": -31.5
+  },
+  {
+    "year": 2022,
+    "team": "Tennessee Tech",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 205,
+    "rating": -31.6
+  },
+  {
+    "year": 2022,
+    "team": "Tennessee State",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 206,
+    "rating": -31.9
+  },
+  {
+    "year": 2022,
+    "team": "Alabama State",
+    "conference": "SWAC",
+    "division": "East",
+    "ranking": 207,
+    "rating": -32.1
+  },
+  {
+    "year": 2022,
+    "team": "The Citadel",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 208,
+    "rating": -32.2
+  },
+  {
+    "year": 2022,
+    "team": "Merrimack",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 209,
+    "rating": -32.3
+  },
+  {
+    "year": 2022,
+    "team": "Maine",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 210,
+    "rating": -33.2
+  },
+  {
+    "year": 2022,
+    "team": "Duquesne",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 211,
+    "rating": -33.4
+  },
+  {
+    "year": 2022,
+    "team": "Lindenwood",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 211,
+    "rating": -33.4
+  },
+  {
+    "year": 2022,
+    "team": "Alcorn State",
+    "conference": "SWAC",
+    "division": "West",
+    "ranking": 213,
+    "rating": -33.6
+  },
+  {
+    "year": 2022,
+    "team": "Cal Poly",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 214,
+    "rating": -33.7
+  },
+  {
+    "year": 2022,
+    "team": "Charleston Southern",
+    "conference": "Big South",
+    "division": null,
+    "ranking": 215,
+    "rating": -33.8
+  },
+  {
+    "year": 2022,
+    "team": "Davidson",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 216,
+    "rating": -34.6
+  },
+  {
+    "year": 2022,
+    "team": "Northern Colorado",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 216,
+    "rating": -34.6
+  },
+  {
+    "year": 2022,
+    "team": "Butler",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 216,
+    "rating": -34.6
+  },
+  {
+    "year": 2022,
+    "team": "Western Illinois",
+    "conference": "MVFC",
+    "division": null,
+    "ranking": 219,
+    "rating": -34.7
+  },
+  {
+    "year": 2022,
+    "team": "Colgate",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 220,
+    "rating": -35.2
+  },
+  {
+    "year": 2022,
+    "team": "Hampton",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 221,
+    "rating": -35.4
+  },
+  {
+    "year": 2022,
+    "team": "Lafayette",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 222,
+    "rating": -35.6
+  },
+  {
+    "year": 2022,
+    "team": "Eastern Illinois",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 223,
+    "rating": -36
+  },
+  {
+    "year": 2022,
+    "team": "Idaho State",
+    "conference": "Big Sky",
+    "division": null,
+    "ranking": 224,
+    "rating": -36.4
+  },
+  {
+    "year": 2022,
+    "team": "Cornell",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 224,
+    "rating": -36.4
+  },
+  {
+    "year": 2022,
+    "team": "San Diego",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 226,
+    "rating": -36.7
+  },
+  {
+    "year": 2022,
+    "team": "Brown",
+    "conference": "Ivy",
+    "division": null,
+    "ranking": 227,
+    "rating": -36.8
+  },
+  {
+    "year": 2022,
+    "team": "North Alabama",
+    "conference": "Atlantic Sun",
+    "division": null,
+    "ranking": 227,
+    "rating": -36.8
+  },
+  {
+    "year": 2022,
+    "team": "Northwestern State",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 227,
+    "rating": -36.8
+  },
+  {
+    "year": 2022,
+    "team": "McNeese",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 230,
+    "rating": -37.5
+  },
+  {
+    "year": 2022,
+    "team": "Morgan State",
+    "conference": "MEAC",
+    "division": null,
+    "ranking": 231,
+    "rating": -38.2
+  },
+  {
+    "year": 2022,
+    "team": "Alabama A&M",
+    "conference": "SWAC",
+    "division": "East",
+    "ranking": 231,
+    "rating": -38.2
+  },
+  {
+    "year": 2022,
+    "team": "Nicholls",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 233,
+    "rating": -38.4
+  },
+  {
+    "year": 2022,
+    "team": "Sacred Heart",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 233,
+    "rating": -38.4
+  },
+  {
+    "year": 2022,
+    "team": "South Carolina State",
+    "conference": "MEAC",
+    "division": null,
+    "ranking": 235,
+    "rating": -38.6
+  },
+  {
+    "year": 2022,
+    "team": "Stony Brook",
+    "conference": "CAA",
+    "division": null,
+    "ranking": 236,
+    "rating": -38.7
+  },
+  {
+    "year": 2022,
+    "team": "Grambling",
+    "conference": "SWAC",
+    "division": "West",
+    "ranking": 237,
+    "rating": -39.2
+  },
+  {
+    "year": 2022,
+    "team": "Dayton",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 238,
+    "rating": -39.5
+  },
+  {
+    "year": 2022,
+    "team": "Lamar",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 239,
+    "rating": -39.8
+  },
+  {
+    "year": 2022,
+    "team": "VMI",
+    "conference": "Southern",
+    "division": null,
+    "ranking": 239,
+    "rating": -39.8
+  },
+  {
+    "year": 2022,
+    "team": "Lehigh",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 241,
+    "rating": -40.2
+  },
+  {
+    "year": 2022,
+    "team": "Stonehill",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 242,
+    "rating": -40.4
+  },
+  {
+    "year": 2022,
+    "team": "Long Island University",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 243,
+    "rating": -40.8
+  },
+  {
+    "year": 2022,
+    "team": "Central Connecticut",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 244,
+    "rating": -41
+  },
+  {
+    "year": 2022,
+    "team": "Murray State",
+    "conference": "OVC",
+    "division": null,
+    "ranking": 245,
+    "rating": -41.6
+  },
+  {
+    "year": 2022,
+    "team": "Drake",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 246,
+    "rating": -41.7
+  },
+  {
+    "year": 2022,
+    "team": "Delaware State",
+    "conference": "MEAC",
+    "division": null,
+    "ranking": 247,
+    "rating": -41.8
+  },
+  {
+    "year": 2022,
+    "team": "Georgetown",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 248,
+    "rating": -42
+  },
+  {
+    "year": 2022,
+    "team": "Bucknell",
+    "conference": "Patriot",
+    "division": null,
+    "ranking": 249,
+    "rating": -42.1
+  },
+  {
+    "year": 2022,
+    "team": "Mississippi Valley State",
+    "conference": "SWAC",
+    "division": "East",
+    "ranking": 250,
+    "rating": -43
+  },
+  {
+    "year": 2022,
+    "team": "Bethune-Cookman",
+    "conference": "SWAC",
+    "division": "East",
+    "ranking": 251,
+    "rating": -44.1
+  },
+  {
+    "year": 2022,
+    "team": "Houston Christian",
+    "conference": "Southland",
+    "division": null,
+    "ranking": 252,
+    "rating": -44.5
+  },
+  {
+    "year": 2022,
+    "team": "Valparaiso",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 253,
+    "rating": -44.6
+  },
+  {
+    "year": 2022,
+    "team": "Stetson",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 254,
+    "rating": -45.5
+  },
+  {
+    "year": 2022,
+    "team": "Robert Morris",
+    "conference": "Big South",
+    "division": null,
+    "ranking": 255,
+    "rating": -46.6
+  },
+  {
+    "year": 2022,
+    "team": "Arkansas-Pine Bluff",
+    "conference": "SWAC",
+    "division": "West",
+    "ranking": 256,
+    "rating": -47
+  },
+  {
+    "year": 2022,
+    "team": "Norfolk State",
+    "conference": "MEAC",
+    "division": null,
+    "ranking": 257,
+    "rating": -47.8
+  },
+  {
+    "year": 2022,
+    "team": "Marist",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 258,
+    "rating": -49
+  },
+  {
+    "year": 2022,
+    "team": "Morehead State",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 259,
+    "rating": -50.5
+  },
+  {
+    "year": 2022,
+    "team": "Wagner",
+    "conference": "NEC",
+    "division": null,
+    "ranking": 260,
+    "rating": -53.1
+  },
+  {
+    "year": 2022,
+    "team": "Presbyterian",
+    "conference": "Pioneer",
+    "division": null,
+    "ranking": 261,
+    "rating": -60.9
+  }
+]

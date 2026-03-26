@@ -1,0 +1,954 @@
+[
+  {
+    "year": 2005,
+    "team": "USC",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 1,
+    "rating": 32.6121360853681
+  },
+  {
+    "year": 2005,
+    "team": "Texas",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 2,
+    "rating": 30.9653139858617
+  },
+  {
+    "year": 2005,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 3,
+    "rating": 27.2085140418394
+  },
+  {
+    "year": 2005,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 4,
+    "rating": 23.5243483626083
+  },
+  {
+    "year": 2005,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 5,
+    "rating": 22.0276571022289
+  },
+  {
+    "year": 2005,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 6,
+    "rating": 20.8227939015518
+  },
+  {
+    "year": 2005,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 7,
+    "rating": 17.8998567413308
+  },
+  {
+    "year": 2005,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 8,
+    "rating": 16.7729084353869
+  },
+  {
+    "year": 2005,
+    "team": "LSU",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 9,
+    "rating": 16.7047487557641
+  },
+  {
+    "year": 2005,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 10,
+    "rating": 16.6495920851983
+  },
+  {
+    "year": 2005,
+    "team": "Georgia",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 11,
+    "rating": 16.0845742424484
+  },
+  {
+    "year": 2005,
+    "team": "Miami",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 12,
+    "rating": 15.9352180281185
+  },
+  {
+    "year": 2005,
+    "team": "Auburn",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 13,
+    "rating": 15.806916546767
+  },
+  {
+    "year": 2005,
+    "team": "Louisville",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 14,
+    "rating": 15.6640732450397
+  },
+  {
+    "year": 2005,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 15,
+    "rating": 15.5262055204
+  },
+  {
+    "year": 2005,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 16,
+    "rating": 14.9880593159333
+  },
+  {
+    "year": 2005,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 17,
+    "rating": 14.1948268326087
+  },
+  {
+    "year": 2005,
+    "team": "Boston College",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 18,
+    "rating": 13.4479020110441
+  },
+  {
+    "year": 2005,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 19,
+    "rating": 13.2211890325209
+  },
+  {
+    "year": 2005,
+    "team": "Florida",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 20,
+    "rating": 12.6175666478168
+  },
+  {
+    "year": 2005,
+    "team": "Alabama",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 21,
+    "rating": 12.1001819218838
+  },
+  {
+    "year": 2005,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 22,
+    "rating": 11.969813027735
+  },
+  {
+    "year": 2005,
+    "team": "California",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 23,
+    "rating": 11.9615330621638
+  },
+  {
+    "year": 2005,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 24,
+    "rating": 11.7870455994236
+  },
+  {
+    "year": 2005,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 25,
+    "rating": 11.4793189569427
+  },
+  {
+    "year": 2005,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 26,
+    "rating": 11.1344462066042
+  },
+  {
+    "year": 2005,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 27,
+    "rating": 11.1135786573673
+  },
+  {
+    "year": 2005,
+    "team": "Clemson",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 28,
+    "rating": 10.989116904135
+  },
+  {
+    "year": 2005,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 29,
+    "rating": 10.6361327982314
+  },
+  {
+    "year": 2005,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 30,
+    "rating": 10.0036417913044
+  },
+  {
+    "year": 2005,
+    "team": "Florida State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 31,
+    "rating": 10.0031564190321
+  },
+  {
+    "year": 2005,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 32,
+    "rating": 9.9346792749793
+  },
+  {
+    "year": 2005,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 33,
+    "rating": 8.65479404701003
+  },
+  {
+    "year": 2005,
+    "team": "South Florida",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 34,
+    "rating": 8.06525551015906
+  },
+  {
+    "year": 2005,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 35,
+    "rating": 7.58930065521261
+  },
+  {
+    "year": 2005,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 36,
+    "rating": 5.97991799648836
+  },
+  {
+    "year": 2005,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 37,
+    "rating": 5.84974741469884
+  },
+  {
+    "year": 2005,
+    "team": "Virginia",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 38,
+    "rating": 5.63088443607982
+  },
+  {
+    "year": 2005,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 39,
+    "rating": 5.37187431753648
+  },
+  {
+    "year": 2005,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 40,
+    "rating": 5.36592150467074
+  },
+  {
+    "year": 2005,
+    "team": "Maryland",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 41,
+    "rating": 5.33011241036689
+  },
+  {
+    "year": 2005,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 42,
+    "rating": 4.86416396246945
+  },
+  {
+    "year": 2005,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 43,
+    "rating": 4.80791644349785
+  },
+  {
+    "year": 2005,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 44,
+    "rating": 4.4285278532476
+  },
+  {
+    "year": 2005,
+    "team": "NC State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 45,
+    "rating": 4.42504826254977
+  },
+  {
+    "year": 2005,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 46,
+    "rating": 4.24088900044921
+  },
+  {
+    "year": 2005,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 47,
+    "rating": 4.18160330105197
+  },
+  {
+    "year": 2005,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 48,
+    "rating": 4.11550773863227
+  },
+  {
+    "year": 2005,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 49,
+    "rating": 3.90278905264558
+  },
+  {
+    "year": 2005,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 50,
+    "rating": 3.34387965346216
+  },
+  {
+    "year": 2005,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 51,
+    "rating": 3.27166112287989
+  },
+  {
+    "year": 2005,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 52,
+    "rating": 3.13973392683748
+  },
+  {
+    "year": 2005,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 53,
+    "rating": 2.9863160017924
+  },
+  {
+    "year": 2005,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 54,
+    "rating": 2.92734964329834
+  },
+  {
+    "year": 2005,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 55,
+    "rating": 2.73455159064983
+  },
+  {
+    "year": 2005,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 56,
+    "rating": 2.00309719384902
+  },
+  {
+    "year": 2005,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 57,
+    "rating": 1.59337135381201
+  },
+  {
+    "year": 2005,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 58,
+    "rating": 1.51109532398887
+  },
+  {
+    "year": 2005,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 59,
+    "rating": 1.09931444602906
+  },
+  {
+    "year": 2005,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 60,
+    "rating": 0.929887875021906
+  },
+  {
+    "year": 2005,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 61,
+    "rating": 0.250575798977623
+  },
+  {
+    "year": 2005,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 62,
+    "rating": 0.162779313037181
+  },
+  {
+    "year": 2005,
+    "team": "UConn",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 63,
+    "rating": -0.162555875813572
+  },
+  {
+    "year": 2005,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 64,
+    "rating": -0.631668009668582
+  },
+  {
+    "year": 2005,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 65,
+    "rating": -0.859070151425842
+  },
+  {
+    "year": 2005,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 66,
+    "rating": -0.912182342939564
+  },
+  {
+    "year": 2005,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 67,
+    "rating": -0.982437489561894
+  },
+  {
+    "year": 2005,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 68,
+    "rating": -1.75382980532742
+  },
+  {
+    "year": 2005,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 69,
+    "rating": -2.12483224455088
+  },
+  {
+    "year": 2005,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 70,
+    "rating": -2.34057377964766
+  },
+  {
+    "year": 2005,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 71,
+    "rating": -3.05343506117294
+  },
+  {
+    "year": 2005,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 72,
+    "rating": -3.38439508166156
+  },
+  {
+    "year": 2005,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 73,
+    "rating": -3.43251667718323
+  },
+  {
+    "year": 2005,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 74,
+    "rating": -3.61849777240363
+  },
+  {
+    "year": 2005,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 75,
+    "rating": -3.91194079270822
+  },
+  {
+    "year": 2005,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 76,
+    "rating": -4.05547359766203
+  },
+  {
+    "year": 2005,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 77,
+    "rating": -4.30948687979456
+  },
+  {
+    "year": 2005,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 78,
+    "rating": -4.98474777971506
+  },
+  {
+    "year": 2005,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 79,
+    "rating": -5.29532204450865
+  },
+  {
+    "year": 2005,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 80,
+    "rating": -5.41255285994953
+  },
+  {
+    "year": 2005,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 81,
+    "rating": -6.00739639352499
+  },
+  {
+    "year": 2005,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 82,
+    "rating": -6.26333446987216
+  },
+  {
+    "year": 2005,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 83,
+    "rating": -6.49776785045996
+  },
+  {
+    "year": 2005,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 84,
+    "rating": -6.70251285603962
+  },
+  {
+    "year": 2005,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 85,
+    "rating": -6.77481236974807
+  },
+  {
+    "year": 2005,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 86,
+    "rating": -7.59732327661497
+  },
+  {
+    "year": 2005,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 87,
+    "rating": -7.84340796283314
+  },
+  {
+    "year": 2005,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 88,
+    "rating": -8.10028697200814
+  },
+  {
+    "year": 2005,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 89,
+    "rating": -8.50462063970219
+  },
+  {
+    "year": 2005,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 90,
+    "rating": -8.87881727174097
+  },
+  {
+    "year": 2005,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 91,
+    "rating": -9.02997885266574
+  },
+  {
+    "year": 2005,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 92,
+    "rating": -9.05308659482185
+  },
+  {
+    "year": 2005,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 93,
+    "rating": -9.37700679742168
+  },
+  {
+    "year": 2005,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 94,
+    "rating": -9.46360871054586
+  },
+  {
+    "year": 2005,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 95,
+    "rating": -10.3690352190124
+  },
+  {
+    "year": 2005,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 96,
+    "rating": -10.4626636683602
+  },
+  {
+    "year": 2005,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 97,
+    "rating": -10.50653730465
+  },
+  {
+    "year": 2005,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 98,
+    "rating": -10.97534863744
+  },
+  {
+    "year": 2005,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 99,
+    "rating": -12.4094552025817
+  },
+  {
+    "year": 2005,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 100,
+    "rating": -12.9659441044781
+  },
+  {
+    "year": 2005,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 101,
+    "rating": -14.6906571771233
+  },
+  {
+    "year": 2005,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 102,
+    "rating": -14.7838732865822
+  },
+  {
+    "year": 2005,
+    "team": "Duke",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 103,
+    "rating": -16.947815940958
+  },
+  {
+    "year": 2005,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 104,
+    "rating": -18.3461520471488
+  },
+  {
+    "year": 2005,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 105,
+    "rating": -18.4858053921285
+  },
+  {
+    "year": 2005,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 106,
+    "rating": -18.8693988327902
+  },
+  {
+    "year": 2005,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 107,
+    "rating": -19.8639087090526
+  },
+  {
+    "year": 2005,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 108,
+    "rating": -20.2165730415449
+  },
+  {
+    "year": 2005,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 109,
+    "rating": -20.4723598537518
+  },
+  {
+    "year": 2005,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 110,
+    "rating": -21.0389563463254
+  },
+  {
+    "year": 2005,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 111,
+    "rating": -21.5533214068899
+  },
+  {
+    "year": 2005,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 112,
+    "rating": -21.7403040364705
+  },
+  {
+    "year": 2005,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 113,
+    "rating": -22.1665315484577
+  },
+  {
+    "year": 2005,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 114,
+    "rating": -23.136821618485
+  },
+  {
+    "year": 2005,
+    "team": "Temple",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 115,
+    "rating": -23.1591406843436
+  },
+  {
+    "year": 2005,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 116,
+    "rating": -24.3925009872086
+  },
+  {
+    "year": 2005,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 117,
+    "rating": -24.7224288508097
+  },
+  {
+    "year": 2005,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 118,
+    "rating": -24.9108924306872
+  },
+  {
+    "year": 2005,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 119,
+    "rating": -26.0390070990658
+  }
+]

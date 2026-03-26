@@ -1,0 +1,938 @@
+[
+  {
+    "year": 2001,
+    "team": "Miami",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 1,
+    "rating": 32.3673615400574
+  },
+  {
+    "year": 2001,
+    "team": "Florida",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 2,
+    "rating": 30.4447140611913
+  },
+  {
+    "year": 2001,
+    "team": "Texas",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 3,
+    "rating": 22.4229327825375
+  },
+  {
+    "year": 2001,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 4,
+    "rating": 21.3142944283074
+  },
+  {
+    "year": 2001,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 5,
+    "rating": 19.378841306338
+  },
+  {
+    "year": 2001,
+    "team": "Virginia Tech",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 6,
+    "rating": 16.861038982081
+  },
+  {
+    "year": 2001,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 7,
+    "rating": 16.2944974759558
+  },
+  {
+    "year": 2001,
+    "team": "Florida State",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 8,
+    "rating": 16.0677943948478
+  },
+  {
+    "year": 2001,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 9,
+    "rating": 15.6838222496772
+  },
+  {
+    "year": 2001,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 10,
+    "rating": 15.6647118030415
+  },
+  {
+    "year": 2001,
+    "team": "LSU",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 11,
+    "rating": 14.2776182294593
+  },
+  {
+    "year": 2001,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 12,
+    "rating": 13.9617993700355
+  },
+  {
+    "year": 2001,
+    "team": "Maryland",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 13,
+    "rating": 13.2653092797128
+  },
+  {
+    "year": 2001,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 14,
+    "rating": 13.2373961061233
+  },
+  {
+    "year": 2001,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 15,
+    "rating": 13.2055170946778
+  },
+  {
+    "year": 2001,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 16,
+    "rating": 12.9758716862054
+  },
+  {
+    "year": 2001,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 17,
+    "rating": 12.7903899330014
+  },
+  {
+    "year": 2001,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 18,
+    "rating": 12.7775549003014
+  },
+  {
+    "year": 2001,
+    "team": "Boston College",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 19,
+    "rating": 12.765316394643
+  },
+  {
+    "year": 2001,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 20,
+    "rating": 12.3875335401964
+  },
+  {
+    "year": 2001,
+    "team": "Georgia",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 21,
+    "rating": 12.3133178913058
+  },
+  {
+    "year": 2001,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 22,
+    "rating": 12.2296979127978
+  },
+  {
+    "year": 2001,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 23,
+    "rating": 11.5655941485783
+  },
+  {
+    "year": 2001,
+    "team": "USC",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 24,
+    "rating": 11.0846064066264
+  },
+  {
+    "year": 2001,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 25,
+    "rating": 10.6630569232758
+  },
+  {
+    "year": 2001,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 26,
+    "rating": 10.4357683202885
+  },
+  {
+    "year": 2001,
+    "team": "Alabama",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 27,
+    "rating": 10.3703521715465
+  },
+  {
+    "year": 2001,
+    "team": "Louisville",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 28,
+    "rating": 9.82216219500347
+  },
+  {
+    "year": 2001,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 29,
+    "rating": 9.51390232607105
+  },
+  {
+    "year": 2001,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 30,
+    "rating": 9.49517920091231
+  },
+  {
+    "year": 2001,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 31,
+    "rating": 9.13713611909793
+  },
+  {
+    "year": 2001,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 32,
+    "rating": 8.88920962430846
+  },
+  {
+    "year": 2001,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 33,
+    "rating": 8.07552089504042
+  },
+  {
+    "year": 2001,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 34,
+    "rating": 7.6036926240352
+  },
+  {
+    "year": 2001,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 35,
+    "rating": 7.537812267514
+  },
+  {
+    "year": 2001,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 36,
+    "rating": 7.40652582772599
+  },
+  {
+    "year": 2001,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 37,
+    "rating": 7.21869324876713
+  },
+  {
+    "year": 2001,
+    "team": "Marshall",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 38,
+    "rating": 7.02856362822486
+  },
+  {
+    "year": 2001,
+    "team": "NC State",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 39,
+    "rating": 6.81618549362578
+  },
+  {
+    "year": 2001,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 40,
+    "rating": 6.64433461801352
+  },
+  {
+    "year": 2001,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 41,
+    "rating": 6.45688546937164
+  },
+  {
+    "year": 2001,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 42,
+    "rating": 6.17674128852322
+  },
+  {
+    "year": 2001,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 43,
+    "rating": 6.09300596891856
+  },
+  {
+    "year": 2001,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 44,
+    "rating": 5.87066308855957
+  },
+  {
+    "year": 2001,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 45,
+    "rating": 5.73740631668825
+  },
+  {
+    "year": 2001,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 46,
+    "rating": 5.661030652884
+  },
+  {
+    "year": 2001,
+    "team": "Clemson",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 47,
+    "rating": 5.53088423657971
+  },
+  {
+    "year": 2001,
+    "team": "Auburn",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 48,
+    "rating": 4.51033145829092
+  },
+  {
+    "year": 2001,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 49,
+    "rating": 4.09652468542859
+  },
+  {
+    "year": 2001,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 50,
+    "rating": 3.94905580535298
+  },
+  {
+    "year": 2001,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 51,
+    "rating": 3.80937665447312
+  },
+  {
+    "year": 2001,
+    "team": "UCF",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 52,
+    "rating": 3.45361227844887
+  },
+  {
+    "year": 2001,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 53,
+    "rating": 3.44961368548206
+  },
+  {
+    "year": 2001,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 54,
+    "rating": 3.34569244065172
+  },
+  {
+    "year": 2001,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 55,
+    "rating": 2.12742541749139
+  },
+  {
+    "year": 2001,
+    "team": "South Florida",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 56,
+    "rating": 1.68670920173923
+  },
+  {
+    "year": 2001,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 57,
+    "rating": 1.44554335730866
+  },
+  {
+    "year": 2001,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 58,
+    "rating": 1.40739267195649
+  },
+  {
+    "year": 2001,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 59,
+    "rating": 1.25899051934691
+  },
+  {
+    "year": 2001,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 60,
+    "rating": 1.06180911496692
+  },
+  {
+    "year": 2001,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 61,
+    "rating": 0.896038222010795
+  },
+  {
+    "year": 2001,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 62,
+    "rating": -0.138508192846061
+  },
+  {
+    "year": 2001,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 63,
+    "rating": -0.271356441490457
+  },
+  {
+    "year": 2001,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 64,
+    "rating": -0.324317949064604
+  },
+  {
+    "year": 2001,
+    "team": "TCU",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 65,
+    "rating": -0.587551532738544
+  },
+  {
+    "year": 2001,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 66,
+    "rating": -0.763248311308637
+  },
+  {
+    "year": 2001,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 67,
+    "rating": -0.784410153631395
+  },
+  {
+    "year": 2001,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 68,
+    "rating": -0.804750360129258
+  },
+  {
+    "year": 2001,
+    "team": "Virginia",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 69,
+    "rating": -1.03933029177826
+  },
+  {
+    "year": 2001,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 70,
+    "rating": -1.0489034447492
+  },
+  {
+    "year": 2001,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 71,
+    "rating": -1.136956176753
+  },
+  {
+    "year": 2001,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 72,
+    "rating": -1.50641554772101
+  },
+  {
+    "year": 2001,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 73,
+    "rating": -2.18282463986006
+  },
+  {
+    "year": 2001,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 74,
+    "rating": -2.22187777088637
+  },
+  {
+    "year": 2001,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 75,
+    "rating": -2.51358041352474
+  },
+  {
+    "year": 2001,
+    "team": "Cincinnati",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 76,
+    "rating": -2.56669089890677
+  },
+  {
+    "year": 2001,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 77,
+    "rating": -4.24036998899199
+  },
+  {
+    "year": 2001,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 78,
+    "rating": -4.4055938682361
+  },
+  {
+    "year": 2001,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 79,
+    "rating": -5.04214263954021
+  },
+  {
+    "year": 2001,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 80,
+    "rating": -5.17674860025318
+  },
+  {
+    "year": 2001,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 81,
+    "rating": -5.29717482170119
+  },
+  {
+    "year": 2001,
+    "team": "Troy",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 82,
+    "rating": -5.92983491934341
+  },
+  {
+    "year": 2001,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 83,
+    "rating": -6.58698138571888
+  },
+  {
+    "year": 2001,
+    "team": "Temple",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 84,
+    "rating": -7.60414282269732
+  },
+  {
+    "year": 2001,
+    "team": "Rice",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 85,
+    "rating": -8.51710539854387
+  },
+  {
+    "year": 2001,
+    "team": "Utah State",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 86,
+    "rating": -8.52609019279407
+  },
+  {
+    "year": 2001,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 87,
+    "rating": -8.64928862200743
+  },
+  {
+    "year": 2001,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 88,
+    "rating": -9.2829869704608
+  },
+  {
+    "year": 2001,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 89,
+    "rating": -9.66819132732687
+  },
+  {
+    "year": 2001,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 90,
+    "rating": -9.67962195717737
+  },
+  {
+    "year": 2001,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 91,
+    "rating": -10.4543759794077
+  },
+  {
+    "year": 2001,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 92,
+    "rating": -10.6786960342384
+  },
+  {
+    "year": 2001,
+    "team": "California",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 93,
+    "rating": -12.7418255710438
+  },
+  {
+    "year": 2001,
+    "team": "SMU",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 94,
+    "rating": -12.8386411490703
+  },
+  {
+    "year": 2001,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 95,
+    "rating": -12.8974547290756
+  },
+  {
+    "year": 2001,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 96,
+    "rating": -12.9485286220723
+  },
+  {
+    "year": 2001,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 97,
+    "rating": -12.9692724594426
+  },
+  {
+    "year": 2001,
+    "team": "New Mexico State",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 98,
+    "rating": -13.0032720448614
+  },
+  {
+    "year": 2001,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 99,
+    "rating": -14.2475795126328
+  },
+  {
+    "year": 2001,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 100,
+    "rating": -14.9893421600521
+  },
+  {
+    "year": 2001,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 101,
+    "rating": -15.1203040372069
+  },
+  {
+    "year": 2001,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 102,
+    "rating": -16.0313934043669
+  },
+  {
+    "year": 2001,
+    "team": "Army",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 103,
+    "rating": -16.699255471369
+  },
+  {
+    "year": 2001,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 104,
+    "rating": -17.1043557360328
+  },
+  {
+    "year": 2001,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 105,
+    "rating": -17.4133355485711
+  },
+  {
+    "year": 2001,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 106,
+    "rating": -17.7444668683488
+  },
+  {
+    "year": 2001,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 107,
+    "rating": -17.8619131292493
+  },
+  {
+    "year": 2001,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "division": null,
+    "ranking": 108,
+    "rating": -19.652170935101
+  },
+  {
+    "year": 2001,
+    "team": "Duke",
+    "conference": "ACC",
+    "division": null,
+    "ranking": 109,
+    "rating": -19.8003402859704
+  },
+  {
+    "year": 2001,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 110,
+    "rating": -20.9070511956375
+  },
+  {
+    "year": 2001,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 111,
+    "rating": -23.1412228066293
+  },
+  {
+    "year": 2001,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 112,
+    "rating": -23.8471428216869
+  },
+  {
+    "year": 2001,
+    "team": "Idaho",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 113,
+    "rating": -24.3635802786001
+  },
+  {
+    "year": 2001,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 114,
+    "rating": -25.0263256853096
+  },
+  {
+    "year": 2001,
+    "team": "UTEP",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 115,
+    "rating": -26.0612672653742
+  },
+  {
+    "year": 2001,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 116,
+    "rating": -27.0609931311244
+  },
+  {
+    "year": 2001,
+    "team": "Tulsa",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 117,
+    "rating": -27.9192574329685
+  }
+]

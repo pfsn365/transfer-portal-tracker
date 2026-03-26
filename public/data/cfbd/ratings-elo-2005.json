@@ -1,0 +1,746 @@
+[
+  {
+    "year": 2005,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "elo": 1419
+  },
+  {
+    "year": 2005,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "elo": 1394
+  },
+  {
+    "year": 2005,
+    "team": "Alabama",
+    "conference": "SEC",
+    "elo": 1798
+  },
+  {
+    "year": 2005,
+    "team": "App State",
+    "conference": "Southern",
+    "elo": 1304
+  },
+  {
+    "year": 2005,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "elo": 1480
+  },
+  {
+    "year": 2005,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "elo": 1692
+  },
+  {
+    "year": 2005,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "elo": 1631
+  },
+  {
+    "year": 2005,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "elo": 1134
+  },
+  {
+    "year": 2005,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "elo": 1297
+  },
+  {
+    "year": 2005,
+    "team": "Auburn",
+    "conference": "SEC",
+    "elo": 1921
+  },
+  {
+    "year": 2005,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "elo": 1137
+  },
+  {
+    "year": 2005,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "elo": 1276
+  },
+  {
+    "year": 2005,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "elo": 1817
+  },
+  {
+    "year": 2005,
+    "team": "Boston College",
+    "conference": "ACC",
+    "elo": 1771
+  },
+  {
+    "year": 2005,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "elo": 1585
+  },
+  {
+    "year": 2005,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "elo": 1005
+  },
+  {
+    "year": 2005,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "elo": 1571
+  },
+  {
+    "year": 2005,
+    "team": "California",
+    "conference": "Pac-10",
+    "elo": 1822
+  },
+  {
+    "year": 2005,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "elo": 1306
+  },
+  {
+    "year": 2005,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "elo": 1280
+  },
+  {
+    "year": 2005,
+    "team": "Clemson",
+    "conference": "ACC",
+    "elo": 1746
+  },
+  {
+    "year": 2005,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "elo": 1552
+  },
+  {
+    "year": 2005,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "elo": 1363
+  },
+  {
+    "year": 2005,
+    "team": "Duke",
+    "conference": "ACC",
+    "elo": 1068
+  },
+  {
+    "year": 2005,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "elo": 1213
+  },
+  {
+    "year": 2005,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "elo": 1223
+  },
+  {
+    "year": 2005,
+    "team": "Florida",
+    "conference": "SEC",
+    "elo": 1805
+  },
+  {
+    "year": 2005,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "elo": 988
+  },
+  {
+    "year": 2005,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "elo": 1210
+  },
+  {
+    "year": 2005,
+    "team": "Florida State",
+    "conference": "ACC",
+    "elo": 1691
+  },
+  {
+    "year": 2005,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "elo": 1786
+  },
+  {
+    "year": 2005,
+    "team": "Georgia",
+    "conference": "SEC",
+    "elo": 1944
+  },
+  {
+    "year": 2005,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "elo": 1610
+  },
+  {
+    "year": 2005,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "elo": 1393
+  },
+  {
+    "year": 2005,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "elo": 1333
+  },
+  {
+    "year": 2005,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "elo": 1005
+  },
+  {
+    "year": 2005,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "elo": 1122
+  },
+  {
+    "year": 2005,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "elo": 1294
+  },
+  {
+    "year": 2005,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "elo": 1816
+  },
+  {
+    "year": 2005,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "elo": 1739
+  },
+  {
+    "year": 2005,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "elo": 1606
+  },
+  {
+    "year": 2005,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "elo": 1539
+  },
+  {
+    "year": 2005,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "elo": 1145
+  },
+  {
+    "year": 2005,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "elo": 1271
+  },
+  {
+    "year": 2005,
+    "team": "Liberty",
+    "conference": "Big South",
+    "elo": 1125
+  },
+  {
+    "year": 2005,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "elo": 1294
+  },
+  {
+    "year": 2005,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "elo": 1510
+  },
+  {
+    "year": 2005,
+    "team": "Louisville",
+    "conference": "Big East",
+    "elo": 2046
+  },
+  {
+    "year": 2005,
+    "team": "LSU",
+    "conference": "SEC",
+    "elo": 2007
+  },
+  {
+    "year": 2005,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "elo": 1323
+  },
+  {
+    "year": 2005,
+    "team": "Maryland",
+    "conference": "ACC",
+    "elo": 1567
+  },
+  {
+    "year": 2005,
+    "team": "Massachusetts",
+    "conference": "Atlantic 10",
+    "elo": 1418
+  },
+  {
+    "year": 2005,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "elo": 1488
+  },
+  {
+    "year": 2005,
+    "team": "Miami",
+    "conference": "ACC",
+    "elo": 1848
+  },
+  {
+    "year": 2005,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "elo": 1614
+  },
+  {
+    "year": 2005,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "elo": 1849
+  },
+  {
+    "year": 2005,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "elo": 1650
+  },
+  {
+    "year": 2005,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "elo": 1372
+  },
+  {
+    "year": 2005,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "elo": 1707
+  },
+  {
+    "year": 2005,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "elo": 1303
+  },
+  {
+    "year": 2005,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "elo": 1551
+  },
+  {
+    "year": 2005,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "elo": 1602
+  },
+  {
+    "year": 2005,
+    "team": "NC State",
+    "conference": "ACC",
+    "elo": 1610
+  },
+  {
+    "year": 2005,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "elo": 1622
+  },
+  {
+    "year": 2005,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "elo": 1374
+  },
+  {
+    "year": 2005,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "elo": 1483
+  },
+  {
+    "year": 2005,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "elo": 1012
+  },
+  {
+    "year": 2005,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "elo": 1437
+  },
+  {
+    "year": 2005,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "elo": 1622
+  },
+  {
+    "year": 2005,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "elo": 1032
+  },
+  {
+    "year": 2005,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "elo": 1522
+  },
+  {
+    "year": 2005,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "elo": 1827
+  },
+  {
+    "year": 2005,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "elo": 1136
+  },
+  {
+    "year": 2005,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "elo": 2011
+  },
+  {
+    "year": 2005,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "elo": 1786
+  },
+  {
+    "year": 2005,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "elo": 1367
+  },
+  {
+    "year": 2005,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "elo": 1348
+  },
+  {
+    "year": 2005,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "elo": 1782
+  },
+  {
+    "year": 2005,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "elo": 1446
+  },
+  {
+    "year": 2005,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "elo": 1924
+  },
+  {
+    "year": 2005,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "elo": 1580
+  },
+  {
+    "year": 2005,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "elo": 1700
+  },
+  {
+    "year": 2005,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "elo": 1079
+  },
+  {
+    "year": 2005,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "elo": 1502
+  },
+  {
+    "year": 2005,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "elo": 1491
+  },
+  {
+    "year": 2005,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "elo": 1134
+  },
+  {
+    "year": 2005,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "elo": 1238
+  },
+  {
+    "year": 2005,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "elo": 1554
+  },
+  {
+    "year": 2005,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "elo": 1525
+  },
+  {
+    "year": 2005,
+    "team": "South Florida",
+    "conference": "Big East",
+    "elo": 1583
+  },
+  {
+    "year": 2005,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "elo": 1484
+  },
+  {
+    "year": 2005,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "elo": 1347
+  },
+  {
+    "year": 2005,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "elo": 1802
+  },
+  {
+    "year": 2005,
+    "team": "Temple",
+    "conference": "FBS Independents",
+    "elo": 919
+  },
+  {
+    "year": 2005,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "elo": 1637
+  },
+  {
+    "year": 2005,
+    "team": "Texas",
+    "conference": "Big 12",
+    "elo": 2407
+  },
+  {
+    "year": 2005,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "elo": 1594
+  },
+  {
+    "year": 2005,
+    "team": "Texas State",
+    "conference": "Southland",
+    "elo": 1315
+  },
+  {
+    "year": 2005,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "elo": 1917
+  },
+  {
+    "year": 2005,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "elo": 1602
+  },
+  {
+    "year": 2005,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "elo": 1238
+  },
+  {
+    "year": 2005,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "elo": 1182
+  },
+  {
+    "year": 2005,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "elo": 1622
+  },
+  {
+    "year": 2005,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "elo": 1473
+  },
+  {
+    "year": 2005,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "elo": 1334
+  },
+  {
+    "year": 2005,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "elo": 1597
+  },
+  {
+    "year": 2005,
+    "team": "UConn",
+    "conference": "Big East",
+    "elo": 1589
+  },
+  {
+    "year": 2005,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "elo": 1114
+  },
+  {
+    "year": 2005,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "elo": 1075
+  },
+  {
+    "year": 2005,
+    "team": "USC",
+    "conference": "Pac-10",
+    "elo": 2265
+  },
+  {
+    "year": 2005,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "elo": 1792
+  },
+  {
+    "year": 2005,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "elo": 1129
+  },
+  {
+    "year": 2005,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "elo": 1405
+  },
+  {
+    "year": 2005,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "elo": 1417
+  },
+  {
+    "year": 2005,
+    "team": "Virginia",
+    "conference": "ACC",
+    "elo": 1682
+  },
+  {
+    "year": 2005,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "elo": 2091
+  },
+  {
+    "year": 2005,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "elo": 1458
+  },
+  {
+    "year": 2005,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "elo": 1414
+  },
+  {
+    "year": 2005,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "elo": 1536
+  },
+  {
+    "year": 2005,
+    "team": "Western Kentucky",
+    "conference": "MVFC",
+    "elo": 1428
+  },
+  {
+    "year": 2005,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "elo": 1342
+  },
+  {
+    "year": 2005,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "elo": 1911
+  },
+  {
+    "year": 2005,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "elo": 1783
+  },
+  {
+    "year": 2005,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "elo": 1418
+  }
+]

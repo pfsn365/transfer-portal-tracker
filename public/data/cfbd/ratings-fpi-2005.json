@@ -1,0 +1,2382 @@
+[
+  {
+    "year": 2005,
+    "team": "Auburn",
+    "conference": "SEC",
+    "fpi": 17.403,
+    "resumeRanks": {
+      "strengthOfRecord": 18,
+      "fpi": 9,
+      "averageWinProbability": 10,
+      "strengthOfSchedule": 61,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 16
+    },
+    "efficiencies": {
+      "overall": 77.668,
+      "offense": 78.69,
+      "defense": 66.392,
+      "specialTeams": 49.393
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "fpi": -2.165,
+    "resumeRanks": {
+      "strengthOfRecord": 97,
+      "fpi": 73,
+      "averageWinProbability": 47,
+      "strengthOfSchedule": 107,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 75
+    },
+    "efficiencies": {
+      "overall": 47.71,
+      "offense": 63.937,
+      "defense": 36.362,
+      "specialTeams": 38.408
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "fpi": 6.423,
+    "resumeRanks": {
+      "strengthOfRecord": 69,
+      "fpi": 41,
+      "averageWinProbability": 67,
+      "strengthOfSchedule": 47,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 41
+    },
+    "efficiencies": {
+      "overall": 57.755,
+      "offense": 47.23,
+      "defense": 61.682,
+      "specialTeams": 60.979
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "fpi": 14.189,
+    "resumeRanks": {
+      "strengthOfRecord": 29,
+      "fpi": 18,
+      "averageWinProbability": 43,
+      "strengthOfSchedule": 17,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 26
+    },
+    "efficiencies": {
+      "overall": 68.126,
+      "offense": 79.011,
+      "defense": 48.158,
+      "specialTeams": 50.069
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "fpi": 4.534,
+    "resumeRanks": {
+      "strengthOfRecord": 75,
+      "fpi": 48,
+      "averageWinProbability": 72,
+      "strengthOfSchedule": 11,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 43
+    },
+    "efficiencies": {
+      "overall": 51.569,
+      "offense": 42.65,
+      "defense": 62.085,
+      "specialTeams": 43.581
+    }
+  },
+  {
+    "year": 2005,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "fpi": -0.122,
+    "resumeRanks": {
+      "strengthOfRecord": 82,
+      "fpi": 65,
+      "averageWinProbability": 81,
+      "strengthOfSchedule": 67,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 83
+    },
+    "efficiencies": {
+      "overall": 43.988,
+      "offense": 37.215,
+      "defense": 55.835,
+      "specialTeams": 40.073
+    }
+  },
+  {
+    "year": 2005,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "fpi": -16.471,
+    "resumeRanks": {
+      "strengthOfRecord": 109,
+      "fpi": 111,
+      "averageWinProbability": 102,
+      "strengthOfSchedule": 101,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 107
+    },
+    "efficiencies": {
+      "overall": 22.445,
+      "offense": 25.06,
+      "defense": 28.29,
+      "specialTeams": 51.28
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "fpi": 4.773,
+    "resumeRanks": {
+      "strengthOfRecord": 37,
+      "fpi": 45,
+      "averageWinProbability": 59,
+      "strengthOfSchedule": 2,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 31
+    },
+    "efficiencies": {
+      "overall": 55.196,
+      "offense": 47.188,
+      "defense": 53.086,
+      "specialTeams": 70.533
+    }
+  },
+  {
+    "year": 2005,
+    "team": "California",
+    "conference": "Pac-10",
+    "fpi": 13.678,
+    "resumeRanks": {
+      "strengthOfRecord": 24,
+      "fpi": 19,
+      "averageWinProbability": 25,
+      "strengthOfSchedule": 56,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 22
+    },
+    "efficiencies": {
+      "overall": 66.893,
+      "offense": 62.894,
+      "defense": 64.359,
+      "specialTeams": 51.982
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "fpi": 11.225,
+    "resumeRanks": {
+      "strengthOfRecord": 8,
+      "fpi": 25,
+      "averageWinProbability": 62,
+      "strengthOfSchedule": 19,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 48
+    },
+    "efficiencies": {
+      "overall": 69.353,
+      "offense": 78.61,
+      "defense": 45.951,
+      "specialTeams": 70.301
+    }
+  },
+  {
+    "year": 2005,
+    "team": "USC",
+    "conference": "Pac-10",
+    "fpi": 32.163,
+    "resumeRanks": {
+      "strengthOfRecord": 2,
+      "fpi": 2,
+      "averageWinProbability": 4,
+      "strengthOfSchedule": 1,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 1
+    },
+    "efficiencies": {
+      "overall": 94.112,
+      "offense": 95.802,
+      "defense": 78.651,
+      "specialTeams": 40.708
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "fpi": -3.603,
+    "resumeRanks": {
+      "strengthOfRecord": 63,
+      "fpi": 78,
+      "averageWinProbability": 94,
+      "strengthOfSchedule": 64,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 91
+    },
+    "efficiencies": {
+      "overall": 43.853,
+      "offense": 53.568,
+      "defense": 37.713,
+      "specialTeams": 48.307
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "fpi": 6.824,
+    "resumeRanks": {
+      "strengthOfRecord": 33,
+      "fpi": 39,
+      "averageWinProbability": 68,
+      "strengthOfSchedule": 20,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 46
+    },
+    "efficiencies": {
+      "overall": 55.651,
+      "offense": 41.331,
+      "defense": 60.536,
+      "specialTeams": 68.735
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UConn",
+    "conference": "Big East",
+    "fpi": -0.135,
+    "resumeRanks": {
+      "strengthOfRecord": 79,
+      "fpi": 66,
+      "averageWinProbability": 63,
+      "strengthOfSchedule": 78,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 71
+    },
+    "efficiencies": {
+      "overall": 45.484,
+      "offense": 32.007,
+      "defense": 69.732,
+      "specialTeams": 29.735
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Florida State",
+    "conference": "ACC",
+    "fpi": 11.676,
+    "resumeRanks": {
+      "strengthOfRecord": 23,
+      "fpi": 23,
+      "averageWinProbability": 46,
+      "strengthOfSchedule": 23,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 29
+    },
+    "efficiencies": {
+      "overall": 65.876,
+      "offense": 45.321,
+      "defense": 71.977,
+      "specialTeams": 71.289
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Florida",
+    "conference": "SEC",
+    "fpi": 15.55,
+    "resumeRanks": {
+      "strengthOfRecord": 15,
+      "fpi": 15,
+      "averageWinProbability": 14,
+      "strengthOfSchedule": 29,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 12
+    },
+    "efficiencies": {
+      "overall": 76.871,
+      "offense": 64.656,
+      "defense": 71.196,
+      "specialTeams": 78.909
+    }
+  },
+  {
+    "year": 2005,
+    "team": "South Florida",
+    "conference": "Big East",
+    "fpi": 5.054,
+    "resumeRanks": {
+      "strengthOfRecord": 49,
+      "fpi": 43,
+      "averageWinProbability": 55,
+      "strengthOfSchedule": 50,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 39
+    },
+    "efficiencies": {
+      "overall": 60.879,
+      "offense": 42.001,
+      "defense": 73.495,
+      "specialTeams": 60.211
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "fpi": 6.564,
+    "resumeRanks": {
+      "strengthOfRecord": 28,
+      "fpi": 40,
+      "averageWinProbability": 58,
+      "strengthOfSchedule": 13,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 35
+    },
+    "efficiencies": {
+      "overall": 60.944,
+      "offense": 50.772,
+      "defense": 77.856,
+      "specialTeams": 21.355
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Georgia",
+    "conference": "SEC",
+    "fpi": 17.721,
+    "resumeRanks": {
+      "strengthOfRecord": 14,
+      "fpi": 7,
+      "averageWinProbability": 11,
+      "strengthOfSchedule": 30,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 13
+    },
+    "efficiencies": {
+      "overall": 78.205,
+      "offense": 70.922,
+      "defense": 69.811,
+      "specialTeams": 71.795
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "fpi": -6.939,
+    "resumeRanks": {
+      "strengthOfRecord": 84,
+      "fpi": 88,
+      "averageWinProbability": 70,
+      "strengthOfSchedule": 72,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 79
+    },
+    "efficiencies": {
+      "overall": 35.957,
+      "offense": 68.275,
+      "defense": 19.683,
+      "specialTeams": 23.674
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "fpi": 9.271,
+    "resumeRanks": {
+      "strengthOfRecord": 43,
+      "fpi": 32,
+      "averageWinProbability": 24,
+      "strengthOfSchedule": 59,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 25
+    },
+    "efficiencies": {
+      "overall": 63.07,
+      "offense": 47.958,
+      "defense": 71.381,
+      "specialTeams": 53.131
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "fpi": 7.729,
+    "resumeRanks": {
+      "strengthOfRecord": 38,
+      "fpi": 36,
+      "averageWinProbability": 42,
+      "strengthOfSchedule": 87,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 60
+    },
+    "efficiencies": {
+      "overall": 54.687,
+      "offense": 49.412,
+      "defense": 48.428,
+      "specialTeams": 77.181
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "fpi": -18.238,
+    "resumeRanks": {
+      "strengthOfRecord": 111,
+      "fpi": 114,
+      "averageWinProbability": 115,
+      "strengthOfSchedule": 94,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 18.917,
+      "offense": 19.013,
+      "defense": 30.488,
+      "specialTeams": 44.255
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "fpi": 5.186,
+    "resumeRanks": {
+      "strengthOfRecord": 21,
+      "fpi": 42,
+      "averageWinProbability": 60,
+      "strengthOfSchedule": 4,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 33
+    },
+    "efficiencies": {
+      "overall": 61.169,
+      "offense": 74.432,
+      "defense": 48.682,
+      "specialTeams": 25.789
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "fpi": -6.096,
+    "resumeRanks": {
+      "strengthOfRecord": 67,
+      "fpi": 85,
+      "averageWinProbability": 96,
+      "strengthOfSchedule": 32,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 72
+    },
+    "efficiencies": {
+      "overall": 34.157,
+      "offense": 38.21,
+      "defense": 44.684,
+      "specialTeams": 25.316
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "fpi": 17.184,
+    "resumeRanks": {
+      "strengthOfRecord": 12,
+      "fpi": 50,
+      "averageWinProbability": 7,
+      "strengthOfSchedule": 8,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 5
+    },
+    "efficiencies": {
+      "overall": 80.864,
+      "offense": 83.317,
+      "defense": 63.863,
+      "specialTeams": 53.258
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "fpi": -8.166,
+    "resumeRanks": {
+      "strengthOfRecord": 88,
+      "fpi": 92,
+      "averageWinProbability": 101,
+      "strengthOfSchedule": 44,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 89
+    },
+    "efficiencies": {
+      "overall": 31.324,
+      "offense": 30.464,
+      "defense": 29.527,
+      "specialTeams": 77.65
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Louisville",
+    "conference": "Big East",
+    "fpi": 17.486,
+    "resumeRanks": {
+      "strengthOfRecord": 26,
+      "fpi": 8,
+      "averageWinProbability": 3,
+      "strengthOfSchedule": 69,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 6
+    },
+    "efficiencies": {
+      "overall": 76.277,
+      "offense": 83.987,
+      "defense": 54.381,
+      "specialTeams": 55.246
+    }
+  },
+  {
+    "year": 2005,
+    "team": "LSU",
+    "conference": "SEC",
+    "fpi": 18.215,
+    "resumeRanks": {
+      "strengthOfRecord": 7,
+      "fpi": 6,
+      "averageWinProbability": 8,
+      "strengthOfSchedule": 26,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 8
+    },
+    "efficiencies": {
+      "overall": 76.916,
+      "offense": 62.15,
+      "defense": 76.059,
+      "specialTeams": 70.35
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Boston College",
+    "conference": "ACC",
+    "fpi": 12.086,
+    "resumeRanks": {
+      "strengthOfRecord": 17,
+      "fpi": 22,
+      "averageWinProbability": 32,
+      "strengthOfSchedule": 31,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 24
+    },
+    "efficiencies": {
+      "overall": 69.819,
+      "offense": 62.095,
+      "defense": 75.698,
+      "specialTeams": 31.058
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Maryland",
+    "conference": "ACC",
+    "fpi": 4.582,
+    "resumeRanks": {
+      "strengthOfRecord": 50,
+      "fpi": 47,
+      "averageWinProbability": 77,
+      "strengthOfSchedule": 15,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 54
+    },
+    "efficiencies": {
+      "overall": 55.573,
+      "offense": 54.617,
+      "defense": 52.804,
+      "specialTeams": 54.692
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "fpi": 9.817,
+    "resumeRanks": {
+      "strengthOfRecord": 46,
+      "fpi": 30,
+      "averageWinProbability": 44,
+      "strengthOfSchedule": 37,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 28
+    },
+    "efficiencies": {
+      "overall": 66.158,
+      "offense": 75.83,
+      "defense": 52.72,
+      "specialTeams": 34.68
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "fpi": 15.842,
+    "resumeRanks": {
+      "strengthOfRecord": 22,
+      "fpi": 14,
+      "averageWinProbability": 22,
+      "strengthOfSchedule": 7,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 11
+    },
+    "efficiencies": {
+      "overall": 71.884,
+      "offense": 56.474,
+      "defense": 72.651,
+      "specialTeams": 70.266
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "fpi": 12.92,
+    "resumeRanks": {
+      "strengthOfRecord": 25,
+      "fpi": 20,
+      "averageWinProbability": 34,
+      "strengthOfSchedule": 14,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 21
+    },
+    "efficiencies": {
+      "overall": 67.507,
+      "offense": 80.062,
+      "defense": 43.454,
+      "specialTeams": 44.776
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "fpi": 3.986,
+    "resumeRanks": {
+      "strengthOfRecord": 44,
+      "fpi": 53,
+      "averageWinProbability": 51,
+      "strengthOfSchedule": 63,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 53
+    },
+    "efficiencies": {
+      "overall": 54.902,
+      "offense": 60.351,
+      "defense": 51.304,
+      "specialTeams": 36.785
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "fpi": -5.045,
+    "resumeRanks": {
+      "strengthOfRecord": 94,
+      "fpi": 81,
+      "averageWinProbability": 90,
+      "strengthOfSchedule": 58,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 80
+    },
+    "efficiencies": {
+      "overall": 34.282,
+      "offense": 17.121,
+      "defense": 60.369,
+      "specialTeams": 47.121
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Duke",
+    "conference": "ACC",
+    "fpi": -13.793,
+    "resumeRanks": {
+      "strengthOfRecord": 108,
+      "fpi": 104,
+      "averageWinProbability": 110,
+      "strengthOfSchedule": 39,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 100
+    },
+    "efficiencies": {
+      "overall": 20.171,
+      "offense": 19.427,
+      "defense": 33.063,
+      "specialTeams": 43.296
+    }
+  },
+  {
+    "year": 2005,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "fpi": -7.467,
+    "resumeRanks": {
+      "strengthOfRecord": 85,
+      "fpi": 90,
+      "averageWinProbability": 99,
+      "strengthOfSchedule": 84,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 102
+    },
+    "efficiencies": {
+      "overall": 34.854,
+      "offense": 43.912,
+      "defense": 36.084,
+      "specialTeams": 36.152
+    }
+  },
+  {
+    "year": 2005,
+    "team": "NC State",
+    "conference": "ACC",
+    "fpi": 7.484,
+    "resumeRanks": {
+      "strengthOfRecord": 35,
+      "fpi": 38,
+      "averageWinProbability": 50,
+      "strengthOfSchedule": 42,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 40
+    },
+    "efficiencies": {
+      "overall": 57.73,
+      "offense": 36.111,
+      "defense": 70.361,
+      "specialTeams": 60.011
+    }
+  },
+  {
+    "year": 2005,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "fpi": 1.899,
+    "resumeRanks": {
+      "strengthOfRecord": 39,
+      "fpi": 57,
+      "averageWinProbability": 79,
+      "strengthOfSchedule": 5,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 47
+    },
+    "efficiencies": {
+      "overall": 48.78,
+      "offense": 40.632,
+      "defense": 60.595,
+      "specialTeams": 41.03
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "fpi": 1.062,
+    "resumeRanks": {
+      "strengthOfRecord": 73,
+      "fpi": 61,
+      "averageWinProbability": 86,
+      "strengthOfSchedule": 27,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 63
+    },
+    "efficiencies": {
+      "overall": 47.363,
+      "offense": 40.941,
+      "defense": 48.231,
+      "specialTeams": 67.397
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "fpi": 4.677,
+    "resumeRanks": {
+      "strengthOfRecord": 30,
+      "fpi": 46,
+      "averageWinProbability": 54,
+      "strengthOfSchedule": 46,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 52
+    },
+    "efficiencies": {
+      "overall": 56.229,
+      "offense": 38.677,
+      "defense": 63.422,
+      "specialTeams": 71.289
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "fpi": 1.9,
+    "resumeRanks": {
+      "strengthOfRecord": 53,
+      "fpi": 56,
+      "averageWinProbability": 31,
+      "strengthOfSchedule": 76,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 44
+    },
+    "efficiencies": {
+      "overall": 54.502,
+      "offense": 51.467,
+      "defense": 52.38,
+      "specialTeams": 59.839
+    }
+  },
+  {
+    "year": 2005,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "fpi": -21.959,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 117,
+      "averageWinProbability": 118,
+      "strengthOfSchedule": 79,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 9.709,
+      "offense": 17.412,
+      "defense": 12.972,
+      "specialTeams": 48.882
+    }
+  },
+  {
+    "year": 2005,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "fpi": -1.003,
+    "resumeRanks": {
+      "strengthOfRecord": 60,
+      "fpi": 68,
+      "averageWinProbability": 48,
+      "strengthOfSchedule": 74,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 58
+    },
+    "efficiencies": {
+      "overall": 51.715,
+      "offense": 50.894,
+      "defense": 52.013,
+      "specialTeams": 49.761
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "fpi": -6.843,
+    "resumeRanks": {
+      "strengthOfRecord": 107,
+      "fpi": 87,
+      "averageWinProbability": 108,
+      "strengthOfSchedule": 41,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 94
+    },
+    "efficiencies": {
+      "overall": 28.528,
+      "offense": 11.503,
+      "defense": 60.915,
+      "specialTeams": 40.841
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "fpi": -1.217,
+    "resumeRanks": {
+      "strengthOfRecord": 81,
+      "fpi": 69,
+      "averageWinProbability": 39,
+      "strengthOfSchedule": 106,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 69
+    },
+    "efficiencies": {
+      "overall": 45.809,
+      "offense": 63.896,
+      "defense": 35.685,
+      "specialTeams": 29.658
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "fpi": 0.794,
+    "resumeRanks": {
+      "strengthOfRecord": 72,
+      "fpi": 63,
+      "averageWinProbability": 36,
+      "strengthOfSchedule": 114,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 74
+    },
+    "efficiencies": {
+      "overall": 49.645,
+      "offense": 52.367,
+      "defense": 45.505,
+      "specialTeams": 53.45
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "fpi": 23.903,
+    "resumeRanks": {
+      "strengthOfRecord": 4,
+      "fpi": 3,
+      "averageWinProbability": 5,
+      "strengthOfSchedule": 12,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 3
+    },
+    "efficiencies": {
+      "overall": 86.865,
+      "offense": 73.285,
+      "defense": 83.705,
+      "specialTeams": 74.706
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "fpi": -14.961,
+    "resumeRanks": {
+      "strengthOfRecord": 98,
+      "fpi": 105,
+      "averageWinProbability": 93,
+      "strengthOfSchedule": 83,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 101
+    },
+    "efficiencies": {
+      "overall": 28.53,
+      "offense": 24.102,
+      "defense": 41.824,
+      "specialTeams": 43.239
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "fpi": -4.55,
+    "resumeRanks": {
+      "strengthOfRecord": 76,
+      "fpi": 80,
+      "averageWinProbability": 91,
+      "strengthOfSchedule": 54,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 76
+    },
+    "efficiencies": {
+      "overall": 34.398,
+      "offense": 26.6,
+      "defense": 46.616,
+      "specialTeams": 55.852
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "fpi": 11.188,
+    "resumeRanks": {
+      "strengthOfRecord": 19,
+      "fpi": 26,
+      "averageWinProbability": 23,
+      "strengthOfSchedule": 16,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 14
+    },
+    "efficiencies": {
+      "overall": 66.751,
+      "offense": 51.94,
+      "defense": 76.358,
+      "specialTeams": 42.845
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "fpi": 4.009,
+    "resumeRanks": {
+      "strengthOfRecord": 42,
+      "fpi": 52,
+      "averageWinProbability": 37,
+      "strengthOfSchedule": 82,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 62
+    },
+    "efficiencies": {
+      "overall": 60.645,
+      "offense": 57.579,
+      "defense": 57.836,
+      "specialTeams": 55.947
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "fpi": 3.393,
+    "resumeRanks": {
+      "strengthOfRecord": 40,
+      "fpi": 55,
+      "averageWinProbability": 98,
+      "strengthOfSchedule": 6,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 70
+    },
+    "efficiencies": {
+      "overall": 49.424,
+      "offense": 36.576,
+      "defense": 62.6,
+      "specialTeams": 52.621
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "fpi": 20.082,
+    "resumeRanks": {
+      "strengthOfRecord": 3,
+      "fpi": 5,
+      "averageWinProbability": 2,
+      "strengthOfSchedule": 21,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 4
+    },
+    "efficiencies": {
+      "overall": 83.663,
+      "offense": 74.008,
+      "defense": 83.419,
+      "specialTeams": 47.041
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Temple",
+    "conference": "FBS Independents",
+    "fpi": -26.272,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 119,
+      "averageWinProbability": 119,
+      "strengthOfSchedule": 22,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 109
+    },
+    "efficiencies": {
+      "overall": 7.918,
+      "offense": 15.111,
+      "defense": 16.182,
+      "specialTeams": 21.214
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "fpi": 4.089,
+    "resumeRanks": {
+      "strengthOfRecord": 66,
+      "fpi": 51,
+      "averageWinProbability": 71,
+      "strengthOfSchedule": 62,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 64
+    },
+    "efficiencies": {
+      "overall": 51.837,
+      "offense": 38.655,
+      "defense": 60.921,
+      "specialTeams": 58.342
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Clemson",
+    "conference": "ACC",
+    "fpi": 10.8,
+    "resumeRanks": {
+      "strengthOfRecord": 27,
+      "fpi": 27,
+      "averageWinProbability": 28,
+      "strengthOfSchedule": 33,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 23
+    },
+    "efficiencies": {
+      "overall": 68.907,
+      "offense": 72.499,
+      "defense": 60.087,
+      "specialTeams": 43.114
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "fpi": -1.976,
+    "resumeRanks": {
+      "strengthOfRecord": 71,
+      "fpi": 72,
+      "averageWinProbability": 30,
+      "strengthOfSchedule": 93,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 57
+    },
+    "efficiencies": {
+      "overall": 49.401,
+      "offense": 54.603,
+      "defense": 39.084,
+      "specialTeams": 65.868
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "fpi": 1.157,
+    "resumeRanks": {
+      "strengthOfRecord": 56,
+      "fpi": 59,
+      "averageWinProbability": 87,
+      "strengthOfSchedule": 43,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 66
+    },
+    "efficiencies": {
+      "overall": 49.336,
+      "offense": 68.554,
+      "defense": 39.102,
+      "specialTeams": 21.774
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "fpi": -3.127,
+    "resumeRanks": {
+      "strengthOfRecord": 52,
+      "fpi": 76,
+      "averageWinProbability": 80,
+      "strengthOfSchedule": 48,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 56
+    },
+    "efficiencies": {
+      "overall": 50.134,
+      "offense": 33.719,
+      "defense": 61.231,
+      "specialTeams": 63.755
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "fpi": -15.439,
+    "resumeRanks": {
+      "strengthOfRecord": 112,
+      "fpi": 108,
+      "averageWinProbability": 114,
+      "strengthOfSchedule": 73,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 14.067,
+      "offense": 36.284,
+      "defense": 10.481,
+      "specialTeams": 30.354
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "fpi": 9.775,
+    "resumeRanks": {
+      "strengthOfRecord": 51,
+      "fpi": 31,
+      "averageWinProbability": 73,
+      "strengthOfSchedule": 38,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 50
+    },
+    "efficiencies": {
+      "overall": 54.212,
+      "offense": 70.194,
+      "defense": 36.671,
+      "specialTeams": 50.029
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "fpi": -2.784,
+    "resumeRanks": {
+      "strengthOfRecord": 80,
+      "fpi": 75,
+      "averageWinProbability": 53,
+      "strengthOfSchedule": 88,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 73
+    },
+    "efficiencies": {
+      "overall": 45.447,
+      "offense": 53.073,
+      "defense": 46.125,
+      "specialTeams": 30.987
+    }
+  },
+  {
+    "year": 2005,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "fpi": -21.188,
+    "resumeRanks": {
+      "strengthOfRecord": 115,
+      "fpi": 116,
+      "averageWinProbability": 113,
+      "strengthOfSchedule": 105,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 16.307,
+      "offense": 16.022,
+      "defense": 25.212,
+      "specialTeams": 54.858
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Texas",
+    "conference": "Big 12",
+    "fpi": 33.626,
+    "resumeRanks": {
+      "strengthOfRecord": 1,
+      "fpi": 1,
+      "averageWinProbability": 1,
+      "strengthOfSchedule": 25,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 2
+    },
+    "efficiencies": {
+      "overall": 94.784,
+      "offense": 92.029,
+      "defense": 85.027,
+      "specialTeams": 71.88
+    }
+  },
+  {
+    "year": 2005,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "fpi": 4.355,
+    "resumeRanks": {
+      "strengthOfRecord": 62,
+      "fpi": 50,
+      "averageWinProbability": 56,
+      "strengthOfSchedule": 65,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 59
+    },
+    "efficiencies": {
+      "overall": 56.964,
+      "offense": 72.398,
+      "defense": 35.345,
+      "specialTeams": 52.129
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "fpi": 3.834,
+    "resumeRanks": {
+      "strengthOfRecord": 58,
+      "fpi": 54,
+      "averageWinProbability": 20,
+      "strengthOfSchedule": 75,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 36
+    },
+    "efficiencies": {
+      "overall": 57.866,
+      "offense": 63.96,
+      "defense": 49.373,
+      "specialTeams": 46.289
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Virginia",
+    "conference": "ACC",
+    "fpi": 7.688,
+    "resumeRanks": {
+      "strengthOfRecord": 34,
+      "fpi": 37,
+      "averageWinProbability": 52,
+      "strengthOfSchedule": 52,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 38
+    },
+    "efficiencies": {
+      "overall": 59.364,
+      "offense": 67.091,
+      "defense": 44.34,
+      "specialTeams": 61.181
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "fpi": 22.642,
+    "resumeRanks": {
+      "strengthOfRecord": 9,
+      "fpi": 4,
+      "averageWinProbability": 9,
+      "strengthOfSchedule": 35,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 10
+    },
+    "efficiencies": {
+      "overall": 83.208,
+      "offense": 74.99,
+      "defense": 77.212,
+      "specialTeams": 66.975
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "fpi": 0.966,
+    "resumeRanks": {
+      "strengthOfRecord": 86,
+      "fpi": 62,
+      "averageWinProbability": 95,
+      "strengthOfSchedule": 3,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 61
+    },
+    "efficiencies": {
+      "overall": 46.572,
+      "offense": 47.346,
+      "defense": 50.706,
+      "specialTeams": 37.946
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "fpi": 8.211,
+    "resumeRanks": {
+      "strengthOfRecord": 70,
+      "fpi": 35,
+      "averageWinProbability": 40,
+      "strengthOfSchedule": 34,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 30
+    },
+    "efficiencies": {
+      "overall": 59.598,
+      "offense": 68.518,
+      "defense": 48.672,
+      "specialTeams": 45.225
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "fpi": 11.29,
+    "resumeRanks": {
+      "strengthOfRecord": 13,
+      "fpi": 24,
+      "averageWinProbability": 29,
+      "strengthOfSchedule": 40,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 19
+    },
+    "efficiencies": {
+      "overall": 72.037,
+      "offense": 70.763,
+      "defense": 57.122,
+      "specialTeams": 75.669
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "fpi": -11.272,
+    "resumeRanks": {
+      "strengthOfRecord": 100,
+      "fpi": 98,
+      "averageWinProbability": 100,
+      "strengthOfSchedule": 92,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 106
+    },
+    "efficiencies": {
+      "overall": 28.148,
+      "offense": 27.083,
+      "defense": 41.834,
+      "specialTeams": 37.308
+    }
+  },
+  {
+    "year": 2005,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "fpi": 12.323,
+    "resumeRanks": {
+      "strengthOfRecord": 5,
+      "fpi": 21,
+      "averageWinProbability": 6,
+      "strengthOfSchedule": 60,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 9
+    },
+    "efficiencies": {
+      "overall": 76.974,
+      "offense": 76.247,
+      "defense": 69.425,
+      "specialTeams": 46.7
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "fpi": 10.65,
+    "resumeRanks": {
+      "strengthOfRecord": 57,
+      "fpi": 28,
+      "averageWinProbability": 19,
+      "strengthOfSchedule": 91,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 34
+    },
+    "efficiencies": {
+      "overall": 68.41,
+      "offense": 67.327,
+      "defense": 52.231,
+      "specialTeams": 77.552
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "fpi": -9.928,
+    "resumeRanks": {
+      "strengthOfRecord": 93,
+      "fpi": 96,
+      "averageWinProbability": 57,
+      "strengthOfSchedule": 118,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 97
+    },
+    "efficiencies": {
+      "overall": 31.685,
+      "offense": 54.028,
+      "defense": 20.67,
+      "specialTeams": 44.647
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "fpi": -17.899,
+    "resumeRanks": {
+      "strengthOfRecord": 105,
+      "fpi": 113,
+      "averageWinProbability": 107,
+      "strengthOfSchedule": 89,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 105
+    },
+    "efficiencies": {
+      "overall": 19.159,
+      "offense": 24.991,
+      "defense": 26.456,
+      "specialTeams": 37.088
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Alabama",
+    "conference": "SEC",
+    "fpi": 14.764,
+    "resumeRanks": {
+      "strengthOfRecord": 10,
+      "fpi": 16,
+      "averageWinProbability": 15,
+      "strengthOfSchedule": 49,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 18
+    },
+    "efficiencies": {
+      "overall": 71.044,
+      "offense": 54.36,
+      "defense": 81.119,
+      "specialTeams": 45.744
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "fpi": -5.214,
+    "resumeRanks": {
+      "strengthOfRecord": 91,
+      "fpi": 82,
+      "averageWinProbability": 104,
+      "strengthOfSchedule": 51,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 90
+    },
+    "efficiencies": {
+      "overall": 28.669,
+      "offense": 23.242,
+      "defense": 47.748,
+      "specialTeams": 31.011
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "fpi": -9.849,
+    "resumeRanks": {
+      "strengthOfRecord": 95,
+      "fpi": 94,
+      "averageWinProbability": 84,
+      "strengthOfSchedule": 80,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 86
+    },
+    "efficiencies": {
+      "overall": 34.377,
+      "offense": 36.088,
+      "defense": 38.96,
+      "specialTeams": 48.279
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "fpi": -11.498,
+    "resumeRanks": {
+      "strengthOfRecord": 92,
+      "fpi": 99,
+      "averageWinProbability": 112,
+      "strengthOfSchedule": 9,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 95
+    },
+    "efficiencies": {
+      "overall": 26.658,
+      "offense": 46.494,
+      "defense": 21.003,
+      "specialTeams": 32.566
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "fpi": -2.383,
+    "resumeRanks": {
+      "strengthOfRecord": 96,
+      "fpi": 74,
+      "averageWinProbability": 76,
+      "strengthOfSchedule": 77,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 84
+    },
+    "efficiencies": {
+      "overall": 40.153,
+      "offense": 63.771,
+      "defense": 25.063,
+      "specialTeams": 35.357
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "fpi": -8.552,
+    "resumeRanks": {
+      "strengthOfRecord": 83,
+      "fpi": 93,
+      "averageWinProbability": 74,
+      "strengthOfSchedule": 99,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 96
+    },
+    "efficiencies": {
+      "overall": 38.49,
+      "offense": 31.832,
+      "defense": 54.222,
+      "specialTeams": 41.285
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "fpi": -12.849,
+    "resumeRanks": {
+      "strengthOfRecord": 101,
+      "fpi": 101,
+      "averageWinProbability": 89,
+      "strengthOfSchedule": 119,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 25.389,
+      "offense": 32.165,
+      "defense": 32.262,
+      "specialTeams": 32.631
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "fpi": -15.149,
+    "resumeRanks": {
+      "strengthOfRecord": 90,
+      "fpi": 107,
+      "averageWinProbability": 105,
+      "strengthOfSchedule": 70,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 98
+    },
+    "efficiencies": {
+      "overall": 24.162,
+      "offense": 25.865,
+      "defense": 26.474,
+      "specialTeams": 64.526
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "fpi": -23.065,
+    "resumeRanks": {
+      "strengthOfRecord": 116,
+      "fpi": 118,
+      "averageWinProbability": 117,
+      "strengthOfSchedule": 103,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 10.526,
+      "offense": 10.662,
+      "defense": 31.672,
+      "specialTeams": 18.366
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "fpi": -5.595,
+    "resumeRanks": {
+      "strengthOfRecord": 61,
+      "fpi": 83,
+      "averageWinProbability": 65,
+      "strengthOfSchedule": 86,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 85
+    },
+    "efficiencies": {
+      "overall": 42.212,
+      "offense": 49.581,
+      "defense": 32.512,
+      "specialTeams": 65.862
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "fpi": -7.441,
+    "resumeRanks": {
+      "strengthOfRecord": 77,
+      "fpi": 89,
+      "averageWinProbability": 92,
+      "strengthOfSchedule": 97,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 103
+    },
+    "efficiencies": {
+      "overall": 38.621,
+      "offense": 37.678,
+      "defense": 44.605,
+      "specialTeams": 48.164
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "fpi": -10.011,
+    "resumeRanks": {
+      "strengthOfRecord": 78,
+      "fpi": 97,
+      "averageWinProbability": 106,
+      "strengthOfSchedule": 55,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 93
+    },
+    "efficiencies": {
+      "overall": 28.076,
+      "offense": 36.528,
+      "defense": 34.39,
+      "specialTeams": 28.008
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "fpi": -12.691,
+    "resumeRanks": {
+      "strengthOfRecord": 103,
+      "fpi": 100,
+      "averageWinProbability": 78,
+      "strengthOfSchedule": 100,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 92
+    },
+    "efficiencies": {
+      "overall": 35.418,
+      "offense": 41.978,
+      "defense": 31.814,
+      "specialTeams": 59.76
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "fpi": -19.686,
+    "resumeRanks": {
+      "strengthOfRecord": 113,
+      "fpi": 115,
+      "averageWinProbability": 109,
+      "strengthOfSchedule": 96,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 108
+    },
+    "efficiencies": {
+      "overall": 18.268,
+      "offense": 19.703,
+      "defense": 32.001,
+      "specialTeams": 30.396
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "fpi": -15.12,
+    "resumeRanks": {
+      "strengthOfRecord": 102,
+      "fpi": 106,
+      "averageWinProbability": 88,
+      "strengthOfSchedule": 117,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 104
+    },
+    "efficiencies": {
+      "overall": 22.989,
+      "offense": 30.271,
+      "defense": 28.666,
+      "specialTeams": 36.538
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "fpi": 14.454,
+    "resumeRanks": {
+      "strengthOfRecord": 31,
+      "fpi": 17,
+      "averageWinProbability": 26,
+      "strengthOfSchedule": 36,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 17
+    },
+    "efficiencies": {
+      "overall": 73.963,
+      "offense": 71.986,
+      "defense": 61.477,
+      "specialTeams": 70.469
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "fpi": 4.958,
+    "resumeRanks": {
+      "strengthOfRecord": 36,
+      "fpi": 44,
+      "averageWinProbability": 64,
+      "strengthOfSchedule": 53,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 55
+    },
+    "efficiencies": {
+      "overall": 53.521,
+      "offense": 29.273,
+      "defense": 73.724,
+      "specialTeams": 54.82
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "fpi": -0.709,
+    "resumeRanks": {
+      "strengthOfRecord": 59,
+      "fpi": 67,
+      "averageWinProbability": 83,
+      "strengthOfSchedule": 57,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 68
+    },
+    "efficiencies": {
+      "overall": 50.909,
+      "offense": 42.864,
+      "defense": 60.839,
+      "specialTeams": 43.876
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "fpi": -17.635,
+    "resumeRanks": {
+      "strengthOfRecord": 117,
+      "fpi": 112,
+      "averageWinProbability": 116,
+      "strengthOfSchedule": 108,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 15.003,
+      "offense": 9.623,
+      "defense": 36.355,
+      "specialTeams": 41.048
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "fpi": -3.443,
+    "resumeRanks": {
+      "strengthOfRecord": 54,
+      "fpi": 77,
+      "averageWinProbability": 27,
+      "strengthOfSchedule": 95,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 42
+    },
+    "efficiencies": {
+      "overall": 51.906,
+      "offense": 48.416,
+      "defense": 54.164,
+      "specialTeams": 51.641
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Miami",
+    "conference": "ACC",
+    "fpi": 16.729,
+    "resumeRanks": {
+      "strengthOfRecord": 16,
+      "fpi": 11,
+      "averageWinProbability": 16,
+      "strengthOfSchedule": 45,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 15
+    },
+    "efficiencies": {
+      "overall": 79.606,
+      "offense": 62.431,
+      "defense": 79.511,
+      "specialTeams": 71.468
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "fpi": -6.562,
+    "resumeRanks": {
+      "strengthOfRecord": 104,
+      "fpi": 86,
+      "averageWinProbability": 61,
+      "strengthOfSchedule": 112,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 88
+    },
+    "efficiencies": {
+      "overall": 34.107,
+      "offense": 36.109,
+      "defense": 40.021,
+      "specialTeams": 44.017
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "fpi": -1.481,
+    "resumeRanks": {
+      "strengthOfRecord": 55,
+      "fpi": 70,
+      "averageWinProbability": 33,
+      "strengthOfSchedule": 98,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 67
+    },
+    "efficiencies": {
+      "overall": 46.642,
+      "offense": 68.836,
+      "defense": 27.692,
+      "specialTeams": 48.076
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "fpi": -15.477,
+    "resumeRanks": {
+      "strengthOfRecord": 99,
+      "fpi": 109,
+      "averageWinProbability": 85,
+      "strengthOfSchedule": 110,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 99
+    },
+    "efficiencies": {
+      "overall": 24.925,
+      "offense": 36.881,
+      "defense": 26.363,
+      "specialTeams": 33.427
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "fpi": -16.177,
+    "resumeRanks": {
+      "strengthOfRecord": 110,
+      "fpi": 110,
+      "averageWinProbability": 111,
+      "strengthOfSchedule": 81,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 21.766,
+      "offense": 22.755,
+      "defense": 29.201,
+      "specialTeams": 52.59
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "fpi": -5.868,
+    "resumeRanks": {
+      "strengthOfRecord": 41,
+      "fpi": 84,
+      "averageWinProbability": 38,
+      "strengthOfSchedule": 109,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 78
+    },
+    "efficiencies": {
+      "overall": 40.144,
+      "offense": 50.9,
+      "defense": 35.607,
+      "specialTeams": 40.084
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "fpi": 1.121,
+    "resumeRanks": {
+      "strengthOfRecord": 74,
+      "fpi": 60,
+      "averageWinProbability": 35,
+      "strengthOfSchedule": 102,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 65
+    },
+    "efficiencies": {
+      "overall": 55.153,
+      "offense": 68.833,
+      "defense": 41.847,
+      "specialTeams": 45.124
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "fpi": 16.6,
+    "resumeRanks": {
+      "strengthOfRecord": 6,
+      "fpi": 13,
+      "averageWinProbability": 18,
+      "strengthOfSchedule": 10,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 7
+    },
+    "efficiencies": {
+      "overall": 77.796,
+      "offense": 70.2,
+      "defense": 74.979,
+      "specialTeams": 55.094
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "fpi": 9.88,
+    "resumeRanks": {
+      "strengthOfRecord": 45,
+      "fpi": 29,
+      "averageWinProbability": 75,
+      "strengthOfSchedule": 18,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 51
+    },
+    "efficiencies": {
+      "overall": 58.128,
+      "offense": 52.011,
+      "defense": 57.705,
+      "specialTeams": 60.049
+    }
+  },
+  {
+    "year": 2005,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "fpi": -8.142,
+    "resumeRanks": {
+      "strengthOfRecord": 87,
+      "fpi": 91,
+      "averageWinProbability": 66,
+      "strengthOfSchedule": 85,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 81
+    },
+    "efficiencies": {
+      "overall": 37.979,
+      "offense": 26.857,
+      "defense": 50.416,
+      "specialTeams": 58.75
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "fpi": 0.408,
+    "resumeRanks": {
+      "strengthOfRecord": 64,
+      "fpi": 64,
+      "averageWinProbability": 21,
+      "strengthOfSchedule": 90,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 37
+    },
+    "efficiencies": {
+      "overall": 53.61,
+      "offense": 49.832,
+      "defense": 46.012,
+      "specialTeams": 77.284
+    }
+  },
+  {
+    "year": 2005,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "fpi": 4.413,
+    "resumeRanks": {
+      "strengthOfRecord": 32,
+      "fpi": 49,
+      "averageWinProbability": 45,
+      "strengthOfSchedule": 28,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 32
+    },
+    "efficiencies": {
+      "overall": 60.396,
+      "offense": 53.672,
+      "defense": 64.879,
+      "specialTeams": 41.293
+    }
+  },
+  {
+    "year": 2005,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "fpi": 8.956,
+    "resumeRanks": {
+      "strengthOfRecord": 11,
+      "fpi": 34,
+      "averageWinProbability": 17,
+      "strengthOfSchedule": 71,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 27
+    },
+    "efficiencies": {
+      "overall": 69.019,
+      "offense": 51.675,
+      "defense": 74.965,
+      "specialTeams": 61.329
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "fpi": 9.056,
+    "resumeRanks": {
+      "strengthOfRecord": 48,
+      "fpi": 33,
+      "averageWinProbability": 69,
+      "strengthOfSchedule": 24,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 45
+    },
+    "efficiencies": {
+      "overall": 56.159,
+      "offense": 35.14,
+      "defense": 77.736,
+      "specialTeams": 36.426
+    }
+  },
+  {
+    "year": 2005,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "fpi": -3.715,
+    "resumeRanks": {
+      "strengthOfRecord": 65,
+      "fpi": 79,
+      "averageWinProbability": 41,
+      "strengthOfSchedule": 113,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 87
+    },
+    "efficiencies": {
+      "overall": 45.406,
+      "offense": 47.748,
+      "defense": 45.759,
+      "specialTeams": 47.256
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "fpi": 16.699,
+    "resumeRanks": {
+      "strengthOfRecord": 20,
+      "fpi": 12,
+      "averageWinProbability": 13,
+      "strengthOfSchedule": 66,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 20
+    },
+    "efficiencies": {
+      "overall": 73.409,
+      "offense": 77.767,
+      "defense": 58.893,
+      "specialTeams": 47.531
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "fpi": 1.76,
+    "resumeRanks": {
+      "strengthOfRecord": 47,
+      "fpi": 58,
+      "averageWinProbability": 12,
+      "strengthOfSchedule": 115,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 49
+    },
+    "efficiencies": {
+      "overall": 57.746,
+      "offense": 60.126,
+      "defense": 51.534,
+      "specialTeams": 52.316
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "fpi": -13.599,
+    "resumeRanks": {
+      "strengthOfRecord": 106,
+      "fpi": 103,
+      "averageWinProbability": 97,
+      "strengthOfSchedule": 116,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 23.72,
+      "offense": 11.987,
+      "defense": 48.538,
+      "specialTeams": 54.026
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "fpi": -12.942,
+    "resumeRanks": {
+      "strengthOfRecord": 114,
+      "fpi": 102,
+      "averageWinProbability": 103,
+      "strengthOfSchedule": 104,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 21.18,
+      "offense": 24.512,
+      "defense": 29.261,
+      "specialTeams": 42.551
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "fpi": -9.917,
+    "resumeRanks": {
+      "strengthOfRecord": 68,
+      "fpi": 95,
+      "averageWinProbability": 49,
+      "strengthOfSchedule": 111,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 82
+    },
+    "efficiencies": {
+      "overall": 36.709,
+      "offense": 44.586,
+      "defense": 30.543,
+      "specialTeams": 63.31
+    }
+  },
+  {
+    "year": 2005,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "fpi": -1.708,
+    "resumeRanks": {
+      "strengthOfRecord": 89,
+      "fpi": 71,
+      "averageWinProbability": 82,
+      "strengthOfSchedule": 68,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 77
+    },
+    "efficiencies": {
+      "overall": 42.624,
+      "offense": 32.615,
+      "defense": 55.265,
+      "specialTeams": 49.287
+    }
+  }
+]

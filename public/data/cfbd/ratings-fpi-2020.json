@@ -1,0 +1,2542 @@
+[
+  {
+    "year": 2020,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "fpi": 19.341,
+    "resumeRanks": {
+      "strengthOfRecord": 4,
+      "fpi": 7,
+      "averageWinProbability": 21,
+      "strengthOfSchedule": 8,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 12
+    },
+    "efficiencies": {
+      "overall": 77.26,
+      "offense": 77.743,
+      "defense": 69.211,
+      "specialTeams": 41.126
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Georgia",
+    "conference": "SEC",
+    "fpi": 22.215,
+    "resumeRanks": {
+      "strengthOfRecord": 7,
+      "fpi": 5,
+      "averageWinProbability": 34,
+      "strengthOfSchedule": 11,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 13
+    },
+    "efficiencies": {
+      "overall": 81.483,
+      "offense": 73.941,
+      "defense": 76.39,
+      "specialTeams": 61.455
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Florida",
+    "conference": "SEC",
+    "fpi": 17.399,
+    "resumeRanks": {
+      "strengthOfRecord": 17,
+      "fpi": 11,
+      "averageWinProbability": 28,
+      "strengthOfSchedule": 1,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 9
+    },
+    "efficiencies": {
+      "overall": 78.288,
+      "offense": 85.615,
+      "defense": 54.9,
+      "specialTeams": 58.304
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "fpi": 3.026,
+    "resumeRanks": {
+      "strengthOfRecord": 75,
+      "fpi": 53,
+      "averageWinProbability": 96,
+      "strengthOfSchedule": 9,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 60
+    },
+    "efficiencies": {
+      "overall": 51.398,
+      "offense": 41.279,
+      "defense": 58.72,
+      "specialTeams": 54.395
+    }
+  },
+  {
+    "year": 2020,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "fpi": -1.709,
+    "resumeRanks": {
+      "strengthOfRecord": 93,
+      "fpi": 79,
+      "averageWinProbability": 118,
+      "strengthOfSchedule": 26,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 97
+    },
+    "efficiencies": {
+      "overall": 36.393,
+      "offense": 48.394,
+      "defense": 35.288,
+      "specialTeams": 34.183
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "fpi": 4.791,
+    "resumeRanks": {
+      "strengthOfRecord": 46,
+      "fpi": 45,
+      "averageWinProbability": 56,
+      "strengthOfSchedule": 2,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 27
+    },
+    "efficiencies": {
+      "overall": 58.551,
+      "offense": 46.105,
+      "defense": 64.297,
+      "specialTeams": 57.691
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "fpi": -12.73,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 112,
+      "averageWinProbability": 123,
+      "strengthOfSchedule": 43,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 119
+    },
+    "efficiencies": {
+      "overall": 20.564,
+      "offense": 32.168,
+      "defense": 24.613,
+      "specialTeams": 28.463
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Massachusetts",
+    "conference": "FBS Independents",
+    "fpi": -33.112,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 127,
+      "averageWinProbability": 127,
+      "strengthOfSchedule": 113,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 121
+    },
+    "efficiencies": {
+      "overall": 4.624,
+      "offense": 7.203,
+      "defense": 11.318,
+      "specialTeams": 41.231
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "fpi": 14.378,
+    "resumeRanks": {
+      "strengthOfRecord": 15,
+      "fpi": 15,
+      "averageWinProbability": 20,
+      "strengthOfSchedule": 18,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 10
+    },
+    "efficiencies": {
+      "overall": 72.496,
+      "offense": 56.337,
+      "defense": 77.532,
+      "specialTeams": 58.559
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "fpi": 2.859,
+    "resumeRanks": {
+      "strengthOfRecord": 58,
+      "fpi": 55,
+      "averageWinProbability": 72,
+      "strengthOfSchedule": 16,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 42
+    },
+    "efficiencies": {
+      "overall": 53.212,
+      "offense": 46.685,
+      "defense": 46.237,
+      "specialTeams": 80.959
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "fpi": 4.653,
+    "resumeRanks": {
+      "strengthOfRecord": 85,
+      "fpi": 47,
+      "averageWinProbability": 106,
+      "strengthOfSchedule": 14,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 78
+    },
+    "efficiencies": {
+      "overall": 48.431,
+      "offense": 34.232,
+      "defense": 66.715,
+      "specialTeams": 41.117
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "fpi": 17.925,
+    "resumeRanks": {
+      "strengthOfRecord": 8,
+      "fpi": 10,
+      "averageWinProbability": 32,
+      "strengthOfSchedule": 7,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 16
+    },
+    "efficiencies": {
+      "overall": 78.265,
+      "offense": 75.405,
+      "defense": 74.422,
+      "specialTeams": 41.359
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "fpi": 0.357,
+    "resumeRanks": {
+      "strengthOfRecord": 66,
+      "fpi": 70,
+      "averageWinProbability": 98,
+      "strengthOfSchedule": 23,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 77
+    },
+    "efficiencies": {
+      "overall": 41.5,
+      "offense": 38.494,
+      "defense": 49.894,
+      "specialTeams": 42.234
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "fpi": -15.173,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 117,
+      "averageWinProbability": 124,
+      "strengthOfSchedule": 27,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 118
+    },
+    "efficiencies": {
+      "overall": 16.429,
+      "offense": 12.462,
+      "defense": 40.416,
+      "specialTeams": 26.078
+    }
+  },
+  {
+    "year": 2020,
+    "team": "TCU",
+    "conference": "Big 12",
+    "fpi": 12.231,
+    "resumeRanks": {
+      "strengthOfRecord": 27,
+      "fpi": 21,
+      "averageWinProbability": 41,
+      "strengthOfSchedule": 29,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 29
+    },
+    "efficiencies": {
+      "overall": 66.819,
+      "offense": 52.498,
+      "defense": 73.397,
+      "specialTeams": 56.04
+    }
+  },
+  {
+    "year": 2020,
+    "team": "West Virginia",
+    "conference": "Big 12",
+    "fpi": 7.429,
+    "resumeRanks": {
+      "strengthOfRecord": 33,
+      "fpi": 31,
+      "averageWinProbability": 55,
+      "strengthOfSchedule": 35,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 47
+    },
+    "efficiencies": {
+      "overall": 59.883,
+      "offense": 47.709,
+      "defense": 69.491,
+      "specialTeams": 50.565
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "fpi": -22.75,
+    "resumeRanks": {
+      "strengthOfRecord": 112,
+      "fpi": 123,
+      "averageWinProbability": 94,
+      "strengthOfSchedule": 81,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 115
+    },
+    "efficiencies": {
+      "overall": 20.172,
+      "offense": 22.769,
+      "defense": 28.837,
+      "specialTeams": 46.105
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "fpi": -6.685,
+    "resumeRanks": {
+      "strengthOfRecord": 96,
+      "fpi": 96,
+      "averageWinProbability": 44,
+      "strengthOfSchedule": 122,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 71
+    },
+    "efficiencies": {
+      "overall": 35.58,
+      "offense": 21.65,
+      "defense": 59.895,
+      "specialTeams": 48.315
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Oregon",
+    "conference": "Pac-12",
+    "fpi": 14.319,
+    "resumeRanks": {
+      "strengthOfRecord": 32,
+      "fpi": 17,
+      "averageWinProbability": 45,
+      "strengthOfSchedule": 52,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 19
+    },
+    "efficiencies": {
+      "overall": 69.615,
+      "offense": 71.098,
+      "defense": 62.416,
+      "specialTeams": 47.394
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Stanford",
+    "conference": "Pac-12",
+    "fpi": 6.808,
+    "resumeRanks": {
+      "strengthOfRecord": 22,
+      "fpi": 34,
+      "averageWinProbability": 79,
+      "strengthOfSchedule": 61,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 38
+    },
+    "efficiencies": {
+      "overall": 60.191,
+      "offense": 73.444,
+      "defense": 36.349,
+      "specialTeams": 65.279
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Washington",
+    "conference": "Pac-12",
+    "fpi": 7.332,
+    "resumeRanks": {
+      "strengthOfRecord": 29,
+      "fpi": 33,
+      "averageWinProbability": 46,
+      "strengthOfSchedule": 110,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 55
+    },
+    "efficiencies": {
+      "overall": 51.175,
+      "offense": 58.633,
+      "defense": 54.47,
+      "specialTeams": 14.282
+    }
+  },
+  {
+    "year": 2020,
+    "team": "California",
+    "conference": "Pac-12",
+    "fpi": 3.505,
+    "resumeRanks": {
+      "strengthOfRecord": 67,
+      "fpi": 51,
+      "averageWinProbability": 81,
+      "strengthOfSchedule": 88,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 45
+    },
+    "efficiencies": {
+      "overall": 45.796,
+      "offense": 35.807,
+      "defense": 69.459,
+      "specialTeams": 24.875
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Oregon State",
+    "conference": "Pac-12",
+    "fpi": 1.221,
+    "resumeRanks": {
+      "strengthOfRecord": 78,
+      "fpi": 64,
+      "averageWinProbability": 101,
+      "strengthOfSchedule": 59,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 86
+    },
+    "efficiencies": {
+      "overall": 42.227,
+      "offense": 58.419,
+      "defense": 29.091,
+      "specialTeams": 53.734
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Washington State",
+    "conference": "Pac-12",
+    "fpi": 0.754,
+    "resumeRanks": {
+      "strengthOfRecord": 50,
+      "fpi": 68,
+      "averageWinProbability": 75,
+      "strengthOfSchedule": 71,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 20
+    },
+    "efficiencies": {
+      "overall": 51.202,
+      "offense": 61.699,
+      "defense": 35.343,
+      "specialTeams": 68.423
+    }
+  },
+  {
+    "year": 2020,
+    "team": "USC",
+    "conference": "Pac-12",
+    "fpi": 14.267,
+    "resumeRanks": {
+      "strengthOfRecord": 11,
+      "fpi": 18,
+      "averageWinProbability": 60,
+      "strengthOfSchedule": 63,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 30
+    },
+    "efficiencies": {
+      "overall": 66.832,
+      "offense": 59.003,
+      "defense": 68.515,
+      "specialTeams": 50.996
+    }
+  },
+  {
+    "year": 2020,
+    "team": "BYU",
+    "conference": "FBS Independents",
+    "fpi": 16.208,
+    "resumeRanks": {
+      "strengthOfRecord": 14,
+      "fpi": 13,
+      "averageWinProbability": 3,
+      "strengthOfSchedule": 69,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 6
+    },
+    "efficiencies": {
+      "overall": 83.801,
+      "offense": 87.025,
+      "defense": 66.767,
+      "specialTeams": 52.766
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Liberty",
+    "conference": "FBS Independents",
+    "fpi": -1.234,
+    "resumeRanks": {
+      "strengthOfRecord": 21,
+      "fpi": 76,
+      "averageWinProbability": 5,
+      "strengthOfSchedule": 95,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 22
+    },
+    "efficiencies": {
+      "overall": 57.359,
+      "offense": 67.886,
+      "defense": 43.553,
+      "specialTeams": 44.072
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Auburn",
+    "conference": "SEC",
+    "fpi": 13.276,
+    "resumeRanks": {
+      "strengthOfRecord": 30,
+      "fpi": 19,
+      "averageWinProbability": 67,
+      "strengthOfSchedule": 5,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 40
+    },
+    "efficiencies": {
+      "overall": 61.563,
+      "offense": 59.569,
+      "defense": 52.827,
+      "specialTeams": 70.271
+    }
+  },
+  {
+    "year": 2020,
+    "team": "LSU",
+    "conference": "SEC",
+    "fpi": 9.165,
+    "resumeRanks": {
+      "strengthOfRecord": 36,
+      "fpi": 28,
+      "averageWinProbability": 68,
+      "strengthOfSchedule": 10,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 32
+    },
+    "efficiencies": {
+      "overall": 59.245,
+      "offense": 51.723,
+      "defense": 59.608,
+      "specialTeams": 61.452
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "fpi": -4.418,
+    "resumeRanks": {
+      "strengthOfRecord": 39,
+      "fpi": 89,
+      "averageWinProbability": 65,
+      "strengthOfSchedule": 120,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 52
+    },
+    "efficiencies": {
+      "overall": 51.321,
+      "offense": 56.801,
+      "defense": 39.888,
+      "specialTeams": 68.57
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "fpi": -3.395,
+    "resumeRanks": {
+      "strengthOfRecord": 77,
+      "fpi": 84,
+      "averageWinProbability": 10,
+      "strengthOfSchedule": 127,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 44
+    },
+    "efficiencies": {
+      "overall": 43.478,
+      "offense": 42.807,
+      "defense": 41.054,
+      "specialTeams": 67.237
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "fpi": -3.797,
+    "resumeRanks": {
+      "strengthOfRecord": 47,
+      "fpi": 87,
+      "averageWinProbability": 24,
+      "strengthOfSchedule": 124,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 51
+    },
+    "efficiencies": {
+      "overall": 43.873,
+      "offense": 78.87,
+      "defense": 13.908,
+      "specialTeams": 26.908
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "fpi": -25.449,
+    "resumeRanks": {
+      "strengthOfRecord": 113,
+      "fpi": 125,
+      "averageWinProbability": 120,
+      "strengthOfSchedule": 103,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 117
+    },
+    "efficiencies": {
+      "overall": 8.202,
+      "offense": 13.422,
+      "defense": 11.205,
+      "specialTeams": 55.321
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "fpi": -2.178,
+    "resumeRanks": {
+      "strengthOfRecord": 69,
+      "fpi": 80,
+      "averageWinProbability": 33,
+      "strengthOfSchedule": 123,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 64
+    },
+    "efficiencies": {
+      "overall": 48.465,
+      "offense": 50.396,
+      "defense": 54.642,
+      "specialTeams": 29.018
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UCLA",
+    "conference": "Pac-12",
+    "fpi": 8.457,
+    "resumeRanks": {
+      "strengthOfRecord": 51,
+      "fpi": 29,
+      "averageWinProbability": 48,
+      "strengthOfSchedule": 51,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 26
+    },
+    "efficiencies": {
+      "overall": 63.61,
+      "offense": 64.421,
+      "defense": 58.16,
+      "specialTeams": 47.059
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Utah",
+    "conference": "Pac-12",
+    "fpi": 9.98,
+    "resumeRanks": {
+      "strengthOfRecord": 35,
+      "fpi": 27,
+      "averageWinProbability": 47,
+      "strengthOfSchedule": 92,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 31
+    },
+    "efficiencies": {
+      "overall": 59.488,
+      "offense": 39.514,
+      "defense": 75.459,
+      "specialTeams": 50.32
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Arizona State",
+    "conference": "Pac-12",
+    "fpi": 11.954,
+    "resumeRanks": {
+      "strengthOfRecord": 41,
+      "fpi": 23,
+      "averageWinProbability": 19,
+      "strengthOfSchedule": 89,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 14
+    },
+    "efficiencies": {
+      "overall": 84.774,
+      "offense": 84.071,
+      "defense": 74.915,
+      "specialTeams": 49.102
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Arizona",
+    "conference": "Pac-12",
+    "fpi": -7.146,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 98,
+      "averageWinProbability": 121,
+      "strengthOfSchedule": 77,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 91
+    },
+    "efficiencies": {
+      "overall": 26.037,
+      "offense": 28.131,
+      "defense": 31.792,
+      "specialTeams": 53.645
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Colorado",
+    "conference": "Pac-12",
+    "fpi": 1.768,
+    "resumeRanks": {
+      "strengthOfRecord": 25,
+      "fpi": 59,
+      "averageWinProbability": 38,
+      "strengthOfSchedule": 66,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 21
+    },
+    "efficiencies": {
+      "overall": 60.133,
+      "offense": 52.738,
+      "defense": 63.405,
+      "specialTeams": 52.142
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Middle Tennessee",
+    "conference": "Conference USA",
+    "fpi": -17.91,
+    "resumeRanks": {
+      "strengthOfRecord": 108,
+      "fpi": 119,
+      "averageWinProbability": 102,
+      "strengthOfSchedule": 102,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 120
+    },
+    "efficiencies": {
+      "overall": 23.277,
+      "offense": 33.447,
+      "defense": 26.002,
+      "specialTeams": 36.712
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Florida Atlantic",
+    "conference": "Conference USA",
+    "fpi": -7.118,
+    "resumeRanks": {
+      "strengthOfRecord": 94,
+      "fpi": 97,
+      "averageWinProbability": 70,
+      "strengthOfSchedule": 108,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 106
+    },
+    "efficiencies": {
+      "overall": 30.664,
+      "offense": 19.291,
+      "defense": 51.2,
+      "specialTeams": 51.545
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Florida International",
+    "conference": "Conference USA",
+    "fpi": -18.915,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 122,
+      "averageWinProbability": 103,
+      "strengthOfSchedule": 126,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 114
+    },
+    "efficiencies": {
+      "overall": 13.121,
+      "offense": 9.311,
+      "defense": 22.626,
+      "specialTeams": 64.556
+    }
+  },
+  {
+    "year": 2020,
+    "team": "North Texas",
+    "conference": "Conference USA",
+    "fpi": -18.106,
+    "resumeRanks": {
+      "strengthOfRecord": 114,
+      "fpi": 120,
+      "averageWinProbability": 100,
+      "strengthOfSchedule": 107,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 124
+    },
+    "efficiencies": {
+      "overall": 14.641,
+      "offense": 35.453,
+      "defense": 10.593,
+      "specialTeams": 43.506
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UTSA",
+    "conference": "Conference USA",
+    "fpi": -8.4,
+    "resumeRanks": {
+      "strengthOfRecord": 92,
+      "fpi": 102,
+      "averageWinProbability": 66,
+      "strengthOfSchedule": 75,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 105
+    },
+    "efficiencies": {
+      "overall": 33.358,
+      "offense": 33.633,
+      "defense": 36.52,
+      "specialTeams": 59.211
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Louisiana Tech",
+    "conference": "Conference USA",
+    "fpi": -11.491,
+    "resumeRanks": {
+      "strengthOfRecord": 88,
+      "fpi": 108,
+      "averageWinProbability": 92,
+      "strengthOfSchedule": 64,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 102
+    },
+    "efficiencies": {
+      "overall": 25.108,
+      "offense": 20.851,
+      "defense": 37.316,
+      "specialTeams": 55.715
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Western Kentucky",
+    "conference": "Conference USA",
+    "fpi": -10.017,
+    "resumeRanks": {
+      "strengthOfRecord": 105,
+      "fpi": 106,
+      "averageWinProbability": 99,
+      "strengthOfSchedule": 62,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 25.54,
+      "offense": 17.56,
+      "defense": 42.811,
+      "specialTeams": 51.81
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Temple",
+    "conference": "American Athletic",
+    "fpi": -13.031,
+    "resumeRanks": {
+      "strengthOfRecord": 111,
+      "fpi": 113,
+      "averageWinProbability": 119,
+      "strengthOfSchedule": 85,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 112
+    },
+    "efficiencies": {
+      "overall": 20.39,
+      "offense": 22.57,
+      "defense": 34.875,
+      "specialTeams": 28.951
+    }
+  },
+  {
+    "year": 2020,
+    "team": "South Florida",
+    "conference": "American Athletic",
+    "fpi": -11.673,
+    "resumeRanks": {
+      "strengthOfRecord": 115,
+      "fpi": 109,
+      "averageWinProbability": 112,
+      "strengthOfSchedule": 45,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 104
+    },
+    "efficiencies": {
+      "overall": 24.468,
+      "offense": 24.265,
+      "defense": 31.59,
+      "specialTeams": 56.602
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Cincinnati",
+    "conference": "American Athletic",
+    "fpi": 14.78,
+    "resumeRanks": {
+      "strengthOfRecord": 10,
+      "fpi": 14,
+      "averageWinProbability": 4,
+      "strengthOfSchedule": 54,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 5
+    },
+    "efficiencies": {
+      "overall": 76.66,
+      "offense": 65.698,
+      "defense": 76.543,
+      "specialTeams": 54.757
+    }
+  },
+  {
+    "year": 2020,
+    "team": "East Carolina",
+    "conference": "American Athletic",
+    "fpi": -5.59,
+    "resumeRanks": {
+      "strengthOfRecord": 99,
+      "fpi": 93,
+      "averageWinProbability": 76,
+      "strengthOfSchedule": 73,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 88
+    },
+    "efficiencies": {
+      "overall": 41.408,
+      "offense": 36.704,
+      "defense": 47.009,
+      "specialTeams": 57.194
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UCF",
+    "conference": "American Athletic",
+    "fpi": 12.027,
+    "resumeRanks": {
+      "strengthOfRecord": 56,
+      "fpi": 22,
+      "averageWinProbability": 12,
+      "strengthOfSchedule": 68,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 18
+    },
+    "efficiencies": {
+      "overall": 65.124,
+      "offense": 76.772,
+      "defense": 43.304,
+      "specialTeams": 50.744
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Houston",
+    "conference": "American Athletic",
+    "fpi": 1.12,
+    "resumeRanks": {
+      "strengthOfRecord": 86,
+      "fpi": 65,
+      "averageWinProbability": 93,
+      "strengthOfSchedule": 65,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 89
+    },
+    "efficiencies": {
+      "overall": 43.811,
+      "offense": 39.657,
+      "defense": 48.595,
+      "specialTeams": 56.452
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Navy",
+    "conference": "American Athletic",
+    "fpi": -9.06,
+    "resumeRanks": {
+      "strengthOfRecord": 103,
+      "fpi": 105,
+      "averageWinProbability": 105,
+      "strengthOfSchedule": 76,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 109
+    },
+    "efficiencies": {
+      "overall": 24.711,
+      "offense": 20.177,
+      "defense": 44.06,
+      "specialTeams": 32.566
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Memphis",
+    "conference": "American Athletic",
+    "fpi": 0.566,
+    "resumeRanks": {
+      "strengthOfRecord": 38,
+      "fpi": 69,
+      "averageWinProbability": 61,
+      "strengthOfSchedule": 70,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 92
+    },
+    "efficiencies": {
+      "overall": 43.226,
+      "offense": 43.997,
+      "defense": 44.254,
+      "specialTeams": 53.103
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Tulsa",
+    "conference": "American Athletic",
+    "fpi": 6.357,
+    "resumeRanks": {
+      "strengthOfRecord": 28,
+      "fpi": 37,
+      "averageWinProbability": 95,
+      "strengthOfSchedule": 49,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 84
+    },
+    "efficiencies": {
+      "overall": 60.192,
+      "offense": 40.201,
+      "defense": 76.47,
+      "specialTeams": 42.412
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Tulane",
+    "conference": "American Athletic",
+    "fpi": 1.283,
+    "resumeRanks": {
+      "strengthOfRecord": 91,
+      "fpi": 63,
+      "averageWinProbability": 43,
+      "strengthOfSchedule": 72,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 79
+    },
+    "efficiencies": {
+      "overall": 51.807,
+      "offense": 47.612,
+      "defense": 49.02,
+      "specialTeams": 68.513
+    }
+  },
+  {
+    "year": 2020,
+    "team": "SMU",
+    "conference": "American Athletic",
+    "fpi": 0.885,
+    "resumeRanks": {
+      "strengthOfRecord": 48,
+      "fpi": 67,
+      "averageWinProbability": 35,
+      "strengthOfSchedule": 83,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 59
+    },
+    "efficiencies": {
+      "overall": 55.085,
+      "offense": 64.857,
+      "defense": 43.278,
+      "specialTeams": 47.805
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Charlotte",
+    "conference": "Conference USA",
+    "fpi": -12.58,
+    "resumeRanks": {
+      "strengthOfRecord": 104,
+      "fpi": 111,
+      "averageWinProbability": 87,
+      "strengthOfSchedule": 114,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 99
+    },
+    "efficiencies": {
+      "overall": 29.365,
+      "offense": 39.834,
+      "defense": 25.044,
+      "specialTeams": 56.323
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "fpi": 1.511,
+    "resumeRanks": {
+      "strengthOfRecord": 61,
+      "fpi": 61,
+      "averageWinProbability": 15,
+      "strengthOfSchedule": 87,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 34
+    },
+    "efficiencies": {
+      "overall": 55.761,
+      "offense": 40.299,
+      "defense": 65.693,
+      "specialTeams": 60.393
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "fpi": 6.427,
+    "resumeRanks": {
+      "strengthOfRecord": 12,
+      "fpi": 36,
+      "averageWinProbability": 37,
+      "strengthOfSchedule": 58,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 54
+    },
+    "efficiencies": {
+      "overall": 64.405,
+      "offense": 62.155,
+      "defense": 57.409,
+      "specialTeams": 62.843
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "fpi": -8.051,
+    "resumeRanks": {
+      "strengthOfRecord": 106,
+      "fpi": 101,
+      "averageWinProbability": 89,
+      "strengthOfSchedule": 74,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 100
+    },
+    "efficiencies": {
+      "overall": 33.44,
+      "offense": 53.44,
+      "defense": 26.862,
+      "specialTeams": 28.52
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "fpi": -25.252,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 124,
+      "averageWinProbability": 125,
+      "strengthOfSchedule": 96,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 124
+    },
+    "efficiencies": {
+      "overall": 4.52,
+      "offense": 11.275,
+      "defense": 8.717,
+      "specialTeams": 32.388
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "fpi": -4.783,
+    "resumeRanks": {
+      "strengthOfRecord": 102,
+      "fpi": 92,
+      "averageWinProbability": 63,
+      "strengthOfSchedule": 67,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 96
+    },
+    "efficiencies": {
+      "overall": 38.672,
+      "offense": 31.054,
+      "defense": 48.871,
+      "specialTeams": 56.559
+    }
+  },
+  {
+    "year": 2020,
+    "team": "South Alabama",
+    "conference": "Sun Belt",
+    "fpi": -13.168,
+    "resumeRanks": {
+      "strengthOfRecord": 109,
+      "fpi": 114,
+      "averageWinProbability": 78,
+      "strengthOfSchedule": 86,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 108
+    },
+    "efficiencies": {
+      "overall": 26.644,
+      "offense": 29.514,
+      "defense": 32.119,
+      "specialTeams": 50.931
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Texas State",
+    "conference": "Sun Belt",
+    "fpi": -14.074,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 115,
+      "averageWinProbability": 108,
+      "strengthOfSchedule": 57,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 122
+    },
+    "efficiencies": {
+      "overall": 25.343,
+      "offense": 36.618,
+      "defense": 23.351,
+      "specialTeams": 54.008
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Georgia State",
+    "conference": "Sun Belt",
+    "fpi": -4.741,
+    "resumeRanks": {
+      "strengthOfRecord": 79,
+      "fpi": 91,
+      "averageWinProbability": 39,
+      "strengthOfSchedule": 94,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 82
+    },
+    "efficiencies": {
+      "overall": 50.647,
+      "offense": 45.654,
+      "defense": 54.525,
+      "specialTeams": 53.426
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Georgia Southern",
+    "conference": "Sun Belt",
+    "fpi": -3.792,
+    "resumeRanks": {
+      "strengthOfRecord": 87,
+      "fpi": 86,
+      "averageWinProbability": 26,
+      "strengthOfSchedule": 84,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 76
+    },
+    "efficiencies": {
+      "overall": 41.302,
+      "offense": 36.254,
+      "defense": 53.474,
+      "specialTeams": 38.502
+    }
+  },
+  {
+    "year": 2020,
+    "team": "App State",
+    "conference": "Sun Belt",
+    "fpi": 6.017,
+    "resumeRanks": {
+      "strengthOfRecord": 53,
+      "fpi": 39,
+      "averageWinProbability": 16,
+      "strengthOfSchedule": 91,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 58
+    },
+    "efficiencies": {
+      "overall": 58.363,
+      "offense": 54.308,
+      "defense": 61.121,
+      "specialTeams": 44.32
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Coastal Carolina",
+    "conference": "Sun Belt",
+    "fpi": 7.516,
+    "resumeRanks": {
+      "strengthOfRecord": 16,
+      "fpi": 30,
+      "averageWinProbability": 9,
+      "strengthOfSchedule": 78,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 24
+    },
+    "efficiencies": {
+      "overall": 68.293,
+      "offense": 74.758,
+      "defense": 54.828,
+      "specialTeams": 45.267
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Alabama",
+    "conference": "SEC",
+    "fpi": 35.907,
+    "resumeRanks": {
+      "strengthOfRecord": 1,
+      "fpi": 1,
+      "averageWinProbability": 1,
+      "strengthOfSchedule": 6,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 1
+    },
+    "efficiencies": {
+      "overall": 96.399,
+      "offense": 98.067,
+      "defense": 77.559,
+      "specialTeams": 57.996
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "fpi": 6.539,
+    "resumeRanks": {
+      "strengthOfRecord": 42,
+      "fpi": 35,
+      "averageWinProbability": 59,
+      "strengthOfSchedule": 17,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 37
+    },
+    "efficiencies": {
+      "overall": 58.713,
+      "offense": 84.393,
+      "defense": 26.621,
+      "specialTeams": 43.654
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "fpi": 3.146,
+    "resumeRanks": {
+      "strengthOfRecord": 70,
+      "fpi": 52,
+      "averageWinProbability": 90,
+      "strengthOfSchedule": 4,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 61
+    },
+    "efficiencies": {
+      "overall": 52.411,
+      "offense": 33.867,
+      "defense": 69.967,
+      "specialTeams": 46.452
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "fpi": 2.836,
+    "resumeRanks": {
+      "strengthOfRecord": 63,
+      "fpi": 56,
+      "averageWinProbability": 91,
+      "strengthOfSchedule": 3,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 46
+    },
+    "efficiencies": {
+      "overall": 58.768,
+      "offense": 58.374,
+      "defense": 65.394,
+      "specialTeams": 21.181
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "fpi": -2.32,
+    "resumeRanks": {
+      "strengthOfRecord": 68,
+      "fpi": 82,
+      "averageWinProbability": 42,
+      "strengthOfSchedule": 121,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 81
+    },
+    "efficiencies": {
+      "overall": 46.7,
+      "offense": 77.112,
+      "defense": 22.591,
+      "specialTeams": 45.94
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "fpi": 0.894,
+    "resumeRanks": {
+      "strengthOfRecord": 24,
+      "fpi": 66,
+      "averageWinProbability": 14,
+      "strengthOfSchedule": 98,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 35
+    },
+    "efficiencies": {
+      "overall": 59.978,
+      "offense": 56.99,
+      "defense": 55.218,
+      "specialTeams": 62.268
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "fpi": -8.471,
+    "resumeRanks": {
+      "strengthOfRecord": 98,
+      "fpi": 103,
+      "averageWinProbability": 53,
+      "strengthOfSchedule": 111,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 74
+    },
+    "efficiencies": {
+      "overall": 40.945,
+      "offense": 43.812,
+      "defense": 39.935,
+      "specialTeams": 56.652
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "fpi": -3.502,
+    "resumeRanks": {
+      "strengthOfRecord": 80,
+      "fpi": 85,
+      "averageWinProbability": 83,
+      "strengthOfSchedule": 118,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 98
+    },
+    "efficiencies": {
+      "overall": 35.638,
+      "offense": 25.603,
+      "defense": 51.685,
+      "specialTeams": 51.464
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "fpi": -12.032,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 110,
+      "averageWinProbability": 116,
+      "strengthOfSchedule": 105,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 111
+    },
+    "efficiencies": {
+      "overall": 20.614,
+      "offense": 17.949,
+      "defense": 33.451,
+      "specialTeams": 53.044
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "fpi": 2.036,
+    "resumeRanks": {
+      "strengthOfRecord": 72,
+      "fpi": 58,
+      "averageWinProbability": 13,
+      "strengthOfSchedule": 100,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 68
+    },
+    "efficiencies": {
+      "overall": 51.283,
+      "offense": 43.332,
+      "defense": 58.704,
+      "specialTeams": 48.799
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "fpi": -14.79,
+    "resumeRanks": {
+      "strengthOfRecord": 117,
+      "fpi": 116,
+      "averageWinProbability": 84,
+      "strengthOfSchedule": 119,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 124
+    },
+    "efficiencies": {
+      "overall": 17.842,
+      "offense": 30.228,
+      "defense": 18.094,
+      "specialTeams": 44.04
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "fpi": 5.744,
+    "resumeRanks": {
+      "strengthOfRecord": 31,
+      "fpi": 40,
+      "averageWinProbability": 7,
+      "strengthOfSchedule": 112,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 28
+    },
+    "efficiencies": {
+      "overall": 64.015,
+      "offense": 68.27,
+      "defense": 52.081,
+      "specialTeams": 55.513
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Florida State",
+    "conference": "ACC",
+    "fpi": -3.833,
+    "resumeRanks": {
+      "strengthOfRecord": 89,
+      "fpi": 88,
+      "averageWinProbability": 88,
+      "strengthOfSchedule": 46,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 87
+    },
+    "efficiencies": {
+      "overall": 31.225,
+      "offense": 36.633,
+      "defense": 28.576,
+      "specialTeams": 66.29
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Boston College",
+    "conference": "ACC",
+    "fpi": 2.879,
+    "resumeRanks": {
+      "strengthOfRecord": 54,
+      "fpi": 54,
+      "averageWinProbability": 62,
+      "strengthOfSchedule": 31,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 62
+    },
+    "efficiencies": {
+      "overall": 52.791,
+      "offense": 55.849,
+      "defense": 48.998,
+      "specialTeams": 48.936
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Clemson",
+    "conference": "ACC",
+    "fpi": 26.935,
+    "resumeRanks": {
+      "strengthOfRecord": 6,
+      "fpi": 3,
+      "averageWinProbability": 6,
+      "strengthOfSchedule": 20,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 4
+    },
+    "efficiencies": {
+      "overall": 88.339,
+      "offense": 82.024,
+      "defense": 86.282,
+      "specialTeams": 43.747
+    }
+  },
+  {
+    "year": 2020,
+    "team": "NC State",
+    "conference": "ACC",
+    "fpi": 1.457,
+    "resumeRanks": {
+      "strengthOfRecord": 40,
+      "fpi": 62,
+      "averageWinProbability": 58,
+      "strengthOfSchedule": 53,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 75
+    },
+    "efficiencies": {
+      "overall": 52.16,
+      "offense": 52.786,
+      "defense": 51.33,
+      "specialTeams": 48.297
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "fpi": 5.004,
+    "resumeRanks": {
+      "strengthOfRecord": 65,
+      "fpi": 43,
+      "averageWinProbability": 50,
+      "strengthOfSchedule": 41,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 36
+    },
+    "efficiencies": {
+      "overall": 55.904,
+      "offense": 60.436,
+      "defense": 47.108,
+      "specialTeams": 55.478
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "fpi": 7.346,
+    "resumeRanks": {
+      "strengthOfRecord": 71,
+      "fpi": 32,
+      "averageWinProbability": 51,
+      "strengthOfSchedule": 40,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 49
+    },
+    "efficiencies": {
+      "overall": 57.686,
+      "offense": 67.767,
+      "defense": 49.18,
+      "specialTeams": 38.252
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Miami",
+    "conference": "ACC",
+    "fpi": 10.171,
+    "resumeRanks": {
+      "strengthOfRecord": 20,
+      "fpi": 25,
+      "averageWinProbability": 49,
+      "strengthOfSchedule": 32,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 43
+    },
+    "efficiencies": {
+      "overall": 67.723,
+      "offense": 68.757,
+      "defense": 58.124,
+      "specialTeams": 55.986
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "fpi": -4.726,
+    "resumeRanks": {
+      "strengthOfRecord": 90,
+      "fpi": 90,
+      "averageWinProbability": 117,
+      "strengthOfSchedule": 39,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 32.699,
+      "offense": 30.843,
+      "defense": 44.517,
+      "specialTeams": 37.569
+    }
+  },
+  {
+    "year": 2020,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "fpi": 10.158,
+    "resumeRanks": {
+      "strengthOfRecord": 34,
+      "fpi": 26,
+      "averageWinProbability": 25,
+      "strengthOfSchedule": 42,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 25
+    },
+    "efficiencies": {
+      "overall": 67.446,
+      "offense": 83.844,
+      "defense": 45.037,
+      "specialTeams": 35.582
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Virginia",
+    "conference": "ACC",
+    "fpi": 2.554,
+    "resumeRanks": {
+      "strengthOfRecord": 62,
+      "fpi": 57,
+      "averageWinProbability": 71,
+      "strengthOfSchedule": 33,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 67
+    },
+    "efficiencies": {
+      "overall": 51.781,
+      "offense": 52.159,
+      "defense": 51.429,
+      "specialTeams": 47.707
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Duke",
+    "conference": "ACC",
+    "fpi": -7.343,
+    "resumeRanks": {
+      "strengthOfRecord": 110,
+      "fpi": 99,
+      "averageWinProbability": 104,
+      "strengthOfSchedule": 44,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 101
+    },
+    "efficiencies": {
+      "overall": 32.315,
+      "offense": 23.017,
+      "defense": 44.279,
+      "specialTeams": 68.896
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "fpi": -31.058,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 126,
+      "averageWinProbability": 126,
+      "strengthOfSchedule": 116,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 124
+    },
+    "efficiencies": {
+      "overall": 3.521,
+      "offense": 5.563,
+      "defense": 15.277,
+      "specialTeams": 13.132
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Missouri",
+    "conference": "SEC",
+    "fpi": 3.78,
+    "resumeRanks": {
+      "strengthOfRecord": 43,
+      "fpi": 49,
+      "averageWinProbability": 97,
+      "strengthOfSchedule": 13,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 80
+    },
+    "efficiencies": {
+      "overall": 47.946,
+      "offense": 61.466,
+      "defense": 36.657,
+      "specialTeams": 43.542
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "fpi": 18.161,
+    "resumeRanks": {
+      "strengthOfRecord": 3,
+      "fpi": 8,
+      "averageWinProbability": 22,
+      "strengthOfSchedule": 12,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 8
+    },
+    "efficiencies": {
+      "overall": 79.843,
+      "offense": 77.465,
+      "defense": 69.862,
+      "specialTeams": 57.42
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Syracuse",
+    "conference": "ACC",
+    "fpi": -8.548,
+    "resumeRanks": {
+      "strengthOfRecord": 116,
+      "fpi": 104,
+      "averageWinProbability": 110,
+      "strengthOfSchedule": 21,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 103
+    },
+    "efficiencies": {
+      "overall": 30.706,
+      "offense": 11.801,
+      "defense": 48.385,
+      "specialTeams": 75.724
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Pittsburgh",
+    "conference": "ACC",
+    "fpi": 5.476,
+    "resumeRanks": {
+      "strengthOfRecord": 55,
+      "fpi": 41,
+      "averageWinProbability": 57,
+      "strengthOfSchedule": 28,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 56
+    },
+    "efficiencies": {
+      "overall": 55.127,
+      "offense": 40.28,
+      "defense": 66.722,
+      "specialTeams": 57.499
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Utah State",
+    "conference": "Mountain West",
+    "fpi": -17.237,
+    "resumeRanks": {
+      "strengthOfRecord": 107,
+      "fpi": 118,
+      "averageWinProbability": 114,
+      "strengthOfSchedule": 104,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 113
+    },
+    "efficiencies": {
+      "overall": 14.89,
+      "offense": 18.745,
+      "defense": 14.851,
+      "specialTeams": 79.537
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Boise State",
+    "conference": "Mountain West",
+    "fpi": 4.772,
+    "resumeRanks": {
+      "strengthOfRecord": 37,
+      "fpi": 46,
+      "averageWinProbability": 30,
+      "strengthOfSchedule": 93,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 41
+    },
+    "efficiencies": {
+      "overall": 61.842,
+      "offense": 52.762,
+      "defense": 52.633,
+      "specialTeams": 83.683
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "fpi": -8.012,
+    "resumeRanks": {
+      "strengthOfRecord": 84,
+      "fpi": 100,
+      "averageWinProbability": 113,
+      "strengthOfSchedule": 109,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 90
+    },
+    "efficiencies": {
+      "overall": 30.539,
+      "offense": 37.546,
+      "defense": 44.363,
+      "specialTeams": 14.03
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "fpi": -0.529,
+    "resumeRanks": {
+      "strengthOfRecord": 100,
+      "fpi": 73,
+      "averageWinProbability": 74,
+      "strengthOfSchedule": 117,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 95
+    },
+    "efficiencies": {
+      "overall": 42.321,
+      "offense": 21.798,
+      "defense": 68.064,
+      "specialTeams": 49.383
+    }
+  },
+  {
+    "year": 2020,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "fpi": -11.262,
+    "resumeRanks": {
+      "strengthOfRecord": 101,
+      "fpi": 107,
+      "averageWinProbability": 109,
+      "strengthOfSchedule": 99,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 107
+    },
+    "efficiencies": {
+      "overall": 32.071,
+      "offense": 42.736,
+      "defense": 30.114,
+      "specialTeams": 42.368
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "fpi": -1.03,
+    "resumeRanks": {
+      "strengthOfRecord": 83,
+      "fpi": 74,
+      "averageWinProbability": 40,
+      "strengthOfSchedule": 115,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 66
+    },
+    "efficiencies": {
+      "overall": 50.075,
+      "offense": 55.208,
+      "defense": 49.362,
+      "specialTeams": 33.604
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Fresno State",
+    "conference": "Mountain West",
+    "fpi": -6.546,
+    "resumeRanks": {
+      "strengthOfRecord": 95,
+      "fpi": 95,
+      "averageWinProbability": 54,
+      "strengthOfSchedule": 125,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 94
+    },
+    "efficiencies": {
+      "overall": 34.912,
+      "offense": 47.433,
+      "defense": 32.722,
+      "specialTeams": 33.617
+    }
+  },
+  {
+    "year": 2020,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "fpi": 1.748,
+    "resumeRanks": {
+      "strengthOfRecord": 82,
+      "fpi": 60,
+      "averageWinProbability": 36,
+      "strengthOfSchedule": 82,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 50
+    },
+    "efficiencies": {
+      "overall": 53.628,
+      "offense": 32.531,
+      "defense": 72.673,
+      "specialTeams": 51.932
+    }
+  },
+  {
+    "year": 2020,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "fpi": -18.499,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 121,
+      "averageWinProbability": 122,
+      "strengthOfSchedule": 106,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 123
+    },
+    "efficiencies": {
+      "overall": 11.769,
+      "offense": 22.16,
+      "defense": 12.495,
+      "specialTeams": 49.048
+    }
+  },
+  {
+    "year": 2020,
+    "team": "San José State",
+    "conference": "Mountain West",
+    "fpi": -0.249,
+    "resumeRanks": {
+      "strengthOfRecord": 23,
+      "fpi": 71,
+      "averageWinProbability": 29,
+      "strengthOfSchedule": 97,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 53
+    },
+    "efficiencies": {
+      "overall": 56.836,
+      "offense": 53.366,
+      "defense": 57.459,
+      "specialTeams": 50.553
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Nevada",
+    "conference": "Mountain West",
+    "fpi": -1.074,
+    "resumeRanks": {
+      "strengthOfRecord": 44,
+      "fpi": 75,
+      "averageWinProbability": 18,
+      "strengthOfSchedule": 101,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 57
+    },
+    "efficiencies": {
+      "overall": 50.37,
+      "offense": 54.534,
+      "defense": 47.379,
+      "specialTeams": 45.768
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Hawai'i",
+    "conference": "Mountain West",
+    "fpi": -6.421,
+    "resumeRanks": {
+      "strengthOfRecord": 74,
+      "fpi": 94,
+      "averageWinProbability": 69,
+      "strengthOfSchedule": 90,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 93
+    },
+    "efficiencies": {
+      "overall": 37.505,
+      "offense": 42.599,
+      "defense": 40.717,
+      "specialTeams": 38.692
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Louisville",
+    "conference": "ACC",
+    "fpi": 6.151,
+    "resumeRanks": {
+      "strengthOfRecord": 97,
+      "fpi": 38,
+      "averageWinProbability": 73,
+      "strengthOfSchedule": 47,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 85
+    },
+    "efficiencies": {
+      "overall": 50.958,
+      "offense": 60.123,
+      "defense": 46.008,
+      "specialTeams": 34.027
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "fpi": 27.563,
+    "resumeRanks": {
+      "strengthOfRecord": 2,
+      "fpi": 2,
+      "averageWinProbability": 8,
+      "strengthOfSchedule": 15,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 3
+    },
+    "efficiencies": {
+      "overall": 91.066,
+      "offense": 94.976,
+      "defense": 71.231,
+      "specialTeams": 35.599
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "fpi": -2.903,
+    "resumeRanks": {
+      "strengthOfRecord": 57,
+      "fpi": 83,
+      "averageWinProbability": 111,
+      "strengthOfSchedule": 30,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 73
+    },
+    "efficiencies": {
+      "overall": 37.154,
+      "offense": 28.082,
+      "defense": 55.876,
+      "specialTeams": 33.107
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Maryland",
+    "conference": "Big Ten",
+    "fpi": -1.642,
+    "resumeRanks": {
+      "strengthOfRecord": 45,
+      "fpi": 78,
+      "averageWinProbability": 82,
+      "strengthOfSchedule": 60,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 33
+    },
+    "efficiencies": {
+      "overall": 50.029,
+      "offense": 56.97,
+      "defense": 46.241,
+      "specialTeams": 43.787
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Rutgers",
+    "conference": "Big Ten",
+    "fpi": -0.326,
+    "resumeRanks": {
+      "strengthOfRecord": 81,
+      "fpi": 72,
+      "averageWinProbability": 77,
+      "strengthOfSchedule": 36,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 72
+    },
+    "efficiencies": {
+      "overall": 45.37,
+      "offense": 31.212,
+      "defense": 52.444,
+      "specialTeams": 74.639
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "fpi": 4.543,
+    "resumeRanks": {
+      "strengthOfRecord": 64,
+      "fpi": 48,
+      "averageWinProbability": 107,
+      "strengthOfSchedule": 56,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 70
+    },
+    "efficiencies": {
+      "overall": 44.116,
+      "offense": 63.673,
+      "defense": 30.506,
+      "specialTeams": 46.17
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "fpi": 11.928,
+    "resumeRanks": {
+      "strengthOfRecord": 60,
+      "fpi": 24,
+      "averageWinProbability": 80,
+      "strengthOfSchedule": 37,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 65
+    },
+    "efficiencies": {
+      "overall": 55.872,
+      "offense": 51.612,
+      "defense": 56.667,
+      "specialTeams": 55.009
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "fpi": 14.319,
+    "resumeRanks": {
+      "strengthOfRecord": 13,
+      "fpi": 16,
+      "averageWinProbability": 31,
+      "strengthOfSchedule": 25,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 15
+    },
+    "efficiencies": {
+      "overall": 74.257,
+      "offense": 48.901,
+      "defense": 80.626,
+      "specialTeams": 75.719
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "fpi": 18.121,
+    "resumeRanks": {
+      "strengthOfRecord": 26,
+      "fpi": 9,
+      "averageWinProbability": 52,
+      "strengthOfSchedule": 48,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 23
+    },
+    "efficiencies": {
+      "overall": 69.819,
+      "offense": 40.92,
+      "defense": 86.907,
+      "specialTeams": 56.263
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "fpi": 5.443,
+    "resumeRanks": {
+      "strengthOfRecord": 59,
+      "fpi": 42,
+      "averageWinProbability": 64,
+      "strengthOfSchedule": 55,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 39
+    },
+    "efficiencies": {
+      "overall": 57.071,
+      "offense": 72.888,
+      "defense": 36.438,
+      "specialTeams": 49.821
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Nebraska",
+    "conference": "Big Ten",
+    "fpi": 4.861,
+    "resumeRanks": {
+      "strengthOfRecord": 52,
+      "fpi": 44,
+      "averageWinProbability": 86,
+      "strengthOfSchedule": 24,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 48
+    },
+    "efficiencies": {
+      "overall": 58.949,
+      "offense": 58.236,
+      "defense": 61.986,
+      "specialTeams": 32.002
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "fpi": 17.048,
+    "resumeRanks": {
+      "strengthOfRecord": 18,
+      "fpi": 12,
+      "averageWinProbability": 11,
+      "strengthOfSchedule": 50,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 7
+    },
+    "efficiencies": {
+      "overall": 81.974,
+      "offense": 57.704,
+      "defense": 84.846,
+      "specialTeams": 76.991
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "fpi": -2.251,
+    "resumeRanks": {
+      "strengthOfRecord": 76,
+      "fpi": 81,
+      "averageWinProbability": 115,
+      "strengthOfSchedule": 38,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 83
+    },
+    "efficiencies": {
+      "overall": 39.227,
+      "offense": 52.055,
+      "defense": 35.031,
+      "specialTeams": 37.289
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "fpi": 12.793,
+    "resumeRanks": {
+      "strengthOfRecord": 9,
+      "fpi": 20,
+      "averageWinProbability": 27,
+      "strengthOfSchedule": 22,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 11
+    },
+    "efficiencies": {
+      "overall": 73.362,
+      "offense": 48.786,
+      "defense": 85.108,
+      "specialTeams": 50.414
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "fpi": 3.755,
+    "resumeRanks": {
+      "strengthOfRecord": 73,
+      "fpi": 50,
+      "averageWinProbability": 85,
+      "strengthOfSchedule": 79,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 69
+    },
+    "efficiencies": {
+      "overall": 46.719,
+      "offense": 59.713,
+      "defense": 44.196,
+      "specialTeams": 23.806
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "fpi": -1.526,
+    "resumeRanks": {
+      "strengthOfRecord": 49,
+      "fpi": 77,
+      "averageWinProbability": 17,
+      "strengthOfSchedule": 80,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 63
+    },
+    "efficiencies": {
+      "overall": 47.881,
+      "offense": 32.664,
+      "defense": 60.892,
+      "specialTeams": 69.087
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Texas",
+    "conference": "Big 12",
+    "fpi": 19.519,
+    "resumeRanks": {
+      "strengthOfRecord": 19,
+      "fpi": 6,
+      "averageWinProbability": 23,
+      "strengthOfSchedule": 34,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 17
+    },
+    "efficiencies": {
+      "overall": 73.424,
+      "offense": 73.411,
+      "defense": 65.839,
+      "specialTeams": 50.277
+    }
+  },
+  {
+    "year": 2020,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "fpi": 24.338,
+    "resumeRanks": {
+      "strengthOfRecord": 5,
+      "fpi": 4,
+      "averageWinProbability": 2,
+      "strengthOfSchedule": 19,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 2
+    },
+    "efficiencies": {
+      "overall": 88.069,
+      "offense": 82.053,
+      "defense": 81.858,
+      "specialTeams": 61.156
+    }
+  }
+]

@@ -1,0 +1,4720 @@
+[
+  {
+    "year": 2007,
+    "team": "USC",
+    "conference": "Big Ten",
+    "rating": 32,
+    "ranking": 1,
+    "secondOrderWins": 11.4,
+    "sos": 0.881,
+    "offense": {
+      "ranking": 13,
+      "rating": 39,
+      "success": 112.6,
+      "explosiveness": 96.4,
+      "rushing": 110.7,
+      "passing": 102.7,
+      "standardDowns": 109.9,
+      "passingDowns": 93.1,
+      "runRate": 0.48700000000000004,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 1,
+      "rating": 7.7,
+      "success": 127.5,
+      "explosiveness": 113.7,
+      "rushing": 132.9,
+      "passing": 116.5,
+      "standardDowns": 121.4,
+      "passingDowns": 115.6,
+      "havoc": {
+        "total": 0.223,
+        "frontSeven": 0.149,
+        "db": 0.073
+      }
+    },
+    "specialTeams": {
+      "rating": 0.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Oklahoma",
+    "conference": "SEC",
+    "rating": 30.9,
+    "ranking": 2,
+    "secondOrderWins": 10.8,
+    "sos": 0.834,
+    "offense": {
+      "ranking": 3,
+      "rating": 44.7,
+      "success": 112,
+      "explosiveness": 104.5,
+      "rushing": 106.8,
+      "passing": 113.4,
+      "standardDowns": 108.3,
+      "passingDowns": 110.3,
+      "runRate": 0.535,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 14,
+      "rating": 16.2,
+      "success": 118,
+      "explosiveness": 97,
+      "rushing": 108.9,
+      "passing": 109.2,
+      "standardDowns": 106.7,
+      "passingDowns": 113.7,
+      "havoc": {
+        "total": 0.185,
+        "frontSeven": 0.11,
+        "db": 0.07400000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": 2.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "rating": 29.2,
+    "ranking": 3,
+    "secondOrderWins": 11.8,
+    "sos": 0.874,
+    "offense": {
+      "ranking": 20,
+      "rating": 37.8,
+      "success": 106.6,
+      "explosiveness": 103.2,
+      "rushing": 105.4,
+      "passing": 107.9,
+      "standardDowns": 108,
+      "passingDowns": 96.2,
+      "runRate": 0.586,
+      "pace": 2.1
+    },
+    "defense": {
+      "ranking": 2,
+      "rating": 9.5,
+      "success": 135.2,
+      "explosiveness": 115.5,
+      "rushing": 128.1,
+      "passing": 128.4,
+      "standardDowns": 127.4,
+      "passingDowns": 117.5,
+      "havoc": {
+        "total": 0.19399999999999998,
+        "frontSeven": 0.12300000000000001,
+        "db": 0.071
+      }
+    },
+    "specialTeams": {
+      "rating": 1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "LSU",
+    "conference": "SEC",
+    "rating": 28.9,
+    "ranking": 4,
+    "secondOrderWins": 10.6,
+    "sos": 0.807,
+    "offense": {
+      "ranking": 7,
+      "rating": 41.9,
+      "success": 112.7,
+      "explosiveness": 103.9,
+      "rushing": 113.8,
+      "passing": 106.8,
+      "standardDowns": 111,
+      "passingDowns": 103.7,
+      "runRate": 0.542,
+      "pace": 0.2
+    },
+    "defense": {
+      "ranking": 7,
+      "rating": 14.1,
+      "success": 119.1,
+      "explosiveness": 99.1,
+      "rushing": 112.5,
+      "passing": 109.5,
+      "standardDowns": 113.6,
+      "passingDowns": 101.1,
+      "havoc": {
+        "total": 0.22399999999999998,
+        "frontSeven": 0.122,
+        "db": 0.10099999999999999
+      }
+    },
+    "specialTeams": {
+      "rating": 1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Florida",
+    "conference": "SEC",
+    "rating": 28.8,
+    "ranking": 5,
+    "secondOrderWins": 10.4,
+    "sos": 0.83,
+    "offense": {
+      "ranking": 1,
+      "rating": 50.1,
+      "success": 133.1,
+      "explosiveness": 109.7,
+      "rushing": 119.1,
+      "passing": 129.5,
+      "standardDowns": 124.4,
+      "passingDowns": 112.9,
+      "runRate": 0.519,
+      "pace": 1.5
+    },
+    "defense": {
+      "ranking": 44,
+      "rating": 21.9,
+      "success": 97.7,
+      "explosiveness": 100.4,
+      "rushing": 109.4,
+      "passing": 93.8,
+      "standardDowns": 101.1,
+      "passingDowns": 95.5,
+      "havoc": {
+        "total": 0.182,
+        "frontSeven": 0.121,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": 0.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "West Virginia",
+    "conference": "Big 12",
+    "rating": 28.2,
+    "ranking": 6,
+    "secondOrderWins": 11.2,
+    "sos": 0.869,
+    "offense": {
+      "ranking": 8,
+      "rating": 41.7,
+      "success": 117.3,
+      "explosiveness": 108.4,
+      "rushing": 122,
+      "passing": 107.6,
+      "standardDowns": 113,
+      "passingDowns": 117.5,
+      "runRate": 0.652,
+      "pace": -0.2
+    },
+    "defense": {
+      "ranking": 8,
+      "rating": 14.4,
+      "success": 110.1,
+      "explosiveness": 118.2,
+      "rushing": 111.4,
+      "passing": 111.5,
+      "standardDowns": 113.2,
+      "passingDowns": 113.3,
+      "havoc": {
+        "total": 0.193,
+        "frontSeven": 0.113,
+        "db": 0.079
+      }
+    },
+    "specialTeams": {
+      "rating": 0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Texas",
+    "conference": "SEC",
+    "rating": 25.8,
+    "ranking": 7,
+    "secondOrderWins": 9.2,
+    "sos": 0.857,
+    "offense": {
+      "ranking": 5,
+      "rating": 43.4,
+      "success": 107.7,
+      "explosiveness": 105.8,
+      "rushing": 108.2,
+      "passing": 104.8,
+      "standardDowns": 108.4,
+      "passingDowns": 101.3,
+      "runRate": 0.509,
+      "pace": -0.8
+    },
+    "defense": {
+      "ranking": 28,
+      "rating": 18.9,
+      "success": 105.8,
+      "explosiveness": 103.9,
+      "rushing": 113.2,
+      "passing": 102.7,
+      "standardDowns": 105.4,
+      "passingDowns": 102.4,
+      "havoc": {
+        "total": 0.188,
+        "frontSeven": 0.115,
+        "db": 0.073
+      }
+    },
+    "specialTeams": {
+      "rating": 1.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "rating": 24.9,
+    "ranking": 8,
+    "secondOrderWins": 10.5,
+    "sos": 0.868,
+    "offense": {
+      "ranking": 2,
+      "rating": 47,
+      "success": 123.2,
+      "explosiveness": 100.4,
+      "rushing": 107.2,
+      "passing": 109.4,
+      "standardDowns": 112.4,
+      "passingDowns": 114.2,
+      "runRate": 0.2,
+      "pace": -0.7
+    },
+    "defense": {
+      "ranking": 43,
+      "rating": 21.7,
+      "success": 98.4,
+      "explosiveness": 118.8,
+      "rushing": 98.5,
+      "passing": 109.9,
+      "standardDowns": 107.5,
+      "passingDowns": 99.4,
+      "havoc": {
+        "total": 0.16,
+        "frontSeven": 0.098,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "rating": 24.9,
+    "ranking": 8,
+    "secondOrderWins": 11.2,
+    "sos": 0.9,
+    "offense": {
+      "ranking": 11,
+      "rating": 40.3,
+      "success": 107.9,
+      "explosiveness": 105.5,
+      "rushing": 108.5,
+      "passing": 106.3,
+      "standardDowns": 109,
+      "passingDowns": 97.1,
+      "runRate": 0.44799999999999995,
+      "pace": -1.1
+    },
+    "defense": {
+      "ranking": 10,
+      "rating": 15.2,
+      "success": 117.5,
+      "explosiveness": 104.7,
+      "rushing": 118.7,
+      "passing": 110.2,
+      "standardDowns": 109.6,
+      "passingDowns": 112.7,
+      "havoc": {
+        "total": 0.21100000000000002,
+        "frontSeven": 0.134,
+        "db": 0.069
+      }
+    },
+    "specialTeams": {
+      "rating": -0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Georgia",
+    "conference": "SEC",
+    "rating": 23.6,
+    "ranking": 10,
+    "secondOrderWins": 9,
+    "sos": 0.835,
+    "offense": {
+      "ranking": 16,
+      "rating": 38.7,
+      "success": 103.3,
+      "explosiveness": 107.3,
+      "rushing": 104.4,
+      "passing": 107.6,
+      "standardDowns": 100.8,
+      "passingDowns": 113.3,
+      "runRate": 0.557,
+      "pace": 1.6
+    },
+    "defense": {
+      "ranking": 18,
+      "rating": 16.6,
+      "success": 108,
+      "explosiveness": 101.3,
+      "rushing": 100.6,
+      "passing": 108.5,
+      "standardDowns": 102.8,
+      "passingDowns": 108.6,
+      "havoc": {
+        "total": 0.17600000000000002,
+        "frontSeven": 0.11599999999999999,
+        "db": 0.059000000000000004
+      }
+    },
+    "specialTeams": {
+      "rating": 1.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Oregon",
+    "conference": "Big Ten",
+    "rating": 23.1,
+    "ranking": 11,
+    "secondOrderWins": 9.9,
+    "sos": 0.853,
+    "offense": {
+      "ranking": 9,
+      "rating": 41.2,
+      "success": 119.8,
+      "explosiveness": 104.3,
+      "rushing": 123.4,
+      "passing": 106,
+      "standardDowns": 113.7,
+      "passingDowns": 108.8,
+      "runRate": 0.552,
+      "pace": -3.9
+    },
+    "defense": {
+      "ranking": 35,
+      "rating": 19.7,
+      "success": 112.1,
+      "explosiveness": 92.6,
+      "rushing": 108.6,
+      "passing": 100.4,
+      "standardDowns": 102.7,
+      "passingDowns": 103.3,
+      "havoc": {
+        "total": 0.225,
+        "frontSeven": 0.12300000000000001,
+        "db": 0.10099999999999999
+      }
+    },
+    "specialTeams": {
+      "rating": 1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Missouri",
+    "conference": "SEC",
+    "rating": 21.4,
+    "ranking": 12,
+    "secondOrderWins": 10.9,
+    "sos": 0.8,
+    "offense": {
+      "ranking": 4,
+      "rating": 44,
+      "success": 119.1,
+      "explosiveness": 101.5,
+      "rushing": 110.4,
+      "passing": 111.1,
+      "standardDowns": 108.5,
+      "passingDowns": 118.3,
+      "runRate": 0.434,
+      "pace": -2.8
+    },
+    "defense": {
+      "ranking": 51,
+      "rating": 23,
+      "success": 106.6,
+      "explosiveness": 106.9,
+      "rushing": 108.9,
+      "passing": 107.7,
+      "standardDowns": 107.5,
+      "passingDowns": 106.5,
+      "havoc": {
+        "total": 0.172,
+        "frontSeven": 0.099,
+        "db": 0.07
+      }
+    },
+    "specialTeams": {
+      "rating": 0.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Auburn",
+    "conference": "SEC",
+    "rating": 20.7,
+    "ranking": 13,
+    "secondOrderWins": 8.4,
+    "sos": 0.807,
+    "offense": {
+      "ranking": 44,
+      "rating": 31.3,
+      "success": 109.5,
+      "explosiveness": 86.1,
+      "rushing": 106.1,
+      "passing": 96.3,
+      "standardDowns": 100.5,
+      "passingDowns": 97.7,
+      "runRate": 0.5660000000000001,
+      "pace": 1.5
+    },
+    "defense": {
+      "ranking": 4,
+      "rating": 11.3,
+      "success": 113.8,
+      "explosiveness": 110.5,
+      "rushing": 113.6,
+      "passing": 110.7,
+      "standardDowns": 111.7,
+      "passingDowns": 110,
+      "havoc": {
+        "total": 0.17,
+        "frontSeven": 0.106,
+        "db": 0.063
+      }
+    },
+    "specialTeams": {
+      "rating": 0.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "rating": 20.2,
+    "ranking": 14,
+    "secondOrderWins": 9.9,
+    "sos": 0.888,
+    "offense": {
+      "ranking": 27,
+      "rating": 35.5,
+      "success": 112.7,
+      "explosiveness": 94.6,
+      "rushing": 109.1,
+      "passing": 104.1,
+      "standardDowns": 106.6,
+      "passingDowns": 98.7,
+      "runRate": 0.513,
+      "pace": 0.2
+    },
+    "defense": {
+      "ranking": 12,
+      "rating": 16,
+      "success": 106.7,
+      "explosiveness": 114.6,
+      "rushing": 114.4,
+      "passing": 108.4,
+      "standardDowns": 111.3,
+      "passingDowns": 106.8,
+      "havoc": {
+        "total": 0.205,
+        "frontSeven": 0.155,
+        "db": 0.048
+      }
+    },
+    "specialTeams": {
+      "rating": 0.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "rating": 20.2,
+    "ranking": 14,
+    "secondOrderWins": 9.2,
+    "sos": 0.814,
+    "offense": {
+      "ranking": 17,
+      "rating": 38.4,
+      "success": 107.1,
+      "explosiveness": 104.1,
+      "rushing": 97.4,
+      "passing": 109.1,
+      "standardDowns": 104.4,
+      "passingDowns": 107.6,
+      "runRate": 0.445,
+      "pace": -0.4
+    },
+    "defense": {
+      "ranking": 33,
+      "rating": 19.3,
+      "success": 106.7,
+      "explosiveness": 99.4,
+      "rushing": 108.8,
+      "passing": 100.6,
+      "standardDowns": 104,
+      "passingDowns": 103.8,
+      "havoc": {
+        "total": 0.15,
+        "frontSeven": 0.096,
+        "db": 0.046
+      }
+    },
+    "specialTeams": {
+      "rating": 1.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "rating": 19.3,
+    "ranking": 16,
+    "secondOrderWins": 9.8,
+    "sos": 0.857,
+    "offense": {
+      "ranking": 65,
+      "rating": 27.5,
+      "success": 100.6,
+      "explosiveness": 103.7,
+      "rushing": 103.6,
+      "passing": 104.2,
+      "standardDowns": 99.2,
+      "passingDowns": 106.2,
+      "runRate": 0.541,
+      "pace": 1
+    },
+    "defense": {
+      "ranking": 3,
+      "rating": 10.4,
+      "success": 123.9,
+      "explosiveness": 104.5,
+      "rushing": 117,
+      "passing": 114.8,
+      "standardDowns": 119.4,
+      "passingDowns": 105.1,
+      "havoc": {
+        "total": 0.207,
+        "frontSeven": 0.136,
+        "db": 0.07
+      }
+    },
+    "specialTeams": {
+      "rating": 2.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "rating": 18,
+    "ranking": 17,
+    "secondOrderWins": 8.8,
+    "sos": 0.844,
+    "offense": {
+      "ranking": 24,
+      "rating": 36.8,
+      "success": 105.4,
+      "explosiveness": 110.4,
+      "rushing": 111.2,
+      "passing": 102.9,
+      "standardDowns": 108.6,
+      "passingDowns": 102.6,
+      "runRate": 0.645,
+      "pace": -1.2
+    },
+    "defense": {
+      "ranking": 29,
+      "rating": 19,
+      "success": 107.2,
+      "explosiveness": 101.1,
+      "rushing": 99.7,
+      "passing": 107.7,
+      "standardDowns": 103.5,
+      "passingDowns": 106.3,
+      "havoc": {
+        "total": 0.19899999999999998,
+        "frontSeven": 0.105,
+        "db": 0.08900000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": 0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Cincinnati",
+    "conference": "Big 12",
+    "rating": 17.5,
+    "ranking": 18,
+    "secondOrderWins": 10.1,
+    "sos": 0.89,
+    "offense": {
+      "ranking": 22,
+      "rating": 37.2,
+      "success": 101.2,
+      "explosiveness": 113.1,
+      "rushing": 95.1,
+      "passing": 109.6,
+      "standardDowns": 105.4,
+      "passingDowns": 104.6,
+      "runRate": 0.447,
+      "pace": -1
+    },
+    "defense": {
+      "ranking": 36,
+      "rating": 19.9,
+      "success": 99.9,
+      "explosiveness": 117.4,
+      "rushing": 116.2,
+      "passing": 102.5,
+      "standardDowns": 107.2,
+      "passingDowns": 105,
+      "havoc": {
+        "total": 0.17600000000000002,
+        "frontSeven": 0.11800000000000001,
+        "db": 0.057999999999999996
+      }
+    },
+    "specialTeams": {
+      "rating": 0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "rating": 17.5,
+    "ranking": 18,
+    "secondOrderWins": 7.4,
+    "sos": 0.847,
+    "offense": {
+      "ranking": 21,
+      "rating": 37.6,
+      "success": 100.4,
+      "explosiveness": 104.3,
+      "rushing": 105.4,
+      "passing": 98.3,
+      "standardDowns": 105.1,
+      "passingDowns": 92.1,
+      "runRate": 0.37,
+      "pace": -0.6
+    },
+    "defense": {
+      "ranking": 42,
+      "rating": 21.5,
+      "success": 111.3,
+      "explosiveness": 94.1,
+      "rushing": 110.6,
+      "passing": 99.3,
+      "standardDowns": 104.6,
+      "passingDowns": 101.7,
+      "havoc": {
+        "total": 0.17,
+        "frontSeven": 0.091,
+        "db": 0.078
+      }
+    },
+    "specialTeams": {
+      "rating": 1.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Boston College",
+    "conference": "ACC",
+    "rating": 16.7,
+    "ranking": 20,
+    "secondOrderWins": 11.2,
+    "sos": 0.899,
+    "offense": {
+      "ranking": 38,
+      "rating": 32,
+      "success": 112.3,
+      "explosiveness": 102.2,
+      "rushing": 97.1,
+      "passing": 108.6,
+      "standardDowns": 108.6,
+      "passingDowns": 102.6,
+      "runRate": 0.364,
+      "pace": 0.3
+    },
+    "defense": {
+      "ranking": 9,
+      "rating": 14.6,
+      "success": 106.6,
+      "explosiveness": 107.5,
+      "rushing": 126,
+      "passing": 102.8,
+      "standardDowns": 110.2,
+      "passingDowns": 103.2,
+      "havoc": {
+        "total": 0.179,
+        "frontSeven": 0.11800000000000001,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "California",
+    "conference": "ACC",
+    "rating": 16.6,
+    "ranking": 21,
+    "secondOrderWins": 9.2,
+    "sos": 0.848,
+    "offense": {
+      "ranking": 18,
+      "rating": 38.1,
+      "success": 115,
+      "explosiveness": 102.5,
+      "rushing": 115.1,
+      "passing": 107.1,
+      "standardDowns": 111.1,
+      "passingDowns": 103.6,
+      "runRate": 0.48200000000000004,
+      "pace": 0.8
+    },
+    "defense": {
+      "ranking": 39,
+      "rating": 21.3,
+      "success": 101.5,
+      "explosiveness": 108,
+      "rushing": 106.1,
+      "passing": 103.5,
+      "standardDowns": 105.7,
+      "passingDowns": 101.4,
+      "havoc": {
+        "total": 0.132,
+        "frontSeven": 0.078,
+        "db": 0.054000000000000006
+      }
+    },
+    "specialTeams": {
+      "rating": -0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "rating": 16.2,
+    "ranking": 22,
+    "secondOrderWins": 7.4,
+    "sos": 0.801,
+    "offense": {
+      "ranking": 30,
+      "rating": 33.2,
+      "success": 106.8,
+      "explosiveness": 100.5,
+      "rushing": 101.2,
+      "passing": 104.9,
+      "standardDowns": 103.7,
+      "passingDowns": 105.4,
+      "runRate": 0.419,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 26,
+      "rating": 18.4,
+      "success": 104.9,
+      "explosiveness": 103.7,
+      "rushing": 97.9,
+      "passing": 113.1,
+      "standardDowns": 103.5,
+      "passingDowns": 106.3,
+      "havoc": {
+        "total": 0.16399999999999998,
+        "frontSeven": 0.083,
+        "db": 0.079
+      }
+    },
+    "specialTeams": {
+      "rating": 1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Clemson",
+    "conference": "ACC",
+    "rating": 16.2,
+    "ranking": 22,
+    "secondOrderWins": 9,
+    "sos": 0.889,
+    "offense": {
+      "ranking": 42,
+      "rating": 31.6,
+      "success": 109.8,
+      "explosiveness": 101.8,
+      "rushing": 112.1,
+      "passing": 102.2,
+      "standardDowns": 106.4,
+      "passingDowns": 103,
+      "runRate": 0.47200000000000003,
+      "pace": -0.2
+    },
+    "defense": {
+      "ranking": 10,
+      "rating": 15.2,
+      "success": 110,
+      "explosiveness": 112.9,
+      "rushing": 112.9,
+      "passing": 110.8,
+      "standardDowns": 111.6,
+      "passingDowns": 107.8,
+      "havoc": {
+        "total": 0.17300000000000001,
+        "frontSeven": 0.1,
+        "db": 0.07400000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": -0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "South Florida",
+    "conference": "American Athletic",
+    "rating": 15.8,
+    "ranking": 24,
+    "secondOrderWins": 9.3,
+    "sos": 0.845,
+    "offense": {
+      "ranking": 33,
+      "rating": 33.1,
+      "success": 100.6,
+      "explosiveness": 109.3,
+      "rushing": 106.8,
+      "passing": 101.4,
+      "standardDowns": 102.2,
+      "passingDowns": 107,
+      "runRate": 0.531,
+      "pace": -1.6
+    },
+    "defense": {
+      "ranking": 15,
+      "rating": 16.5,
+      "success": 120.6,
+      "explosiveness": 91.8,
+      "rushing": 107.6,
+      "passing": 106.8,
+      "standardDowns": 108.3,
+      "passingDowns": 101.9,
+      "havoc": {
+        "total": 0.22399999999999998,
+        "frontSeven": 0.135,
+        "db": 0.086
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "BYU",
+    "conference": "Big 12",
+    "rating": 15.4,
+    "ranking": 25,
+    "secondOrderWins": 10.9,
+    "sos": 0.935,
+    "offense": {
+      "ranking": 40,
+      "rating": 31.8,
+      "success": 117.3,
+      "explosiveness": 98.3,
+      "rushing": 100.5,
+      "passing": 112.7,
+      "standardDowns": 106.4,
+      "passingDowns": 114.6,
+      "runRate": 0.45299999999999996,
+      "pace": 0.9
+    },
+    "defense": {
+      "ranking": 12,
+      "rating": 16,
+      "success": 109.6,
+      "explosiveness": 108.9,
+      "rushing": 114.5,
+      "passing": 107.2,
+      "standardDowns": 108.6,
+      "passingDowns": 109.9,
+      "havoc": {
+        "total": 0.17300000000000001,
+        "frontSeven": 0.11199999999999999,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Rutgers",
+    "conference": "Big Ten",
+    "rating": 14.3,
+    "ranking": 26,
+    "secondOrderWins": 8.4,
+    "sos": 0.893,
+    "offense": {
+      "ranking": 23,
+      "rating": 37,
+      "success": 108.4,
+      "explosiveness": 107.5,
+      "rushing": 104.5,
+      "passing": 113.3,
+      "standardDowns": 106.5,
+      "passingDowns": 110,
+      "runRate": 0.5479999999999999,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 45,
+      "rating": 22.2,
+      "success": 107.2,
+      "explosiveness": 100.7,
+      "rushing": 96.5,
+      "passing": 110.7,
+      "standardDowns": 104.8,
+      "passingDowns": 101.7,
+      "havoc": {
+        "total": 0.191,
+        "frontSeven": 0.121,
+        "db": 0.07
+      }
+    },
+    "specialTeams": {
+      "rating": -0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "rating": 13.4,
+    "ranking": 27,
+    "secondOrderWins": 7.9,
+    "sos": 0.812,
+    "offense": {
+      "ranking": 15,
+      "rating": 38.8,
+      "success": 112,
+      "explosiveness": 98,
+      "rushing": 104.3,
+      "passing": 105.3,
+      "standardDowns": 101.4,
+      "passingDowns": 115.4,
+      "runRate": 0.41700000000000004,
+      "pace": -2.6
+    },
+    "defense": {
+      "ranking": 56,
+      "rating": 24.9,
+      "success": 100.4,
+      "explosiveness": 103.1,
+      "rushing": 100.3,
+      "passing": 103.4,
+      "standardDowns": 104.8,
+      "passingDowns": 94.9,
+      "havoc": {
+        "total": 0.151,
+        "frontSeven": 0.099,
+        "db": 0.049
+      }
+    },
+    "specialTeams": {
+      "rating": -0.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "rating": 13.3,
+    "ranking": 28,
+    "secondOrderWins": 7.7,
+    "sos": 0.829,
+    "offense": {
+      "ranking": 36,
+      "rating": 32.5,
+      "success": 97.1,
+      "explosiveness": 103.5,
+      "rushing": 97.9,
+      "passing": 102.5,
+      "standardDowns": 97.1,
+      "passingDowns": 106.2,
+      "runRate": 0.521,
+      "pace": -1.2
+    },
+    "defense": {
+      "ranking": 24,
+      "rating": 18.1,
+      "success": 114.7,
+      "explosiveness": 105.7,
+      "rushing": 106.3,
+      "passing": 115.4,
+      "standardDowns": 103.8,
+      "passingDowns": 129.9,
+      "havoc": {
+        "total": 0.18600000000000003,
+        "frontSeven": 0.11199999999999999,
+        "db": 0.073
+      }
+    },
+    "specialTeams": {
+      "rating": -1.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "rating": 13.1,
+    "ranking": 29,
+    "secondOrderWins": 6.4,
+    "sos": 0.8,
+    "offense": {
+      "ranking": 6,
+      "rating": 43.2,
+      "success": 118,
+      "explosiveness": 104.7,
+      "rushing": 117.6,
+      "passing": 115,
+      "standardDowns": 114,
+      "passingDowns": 108.5,
+      "runRate": 0.569,
+      "pace": -2
+    },
+    "defense": {
+      "ranking": 67,
+      "rating": 28.9,
+      "success": 95.9,
+      "explosiveness": 99.1,
+      "rushing": 100,
+      "passing": 94.4,
+      "standardDowns": 98.7,
+      "passingDowns": 95,
+      "havoc": {
+        "total": 0.139,
+        "frontSeven": 0.077,
+        "db": 0.06
+      }
+    },
+    "specialTeams": {
+      "rating": -1.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Boise State",
+    "conference": "Mountain West",
+    "rating": 13.1,
+    "ranking": 29,
+    "secondOrderWins": 9.9,
+    "sos": 0.968,
+    "offense": {
+      "ranking": 25,
+      "rating": 36.2,
+      "success": 112.6,
+      "explosiveness": 101,
+      "rushing": 105,
+      "passing": 109.1,
+      "standardDowns": 102.3,
+      "passingDowns": 116.4,
+      "runRate": 0.48100000000000004,
+      "pace": -0.4
+    },
+    "defense": {
+      "ranking": 55,
+      "rating": 24.4,
+      "success": 110.6,
+      "explosiveness": 93.4,
+      "rushing": 103.2,
+      "passing": 102.2,
+      "standardDowns": 103.5,
+      "passingDowns": 102.8,
+      "havoc": {
+        "total": 0.19399999999999998,
+        "frontSeven": 0.11699999999999999,
+        "db": 0.077
+      }
+    },
+    "specialTeams": {
+      "rating": 1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Alabama",
+    "conference": "SEC",
+    "rating": 12.8,
+    "ranking": 31,
+    "secondOrderWins": 6.9,
+    "sos": 0.845,
+    "offense": {
+      "ranking": 53,
+      "rating": 30.1,
+      "success": 104.1,
+      "explosiveness": 88.7,
+      "rushing": 98.8,
+      "passing": 97.4,
+      "standardDowns": 99.4,
+      "passingDowns": 94.4,
+      "runRate": 0.475,
+      "pace": -0.9
+    },
+    "defense": {
+      "ranking": 21,
+      "rating": 17.2,
+      "success": 103.1,
+      "explosiveness": 104.9,
+      "rushing": 106.9,
+      "passing": 101,
+      "standardDowns": 104,
+      "passingDowns": 103.3,
+      "havoc": {
+        "total": 0.179,
+        "frontSeven": 0.099,
+        "db": 0.075
+      }
+    },
+    "specialTeams": {
+      "rating": -0.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "rating": 12.7,
+    "ranking": 32,
+    "secondOrderWins": 8.7,
+    "sos": 0.836,
+    "offense": {
+      "ranking": 29,
+      "rating": 34.7,
+      "success": 113.5,
+      "explosiveness": 104.1,
+      "rushing": 117.1,
+      "passing": 106,
+      "standardDowns": 110,
+      "passingDowns": 108.2,
+      "runRate": 0.615,
+      "pace": -0.7
+    },
+    "defense": {
+      "ranking": 50,
+      "rating": 22.9,
+      "success": 102.9,
+      "explosiveness": 101.6,
+      "rushing": 103.5,
+      "passing": 103.5,
+      "standardDowns": 103.5,
+      "passingDowns": 100.8,
+      "havoc": {
+        "total": 0.18,
+        "frontSeven": 0.10400000000000001,
+        "db": 0.075
+      }
+    },
+    "specialTeams": {
+      "rating": 0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Arizona State",
+    "conference": "Big 12",
+    "rating": 12.6,
+    "ranking": 33,
+    "secondOrderWins": 7.5,
+    "sos": 0.836,
+    "offense": {
+      "ranking": 50,
+      "rating": 30.3,
+      "success": 97.5,
+      "explosiveness": 105.5,
+      "rushing": 94.8,
+      "passing": 104.8,
+      "standardDowns": 99.7,
+      "passingDowns": 104.4,
+      "runRate": 0.503,
+      "pace": 1.1
+    },
+    "defense": {
+      "ranking": 27,
+      "rating": 18.6,
+      "success": 109.6,
+      "explosiveness": 98,
+      "rushing": 105.7,
+      "passing": 105,
+      "standardDowns": 102.2,
+      "passingDowns": 111.5,
+      "havoc": {
+        "total": 0.179,
+        "frontSeven": 0.10300000000000001,
+        "db": 0.07200000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": 0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "rating": 12.4,
+    "ranking": 34,
+    "secondOrderWins": 8.6,
+    "sos": 0.902,
+    "offense": {
+      "ranking": 30,
+      "rating": 33.2,
+      "success": 103,
+      "explosiveness": 103.1,
+      "rushing": 105.3,
+      "passing": 99.7,
+      "standardDowns": 104.9,
+      "passingDowns": 98.8,
+      "runRate": 0.384,
+      "pace": -0.9
+    },
+    "defense": {
+      "ranking": 45,
+      "rating": 22.2,
+      "success": 107.5,
+      "explosiveness": 99.6,
+      "rushing": 105.8,
+      "passing": 103.4,
+      "standardDowns": 102.6,
+      "passingDowns": 107.8,
+      "havoc": {
+        "total": 0.17300000000000001,
+        "frontSeven": 0.11,
+        "db": 0.063
+      }
+    },
+    "specialTeams": {
+      "rating": 1.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Hawai'i",
+    "conference": "Mountain West",
+    "rating": 12.4,
+    "ranking": 34,
+    "secondOrderWins": 11.5,
+    "sos": 0.947,
+    "offense": {
+      "ranking": 13,
+      "rating": 39,
+      "success": 118.6,
+      "explosiveness": 108.3,
+      "rushing": 97.9,
+      "passing": 113.2,
+      "standardDowns": 113.9,
+      "passingDowns": 109.6,
+      "runRate": 0.24100000000000002,
+      "pace": 0.3
+    },
+    "defense": {
+      "ranking": 59,
+      "rating": 27,
+      "success": 99.4,
+      "explosiveness": 108.7,
+      "rushing": 98.5,
+      "passing": 107.9,
+      "standardDowns": 99.6,
+      "passingDowns": 109.5,
+      "havoc": {
+        "total": 0.19699999999999998,
+        "frontSeven": 0.126,
+        "db": 0.071
+      }
+    },
+    "specialTeams": {
+      "rating": 0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Louisville",
+    "conference": "ACC",
+    "rating": 12.1,
+    "ranking": 36,
+    "secondOrderWins": 6.9,
+    "sos": 0.862,
+    "offense": {
+      "ranking": 10,
+      "rating": 40.6,
+      "success": 113.9,
+      "explosiveness": 105.8,
+      "rushing": 100.9,
+      "passing": 113.5,
+      "standardDowns": 110.5,
+      "passingDowns": 108.5,
+      "runRate": 0.413,
+      "pace": 0.4
+    },
+    "defense": {
+      "ranking": 70,
+      "rating": 29.2,
+      "success": 91.2,
+      "explosiveness": 94.1,
+      "rushing": 96.8,
+      "passing": 89.4,
+      "standardDowns": 93.3,
+      "passingDowns": 89.1,
+      "havoc": {
+        "total": 0.151,
+        "frontSeven": 0.1,
+        "db": 0.047
+      }
+    },
+    "specialTeams": {
+      "rating": 0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Utah",
+    "conference": "Big 12",
+    "rating": 11.9,
+    "ranking": 37,
+    "secondOrderWins": 8.7,
+    "sos": 0.928,
+    "offense": {
+      "ranking": 71,
+      "rating": 26.5,
+      "success": 101.8,
+      "explosiveness": 92.3,
+      "rushing": 101.7,
+      "passing": 95.4,
+      "standardDowns": 100.6,
+      "passingDowns": 89.7,
+      "runRate": 0.528,
+      "pace": 1
+    },
+    "defense": {
+      "ranking": 15,
+      "rating": 16.5,
+      "success": 120,
+      "explosiveness": 97.6,
+      "rushing": 105.7,
+      "passing": 115.2,
+      "standardDowns": 108.6,
+      "passingDowns": 110.8,
+      "havoc": {
+        "total": 0.19,
+        "frontSeven": 0.111,
+        "db": 0.079
+      }
+    },
+    "specialTeams": {
+      "rating": 1.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Oregon State",
+    "conference": "Pac-12",
+    "rating": 11.6,
+    "ranking": 38,
+    "secondOrderWins": 8.1,
+    "sos": 0.836,
+    "offense": {
+      "ranking": 74,
+      "rating": 25.6,
+      "success": 98.6,
+      "explosiveness": 89.4,
+      "rushing": 105.1,
+      "passing": 86.4,
+      "standardDowns": 97.8,
+      "passingDowns": 89.5,
+      "runRate": 0.523,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 6,
+      "rating": 13.5,
+      "success": 129.8,
+      "explosiveness": 92.6,
+      "rushing": 125,
+      "passing": 104.1,
+      "standardDowns": 114.6,
+      "passingDowns": 99.7,
+      "havoc": {
+        "total": 0.21899999999999997,
+        "frontSeven": 0.139,
+        "db": 0.076
+      }
+    },
+    "specialTeams": {
+      "rating": -0.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UCLA",
+    "conference": "Big Ten",
+    "rating": 11.2,
+    "ranking": 39,
+    "secondOrderWins": 6.4,
+    "sos": 0.829,
+    "offense": {
+      "ranking": 86,
+      "rating": 23.1,
+      "success": 93,
+      "explosiveness": 98.5,
+      "rushing": 98,
+      "passing": 96.2,
+      "standardDowns": 97.1,
+      "passingDowns": 92,
+      "runRate": 0.55,
+      "pace": -0.8
+    },
+    "defense": {
+      "ranking": 5,
+      "rating": 13.4,
+      "success": 123.4,
+      "explosiveness": 99.8,
+      "rushing": 119,
+      "passing": 110,
+      "standardDowns": 110,
+      "passingDowns": 113.4,
+      "havoc": {
+        "total": 0.21899999999999997,
+        "frontSeven": 0.131,
+        "db": 0.087
+      }
+    },
+    "specialTeams": {
+      "rating": 1.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "rating": 10.4,
+    "ranking": 40,
+    "secondOrderWins": 7.9,
+    "sos": 0.867,
+    "offense": {
+      "ranking": 26,
+      "rating": 35.9,
+      "success": 111.1,
+      "explosiveness": 99.6,
+      "rushing": 106.5,
+      "passing": 110.2,
+      "standardDowns": 102.4,
+      "passingDowns": 113.1,
+      "runRate": 0.573,
+      "pace": 2.3
+    },
+    "defense": {
+      "ranking": 58,
+      "rating": 26.1,
+      "success": 105.5,
+      "explosiveness": 91.6,
+      "rushing": 98.6,
+      "passing": 101.2,
+      "standardDowns": 97.6,
+      "passingDowns": 102,
+      "havoc": {
+        "total": 0.174,
+        "frontSeven": 0.114,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": 0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Nebraska",
+    "conference": "Big Ten",
+    "rating": 10,
+    "ranking": 41,
+    "secondOrderWins": 5.4,
+    "sos": 0.803,
+    "offense": {
+      "ranking": 12,
+      "rating": 39.1,
+      "success": 112.9,
+      "explosiveness": 102.7,
+      "rushing": 103.1,
+      "passing": 111.6,
+      "standardDowns": 104.6,
+      "passingDowns": 116.8,
+      "runRate": 0.439,
+      "pace": -1
+    },
+    "defense": {
+      "ranking": 74,
+      "rating": 31.2,
+      "success": 91.4,
+      "explosiveness": 96,
+      "rushing": 87.5,
+      "passing": 98.5,
+      "standardDowns": 97.3,
+      "passingDowns": 85.2,
+      "havoc": {
+        "total": 0.138,
+        "frontSeven": 0.09,
+        "db": 0.047
+      }
+    },
+    "specialTeams": {
+      "rating": 2.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "rating": 10,
+    "ranking": 41,
+    "secondOrderWins": 7.7,
+    "sos": 0.866,
+    "offense": {
+      "ranking": 37,
+      "rating": 32.1,
+      "success": 107.4,
+      "explosiveness": 103.3,
+      "rushing": 105.8,
+      "passing": 107.8,
+      "standardDowns": 103.4,
+      "passingDowns": 110.9,
+      "runRate": 0.557,
+      "pace": -0.1
+    },
+    "defense": {
+      "ranking": 48,
+      "rating": 22.5,
+      "success": 108.2,
+      "explosiveness": 93.8,
+      "rushing": 100.1,
+      "passing": 103.5,
+      "standardDowns": 102.7,
+      "passingDowns": 98,
+      "havoc": {
+        "total": 0.19699999999999998,
+        "frontSeven": 0.133,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": 0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Florida State",
+    "conference": "ACC",
+    "rating": 9.6,
+    "ranking": 43,
+    "secondOrderWins": 7,
+    "sos": 0.858,
+    "offense": {
+      "ranking": 73,
+      "rating": 25.9,
+      "success": 91.9,
+      "explosiveness": 107.7,
+      "rushing": 93.4,
+      "passing": 100.5,
+      "standardDowns": 98.3,
+      "passingDowns": 97.3,
+      "runRate": 0.48,
+      "pace": 1.4
+    },
+    "defense": {
+      "ranking": 22,
+      "rating": 17.5,
+      "success": 115,
+      "explosiveness": 90.7,
+      "rushing": 108.1,
+      "passing": 102,
+      "standardDowns": 103.8,
+      "passingDowns": 102.5,
+      "havoc": {
+        "total": 0.18600000000000003,
+        "frontSeven": 0.128,
+        "db": 0.05
+      }
+    },
+    "specialTeams": {
+      "rating": 1.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "rating": 8.7,
+    "ranking": 44,
+    "secondOrderWins": 7.1,
+    "sos": 0.891,
+    "offense": {
+      "ranking": 62,
+      "rating": 28.1,
+      "success": 97.8,
+      "explosiveness": 106.9,
+      "rushing": 102.9,
+      "passing": 102.6,
+      "standardDowns": 102.9,
+      "passingDowns": 98.4,
+      "runRate": 0.568,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 39,
+      "rating": 21.3,
+      "success": 105.2,
+      "explosiveness": 93.4,
+      "rushing": 101.5,
+      "passing": 98.6,
+      "standardDowns": 101.7,
+      "passingDowns": 94.8,
+      "havoc": {
+        "total": 0.21,
+        "frontSeven": 0.139,
+        "db": 0.07
+      }
+    },
+    "specialTeams": {
+      "rating": 1.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "rating": 8.5,
+    "ranking": 45,
+    "secondOrderWins": 7.2,
+    "sos": 0.882,
+    "offense": {
+      "ranking": 68,
+      "rating": 26.9,
+      "success": 96.7,
+      "explosiveness": 101.9,
+      "rushing": 99.1,
+      "passing": 99.2,
+      "standardDowns": 99.3,
+      "passingDowns": 99,
+      "runRate": 0.555,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 25,
+      "rating": 18.3,
+      "success": 107.2,
+      "explosiveness": 100.9,
+      "rushing": 97.7,
+      "passing": 112,
+      "standardDowns": 107.9,
+      "passingDowns": 98.5,
+      "havoc": {
+        "total": 0.187,
+        "frontSeven": 0.126,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -0.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "rating": 7.6,
+    "ranking": 46,
+    "secondOrderWins": 6,
+    "sos": 0.792,
+    "offense": {
+      "ranking": 28,
+      "rating": 35.4,
+      "success": 104.1,
+      "explosiveness": 89.2,
+      "rushing": 106.2,
+      "passing": 96.3,
+      "standardDowns": 101.5,
+      "passingDowns": 93.4,
+      "runRate": 0.594,
+      "pace": 0.2
+    },
+    "defense": {
+      "ranking": 64,
+      "rating": 28.1,
+      "success": 98.3,
+      "explosiveness": 105.8,
+      "rushing": 101.7,
+      "passing": 99.3,
+      "standardDowns": 99.1,
+      "passingDowns": 106.6,
+      "havoc": {
+        "total": 0.16,
+        "frontSeven": 0.102,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": 0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Pittsburgh",
+    "conference": "ACC",
+    "rating": 7.5,
+    "ranking": 47,
+    "secondOrderWins": 5.6,
+    "sos": 0.868,
+    "offense": {
+      "ranking": 77,
+      "rating": 24.7,
+      "success": 88.4,
+      "explosiveness": 97,
+      "rushing": 94,
+      "passing": 93,
+      "standardDowns": 91.6,
+      "passingDowns": 99.1,
+      "runRate": 0.564,
+      "pace": 2.2
+    },
+    "defense": {
+      "ranking": 19,
+      "rating": 16.8,
+      "success": 108.1,
+      "explosiveness": 115.3,
+      "rushing": 113.3,
+      "passing": 108.4,
+      "standardDowns": 108.3,
+      "passingDowns": 113.5,
+      "havoc": {
+        "total": 0.17600000000000002,
+        "frontSeven": 0.141,
+        "db": 0.035
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Virginia",
+    "conference": "ACC",
+    "rating": 7.5,
+    "ranking": 47,
+    "secondOrderWins": 7.2,
+    "sos": 0.899,
+    "offense": {
+      "ranking": 85,
+      "rating": 23.3,
+      "success": 98,
+      "explosiveness": 94,
+      "rushing": 98.9,
+      "passing": 93.6,
+      "standardDowns": 96.2,
+      "passingDowns": 97.1,
+      "runRate": 0.501,
+      "pace": 0.1
+    },
+    "defense": {
+      "ranking": 20,
+      "rating": 16.9,
+      "success": 108.8,
+      "explosiveness": 106.2,
+      "rushing": 112.1,
+      "passing": 106,
+      "standardDowns": 111.7,
+      "passingDowns": 100.3,
+      "havoc": {
+        "total": 0.161,
+        "frontSeven": 0.109,
+        "db": 0.052000000000000005
+      }
+    },
+    "specialTeams": {
+      "rating": 1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Arizona",
+    "conference": "Big 12",
+    "rating": 7.3,
+    "ranking": 49,
+    "secondOrderWins": 6,
+    "sos": 0.835,
+    "offense": {
+      "ranking": 70,
+      "rating": 26.6,
+      "success": 95.2,
+      "explosiveness": 111,
+      "rushing": 94.4,
+      "passing": 101.7,
+      "standardDowns": 100.5,
+      "passingDowns": 106.5,
+      "runRate": 0.326,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 39,
+      "rating": 21.3,
+      "success": 103.5,
+      "explosiveness": 106.1,
+      "rushing": 104.8,
+      "passing": 105,
+      "standardDowns": 107.7,
+      "passingDowns": 98.4,
+      "havoc": {
+        "total": 0.172,
+        "frontSeven": 0.096,
+        "db": 0.075
+      }
+    },
+    "specialTeams": {
+      "rating": 1.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "rating": 6.5,
+    "ranking": 50,
+    "secondOrderWins": 6.7,
+    "sos": 0.919,
+    "offense": {
+      "ranking": 82,
+      "rating": 23.6,
+      "success": 90.3,
+      "explosiveness": 89.5,
+      "rushing": 94.5,
+      "passing": 88.1,
+      "standardDowns": 96.2,
+      "passingDowns": 80.7,
+      "runRate": 0.48200000000000004,
+      "pace": 0.4
+    },
+    "defense": {
+      "ranking": 15,
+      "rating": 16.5,
+      "success": 110.5,
+      "explosiveness": 107.8,
+      "rushing": 117.5,
+      "passing": 104.3,
+      "standardDowns": 109.5,
+      "passingDowns": 104,
+      "havoc": {
+        "total": 0.16699999999999998,
+        "frontSeven": 0.113,
+        "db": 0.053
+      }
+    },
+    "specialTeams": {
+      "rating": -0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "rating": 6.4,
+    "ranking": 51,
+    "secondOrderWins": 7.8,
+    "sos": 0.914,
+    "offense": {
+      "ranking": 81,
+      "rating": 23.9,
+      "success": 99.3,
+      "explosiveness": 91.7,
+      "rushing": 93.7,
+      "passing": 99.5,
+      "standardDowns": 99.3,
+      "passingDowns": 89.9,
+      "runRate": 0.555,
+      "pace": 1.2
+    },
+    "defense": {
+      "ranking": 29,
+      "rating": 19,
+      "success": 109.4,
+      "explosiveness": 103.8,
+      "rushing": 106.1,
+      "passing": 108.6,
+      "standardDowns": 110.4,
+      "passingDowns": 98.4,
+      "havoc": {
+        "total": 0.177,
+        "frontSeven": 0.083,
+        "db": 0.09
+      }
+    },
+    "specialTeams": {
+      "rating": 1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "TCU",
+    "conference": "Big 12",
+    "rating": 6.4,
+    "ranking": 51,
+    "secondOrderWins": 8.5,
+    "sos": 0.923,
+    "offense": {
+      "ranking": 78,
+      "rating": 24.4,
+      "success": 100.3,
+      "explosiveness": 90.3,
+      "rushing": 94.9,
+      "passing": 97.4,
+      "standardDowns": 96,
+      "passingDowns": 95.8,
+      "runRate": 0.528,
+      "pace": -2
+    },
+    "defense": {
+      "ranking": 29,
+      "rating": 19,
+      "success": 115,
+      "explosiveness": 101.3,
+      "rushing": 110.5,
+      "passing": 109.6,
+      "standardDowns": 113.5,
+      "passingDowns": 99.3,
+      "havoc": {
+        "total": 0.187,
+        "frontSeven": 0.102,
+        "db": 0.083
+      }
+    },
+    "specialTeams": {
+      "rating": 1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Maryland",
+    "conference": "Big Ten",
+    "rating": 5.9,
+    "ranking": 53,
+    "secondOrderWins": 6.3,
+    "sos": 0.867,
+    "offense": {
+      "ranking": 60,
+      "rating": 28.5,
+      "success": 102.9,
+      "explosiveness": 99,
+      "rushing": 102.3,
+      "passing": 103.5,
+      "standardDowns": 105.1,
+      "passingDowns": 90.8,
+      "runRate": 0.561,
+      "pace": 2
+    },
+    "defense": {
+      "ranking": 49,
+      "rating": 22.8,
+      "success": 93.2,
+      "explosiveness": 105.6,
+      "rushing": 95.6,
+      "passing": 100.4,
+      "standardDowns": 98.3,
+      "passingDowns": 96.9,
+      "havoc": {
+        "total": 0.165,
+        "frontSeven": 0.105,
+        "db": 0.059000000000000004
+      }
+    },
+    "specialTeams": {
+      "rating": 0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "rating": 5.7,
+    "ranking": 54,
+    "secondOrderWins": 8.9,
+    "sos": 0.939,
+    "offense": {
+      "ranking": 50,
+      "rating": 30.3,
+      "success": 106.5,
+      "explosiveness": 101.6,
+      "rushing": 110.2,
+      "passing": 101.5,
+      "standardDowns": 102.4,
+      "passingDowns": 107.9,
+      "runRate": 0.741,
+      "pace": -1.5
+    },
+    "defense": {
+      "ranking": 57,
+      "rating": 25.4,
+      "success": 96.3,
+      "explosiveness": 101.4,
+      "rushing": 107.3,
+      "passing": 92,
+      "standardDowns": 100.1,
+      "passingDowns": 94.6,
+      "havoc": {
+        "total": 0.153,
+        "frontSeven": 0.09300000000000001,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": 0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Washington",
+    "conference": "Big Ten",
+    "rating": 5.2,
+    "ranking": 55,
+    "secondOrderWins": 4.8,
+    "sos": 0.805,
+    "offense": {
+      "ranking": 34,
+      "rating": 33,
+      "success": 104.9,
+      "explosiveness": 109.8,
+      "rushing": 113.9,
+      "passing": 104.6,
+      "standardDowns": 103.1,
+      "passingDowns": 115.9,
+      "runRate": 0.557,
+      "pace": -1
+    },
+    "defense": {
+      "ranking": 62,
+      "rating": 28,
+      "success": 99,
+      "explosiveness": 92.5,
+      "rushing": 94.1,
+      "passing": 99.2,
+      "standardDowns": 96.3,
+      "passingDowns": 97.2,
+      "havoc": {
+        "total": 0.16699999999999998,
+        "frontSeven": 0.12,
+        "db": 0.045
+      }
+    },
+    "specialTeams": {
+      "rating": 0.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "rating": 4.4,
+    "ranking": 56,
+    "secondOrderWins": 7.5,
+    "sos": 0.946,
+    "offense": {
+      "ranking": 89,
+      "rating": 22.5,
+      "success": 90.3,
+      "explosiveness": 99.4,
+      "rushing": 87.2,
+      "passing": 99.5,
+      "standardDowns": 92.4,
+      "passingDowns": 99.4,
+      "runRate": 0.514,
+      "pace": 0
+    },
+    "defense": {
+      "ranking": 34,
+      "rating": 19.4,
+      "success": 108.1,
+      "explosiveness": 109.5,
+      "rushing": 112.8,
+      "passing": 105,
+      "standardDowns": 110.9,
+      "passingDowns": 104.4,
+      "havoc": {
+        "total": 0.183,
+        "frontSeven": 0.102,
+        "db": 0.08
+      }
+    },
+    "specialTeams": {
+      "rating": 1.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "rating": 4.2,
+    "ranking": 57,
+    "secondOrderWins": 4.9,
+    "sos": 0.812,
+    "offense": {
+      "ranking": 56,
+      "rating": 29.1,
+      "success": 91.9,
+      "explosiveness": 101.7,
+      "rushing": 90.5,
+      "passing": 97.8,
+      "standardDowns": 92.7,
+      "passingDowns": 102.9,
+      "runRate": 0.473,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 54,
+      "rating": 23.9,
+      "success": 108.2,
+      "explosiveness": 92.1,
+      "rushing": 104.6,
+      "passing": 99.8,
+      "standardDowns": 99.5,
+      "passingDowns": 103.6,
+      "havoc": {
+        "total": 0.162,
+        "frontSeven": 0.085,
+        "db": 0.076
+      }
+    },
+    "specialTeams": {
+      "rating": -0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UCF",
+    "conference": "Big 12",
+    "rating": 3.5,
+    "ranking": 58,
+    "secondOrderWins": 9.4,
+    "sos": 0.936,
+    "offense": {
+      "ranking": 49,
+      "rating": 30.5,
+      "success": 105.3,
+      "explosiveness": 96,
+      "rushing": 105.9,
+      "passing": 100.1,
+      "standardDowns": 100.4,
+      "passingDowns": 104.5,
+      "runRate": 0.635,
+      "pace": -0.6
+    },
+    "defense": {
+      "ranking": 66,
+      "rating": 28.5,
+      "success": 104.6,
+      "explosiveness": 106.5,
+      "rushing": 98.3,
+      "passing": 112.2,
+      "standardDowns": 104.5,
+      "passingDowns": 106,
+      "havoc": {
+        "total": 0.185,
+        "frontSeven": 0.08800000000000001,
+        "db": 0.098
+      }
+    },
+    "specialTeams": {
+      "rating": 1.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Washington State",
+    "conference": "Pac-12",
+    "rating": 3.2,
+    "ranking": 59,
+    "secondOrderWins": 5.7,
+    "sos": 0.843,
+    "offense": {
+      "ranking": 41,
+      "rating": 31.7,
+      "success": 105,
+      "explosiveness": 103.9,
+      "rushing": 98.7,
+      "passing": 104.6,
+      "standardDowns": 100.4,
+      "passingDowns": 110.8,
+      "runRate": 0.386,
+      "pace": -2.2
+    },
+    "defense": {
+      "ranking": 61,
+      "rating": 27.8,
+      "success": 89.8,
+      "explosiveness": 105.9,
+      "rushing": 99.3,
+      "passing": 93.5,
+      "standardDowns": 97.5,
+      "passingDowns": 95.2,
+      "havoc": {
+        "total": 0.155,
+        "frontSeven": 0.091,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Miami",
+    "conference": "ACC",
+    "rating": 3.2,
+    "ranking": 59,
+    "secondOrderWins": 5.9,
+    "sos": 0.872,
+    "offense": {
+      "ranking": 76,
+      "rating": 25,
+      "success": 91.5,
+      "explosiveness": 99.5,
+      "rushing": 94.7,
+      "passing": 97.4,
+      "standardDowns": 93.5,
+      "passingDowns": 101.3,
+      "runRate": 0.574,
+      "pace": 1.3
+    },
+    "defense": {
+      "ranking": 36,
+      "rating": 19.9,
+      "success": 106.1,
+      "explosiveness": 96,
+      "rushing": 102.2,
+      "passing": 98.8,
+      "standardDowns": 102.6,
+      "passingDowns": 98,
+      "havoc": {
+        "total": 0.19,
+        "frontSeven": 0.129,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -1.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "rating": 2.5,
+    "ranking": 61,
+    "secondOrderWins": 5.5,
+    "sos": 0.826,
+    "offense": {
+      "ranking": 91,
+      "rating": 22.1,
+      "success": 92,
+      "explosiveness": 88.9,
+      "rushing": 91.5,
+      "passing": 91.1,
+      "standardDowns": 93.1,
+      "passingDowns": 87.3,
+      "runRate": 0.581,
+      "pace": 1.6
+    },
+    "defense": {
+      "ranking": 29,
+      "rating": 19,
+      "success": 107.1,
+      "explosiveness": 99.2,
+      "rushing": 104.5,
+      "passing": 104.8,
+      "standardDowns": 100.7,
+      "passingDowns": 111.1,
+      "havoc": {
+        "total": 0.185,
+        "frontSeven": 0.096,
+        "db": 0.08900000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": -0.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "rating": 2,
+    "ranking": 62,
+    "secondOrderWins": 5.7,
+    "sos": 0.815,
+    "offense": {
+      "ranking": 100,
+      "rating": 20.2,
+      "success": 89.7,
+      "explosiveness": 86,
+      "rushing": 90.4,
+      "passing": 88.9,
+      "standardDowns": 88.7,
+      "passingDowns": 91.1,
+      "runRate": 0.574,
+      "pace": 1.4
+    },
+    "defense": {
+      "ranking": 23,
+      "rating": 17.8,
+      "success": 118.5,
+      "explosiveness": 96.2,
+      "rushing": 108.3,
+      "passing": 106.5,
+      "standardDowns": 108.3,
+      "passingDowns": 108.9,
+      "havoc": {
+        "total": 0.19,
+        "frontSeven": 0.098,
+        "db": 0.09
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "rating": 1.9,
+    "ranking": 63,
+    "secondOrderWins": 5.8,
+    "sos": 0.9,
+    "offense": {
+      "ranking": 82,
+      "rating": 23.6,
+      "success": 101.3,
+      "explosiveness": 99.3,
+      "rushing": 95.5,
+      "passing": 103.6,
+      "standardDowns": 101.9,
+      "passingDowns": 98.8,
+      "runRate": 0.47100000000000003,
+      "pace": 1.3
+    },
+    "defense": {
+      "ranking": 52,
+      "rating": 23.3,
+      "success": 93.5,
+      "explosiveness": 108.9,
+      "rushing": 97.4,
+      "passing": 98.3,
+      "standardDowns": 99,
+      "passingDowns": 99,
+      "havoc": {
+        "total": 0.16,
+        "frontSeven": 0.109,
+        "db": 0.05
+      }
+    },
+    "specialTeams": {
+      "rating": 1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Fresno State",
+    "conference": "Mountain West",
+    "rating": 1.8,
+    "ranking": 64,
+    "secondOrderWins": 8.4,
+    "sos": 0.912,
+    "offense": {
+      "ranking": 30,
+      "rating": 33.2,
+      "success": 110,
+      "explosiveness": 96.6,
+      "rushing": 106.6,
+      "passing": 106.4,
+      "standardDowns": 103,
+      "passingDowns": 107.5,
+      "runRate": 0.574,
+      "pace": 1.4
+    },
+    "defense": {
+      "ranking": 77,
+      "rating": 32,
+      "success": 103.1,
+      "explosiveness": 92,
+      "rushing": 90,
+      "passing": 107,
+      "standardDowns": 100.2,
+      "passingDowns": 94.8,
+      "havoc": {
+        "total": 0.17300000000000001,
+        "frontSeven": 0.11,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": 0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "rating": -0.2,
+    "ranking": 65,
+    "secondOrderWins": 6.5,
+    "sos": 0.909,
+    "offense": {
+      "ranking": 64,
+      "rating": 27.9,
+      "success": 94.8,
+      "explosiveness": 106.7,
+      "rushing": 99.1,
+      "passing": 98.9,
+      "standardDowns": 93.3,
+      "passingDowns": 110.8,
+      "runRate": 0.473,
+      "pace": -0.9
+    },
+    "defense": {
+      "ranking": 71,
+      "rating": 29.3,
+      "success": 97.7,
+      "explosiveness": 105.9,
+      "rushing": 104.8,
+      "passing": 98.9,
+      "standardDowns": 104.7,
+      "passingDowns": 93.7,
+      "havoc": {
+        "total": 0.165,
+        "frontSeven": 0.10400000000000001,
+        "db": 0.06
+      }
+    },
+    "specialTeams": {
+      "rating": 1.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Tulsa",
+    "conference": "American Athletic",
+    "rating": -0.4,
+    "ranking": 66,
+    "secondOrderWins": 9.2,
+    "sos": 0.933,
+    "offense": {
+      "ranking": 19,
+      "rating": 37.9,
+      "success": 108.4,
+      "explosiveness": 113.8,
+      "rushing": 101.8,
+      "passing": 116.9,
+      "standardDowns": 106.4,
+      "passingDowns": 119.3,
+      "runRate": 0.461,
+      "pace": -3.3
+    },
+    "defense": {
+      "ranking": 100,
+      "rating": 36.4,
+      "success": 98.7,
+      "explosiveness": 92.1,
+      "rushing": 98.4,
+      "passing": 93.7,
+      "standardDowns": 99,
+      "passingDowns": 90,
+      "havoc": {
+        "total": 0.16,
+        "frontSeven": 0.09,
+        "db": 0.07
+      }
+    },
+    "specialTeams": {
+      "rating": -1.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Southern Miss",
+    "conference": "Sun Belt",
+    "rating": -0.5,
+    "ranking": 67,
+    "secondOrderWins": 7.1,
+    "sos": 0.935,
+    "offense": {
+      "ranking": 68,
+      "rating": 26.9,
+      "success": 99.1,
+      "explosiveness": 91.3,
+      "rushing": 103.5,
+      "passing": 93.5,
+      "standardDowns": 98.4,
+      "passingDowns": 88.7,
+      "runRate": 0.556,
+      "pace": -0.5
+    },
+    "defense": {
+      "ranking": 64,
+      "rating": 28.1,
+      "success": 103.2,
+      "explosiveness": 103.7,
+      "rushing": 106.9,
+      "passing": 101.9,
+      "standardDowns": 107.1,
+      "passingDowns": 98.4,
+      "havoc": {
+        "total": 0.18100000000000002,
+        "frontSeven": 0.092,
+        "db": 0.087
+      }
+    },
+    "specialTeams": {
+      "rating": 0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "East Carolina",
+    "conference": "American Athletic",
+    "rating": -0.7,
+    "ranking": 68,
+    "secondOrderWins": 7,
+    "sos": 0.912,
+    "offense": {
+      "ranking": 55,
+      "rating": 29.6,
+      "success": 97.8,
+      "explosiveness": 108.3,
+      "rushing": 106.5,
+      "passing": 98.5,
+      "standardDowns": 102.1,
+      "passingDowns": 105.7,
+      "runRate": 0.507,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 68,
+      "rating": 29,
+      "success": 101.6,
+      "explosiveness": 102.8,
+      "rushing": 107.3,
+      "passing": 101.3,
+      "standardDowns": 99.9,
+      "passingDowns": 107.7,
+      "havoc": {
+        "total": 0.172,
+        "frontSeven": 0.107,
+        "db": 0.06
+      }
+    },
+    "specialTeams": {
+      "rating": -1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "NC State",
+    "conference": "ACC",
+    "rating": -1.1,
+    "ranking": 69,
+    "secondOrderWins": 4.5,
+    "sos": 0.901,
+    "offense": {
+      "ranking": 96,
+      "rating": 20.6,
+      "success": 91.7,
+      "explosiveness": 102.7,
+      "rushing": 90.4,
+      "passing": 95.6,
+      "standardDowns": 95.5,
+      "passingDowns": 96,
+      "runRate": 0.397,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 47,
+      "rating": 22.4,
+      "success": 103.4,
+      "explosiveness": 98.3,
+      "rushing": 94.8,
+      "passing": 105.2,
+      "standardDowns": 97.5,
+      "passingDowns": 108.4,
+      "havoc": {
+        "total": 0.16699999999999998,
+        "frontSeven": 0.11800000000000001,
+        "db": 0.049
+      }
+    },
+    "specialTeams": {
+      "rating": 0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "rating": -2.4,
+    "ranking": 70,
+    "secondOrderWins": 7.1,
+    "sos": 0.895,
+    "offense": {
+      "ranking": 72,
+      "rating": 26.2,
+      "success": 102.4,
+      "explosiveness": 93.9,
+      "rushing": 103.9,
+      "passing": 94.7,
+      "standardDowns": 100.4,
+      "passingDowns": 93.9,
+      "runRate": 0.43799999999999994,
+      "pace": -2.4
+    },
+    "defense": {
+      "ranking": 73,
+      "rating": 29.9,
+      "success": 103.5,
+      "explosiveness": 104.2,
+      "rushing": 95,
+      "passing": 113.6,
+      "standardDowns": 99.3,
+      "passingDowns": 110.2,
+      "havoc": {
+        "total": 0.16899999999999998,
+        "frontSeven": 0.09300000000000001,
+        "db": 0.07200000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": 1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "rating": -2.4,
+    "ranking": 70,
+    "secondOrderWins": 5.5,
+    "sos": 0.895,
+    "offense": {
+      "ranking": 53,
+      "rating": 30.1,
+      "success": 101.5,
+      "explosiveness": 100.7,
+      "rushing": 98.9,
+      "passing": 99.7,
+      "standardDowns": 97.8,
+      "passingDowns": 109.8,
+      "runRate": 0.385,
+      "pace": 0
+    },
+    "defense": {
+      "ranking": 75,
+      "rating": 31.7,
+      "success": 96.2,
+      "explosiveness": 95.6,
+      "rushing": 102.3,
+      "passing": 93,
+      "standardDowns": 98.3,
+      "passingDowns": 92.7,
+      "havoc": {
+        "total": 0.14400000000000002,
+        "frontSeven": 0.094,
+        "db": 0.048
+      }
+    },
+    "specialTeams": {
+      "rating": -0.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "rating": -2.7,
+    "ranking": 72,
+    "secondOrderWins": 3.4,
+    "sos": 0.797,
+    "offense": {
+      "ranking": 62,
+      "rating": 28.1,
+      "success": 100.6,
+      "explosiveness": 101.4,
+      "rushing": 103.7,
+      "passing": 98.7,
+      "standardDowns": 103.2,
+      "passingDowns": 92.9,
+      "runRate": 0.473,
+      "pace": 1.6
+    },
+    "defense": {
+      "ranking": 68,
+      "rating": 29,
+      "success": 93,
+      "explosiveness": 104.6,
+      "rushing": 92.7,
+      "passing": 102.1,
+      "standardDowns": 97,
+      "passingDowns": 97.8,
+      "havoc": {
+        "total": 0.141,
+        "frontSeven": 0.099,
+        "db": 0.042
+      }
+    },
+    "specialTeams": {
+      "rating": -1.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "rating": -3.8,
+    "ranking": 73,
+    "secondOrderWins": 7.6,
+    "sos": 0.966,
+    "offense": {
+      "ranking": 45,
+      "rating": 31.2,
+      "success": 107.2,
+      "explosiveness": 94.6,
+      "rushing": 100.7,
+      "passing": 100.1,
+      "standardDowns": 101.4,
+      "passingDowns": 104.9,
+      "runRate": 0.37799999999999995,
+      "pace": -0.4
+    },
+    "defense": {
+      "ranking": 96,
+      "rating": 35.7,
+      "success": 90.6,
+      "explosiveness": 105.6,
+      "rushing": 92.9,
+      "passing": 97,
+      "standardDowns": 98,
+      "passingDowns": 92.4,
+      "havoc": {
+        "total": 0.14400000000000002,
+        "frontSeven": 0.08800000000000001,
+        "db": 0.055
+      }
+    },
+    "specialTeams": {
+      "rating": 0.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Nevada",
+    "conference": "Mountain West",
+    "rating": -4.2,
+    "ranking": 74,
+    "secondOrderWins": 7.7,
+    "sos": 0.953,
+    "offense": {
+      "ranking": 43,
+      "rating": 31.5,
+      "success": 102,
+      "explosiveness": 108,
+      "rushing": 104.5,
+      "passing": 110.1,
+      "standardDowns": 97.9,
+      "passingDowns": 119.7,
+      "runRate": 0.5660000000000001,
+      "pace": -0.3
+    },
+    "defense": {
+      "ranking": 93,
+      "rating": 35.3,
+      "success": 97.5,
+      "explosiveness": 94.8,
+      "rushing": 92.9,
+      "passing": 97.6,
+      "standardDowns": 97.3,
+      "passingDowns": 94.7,
+      "havoc": {
+        "total": 0.157,
+        "frontSeven": 0.114,
+        "db": 0.04
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "rating": -4.6,
+    "ranking": 75,
+    "secondOrderWins": 7.1,
+    "sos": 0.957,
+    "offense": {
+      "ranking": 57,
+      "rating": 29,
+      "success": 95.4,
+      "explosiveness": 105.6,
+      "rushing": 90.4,
+      "passing": 103.8,
+      "standardDowns": 99.7,
+      "passingDowns": 98.1,
+      "runRate": 0.447,
+      "pace": -0.4
+    },
+    "defense": {
+      "ranking": 82,
+      "rating": 33.6,
+      "success": 98.3,
+      "explosiveness": 95.3,
+      "rushing": 97,
+      "passing": 96.9,
+      "standardDowns": 97.3,
+      "passingDowns": 98.7,
+      "havoc": {
+        "total": 0.13699999999999998,
+        "frontSeven": 0.086,
+        "db": 0.051
+      }
+    },
+    "specialTeams": {
+      "rating": 0
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Houston",
+    "conference": "Big 12",
+    "rating": -4.7,
+    "ranking": 76,
+    "secondOrderWins": 7.1,
+    "sos": 0.944,
+    "offense": {
+      "ranking": 47,
+      "rating": 30.9,
+      "success": 100.1,
+      "explosiveness": 106.4,
+      "rushing": 101.3,
+      "passing": 104.6,
+      "standardDowns": 97.6,
+      "passingDowns": 112.4,
+      "runRate": 0.53,
+      "pace": -1.4
+    },
+    "defense": {
+      "ranking": 86,
+      "rating": 34.2,
+      "success": 104.2,
+      "explosiveness": 92.9,
+      "rushing": 105.7,
+      "passing": 93.1,
+      "standardDowns": 97.4,
+      "passingDowns": 105.2,
+      "havoc": {
+        "total": 0.205,
+        "frontSeven": 0.146,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": -1.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "rating": -5,
+    "ranking": 77,
+    "secondOrderWins": 6,
+    "sos": 0.926,
+    "offense": {
+      "ranking": 112,
+      "rating": 15.9,
+      "success": 89.9,
+      "explosiveness": 89.3,
+      "rushing": 91.9,
+      "passing": 88.3,
+      "standardDowns": 95.2,
+      "passingDowns": 79.3,
+      "runRate": 0.521,
+      "pace": -1.1
+    },
+    "defense": {
+      "ranking": 38,
+      "rating": 21,
+      "success": 114.8,
+      "explosiveness": 97.8,
+      "rushing": 118.3,
+      "passing": 100.9,
+      "standardDowns": 107.3,
+      "passingDowns": 101.9,
+      "havoc": {
+        "total": 0.168,
+        "frontSeven": 0.10800000000000001,
+        "db": 0.06
+      }
+    },
+    "specialTeams": {
+      "rating": 0.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Stanford",
+    "conference": "ACC",
+    "rating": -6.7,
+    "ranking": 78,
+    "secondOrderWins": 2.3,
+    "sos": 0.843,
+    "offense": {
+      "ranking": 94,
+      "rating": 21,
+      "success": 96,
+      "explosiveness": 92.6,
+      "rushing": 99.1,
+      "passing": 91.2,
+      "standardDowns": 95.5,
+      "passingDowns": 96.3,
+      "runRate": 0.469,
+      "pace": 0.3
+    },
+    "defense": {
+      "ranking": 60,
+      "rating": 27.4,
+      "success": 93.8,
+      "explosiveness": 93.3,
+      "rushing": 92.3,
+      "passing": 94.2,
+      "standardDowns": 90.1,
+      "passingDowns": 106,
+      "havoc": {
+        "total": 0.183,
+        "frontSeven": 0.115,
+        "db": 0.066
+      }
+    },
+    "specialTeams": {
+      "rating": -0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "rating": -7,
+    "ranking": 79,
+    "secondOrderWins": 3.7,
+    "sos": 0.944,
+    "offense": {
+      "ranking": 38,
+      "rating": 32,
+      "success": 97.4,
+      "explosiveness": 107.8,
+      "rushing": 100,
+      "passing": 100.6,
+      "standardDowns": 101.4,
+      "passingDowns": 100.7,
+      "runRate": 0.462,
+      "pace": -0.3
+    },
+    "defense": {
+      "ranking": 111,
+      "rating": 40.6,
+      "success": 92.3,
+      "explosiveness": 98.7,
+      "rushing": 92.9,
+      "passing": 94.5,
+      "standardDowns": 95.7,
+      "passingDowns": 94.2,
+      "havoc": {
+        "total": 0.14,
+        "frontSeven": 0.07200000000000001,
+        "db": 0.066
+      }
+    },
+    "specialTeams": {
+      "rating": 1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "rating": -7.6,
+    "ranking": 80,
+    "secondOrderWins": 2.7,
+    "sos": 0.892,
+    "offense": {
+      "ranking": 48,
+      "rating": 30.6,
+      "success": 100.2,
+      "explosiveness": 104.4,
+      "rushing": 102.8,
+      "passing": 101.1,
+      "standardDowns": 97.7,
+      "passingDowns": 110,
+      "runRate": 0.48,
+      "pace": -1.5
+    },
+    "defense": {
+      "ranking": 104,
+      "rating": 38.8,
+      "success": 90.5,
+      "explosiveness": 90.3,
+      "rushing": 90.9,
+      "passing": 89.9,
+      "standardDowns": 91,
+      "passingDowns": 89.4,
+      "havoc": {
+        "total": 0.131,
+        "frontSeven": 0.07400000000000001,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": 0.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "rating": -7.7,
+    "ranking": 81,
+    "secondOrderWins": 3.9,
+    "sos": 0.922,
+    "offense": {
+      "ranking": 66,
+      "rating": 27.2,
+      "success": 97.5,
+      "explosiveness": 101.8,
+      "rushing": 99.8,
+      "passing": 103.9,
+      "standardDowns": 97.6,
+      "passingDowns": 102.4,
+      "runRate": 0.5920000000000001,
+      "pace": 0.3
+    },
+    "defense": {
+      "ranking": 95,
+      "rating": 35.4,
+      "success": 91.4,
+      "explosiveness": 96.7,
+      "rushing": 89.1,
+      "passing": 96.1,
+      "standardDowns": 92.6,
+      "passingDowns": 96.7,
+      "havoc": {
+        "total": 0.14300000000000002,
+        "frontSeven": 0.076,
+        "db": 0.066
+      }
+    },
+    "specialTeams": {
+      "rating": 0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Marshall",
+    "conference": "Sun Belt",
+    "rating": -9.1,
+    "ranking": 82,
+    "secondOrderWins": 4.7,
+    "sos": 0.919,
+    "offense": {
+      "ranking": 46,
+      "rating": 31.1,
+      "success": 100.8,
+      "explosiveness": 102,
+      "rushing": 101.3,
+      "passing": 100,
+      "standardDowns": 100.3,
+      "passingDowns": 102.8,
+      "runRate": 0.43700000000000006,
+      "pace": 1.9
+    },
+    "defense": {
+      "ranking": 106,
+      "rating": 39.4,
+      "success": 92.6,
+      "explosiveness": 101.9,
+      "rushing": 97.6,
+      "passing": 95.4,
+      "standardDowns": 95,
+      "passingDowns": 101.8,
+      "havoc": {
+        "total": 0.114,
+        "frontSeven": 0.061,
+        "db": 0.052000000000000005
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "rating": -9.1,
+    "ranking": 82,
+    "secondOrderWins": 2.1,
+    "sos": 0.788,
+    "offense": {
+      "ranking": 96,
+      "rating": 20.6,
+      "success": 83.2,
+      "explosiveness": 87.4,
+      "rushing": 79.9,
+      "passing": 89.4,
+      "standardDowns": 83.9,
+      "passingDowns": 88.6,
+      "runRate": 0.518,
+      "pace": 1.4
+    },
+    "defense": {
+      "ranking": 62,
+      "rating": 28,
+      "success": 92.5,
+      "explosiveness": 109.9,
+      "rushing": 101.7,
+      "passing": 96.3,
+      "standardDowns": 97.1,
+      "passingDowns": 105.8,
+      "havoc": {
+        "total": 0.138,
+        "frontSeven": 0.10300000000000001,
+        "db": 0.035
+      }
+    },
+    "specialTeams": {
+      "rating": -1.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "rating": -9.7,
+    "ranking": 84,
+    "secondOrderWins": 3,
+    "sos": 0.845,
+    "offense": {
+      "ranking": 115,
+      "rating": 15.1,
+      "success": 80,
+      "explosiveness": 83.2,
+      "rushing": 85.9,
+      "passing": 79.1,
+      "standardDowns": 82.2,
+      "passingDowns": 84.4,
+      "runRate": 0.48100000000000004,
+      "pace": -0.6
+    },
+    "defense": {
+      "ranking": 52,
+      "rating": 23.3,
+      "success": 98.9,
+      "explosiveness": 113.4,
+      "rushing": 102.1,
+      "passing": 104.8,
+      "standardDowns": 105.3,
+      "passingDowns": 103.1,
+      "havoc": {
+        "total": 0.138,
+        "frontSeven": 0.09,
+        "db": 0.048
+      }
+    },
+    "specialTeams": {
+      "rating": -1.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Navy",
+    "conference": "American Athletic",
+    "rating": -9.8,
+    "ranking": 85,
+    "secondOrderWins": 6.1,
+    "sos": 0.951,
+    "offense": {
+      "ranking": 35,
+      "rating": 32.6,
+      "success": 118.8,
+      "explosiveness": 96.1,
+      "rushing": 115.2,
+      "passing": 117,
+      "standardDowns": 112,
+      "passingDowns": 97.8,
+      "runRate": 0.813,
+      "pace": -3.4
+    },
+    "defense": {
+      "ranking": 117,
+      "rating": 41.6,
+      "success": 80.7,
+      "explosiveness": 100,
+      "rushing": 90.2,
+      "passing": 83.4,
+      "standardDowns": 90,
+      "passingDowns": 85.5,
+      "havoc": {
+        "total": 0.115,
+        "frontSeven": 0.07,
+        "db": 0.043
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "rating": -10.6,
+    "ranking": 86,
+    "secondOrderWins": 7.7,
+    "sos": 0.931,
+    "offense": {
+      "ranking": 52,
+      "rating": 30.2,
+      "success": 114.3,
+      "explosiveness": 98.5,
+      "rushing": 111.9,
+      "passing": 103.1,
+      "standardDowns": 105.4,
+      "passingDowns": 112.6,
+      "runRate": 0.446,
+      "pace": -2.7
+    },
+    "defense": {
+      "ranking": 107,
+      "rating": 39.8,
+      "success": 91.5,
+      "explosiveness": 95.4,
+      "rushing": 100.7,
+      "passing": 89.8,
+      "standardDowns": 92.4,
+      "passingDowns": 96.4,
+      "havoc": {
+        "total": 0.131,
+        "frontSeven": 0.09,
+        "db": 0.040999999999999995
+      }
+    },
+    "specialTeams": {
+      "rating": -1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "rating": -11.3,
+    "ranking": 87,
+    "secondOrderWins": 6.3,
+    "sos": 0.971,
+    "offense": {
+      "ranking": 88,
+      "rating": 22.9,
+      "success": 90.8,
+      "explosiveness": 109.5,
+      "rushing": 95.7,
+      "passing": 100.5,
+      "standardDowns": 99,
+      "passingDowns": 97.2,
+      "runRate": 0.562,
+      "pace": 0.7
+    },
+    "defense": {
+      "ranking": 89,
+      "rating": 34.8,
+      "success": 98.5,
+      "explosiveness": 92.1,
+      "rushing": 93.6,
+      "passing": 97.8,
+      "standardDowns": 96.6,
+      "passingDowns": 96.3,
+      "havoc": {
+        "total": 0.174,
+        "frontSeven": 0.105,
+        "db": 0.067
+      }
+    },
+    "specialTeams": {
+      "rating": 0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Syracuse",
+    "conference": "ACC",
+    "rating": -11.7,
+    "ranking": 88,
+    "secondOrderWins": 1.9,
+    "sos": 0.852,
+    "offense": {
+      "ranking": 92,
+      "rating": 22,
+      "success": 84.8,
+      "explosiveness": 111.6,
+      "rushing": 80.4,
+      "passing": 102.5,
+      "standardDowns": 97.1,
+      "passingDowns": 95.5,
+      "runRate": 0.435,
+      "pace": 1.4
+    },
+    "defense": {
+      "ranking": 82,
+      "rating": 33.6,
+      "success": 84.8,
+      "explosiveness": 104.1,
+      "rushing": 93.1,
+      "passing": 92,
+      "standardDowns": 90.7,
+      "passingDowns": 97.5,
+      "havoc": {
+        "total": 0.111,
+        "frontSeven": 0.075,
+        "db": 0.035
+      }
+    },
+    "specialTeams": {
+      "rating": -0.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "rating": -11.8,
+    "ranking": 89,
+    "secondOrderWins": 5.3,
+    "sos": 0.964,
+    "offense": {
+      "ranking": 103,
+      "rating": 18.9,
+      "success": 88.1,
+      "explosiveness": 99.4,
+      "rushing": 93,
+      "passing": 91.7,
+      "standardDowns": 92.3,
+      "passingDowns": 95,
+      "runRate": 0.45399999999999996,
+      "pace": 1.1
+    },
+    "defense": {
+      "ranking": 72,
+      "rating": 29.4,
+      "success": 96.3,
+      "explosiveness": 104.6,
+      "rushing": 93.4,
+      "passing": 104.5,
+      "standardDowns": 101.6,
+      "passingDowns": 97.2,
+      "havoc": {
+        "total": 0.156,
+        "frontSeven": 0.109,
+        "db": 0.047
+      }
+    },
+    "specialTeams": {
+      "rating": -1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "rating": -12.1,
+    "ranking": 90,
+    "secondOrderWins": 5.7,
+    "sos": 0.921,
+    "offense": {
+      "ranking": 90,
+      "rating": 22.4,
+      "success": 93.4,
+      "explosiveness": 99.3,
+      "rushing": 88.7,
+      "passing": 99.8,
+      "standardDowns": 95.1,
+      "passingDowns": 101.3,
+      "runRate": 0.478,
+      "pace": -0.2
+    },
+    "defense": {
+      "ranking": 84,
+      "rating": 34.1,
+      "success": 106.6,
+      "explosiveness": 86.1,
+      "rushing": 94.8,
+      "passing": 99.3,
+      "standardDowns": 97.5,
+      "passingDowns": 98.7,
+      "havoc": {
+        "total": 0.179,
+        "frontSeven": 0.10099999999999999,
+        "db": 0.078
+      }
+    },
+    "specialTeams": {
+      "rating": -0.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "rating": -12.4,
+    "ranking": 91,
+    "secondOrderWins": 4.8,
+    "sos": 0.939,
+    "offense": {
+      "ranking": 93,
+      "rating": 21.9,
+      "success": 93.3,
+      "explosiveness": 101.5,
+      "rushing": 102.6,
+      "passing": 92.7,
+      "standardDowns": 98.3,
+      "passingDowns": 94.1,
+      "runRate": 0.584,
+      "pace": -1.7
+    },
+    "defense": {
+      "ranking": 81,
+      "rating": 33.4,
+      "success": 98,
+      "explosiveness": 91,
+      "rushing": 103.3,
+      "passing": 88.5,
+      "standardDowns": 95.8,
+      "passingDowns": 95.7,
+      "havoc": {
+        "total": 0.17300000000000001,
+        "frontSeven": 0.107,
+        "db": 0.064
+      }
+    },
+    "specialTeams": {
+      "rating": -0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Florida Atlantic",
+    "conference": "American Athletic",
+    "rating": -12.5,
+    "ranking": 92,
+    "secondOrderWins": 6.5,
+    "sos": 0.917,
+    "offense": {
+      "ranking": 75,
+      "rating": 25.1,
+      "success": 91.8,
+      "explosiveness": 108.1,
+      "rushing": 83.7,
+      "passing": 105.2,
+      "standardDowns": 94.2,
+      "passingDowns": 105.6,
+      "runRate": 0.45899999999999996,
+      "pace": -0.2
+    },
+    "defense": {
+      "ranking": 97,
+      "rating": 36.1,
+      "success": 93.3,
+      "explosiveness": 110.3,
+      "rushing": 98.3,
+      "passing": 102,
+      "standardDowns": 97.4,
+      "passingDowns": 108,
+      "havoc": {
+        "total": 0.14300000000000002,
+        "frontSeven": 0.085,
+        "db": 0.057999999999999996
+      }
+    },
+    "specialTeams": {
+      "rating": -1.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "rating": -12.6,
+    "ranking": 93,
+    "secondOrderWins": 3.5,
+    "sos": 0.91,
+    "offense": {
+      "ranking": 78,
+      "rating": 24.4,
+      "success": 97,
+      "explosiveness": 103.6,
+      "rushing": 96.1,
+      "passing": 98.1,
+      "standardDowns": 100.5,
+      "passingDowns": 96.7,
+      "runRate": 0.423,
+      "pace": -0.2
+    },
+    "defense": {
+      "ranking": 105,
+      "rating": 39.2,
+      "success": 82.3,
+      "explosiveness": 99.5,
+      "rushing": 83.5,
+      "passing": 91.2,
+      "standardDowns": 87.9,
+      "passingDowns": 88.4,
+      "havoc": {
+        "total": 0.126,
+        "frontSeven": 0.068,
+        "db": 0.055
+      }
+    },
+    "specialTeams": {
+      "rating": 2.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "rating": -12.8,
+    "ranking": 94,
+    "secondOrderWins": 3.8,
+    "sos": 0.947,
+    "offense": {
+      "ranking": 59,
+      "rating": 28.8,
+      "success": 94.4,
+      "explosiveness": 109.2,
+      "rushing": 99.2,
+      "passing": 100.8,
+      "standardDowns": 99.8,
+      "passingDowns": 101,
+      "runRate": 0.532,
+      "pace": -1
+    },
+    "defense": {
+      "ranking": 119,
+      "rating": 42.9,
+      "success": 85.1,
+      "explosiveness": 96.3,
+      "rushing": 86.6,
+      "passing": 87.6,
+      "standardDowns": 89,
+      "passingDowns": 89.1,
+      "havoc": {
+        "total": 0.12,
+        "frontSeven": 0.069,
+        "db": 0.051
+      }
+    },
+    "specialTeams": {
+      "rating": 1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Memphis",
+    "conference": "American Athletic",
+    "rating": -12.9,
+    "ranking": 95,
+    "secondOrderWins": 5.1,
+    "sos": 0.983,
+    "offense": {
+      "ranking": 67,
+      "rating": 27,
+      "success": 92.2,
+      "explosiveness": 99.1,
+      "rushing": 86.7,
+      "passing": 99.1,
+      "standardDowns": 92.5,
+      "passingDowns": 100.2,
+      "runRate": 0.43700000000000006,
+      "pace": -1.1
+    },
+    "defense": {
+      "ranking": 103,
+      "rating": 38.3,
+      "success": 84.4,
+      "explosiveness": 104.3,
+      "rushing": 93.1,
+      "passing": 90.8,
+      "standardDowns": 93.7,
+      "passingDowns": 86.4,
+      "havoc": {
+        "total": 0.13699999999999998,
+        "frontSeven": 0.091,
+        "db": 0.046
+      }
+    },
+    "specialTeams": {
+      "rating": -1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "SMU",
+    "conference": "ACC",
+    "rating": -13.4,
+    "ranking": 96,
+    "secondOrderWins": 4.5,
+    "sos": 0.944,
+    "offense": {
+      "ranking": 58,
+      "rating": 28.9,
+      "success": 104.2,
+      "explosiveness": 94.6,
+      "rushing": 102.3,
+      "passing": 98.3,
+      "standardDowns": 100.8,
+      "passingDowns": 96,
+      "runRate": 0.49,
+      "pace": -1.5
+    },
+    "defense": {
+      "ranking": 120,
+      "rating": 43.2,
+      "success": 91.9,
+      "explosiveness": 99.7,
+      "rushing": 92.6,
+      "passing": 97,
+      "standardDowns": 97.3,
+      "passingDowns": 91.4,
+      "havoc": {
+        "total": 0.15,
+        "frontSeven": 0.086,
+        "db": 0.055999999999999994
+      }
+    },
+    "specialTeams": {
+      "rating": 0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "rating": -13.5,
+    "ranking": 97,
+    "secondOrderWins": 3,
+    "sos": 0.922,
+    "offense": {
+      "ranking": 105,
+      "rating": 18.6,
+      "success": 91.7,
+      "explosiveness": 98.9,
+      "rushing": 91,
+      "passing": 95.7,
+      "standardDowns": 95.6,
+      "passingDowns": 93.2,
+      "runRate": 0.496,
+      "pace": 0.3
+    },
+    "defense": {
+      "ranking": 79,
+      "rating": 32.6,
+      "success": 93.8,
+      "explosiveness": 105.9,
+      "rushing": 88.8,
+      "passing": 105.6,
+      "standardDowns": 94.7,
+      "passingDowns": 109.3,
+      "havoc": {
+        "total": 0.135,
+        "frontSeven": 0.078,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": 0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "rating": -13.6,
+    "ranking": 98,
+    "secondOrderWins": 2.7,
+    "sos": 0.804,
+    "offense": {
+      "ranking": 84,
+      "rating": 23.5,
+      "success": 89.9,
+      "explosiveness": 99.1,
+      "rushing": 94.6,
+      "passing": 89.4,
+      "standardDowns": 96.5,
+      "passingDowns": 87.2,
+      "runRate": 0.337,
+      "pace": -0.6
+    },
+    "defense": {
+      "ranking": 87,
+      "rating": 34.5,
+      "success": 89.7,
+      "explosiveness": 101.3,
+      "rushing": 93.9,
+      "passing": 92.9,
+      "standardDowns": 91.7,
+      "passingDowns": 103.4,
+      "havoc": {
+        "total": 0.145,
+        "frontSeven": 0.069,
+        "db": 0.076
+      }
+    },
+    "specialTeams": {
+      "rating": -2.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Rice",
+    "conference": "American Athletic",
+    "rating": -14.4,
+    "ranking": 99,
+    "secondOrderWins": 4,
+    "sos": 0.921,
+    "offense": {
+      "ranking": 61,
+      "rating": 28.3,
+      "success": 104.4,
+      "explosiveness": 91.5,
+      "rushing": 102,
+      "passing": 94.9,
+      "standardDowns": 102.7,
+      "passingDowns": 91,
+      "runRate": 0.386,
+      "pace": -0.9
+    },
+    "defense": {
+      "ranking": 115,
+      "rating": 41.4,
+      "success": 97.5,
+      "explosiveness": 87.8,
+      "rushing": 96.2,
+      "passing": 90.4,
+      "standardDowns": 94.6,
+      "passingDowns": 87.8,
+      "havoc": {
+        "total": 0.171,
+        "frontSeven": 0.073,
+        "db": 0.094
+      }
+    },
+    "specialTeams": {
+      "rating": -1.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Louisiana Tech",
+    "conference": "Conference USA",
+    "rating": -14.8,
+    "ranking": 100,
+    "secondOrderWins": 4.2,
+    "sos": 0.906,
+    "offense": {
+      "ranking": 106,
+      "rating": 18.4,
+      "success": 91.5,
+      "explosiveness": 91,
+      "rushing": 95.7,
+      "passing": 87.7,
+      "standardDowns": 91.5,
+      "passingDowns": 92.4,
+      "runRate": 0.506,
+      "pace": -1.7
+    },
+    "defense": {
+      "ranking": 78,
+      "rating": 32.4,
+      "success": 112.1,
+      "explosiveness": 88.4,
+      "rushing": 109.8,
+      "passing": 98.4,
+      "standardDowns": 102.6,
+      "passingDowns": 96,
+      "havoc": {
+        "total": 0.162,
+        "frontSeven": 0.091,
+        "db": 0.071
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Tulane",
+    "conference": "American Athletic",
+    "rating": -15.5,
+    "ranking": 101,
+    "secondOrderWins": 5.2,
+    "sos": 0.945,
+    "offense": {
+      "ranking": 87,
+      "rating": 23,
+      "success": 87.7,
+      "explosiveness": 103.5,
+      "rushing": 98,
+      "passing": 93.4,
+      "standardDowns": 96,
+      "passingDowns": 91.1,
+      "runRate": 0.589,
+      "pace": 0.1
+    },
+    "defense": {
+      "ranking": 102,
+      "rating": 37.7,
+      "success": 94.9,
+      "explosiveness": 96.4,
+      "rushing": 100.2,
+      "passing": 93,
+      "standardDowns": 96.3,
+      "passingDowns": 92,
+      "havoc": {
+        "total": 0.18,
+        "frontSeven": 0.08800000000000001,
+        "db": 0.091
+      }
+    },
+    "specialTeams": {
+      "rating": -0.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "rating": -15.9,
+    "ranking": 102,
+    "secondOrderWins": 5.6,
+    "sos": 0.934,
+    "offense": {
+      "ranking": 102,
+      "rating": 19,
+      "success": 94,
+      "explosiveness": 98.2,
+      "rushing": 102.9,
+      "passing": 91.5,
+      "standardDowns": 96.7,
+      "passingDowns": 94,
+      "runRate": 0.49200000000000005,
+      "pace": 0.2
+    },
+    "defense": {
+      "ranking": 80,
+      "rating": 33.2,
+      "success": 98.2,
+      "explosiveness": 107.3,
+      "rushing": 102,
+      "passing": 98.4,
+      "standardDowns": 102.7,
+      "passingDowns": 98.6,
+      "havoc": {
+        "total": 0.135,
+        "frontSeven": 0.061,
+        "db": 0.073
+      }
+    },
+    "specialTeams": {
+      "rating": -1.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "San José State",
+    "conference": "Mountain West",
+    "rating": -16,
+    "ranking": 103,
+    "secondOrderWins": 4.6,
+    "sos": 0.932,
+    "offense": {
+      "ranking": 98,
+      "rating": 20.3,
+      "success": 93,
+      "explosiveness": 94.6,
+      "rushing": 80.8,
+      "passing": 98.3,
+      "standardDowns": 93.1,
+      "passingDowns": 96.9,
+      "runRate": 0.431,
+      "pace": 1.6
+    },
+    "defense": {
+      "ranking": 88,
+      "rating": 34.7,
+      "success": 91.8,
+      "explosiveness": 105.5,
+      "rushing": 89.8,
+      "passing": 101.2,
+      "standardDowns": 99.2,
+      "passingDowns": 90.7,
+      "havoc": {
+        "total": 0.146,
+        "frontSeven": 0.08199999999999999,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": -1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Middle Tennessee",
+    "conference": "Conference USA",
+    "rating": -16.1,
+    "ranking": 104,
+    "secondOrderWins": 4.5,
+    "sos": 0.935,
+    "offense": {
+      "ranking": 101,
+      "rating": 20,
+      "success": 89.3,
+      "explosiveness": 107,
+      "rushing": 91.9,
+      "passing": 102,
+      "standardDowns": 94.6,
+      "passingDowns": 106.6,
+      "runRate": 0.555,
+      "pace": 2.2
+    },
+    "defense": {
+      "ranking": 91,
+      "rating": 35.1,
+      "success": 98.1,
+      "explosiveness": 93.2,
+      "rushing": 92.9,
+      "passing": 97.5,
+      "standardDowns": 97.6,
+      "passingDowns": 94.4,
+      "havoc": {
+        "total": 0.171,
+        "frontSeven": 0.08800000000000001,
+        "db": 0.08199999999999999
+      }
+    },
+    "specialTeams": {
+      "rating": -1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "rating": -17,
+    "ranking": 105,
+    "secondOrderWins": 3.9,
+    "sos": 0.976,
+    "offense": {
+      "ranking": 104,
+      "rating": 18.7,
+      "success": 87.4,
+      "explosiveness": 92.6,
+      "rushing": 92.7,
+      "passing": 87.4,
+      "standardDowns": 90.9,
+      "passingDowns": 89.8,
+      "runRate": 0.501,
+      "pace": 0.4
+    },
+    "defense": {
+      "ranking": 91,
+      "rating": 35.1,
+      "success": 93.6,
+      "explosiveness": 96.8,
+      "rushing": 93.3,
+      "passing": 96.3,
+      "standardDowns": 97.3,
+      "passingDowns": 89,
+      "havoc": {
+        "total": 0.132,
+        "frontSeven": 0.094,
+        "db": 0.038
+      }
+    },
+    "specialTeams": {
+      "rating": -0.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "rating": -17.6,
+    "ranking": 106,
+    "secondOrderWins": 3.4,
+    "sos": 0.941,
+    "offense": {
+      "ranking": 110,
+      "rating": 16.3,
+      "success": 90.2,
+      "explosiveness": 93.3,
+      "rushing": 92.3,
+      "passing": 92.3,
+      "standardDowns": 93.4,
+      "passingDowns": 87.7,
+      "runRate": 0.521,
+      "pace": 0.4
+    },
+    "defense": {
+      "ranking": 84,
+      "rating": 34.1,
+      "success": 95,
+      "explosiveness": 97.6,
+      "rushing": 96,
+      "passing": 96.3,
+      "standardDowns": 96.5,
+      "passingDowns": 95.5,
+      "havoc": {
+        "total": 0.17600000000000002,
+        "frontSeven": 0.08199999999999999,
+        "db": 0.09300000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": 0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "New Mexico State",
+    "conference": "Conference USA",
+    "rating": -18.7,
+    "ranking": 107,
+    "secondOrderWins": 5.1,
+    "sos": 0.939,
+    "offense": {
+      "ranking": 80,
+      "rating": 24.2,
+      "success": 98.8,
+      "explosiveness": 106.3,
+      "rushing": 92,
+      "passing": 101.4,
+      "standardDowns": 101.2,
+      "passingDowns": 105.3,
+      "runRate": 0.337,
+      "pace": 0.5
+    },
+    "defense": {
+      "ranking": 110,
+      "rating": 40.4,
+      "success": 90.3,
+      "explosiveness": 92.3,
+      "rushing": 94.7,
+      "passing": 86.6,
+      "standardDowns": 90.7,
+      "passingDowns": 92.3,
+      "havoc": {
+        "total": 0.128,
+        "frontSeven": 0.07400000000000001,
+        "db": 0.053
+      }
+    },
+    "specialTeams": {
+      "rating": -2.5
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Temple",
+    "conference": "American Athletic",
+    "rating": -19,
+    "ranking": 108,
+    "secondOrderWins": 4.4,
+    "sos": 0.961,
+    "offense": {
+      "ranking": 117,
+      "rating": 14.9,
+      "success": 86.3,
+      "explosiveness": 101.8,
+      "rushing": 89.3,
+      "passing": 93.3,
+      "standardDowns": 94.8,
+      "passingDowns": 92.8,
+      "runRate": 0.506,
+      "pace": 2.2
+    },
+    "defense": {
+      "ranking": 75,
+      "rating": 31.7,
+      "success": 99.4,
+      "explosiveness": 99,
+      "rushing": 97.5,
+      "passing": 100.4,
+      "standardDowns": 96.5,
+      "passingDowns": 106.6,
+      "havoc": {
+        "total": 0.165,
+        "frontSeven": 0.11199999999999999,
+        "db": 0.052000000000000005
+      }
+    },
+    "specialTeams": {
+      "rating": -2.2
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "rating": -20.1,
+    "ranking": 109,
+    "secondOrderWins": 4.8,
+    "sos": 0.953,
+    "offense": {
+      "ranking": 109,
+      "rating": 17.7,
+      "success": 92.5,
+      "explosiveness": 95.2,
+      "rushing": 91.6,
+      "passing": 93.5,
+      "standardDowns": 95.6,
+      "passingDowns": 89.2,
+      "runRate": 0.489,
+      "pace": 1.8
+    },
+    "defense": {
+      "ranking": 101,
+      "rating": 37.5,
+      "success": 90.5,
+      "explosiveness": 101.5,
+      "rushing": 94.6,
+      "passing": 93.6,
+      "standardDowns": 98.6,
+      "passingDowns": 87.4,
+      "havoc": {
+        "total": 0.162,
+        "frontSeven": 0.085,
+        "db": 0.075
+      }
+    },
+    "specialTeams": {
+      "rating": -0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "rating": -21,
+    "ranking": 110,
+    "secondOrderWins": 4.6,
+    "sos": 0.953,
+    "offense": {
+      "ranking": 110,
+      "rating": 16.3,
+      "success": 92.7,
+      "explosiveness": 93.5,
+      "rushing": 94,
+      "passing": 93.5,
+      "standardDowns": 92,
+      "passingDowns": 96.8,
+      "runRate": 0.607,
+      "pace": -0.1
+    },
+    "defense": {
+      "ranking": 98,
+      "rating": 36.2,
+      "success": 96.1,
+      "explosiveness": 96.4,
+      "rushing": 101.5,
+      "passing": 93.7,
+      "standardDowns": 95.9,
+      "passingDowns": 100.8,
+      "havoc": {
+        "total": 0.14800000000000002,
+        "frontSeven": 0.071,
+        "db": 0.07400000000000001
+      }
+    },
+    "specialTeams": {
+      "rating": -1.1
+    }
+  },
+  {
+    "year": 2007,
+    "team": "UAB",
+    "conference": "American Athletic",
+    "rating": -21.7,
+    "ranking": 111,
+    "secondOrderWins": 2,
+    "sos": 0.956,
+    "offense": {
+      "ranking": 108,
+      "rating": 17.8,
+      "success": 85.7,
+      "explosiveness": 102,
+      "rushing": 87.7,
+      "passing": 92.7,
+      "standardDowns": 90,
+      "passingDowns": 97.7,
+      "runRate": 0.44299999999999995,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 114,
+      "rating": 41.2,
+      "success": 83.7,
+      "explosiveness": 97.1,
+      "rushing": 83.8,
+      "passing": 91.4,
+      "standardDowns": 90.1,
+      "passingDowns": 87,
+      "havoc": {
+        "total": 0.139,
+        "frontSeven": 0.078,
+        "db": 0.061
+      }
+    },
+    "specialTeams": {
+      "rating": 1.7
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Duke",
+    "conference": "ACC",
+    "rating": -22,
+    "ranking": 112,
+    "secondOrderWins": 2,
+    "sos": 0.903,
+    "offense": {
+      "ranking": 113,
+      "rating": 15.7,
+      "success": 86.1,
+      "explosiveness": 103.1,
+      "rushing": 82.8,
+      "passing": 98.6,
+      "standardDowns": 95.4,
+      "passingDowns": 91,
+      "runRate": 0.456,
+      "pace": 1.3
+    },
+    "defense": {
+      "ranking": 89,
+      "rating": 34.8,
+      "success": 90.9,
+      "explosiveness": 94.3,
+      "rushing": 92.7,
+      "passing": 92,
+      "standardDowns": 91,
+      "passingDowns": 97.7,
+      "havoc": {
+        "total": 0.16,
+        "frontSeven": 0.10300000000000001,
+        "db": 0.057
+      }
+    },
+    "specialTeams": {
+      "rating": -2.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "rating": -22.3,
+    "ranking": 113,
+    "secondOrderWins": 4.1,
+    "sos": 0.948,
+    "offense": {
+      "ranking": 94,
+      "rating": 21,
+      "success": 97.5,
+      "explosiveness": 100.2,
+      "rushing": 106.9,
+      "passing": 89.3,
+      "standardDowns": 96.8,
+      "passingDowns": 109.1,
+      "runRate": 0.615,
+      "pace": -3.2
+    },
+    "defense": {
+      "ranking": 118,
+      "rating": 42.4,
+      "success": 86.8,
+      "explosiveness": 106.6,
+      "rushing": 92.7,
+      "passing": 93.9,
+      "standardDowns": 93.1,
+      "passingDowns": 98.1,
+      "havoc": {
+        "total": 0.125,
+        "frontSeven": 0.078,
+        "db": 0.048
+      }
+    },
+    "specialTeams": {
+      "rating": -0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Western Kentucky",
+    "conference": "Conference USA",
+    "rating": -22.5,
+    "ranking": 114,
+    "secondOrderWins": 1.8,
+    "sos": 0.907,
+    "offense": {
+      "ranking": 114,
+      "rating": 15.6,
+      "success": 95.3,
+      "explosiveness": 85.8,
+      "rushing": 91.8,
+      "passing": 91.2,
+      "standardDowns": 93.6,
+      "passingDowns": 88.1,
+      "runRate": 0.6409999999999999,
+      "pace": 1
+    },
+    "defense": {
+      "ranking": 99,
+      "rating": 36.3,
+      "success": 96,
+      "explosiveness": 104.4,
+      "rushing": 97.7,
+      "passing": 99.2,
+      "standardDowns": 95.2,
+      "passingDowns": 114.2,
+      "havoc": {
+        "total": 0.139,
+        "frontSeven": 0.087,
+        "db": 0.046
+      }
+    },
+    "specialTeams": {
+      "rating": -1.8
+    }
+  },
+  {
+    "year": 2007,
+    "team": "North Texas",
+    "conference": "American Athletic",
+    "rating": -22.8,
+    "ranking": 115,
+    "secondOrderWins": 4.5,
+    "sos": 0.931,
+    "offense": {
+      "ranking": 98,
+      "rating": 20.3,
+      "success": 93.8,
+      "explosiveness": 98,
+      "rushing": 104.4,
+      "passing": 89.5,
+      "standardDowns": 97.8,
+      "passingDowns": 94.8,
+      "runRate": 0.354,
+      "pace": 0.2
+    },
+    "defense": {
+      "ranking": 109,
+      "rating": 40.3,
+      "success": 94.5,
+      "explosiveness": 83.9,
+      "rushing": 90.3,
+      "passing": 91,
+      "standardDowns": 87.9,
+      "passingDowns": 100.2,
+      "havoc": {
+        "total": 0.135,
+        "frontSeven": 0.096,
+        "db": 0.038
+      }
+    },
+    "specialTeams": {
+      "rating": -2.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "rating": -24.8,
+    "ranking": 116,
+    "secondOrderWins": 3.1,
+    "sos": 0.964,
+    "offense": {
+      "ranking": 107,
+      "rating": 18,
+      "success": 96.6,
+      "explosiveness": 85.1,
+      "rushing": 94.4,
+      "passing": 89.7,
+      "standardDowns": 91.1,
+      "passingDowns": 94.4,
+      "runRate": 0.53,
+      "pace": 2.6
+    },
+    "defense": {
+      "ranking": 116,
+      "rating": 41.5,
+      "success": 88.8,
+      "explosiveness": 93.8,
+      "rushing": 87.7,
+      "passing": 93.5,
+      "standardDowns": 91.4,
+      "passingDowns": 92.3,
+      "havoc": {
+        "total": 0.158,
+        "frontSeven": 0.121,
+        "db": 0.037000000000000005
+      }
+    },
+    "specialTeams": {
+      "rating": -1.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Idaho",
+    "conference": "Big Sky",
+    "rating": -25.5,
+    "ranking": 117,
+    "secondOrderWins": 2.6,
+    "sos": 0.915,
+    "offense": {
+      "ranking": 115,
+      "rating": 15.1,
+      "success": 87.4,
+      "explosiveness": 94.1,
+      "rushing": 92.2,
+      "passing": 89.8,
+      "standardDowns": 94.6,
+      "passingDowns": 81.9,
+      "runRate": 0.5329999999999999,
+      "pace": -1.2
+    },
+    "defense": {
+      "ranking": 113,
+      "rating": 41,
+      "success": 89,
+      "explosiveness": 104,
+      "rushing": 98,
+      "passing": 89.9,
+      "standardDowns": 96.7,
+      "passingDowns": 90,
+      "havoc": {
+        "total": 0.149,
+        "frontSeven": 0.1,
+        "db": 0.047
+      }
+    },
+    "specialTeams": {
+      "rating": 0.3
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Utah State",
+    "conference": "Mountain West",
+    "rating": -27.6,
+    "ranking": 118,
+    "secondOrderWins": 1.2,
+    "sos": 0.908,
+    "offense": {
+      "ranking": 118,
+      "rating": 13.3,
+      "success": 90.2,
+      "explosiveness": 83.8,
+      "rushing": 85.9,
+      "passing": 94.4,
+      "standardDowns": 91.2,
+      "passingDowns": 80,
+      "runRate": 0.61,
+      "pace": 1.9
+    },
+    "defense": {
+      "ranking": 108,
+      "rating": 40,
+      "success": 87.1,
+      "explosiveness": 99.9,
+      "rushing": 92,
+      "passing": 91.5,
+      "standardDowns": 91.7,
+      "passingDowns": 95.4,
+      "havoc": {
+        "total": 0.139,
+        "frontSeven": 0.07400000000000001,
+        "db": 0.063
+      }
+    },
+    "specialTeams": {
+      "rating": -0.9
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Army",
+    "conference": "American Athletic",
+    "rating": -28.4,
+    "ranking": 119,
+    "secondOrderWins": 1.7,
+    "sos": 0.937,
+    "offense": {
+      "ranking": 120,
+      "rating": 7.3,
+      "success": 80.3,
+      "explosiveness": 92.6,
+      "rushing": 81.7,
+      "passing": 87.7,
+      "standardDowns": 82.3,
+      "passingDowns": 92.2,
+      "runRate": 0.485,
+      "pace": 0.6
+    },
+    "defense": {
+      "ranking": 93,
+      "rating": 35.3,
+      "success": 89.2,
+      "explosiveness": 109,
+      "rushing": 94.8,
+      "passing": 94.9,
+      "standardDowns": 96.5,
+      "passingDowns": 97.6,
+      "havoc": {
+        "total": 0.126,
+        "frontSeven": 0.095,
+        "db": 0.03
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2007,
+    "team": "Florida International",
+    "conference": "Conference USA",
+    "rating": -32.9,
+    "ranking": 120,
+    "secondOrderWins": 1.8,
+    "sos": 0.907,
+    "offense": {
+      "ranking": 119,
+      "rating": 9.6,
+      "success": 76.9,
+      "explosiveness": 104.6,
+      "rushing": 85.8,
+      "passing": 93.9,
+      "standardDowns": 84,
+      "passingDowns": 100.7,
+      "runRate": 0.57,
+      "pace": 2.4
+    },
+    "defense": {
+      "ranking": 112,
+      "rating": 40.9,
+      "success": 92.1,
+      "explosiveness": 90.2,
+      "rushing": 92.6,
+      "passing": 91.2,
+      "standardDowns": 93.5,
+      "passingDowns": 87.9,
+      "havoc": {
+        "total": 0.151,
+        "frontSeven": 0.09,
+        "db": 0.049
+      }
+    },
+    "specialTeams": {
+      "rating": -1.6
+    }
+  },
+  {
+    "year": 2007,
+    "team": "nationalAverages",
+    "rating": 1.3466666666666667,
+    "ranking": null,
+    "secondOrderWins": 6.535,
+    "sos": 0.8907416666666667,
+    "offense": {
+      "ranking": null,
+      "rating": 28.38083333333333,
+      "success": 100.32583333333334,
+      "explosiveness": 100.0575,
+      "rushing": 99.73,
+      "passing": 100.345,
+      "standardDowns": 100.04666666666667,
+      "passingDowns": 100.44833333333334,
+      "runRate": 0.5006166666666667,
+      "pace": -0.004166666666666667
+    },
+    "defense": {
+      "ranking": null,
+      "rating": 27.04,
+      "success": 101.62666666666667,
+      "explosiveness": 100.81416666666667,
+      "rushing": 101.80333333333333,
+      "passing": 100.83083333333333,
+      "standardDowns": 101.25333333333333,
+      "passingDowns": 100.53166666666667,
+      "havoc": {
+        "total": 0.16626666666666667,
+        "frontSeven": 0.10135833333333333,
+        "db": 0.06329166666666666
+      }
+    },
+    "specialTeams": {
+      "rating": 0.0016666666666666668
+    }
+  }
+]

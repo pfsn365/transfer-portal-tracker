@@ -1,0 +1,758 @@
+[
+  {
+    "year": 2007,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "elo": 1626
+  },
+  {
+    "year": 2007,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "elo": 1209
+  },
+  {
+    "year": 2007,
+    "team": "Alabama",
+    "conference": "SEC",
+    "elo": 1626
+  },
+  {
+    "year": 2007,
+    "team": "App State",
+    "conference": "Southern",
+    "elo": 1431
+  },
+  {
+    "year": 2007,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "elo": 1605
+  },
+  {
+    "year": 2007,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "elo": 1734
+  },
+  {
+    "year": 2007,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "elo": 1734
+  },
+  {
+    "year": 2007,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "elo": 1235
+  },
+  {
+    "year": 2007,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "elo": 1114
+  },
+  {
+    "year": 2007,
+    "team": "Auburn",
+    "conference": "SEC",
+    "elo": 1706
+  },
+  {
+    "year": 2007,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "elo": 1453
+  },
+  {
+    "year": 2007,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "elo": 1172
+  },
+  {
+    "year": 2007,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "elo": 1887
+  },
+  {
+    "year": 2007,
+    "team": "Boston College",
+    "conference": "ACC",
+    "elo": 1737
+  },
+  {
+    "year": 2007,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "elo": 1260
+  },
+  {
+    "year": 2007,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "elo": 1266
+  },
+  {
+    "year": 2007,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "elo": 1796
+  },
+  {
+    "year": 2007,
+    "team": "California",
+    "conference": "Pac-10",
+    "elo": 1674
+  },
+  {
+    "year": 2007,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "elo": 1445
+  },
+  {
+    "year": 2007,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "elo": 1791
+  },
+  {
+    "year": 2007,
+    "team": "Clemson",
+    "conference": "ACC",
+    "elo": 1918
+  },
+  {
+    "year": 2007,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "elo": 1520
+  },
+  {
+    "year": 2007,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "elo": 1374
+  },
+  {
+    "year": 2007,
+    "team": "Duke",
+    "conference": "ACC",
+    "elo": 1166
+  },
+  {
+    "year": 2007,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "elo": 1461
+  },
+  {
+    "year": 2007,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "elo": 1212
+  },
+  {
+    "year": 2007,
+    "team": "Florida",
+    "conference": "SEC",
+    "elo": 1985
+  },
+  {
+    "year": 2007,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "elo": 1326
+  },
+  {
+    "year": 2007,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "elo": 889
+  },
+  {
+    "year": 2007,
+    "team": "Florida State",
+    "conference": "ACC",
+    "elo": 1589
+  },
+  {
+    "year": 2007,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "elo": 1535
+  },
+  {
+    "year": 2007,
+    "team": "Georgia",
+    "conference": "SEC",
+    "elo": 1913
+  },
+  {
+    "year": 2007,
+    "team": "Georgia Southern",
+    "conference": "Southern",
+    "elo": 1476
+  },
+  {
+    "year": 2007,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "elo": 1586
+  },
+  {
+    "year": 2007,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "elo": 1702
+  },
+  {
+    "year": 2007,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "elo": 1437
+  },
+  {
+    "year": 2007,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "elo": 1046
+  },
+  {
+    "year": 2007,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "elo": 1613
+  },
+  {
+    "year": 2007,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "elo": 1470
+  },
+  {
+    "year": 2007,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "elo": 1506
+  },
+  {
+    "year": 2007,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "elo": 1343
+  },
+  {
+    "year": 2007,
+    "team": "James Madison",
+    "conference": "CAA",
+    "elo": 1393
+  },
+  {
+    "year": 2007,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "elo": 1965
+  },
+  {
+    "year": 2007,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "elo": 1492
+  },
+  {
+    "year": 2007,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "elo": 1162
+  },
+  {
+    "year": 2007,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "elo": 1616
+  },
+  {
+    "year": 2007,
+    "team": "Liberty",
+    "conference": "Big South",
+    "elo": 1319
+  },
+  {
+    "year": 2007,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "elo": 1108
+  },
+  {
+    "year": 2007,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "elo": 1084
+  },
+  {
+    "year": 2007,
+    "team": "Louisville",
+    "conference": "Big East",
+    "elo": 1646
+  },
+  {
+    "year": 2007,
+    "team": "LSU",
+    "conference": "SEC",
+    "elo": 2040
+  },
+  {
+    "year": 2007,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "elo": 1308
+  },
+  {
+    "year": 2007,
+    "team": "Maryland",
+    "conference": "ACC",
+    "elo": 1647
+  },
+  {
+    "year": 2007,
+    "team": "Massachusetts",
+    "conference": "CAA",
+    "elo": 1467
+  },
+  {
+    "year": 2007,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "elo": 1239
+  },
+  {
+    "year": 2007,
+    "team": "Miami",
+    "conference": "ACC",
+    "elo": 1406
+  },
+  {
+    "year": 2007,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "elo": 1248
+  },
+  {
+    "year": 2007,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "elo": 1790
+  },
+  {
+    "year": 2007,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "elo": 1684
+  },
+  {
+    "year": 2007,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "elo": 1283
+  },
+  {
+    "year": 2007,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "elo": 1413
+  },
+  {
+    "year": 2007,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "elo": 1504
+  },
+  {
+    "year": 2007,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "elo": 2013
+  },
+  {
+    "year": 2007,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "elo": 1537
+  },
+  {
+    "year": 2007,
+    "team": "NC State",
+    "conference": "ACC",
+    "elo": 1333
+  },
+  {
+    "year": 2007,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "elo": 1575
+  },
+  {
+    "year": 2007,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "elo": 1450
+  },
+  {
+    "year": 2007,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "elo": 1521
+  },
+  {
+    "year": 2007,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "elo": 1035
+  },
+  {
+    "year": 2007,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "elo": 1392
+  },
+  {
+    "year": 2007,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "elo": 1161
+  },
+  {
+    "year": 2007,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "elo": 916
+  },
+  {
+    "year": 2007,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "elo": 1354
+  },
+  {
+    "year": 2007,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "elo": 1423
+  },
+  {
+    "year": 2007,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "elo": 1308
+  },
+  {
+    "year": 2007,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "elo": 1991
+  },
+  {
+    "year": 2007,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "elo": 2059
+  },
+  {
+    "year": 2007,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "elo": 1677
+  },
+  {
+    "year": 2007,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "elo": 1362
+  },
+  {
+    "year": 2007,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "elo": 1890
+  },
+  {
+    "year": 2007,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "elo": 1668
+  },
+  {
+    "year": 2007,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "elo": 1829
+  },
+  {
+    "year": 2007,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "elo": 1559
+  },
+  {
+    "year": 2007,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "elo": 1614
+  },
+  {
+    "year": 2007,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "elo": 1203
+  },
+  {
+    "year": 2007,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "elo": 1700
+  },
+  {
+    "year": 2007,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "elo": 1245
+  },
+  {
+    "year": 2007,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "elo": 1238
+  },
+  {
+    "year": 2007,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "elo": 1208
+  },
+  {
+    "year": 2007,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "elo": 1645
+  },
+  {
+    "year": 2007,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "elo": 1524
+  },
+  {
+    "year": 2007,
+    "team": "South Florida",
+    "conference": "Big East",
+    "elo": 1770
+  },
+  {
+    "year": 2007,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "elo": 1324
+  },
+  {
+    "year": 2007,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "elo": 1204
+  },
+  {
+    "year": 2007,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "elo": 1741
+  },
+  {
+    "year": 2007,
+    "team": "Temple",
+    "conference": "Mid-American",
+    "elo": 1085
+  },
+  {
+    "year": 2007,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "elo": 1777
+  },
+  {
+    "year": 2007,
+    "team": "Texas",
+    "conference": "Big 12",
+    "elo": 1914
+  },
+  {
+    "year": 2007,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "elo": 1662
+  },
+  {
+    "year": 2007,
+    "team": "Texas State",
+    "conference": "Southland",
+    "elo": 1342
+  },
+  {
+    "year": 2007,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "elo": 1773
+  },
+  {
+    "year": 2007,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "elo": 1306
+  },
+  {
+    "year": 2007,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "elo": 1575
+  },
+  {
+    "year": 2007,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "elo": 1214
+  },
+  {
+    "year": 2007,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "elo": 1720
+  },
+  {
+    "year": 2007,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "elo": 1066
+  },
+  {
+    "year": 2007,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "elo": 1601
+  },
+  {
+    "year": 2007,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "elo": 1604
+  },
+  {
+    "year": 2007,
+    "team": "UConn",
+    "conference": "Big East",
+    "elo": 1543
+  },
+  {
+    "year": 2007,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "elo": 1291
+  },
+  {
+    "year": 2007,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "elo": 1214
+  },
+  {
+    "year": 2007,
+    "team": "USC",
+    "conference": "Pac-10",
+    "elo": 2037
+  },
+  {
+    "year": 2007,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "elo": 1759
+  },
+  {
+    "year": 2007,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "elo": 1086
+  },
+  {
+    "year": 2007,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "elo": 1249
+  },
+  {
+    "year": 2007,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "elo": 1459
+  },
+  {
+    "year": 2007,
+    "team": "Virginia",
+    "conference": "ACC",
+    "elo": 1706
+  },
+  {
+    "year": 2007,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "elo": 1906
+  },
+  {
+    "year": 2007,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "elo": 1684
+  },
+  {
+    "year": 2007,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "elo": 1537
+  },
+  {
+    "year": 2007,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "elo": 1395
+  },
+  {
+    "year": 2007,
+    "team": "Western Kentucky",
+    "conference": "FBS Independents",
+    "elo": 1266
+  },
+  {
+    "year": 2007,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "elo": 1354
+  },
+  {
+    "year": 2007,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "elo": 2083
+  },
+  {
+    "year": 2007,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "elo": 1796
+  },
+  {
+    "year": 2007,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "elo": 1292
+  }
+]

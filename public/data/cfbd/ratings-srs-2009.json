@@ -1,0 +1,962 @@
+[
+  {
+    "year": 2009,
+    "team": "Alabama",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 1,
+    "rating": 27.5355354270861
+  },
+  {
+    "year": 2009,
+    "team": "Florida",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 2,
+    "rating": 25.6019870532348
+  },
+  {
+    "year": 2009,
+    "team": "Texas",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 3,
+    "rating": 24.4150962970714
+  },
+  {
+    "year": 2009,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 4,
+    "rating": 23.0518404217886
+  },
+  {
+    "year": 2009,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 5,
+    "rating": 22.3584289071396
+  },
+  {
+    "year": 2009,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 6,
+    "rating": 17.8917637367518
+  },
+  {
+    "year": 2009,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 7,
+    "rating": 17.8211916593065
+  },
+  {
+    "year": 2009,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 8,
+    "rating": 16.788655224784
+  },
+  {
+    "year": 2009,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 9,
+    "rating": 16.4916751627186
+  },
+  {
+    "year": 2009,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 10,
+    "rating": 15.9279407692488
+  },
+  {
+    "year": 2009,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 11,
+    "rating": 15.4254122958941
+  },
+  {
+    "year": 2009,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 12,
+    "rating": 15.3633045039087
+  },
+  {
+    "year": 2009,
+    "team": "Miami",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 13,
+    "rating": 15.2503105942531
+  },
+  {
+    "year": 2009,
+    "team": "Clemson",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 14,
+    "rating": 15.1800953060751
+  },
+  {
+    "year": 2009,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 15,
+    "rating": 14.3814265944043
+  },
+  {
+    "year": 2009,
+    "team": "LSU",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 16,
+    "rating": 14.3143428846238
+  },
+  {
+    "year": 2009,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 17,
+    "rating": 14.0349842991536
+  },
+  {
+    "year": 2009,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 18,
+    "rating": 13.9911962370984
+  },
+  {
+    "year": 2009,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 19,
+    "rating": 13.1558603400237
+  },
+  {
+    "year": 2009,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 20,
+    "rating": 12.9953753964191
+  },
+  {
+    "year": 2009,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 21,
+    "rating": 11.152939137234
+  },
+  {
+    "year": 2009,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 22,
+    "rating": 11.1026922590297
+  },
+  {
+    "year": 2009,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 23,
+    "rating": 11.0447713865464
+  },
+  {
+    "year": 2009,
+    "team": "Auburn",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 24,
+    "rating": 10.7168383023738
+  },
+  {
+    "year": 2009,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 25,
+    "rating": 10.6990174245398
+  },
+  {
+    "year": 2009,
+    "team": "Georgia",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 26,
+    "rating": 9.79859526335508
+  },
+  {
+    "year": 2009,
+    "team": "UConn",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 27,
+    "rating": 8.68659953469356
+  },
+  {
+    "year": 2009,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 28,
+    "rating": 8.42453417897598
+  },
+  {
+    "year": 2009,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 29,
+    "rating": 8.37391012288377
+  },
+  {
+    "year": 2009,
+    "team": "USC",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 30,
+    "rating": 8.3696503369459
+  },
+  {
+    "year": 2009,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 31,
+    "rating": 8.35036242777749
+  },
+  {
+    "year": 2009,
+    "team": "Florida State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 32,
+    "rating": 8.0411135776314
+  },
+  {
+    "year": 2009,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 33,
+    "rating": 7.7481288121471
+  },
+  {
+    "year": 2009,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 34,
+    "rating": 7.49816180926268
+  },
+  {
+    "year": 2009,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 35,
+    "rating": 7.33737022420566
+  },
+  {
+    "year": 2009,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 36,
+    "rating": 7.32019734493261
+  },
+  {
+    "year": 2009,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "division": "West",
+    "ranking": 37,
+    "rating": 7.13901892978967
+  },
+  {
+    "year": 2009,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 38,
+    "rating": 6.74672826387992
+  },
+  {
+    "year": 2009,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 39,
+    "rating": 6.71074398053547
+  },
+  {
+    "year": 2009,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 40,
+    "rating": 6.21889363965383
+  },
+  {
+    "year": 2009,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 41,
+    "rating": 6.02528970239743
+  },
+  {
+    "year": 2009,
+    "team": "Boston College",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 42,
+    "rating": 5.60118886099928
+  },
+  {
+    "year": 2009,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 43,
+    "rating": 5.49574901336012
+  },
+  {
+    "year": 2009,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 44,
+    "rating": 5.03510733974349
+  },
+  {
+    "year": 2009,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 45,
+    "rating": 4.6382463120904
+  },
+  {
+    "year": 2009,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 46,
+    "rating": 4.51876558594381
+  },
+  {
+    "year": 2009,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 47,
+    "rating": 4.45230777321085
+  },
+  {
+    "year": 2009,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 48,
+    "rating": 3.95268101878277
+  },
+  {
+    "year": 2009,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 49,
+    "rating": 3.09499640000889
+  },
+  {
+    "year": 2009,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 50,
+    "rating": 3.06238514292304
+  },
+  {
+    "year": 2009,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 51,
+    "rating": 3.05864695559315
+  },
+  {
+    "year": 2009,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 52,
+    "rating": 2.93306368296382
+  },
+  {
+    "year": 2009,
+    "team": "South Florida",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 53,
+    "rating": 2.8909931413809
+  },
+  {
+    "year": 2009,
+    "team": "California",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 54,
+    "rating": 2.88612129155604
+  },
+  {
+    "year": 2009,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 55,
+    "rating": 2.49521502816791
+  },
+  {
+    "year": 2009,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 56,
+    "rating": 2.0746420196865
+  },
+  {
+    "year": 2009,
+    "team": "Virginia",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 57,
+    "rating": 1.72418070734979
+  },
+  {
+    "year": 2009,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 58,
+    "rating": 0.925787752206459
+  },
+  {
+    "year": 2009,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 59,
+    "rating": 0.304746091036481
+  },
+  {
+    "year": 2009,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 60,
+    "rating": 0.239943044095458
+  },
+  {
+    "year": 2009,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 61,
+    "rating": -0.149856296106687
+  },
+  {
+    "year": 2009,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 62,
+    "rating": -0.15088821485319
+  },
+  {
+    "year": 2009,
+    "team": "Duke",
+    "conference": "ACC",
+    "division": "Coastal",
+    "ranking": 63,
+    "rating": -0.322745138512882
+  },
+  {
+    "year": 2009,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 64,
+    "rating": -0.32777872882852
+  },
+  {
+    "year": 2009,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 65,
+    "rating": -0.814727799214907
+  },
+  {
+    "year": 2009,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 66,
+    "rating": -0.839521716198195
+  },
+  {
+    "year": 2009,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 67,
+    "rating": -0.912024490378059
+  },
+  {
+    "year": 2009,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 68,
+    "rating": -1.67306392985471
+  },
+  {
+    "year": 2009,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 69,
+    "rating": -2.08273375659115
+  },
+  {
+    "year": 2009,
+    "team": "Temple",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 70,
+    "rating": -2.2200254756067
+  },
+  {
+    "year": 2009,
+    "team": "NC State",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 71,
+    "rating": -2.32291979281647
+  },
+  {
+    "year": 2009,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 72,
+    "rating": -2.66104457698393
+  },
+  {
+    "year": 2009,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 73,
+    "rating": -3.13493479141199
+  },
+  {
+    "year": 2009,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 74,
+    "rating": -3.49534370096961
+  },
+  {
+    "year": 2009,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 75,
+    "rating": -3.54491836698626
+  },
+  {
+    "year": 2009,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 76,
+    "rating": -4.26957155227167
+  },
+  {
+    "year": 2009,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "division": "North",
+    "ranking": 77,
+    "rating": -4.40523666404917
+  },
+  {
+    "year": 2009,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "division": "East",
+    "ranking": 78,
+    "rating": -4.49097308854589
+  },
+  {
+    "year": 2009,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "division": "South",
+    "ranking": 79,
+    "rating": -4.68912345920725
+  },
+  {
+    "year": 2009,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 80,
+    "rating": -4.79592008886606
+  },
+  {
+    "year": 2009,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 81,
+    "rating": -5.41406266443683
+  },
+  {
+    "year": 2009,
+    "team": "Maryland",
+    "conference": "ACC",
+    "division": "Atlantic",
+    "ranking": 82,
+    "rating": -5.47869393286578
+  },
+  {
+    "year": 2009,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 83,
+    "rating": -5.58427372494549
+  },
+  {
+    "year": 2009,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 84,
+    "rating": -6.19736461391122
+  },
+  {
+    "year": 2009,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 85,
+    "rating": -6.32026966309579
+  },
+  {
+    "year": 2009,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "division": null,
+    "ranking": 86,
+    "rating": -6.34738208813821
+  },
+  {
+    "year": 2009,
+    "team": "Louisville",
+    "conference": "Big East",
+    "division": null,
+    "ranking": 87,
+    "rating": -6.36923386631083
+  },
+  {
+    "year": 2009,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 88,
+    "rating": -6.45346752232916
+  },
+  {
+    "year": 2009,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 89,
+    "rating": -8.0566761147675
+  },
+  {
+    "year": 2009,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 90,
+    "rating": -8.72681252534608
+  },
+  {
+    "year": 2009,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 91,
+    "rating": -9.23956371043434
+  },
+  {
+    "year": 2009,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 92,
+    "rating": -9.36268650815259
+  },
+  {
+    "year": 2009,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 93,
+    "rating": -9.54485991935424
+  },
+  {
+    "year": 2009,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 94,
+    "rating": -9.63903808803878
+  },
+  {
+    "year": 2009,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 95,
+    "rating": -10.7258360491881
+  },
+  {
+    "year": 2009,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 96,
+    "rating": -11.713310934042
+  },
+  {
+    "year": 2009,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 97,
+    "rating": -11.7956357797905
+  },
+  {
+    "year": 2009,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 98,
+    "rating": -11.8064056982925
+  },
+  {
+    "year": 2009,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 99,
+    "rating": -11.8485121137568
+  },
+  {
+    "year": 2009,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 100,
+    "rating": -11.9937535234596
+  },
+  {
+    "year": 2009,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 101,
+    "rating": -12.2841431155539
+  },
+  {
+    "year": 2009,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 102,
+    "rating": -13.6751250729796
+  },
+  {
+    "year": 2009,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 103,
+    "rating": -14.0353687621683
+  },
+  {
+    "year": 2009,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 104,
+    "rating": -14.1890694050071
+  },
+  {
+    "year": 2009,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "division": "East",
+    "ranking": 105,
+    "rating": -14.5976613765366
+  },
+  {
+    "year": 2009,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "division": null,
+    "ranking": 106,
+    "rating": -14.6094804518572
+  },
+  {
+    "year": 2009,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 107,
+    "rating": -15.0091524317395
+  },
+  {
+    "year": 2009,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "division": "East",
+    "ranking": 108,
+    "rating": -15.6753342591446
+  },
+  {
+    "year": 2009,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 109,
+    "rating": -16.2626925449782
+  },
+  {
+    "year": 2009,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 110,
+    "rating": -16.9875735375447
+  },
+  {
+    "year": 2009,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 111,
+    "rating": -18.9658732894607
+  },
+  {
+    "year": 2009,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "division": "East",
+    "ranking": 112,
+    "rating": -19.7036799961231
+  },
+  {
+    "year": 2009,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "division": null,
+    "ranking": 113,
+    "rating": -20.2683792571159
+  },
+  {
+    "year": 2009,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "division": null,
+    "ranking": 114,
+    "rating": -20.9536000756411
+  },
+  {
+    "year": 2009,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 115,
+    "rating": -21.2439117296099
+  },
+  {
+    "year": 2009,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 116,
+    "rating": -21.9630456856002
+  },
+  {
+    "year": 2009,
+    "team": "Western Kentucky",
+    "conference": "Sun Belt",
+    "division": null,
+    "ranking": 117,
+    "rating": -22.7156394098586
+  },
+  {
+    "year": 2009,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "division": "West",
+    "ranking": 118,
+    "rating": -23.2453599172985
+  },
+  {
+    "year": 2009,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "division": null,
+    "ranking": 119,
+    "rating": -25.3877944856821
+  },
+  {
+    "year": 2009,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "division": "West",
+    "ranking": 120,
+    "rating": -27.1726714580651
+  }
+]

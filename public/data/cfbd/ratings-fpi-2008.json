@@ -1,0 +1,2402 @@
+[
+  {
+    "year": 2008,
+    "team": "Auburn",
+    "conference": "SEC",
+    "fpi": 4.746,
+    "resumeRanks": {
+      "strengthOfRecord": 65,
+      "fpi": 49,
+      "averageWinProbability": 36,
+      "strengthOfSchedule": 31,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 28
+    },
+    "efficiencies": {
+      "overall": 51.165,
+      "offense": 28.529,
+      "defense": 70.91,
+      "specialTeams": 60.086
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "fpi": -10.905,
+    "resumeRanks": {
+      "strengthOfRecord": 102,
+      "fpi": 105,
+      "averageWinProbability": 91,
+      "strengthOfSchedule": 83,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 97
+    },
+    "efficiencies": {
+      "overall": 33.624,
+      "offense": 45.001,
+      "defense": 24.642,
+      "specialTeams": 62.107
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "fpi": 0.948,
+    "resumeRanks": {
+      "strengthOfRecord": 53,
+      "fpi": 62,
+      "averageWinProbability": 109,
+      "strengthOfSchedule": 6,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 81
+    },
+    "efficiencies": {
+      "overall": 45.945,
+      "offense": 56.239,
+      "defense": 45.317,
+      "specialTeams": 26.558
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "fpi": 5.781,
+    "resumeRanks": {
+      "strengthOfRecord": 63,
+      "fpi": 44,
+      "averageWinProbability": 70,
+      "strengthOfSchedule": 35,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 50
+    },
+    "efficiencies": {
+      "overall": 51.9,
+      "offense": 35.111,
+      "defense": 66.045,
+      "specialTeams": 50.624
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "fpi": 14.782,
+    "resumeRanks": {
+      "strengthOfRecord": 35,
+      "fpi": 17,
+      "averageWinProbability": 24,
+      "strengthOfSchedule": 57,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 21
+    },
+    "efficiencies": {
+      "overall": 72.472,
+      "offense": 69.275,
+      "defense": 64.013,
+      "specialTeams": 62.464
+    }
+  },
+  {
+    "year": 2008,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "fpi": -15.541,
+    "resumeRanks": {
+      "strengthOfRecord": 112,
+      "fpi": 114,
+      "averageWinProbability": 110,
+      "strengthOfSchedule": 75,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 106
+    },
+    "efficiencies": {
+      "overall": 21.551,
+      "offense": 26.353,
+      "defense": 26.25,
+      "specialTeams": 49.266
+    }
+  },
+  {
+    "year": 2008,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "fpi": -9.836,
+    "resumeRanks": {
+      "strengthOfRecord": 85,
+      "fpi": 101,
+      "averageWinProbability": 66,
+      "strengthOfSchedule": 108,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 92
+    },
+    "efficiencies": {
+      "overall": 35.297,
+      "offense": 12.886,
+      "defense": 71.368,
+      "specialTeams": 42.102
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "fpi": 5.985,
+    "resumeRanks": {
+      "strengthOfRecord": 48,
+      "fpi": 41,
+      "averageWinProbability": 88,
+      "strengthOfSchedule": 3,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 45
+    },
+    "efficiencies": {
+      "overall": 57.351,
+      "offense": 65.879,
+      "defense": 43.293,
+      "specialTeams": 59.786
+    }
+  },
+  {
+    "year": 2008,
+    "team": "California",
+    "conference": "Pac-10",
+    "fpi": 14.58,
+    "resumeRanks": {
+      "strengthOfRecord": 20,
+      "fpi": 18,
+      "averageWinProbability": 19,
+      "strengthOfSchedule": 37,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 16
+    },
+    "efficiencies": {
+      "overall": 73.646,
+      "offense": 52.544,
+      "defense": 80.137,
+      "specialTeams": 59.092
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "fpi": -2.773,
+    "resumeRanks": {
+      "strengthOfRecord": 70,
+      "fpi": 74,
+      "averageWinProbability": 105,
+      "strengthOfSchedule": 10,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 77
+    },
+    "efficiencies": {
+      "overall": 42.212,
+      "offense": 25.41,
+      "defense": 62.241,
+      "specialTeams": 56.393
+    }
+  },
+  {
+    "year": 2008,
+    "team": "USC",
+    "conference": "Pac-10",
+    "fpi": 30.774,
+    "resumeRanks": {
+      "strengthOfRecord": 3,
+      "fpi": 2,
+      "averageWinProbability": 4,
+      "strengthOfSchedule": 7,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 3
+    },
+    "efficiencies": {
+      "overall": 93.078,
+      "offense": 89.379,
+      "defense": 86.598,
+      "specialTeams": 55.784
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "fpi": -6.371,
+    "resumeRanks": {
+      "strengthOfRecord": 61,
+      "fpi": 87,
+      "averageWinProbability": 82,
+      "strengthOfSchedule": 70,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 85
+    },
+    "efficiencies": {
+      "overall": 38.966,
+      "offense": 57.17,
+      "defense": 29.561,
+      "specialTeams": 37.012
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "fpi": -1.106,
+    "resumeRanks": {
+      "strengthOfRecord": 58,
+      "fpi": 71,
+      "averageWinProbability": 103,
+      "strengthOfSchedule": 14,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 72
+    },
+    "efficiencies": {
+      "overall": 39.396,
+      "offense": 30.668,
+      "defense": 60.204,
+      "specialTeams": 27.732
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UConn",
+    "conference": "Big East",
+    "fpi": 7.184,
+    "resumeRanks": {
+      "strengthOfRecord": 42,
+      "fpi": 37,
+      "averageWinProbability": 57,
+      "strengthOfSchedule": 56,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 56
+    },
+    "efficiencies": {
+      "overall": 59.323,
+      "offense": 41.682,
+      "defense": 77.711,
+      "specialTeams": 39.265
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Florida State",
+    "conference": "ACC",
+    "fpi": 13.956,
+    "resumeRanks": {
+      "strengthOfRecord": 25,
+      "fpi": 19,
+      "averageWinProbability": 27,
+      "strengthOfSchedule": 47,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 26
+    },
+    "efficiencies": {
+      "overall": 65.582,
+      "offense": 57.132,
+      "defense": 61.279,
+      "specialTeams": 70.913
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Florida",
+    "conference": "SEC",
+    "fpi": 33.373,
+    "resumeRanks": {
+      "strengthOfRecord": 2,
+      "fpi": 1,
+      "averageWinProbability": 1,
+      "strengthOfSchedule": 9,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 2
+    },
+    "efficiencies": {
+      "overall": 95.412,
+      "offense": 91.449,
+      "defense": 86.351,
+      "specialTeams": 78.303
+    }
+  },
+  {
+    "year": 2008,
+    "team": "South Florida",
+    "conference": "Big East",
+    "fpi": 9.935,
+    "resumeRanks": {
+      "strengthOfRecord": 46,
+      "fpi": 26,
+      "averageWinProbability": 33,
+      "strengthOfSchedule": 67,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 42
+    },
+    "efficiencies": {
+      "overall": 61.031,
+      "offense": 64.563,
+      "defense": 53.696,
+      "specialTeams": 47.585
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "fpi": 4.597,
+    "resumeRanks": {
+      "strengthOfRecord": 22,
+      "fpi": 51,
+      "averageWinProbability": 32,
+      "strengthOfSchedule": 33,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 25
+    },
+    "efficiencies": {
+      "overall": 61.208,
+      "offense": 58.799,
+      "defense": 63.481,
+      "specialTeams": 36.535
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Georgia",
+    "conference": "SEC",
+    "fpi": 15.214,
+    "resumeRanks": {
+      "strengthOfRecord": 13,
+      "fpi": 14,
+      "averageWinProbability": 26,
+      "strengthOfSchedule": 11,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 17
+    },
+    "efficiencies": {
+      "overall": 71.105,
+      "offense": 79.464,
+      "defense": 55.578,
+      "specialTeams": 43.645
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "fpi": -7.298,
+    "resumeRanks": {
+      "strengthOfRecord": 81,
+      "fpi": 91,
+      "averageWinProbability": 47,
+      "strengthOfSchedule": 90,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 67
+    },
+    "efficiencies": {
+      "overall": 39.052,
+      "offense": 38.354,
+      "defense": 44.576,
+      "specialTeams": 47.457
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "fpi": -5.444,
+    "resumeRanks": {
+      "strengthOfRecord": 105,
+      "fpi": 84,
+      "averageWinProbability": 107,
+      "strengthOfSchedule": 46,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 96
+    },
+    "efficiencies": {
+      "overall": 32.502,
+      "offense": 41.051,
+      "defense": 31.084,
+      "specialTeams": 48.836
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "fpi": 14.869,
+    "resumeRanks": {
+      "strengthOfRecord": 11,
+      "fpi": 16,
+      "averageWinProbability": 3,
+      "strengthOfSchedule": 115,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 7
+    },
+    "efficiencies": {
+      "overall": 81.648,
+      "offense": 66.414,
+      "defense": 77.594,
+      "specialTeams": 79.835
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "fpi": -25.072,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 119,
+      "averageWinProbability": 116,
+      "strengthOfSchedule": 107,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 118
+    },
+    "efficiencies": {
+      "overall": 8.321,
+      "offense": 20.851,
+      "defense": 8.855,
+      "specialTeams": 44.837
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "fpi": 5.648,
+    "resumeRanks": {
+      "strengthOfRecord": 29,
+      "fpi": 45,
+      "averageWinProbability": 41,
+      "strengthOfSchedule": 60,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 44
+    },
+    "efficiencies": {
+      "overall": 60.635,
+      "offense": 50.666,
+      "defense": 66.192,
+      "specialTeams": 51.008
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "fpi": -10.354,
+    "resumeRanks": {
+      "strengthOfRecord": 100,
+      "fpi": 102,
+      "averageWinProbability": 99,
+      "strengthOfSchedule": 54,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 94
+    },
+    "efficiencies": {
+      "overall": 28.523,
+      "offense": 32.895,
+      "defense": 32.409,
+      "specialTeams": 46.562
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "fpi": 5.123,
+    "resumeRanks": {
+      "strengthOfRecord": 52,
+      "fpi": 50,
+      "averageWinProbability": 34,
+      "strengthOfSchedule": 53,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 30
+    },
+    "efficiencies": {
+      "overall": 56.287,
+      "offense": 49.539,
+      "defense": 59.744,
+      "specialTeams": 52.798
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "fpi": 1.639,
+    "resumeRanks": {
+      "strengthOfRecord": 54,
+      "fpi": 58,
+      "averageWinProbability": 81,
+      "strengthOfSchedule": 62,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 76
+    },
+    "efficiencies": {
+      "overall": 46.837,
+      "offense": 29.974,
+      "defense": 58.517,
+      "specialTeams": 67.846
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Louisville",
+    "conference": "Big East",
+    "fpi": -3.781,
+    "resumeRanks": {
+      "strengthOfRecord": 80,
+      "fpi": 78,
+      "averageWinProbability": 71,
+      "strengthOfSchedule": 66,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 74
+    },
+    "efficiencies": {
+      "overall": 36.792,
+      "offense": 37.466,
+      "defense": 42.45,
+      "specialTeams": 46.543
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Western Kentucky",
+    "conference": "FBS Independents",
+    "fpi": -13.923,
+    "resumeRanks": {
+      "strengthOfRecord": 117,
+      "fpi": 110,
+      "averageWinProbability": 114,
+      "strengthOfSchedule": 88,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 17.559,
+      "offense": 17.187,
+      "defense": 28.005,
+      "specialTeams": 49.712
+    }
+  },
+  {
+    "year": 2008,
+    "team": "LSU",
+    "conference": "SEC",
+    "fpi": 11.706,
+    "resumeRanks": {
+      "strengthOfRecord": 33,
+      "fpi": 22,
+      "averageWinProbability": 43,
+      "strengthOfSchedule": 41,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 38
+    },
+    "efficiencies": {
+      "overall": 63.858,
+      "offense": 55.406,
+      "defense": 56.694,
+      "specialTeams": 77.712
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Boston College",
+    "conference": "ACC",
+    "fpi": 7.288,
+    "resumeRanks": {
+      "strengthOfRecord": 34,
+      "fpi": 35,
+      "averageWinProbability": 30,
+      "strengthOfSchedule": 48,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 32
+    },
+    "efficiencies": {
+      "overall": 61.223,
+      "offense": 42.541,
+      "defense": 78.752,
+      "specialTeams": 40.727
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Maryland",
+    "conference": "ACC",
+    "fpi": 2.822,
+    "resumeRanks": {
+      "strengthOfRecord": 37,
+      "fpi": 54,
+      "averageWinProbability": 59,
+      "strengthOfSchedule": 44,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 53
+    },
+    "efficiencies": {
+      "overall": 50.437,
+      "offense": 50.24,
+      "defense": 44.451,
+      "specialTeams": 68.414
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "fpi": 7.936,
+    "resumeRanks": {
+      "strengthOfRecord": 17,
+      "fpi": 34,
+      "averageWinProbability": 42,
+      "strengthOfSchedule": 18,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 29
+    },
+    "efficiencies": {
+      "overall": 61.459,
+      "offense": 48.076,
+      "defense": 67.616,
+      "specialTeams": 58.82
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "fpi": -0.493,
+    "resumeRanks": {
+      "strengthOfRecord": 90,
+      "fpi": 69,
+      "averageWinProbability": 92,
+      "strengthOfSchedule": 21,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 64
+    },
+    "efficiencies": {
+      "overall": 39.716,
+      "offense": 33.172,
+      "defense": 52.982,
+      "specialTeams": 41.42
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "fpi": -0.675,
+    "resumeRanks": {
+      "strengthOfRecord": 55,
+      "fpi": 70,
+      "averageWinProbability": 56,
+      "strengthOfSchedule": 61,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 55
+    },
+    "efficiencies": {
+      "overall": 46.927,
+      "offense": 40.534,
+      "defense": 55.129,
+      "specialTeams": 47.233
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "fpi": 17.585,
+    "resumeRanks": {
+      "strengthOfRecord": 18,
+      "fpi": 10,
+      "averageWinProbability": 17,
+      "strengthOfSchedule": 32,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 14
+    },
+    "efficiencies": {
+      "overall": 77.012,
+      "offense": 80.341,
+      "defense": 59.247,
+      "specialTeams": 66.08
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "fpi": 13.864,
+    "resumeRanks": {
+      "strengthOfRecord": 19,
+      "fpi": 20,
+      "averageWinProbability": 18,
+      "strengthOfSchedule": 42,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 13
+    },
+    "efficiencies": {
+      "overall": 76.12,
+      "offense": 71.432,
+      "defense": 69.677,
+      "specialTeams": 58.724
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Duke",
+    "conference": "ACC",
+    "fpi": -0.33,
+    "resumeRanks": {
+      "strengthOfRecord": 78,
+      "fpi": 68,
+      "averageWinProbability": 90,
+      "strengthOfSchedule": 19,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 65
+    },
+    "efficiencies": {
+      "overall": 46.528,
+      "offense": 39.51,
+      "defense": 56.817,
+      "specialTeams": 45.723
+    }
+  },
+  {
+    "year": 2008,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "fpi": 1.177,
+    "resumeRanks": {
+      "strengthOfRecord": 47,
+      "fpi": 61,
+      "averageWinProbability": 54,
+      "strengthOfSchedule": 76,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 66
+    },
+    "efficiencies": {
+      "overall": 53.694,
+      "offense": 37.166,
+      "defense": 68.352,
+      "specialTeams": 49.49
+    }
+  },
+  {
+    "year": 2008,
+    "team": "NC State",
+    "conference": "ACC",
+    "fpi": 1.381,
+    "resumeRanks": {
+      "strengthOfRecord": 57,
+      "fpi": 59,
+      "averageWinProbability": 63,
+      "strengthOfSchedule": 15,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 47
+    },
+    "efficiencies": {
+      "overall": 51.29,
+      "offense": 58.775,
+      "defense": 42.736,
+      "specialTeams": 53.11
+    }
+  },
+  {
+    "year": 2008,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "fpi": 9.373,
+    "resumeRanks": {
+      "strengthOfRecord": 39,
+      "fpi": 28,
+      "averageWinProbability": 29,
+      "strengthOfSchedule": 30,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 31
+    },
+    "efficiencies": {
+      "overall": 62.078,
+      "offense": 51.809,
+      "defense": 60.854,
+      "specialTeams": 67.362
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "fpi": 5.591,
+    "resumeRanks": {
+      "strengthOfRecord": 36,
+      "fpi": 46,
+      "averageWinProbability": 46,
+      "strengthOfSchedule": 22,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 40
+    },
+    "efficiencies": {
+      "overall": 57.865,
+      "offense": 36.963,
+      "defense": 75.461,
+      "specialTeams": 49.193
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "fpi": 8.504,
+    "resumeRanks": {
+      "strengthOfRecord": 21,
+      "fpi": 32,
+      "averageWinProbability": 40,
+      "strengthOfSchedule": 51,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 35
+    },
+    "efficiencies": {
+      "overall": 63.105,
+      "offense": 64.48,
+      "defense": 49.021,
+      "specialTeams": 68.517
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "fpi": 8.406,
+    "resumeRanks": {
+      "strengthOfRecord": 43,
+      "fpi": 33,
+      "averageWinProbability": 31,
+      "strengthOfSchedule": 65,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 36
+    },
+    "efficiencies": {
+      "overall": 63.536,
+      "offense": 61.767,
+      "defense": 61.106,
+      "specialTeams": 48.645
+    }
+  },
+  {
+    "year": 2008,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "fpi": -18.703,
+    "resumeRanks": {
+      "strengthOfRecord": 113,
+      "fpi": 117,
+      "averageWinProbability": 108,
+      "strengthOfSchedule": 113,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 117
+    },
+    "efficiencies": {
+      "overall": 19.057,
+      "offense": 24.566,
+      "defense": 26.227,
+      "specialTeams": 38.801
+    }
+  },
+  {
+    "year": 2008,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "fpi": -2.381,
+    "resumeRanks": {
+      "strengthOfRecord": 91,
+      "fpi": 73,
+      "averageWinProbability": 97,
+      "strengthOfSchedule": 64,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 84
+    },
+    "efficiencies": {
+      "overall": 41.423,
+      "offense": 23.43,
+      "defense": 65.161,
+      "specialTeams": 49.907
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "fpi": -9.183,
+    "resumeRanks": {
+      "strengthOfRecord": 87,
+      "fpi": 99,
+      "averageWinProbability": 104,
+      "strengthOfSchedule": 12,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 71
+    },
+    "efficiencies": {
+      "overall": 31.316,
+      "offense": 38.667,
+      "defense": 30.065,
+      "specialTeams": 53.59
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "fpi": -1.464,
+    "resumeRanks": {
+      "strengthOfRecord": 82,
+      "fpi": 72,
+      "averageWinProbability": 39,
+      "strengthOfSchedule": 105,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 60
+    },
+    "efficiencies": {
+      "overall": 49.457,
+      "offense": 53.019,
+      "defense": 49.368,
+      "specialTeams": 39.927
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "fpi": -14.863,
+    "resumeRanks": {
+      "strengthOfRecord": 115,
+      "fpi": 113,
+      "averageWinProbability": 117,
+      "strengthOfSchedule": 94,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 118
+    },
+    "efficiencies": {
+      "overall": 20.695,
+      "offense": 27.655,
+      "defense": 19.787,
+      "specialTeams": 61.069
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "fpi": 20.778,
+    "resumeRanks": {
+      "strengthOfRecord": 9,
+      "fpi": 6,
+      "averageWinProbability": 13,
+      "strengthOfSchedule": 24,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 8
+    },
+    "efficiencies": {
+      "overall": 79.632,
+      "offense": 65.823,
+      "defense": 74.444,
+      "specialTeams": 78.737
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "fpi": -8.99,
+    "resumeRanks": {
+      "strengthOfRecord": 104,
+      "fpi": 98,
+      "averageWinProbability": 74,
+      "strengthOfSchedule": 101,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 95
+    },
+    "efficiencies": {
+      "overall": 36.096,
+      "offense": 36.292,
+      "defense": 40.713,
+      "specialTeams": 50.674
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "fpi": 14.931,
+    "resumeRanks": {
+      "strengthOfRecord": 15,
+      "fpi": 15,
+      "averageWinProbability": 14,
+      "strengthOfSchedule": 43,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 11
+    },
+    "efficiencies": {
+      "overall": 79.288,
+      "offense": 82.71,
+      "defense": 58.104,
+      "specialTeams": 70.916
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "fpi": 29.737,
+    "resumeRanks": {
+      "strengthOfRecord": 4,
+      "fpi": 3,
+      "averageWinProbability": 2,
+      "strengthOfSchedule": 2,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 1
+    },
+    "efficiencies": {
+      "overall": 93.802,
+      "offense": 95.291,
+      "defense": 79.169,
+      "specialTeams": 41.063
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "fpi": 8.902,
+    "resumeRanks": {
+      "strengthOfRecord": 41,
+      "fpi": 30,
+      "averageWinProbability": 16,
+      "strengthOfSchedule": 119,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 52
+    },
+    "efficiencies": {
+      "overall": 62.758,
+      "offense": 80.797,
+      "defense": 35.463,
+      "specialTeams": 40.659
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "fpi": 13.756,
+    "resumeRanks": {
+      "strengthOfRecord": 14,
+      "fpi": 21,
+      "averageWinProbability": 35,
+      "strengthOfSchedule": 4,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 18
+    },
+    "efficiencies": {
+      "overall": 70.738,
+      "offense": 66.015,
+      "defense": 69.97,
+      "specialTeams": 46.921
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "fpi": 25.466,
+    "resumeRanks": {
+      "strengthOfRecord": 8,
+      "fpi": 5,
+      "averageWinProbability": 8,
+      "strengthOfSchedule": 40,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 6
+    },
+    "efficiencies": {
+      "overall": 88.53,
+      "offense": 87.703,
+      "defense": 73.457,
+      "specialTeams": 67.124
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Temple",
+    "conference": "Mid-American",
+    "fpi": -3.886,
+    "resumeRanks": {
+      "strengthOfRecord": 96,
+      "fpi": 79,
+      "averageWinProbability": 50,
+      "strengthOfSchedule": 98,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 73
+    },
+    "efficiencies": {
+      "overall": 43.555,
+      "offense": 26.344,
+      "defense": 55.068,
+      "specialTeams": 70.511
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "fpi": 8.707,
+    "resumeRanks": {
+      "strengthOfRecord": 24,
+      "fpi": 31,
+      "averageWinProbability": 48,
+      "strengthOfSchedule": 25,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 39
+    },
+    "efficiencies": {
+      "overall": 62.508,
+      "offense": 49.565,
+      "defense": 64.702,
+      "specialTeams": 67.509
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Clemson",
+    "conference": "ACC",
+    "fpi": 11.46,
+    "resumeRanks": {
+      "strengthOfRecord": 49,
+      "fpi": 23,
+      "averageWinProbability": 23,
+      "strengthOfSchedule": 50,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 22
+    },
+    "efficiencies": {
+      "overall": 62.551,
+      "offense": 40.153,
+      "defense": 73.777,
+      "specialTeams": 62.75
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "fpi": -5.817,
+    "resumeRanks": {
+      "strengthOfRecord": 93,
+      "fpi": 85,
+      "averageWinProbability": 61,
+      "strengthOfSchedule": 109,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 90
+    },
+    "efficiencies": {
+      "overall": 37.088,
+      "offense": 52.27,
+      "defense": 32.438,
+      "specialTeams": 28.734
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "fpi": 3.646,
+    "resumeRanks": {
+      "strengthOfRecord": 40,
+      "fpi": 52,
+      "averageWinProbability": 86,
+      "strengthOfSchedule": 23,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 61
+    },
+    "efficiencies": {
+      "overall": 53.557,
+      "offense": 34.18,
+      "defense": 64.748,
+      "specialTeams": 64.57
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "fpi": 1.948,
+    "resumeRanks": {
+      "strengthOfRecord": 71,
+      "fpi": 57,
+      "averageWinProbability": 69,
+      "strengthOfSchedule": 16,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 41
+    },
+    "efficiencies": {
+      "overall": 54.944,
+      "offense": 70.496,
+      "defense": 43.243,
+      "specialTeams": 30.575
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "fpi": 0.575,
+    "resumeRanks": {
+      "strengthOfRecord": 30,
+      "fpi": 64,
+      "averageWinProbability": 20,
+      "strengthOfSchedule": 93,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 34
+    },
+    "efficiencies": {
+      "overall": 61.015,
+      "offense": 81.367,
+      "defense": 31.441,
+      "specialTeams": 43.363
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "fpi": -3.959,
+    "resumeRanks": {
+      "strengthOfRecord": 79,
+      "fpi": 81,
+      "averageWinProbability": 100,
+      "strengthOfSchedule": 29,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 79
+    },
+    "efficiencies": {
+      "overall": 32.088,
+      "offense": 44.374,
+      "defense": 29.367,
+      "specialTeams": 45.108
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "fpi": 2.607,
+    "resumeRanks": {
+      "strengthOfRecord": 62,
+      "fpi": 55,
+      "averageWinProbability": 78,
+      "strengthOfSchedule": 96,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 98
+    },
+    "efficiencies": {
+      "overall": 49.439,
+      "offense": 63.358,
+      "defense": 40.101,
+      "specialTeams": 34.565
+    }
+  },
+  {
+    "year": 2008,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "fpi": -26.197,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 120,
+      "averageWinProbability": 120,
+      "strengthOfSchedule": 86,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 118
+    },
+    "efficiencies": {
+      "overall": 8.29,
+      "offense": 27.076,
+      "defense": 8.351,
+      "specialTeams": 20.204
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Texas",
+    "conference": "Big 12",
+    "fpi": 26.438,
+    "resumeRanks": {
+      "strengthOfRecord": 1,
+      "fpi": 4,
+      "averageWinProbability": 5,
+      "strengthOfSchedule": 17,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 4
+    },
+    "efficiencies": {
+      "overall": 90.466,
+      "offense": 89.013,
+      "defense": 77.61,
+      "specialTeams": 59.967
+    }
+  },
+  {
+    "year": 2008,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "fpi": 9.809,
+    "resumeRanks": {
+      "strengthOfRecord": 26,
+      "fpi": 27,
+      "averageWinProbability": 22,
+      "strengthOfSchedule": 85,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 33
+    },
+    "efficiencies": {
+      "overall": 64.214,
+      "offense": 75.209,
+      "defense": 42.15,
+      "specialTeams": 58.858
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "fpi": 15.959,
+    "resumeRanks": {
+      "strengthOfRecord": 5,
+      "fpi": 12,
+      "averageWinProbability": 9,
+      "strengthOfSchedule": 74,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 12
+    },
+    "efficiencies": {
+      "overall": 78.112,
+      "offense": 66.436,
+      "defense": 72.255,
+      "specialTeams": 76.726
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Virginia",
+    "conference": "ACC",
+    "fpi": 2.418,
+    "resumeRanks": {
+      "strengthOfRecord": 59,
+      "fpi": 56,
+      "averageWinProbability": 87,
+      "strengthOfSchedule": 5,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 58
+    },
+    "efficiencies": {
+      "overall": 46.822,
+      "offense": 36.233,
+      "defense": 55.993,
+      "specialTeams": 57.151
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "fpi": 9.223,
+    "resumeRanks": {
+      "strengthOfRecord": 23,
+      "fpi": 29,
+      "averageWinProbability": 28,
+      "strengthOfSchedule": 39,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 23
+    },
+    "efficiencies": {
+      "overall": 64.939,
+      "offense": 47.695,
+      "defense": 78.433,
+      "specialTeams": 47.068
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "fpi": -10.756,
+    "resumeRanks": {
+      "strengthOfRecord": 120,
+      "fpi": 103,
+      "averageWinProbability": 118,
+      "strengthOfSchedule": 1,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 105
+    },
+    "efficiencies": {
+      "overall": 18.886,
+      "offense": 30.366,
+      "defense": 22.815,
+      "specialTeams": 30.632
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "fpi": -19.432,
+    "resumeRanks": {
+      "strengthOfRecord": 103,
+      "fpi": 118,
+      "averageWinProbability": 119,
+      "strengthOfSchedule": 8,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 114
+    },
+    "efficiencies": {
+      "overall": 10.77,
+      "offense": 14.829,
+      "defense": 20.619,
+      "specialTeams": 31.997
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "fpi": 5.801,
+    "resumeRanks": {
+      "strengthOfRecord": 45,
+      "fpi": 43,
+      "averageWinProbability": 60,
+      "strengthOfSchedule": 49,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 48
+    },
+    "efficiencies": {
+      "overall": 53.271,
+      "offense": 50.888,
+      "defense": 56.018,
+      "specialTeams": 46.258
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "fpi": -7.593,
+    "resumeRanks": {
+      "strengthOfRecord": 94,
+      "fpi": 94,
+      "averageWinProbability": 85,
+      "strengthOfSchedule": 68,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 82
+    },
+    "efficiencies": {
+      "overall": 38.082,
+      "offense": 33.62,
+      "defense": 46.185,
+      "specialTeams": 50.43
+    }
+  },
+  {
+    "year": 2008,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "fpi": 11.347,
+    "resumeRanks": {
+      "strengthOfRecord": 32,
+      "fpi": 24,
+      "averageWinProbability": 44,
+      "strengthOfSchedule": 55,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 46
+    },
+    "efficiencies": {
+      "overall": 63.294,
+      "offense": 62.936,
+      "defense": 59.021,
+      "specialTeams": 49.327
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "fpi": -3.901,
+    "resumeRanks": {
+      "strengthOfRecord": 77,
+      "fpi": 80,
+      "averageWinProbability": 65,
+      "strengthOfSchedule": 99,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 86
+    },
+    "efficiencies": {
+      "overall": 42.947,
+      "offense": 57.892,
+      "defense": 31.883,
+      "specialTeams": 49.171
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "fpi": -7.532,
+    "resumeRanks": {
+      "strengthOfRecord": 88,
+      "fpi": 93,
+      "averageWinProbability": 93,
+      "strengthOfSchedule": 112,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 104
+    },
+    "efficiencies": {
+      "overall": 37.093,
+      "offense": 56.944,
+      "defense": 28.458,
+      "specialTeams": 34.541
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "fpi": -12.334,
+    "resumeRanks": {
+      "strengthOfRecord": 107,
+      "fpi": 108,
+      "averageWinProbability": 115,
+      "strengthOfSchedule": 73,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 113
+    },
+    "efficiencies": {
+      "overall": 22.114,
+      "offense": 25.34,
+      "defense": 29.897,
+      "specialTeams": 42.772
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Alabama",
+    "conference": "SEC",
+    "fpi": 17.609,
+    "resumeRanks": {
+      "strengthOfRecord": 6,
+      "fpi": 9,
+      "averageWinProbability": 6,
+      "strengthOfSchedule": 28,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 5
+    },
+    "efficiencies": {
+      "overall": 83.263,
+      "offense": 70.081,
+      "defense": 82.739,
+      "specialTeams": 62.746
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "fpi": -4.419,
+    "resumeRanks": {
+      "strengthOfRecord": 84,
+      "fpi": 83,
+      "averageWinProbability": 95,
+      "strengthOfSchedule": 52,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 69
+    },
+    "efficiencies": {
+      "overall": 34.345,
+      "offense": 32.142,
+      "defense": 51.928,
+      "specialTeams": 25.693
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "fpi": -13.834,
+    "resumeRanks": {
+      "strengthOfRecord": 111,
+      "fpi": 109,
+      "averageWinProbability": 101,
+      "strengthOfSchedule": 106,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 112
+    },
+    "efficiencies": {
+      "overall": 21.313,
+      "offense": 12.096,
+      "defense": 50.558,
+      "specialTeams": 40.335
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "fpi": 6.08,
+    "resumeRanks": {
+      "strengthOfRecord": 64,
+      "fpi": 40,
+      "averageWinProbability": 72,
+      "strengthOfSchedule": 36,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 54
+    },
+    "efficiencies": {
+      "overall": 54.467,
+      "offense": 54.166,
+      "defense": 59.195,
+      "specialTeams": 33.02
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "fpi": -0.147,
+    "resumeRanks": {
+      "strengthOfRecord": 56,
+      "fpi": 67,
+      "averageWinProbability": 49,
+      "strengthOfSchedule": 82,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 63
+    },
+    "efficiencies": {
+      "overall": 52.345,
+      "offense": 40.992,
+      "defense": 62.735,
+      "specialTeams": 50.449
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "fpi": -6.393,
+    "resumeRanks": {
+      "strengthOfRecord": 98,
+      "fpi": 89,
+      "averageWinProbability": 73,
+      "strengthOfSchedule": 104,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 99
+    },
+    "efficiencies": {
+      "overall": 41.478,
+      "offense": 52.671,
+      "defense": 31.855,
+      "specialTeams": 58.501
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "fpi": -5.922,
+    "resumeRanks": {
+      "strengthOfRecord": 89,
+      "fpi": 86,
+      "averageWinProbability": 58,
+      "strengthOfSchedule": 116,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 87
+    },
+    "efficiencies": {
+      "overall": 44.674,
+      "offense": 39.721,
+      "defense": 54.353,
+      "specialTeams": 42.817
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "fpi": 5.57,
+    "resumeRanks": {
+      "strengthOfRecord": 31,
+      "fpi": 47,
+      "averageWinProbability": 11,
+      "strengthOfSchedule": 120,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 43
+    },
+    "efficiencies": {
+      "overall": 66.686,
+      "offense": 67.584,
+      "defense": 55.761,
+      "specialTeams": 61.644
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "fpi": -3.123,
+    "resumeRanks": {
+      "strengthOfRecord": 68,
+      "fpi": 76,
+      "averageWinProbability": 52,
+      "strengthOfSchedule": 84,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 68
+    },
+    "efficiencies": {
+      "overall": 45.777,
+      "offense": 56.944,
+      "defense": 36.575,
+      "specialTeams": 50.15
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "fpi": -8.102,
+    "resumeRanks": {
+      "strengthOfRecord": 99,
+      "fpi": 97,
+      "averageWinProbability": 76,
+      "strengthOfSchedule": 79,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 78
+    },
+    "efficiencies": {
+      "overall": 36.13,
+      "offense": 11.793,
+      "defense": 66.298,
+      "specialTeams": 58.597
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "fpi": -4.317,
+    "resumeRanks": {
+      "strengthOfRecord": 66,
+      "fpi": 82,
+      "averageWinProbability": 64,
+      "strengthOfSchedule": 103,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 88
+    },
+    "efficiencies": {
+      "overall": 43.225,
+      "offense": 59.946,
+      "defense": 27.851,
+      "specialTeams": 54.862
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "fpi": 6.258,
+    "resumeRanks": {
+      "strengthOfRecord": 16,
+      "fpi": 39,
+      "averageWinProbability": 25,
+      "strengthOfSchedule": 63,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 24
+    },
+    "efficiencies": {
+      "overall": 64.366,
+      "offense": 50.969,
+      "defense": 69.546,
+      "specialTeams": 55.41
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "fpi": -14.713,
+    "resumeRanks": {
+      "strengthOfRecord": 110,
+      "fpi": 112,
+      "averageWinProbability": 112,
+      "strengthOfSchedule": 89,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 115
+    },
+    "efficiencies": {
+      "overall": 23.387,
+      "offense": 47.145,
+      "defense": 17.992,
+      "specialTeams": 20.277
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "fpi": -7.449,
+    "resumeRanks": {
+      "strengthOfRecord": 74,
+      "fpi": 92,
+      "averageWinProbability": 80,
+      "strengthOfSchedule": 95,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 100
+    },
+    "efficiencies": {
+      "overall": 36.649,
+      "offense": 43.971,
+      "defense": 38.459,
+      "specialTeams": 37.452
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "fpi": -9.462,
+    "resumeRanks": {
+      "strengthOfRecord": 92,
+      "fpi": 100,
+      "averageWinProbability": 96,
+      "strengthOfSchedule": 87,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 101
+    },
+    "efficiencies": {
+      "overall": 36.407,
+      "offense": 28.29,
+      "defense": 47.587,
+      "specialTeams": 53.211
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "fpi": 15.249,
+    "resumeRanks": {
+      "strengthOfRecord": 28,
+      "fpi": 13,
+      "averageWinProbability": 15,
+      "strengthOfSchedule": 58,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 19
+    },
+    "efficiencies": {
+      "overall": 74.365,
+      "offense": 61.457,
+      "defense": 75.141,
+      "specialTeams": 60.34
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "fpi": 11.198,
+    "resumeRanks": {
+      "strengthOfRecord": 27,
+      "fpi": 25,
+      "averageWinProbability": 38,
+      "strengthOfSchedule": 38,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 27
+    },
+    "efficiencies": {
+      "overall": 66.599,
+      "offense": 73.476,
+      "defense": 51.569,
+      "specialTeams": 54.071
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "fpi": 0.934,
+    "resumeRanks": {
+      "strengthOfRecord": 72,
+      "fpi": 63,
+      "averageWinProbability": 75,
+      "strengthOfSchedule": 59,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 62
+    },
+    "efficiencies": {
+      "overall": 43.983,
+      "offense": 55.34,
+      "defense": 30.639,
+      "specialTeams": 73.408
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "fpi": -10.869,
+    "resumeRanks": {
+      "strengthOfRecord": 106,
+      "fpi": 104,
+      "averageWinProbability": 98,
+      "strengthOfSchedule": 110,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 108
+    },
+    "efficiencies": {
+      "overall": 26.841,
+      "offense": 42.091,
+      "defense": 29.587,
+      "specialTeams": 19.86
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "fpi": -7.652,
+    "resumeRanks": {
+      "strengthOfRecord": 69,
+      "fpi": 95,
+      "averageWinProbability": 45,
+      "strengthOfSchedule": 117,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 75
+    },
+    "efficiencies": {
+      "overall": 39.436,
+      "offense": 29.972,
+      "defense": 44.758,
+      "specialTeams": 73.102
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Miami",
+    "conference": "ACC",
+    "fpi": 7.078,
+    "resumeRanks": {
+      "strengthOfRecord": 44,
+      "fpi": 38,
+      "averageWinProbability": 67,
+      "strengthOfSchedule": 26,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 51
+    },
+    "efficiencies": {
+      "overall": 60.386,
+      "offense": 52.208,
+      "defense": 57.378,
+      "specialTeams": 69.592
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "fpi": -7.95,
+    "resumeRanks": {
+      "strengthOfRecord": 101,
+      "fpi": 96,
+      "averageWinProbability": 94,
+      "strengthOfSchedule": 118,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 107
+    },
+    "efficiencies": {
+      "overall": 32.659,
+      "offense": 32.414,
+      "defense": 37.341,
+      "specialTeams": 56.46
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "fpi": 0.087,
+    "resumeRanks": {
+      "strengthOfRecord": 51,
+      "fpi": 66,
+      "averageWinProbability": 37,
+      "strengthOfSchedule": 71,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 49
+    },
+    "efficiencies": {
+      "overall": 52.571,
+      "offense": 66.459,
+      "defense": 34.693,
+      "specialTeams": 61.674
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "fpi": -14.49,
+    "resumeRanks": {
+      "strengthOfRecord": 108,
+      "fpi": 111,
+      "averageWinProbability": 83,
+      "strengthOfSchedule": 111,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 102
+    },
+    "efficiencies": {
+      "overall": 26.578,
+      "offense": 40.358,
+      "defense": 19.898,
+      "specialTeams": 56.863
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "fpi": -7.212,
+    "resumeRanks": {
+      "strengthOfRecord": 83,
+      "fpi": 90,
+      "averageWinProbability": 89,
+      "strengthOfSchedule": 78,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 89
+    },
+    "efficiencies": {
+      "overall": 38.343,
+      "offense": 60.583,
+      "defense": 22.788,
+      "specialTeams": 50.145
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "fpi": 0.193,
+    "resumeRanks": {
+      "strengthOfRecord": 73,
+      "fpi": 65,
+      "averageWinProbability": 51,
+      "strengthOfSchedule": 91,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 70
+    },
+    "efficiencies": {
+      "overall": 48.903,
+      "offense": 63.513,
+      "defense": 42.331,
+      "specialTeams": 25.81
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "fpi": -3.004,
+    "resumeRanks": {
+      "strengthOfRecord": 95,
+      "fpi": 75,
+      "averageWinProbability": 62,
+      "strengthOfSchedule": 114,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 93
+    },
+    "efficiencies": {
+      "overall": 42.854,
+      "offense": 37.83,
+      "defense": 52.83,
+      "specialTeams": 44.089
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "fpi": 17.737,
+    "resumeRanks": {
+      "strengthOfRecord": 10,
+      "fpi": 8,
+      "averageWinProbability": 21,
+      "strengthOfSchedule": 20,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 15
+    },
+    "efficiencies": {
+      "overall": 76.263,
+      "offense": 78.883,
+      "defense": 65.14,
+      "specialTeams": 47.648
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "fpi": 3.421,
+    "resumeRanks": {
+      "strengthOfRecord": 76,
+      "fpi": 53,
+      "averageWinProbability": 84,
+      "strengthOfSchedule": 27,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 59
+    },
+    "efficiencies": {
+      "overall": 46.67,
+      "offense": 45.022,
+      "defense": 53.465,
+      "specialTeams": 39.016
+    }
+  },
+  {
+    "year": 2008,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "fpi": -17.545,
+    "resumeRanks": {
+      "strengthOfRecord": 116,
+      "fpi": 115,
+      "averageWinProbability": 113,
+      "strengthOfSchedule": 69,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 111
+    },
+    "efficiencies": {
+      "overall": 19.85,
+      "offense": 27.964,
+      "defense": 19.399,
+      "specialTeams": 63.589
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "fpi": 1.335,
+    "resumeRanks": {
+      "strengthOfRecord": 75,
+      "fpi": 60,
+      "averageWinProbability": 68,
+      "strengthOfSchedule": 92,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 91
+    },
+    "efficiencies": {
+      "overall": 48.592,
+      "offense": 59.468,
+      "defense": 40.255,
+      "specialTeams": 42.131
+    }
+  },
+  {
+    "year": 2008,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "fpi": 7.21,
+    "resumeRanks": {
+      "strengthOfRecord": 38,
+      "fpi": 36,
+      "averageWinProbability": 53,
+      "strengthOfSchedule": 13,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 37
+    },
+    "efficiencies": {
+      "overall": 56.288,
+      "offense": 37.946,
+      "defense": 71.852,
+      "specialTeams": 52.15
+    }
+  },
+  {
+    "year": 2008,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "fpi": 17.278,
+    "resumeRanks": {
+      "strengthOfRecord": 12,
+      "fpi": 11,
+      "averageWinProbability": 7,
+      "strengthOfSchedule": 77,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 9
+    },
+    "efficiencies": {
+      "overall": 81.068,
+      "offense": 60.426,
+      "defense": 90.245,
+      "specialTeams": 51.422
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "fpi": 5.957,
+    "resumeRanks": {
+      "strengthOfRecord": 67,
+      "fpi": 42,
+      "averageWinProbability": 77,
+      "strengthOfSchedule": 45,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 57
+    },
+    "efficiencies": {
+      "overall": 50.938,
+      "offense": 26.904,
+      "defense": 75.811,
+      "specialTeams": 37.732
+    }
+  },
+  {
+    "year": 2008,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "fpi": -6.376,
+    "resumeRanks": {
+      "strengthOfRecord": 86,
+      "fpi": 88,
+      "averageWinProbability": 79,
+      "strengthOfSchedule": 80,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 80
+    },
+    "efficiencies": {
+      "overall": 39.605,
+      "offense": 56.156,
+      "defense": 24.233,
+      "specialTeams": 63.924
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "fpi": 18.865,
+    "resumeRanks": {
+      "strengthOfRecord": 7,
+      "fpi": 7,
+      "averageWinProbability": 10,
+      "strengthOfSchedule": 34,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 10
+    },
+    "efficiencies": {
+      "overall": 78.686,
+      "offense": 84.852,
+      "defense": 57.458,
+      "specialTeams": 51.589
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "fpi": -11.25,
+    "resumeRanks": {
+      "strengthOfRecord": 109,
+      "fpi": 106,
+      "averageWinProbability": 102,
+      "strengthOfSchedule": 97,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 109
+    },
+    "efficiencies": {
+      "overall": 27.703,
+      "offense": 32.129,
+      "defense": 36.179,
+      "specialTeams": 33.181
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "fpi": 4.664,
+    "resumeRanks": {
+      "strengthOfRecord": 60,
+      "fpi": 50,
+      "averageWinProbability": 12,
+      "strengthOfSchedule": 100,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 20
+    },
+    "efficiencies": {
+      "overall": 60.543,
+      "offense": 50.161,
+      "defense": 63.307,
+      "specialTeams": 61.029
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "fpi": -17.784,
+    "resumeRanks": {
+      "strengthOfRecord": 114,
+      "fpi": 116,
+      "averageWinProbability": 111,
+      "strengthOfSchedule": 81,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 18.444,
+      "offense": 26.766,
+      "defense": 28.341,
+      "specialTeams": 21.271
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "fpi": -3.42,
+    "resumeRanks": {
+      "strengthOfRecord": 50,
+      "fpi": 77,
+      "averageWinProbability": 55,
+      "strengthOfSchedule": 102,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 83
+    },
+    "efficiencies": {
+      "overall": 43.379,
+      "offense": 46.888,
+      "defense": 41.357,
+      "specialTeams": 54.015
+    }
+  },
+  {
+    "year": 2008,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "fpi": -11.493,
+    "resumeRanks": {
+      "strengthOfRecord": 97,
+      "fpi": 107,
+      "averageWinProbability": 106,
+      "strengthOfSchedule": 72,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 103
+    },
+    "efficiencies": {
+      "overall": 24.602,
+      "offense": 17.146,
+      "defense": 53.566,
+      "specialTeams": 20.681
+    }
+  }
+]

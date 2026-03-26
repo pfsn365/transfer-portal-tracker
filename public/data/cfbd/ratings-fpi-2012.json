@@ -1,0 +1,2482 @@
+[
+  {
+    "year": 2012,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "fpi": -5.027,
+    "resumeRanks": {
+      "strengthOfRecord": 64,
+      "fpi": 88,
+      "averageWinProbability": 85,
+      "strengthOfSchedule": 88,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 91
+    },
+    "efficiencies": {
+      "overall": 35.69,
+      "offense": 44.283,
+      "defense": 32.2,
+      "specialTeams": 54.218
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "fpi": 7.017,
+    "resumeRanks": {
+      "strengthOfRecord": 48,
+      "fpi": 45,
+      "averageWinProbability": 77,
+      "strengthOfSchedule": 43,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 65
+    },
+    "efficiencies": {
+      "overall": 59.933,
+      "offense": 63.778,
+      "defense": 55.079,
+      "specialTeams": 38.699
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "fpi": 5.436,
+    "resumeRanks": {
+      "strengthOfRecord": 76,
+      "fpi": 53,
+      "averageWinProbability": 60,
+      "strengthOfSchedule": 61,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 59
+    },
+    "efficiencies": {
+      "overall": 58.784,
+      "offense": 50.84,
+      "defense": 60.205,
+      "specialTeams": 59.295
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "fpi": 5.112,
+    "resumeRanks": {
+      "strengthOfRecord": 47,
+      "fpi": 57,
+      "averageWinProbability": 39,
+      "strengthOfSchedule": 70,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 52
+    },
+    "efficiencies": {
+      "overall": 59.044,
+      "offense": 32.459,
+      "defense": 78.332,
+      "specialTeams": 50.607
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "fpi": -13.694,
+    "resumeRanks": {
+      "strengthOfRecord": 102,
+      "fpi": 111,
+      "averageWinProbability": 117,
+      "strengthOfSchedule": 87,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 20.148,
+      "offense": 15.866,
+      "defense": 34.227,
+      "specialTeams": 49.821
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "fpi": -9.917,
+    "resumeRanks": {
+      "strengthOfRecord": 104,
+      "fpi": 100,
+      "averageWinProbability": 81,
+      "strengthOfSchedule": 102,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 93
+    },
+    "efficiencies": {
+      "overall": 28.86,
+      "offense": 47.709,
+      "defense": 23.533,
+      "specialTeams": 38.857
+    }
+  },
+  {
+    "year": 2012,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "fpi": 2.195,
+    "resumeRanks": {
+      "strengthOfRecord": 58,
+      "fpi": 61,
+      "averageWinProbability": 31,
+      "strengthOfSchedule": 95,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 57
+    },
+    "efficiencies": {
+      "overall": 54.086,
+      "offense": 56.318,
+      "defense": 51.127,
+      "specialTeams": 47.242
+    }
+  },
+  {
+    "year": 2012,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "fpi": -12.504,
+    "resumeRanks": {
+      "strengthOfRecord": 114,
+      "fpi": 108,
+      "averageWinProbability": 89,
+      "strengthOfSchedule": 114,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 105
+    },
+    "efficiencies": {
+      "overall": 28.922,
+      "offense": 42.774,
+      "defense": 23.486,
+      "specialTeams": 51.629
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "fpi": -10.096,
+    "resumeRanks": {
+      "strengthOfRecord": 94,
+      "fpi": 101,
+      "averageWinProbability": 78,
+      "strengthOfSchedule": 118,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 97
+    },
+    "efficiencies": {
+      "overall": 31.924,
+      "offense": 44.406,
+      "defense": 30.143,
+      "specialTeams": 37.739
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "fpi": -14.456,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 114,
+      "averageWinProbability": 105,
+      "strengthOfSchedule": 103,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 114
+    },
+    "efficiencies": {
+      "overall": 22.634,
+      "offense": 28.894,
+      "defense": 26.109,
+      "specialTeams": 49.44
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "fpi": -8.188,
+    "resumeRanks": {
+      "strengthOfRecord": 62,
+      "fpi": 97,
+      "averageWinProbability": 67,
+      "strengthOfSchedule": 109,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 85
+    },
+    "efficiencies": {
+      "overall": 43.583,
+      "offense": 45.992,
+      "defense": 38.687,
+      "specialTeams": 66.924
+    }
+  },
+  {
+    "year": 2012,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "fpi": -10.422,
+    "resumeRanks": {
+      "strengthOfRecord": 98,
+      "fpi": 103,
+      "averageWinProbability": 98,
+      "strengthOfSchedule": 76,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 101
+    },
+    "efficiencies": {
+      "overall": 27.839,
+      "offense": 30.193,
+      "defense": 37.801,
+      "specialTeams": 35.933
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UConn",
+    "conference": "Big East",
+    "fpi": -1.997,
+    "resumeRanks": {
+      "strengthOfRecord": 83,
+      "fpi": 74,
+      "averageWinProbability": 63,
+      "strengthOfSchedule": 68,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 71
+    },
+    "efficiencies": {
+      "overall": 45.06,
+      "offense": 22.606,
+      "defense": 70.474,
+      "specialTeams": 50.848
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Maryland",
+    "conference": "ACC",
+    "fpi": -3.181,
+    "resumeRanks": {
+      "strengthOfRecord": 86,
+      "fpi": 81,
+      "averageWinProbability": 101,
+      "strengthOfSchedule": 54,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 88
+    },
+    "efficiencies": {
+      "overall": 39.02,
+      "offense": 20.771,
+      "defense": 63.413,
+      "specialTeams": 49.312
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Louisville",
+    "conference": "Big East",
+    "fpi": 6.106,
+    "resumeRanks": {
+      "strengthOfRecord": 16,
+      "fpi": 50,
+      "averageWinProbability": 30,
+      "strengthOfSchedule": 69,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 43
+    },
+    "efficiencies": {
+      "overall": 62.045,
+      "offense": 72.13,
+      "defense": 50.735,
+      "specialTeams": 32.997
+    }
+  },
+  {
+    "year": 2012,
+    "team": "South Florida",
+    "conference": "Big East",
+    "fpi": -0.215,
+    "resumeRanks": {
+      "strengthOfRecord": 92,
+      "fpi": 68,
+      "averageWinProbability": 96,
+      "strengthOfSchedule": 46,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 81
+    },
+    "efficiencies": {
+      "overall": 40.893,
+      "offense": 42.311,
+      "defense": 44.927,
+      "specialTeams": 43.56
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "fpi": 8.906,
+    "resumeRanks": {
+      "strengthOfRecord": 39,
+      "fpi": 36,
+      "averageWinProbability": 11,
+      "strengthOfSchedule": 79,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 35
+    },
+    "efficiencies": {
+      "overall": 64.584,
+      "offense": 60.944,
+      "defense": 63.897,
+      "specialTeams": 46.412
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "fpi": 9.225,
+    "resumeRanks": {
+      "strengthOfRecord": 52,
+      "fpi": 34,
+      "averageWinProbability": 14,
+      "strengthOfSchedule": 86,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 34
+    },
+    "efficiencies": {
+      "overall": 66.584,
+      "offense": 64.586,
+      "defense": 60.162,
+      "specialTeams": 57.768
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "fpi": -13.171,
+    "resumeRanks": {
+      "strengthOfRecord": 107,
+      "fpi": 109,
+      "averageWinProbability": 90,
+      "strengthOfSchedule": 117,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 108
+    },
+    "efficiencies": {
+      "overall": 29.741,
+      "offense": 20.826,
+      "defense": 42.406,
+      "specialTeams": 61.526
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "fpi": -15.531,
+    "resumeRanks": {
+      "strengthOfRecord": 124,
+      "fpi": 115,
+      "averageWinProbability": 119,
+      "strengthOfSchedule": 72,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 15.903,
+      "offense": 17.131,
+      "defense": 26.435,
+      "specialTeams": 43.964
+    }
+  },
+  {
+    "year": 2012,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "fpi": -4.155,
+    "resumeRanks": {
+      "strengthOfRecord": 69,
+      "fpi": 84,
+      "averageWinProbability": 71,
+      "strengthOfSchedule": 108,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 87
+    },
+    "efficiencies": {
+      "overall": 40.497,
+      "offense": 44.555,
+      "defense": 39.192,
+      "specialTeams": 52.563
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "fpi": -13.858,
+    "resumeRanks": {
+      "strengthOfRecord": 111,
+      "fpi": 112,
+      "averageWinProbability": 115,
+      "strengthOfSchedule": 84,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 112
+    },
+    "efficiencies": {
+      "overall": 23.231,
+      "offense": 29.261,
+      "defense": 24.174,
+      "specialTeams": 57.224
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "fpi": 5.45,
+    "resumeRanks": {
+      "strengthOfRecord": 32,
+      "fpi": 52,
+      "averageWinProbability": 38,
+      "strengthOfSchedule": 82,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 62
+    },
+    "efficiencies": {
+      "overall": 56.624,
+      "offense": 44.374,
+      "defense": 65.996,
+      "specialTeams": 53.24
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "fpi": -4.974,
+    "resumeRanks": {
+      "strengthOfRecord": 95,
+      "fpi": 87,
+      "averageWinProbability": 84,
+      "strengthOfSchedule": 107,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 98
+    },
+    "efficiencies": {
+      "overall": 31.409,
+      "offense": 32.65,
+      "defense": 41.203,
+      "specialTeams": 35.81
+    }
+  },
+  {
+    "year": 2012,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "fpi": -0.858,
+    "resumeRanks": {
+      "strengthOfRecord": 68,
+      "fpi": 69,
+      "averageWinProbability": 55,
+      "strengthOfSchedule": 71,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 61
+    },
+    "efficiencies": {
+      "overall": 51.109,
+      "offense": 29.541,
+      "defense": 69.715,
+      "specialTeams": 55.647
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "fpi": -18.127,
+    "resumeRanks": {
+      "strengthOfRecord": 116,
+      "fpi": 120,
+      "averageWinProbability": 118,
+      "strengthOfSchedule": 85,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 15.704,
+      "offense": 18.131,
+      "defense": 21.948,
+      "specialTeams": 56.145
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "fpi": -24.412,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 123,
+      "averageWinProbability": 122,
+      "strengthOfSchedule": 66,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 11.25,
+      "offense": 9.893,
+      "defense": 23.284,
+      "specialTeams": 54.186
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Western Kentucky",
+    "conference": "Sun Belt",
+    "fpi": -3.78,
+    "resumeRanks": {
+      "strengthOfRecord": 80,
+      "fpi": 82,
+      "averageWinProbability": 51,
+      "strengthOfSchedule": 113,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 75
+    },
+    "efficiencies": {
+      "overall": 43.949,
+      "offense": 44.747,
+      "defense": 46.893,
+      "specialTeams": 45.435
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "fpi": 14.022,
+    "resumeRanks": {
+      "strengthOfRecord": 46,
+      "fpi": 21,
+      "averageWinProbability": 26,
+      "strengthOfSchedule": 36,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 21
+    },
+    "efficiencies": {
+      "overall": 69.993,
+      "offense": 62.201,
+      "defense": 71.676,
+      "specialTeams": 47.767
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "fpi": 9.547,
+    "resumeRanks": {
+      "strengthOfRecord": 44,
+      "fpi": 31,
+      "averageWinProbability": 12,
+      "strengthOfSchedule": 60,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 22
+    },
+    "efficiencies": {
+      "overall": 64.602,
+      "offense": 52.33,
+      "defense": 72.143,
+      "specialTeams": 48.283
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "fpi": 1.069,
+    "resumeRanks": {
+      "strengthOfRecord": 67,
+      "fpi": 64,
+      "averageWinProbability": 74,
+      "strengthOfSchedule": 53,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 63
+    },
+    "efficiencies": {
+      "overall": 48.953,
+      "offense": 42.196,
+      "defense": 54.191,
+      "specialTeams": 55.414
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "fpi": 15.753,
+    "resumeRanks": {
+      "strengthOfRecord": 3,
+      "fpi": 17,
+      "averageWinProbability": 9,
+      "strengthOfSchedule": 58,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 18
+    },
+    "efficiencies": {
+      "overall": 73.235,
+      "offense": 70.254,
+      "defense": 69.329,
+      "specialTeams": 48.071
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "fpi": -8.648,
+    "resumeRanks": {
+      "strengthOfRecord": 105,
+      "fpi": 98,
+      "averageWinProbability": 110,
+      "strengthOfSchedule": 45,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 89
+    },
+    "efficiencies": {
+      "overall": 23.423,
+      "offense": 18.004,
+      "defense": 43.716,
+      "specialTeams": 38.372
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "fpi": -4.132,
+    "resumeRanks": {
+      "strengthOfRecord": 90,
+      "fpi": 83,
+      "averageWinProbability": 86,
+      "strengthOfSchedule": 62,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 76
+    },
+    "efficiencies": {
+      "overall": 38.531,
+      "offense": 55.323,
+      "defense": 28.671,
+      "specialTeams": 43.207
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "fpi": 9.302,
+    "resumeRanks": {
+      "strengthOfRecord": 50,
+      "fpi": 33,
+      "averageWinProbability": 66,
+      "strengthOfSchedule": 32,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 56
+    },
+    "efficiencies": {
+      "overall": 60.13,
+      "offense": 35.826,
+      "defense": 81.889,
+      "specialTeams": 45.651
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "fpi": 15.862,
+    "resumeRanks": {
+      "strengthOfRecord": 26,
+      "fpi": 16,
+      "averageWinProbability": 45,
+      "strengthOfSchedule": 35,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 29
+    },
+    "efficiencies": {
+      "overall": 69.431,
+      "offense": 70.283,
+      "defense": 60.703,
+      "specialTeams": 52.568
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Nebraska",
+    "conference": "Big Ten",
+    "fpi": 12.241,
+    "resumeRanks": {
+      "strengthOfRecord": 18,
+      "fpi": 24,
+      "averageWinProbability": 61,
+      "strengthOfSchedule": 21,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 42
+    },
+    "efficiencies": {
+      "overall": 68.237,
+      "offense": 67.997,
+      "defense": 66.048,
+      "specialTeams": 38.907
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "fpi": 1.058,
+    "resumeRanks": {
+      "strengthOfRecord": 84,
+      "fpi": 65,
+      "averageWinProbability": 93,
+      "strengthOfSchedule": 47,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 77
+    },
+    "efficiencies": {
+      "overall": 43.436,
+      "offense": 33.435,
+      "defense": 55.687,
+      "specialTeams": 50.627
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "fpi": 8.028,
+    "resumeRanks": {
+      "strengthOfRecord": 19,
+      "fpi": 41,
+      "averageWinProbability": 10,
+      "strengthOfSchedule": 48,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 14
+    },
+    "efficiencies": {
+      "overall": 68.992,
+      "offense": 61.365,
+      "defense": 62.222,
+      "specialTeams": 72.843
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "fpi": -1.222,
+    "resumeRanks": {
+      "strengthOfRecord": 73,
+      "fpi": 70,
+      "averageWinProbability": 80,
+      "strengthOfSchedule": 56,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 73
+    },
+    "efficiencies": {
+      "overall": 45.735,
+      "offense": 38.482,
+      "defense": 58.616,
+      "specialTeams": 36.754
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Boise State",
+    "conference": "Mountain West",
+    "fpi": 8.711,
+    "resumeRanks": {
+      "strengthOfRecord": 24,
+      "fpi": 37,
+      "averageWinProbability": 6,
+      "strengthOfSchedule": 104,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 15
+    },
+    "efficiencies": {
+      "overall": 72.63,
+      "offense": 58.975,
+      "defense": 73.537,
+      "specialTeams": 63.142
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Temple",
+    "conference": "Big East",
+    "fpi": -4.86,
+    "resumeRanks": {
+      "strengthOfRecord": 85,
+      "fpi": 86,
+      "averageWinProbability": 97,
+      "strengthOfSchedule": 64,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 94
+    },
+    "efficiencies": {
+      "overall": 34.548,
+      "offense": 40.704,
+      "defense": 28.768,
+      "specialTeams": 68.117
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Massachusetts",
+    "conference": "Mid-American",
+    "fpi": -25.552,
+    "resumeRanks": {
+      "strengthOfRecord": 120,
+      "fpi": 124,
+      "averageWinProbability": 121,
+      "strengthOfSchedule": 77,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 10.793,
+      "offense": 11.532,
+      "defense": 21.73,
+      "specialTeams": 50.199
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Fresno State",
+    "conference": "Mountain West",
+    "fpi": 5.75,
+    "resumeRanks": {
+      "strengthOfRecord": 54,
+      "fpi": 51,
+      "averageWinProbability": 27,
+      "strengthOfSchedule": 99,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 45
+    },
+    "efficiencies": {
+      "overall": 67.477,
+      "offense": 51.546,
+      "defense": 76.973,
+      "specialTeams": 49.926
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Nevada",
+    "conference": "Mountain West",
+    "fpi": -1.281,
+    "resumeRanks": {
+      "strengthOfRecord": 82,
+      "fpi": 72,
+      "averageWinProbability": 53,
+      "strengthOfSchedule": 111,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 78
+    },
+    "efficiencies": {
+      "overall": 42.075,
+      "offense": 63.673,
+      "defense": 24.227,
+      "specialTeams": 45.695
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Hawai'i",
+    "conference": "Mountain West",
+    "fpi": -17.67,
+    "resumeRanks": {
+      "strengthOfRecord": 112,
+      "fpi": 119,
+      "averageWinProbability": 113,
+      "strengthOfSchedule": 75,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 109
+    },
+    "efficiencies": {
+      "overall": 15.486,
+      "offense": 12.318,
+      "defense": 29.983,
+      "specialTeams": 57.654
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "fpi": 6.496,
+    "resumeRanks": {
+      "strengthOfRecord": 43,
+      "fpi": 49,
+      "averageWinProbability": 24,
+      "strengthOfSchedule": 106,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 49
+    },
+    "efficiencies": {
+      "overall": 57.515,
+      "offense": 78.907,
+      "defense": 27.019,
+      "specialTeams": 54.075
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "fpi": 20.776,
+    "resumeRanks": {
+      "strengthOfRecord": 2,
+      "fpi": 50,
+      "averageWinProbability": 19,
+      "strengthOfSchedule": 15,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 10
+    },
+    "efficiencies": {
+      "overall": 77.75,
+      "offense": 67.878,
+      "defense": 81.175,
+      "specialTeams": 38
+    }
+  },
+  {
+    "year": 2012,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "fpi": -23.948,
+    "resumeRanks": {
+      "strengthOfRecord": 122,
+      "fpi": 122,
+      "averageWinProbability": 124,
+      "strengthOfSchedule": 96,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 7.938,
+      "offense": 14.337,
+      "defense": 14.523,
+      "specialTeams": 31.625
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "fpi": 9.529,
+    "resumeRanks": {
+      "strengthOfRecord": 20,
+      "fpi": 32,
+      "averageWinProbability": 3,
+      "strengthOfSchedule": 92,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 5
+    },
+    "efficiencies": {
+      "overall": 75.904,
+      "offense": 65.722,
+      "defense": 74.755,
+      "specialTeams": 55.639
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Georgia",
+    "conference": "SEC",
+    "fpi": 22.741,
+    "resumeRanks": {
+      "strengthOfRecord": 10,
+      "fpi": 4,
+      "averageWinProbability": 8,
+      "strengthOfSchedule": 33,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 6
+    },
+    "efficiencies": {
+      "overall": 82.445,
+      "offense": 83.58,
+      "defense": 70.568,
+      "specialTeams": 51.047
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Florida",
+    "conference": "SEC",
+    "fpi": 18.958,
+    "resumeRanks": {
+      "strengthOfRecord": 4,
+      "fpi": 12,
+      "averageWinProbability": 40,
+      "strengthOfSchedule": 12,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 20
+    },
+    "efficiencies": {
+      "overall": 77.978,
+      "offense": 46.991,
+      "defense": 84.541,
+      "specialTeams": 78.89
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "fpi": 8.91,
+    "resumeRanks": {
+      "strengthOfRecord": 63,
+      "fpi": 35,
+      "averageWinProbability": 65,
+      "strengthOfSchedule": 34,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 44
+    },
+    "efficiencies": {
+      "overall": 52.578,
+      "offense": 71.196,
+      "defense": 33.8,
+      "specialTeams": 45.514
+    }
+  },
+  {
+    "year": 2012,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "fpi": 19.152,
+    "resumeRanks": {
+      "strengthOfRecord": 9,
+      "fpi": 11,
+      "averageWinProbability": 16,
+      "strengthOfSchedule": 25,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 8
+    },
+    "efficiencies": {
+      "overall": 80.004,
+      "offense": 69.215,
+      "defense": 81.97,
+      "specialTeams": 43.173
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "fpi": -4.591,
+    "resumeRanks": {
+      "strengthOfRecord": 91,
+      "fpi": 85,
+      "averageWinProbability": 116,
+      "strengthOfSchedule": 8,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 80
+    },
+    "efficiencies": {
+      "overall": 32.364,
+      "offense": 37.924,
+      "defense": 32.496,
+      "specialTeams": 53.962
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "fpi": 11.136,
+    "resumeRanks": {
+      "strengthOfRecord": 22,
+      "fpi": 26,
+      "averageWinProbability": 33,
+      "strengthOfSchedule": 44,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 25
+    },
+    "efficiencies": {
+      "overall": 69.344,
+      "offense": 52.899,
+      "defense": 71.534,
+      "specialTeams": 68.835
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "fpi": 20.57,
+    "resumeRanks": {
+      "strengthOfRecord": 30,
+      "fpi": 8,
+      "averageWinProbability": 22,
+      "strengthOfSchedule": 22,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 17
+    },
+    "efficiencies": {
+      "overall": 77.509,
+      "offense": 73.123,
+      "defense": 70.031,
+      "specialTeams": 60.351
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "fpi": 20.285,
+    "resumeRanks": {
+      "strengthOfRecord": 6,
+      "fpi": 9,
+      "averageWinProbability": 17,
+      "strengthOfSchedule": 16,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 7
+    },
+    "efficiencies": {
+      "overall": 83.399,
+      "offense": 78.219,
+      "defense": 72.052,
+      "specialTeams": 73.955
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "fpi": 15.111,
+    "resumeRanks": {
+      "strengthOfRecord": 23,
+      "fpi": 19,
+      "averageWinProbability": 56,
+      "strengthOfSchedule": 5,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 30
+    },
+    "efficiencies": {
+      "overall": 69.743,
+      "offense": 86.129,
+      "defense": 44.401,
+      "specialTeams": 31.934
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "fpi": 5.234,
+    "resumeRanks": {
+      "strengthOfRecord": 53,
+      "fpi": 55,
+      "averageWinProbability": 62,
+      "strengthOfSchedule": 6,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 40
+    },
+    "efficiencies": {
+      "overall": 59.276,
+      "offense": 44.363,
+      "defense": 65.741,
+      "specialTeams": 60.893
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "fpi": 10.31,
+    "resumeRanks": {
+      "strengthOfRecord": 28,
+      "fpi": 30,
+      "averageWinProbability": 48,
+      "strengthOfSchedule": 37,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 32
+    },
+    "efficiencies": {
+      "overall": 63.247,
+      "offense": 72.214,
+      "defense": 47.206,
+      "specialTeams": 50.138
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "fpi": -6.842,
+    "resumeRanks": {
+      "strengthOfRecord": 97,
+      "fpi": 94,
+      "averageWinProbability": 108,
+      "strengthOfSchedule": 2,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 68
+    },
+    "efficiencies": {
+      "overall": 37.804,
+      "offense": 39.995,
+      "defense": 46.308,
+      "specialTeams": 31.55
+    }
+  },
+  {
+    "year": 2012,
+    "team": "TCU",
+    "conference": "Big 12",
+    "fpi": 11.137,
+    "resumeRanks": {
+      "strengthOfRecord": 33,
+      "fpi": 25,
+      "averageWinProbability": 42,
+      "strengthOfSchedule": 14,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 23
+    },
+    "efficiencies": {
+      "overall": 67.901,
+      "offense": 44.214,
+      "defense": 82.744,
+      "specialTeams": 50.557
+    }
+  },
+  {
+    "year": 2012,
+    "team": "West Virginia",
+    "conference": "Big 12",
+    "fpi": 7.865,
+    "resumeRanks": {
+      "strengthOfRecord": 40,
+      "fpi": 42,
+      "averageWinProbability": 57,
+      "strengthOfSchedule": 20,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 37
+    },
+    "efficiencies": {
+      "overall": 63.899,
+      "offense": 80.583,
+      "defense": 41.739,
+      "specialTeams": 38.815
+    }
+  },
+  {
+    "year": 2012,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "fpi": 5.123,
+    "resumeRanks": {
+      "strengthOfRecord": 21,
+      "fpi": 56,
+      "averageWinProbability": 25,
+      "strengthOfSchedule": 89,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 47
+    },
+    "efficiencies": {
+      "overall": 66.003,
+      "offense": 63.932,
+      "defense": 63.189,
+      "specialTeams": 47.728
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "fpi": -9.433,
+    "resumeRanks": {
+      "strengthOfRecord": 103,
+      "fpi": 99,
+      "averageWinProbability": 99,
+      "strengthOfSchedule": 67,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 95
+    },
+    "efficiencies": {
+      "overall": 26.306,
+      "offense": 26.624,
+      "defense": 28.079,
+      "specialTeams": 69.749
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "fpi": -5.052,
+    "resumeRanks": {
+      "strengthOfRecord": 81,
+      "fpi": 89,
+      "averageWinProbability": 68,
+      "strengthOfSchedule": 110,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 92
+    },
+    "efficiencies": {
+      "overall": 40.153,
+      "offense": 41.013,
+      "defense": 36.622,
+      "specialTeams": 66.851
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Oregon",
+    "conference": "Pac-12",
+    "fpi": 25.023,
+    "resumeRanks": {
+      "strengthOfRecord": 5,
+      "fpi": 2,
+      "averageWinProbability": 1,
+      "strengthOfSchedule": 42,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 1
+    },
+    "efficiencies": {
+      "overall": 91.031,
+      "offense": 88.335,
+      "defense": 81.715,
+      "specialTeams": 55.332
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Stanford",
+    "conference": "Pac-12",
+    "fpi": 18.548,
+    "resumeRanks": {
+      "strengthOfRecord": 7,
+      "fpi": 13,
+      "averageWinProbability": 20,
+      "strengthOfSchedule": 18,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 12
+    },
+    "efficiencies": {
+      "overall": 76.83,
+      "offense": 58.13,
+      "defense": 82.542,
+      "specialTeams": 53.573
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Washington",
+    "conference": "Pac-12",
+    "fpi": 5.43,
+    "resumeRanks": {
+      "strengthOfRecord": 42,
+      "fpi": 54,
+      "averageWinProbability": 70,
+      "strengthOfSchedule": 26,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 51
+    },
+    "efficiencies": {
+      "overall": 57.548,
+      "offense": 39.107,
+      "defense": 73.422,
+      "specialTeams": 46.831
+    }
+  },
+  {
+    "year": 2012,
+    "team": "California",
+    "conference": "Pac-12",
+    "fpi": 1.813,
+    "resumeRanks": {
+      "strengthOfRecord": 78,
+      "fpi": 62,
+      "averageWinProbability": 102,
+      "strengthOfSchedule": 4,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 72
+    },
+    "efficiencies": {
+      "overall": 46.797,
+      "offense": 39.543,
+      "defense": 54.271,
+      "specialTeams": 51.628
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Oregon State",
+    "conference": "Pac-12",
+    "fpi": 14.746,
+    "resumeRanks": {
+      "strengthOfRecord": 17,
+      "fpi": 20,
+      "averageWinProbability": 23,
+      "strengthOfSchedule": 7,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 13
+    },
+    "efficiencies": {
+      "overall": 75.285,
+      "offense": 65.856,
+      "defense": 73.9,
+      "specialTeams": 57.367
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Washington State",
+    "conference": "Pac-12",
+    "fpi": -6.154,
+    "resumeRanks": {
+      "strengthOfRecord": 89,
+      "fpi": 92,
+      "averageWinProbability": 111,
+      "strengthOfSchedule": 30,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 79
+    },
+    "efficiencies": {
+      "overall": 31.651,
+      "offense": 32.399,
+      "defense": 43.049,
+      "specialTeams": 32.922
+    }
+  },
+  {
+    "year": 2012,
+    "team": "USC",
+    "conference": "Pac-12",
+    "fpi": 16.078,
+    "resumeRanks": {
+      "strengthOfRecord": 38,
+      "fpi": 15,
+      "averageWinProbability": 46,
+      "strengthOfSchedule": 13,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 26
+    },
+    "efficiencies": {
+      "overall": 71.109,
+      "offense": 61.329,
+      "defense": 67.225,
+      "specialTeams": 68.848
+    }
+  },
+  {
+    "year": 2012,
+    "team": "BYU",
+    "conference": "FBS Independents",
+    "fpi": 10.905,
+    "resumeRanks": {
+      "strengthOfRecord": 49,
+      "fpi": 27,
+      "averageWinProbability": 36,
+      "strengthOfSchedule": 65,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 36
+    },
+    "efficiencies": {
+      "overall": 68.071,
+      "offense": 46.091,
+      "defense": 81.776,
+      "specialTeams": 57.312
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Auburn",
+    "conference": "SEC",
+    "fpi": 0.349,
+    "resumeRanks": {
+      "strengthOfRecord": 79,
+      "fpi": 67,
+      "averageWinProbability": 95,
+      "strengthOfSchedule": 9,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 67
+    },
+    "efficiencies": {
+      "overall": 41.944,
+      "offense": 29.845,
+      "defense": 47.113,
+      "specialTeams": 73.661
+    }
+  },
+  {
+    "year": 2012,
+    "team": "LSU",
+    "conference": "SEC",
+    "fpi": 19.312,
+    "resumeRanks": {
+      "strengthOfRecord": 12,
+      "fpi": 10,
+      "averageWinProbability": 15,
+      "strengthOfSchedule": 29,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 9
+    },
+    "efficiencies": {
+      "overall": 76.607,
+      "offense": 53.271,
+      "defense": 80.651,
+      "specialTeams": 73.897
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "fpi": -11.6,
+    "resumeRanks": {
+      "strengthOfRecord": 99,
+      "fpi": 107,
+      "averageWinProbability": 106,
+      "strengthOfSchedule": 80,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 106
+    },
+    "efficiencies": {
+      "overall": 25.291,
+      "offense": 38.514,
+      "defense": 22.69,
+      "specialTeams": 46.553
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "fpi": -2.978,
+    "resumeRanks": {
+      "strengthOfRecord": 66,
+      "fpi": 79,
+      "averageWinProbability": 49,
+      "strengthOfSchedule": 123,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 82
+    },
+    "efficiencies": {
+      "overall": 44.753,
+      "offense": 47.096,
+      "defense": 40.044,
+      "specialTeams": 62.555
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "fpi": 1.206,
+    "resumeRanks": {
+      "strengthOfRecord": 45,
+      "fpi": 63,
+      "averageWinProbability": 18,
+      "strengthOfSchedule": 112,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 46
+    },
+    "efficiencies": {
+      "overall": 60.425,
+      "offense": 46.383,
+      "defense": 60.171,
+      "specialTeams": 75.852
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "fpi": -15.684,
+    "resumeRanks": {
+      "strengthOfRecord": 123,
+      "fpi": 116,
+      "averageWinProbability": 109,
+      "strengthOfSchedule": 90,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 23.291,
+      "offense": 34.784,
+      "defense": 24.909,
+      "specialTeams": 35.562
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "fpi": -2.975,
+    "resumeRanks": {
+      "strengthOfRecord": 57,
+      "fpi": 78,
+      "averageWinProbability": 41,
+      "strengthOfSchedule": 91,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 60
+    },
+    "efficiencies": {
+      "overall": 47.689,
+      "offense": 45.182,
+      "defense": 47.653,
+      "specialTeams": 59.914
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UCLA",
+    "conference": "Pac-12",
+    "fpi": 12.375,
+    "resumeRanks": {
+      "strengthOfRecord": 29,
+      "fpi": 23,
+      "averageWinProbability": 37,
+      "strengthOfSchedule": 23,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 27
+    },
+    "efficiencies": {
+      "overall": 67.113,
+      "offense": 64.099,
+      "defense": 63.558,
+      "specialTeams": 51.452
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Utah",
+    "conference": "Pac-12",
+    "fpi": 6.621,
+    "resumeRanks": {
+      "strengthOfRecord": 70,
+      "fpi": 47,
+      "averageWinProbability": 69,
+      "strengthOfSchedule": 38,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 55
+    },
+    "efficiencies": {
+      "overall": 51.486,
+      "offense": 36.112,
+      "defense": 61.278,
+      "specialTeams": 62.802
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Arizona State",
+    "conference": "Pac-12",
+    "fpi": 13.028,
+    "resumeRanks": {
+      "strengthOfRecord": 37,
+      "fpi": 22,
+      "averageWinProbability": 28,
+      "strengthOfSchedule": 49,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 24
+    },
+    "efficiencies": {
+      "overall": 71.575,
+      "offense": 66.275,
+      "defense": 68.718,
+      "specialTeams": 52.283
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Arizona",
+    "conference": "Pac-12",
+    "fpi": 6.941,
+    "resumeRanks": {
+      "strengthOfRecord": 25,
+      "fpi": 46,
+      "averageWinProbability": 54,
+      "strengthOfSchedule": 27,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 38
+    },
+    "efficiencies": {
+      "overall": 62.873,
+      "offense": 75.395,
+      "defense": 47.024,
+      "specialTeams": 37.665
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Colorado",
+    "conference": "Pac-12",
+    "fpi": -18.583,
+    "resumeRanks": {
+      "strengthOfRecord": 110,
+      "fpi": 121,
+      "averageWinProbability": 123,
+      "strengthOfSchedule": 28,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 111
+    },
+    "efficiencies": {
+      "overall": 12.861,
+      "offense": 22.457,
+      "defense": 15.863,
+      "specialTeams": 39.033
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "fpi": 0.4,
+    "resumeRanks": {
+      "strengthOfRecord": 56,
+      "fpi": 66,
+      "averageWinProbability": 29,
+      "strengthOfSchedule": 105,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 54
+    },
+    "efficiencies": {
+      "overall": 55.776,
+      "offense": 64.903,
+      "defense": 46.666,
+      "specialTeams": 45.35
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "fpi": 2.55,
+    "resumeRanks": {
+      "strengthOfRecord": 31,
+      "fpi": 60,
+      "averageWinProbability": 32,
+      "strengthOfSchedule": 97,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 53
+    },
+    "efficiencies": {
+      "overall": 57.191,
+      "offense": 69.64,
+      "defense": 49.919,
+      "specialTeams": 23.665
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "fpi": -2.136,
+    "resumeRanks": {
+      "strengthOfRecord": 71,
+      "fpi": 76,
+      "averageWinProbability": 64,
+      "strengthOfSchedule": 94,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 83
+    },
+    "efficiencies": {
+      "overall": 47.186,
+      "offense": 56.991,
+      "defense": 40.083,
+      "specialTeams": 42.655
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "fpi": -5.426,
+    "resumeRanks": {
+      "strengthOfRecord": 96,
+      "fpi": 90,
+      "averageWinProbability": 87,
+      "strengthOfSchedule": 116,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 100
+    },
+    "efficiencies": {
+      "overall": 39.153,
+      "offense": 48.061,
+      "defense": 33.587,
+      "specialTeams": 49.991
+    }
+  },
+  {
+    "year": 2012,
+    "team": "South Alabama",
+    "conference": "Sun Belt",
+    "fpi": -16.926,
+    "resumeRanks": {
+      "strengthOfRecord": 121,
+      "fpi": 118,
+      "averageWinProbability": 120,
+      "strengthOfSchedule": 115,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 15.677,
+      "offense": 15.704,
+      "defense": 31.381,
+      "specialTeams": 34.59
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Alabama",
+    "conference": "SEC",
+    "fpi": 30.632,
+    "resumeRanks": {
+      "strengthOfRecord": 1,
+      "fpi": 1,
+      "averageWinProbability": 2,
+      "strengthOfSchedule": 19,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 2
+    },
+    "efficiencies": {
+      "overall": 95.398,
+      "offense": 90.306,
+      "defense": 91.198,
+      "specialTeams": 59.81
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "fpi": 10.379,
+    "resumeRanks": {
+      "strengthOfRecord": 35,
+      "fpi": 29,
+      "averageWinProbability": 34,
+      "strengthOfSchedule": 24,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 19
+    },
+    "efficiencies": {
+      "overall": 67.528,
+      "offense": 62.477,
+      "defense": 71.914,
+      "specialTeams": 33.632
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "fpi": 8.334,
+    "resumeRanks": {
+      "strengthOfRecord": 34,
+      "fpi": 40,
+      "averageWinProbability": 47,
+      "strengthOfSchedule": 55,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 41
+    },
+    "efficiencies": {
+      "overall": 59.091,
+      "offense": 52.863,
+      "defense": 57.957,
+      "specialTeams": 61.233
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "fpi": 3.147,
+    "resumeRanks": {
+      "strengthOfRecord": 72,
+      "fpi": 59,
+      "averageWinProbability": 75,
+      "strengthOfSchedule": 17,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 50
+    },
+    "efficiencies": {
+      "overall": 48.277,
+      "offense": 54.335,
+      "defense": 46.055,
+      "specialTeams": 41.439
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "fpi": -5.777,
+    "resumeRanks": {
+      "strengthOfRecord": 108,
+      "fpi": 91,
+      "averageWinProbability": 82,
+      "strengthOfSchedule": 119,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 103
+    },
+    "efficiencies": {
+      "overall": 33.937,
+      "offense": 39.851,
+      "defense": 37.942,
+      "specialTeams": 37.214
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "fpi": -1.243,
+    "resumeRanks": {
+      "strengthOfRecord": 51,
+      "fpi": 71,
+      "averageWinProbability": 58,
+      "strengthOfSchedule": 74,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 69
+    },
+    "efficiencies": {
+      "overall": 48.977,
+      "offense": 60.56,
+      "defense": 30.967,
+      "specialTeams": 69.09
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "fpi": -16.476,
+    "resumeRanks": {
+      "strengthOfRecord": 115,
+      "fpi": 117,
+      "averageWinProbability": 114,
+      "strengthOfSchedule": 78,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 114
+    },
+    "efficiencies": {
+      "overall": 19.712,
+      "offense": 30.238,
+      "defense": 23.706,
+      "specialTeams": 33.234
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "fpi": -10.26,
+    "resumeRanks": {
+      "strengthOfRecord": 88,
+      "fpi": 102,
+      "averageWinProbability": 83,
+      "strengthOfSchedule": 121,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 107
+    },
+    "efficiencies": {
+      "overall": 30.509,
+      "offense": 46.972,
+      "defense": 26.697,
+      "specialTeams": 39.295
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "fpi": 8.654,
+    "resumeRanks": {
+      "strengthOfRecord": 27,
+      "fpi": 38,
+      "averageWinProbability": 13,
+      "strengthOfSchedule": 122,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 48
+    },
+    "efficiencies": {
+      "overall": 63.759,
+      "offense": 63.359,
+      "defense": 54.507,
+      "specialTeams": 65.352
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "fpi": -6.529,
+    "resumeRanks": {
+      "strengthOfRecord": 93,
+      "fpi": 93,
+      "averageWinProbability": 79,
+      "strengthOfSchedule": 100,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 96
+    },
+    "efficiencies": {
+      "overall": 33.592,
+      "offense": 58.847,
+      "defense": 21.31,
+      "specialTeams": 29.431
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "fpi": -10.621,
+    "resumeRanks": {
+      "strengthOfRecord": 100,
+      "fpi": 104,
+      "averageWinProbability": 103,
+      "strengthOfSchedule": 81,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 27.754,
+      "offense": 28.582,
+      "defense": 40.923,
+      "specialTeams": 32.402
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Florida State",
+    "conference": "ACC",
+    "fpi": 22.722,
+    "resumeRanks": {
+      "strengthOfRecord": 14,
+      "fpi": 5,
+      "averageWinProbability": 5,
+      "strengthOfSchedule": 63,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 4
+    },
+    "efficiencies": {
+      "overall": 84.804,
+      "offense": 74.289,
+      "defense": 83.809,
+      "specialTeams": 55.403
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Boston College",
+    "conference": "ACC",
+    "fpi": -2.611,
+    "resumeRanks": {
+      "strengthOfRecord": 101,
+      "fpi": 77,
+      "averageWinProbability": 104,
+      "strengthOfSchedule": 39,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 84
+    },
+    "efficiencies": {
+      "overall": 35.524,
+      "offense": 27.369,
+      "defense": 43.912,
+      "specialTeams": 63.312
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Clemson",
+    "conference": "ACC",
+    "fpi": 17.239,
+    "resumeRanks": {
+      "strengthOfRecord": 13,
+      "fpi": 14,
+      "averageWinProbability": 7,
+      "strengthOfSchedule": 57,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 16
+    },
+    "efficiencies": {
+      "overall": 75.648,
+      "offense": 81.749,
+      "defense": 55.291,
+      "specialTeams": 54.464
+    }
+  },
+  {
+    "year": 2012,
+    "team": "NC State",
+    "conference": "ACC",
+    "fpi": 3.46,
+    "resumeRanks": {
+      "strengthOfRecord": 61,
+      "fpi": 58,
+      "averageWinProbability": 72,
+      "strengthOfSchedule": 59,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 64
+    },
+    "efficiencies": {
+      "overall": 52.722,
+      "offense": 39.456,
+      "defense": 65.841,
+      "specialTeams": 48.802
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "fpi": -7.648,
+    "resumeRanks": {
+      "strengthOfRecord": 74,
+      "fpi": 95,
+      "averageWinProbability": 100,
+      "strengthOfSchedule": 52,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 90
+    },
+    "efficiencies": {
+      "overall": 31.115,
+      "offense": 29.395,
+      "defense": 41.518,
+      "specialTeams": 42.924
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "fpi": 6.503,
+    "resumeRanks": {
+      "strengthOfRecord": 55,
+      "fpi": 48,
+      "averageWinProbability": 88,
+      "strengthOfSchedule": 40,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 70
+    },
+    "efficiencies": {
+      "overall": 53.285,
+      "offense": 31.417,
+      "defense": 73.853,
+      "specialTeams": 50.867
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Miami",
+    "conference": "ACC",
+    "fpi": 7.033,
+    "resumeRanks": {
+      "strengthOfRecord": 36,
+      "fpi": 44,
+      "averageWinProbability": 59,
+      "strengthOfSchedule": 31,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 39
+    },
+    "efficiencies": {
+      "overall": 58.77,
+      "offense": 67.217,
+      "defense": 43.278,
+      "specialTeams": 64.993
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "fpi": 7.39,
+    "resumeRanks": {
+      "strengthOfRecord": 60,
+      "fpi": 43,
+      "averageWinProbability": 44,
+      "strengthOfSchedule": 41,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 31
+    },
+    "efficiencies": {
+      "overall": 61.982,
+      "offense": 70.614,
+      "defense": 50.22,
+      "specialTeams": 40.275
+    }
+  },
+  {
+    "year": 2012,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "fpi": 10.556,
+    "resumeRanks": {
+      "strengthOfRecord": 59,
+      "fpi": 28,
+      "averageWinProbability": 35,
+      "strengthOfSchedule": 73,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 58
+    },
+    "efficiencies": {
+      "overall": 58.282,
+      "offense": 69.999,
+      "defense": 42.753,
+      "specialTeams": 50.655
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Virginia",
+    "conference": "ACC",
+    "fpi": -2.006,
+    "resumeRanks": {
+      "strengthOfRecord": 87,
+      "fpi": 75,
+      "averageWinProbability": 94,
+      "strengthOfSchedule": 51,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 86
+    },
+    "efficiencies": {
+      "overall": 39.331,
+      "offense": 31.401,
+      "defense": 56.421,
+      "specialTeams": 37.938
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Duke",
+    "conference": "ACC",
+    "fpi": -1.674,
+    "resumeRanks": {
+      "strengthOfRecord": 65,
+      "fpi": 73,
+      "averageWinProbability": 76,
+      "strengthOfSchedule": 50,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 66
+    },
+    "efficiencies": {
+      "overall": 43.366,
+      "offense": 55.595,
+      "defense": 27.235,
+      "specialTeams": 66.192
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "fpi": -3.142,
+    "resumeRanks": {
+      "strengthOfRecord": 75,
+      "fpi": 80,
+      "averageWinProbability": 43,
+      "strengthOfSchedule": 120,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 74
+    },
+    "efficiencies": {
+      "overall": 46.325,
+      "offense": 35.178,
+      "defense": 63.994,
+      "specialTeams": 38.39
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Missouri",
+    "conference": "SEC",
+    "fpi": 8.364,
+    "resumeRanks": {
+      "strengthOfRecord": 41,
+      "fpi": 39,
+      "averageWinProbability": 73,
+      "strengthOfSchedule": 1,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 33
+    },
+    "efficiencies": {
+      "overall": 57.859,
+      "offense": 36.593,
+      "defense": 71.467,
+      "specialTeams": 59.643
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Texas A&M",
+    "conference": "SEC",
+    "fpi": 24.223,
+    "resumeRanks": {
+      "strengthOfRecord": 8,
+      "fpi": 3,
+      "averageWinProbability": 4,
+      "strengthOfSchedule": 11,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 3
+    },
+    "efficiencies": {
+      "overall": 88.812,
+      "offense": 91.309,
+      "defense": 74.585,
+      "specialTeams": 37.746
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "fpi": -13.55,
+    "resumeRanks": {
+      "strengthOfRecord": 109,
+      "fpi": 110,
+      "averageWinProbability": 107,
+      "strengthOfSchedule": 83,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 113
+    },
+    "efficiencies": {
+      "overall": 25.352,
+      "offense": 28.84,
+      "defense": 32.077,
+      "specialTeams": 43.962
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "fpi": -8.033,
+    "resumeRanks": {
+      "strengthOfRecord": 113,
+      "fpi": 96,
+      "averageWinProbability": 91,
+      "strengthOfSchedule": 98,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 104
+    },
+    "efficiencies": {
+      "overall": 27.346,
+      "offense": 27.879,
+      "defense": 39.949,
+      "specialTeams": 33.332
+    }
+  },
+  {
+    "year": 2012,
+    "team": "UTSA",
+    "conference": "Western Athletic",
+    "fpi": -13.947,
+    "resumeRanks": {
+      "strengthOfRecord": 77,
+      "fpi": 113,
+      "averageWinProbability": 52,
+      "strengthOfSchedule": 124,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 99
+    },
+    "efficiencies": {
+      "overall": 30.121,
+      "offense": 40.765,
+      "defense": 22.529,
+      "specialTeams": 67.008
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Texas State",
+    "conference": "Western Athletic",
+    "fpi": -11.406,
+    "resumeRanks": {
+      "strengthOfRecord": 106,
+      "fpi": 105,
+      "averageWinProbability": 92,
+      "strengthOfSchedule": 93,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 102
+    },
+    "efficiencies": {
+      "overall": 27.67,
+      "offense": 40.911,
+      "defense": 20.194,
+      "specialTeams": 68.717
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "fpi": -11.584,
+    "resumeRanks": {
+      "strengthOfRecord": 117,
+      "fpi": 106,
+      "averageWinProbability": 112,
+      "strengthOfSchedule": 101,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 116
+    },
+    "efficiencies": {
+      "overall": 20.956,
+      "offense": 44.675,
+      "defense": 12.268,
+      "specialTeams": 38.616
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Texas",
+    "conference": "Big 12",
+    "fpi": 15.609,
+    "resumeRanks": {
+      "strengthOfRecord": 15,
+      "fpi": 18,
+      "averageWinProbability": 50,
+      "strengthOfSchedule": 10,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 28
+    },
+    "efficiencies": {
+      "overall": 72.395,
+      "offense": 76.439,
+      "defense": 58.655,
+      "specialTeams": 54.096
+    }
+  },
+  {
+    "year": 2012,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "fpi": 21.743,
+    "resumeRanks": {
+      "strengthOfRecord": 11,
+      "fpi": 6,
+      "averageWinProbability": 21,
+      "strengthOfSchedule": 3,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 11
+    },
+    "efficiencies": {
+      "overall": 78.436,
+      "offense": 78.438,
+      "defense": 66.569,
+      "specialTeams": 54.831
+    }
+  }
+]

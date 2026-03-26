@@ -1,0 +1,764 @@
+[
+  {
+    "year": 2004,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "elo": 1461
+  },
+  {
+    "year": 2004,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "elo": 1309
+  },
+  {
+    "year": 2004,
+    "team": "Alabama",
+    "conference": "SEC",
+    "elo": 1721
+  },
+  {
+    "year": 2004,
+    "team": "App State",
+    "conference": "Southern",
+    "elo": 1276
+  },
+  {
+    "year": 2004,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "elo": 1298
+  },
+  {
+    "year": 2004,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "elo": 1666
+  },
+  {
+    "year": 2004,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "elo": 1728
+  },
+  {
+    "year": 2004,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "elo": 998
+  },
+  {
+    "year": 2004,
+    "team": "Army",
+    "conference": "Conference USA",
+    "elo": 1132
+  },
+  {
+    "year": 2004,
+    "team": "Auburn",
+    "conference": "SEC",
+    "elo": 2000
+  },
+  {
+    "year": 2004,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "elo": 1097
+  },
+  {
+    "year": 2004,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "elo": 1154
+  },
+  {
+    "year": 2004,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "elo": 2004
+  },
+  {
+    "year": 2004,
+    "team": "Boston College",
+    "conference": "Big East",
+    "elo": 1663
+  },
+  {
+    "year": 2004,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "elo": 1833
+  },
+  {
+    "year": 2004,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "elo": 1092
+  },
+  {
+    "year": 2004,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "elo": 1474
+  },
+  {
+    "year": 2004,
+    "team": "California",
+    "conference": "Pac-10",
+    "elo": 1963
+  },
+  {
+    "year": 2004,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "elo": 1035
+  },
+  {
+    "year": 2004,
+    "team": "Cincinnati",
+    "conference": "Conference USA",
+    "elo": 1558
+  },
+  {
+    "year": 2004,
+    "team": "Clemson",
+    "conference": "ACC",
+    "elo": 1696
+  },
+  {
+    "year": 2004,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "elo": 1549
+  },
+  {
+    "year": 2004,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "elo": 1433
+  },
+  {
+    "year": 2004,
+    "team": "Duke",
+    "conference": "ACC",
+    "elo": 1233
+  },
+  {
+    "year": 2004,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "elo": 1067
+  },
+  {
+    "year": 2004,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "elo": 1051
+  },
+  {
+    "year": 2004,
+    "team": "Florida",
+    "conference": "SEC",
+    "elo": 1832
+  },
+  {
+    "year": 2004,
+    "team": "Florida A&M",
+    "conference": "FBS Independents",
+    "elo": 1042
+  },
+  {
+    "year": 2004,
+    "team": "Florida Atlantic",
+    "conference": "FCS Independents",
+    "elo": 1306
+  },
+  {
+    "year": 2004,
+    "team": "Florida International",
+    "conference": "FCS Independents",
+    "elo": 1179
+  },
+  {
+    "year": 2004,
+    "team": "Florida State",
+    "conference": "ACC",
+    "elo": 1890
+  },
+  {
+    "year": 2004,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "elo": 1852
+  },
+  {
+    "year": 2004,
+    "team": "Georgia",
+    "conference": "SEC",
+    "elo": 1905
+  },
+  {
+    "year": 2004,
+    "team": "Georgia Southern",
+    "conference": "Southern",
+    "elo": 1494
+  },
+  {
+    "year": 2004,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "elo": 1718
+  },
+  {
+    "year": 2004,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "elo": 1346
+  },
+  {
+    "year": 2004,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "elo": 1292
+  },
+  {
+    "year": 2004,
+    "team": "Idaho",
+    "conference": "Sun Belt",
+    "elo": 973
+  },
+  {
+    "year": 2004,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "elo": 1346
+  },
+  {
+    "year": 2004,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "elo": 1311
+  },
+  {
+    "year": 2004,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "elo": 1809
+  },
+  {
+    "year": 2004,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "elo": 1394
+  },
+  {
+    "year": 2004,
+    "team": "James Madison",
+    "conference": "Atlantic 10",
+    "elo": 1354
+  },
+  {
+    "year": 2004,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "elo": 1593
+  },
+  {
+    "year": 2004,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "elo": 1685
+  },
+  {
+    "year": 2004,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "elo": 1545
+  },
+  {
+    "year": 2004,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "elo": 1284
+  },
+  {
+    "year": 2004,
+    "team": "Liberty",
+    "conference": "Big South",
+    "elo": 1127
+  },
+  {
+    "year": 2004,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "elo": 1255
+  },
+  {
+    "year": 2004,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "elo": 1354
+  },
+  {
+    "year": 2004,
+    "team": "Louisville",
+    "conference": "Conference USA",
+    "elo": 2130
+  },
+  {
+    "year": 2004,
+    "team": "LSU",
+    "conference": "SEC",
+    "elo": 1954
+  },
+  {
+    "year": 2004,
+    "team": "Marshall",
+    "conference": "Mid-American",
+    "elo": 1510
+  },
+  {
+    "year": 2004,
+    "team": "Maryland",
+    "conference": "ACC",
+    "elo": 1580
+  },
+  {
+    "year": 2004,
+    "team": "Massachusetts",
+    "conference": "Atlantic 10",
+    "elo": 1410
+  },
+  {
+    "year": 2004,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "elo": 1510
+  },
+  {
+    "year": 2004,
+    "team": "Miami",
+    "conference": "ACC",
+    "elo": 2002
+  },
+  {
+    "year": 2004,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "elo": 1645
+  },
+  {
+    "year": 2004,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "elo": 1844
+  },
+  {
+    "year": 2004,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "elo": 1684
+  },
+  {
+    "year": 2004,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "elo": 1237
+  },
+  {
+    "year": 2004,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "elo": 1692
+  },
+  {
+    "year": 2004,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "elo": 1285
+  },
+  {
+    "year": 2004,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "elo": 1577
+  },
+  {
+    "year": 2004,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "elo": 1562
+  },
+  {
+    "year": 2004,
+    "team": "NC State",
+    "conference": "ACC",
+    "elo": 1687
+  },
+  {
+    "year": 2004,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "elo": 1530
+  },
+  {
+    "year": 2004,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "elo": 1191
+  },
+  {
+    "year": 2004,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "elo": 1552
+  },
+  {
+    "year": 2004,
+    "team": "New Mexico State",
+    "conference": "Sun Belt",
+    "elo": 1309
+  },
+  {
+    "year": 2004,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "elo": 1428
+  },
+  {
+    "year": 2004,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "elo": 1587
+  },
+  {
+    "year": 2004,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "elo": 1308
+  },
+  {
+    "year": 2004,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "elo": 1432
+  },
+  {
+    "year": 2004,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "elo": 1614
+  },
+  {
+    "year": 2004,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "elo": 1259
+  },
+  {
+    "year": 2004,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "elo": 1828
+  },
+  {
+    "year": 2004,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "elo": 2033
+  },
+  {
+    "year": 2004,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "elo": 1670
+  },
+  {
+    "year": 2004,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "elo": 1534
+  },
+  {
+    "year": 2004,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "elo": 1541
+  },
+  {
+    "year": 2004,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "elo": 1757
+  },
+  {
+    "year": 2004,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "elo": 1666
+  },
+  {
+    "year": 2004,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "elo": 1645
+  },
+  {
+    "year": 2004,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "elo": 1906
+  },
+  {
+    "year": 2004,
+    "team": "Rice",
+    "conference": "Western Athletic",
+    "elo": 1141
+  },
+  {
+    "year": 2004,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "elo": 1333
+  },
+  {
+    "year": 2004,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "elo": 1363
+  },
+  {
+    "year": 2004,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "elo": 1075
+  },
+  {
+    "year": 2004,
+    "team": "SMU",
+    "conference": "Western Athletic",
+    "elo": 1001
+  },
+  {
+    "year": 2004,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "elo": 1502
+  },
+  {
+    "year": 2004,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "elo": 1522
+  },
+  {
+    "year": 2004,
+    "team": "South Florida",
+    "conference": "Conference USA",
+    "elo": 1353
+  },
+  {
+    "year": 2004,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "elo": 1462
+  },
+  {
+    "year": 2004,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "elo": 1497
+  },
+  {
+    "year": 2004,
+    "team": "TCU",
+    "conference": "Conference USA",
+    "elo": 1503
+  },
+  {
+    "year": 2004,
+    "team": "Temple",
+    "conference": "Big East",
+    "elo": 1260
+  },
+  {
+    "year": 2004,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "elo": 1798
+  },
+  {
+    "year": 2004,
+    "team": "Texas",
+    "conference": "Big 12",
+    "elo": 2050
+  },
+  {
+    "year": 2004,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "elo": 1631
+  },
+  {
+    "year": 2004,
+    "team": "Texas State",
+    "conference": "Southland",
+    "elo": 1214
+  },
+  {
+    "year": 2004,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "elo": 1916
+  },
+  {
+    "year": 2004,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "elo": 1542
+  },
+  {
+    "year": 2004,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "elo": 1536
+  },
+  {
+    "year": 2004,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "elo": 1355
+  },
+  {
+    "year": 2004,
+    "team": "Tulsa",
+    "conference": "Western Athletic",
+    "elo": 1239
+  },
+  {
+    "year": 2004,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "elo": 1353
+  },
+  {
+    "year": 2004,
+    "team": "UCF",
+    "conference": "Mid-American",
+    "elo": 1130
+  },
+  {
+    "year": 2004,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "elo": 1655
+  },
+  {
+    "year": 2004,
+    "team": "UConn",
+    "conference": "Big East",
+    "elo": 1645
+  },
+  {
+    "year": 2004,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "elo": 1086
+  },
+  {
+    "year": 2004,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "elo": 1247
+  },
+  {
+    "year": 2004,
+    "team": "USC",
+    "conference": "Pac-10",
+    "elo": 2246
+  },
+  {
+    "year": 2004,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "elo": 1990
+  },
+  {
+    "year": 2004,
+    "team": "Utah State",
+    "conference": "Sun Belt",
+    "elo": 1132
+  },
+  {
+    "year": 2004,
+    "team": "UTEP",
+    "conference": "Western Athletic",
+    "elo": 1460
+  },
+  {
+    "year": 2004,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "elo": 1328
+  },
+  {
+    "year": 2004,
+    "team": "Virginia",
+    "conference": "ACC",
+    "elo": 1827
+  },
+  {
+    "year": 2004,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "elo": 2066
+  },
+  {
+    "year": 2004,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "elo": 1435
+  },
+  {
+    "year": 2004,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "elo": 1277
+  },
+  {
+    "year": 2004,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "elo": 1571
+  },
+  {
+    "year": 2004,
+    "team": "Western Kentucky",
+    "conference": "MVFC",
+    "elo": 1416
+  },
+  {
+    "year": 2004,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "elo": 1077
+  },
+  {
+    "year": 2004,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "elo": 1712
+  },
+  {
+    "year": 2004,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "elo": 1649
+  },
+  {
+    "year": 2004,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "elo": 1450
+  }
+]

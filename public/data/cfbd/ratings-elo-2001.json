@@ -1,0 +1,704 @@
+[
+  {
+    "year": 2001,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "elo": 1333
+  },
+  {
+    "year": 2001,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "elo": 1363
+  },
+  {
+    "year": 2001,
+    "team": "Alabama",
+    "conference": "SEC",
+    "elo": 1758
+  },
+  {
+    "year": 2001,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "elo": 1434
+  },
+  {
+    "year": 2001,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "elo": 1511
+  },
+  {
+    "year": 2001,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "elo": 1591
+  },
+  {
+    "year": 2001,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "elo": 925
+  },
+  {
+    "year": 2001,
+    "team": "Army",
+    "conference": "Conference USA",
+    "elo": 1149
+  },
+  {
+    "year": 2001,
+    "team": "Auburn",
+    "conference": "SEC",
+    "elo": 1505
+  },
+  {
+    "year": 2001,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "elo": 1269
+  },
+  {
+    "year": 2001,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "elo": 1088
+  },
+  {
+    "year": 2001,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "elo": 1732
+  },
+  {
+    "year": 2001,
+    "team": "Boston College",
+    "conference": "Big East",
+    "elo": 1717
+  },
+  {
+    "year": 2001,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "elo": 1607
+  },
+  {
+    "year": 2001,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "elo": 1134
+  },
+  {
+    "year": 2001,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "elo": 1657
+  },
+  {
+    "year": 2001,
+    "team": "California",
+    "conference": "Pac-10",
+    "elo": 1159
+  },
+  {
+    "year": 2001,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "elo": 1142
+  },
+  {
+    "year": 2001,
+    "team": "Cincinnati",
+    "conference": "Conference USA",
+    "elo": 1516
+  },
+  {
+    "year": 2001,
+    "team": "Clemson",
+    "conference": "ACC",
+    "elo": 1611
+  },
+  {
+    "year": 2001,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "elo": 1792
+  },
+  {
+    "year": 2001,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "elo": 1592
+  },
+  {
+    "year": 2001,
+    "team": "Duke",
+    "conference": "ACC",
+    "elo": 1016
+  },
+  {
+    "year": 2001,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "elo": 1667
+  },
+  {
+    "year": 2001,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "elo": 1054
+  },
+  {
+    "year": 2001,
+    "team": "Florida",
+    "conference": "SEC",
+    "elo": 2260
+  },
+  {
+    "year": 2001,
+    "team": "Florida State",
+    "conference": "ACC",
+    "elo": 1903
+  },
+  {
+    "year": 2001,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "elo": 1820
+  },
+  {
+    "year": 2001,
+    "team": "Georgia",
+    "conference": "SEC",
+    "elo": 1768
+  },
+  {
+    "year": 2001,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "elo": 1753
+  },
+  {
+    "year": 2001,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "elo": 1693
+  },
+  {
+    "year": 2001,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "elo": 1093
+  },
+  {
+    "year": 2001,
+    "team": "Idaho",
+    "conference": "Sun Belt",
+    "elo": 1047
+  },
+  {
+    "year": 2001,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "elo": 1740
+  },
+  {
+    "year": 2001,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "elo": 1581
+  },
+  {
+    "year": 2001,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "elo": 1739
+  },
+  {
+    "year": 2001,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "elo": 1588
+  },
+  {
+    "year": 2001,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "elo": 1142
+  },
+  {
+    "year": 2001,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "elo": 1879
+  },
+  {
+    "year": 2001,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "elo": 1230
+  },
+  {
+    "year": 2001,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "elo": 1381
+  },
+  {
+    "year": 2001,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "elo": 1043
+  },
+  {
+    "year": 2001,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "elo": 1360
+  },
+  {
+    "year": 2001,
+    "team": "Louisville",
+    "conference": "Conference USA",
+    "elo": 1757
+  },
+  {
+    "year": 2001,
+    "team": "LSU",
+    "conference": "SEC",
+    "elo": 1815
+  },
+  {
+    "year": 2001,
+    "team": "Marshall",
+    "conference": "Mid-American",
+    "elo": 1648
+  },
+  {
+    "year": 2001,
+    "team": "Maryland",
+    "conference": "ACC",
+    "elo": 1733
+  },
+  {
+    "year": 2001,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "elo": 1481
+  },
+  {
+    "year": 2001,
+    "team": "Miami",
+    "conference": "Big East",
+    "elo": 2379
+  },
+  {
+    "year": 2001,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "elo": 1460
+  },
+  {
+    "year": 2001,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "elo": 1797
+  },
+  {
+    "year": 2001,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "elo": 1733
+  },
+  {
+    "year": 2001,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "elo": 1571
+  },
+  {
+    "year": 2001,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "elo": 1548
+  },
+  {
+    "year": 2001,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "elo": 1442
+  },
+  {
+    "year": 2001,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "elo": 1323
+  },
+  {
+    "year": 2001,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "elo": 1116
+  },
+  {
+    "year": 2001,
+    "team": "NC State",
+    "conference": "ACC",
+    "elo": 1608
+  },
+  {
+    "year": 2001,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "elo": 2001
+  },
+  {
+    "year": 2001,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "elo": 1076
+  },
+  {
+    "year": 2001,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "elo": 1605
+  },
+  {
+    "year": 2001,
+    "team": "New Mexico State",
+    "conference": "Sun Belt",
+    "elo": 1140
+  },
+  {
+    "year": 2001,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "elo": 1715
+  },
+  {
+    "year": 2001,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "elo": 1430
+  },
+  {
+    "year": 2001,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "elo": 1315
+  },
+  {
+    "year": 2001,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "elo": 1375
+  },
+  {
+    "year": 2001,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "elo": 1624
+  },
+  {
+    "year": 2001,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "elo": 1197
+  },
+  {
+    "year": 2001,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "elo": 1747
+  },
+  {
+    "year": 2001,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "elo": 1984
+  },
+  {
+    "year": 2001,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "elo": 1435
+  },
+  {
+    "year": 2001,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "elo": 1579
+  },
+  {
+    "year": 2001,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "elo": 1895
+  },
+  {
+    "year": 2001,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "elo": 1686
+  },
+  {
+    "year": 2001,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "elo": 1620
+  },
+  {
+    "year": 2001,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "elo": 1694
+  },
+  {
+    "year": 2001,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "elo": 1574
+  },
+  {
+    "year": 2001,
+    "team": "Rice",
+    "conference": "Western Athletic",
+    "elo": 1359
+  },
+  {
+    "year": 2001,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "elo": 881
+  },
+  {
+    "year": 2001,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "elo": 1289
+  },
+  {
+    "year": 2001,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "elo": 1169
+  },
+  {
+    "year": 2001,
+    "team": "SMU",
+    "conference": "Western Athletic",
+    "elo": 1239
+  },
+  {
+    "year": 2001,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "elo": 1724
+  },
+  {
+    "year": 2001,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "elo": 1735
+  },
+  {
+    "year": 2001,
+    "team": "South Florida",
+    "conference": "FBS Independents",
+    "elo": 1559
+  },
+  {
+    "year": 2001,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "elo": 1654
+  },
+  {
+    "year": 2001,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "elo": 1809
+  },
+  {
+    "year": 2001,
+    "team": "TCU",
+    "conference": "Conference USA",
+    "elo": 1580
+  },
+  {
+    "year": 2001,
+    "team": "Temple",
+    "conference": "Big East",
+    "elo": 1364
+  },
+  {
+    "year": 2001,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "elo": 1936
+  },
+  {
+    "year": 2001,
+    "team": "Texas",
+    "conference": "Big 12",
+    "elo": 2058
+  },
+  {
+    "year": 2001,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "elo": 1714
+  },
+  {
+    "year": 2001,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "elo": 1735
+  },
+  {
+    "year": 2001,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "elo": 1628
+  },
+  {
+    "year": 2001,
+    "team": "Troy",
+    "conference": "FBS Independents",
+    "elo": 1388
+  },
+  {
+    "year": 2001,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "elo": 1185
+  },
+  {
+    "year": 2001,
+    "team": "Tulsa",
+    "conference": "Western Athletic",
+    "elo": 1004
+  },
+  {
+    "year": 2001,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "elo": 1556
+  },
+  {
+    "year": 2001,
+    "team": "UCF",
+    "conference": "FBS Independents",
+    "elo": 1748
+  },
+  {
+    "year": 2001,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "elo": 1690
+  },
+  {
+    "year": 2001,
+    "team": "UConn",
+    "conference": "FBS Independents",
+    "elo": 965
+  },
+  {
+    "year": 2001,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "elo": 900
+  },
+  {
+    "year": 2001,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "elo": 1520
+  },
+  {
+    "year": 2001,
+    "team": "USC",
+    "conference": "Pac-10",
+    "elo": 1763
+  },
+  {
+    "year": 2001,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "elo": 1737
+  },
+  {
+    "year": 2001,
+    "team": "Utah State",
+    "conference": "FBS Independents",
+    "elo": 1209
+  },
+  {
+    "year": 2001,
+    "team": "UTEP",
+    "conference": "Western Athletic",
+    "elo": 988
+  },
+  {
+    "year": 2001,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "elo": 1199
+  },
+  {
+    "year": 2001,
+    "team": "Virginia",
+    "conference": "ACC",
+    "elo": 1398
+  },
+  {
+    "year": 2001,
+    "team": "Virginia Tech",
+    "conference": "Big East",
+    "elo": 1843
+  },
+  {
+    "year": 2001,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "elo": 1431
+  },
+  {
+    "year": 2001,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "elo": 1598
+  },
+  {
+    "year": 2001,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "elo": 1689
+  },
+  {
+    "year": 2001,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "elo": 1511
+  },
+  {
+    "year": 2001,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "elo": 1575
+  },
+  {
+    "year": 2001,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "elo": 1548
+  },
+  {
+    "year": 2001,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "elo": 1117
+  }
+]

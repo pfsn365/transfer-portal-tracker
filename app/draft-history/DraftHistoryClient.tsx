@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
@@ -110,16 +110,24 @@ export default function DraftHistoryClient() {
   const [itemsPerPage, setItemsPerPage] = useState(50);
 
   const [error, setError] = useState('');
+  const [allSchools, setAllSchools] = useState<{ slug: string; name: string }[]>([]);
+
+  const pipelineAbort = useRef<AbortController | null>(null);
+  const historyAbort = useRef<AbortController | null>(null);
 
   // ── Fetch pipeline data ──────────────────────────────────────────────────────
 
   useEffect(() => {
     if (activeTab !== 'pipeline') return;
+    pipelineAbort.current?.abort();
+    const controller = new AbortController();
+    pipelineAbort.current = controller;
+
     setPipelineLoading(true);
     setError('');
 
     const posParam = pipelinePosition !== 'All' ? `&position=${pipelinePosition}` : '';
-    fetch(getApiPath(`api/cfb/draft-data?view=pipeline${posParam}`))
+    fetch(getApiPath(`api/cfb/draft-data?view=pipeline${posParam}`), { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load pipeline data');
         return res.json();
@@ -129,15 +137,22 @@ export default function DraftHistoryClient() {
         setPipelineLoading(false);
       })
       .catch((err) => {
+        if (err instanceof Error && err.name === 'AbortError') return;
         setError(err.message);
         setPipelineLoading(false);
       });
+
+    return () => controller.abort();
   }, [activeTab, pipelinePosition]);
 
   // ── Fetch history data ───────────────────────────────────────────────────────
 
   useEffect(() => {
     if (activeTab !== 'history') return;
+    historyAbort.current?.abort();
+    const controller = new AbortController();
+    historyAbort.current = controller;
+
     setHistoryLoading(true);
     setError('');
 
@@ -148,7 +163,7 @@ export default function DraftHistoryClient() {
     if (roundFilter) params.set('round', roundFilter);
     if (positionFilter) params.set('position', positionFilter);
 
-    fetch(getApiPath(`api/cfb/draft-data?${params.toString()}`))
+    fetch(getApiPath(`api/cfb/draft-data?${params.toString()}`), { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load draft history');
         return res.json();
@@ -160,9 +175,12 @@ export default function DraftHistoryClient() {
         setHistoryLoading(false);
       })
       .catch((err) => {
+        if (err instanceof Error && err.name === 'AbortError') return;
         setError(err.message);
         setHistoryLoading(false);
       });
+
+    return () => controller.abort();
   }, [activeTab, schoolFilter, yearMin, yearMax, roundFilter, positionFilter]);
 
   // ── Derived pipeline data ────────────────────────────────────────────────────
@@ -201,7 +219,7 @@ export default function DraftHistoryClient() {
       return (b[pipelineSort as keyof PipelineEntry] as number) - (a[pipelineSort as keyof PipelineEntry] as number);
     });
     return list;
-  }, [pipelineData, pipelineSearch, pipelineSort]);
+  }, [pipelineData, pipelineSearch, pipelineSort, conferenceFilter]);
 
   // ── Derived history data (pagination) ────────────────────────────────────────
 
@@ -211,21 +229,24 @@ export default function DraftHistoryClient() {
     return historyPicks.slice(start, start + itemsPerPage);
   }, [historyPicks, currentPage, itemsPerPage]);
 
-  // School list for the dropdown
+  // School list for the dropdown — uses allSchools (unfiltered) so position filter doesn't reduce options
   const schoolOptions = useMemo(() => {
-    return pipelineData
-      .map((t) => ({ slug: t.teamSlug, name: t.teamName }))
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, [pipelineData]);
+    const source = allSchools.length > 0 ? allSchools : pipelineData.map((t) => ({ slug: t.teamSlug, name: t.teamName }));
+    return [...source].sort((a, b) => a.name.localeCompare(b.name));
+  }, [allSchools, pipelineData]);
 
-  // Pre-fetch pipeline data for the school dropdown even when on history tab
+  // Fetch full school list once for the history tab dropdown (no position filter)
   useEffect(() => {
-    if (pipelineData.length > 0) return;
+    if (allSchools.length > 0) return;
     fetch(getApiPath('api/cfb/draft-data?view=pipeline'))
       .then((res) => res.json())
-      .then((data: PipelineEntry[]) => setPipelineData(data))
+      .then((data: PipelineEntry[]) => {
+        setAllSchools(data.map((t) => ({ slug: t.teamSlug, name: t.teamName })));
+        // Seed pipeline data if it hasn't been loaded yet (avoids a duplicate request)
+        setPipelineData((prev) => (prev.length > 0 ? prev : data));
+      })
       .catch(() => {});
-  }, [pipelineData.length]);
+  }, [allSchools.length]);
 
   // ── Render ───────────────────────────────────────────────────────────────────
 
@@ -376,11 +397,11 @@ export default function DraftHistoryClient() {
                 </thead>
                 <tbody>
                   {pipelineLoading ? (
-                    <TableSkeleton cols={6 + DECADES.length} />
+                    <TableSkeleton cols={5 + DECADES.length} />
                   ) : filteredPipeline.length === 0 ? (
                     <tr>
                       <td
-                        colSpan={6 + DECADES.length}
+                        colSpan={5 + DECADES.length}
                         className="text-center py-12 text-gray-500"
                       >
                         No schools found

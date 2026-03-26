@@ -1,0 +1,2402 @@
+[
+  {
+    "year": 2010,
+    "team": "Auburn",
+    "conference": "SEC",
+    "fpi": 22.692,
+    "resumeRanks": {
+      "strengthOfRecord": 1,
+      "fpi": 7,
+      "averageWinProbability": 13,
+      "strengthOfSchedule": 7,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 7
+    },
+    "efficiencies": {
+      "overall": 84.043,
+      "offense": 92.419,
+      "defense": 57.214,
+      "specialTeams": 50.269
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UAB",
+    "conference": "Conference USA",
+    "fpi": -9.189,
+    "resumeRanks": {
+      "strengthOfRecord": 102,
+      "fpi": 97,
+      "averageWinProbability": 83,
+      "strengthOfSchedule": 92,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 91
+    },
+    "efficiencies": {
+      "overall": 32.066,
+      "offense": 46.738,
+      "defense": 34.657,
+      "specialTeams": 20.186
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Arkansas",
+    "conference": "SEC",
+    "fpi": 19.49,
+    "resumeRanks": {
+      "strengthOfRecord": 8,
+      "fpi": 9,
+      "averageWinProbability": 14,
+      "strengthOfSchedule": 14,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 6
+    },
+    "efficiencies": {
+      "overall": 80.568,
+      "offense": 80.678,
+      "defense": 69.914,
+      "specialTeams": 51.319
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Arizona State",
+    "conference": "Pac-10",
+    "fpi": 10.304,
+    "resumeRanks": {
+      "strengthOfRecord": 36,
+      "fpi": 34,
+      "averageWinProbability": 53,
+      "strengthOfSchedule": 16,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 27
+    },
+    "efficiencies": {
+      "overall": 67.16,
+      "offense": 60.133,
+      "defense": 67.833,
+      "specialTeams": 51.033
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Arizona",
+    "conference": "Pac-10",
+    "fpi": 10.753,
+    "resumeRanks": {
+      "strengthOfRecord": 39,
+      "fpi": 29,
+      "averageWinProbability": 54,
+      "strengthOfSchedule": 19,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 42
+    },
+    "efficiencies": {
+      "overall": 65.793,
+      "offense": 68.947,
+      "defense": 61.449,
+      "specialTeams": 32.829
+    }
+  },
+  {
+    "year": 2010,
+    "team": "San Diego State",
+    "conference": "Mountain West",
+    "fpi": 5.339,
+    "resumeRanks": {
+      "strengthOfRecord": 42,
+      "fpi": 48,
+      "averageWinProbability": 20,
+      "strengthOfSchedule": 89,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 35
+    },
+    "efficiencies": {
+      "overall": 63.45,
+      "offense": 69.39,
+      "defense": 53.976,
+      "specialTeams": 47.343
+    }
+  },
+  {
+    "year": 2010,
+    "team": "San José State",
+    "conference": "Western Athletic",
+    "fpi": -17.466,
+    "resumeRanks": {
+      "strengthOfRecord": 118,
+      "fpi": 113,
+      "averageWinProbability": 115,
+      "strengthOfSchedule": 61,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 106
+    },
+    "efficiencies": {
+      "overall": 17.184,
+      "offense": 21.078,
+      "defense": 25.438,
+      "specialTeams": 40.132
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Stanford",
+    "conference": "Pac-10",
+    "fpi": 24.226,
+    "resumeRanks": {
+      "strengthOfRecord": 2,
+      "fpi": 6,
+      "averageWinProbability": 3,
+      "strengthOfSchedule": 17,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 1
+    },
+    "efficiencies": {
+      "overall": 91.356,
+      "offense": 91.908,
+      "defense": 76.351,
+      "specialTeams": 54.434
+    }
+  },
+  {
+    "year": 2010,
+    "team": "California",
+    "conference": "Pac-10",
+    "fpi": 9.195,
+    "resumeRanks": {
+      "strengthOfRecord": 58,
+      "fpi": 36,
+      "averageWinProbability": 59,
+      "strengthOfSchedule": 12,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 41
+    },
+    "efficiencies": {
+      "overall": 61.144,
+      "offense": 42.046,
+      "defense": 75.012,
+      "specialTeams": 46.346
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UCLA",
+    "conference": "Pac-10",
+    "fpi": 1.481,
+    "resumeRanks": {
+      "strengthOfRecord": 66,
+      "fpi": 63,
+      "averageWinProbability": 94,
+      "strengthOfSchedule": 3,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 60
+    },
+    "efficiencies": {
+      "overall": 47.069,
+      "offense": 35.161,
+      "defense": 54.641,
+      "specialTeams": 65.233
+    }
+  },
+  {
+    "year": 2010,
+    "team": "USC",
+    "conference": "Pac-10",
+    "fpi": 11.73,
+    "resumeRanks": {
+      "strengthOfRecord": 25,
+      "fpi": 25,
+      "averageWinProbability": 31,
+      "strengthOfSchedule": 8,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 19
+    },
+    "efficiencies": {
+      "overall": 70.125,
+      "offense": 69.292,
+      "defense": 57.188,
+      "specialTeams": 68.835
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Colorado State",
+    "conference": "Mountain West",
+    "fpi": -14.89,
+    "resumeRanks": {
+      "strengthOfRecord": 99,
+      "fpi": 106,
+      "averageWinProbability": 113,
+      "strengthOfSchedule": 62,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 103
+    },
+    "efficiencies": {
+      "overall": 21.249,
+      "offense": 27.84,
+      "defense": 28.621,
+      "specialTeams": 33.67
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Colorado",
+    "conference": "Big 12",
+    "fpi": 0.546,
+    "resumeRanks": {
+      "strengthOfRecord": 69,
+      "fpi": 67,
+      "averageWinProbability": 68,
+      "strengthOfSchedule": 34,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 53
+    },
+    "efficiencies": {
+      "overall": 48.197,
+      "offense": 51.468,
+      "defense": 48.969,
+      "specialTeams": 39.807
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UConn",
+    "conference": "Big East",
+    "fpi": 5.4,
+    "resumeRanks": {
+      "strengthOfRecord": 47,
+      "fpi": 47,
+      "averageWinProbability": 55,
+      "strengthOfSchedule": 60,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 55
+    },
+    "efficiencies": {
+      "overall": 54.904,
+      "offense": 40.366,
+      "defense": 63.066,
+      "specialTeams": 59.916
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Florida State",
+    "conference": "ACC",
+    "fpi": 17.167,
+    "resumeRanks": {
+      "strengthOfRecord": 16,
+      "fpi": 13,
+      "averageWinProbability": 28,
+      "strengthOfSchedule": 9,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 16
+    },
+    "efficiencies": {
+      "overall": 75.517,
+      "offense": 72.566,
+      "defense": 64.775,
+      "specialTeams": 67.569
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Florida",
+    "conference": "SEC",
+    "fpi": 15.854,
+    "resumeRanks": {
+      "strengthOfRecord": 24,
+      "fpi": 17,
+      "averageWinProbability": 37,
+      "strengthOfSchedule": 13,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 28
+    },
+    "efficiencies": {
+      "overall": 68.153,
+      "offense": 52.003,
+      "defense": 76.242,
+      "specialTeams": 50.52
+    }
+  },
+  {
+    "year": 2010,
+    "team": "South Florida",
+    "conference": "Big East",
+    "fpi": 4.865,
+    "resumeRanks": {
+      "strengthOfRecord": 41,
+      "fpi": 51,
+      "averageWinProbability": 44,
+      "strengthOfSchedule": 57,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 44
+    },
+    "efficiencies": {
+      "overall": 56.527,
+      "offense": 42.68,
+      "defense": 64.349,
+      "specialTeams": 57.818
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Georgia Tech",
+    "conference": "ACC",
+    "fpi": 5.292,
+    "resumeRanks": {
+      "strengthOfRecord": 68,
+      "fpi": 49,
+      "averageWinProbability": 76,
+      "strengthOfSchedule": 50,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 66
+    },
+    "efficiencies": {
+      "overall": 48.805,
+      "offense": 51.481,
+      "defense": 45.419,
+      "specialTeams": 53.254
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Georgia",
+    "conference": "SEC",
+    "fpi": 13.783,
+    "resumeRanks": {
+      "strengthOfRecord": 54,
+      "fpi": 20,
+      "averageWinProbability": 36,
+      "strengthOfSchedule": 27,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 24
+    },
+    "efficiencies": {
+      "overall": 71.388,
+      "offense": 67.766,
+      "defense": 61.911,
+      "specialTeams": 67.933
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Hawai'i",
+    "conference": "Western Athletic",
+    "fpi": 5.528,
+    "resumeRanks": {
+      "strengthOfRecord": 43,
+      "fpi": 46,
+      "averageWinProbability": 19,
+      "strengthOfSchedule": 88,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 39
+    },
+    "efficiencies": {
+      "overall": 65.26,
+      "offense": 67.683,
+      "defense": 62.937,
+      "specialTeams": 32.348
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Iowa State",
+    "conference": "Big 12",
+    "fpi": -2.028,
+    "resumeRanks": {
+      "strengthOfRecord": 62,
+      "fpi": 72,
+      "averageWinProbability": 77,
+      "strengthOfSchedule": 15,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 57
+    },
+    "efficiencies": {
+      "overall": 47.195,
+      "offense": 43.694,
+      "defense": 50.435,
+      "specialTeams": 54.076
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Boise State",
+    "conference": "Western Athletic",
+    "fpi": 26.916,
+    "resumeRanks": {
+      "strengthOfRecord": 11,
+      "fpi": 2,
+      "averageWinProbability": 1,
+      "strengthOfSchedule": 84,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 2
+    },
+    "efficiencies": {
+      "overall": 92.645,
+      "offense": 87.824,
+      "defense": 86.858,
+      "specialTeams": 57.092
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Idaho",
+    "conference": "Western Athletic",
+    "fpi": -6.411,
+    "resumeRanks": {
+      "strengthOfRecord": 82,
+      "fpi": 87,
+      "averageWinProbability": 81,
+      "strengthOfSchedule": 82,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 84
+    },
+    "efficiencies": {
+      "overall": 35.734,
+      "offense": 37.455,
+      "defense": 42.036,
+      "specialTeams": 41.565
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Northwestern",
+    "conference": "Big Ten",
+    "fpi": -1.991,
+    "resumeRanks": {
+      "strengthOfRecord": 64,
+      "fpi": 71,
+      "averageWinProbability": 58,
+      "strengthOfSchedule": 70,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 58
+    },
+    "efficiencies": {
+      "overall": 46.553,
+      "offense": 51.361,
+      "defense": 40.224,
+      "specialTeams": 58.65
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Indiana",
+    "conference": "Big Ten",
+    "fpi": -6.272,
+    "resumeRanks": {
+      "strengthOfRecord": 75,
+      "fpi": 86,
+      "averageWinProbability": 84,
+      "strengthOfSchedule": 73,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 82
+    },
+    "efficiencies": {
+      "overall": 36.331,
+      "offense": 55.258,
+      "defense": 26.865,
+      "specialTeams": 33.221
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Notre Dame",
+    "conference": "FBS Independents",
+    "fpi": 10.839,
+    "resumeRanks": {
+      "strengthOfRecord": 33,
+      "fpi": 50,
+      "averageWinProbability": 25,
+      "strengthOfSchedule": 29,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 22
+    },
+    "efficiencies": {
+      "overall": 65.661,
+      "offense": 49.435,
+      "defense": 71.196,
+      "specialTeams": 61.638
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Kentucky",
+    "conference": "SEC",
+    "fpi": 3.631,
+    "resumeRanks": {
+      "strengthOfRecord": 61,
+      "fpi": 57,
+      "averageWinProbability": 82,
+      "strengthOfSchedule": 39,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 69
+    },
+    "efficiencies": {
+      "overall": 52.181,
+      "offense": 61.224,
+      "defense": 39.499,
+      "specialTeams": 55.428
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Louisville",
+    "conference": "Big East",
+    "fpi": 3.977,
+    "resumeRanks": {
+      "strengthOfRecord": 65,
+      "fpi": 54,
+      "averageWinProbability": 39,
+      "strengthOfSchedule": 68,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 48
+    },
+    "efficiencies": {
+      "overall": 55.922,
+      "offense": 51.338,
+      "defense": 53.514,
+      "specialTeams": 63.607
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Western Kentucky",
+    "conference": "Sun Belt",
+    "fpi": -15.147,
+    "resumeRanks": {
+      "strengthOfRecord": 117,
+      "fpi": 107,
+      "averageWinProbability": 97,
+      "strengthOfSchedule": 103,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 100
+    },
+    "efficiencies": {
+      "overall": 21.613,
+      "offense": 25.656,
+      "defense": 31.235,
+      "specialTeams": 35.419
+    }
+  },
+  {
+    "year": 2010,
+    "team": "LSU",
+    "conference": "SEC",
+    "fpi": 16.759,
+    "resumeRanks": {
+      "strengthOfRecord": 5,
+      "fpi": 14,
+      "averageWinProbability": 18,
+      "strengthOfSchedule": 11,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 11
+    },
+    "efficiencies": {
+      "overall": 77.072,
+      "offense": 60.428,
+      "defense": 75.94,
+      "specialTeams": 75.952
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Boston College",
+    "conference": "ACC",
+    "fpi": 3.27,
+    "resumeRanks": {
+      "strengthOfRecord": 52,
+      "fpi": 59,
+      "averageWinProbability": 71,
+      "strengthOfSchedule": 38,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 61
+    },
+    "efficiencies": {
+      "overall": 54.064,
+      "offense": 27.498,
+      "defense": 76.923,
+      "specialTeams": 47.625
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Maryland",
+    "conference": "ACC",
+    "fpi": 8.156,
+    "resumeRanks": {
+      "strengthOfRecord": 26,
+      "fpi": 38,
+      "averageWinProbability": 34,
+      "strengthOfSchedule": 55,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 32
+    },
+    "efficiencies": {
+      "overall": 64.531,
+      "offense": 53.177,
+      "defense": 66.767,
+      "specialTeams": 57.132
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Michigan State",
+    "conference": "Big Ten",
+    "fpi": 8.1,
+    "resumeRanks": {
+      "strengthOfRecord": 12,
+      "fpi": 39,
+      "averageWinProbability": 33,
+      "strengthOfSchedule": 54,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 33
+    },
+    "efficiencies": {
+      "overall": 64.145,
+      "offense": 67.332,
+      "defense": 55.209,
+      "specialTeams": 52.681
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Michigan",
+    "conference": "Big Ten",
+    "fpi": 3.57,
+    "resumeRanks": {
+      "strengthOfRecord": 44,
+      "fpi": 58,
+      "averageWinProbability": 75,
+      "strengthOfSchedule": 31,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 59
+    },
+    "efficiencies": {
+      "overall": 50.029,
+      "offense": 77.547,
+      "defense": 29.983,
+      "specialTeams": 23.829
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Minnesota",
+    "conference": "Big Ten",
+    "fpi": -3.602,
+    "resumeRanks": {
+      "strengthOfRecord": 87,
+      "fpi": 77,
+      "averageWinProbability": 106,
+      "strengthOfSchedule": 32,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 95
+    },
+    "efficiencies": {
+      "overall": 30.848,
+      "offense": 52.498,
+      "defense": 22.156,
+      "specialTeams": 31.299
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Missouri",
+    "conference": "Big 12",
+    "fpi": 16.163,
+    "resumeRanks": {
+      "strengthOfRecord": 18,
+      "fpi": 16,
+      "averageWinProbability": 15,
+      "strengthOfSchedule": 43,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 18
+    },
+    "efficiencies": {
+      "overall": 77.087,
+      "offense": 63.591,
+      "defense": 76.832,
+      "specialTeams": 64.417
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Ole Miss",
+    "conference": "SEC",
+    "fpi": 1.294,
+    "resumeRanks": {
+      "strengthOfRecord": 79,
+      "fpi": 64,
+      "averageWinProbability": 78,
+      "strengthOfSchedule": 48,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 63
+    },
+    "efficiencies": {
+      "overall": 43.544,
+      "offense": 49.688,
+      "defense": 42.682,
+      "specialTeams": 41.699
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Duke",
+    "conference": "ACC",
+    "fpi": -4.006,
+    "resumeRanks": {
+      "strengthOfRecord": 90,
+      "fpi": 79,
+      "averageWinProbability": 95,
+      "strengthOfSchedule": 35,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 81
+    },
+    "efficiencies": {
+      "overall": 35.917,
+      "offense": 42.403,
+      "defense": 30.005,
+      "specialTeams": 65.123
+    }
+  },
+  {
+    "year": 2010,
+    "team": "East Carolina",
+    "conference": "Conference USA",
+    "fpi": -6.154,
+    "resumeRanks": {
+      "strengthOfRecord": 72,
+      "fpi": 84,
+      "averageWinProbability": 89,
+      "strengthOfSchedule": 64,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 83
+    },
+    "efficiencies": {
+      "overall": 38.785,
+      "offense": 57.685,
+      "defense": 19.62,
+      "specialTeams": 70.606
+    }
+  },
+  {
+    "year": 2010,
+    "team": "NC State",
+    "conference": "ACC",
+    "fpi": 11.588,
+    "resumeRanks": {
+      "strengthOfRecord": 23,
+      "fpi": 26,
+      "averageWinProbability": 16,
+      "strengthOfSchedule": 28,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 14
+    },
+    "efficiencies": {
+      "overall": 72.368,
+      "offense": 58.269,
+      "defense": 74.31,
+      "specialTeams": 65.414
+    }
+  },
+  {
+    "year": 2010,
+    "team": "North Carolina",
+    "conference": "ACC",
+    "fpi": 10.378,
+    "resumeRanks": {
+      "strengthOfRecord": 29,
+      "fpi": 32,
+      "averageWinProbability": 61,
+      "strengthOfSchedule": 21,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 46
+    },
+    "efficiencies": {
+      "overall": 55.103,
+      "offense": 55.257,
+      "defense": 60.881,
+      "specialTeams": 28.485
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Wake Forest",
+    "conference": "ACC",
+    "fpi": -6.033,
+    "resumeRanks": {
+      "strengthOfRecord": 85,
+      "fpi": 83,
+      "averageWinProbability": 99,
+      "strengthOfSchedule": 26,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 78
+    },
+    "efficiencies": {
+      "overall": 33.185,
+      "offense": 37.323,
+      "defense": 38.085,
+      "specialTeams": 40.559
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Nebraska",
+    "conference": "Big 12",
+    "fpi": 15.748,
+    "resumeRanks": {
+      "strengthOfRecord": 22,
+      "fpi": 18,
+      "averageWinProbability": 12,
+      "strengthOfSchedule": 49,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 12
+    },
+    "efficiencies": {
+      "overall": 75.643,
+      "offense": 60.377,
+      "defense": 77.892,
+      "specialTeams": 61.114
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Rutgers",
+    "conference": "Big East",
+    "fpi": -3.131,
+    "resumeRanks": {
+      "strengthOfRecord": 88,
+      "fpi": 76,
+      "averageWinProbability": 96,
+      "strengthOfSchedule": 67,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 90
+    },
+    "efficiencies": {
+      "overall": 33.886,
+      "offense": 24.142,
+      "defense": 47.269,
+      "specialTeams": 59.18
+    }
+  },
+  {
+    "year": 2010,
+    "team": "New Mexico State",
+    "conference": "Western Athletic",
+    "fpi": -23.302,
+    "resumeRanks": {
+      "strengthOfRecord": 112,
+      "fpi": 119,
+      "averageWinProbability": 118,
+      "strengthOfSchedule": 87,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 10.189,
+      "offense": 15.045,
+      "defense": 16.29,
+      "specialTeams": 42.176
+    }
+  },
+  {
+    "year": 2010,
+    "team": "New Mexico",
+    "conference": "Mountain West",
+    "fpi": -22.529,
+    "resumeRanks": {
+      "strengthOfRecord": 115,
+      "fpi": 116,
+      "averageWinProbability": 120,
+      "strengthOfSchedule": 71,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 11.228,
+      "offense": 13.342,
+      "defense": 25.402,
+      "specialTeams": 26.553
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Syracuse",
+    "conference": "Big East",
+    "fpi": 0.406,
+    "resumeRanks": {
+      "strengthOfRecord": 51,
+      "fpi": 68,
+      "averageWinProbability": 63,
+      "strengthOfSchedule": 69,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 70
+    },
+    "efficiencies": {
+      "overall": 51.103,
+      "offense": 40.263,
+      "defense": 59.491,
+      "specialTeams": 54.393
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Bowling Green",
+    "conference": "Mid-American",
+    "fpi": -16.23,
+    "resumeRanks": {
+      "strengthOfRecord": 114,
+      "fpi": 110,
+      "averageWinProbability": 110,
+      "strengthOfSchedule": 101,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 20.436,
+      "offense": 14.021,
+      "defense": 35.83,
+      "specialTeams": 58.813
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Miami (OH)",
+    "conference": "Mid-American",
+    "fpi": -7.381,
+    "resumeRanks": {
+      "strengthOfRecord": 48,
+      "fpi": 90,
+      "averageWinProbability": 69,
+      "strengthOfSchedule": 102,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 87
+    },
+    "efficiencies": {
+      "overall": 38.979,
+      "offense": 30.257,
+      "defense": 54.169,
+      "specialTeams": 47.788
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Ohio State",
+    "conference": "Big Ten",
+    "fpi": 24.977,
+    "resumeRanks": {
+      "strengthOfRecord": 6,
+      "fpi": 4,
+      "averageWinProbability": 4,
+      "strengthOfSchedule": 59,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 8
+    },
+    "efficiencies": {
+      "overall": 88.92,
+      "offense": 79.998,
+      "defense": 86.987,
+      "specialTeams": 54.831
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Ohio",
+    "conference": "Mid-American",
+    "fpi": -5.218,
+    "resumeRanks": {
+      "strengthOfRecord": 74,
+      "fpi": 81,
+      "averageWinProbability": 46,
+      "strengthOfSchedule": 119,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 85
+    },
+    "efficiencies": {
+      "overall": 44.231,
+      "offense": 37.723,
+      "defense": 46.331,
+      "specialTeams": 68.651
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Oklahoma State",
+    "conference": "Big 12",
+    "fpi": 17.563,
+    "resumeRanks": {
+      "strengthOfRecord": 15,
+      "fpi": 12,
+      "averageWinProbability": 10,
+      "strengthOfSchedule": 47,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 15
+    },
+    "efficiencies": {
+      "overall": 76.708,
+      "offense": 74.024,
+      "defense": 67.184,
+      "specialTeams": 62.243
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Oklahoma",
+    "conference": "Big 12",
+    "fpi": 21.139,
+    "resumeRanks": {
+      "strengthOfRecord": 7,
+      "fpi": 8,
+      "averageWinProbability": 6,
+      "strengthOfSchedule": 18,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 5
+    },
+    "efficiencies": {
+      "overall": 79.863,
+      "offense": 71.472,
+      "defense": 77.279,
+      "specialTeams": 57.416
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Tulsa",
+    "conference": "Conference USA",
+    "fpi": 3.87,
+    "resumeRanks": {
+      "strengthOfRecord": 28,
+      "fpi": 56,
+      "averageWinProbability": 26,
+      "strengthOfSchedule": 93,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 43
+    },
+    "efficiencies": {
+      "overall": 57.824,
+      "offense": 62.883,
+      "defense": 44.612,
+      "specialTeams": 63.808
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Oregon State",
+    "conference": "Pac-10",
+    "fpi": 8.705,
+    "resumeRanks": {
+      "strengthOfRecord": 40,
+      "fpi": 37,
+      "averageWinProbability": 70,
+      "strengthOfSchedule": 1,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 29
+    },
+    "efficiencies": {
+      "overall": 63.296,
+      "offense": 64.286,
+      "defense": 51.958,
+      "specialTeams": 69.889
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Penn State",
+    "conference": "Big Ten",
+    "fpi": 6.882,
+    "resumeRanks": {
+      "strengthOfRecord": 50,
+      "fpi": 40,
+      "averageWinProbability": 60,
+      "strengthOfSchedule": 45,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 49
+    },
+    "efficiencies": {
+      "overall": 54.318,
+      "offense": 46.358,
+      "defense": 54.947,
+      "specialTeams": 66.664
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Temple",
+    "conference": "Mid-American",
+    "fpi": -0.449,
+    "resumeRanks": {
+      "strengthOfRecord": 63,
+      "fpi": 69,
+      "averageWinProbability": 48,
+      "strengthOfSchedule": 108,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 76
+    },
+    "efficiencies": {
+      "overall": 45.54,
+      "offense": 38.637,
+      "defense": 50.031,
+      "specialTeams": 59.786
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Pittsburgh",
+    "conference": "Big East",
+    "fpi": 10.56,
+    "resumeRanks": {
+      "strengthOfRecord": 38,
+      "fpi": 30,
+      "averageWinProbability": 43,
+      "strengthOfSchedule": 36,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 40
+    },
+    "efficiencies": {
+      "overall": 66.186,
+      "offense": 63.934,
+      "defense": 61.504,
+      "specialTeams": 53.183
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Clemson",
+    "conference": "ACC",
+    "fpi": 10.379,
+    "resumeRanks": {
+      "strengthOfRecord": 55,
+      "fpi": 31,
+      "averageWinProbability": 50,
+      "strengthOfSchedule": 22,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 38
+    },
+    "efficiencies": {
+      "overall": 63.589,
+      "offense": 50.234,
+      "defense": 68.087,
+      "specialTeams": 59.271
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Memphis",
+    "conference": "Conference USA",
+    "fpi": -22.973,
+    "resumeRanks": {
+      "strengthOfRecord": 116,
+      "fpi": 118,
+      "averageWinProbability": 117,
+      "strengthOfSchedule": 77,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 9.112,
+      "offense": 9.707,
+      "defense": 22.122,
+      "specialTeams": 34.693
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Vanderbilt",
+    "conference": "SEC",
+    "fpi": -7.714,
+    "resumeRanks": {
+      "strengthOfRecord": 97,
+      "fpi": 92,
+      "averageWinProbability": 107,
+      "strengthOfSchedule": 20,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 89
+    },
+    "efficiencies": {
+      "overall": 28.746,
+      "offense": 19.504,
+      "defense": 46.129,
+      "specialTeams": 49.305
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Baylor",
+    "conference": "Big 12",
+    "fpi": 3.212,
+    "resumeRanks": {
+      "strengthOfRecord": 49,
+      "fpi": 60,
+      "averageWinProbability": 66,
+      "strengthOfSchedule": 44,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 56
+    },
+    "efficiencies": {
+      "overall": 53.85,
+      "offense": 70.123,
+      "defense": 42.923,
+      "specialTeams": 30.384
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Rice",
+    "conference": "Conference USA",
+    "fpi": -11.58,
+    "resumeRanks": {
+      "strengthOfRecord": 101,
+      "fpi": 102,
+      "averageWinProbability": 105,
+      "strengthOfSchedule": 90,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 22.391,
+      "offense": 33.406,
+      "defense": 19.084,
+      "specialTeams": 59.201
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Texas A&M",
+    "conference": "Big 12",
+    "fpi": 13.821,
+    "resumeRanks": {
+      "strengthOfRecord": 21,
+      "fpi": 19,
+      "averageWinProbability": 42,
+      "strengthOfSchedule": 23,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 31
+    },
+    "efficiencies": {
+      "overall": 65.973,
+      "offense": 50.487,
+      "defense": 76.767,
+      "specialTeams": 40.853
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Houston",
+    "conference": "Conference USA",
+    "fpi": 1.228,
+    "resumeRanks": {
+      "strengthOfRecord": 91,
+      "fpi": 65,
+      "averageWinProbability": 74,
+      "strengthOfSchedule": 85,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 86
+    },
+    "efficiencies": {
+      "overall": 42.864,
+      "offense": 56.478,
+      "defense": 31.809,
+      "specialTeams": 50.759
+    }
+  },
+  {
+    "year": 2010,
+    "team": "North Texas",
+    "conference": "Sun Belt",
+    "fpi": -12.786,
+    "resumeRanks": {
+      "strengthOfRecord": 111,
+      "fpi": 104,
+      "averageWinProbability": 102,
+      "strengthOfSchedule": 118,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 24.223,
+      "offense": 33.89,
+      "defense": 25.187,
+      "specialTeams": 42.506
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Texas",
+    "conference": "Big 12",
+    "fpi": 6.198,
+    "resumeRanks": {
+      "strengthOfRecord": 71,
+      "fpi": 44,
+      "averageWinProbability": 72,
+      "strengthOfSchedule": 51,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 67
+    },
+    "efficiencies": {
+      "overall": 46.722,
+      "offense": 28.455,
+      "defense": 69.594,
+      "specialTeams": 47.609
+    }
+  },
+  {
+    "year": 2010,
+    "team": "BYU",
+    "conference": "Mountain West",
+    "fpi": 4.528,
+    "resumeRanks": {
+      "strengthOfRecord": 60,
+      "fpi": 53,
+      "averageWinProbability": 40,
+      "strengthOfSchedule": 74,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 45
+    },
+    "efficiencies": {
+      "overall": 56.632,
+      "offense": 43.137,
+      "defense": 66.167,
+      "specialTeams": 56.906
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Utah",
+    "conference": "Mountain West",
+    "fpi": 10.364,
+    "resumeRanks": {
+      "strengthOfRecord": 20,
+      "fpi": 33,
+      "averageWinProbability": 35,
+      "strengthOfSchedule": 65,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 36
+    },
+    "efficiencies": {
+      "overall": 68.245,
+      "offense": 57.818,
+      "defense": 67.305,
+      "specialTeams": 64.619
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Virginia",
+    "conference": "ACC",
+    "fpi": -1.928,
+    "resumeRanks": {
+      "strengthOfRecord": 80,
+      "fpi": 70,
+      "averageWinProbability": 85,
+      "strengthOfSchedule": 42,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 75
+    },
+    "efficiencies": {
+      "overall": 39.618,
+      "offense": 51.424,
+      "defense": 33.255,
+      "specialTeams": 44.331
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Virginia Tech",
+    "conference": "ACC",
+    "fpi": 18.365,
+    "resumeRanks": {
+      "strengthOfRecord": 14,
+      "fpi": 10,
+      "averageWinProbability": 23,
+      "strengthOfSchedule": 37,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 20
+    },
+    "efficiencies": {
+      "overall": 80.007,
+      "offense": 77.495,
+      "defense": 66.015,
+      "specialTeams": 72.767
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Washington",
+    "conference": "Pac-10",
+    "fpi": 4.646,
+    "resumeRanks": {
+      "strengthOfRecord": 27,
+      "fpi": 52,
+      "averageWinProbability": 87,
+      "strengthOfSchedule": 2,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 52
+    },
+    "efficiencies": {
+      "overall": 54.011,
+      "offense": 55.637,
+      "defense": 50.566,
+      "specialTeams": 50.89
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Washington State",
+    "conference": "Pac-10",
+    "fpi": -7.727,
+    "resumeRanks": {
+      "strengthOfRecord": 86,
+      "fpi": 93,
+      "averageWinProbability": 114,
+      "strengthOfSchedule": 4,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 92
+    },
+    "efficiencies": {
+      "overall": 33.166,
+      "offense": 39.657,
+      "defense": 31.652,
+      "specialTeams": 55.152
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Wisconsin",
+    "conference": "Big Ten",
+    "fpi": 18.225,
+    "resumeRanks": {
+      "strengthOfRecord": 13,
+      "fpi": 11,
+      "averageWinProbability": 7,
+      "strengthOfSchedule": 72,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 13
+    },
+    "efficiencies": {
+      "overall": 80.449,
+      "offense": 84.042,
+      "defense": 63.041,
+      "specialTeams": 56
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Marshall",
+    "conference": "Conference USA",
+    "fpi": -10.512,
+    "resumeRanks": {
+      "strengthOfRecord": 89,
+      "fpi": 99,
+      "averageWinProbability": 91,
+      "strengthOfSchedule": 86,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 98
+    },
+    "efficiencies": {
+      "overall": 29.199,
+      "offense": 24.551,
+      "defense": 44.437,
+      "specialTeams": 39.096
+    }
+  },
+  {
+    "year": 2010,
+    "team": "West Virginia",
+    "conference": "Big East",
+    "fpi": 12.459,
+    "resumeRanks": {
+      "strengthOfRecord": 31,
+      "fpi": 22,
+      "averageWinProbability": 21,
+      "strengthOfSchedule": 63,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 26
+    },
+    "efficiencies": {
+      "overall": 69.096,
+      "offense": 49.046,
+      "defense": 84.067,
+      "specialTeams": 38.079
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Fresno State",
+    "conference": "Western Athletic",
+    "fpi": -2.482,
+    "resumeRanks": {
+      "strengthOfRecord": 57,
+      "fpi": 74,
+      "averageWinProbability": 57,
+      "strengthOfSchedule": 81,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 74
+    },
+    "efficiencies": {
+      "overall": 46.818,
+      "offense": 43.183,
+      "defense": 47.378,
+      "specialTeams": 61.157
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Louisiana",
+    "conference": "Sun Belt",
+    "fpi": -17.453,
+    "resumeRanks": {
+      "strengthOfRecord": 109,
+      "fpi": 112,
+      "averageWinProbability": 104,
+      "strengthOfSchedule": 99,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 107
+    },
+    "efficiencies": {
+      "overall": 22.621,
+      "offense": 27.108,
+      "defense": 34.092,
+      "specialTeams": 27.887
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Utah State",
+    "conference": "Western Athletic",
+    "fpi": -11.993,
+    "resumeRanks": {
+      "strengthOfRecord": 93,
+      "fpi": 103,
+      "averageWinProbability": 103,
+      "strengthOfSchedule": 75,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 97
+    },
+    "efficiencies": {
+      "overall": 26.603,
+      "offense": 34.864,
+      "defense": 32.287,
+      "specialTeams": 31.262
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Alabama",
+    "conference": "SEC",
+    "fpi": 26.177,
+    "resumeRanks": {
+      "strengthOfRecord": 9,
+      "fpi": 3,
+      "averageWinProbability": 5,
+      "strengthOfSchedule": 10,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 3
+    },
+    "efficiencies": {
+      "overall": 89.848,
+      "offense": 87.675,
+      "defense": 79.078,
+      "specialTeams": 60.717
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Mississippi State",
+    "conference": "SEC",
+    "fpi": 12.239,
+    "resumeRanks": {
+      "strengthOfRecord": 17,
+      "fpi": 23,
+      "averageWinProbability": 27,
+      "strengthOfSchedule": 25,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 17
+    },
+    "efficiencies": {
+      "overall": 69.059,
+      "offense": 57.436,
+      "defense": 66.284,
+      "specialTeams": 72.982
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Army",
+    "conference": "FBS Independents",
+    "fpi": -5.035,
+    "resumeRanks": {
+      "strengthOfRecord": 77,
+      "fpi": 80,
+      "averageWinProbability": 32,
+      "strengthOfSchedule": 100,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 62
+    },
+    "efficiencies": {
+      "overall": 43.675,
+      "offense": 42.962,
+      "defense": 41.871,
+      "specialTeams": 65.025
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Illinois",
+    "conference": "Big Ten",
+    "fpi": 9.461,
+    "resumeRanks": {
+      "strengthOfRecord": 56,
+      "fpi": 35,
+      "averageWinProbability": 29,
+      "strengthOfSchedule": 53,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 25
+    },
+    "efficiencies": {
+      "overall": 65.818,
+      "offense": 58.856,
+      "defense": 69.451,
+      "specialTeams": 44.679
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Air Force",
+    "conference": "Mountain West",
+    "fpi": 6.189,
+    "resumeRanks": {
+      "strengthOfRecord": 30,
+      "fpi": 45,
+      "averageWinProbability": 47,
+      "strengthOfSchedule": 76,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 54
+    },
+    "efficiencies": {
+      "overall": 63.085,
+      "offense": 66.622,
+      "defense": 53.535,
+      "specialTeams": 50.673
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Akron",
+    "conference": "Mid-American",
+    "fpi": -22.727,
+    "resumeRanks": {
+      "strengthOfRecord": 120,
+      "fpi": 117,
+      "averageWinProbability": 109,
+      "strengthOfSchedule": 111,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 11.876,
+      "offense": 15.922,
+      "defense": 20.493,
+      "specialTeams": 36.178
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Arkansas State",
+    "conference": "Sun Belt",
+    "fpi": -7.796,
+    "resumeRanks": {
+      "strengthOfRecord": 107,
+      "fpi": 94,
+      "averageWinProbability": 88,
+      "strengthOfSchedule": 106,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 101
+    },
+    "efficiencies": {
+      "overall": 35.271,
+      "offense": 43.859,
+      "defense": 35.689,
+      "specialTeams": 39.194
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Ball State",
+    "conference": "Mid-American",
+    "fpi": -14.18,
+    "resumeRanks": {
+      "strengthOfRecord": 108,
+      "fpi": 105,
+      "averageWinProbability": 90,
+      "strengthOfSchedule": 117,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 108
+    },
+    "efficiencies": {
+      "overall": 22.102,
+      "offense": 18.111,
+      "defense": 30.502,
+      "specialTeams": 65.998
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Buffalo",
+    "conference": "Mid-American",
+    "fpi": -18.444,
+    "resumeRanks": {
+      "strengthOfRecord": 119,
+      "fpi": 115,
+      "averageWinProbability": 112,
+      "strengthOfSchedule": 110,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 16.061,
+      "offense": 8.725,
+      "defense": 43.541,
+      "specialTeams": 43.321
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UCF",
+    "conference": "Conference USA",
+    "fpi": 6.629,
+    "resumeRanks": {
+      "strengthOfRecord": 34,
+      "fpi": 42,
+      "averageWinProbability": 8,
+      "strengthOfSchedule": 109,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 30
+    },
+    "efficiencies": {
+      "overall": 64.019,
+      "offense": 57.774,
+      "defense": 61.401,
+      "specialTeams": 61.46
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Central Michigan",
+    "conference": "Mid-American",
+    "fpi": -7.506,
+    "resumeRanks": {
+      "strengthOfRecord": 110,
+      "fpi": 91,
+      "averageWinProbability": 98,
+      "strengthOfSchedule": 94,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 102
+    },
+    "efficiencies": {
+      "overall": 30.447,
+      "offense": 33.066,
+      "defense": 36.985,
+      "specialTeams": 43.108
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Cincinnati",
+    "conference": "Big East",
+    "fpi": 1.135,
+    "resumeRanks": {
+      "strengthOfRecord": 81,
+      "fpi": 66,
+      "averageWinProbability": 92,
+      "strengthOfSchedule": 41,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 80
+    },
+    "efficiencies": {
+      "overall": 44.44,
+      "offense": 56.364,
+      "defense": 34.487,
+      "specialTeams": 50.307
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Eastern Michigan",
+    "conference": "Mid-American",
+    "fpi": -23.68,
+    "resumeRanks": {
+      "strengthOfRecord": 113,
+      "fpi": 120,
+      "averageWinProbability": 116,
+      "strengthOfSchedule": 98,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 13.044,
+      "offense": 39.479,
+      "defense": 7.88,
+      "specialTeams": 29.201
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Florida Atlantic",
+    "conference": "Sun Belt",
+    "fpi": -17.489,
+    "resumeRanks": {
+      "strengthOfRecord": 106,
+      "fpi": 114,
+      "averageWinProbability": 108,
+      "strengthOfSchedule": 107,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 22.609,
+      "offense": 20.77,
+      "defense": 34.406,
+      "specialTeams": 45.83
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Florida International",
+    "conference": "Sun Belt",
+    "fpi": -6.252,
+    "resumeRanks": {
+      "strengthOfRecord": 76,
+      "fpi": 85,
+      "averageWinProbability": 45,
+      "strengthOfSchedule": 105,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 68
+    },
+    "efficiencies": {
+      "overall": 44.605,
+      "offense": 46.114,
+      "defense": 45.515,
+      "specialTeams": 48.58
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Iowa",
+    "conference": "Big Ten",
+    "fpi": 13.124,
+    "resumeRanks": {
+      "strengthOfRecord": 35,
+      "fpi": 21,
+      "averageWinProbability": 22,
+      "strengthOfSchedule": 46,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 21
+    },
+    "efficiencies": {
+      "overall": 72.914,
+      "offense": 66.233,
+      "defense": 69.647,
+      "specialTeams": 55.724
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Kansas",
+    "conference": "Big 12",
+    "fpi": -11.511,
+    "resumeRanks": {
+      "strengthOfRecord": 95,
+      "fpi": 101,
+      "averageWinProbability": 111,
+      "strengthOfSchedule": 40,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 99
+    },
+    "efficiencies": {
+      "overall": 23.042,
+      "offense": 25.448,
+      "defense": 33.736,
+      "specialTeams": 36.85
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Kansas State",
+    "conference": "Big 12",
+    "fpi": 3.974,
+    "resumeRanks": {
+      "strengthOfRecord": 59,
+      "fpi": 55,
+      "averageWinProbability": 65,
+      "strengthOfSchedule": 56,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 65
+    },
+    "efficiencies": {
+      "overall": 49.875,
+      "offense": 58.884,
+      "defense": 35.726,
+      "specialTeams": 65.215
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Kent State",
+    "conference": "Mid-American",
+    "fpi": -8.736,
+    "resumeRanks": {
+      "strengthOfRecord": 98,
+      "fpi": 95,
+      "averageWinProbability": 73,
+      "strengthOfSchedule": 113,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 96
+    },
+    "efficiencies": {
+      "overall": 31.182,
+      "offense": 20.341,
+      "defense": 54.574,
+      "specialTeams": 35.271
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Louisiana Tech",
+    "conference": "Western Athletic",
+    "fpi": -6.581,
+    "resumeRanks": {
+      "strengthOfRecord": 83,
+      "fpi": 88,
+      "averageWinProbability": 64,
+      "strengthOfSchedule": 78,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 72
+    },
+    "efficiencies": {
+      "overall": 37.467,
+      "offense": 34.702,
+      "defense": 35.767,
+      "specialTeams": 76.041
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Miami",
+    "conference": "ACC",
+    "fpi": 12.01,
+    "resumeRanks": {
+      "strengthOfRecord": 32,
+      "fpi": 24,
+      "averageWinProbability": 62,
+      "strengthOfSchedule": 6,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 37
+    },
+    "efficiencies": {
+      "overall": 65.139,
+      "offense": 50.879,
+      "defense": 73.996,
+      "specialTeams": 48.224
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Middle Tennessee",
+    "conference": "Sun Belt",
+    "fpi": -11.01,
+    "resumeRanks": {
+      "strengthOfRecord": 104,
+      "fpi": 100,
+      "averageWinProbability": 86,
+      "strengthOfSchedule": 120,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 110
+    },
+    "efficiencies": {
+      "overall": 27.738,
+      "offense": 19.853,
+      "defense": 40.141,
+      "specialTeams": 61.456
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Navy",
+    "conference": "FBS Independents",
+    "fpi": 2.73,
+    "resumeRanks": {
+      "strengthOfRecord": 46,
+      "fpi": 61,
+      "averageWinProbability": 49,
+      "strengthOfSchedule": 80,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 64
+    },
+    "efficiencies": {
+      "overall": 55.244,
+      "offense": 69.971,
+      "defense": 43.649,
+      "specialTeams": 29.946
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UL Monroe",
+    "conference": "Sun Belt",
+    "fpi": -15.289,
+    "resumeRanks": {
+      "strengthOfRecord": 94,
+      "fpi": 108,
+      "averageWinProbability": 101,
+      "strengthOfSchedule": 95,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 105
+    },
+    "efficiencies": {
+      "overall": 22.772,
+      "offense": 23.553,
+      "defense": 36.457,
+      "specialTeams": 35.413
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UNLV",
+    "conference": "Mountain West",
+    "fpi": -15.846,
+    "resumeRanks": {
+      "strengthOfRecord": 105,
+      "fpi": 109,
+      "averageWinProbability": 119,
+      "strengthOfSchedule": 30,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 104
+    },
+    "efficiencies": {
+      "overall": 15.409,
+      "offense": 25.557,
+      "defense": 18.1,
+      "specialTeams": 42.318
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Nevada",
+    "conference": "Western Athletic",
+    "fpi": 11.105,
+    "resumeRanks": {
+      "strengthOfRecord": 10,
+      "fpi": 27,
+      "averageWinProbability": 9,
+      "strengthOfSchedule": 91,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 23
+    },
+    "efficiencies": {
+      "overall": 74.217,
+      "offense": 84.311,
+      "defense": 48.747,
+      "specialTeams": 48.294
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Northern Illinois",
+    "conference": "Mid-American",
+    "fpi": 6.82,
+    "resumeRanks": {
+      "strengthOfRecord": 45,
+      "fpi": 41,
+      "averageWinProbability": 17,
+      "strengthOfSchedule": 116,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 50
+    },
+    "efficiencies": {
+      "overall": 65.23,
+      "offense": 72.075,
+      "defense": 51.123,
+      "specialTeams": 51.604
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Oregon",
+    "conference": "Pac-10",
+    "fpi": 28.232,
+    "resumeRanks": {
+      "strengthOfRecord": 3,
+      "fpi": 1,
+      "averageWinProbability": 11,
+      "strengthOfSchedule": 24,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 9
+    },
+    "efficiencies": {
+      "overall": 87.203,
+      "offense": 81.209,
+      "defense": 83.18,
+      "specialTeams": 48.185
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Purdue",
+    "conference": "Big Ten",
+    "fpi": -5.459,
+    "resumeRanks": {
+      "strengthOfRecord": 84,
+      "fpi": 82,
+      "averageWinProbability": 79,
+      "strengthOfSchedule": 58,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 71
+    },
+    "efficiencies": {
+      "overall": 36.792,
+      "offense": 23.453,
+      "defense": 52.161,
+      "specialTeams": 60.238
+    }
+  },
+  {
+    "year": 2010,
+    "team": "SMU",
+    "conference": "Conference USA",
+    "fpi": -2.25,
+    "resumeRanks": {
+      "strengthOfRecord": 78,
+      "fpi": 73,
+      "averageWinProbability": 80,
+      "strengthOfSchedule": 83,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 93
+    },
+    "efficiencies": {
+      "overall": 46.233,
+      "offense": 48.807,
+      "defense": 51.103,
+      "specialTeams": 31.115
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Southern Miss",
+    "conference": "Conference USA",
+    "fpi": 1.611,
+    "resumeRanks": {
+      "strengthOfRecord": 70,
+      "fpi": 62,
+      "averageWinProbability": 30,
+      "strengthOfSchedule": 104,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 51
+    },
+    "efficiencies": {
+      "overall": 51.651,
+      "offense": 51.28,
+      "defense": 45.415,
+      "specialTeams": 64.937
+    }
+  },
+  {
+    "year": 2010,
+    "team": "South Carolina",
+    "conference": "SEC",
+    "fpi": 16.619,
+    "resumeRanks": {
+      "strengthOfRecord": 19,
+      "fpi": 15,
+      "averageWinProbability": 24,
+      "strengthOfSchedule": 5,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 10
+    },
+    "efficiencies": {
+      "overall": 78.352,
+      "offense": 74.967,
+      "defense": 74.689,
+      "specialTeams": 40.464
+    }
+  },
+  {
+    "year": 2010,
+    "team": "TCU",
+    "conference": "Mountain West",
+    "fpi": 24.783,
+    "resumeRanks": {
+      "strengthOfRecord": 4,
+      "fpi": 5,
+      "averageWinProbability": 2,
+      "strengthOfSchedule": 79,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 4
+    },
+    "efficiencies": {
+      "overall": 88.128,
+      "offense": 79.746,
+      "defense": 83.946,
+      "specialTeams": 63.125
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Tennessee",
+    "conference": "SEC",
+    "fpi": 6.363,
+    "resumeRanks": {
+      "strengthOfRecord": 53,
+      "fpi": 43,
+      "averageWinProbability": 51,
+      "strengthOfSchedule": 33,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 34
+    },
+    "efficiencies": {
+      "overall": 57.905,
+      "offense": 54.69,
+      "defense": 58.407,
+      "specialTeams": 48.644
+    }
+  },
+  {
+    "year": 2010,
+    "team": "UTEP",
+    "conference": "Conference USA",
+    "fpi": -10.087,
+    "resumeRanks": {
+      "strengthOfRecord": 96,
+      "fpi": 98,
+      "averageWinProbability": 67,
+      "strengthOfSchedule": 112,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 94
+    },
+    "efficiencies": {
+      "overall": 30.975,
+      "offense": 39.495,
+      "defense": 25.291,
+      "specialTeams": 68.556
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Texas Tech",
+    "conference": "Big 12",
+    "fpi": 5.15,
+    "resumeRanks": {
+      "strengthOfRecord": 37,
+      "fpi": 50,
+      "averageWinProbability": 56,
+      "strengthOfSchedule": 52,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 47
+    },
+    "efficiencies": {
+      "overall": 56.393,
+      "offense": 62.54,
+      "defense": 49.792,
+      "specialTeams": 42.187
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Toledo",
+    "conference": "Mid-American",
+    "fpi": -6.85,
+    "resumeRanks": {
+      "strengthOfRecord": 67,
+      "fpi": 89,
+      "averageWinProbability": 52,
+      "strengthOfSchedule": 97,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 77
+    },
+    "efficiencies": {
+      "overall": 46.15,
+      "offense": 37.85,
+      "defense": 60.876,
+      "specialTeams": 35.376
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "fpi": -3.93,
+    "resumeRanks": {
+      "strengthOfRecord": 73,
+      "fpi": 78,
+      "averageWinProbability": 38,
+      "strengthOfSchedule": 114,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 73
+    },
+    "efficiencies": {
+      "overall": 42.806,
+      "offense": 44.455,
+      "defense": 41.503,
+      "specialTeams": 56.455
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Tulane",
+    "conference": "Conference USA",
+    "fpi": -17.293,
+    "resumeRanks": {
+      "strengthOfRecord": 103,
+      "fpi": 111,
+      "averageWinProbability": 100,
+      "strengthOfSchedule": 96,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 109
+    },
+    "efficiencies": {
+      "overall": 21.426,
+      "offense": 30.384,
+      "defense": 32.132,
+      "specialTeams": 18.822
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Western Michigan",
+    "conference": "Mid-American",
+    "fpi": -2.997,
+    "resumeRanks": {
+      "strengthOfRecord": 92,
+      "fpi": 75,
+      "averageWinProbability": 41,
+      "strengthOfSchedule": 115,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 79
+    },
+    "efficiencies": {
+      "overall": 42.154,
+      "offense": 37.685,
+      "defense": 43.813,
+      "specialTeams": 68.677
+    }
+  },
+  {
+    "year": 2010,
+    "team": "Wyoming",
+    "conference": "Mountain West",
+    "fpi": -9.116,
+    "resumeRanks": {
+      "strengthOfRecord": 100,
+      "fpi": 96,
+      "averageWinProbability": 93,
+      "strengthOfSchedule": 66,
+      "remainingStrengthOfSchedule": null,
+      "gameControl": 88
+    },
+    "efficiencies": {
+      "overall": 28.998,
+      "offense": 32.424,
+      "defense": 31.958,
+      "specialTeams": 53.63
+    }
+  }
+]
