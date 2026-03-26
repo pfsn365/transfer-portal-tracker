@@ -92,11 +92,13 @@ const cfbTeams: Record<string, string> = {
   'charlotte': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CLT.png',
   'east carolina': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ECU.png',
   'fau': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/FAU.png',
+  'florida atlantic': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/FAU.png',
   'memphis': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MEM.png',
   'navy': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NAVY.png',
   'north texas': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UNT.png',
   'rice': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/RICE.png',
   'usf': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/USF.png',
+  'south florida': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/USF.png',
   'temple': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TEM.png',
   'tulane': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TULN.png',
   'tulsa': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TLSA.png',
@@ -134,6 +136,7 @@ const cfbTeams: Record<string, string> = {
   'louisiana-monroe': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ULM.png',
   'ul-monroe': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ULM.png',
   'ulm': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ULM.png',
+  'ul monroe': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ULM.png',
   'marshall': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MRSH.png',
   'old dominion': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ODU.png',
   'south alabama': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/USA.png',
@@ -160,10 +163,12 @@ const cfbTeams: Record<string, string> = {
   'new mexico state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NMSU.png',
   'sam houston': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SHSU.png',
   'utep': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UTEP.png',
+  'texas-el paso': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UTEP.png',
   'western kentucky': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/WKU.png',
 
   // Independents
   'connecticut': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CONN.png',
+  'uconn': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CONN.png',
   'notre dame': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ND.png',
 
   // MAC
@@ -347,6 +352,16 @@ export function getTeamLogo(teamName: string): string {
   for (const key of sortedKeys) {
     if (team.startsWith(key + ' ') || team === key) {
       return cfbTeams[key]
+    }
+  }
+
+  // Try stripping the last word (mascot) progressively
+  // e.g., "Delaware Blue Hens" -> "delaware blue" -> "delaware"
+  const words = team.split(' ')
+  for (let i = words.length - 1; i >= 1; i--) {
+    const partial = words.slice(0, i).join(' ')
+    if (cfbTeams[partial]) {
+      return cfbTeams[partial]
     }
   }
 

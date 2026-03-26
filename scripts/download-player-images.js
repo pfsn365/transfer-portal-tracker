@@ -10,7 +10,7 @@ const path = require('path');
 const https = require('https');
 
 const PLAYER_IMAGES_DIR = path.join(__dirname, '../public/player-images');
-const TRANSFER_PORTAL_API = 'https://transfer-portal-tracker.vercel.app/cfb-hq/api/transfer-portal';
+const TRANSFER_PORTAL_API = process.env.PORTAL_API || 'https://transfer-portal-tracker.vercel.app/cfb-hq/api/transfer-portal';
 
 // Create slug from player name (same as in PlayerTable.tsx)
 function createPlayerSlug(name) {

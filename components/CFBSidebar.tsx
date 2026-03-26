@@ -50,6 +50,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
     {
       label: 'Season',
       items: [
+        { title: 'CFB Articles', url: '/articles', external: false },
         { title: 'Spring Game Schedule', url: '/spring-games', external: false },
         { title: 'Schedule', url: '/schedule', external: false },
         { title: 'Standings', url: '/standings', external: false },
@@ -62,7 +63,9 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
       label: 'Postseason & Rankings',
       items: [
         { title: 'Postseason HQ', url: '/postseason', external: false },
+        { title: 'CFB Draft History', url: '/draft-history', external: false },
         { title: 'Power Rankings Builder', url: '/power-rankings-builder', external: false },
+        { title: 'Player Rankings Builder', url: '/player-rankings-builder', external: false },
         { title: 'Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
       ],
     },

@@ -451,22 +451,22 @@ export default function CFBHomePageContent() {
                   </div>
                 </Link>
 
-                {/* Postseason / Playoff */}
+                {/* Player Rankings Builder */}
                 <Link
-                  href="/postseason"
+                  href="/player-rankings-builder"
                   className="group relative bg-white rounded-xl p-6 sm:p-8 border-l-4 border-l-[#0050A0] border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col h-full"
                 >
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-2">
-                    CFB Playoff & Postseason
+                    Player Rankings Builder
                   </h3>
                   <p className="text-gray-600 text-sm mb-5">
-                    College Football Playoff bracket, bowl games, and champions
+                    Build and share your own CFB player rankings
                   </p>
                   <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-lg p-6 text-center flex-grow flex flex-col justify-center min-h-[80px]">
-                    <p className="text-lg font-semibold text-gray-700">Bracket & Bowl Games</p>
+                    <p className="text-lg font-semibold text-gray-700">Rank Your Top Players</p>
                   </div>
                   <div className="mt-5 flex items-center text-[#0050A0]">
-                    <span className="text-sm font-medium group-hover:underline">View Postseason</span>
+                    <span className="text-sm font-medium group-hover:underline">Start Ranking</span>
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -474,8 +474,26 @@ export default function CFBHomePageContent() {
                 </Link>
               </div>
 
-              {/* Standard Tier — 4 compact cards, horizontal scroll on mobile */}
+              {/* Standard Tier — compact cards, horizontal scroll on mobile */}
               <div className="flex overflow-x-auto scrollbar-hide gap-3 -mx-4 px-4 snap-x snap-mandatory pb-2 md:grid md:grid-cols-4 md:gap-4 md:mx-0 md:px-0 md:overflow-visible md:pb-0 md:snap-none">
+                <Link
+                  href="/postseason"
+                  className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
+                >
+                  <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
+                    Playoff & Postseason
+                  </h3>
+                  <p className="text-gray-500 text-xs mb-3 line-clamp-2">
+                    CFP bracket, bowl games, and champions
+                  </p>
+                  <div className="mt-auto flex items-center text-[#0050A0]">
+                    <span className="text-xs font-medium group-hover:underline">View Postseason</span>
+                    <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </Link>
+
                 <Link
                   href="/standings"
                   className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
@@ -547,6 +565,43 @@ export default function CFBHomePageContent() {
                     </svg>
                   </div>
                 </Link>
+
+                <Link
+                  href="/articles"
+                  className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
+                >
+                  <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
+                    Articles
+                  </h3>
+                  <p className="text-gray-500 text-xs mb-3 line-clamp-2">
+                    College football news, analysis, and features
+                  </p>
+                  <div className="mt-auto flex items-center text-[#0050A0]">
+                    <span className="text-xs font-medium group-hover:underline">Read Articles</span>
+                    <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </Link>
+
+                <Link
+                  href="/draft-history"
+                  className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
+                >
+                  <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
+                    NFL Draft History
+                  </h3>
+                  <p className="text-gray-500 text-xs mb-3 line-clamp-2">
+                    Historical NFL Draft picks by school and year
+                  </p>
+                  <div className="mt-auto flex items-center text-[#0050A0]">
+                    <span className="text-xs font-medium group-hover:underline">View History</span>
+                    <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </Link>
+
               </div>
             </div>
           </div>
