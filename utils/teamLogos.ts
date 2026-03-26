@@ -126,6 +126,7 @@ const cfbTeams: Record<string, string> = {
 
   // Sun Belt
   'appalachian state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/APP.png',
+  'app state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/APP.png',
   'arkansas state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/ARST.png',
   'coastal carolina': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CCU.png',
   'georgia southern': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/GASO.png',
@@ -326,8 +327,13 @@ const cfbTeams: Record<string, string> = {
   'stetson': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/STET.png',
 }
 
+// Normalize accented/special characters (e.g., "José" → "jose", "Hawai'i" → "hawaii")
+function normalize(str: string): string {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/['']/g, '');
+}
+
 export function getTeamLogo(teamName: string): string {
-  const team = teamName.toLowerCase().trim()
+  const team = normalize(teamName.toLowerCase().trim())
 
   // Try exact match first
   if (cfbTeams[team]) {

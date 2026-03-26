@@ -65,7 +65,6 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
         { title: 'Postseason HQ', url: '/postseason', external: false },
         { title: 'CFB Draft History', url: '/draft-history', external: false },
         { title: 'Power Rankings Builder', url: '/power-rankings-builder', external: false },
-        { title: 'Player Rankings Builder', url: '/player-rankings-builder', external: false },
         { title: 'Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
       ],
     },

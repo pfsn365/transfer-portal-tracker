@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import TransferPortalBanner from '@/components/TransferPortalBanner';
@@ -11,18 +10,6 @@ import { getApiPath } from '@/utils/api';
 import { fetcher, swrConfig } from '@/utils/swr';
 import { getTeamLogo } from '@/utils/teamLogos';
 import type { TransferPlayer } from '@/types/player';
-
-// Featured FBS teams (popular/successful programs)
-const FEATURED_TEAMS = [
-  { id: 'ohio-state-buckeyes', name: 'Ohio State', abbr: 'OSU', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/194.png' },
-  { id: 'alabama-crimson-tide', name: 'Alabama', abbr: 'ALA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/333.png' },
-  { id: 'georgia-bulldogs', name: 'Georgia', abbr: 'UGA', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/61.png' },
-  { id: 'texas-longhorns', name: 'Texas', abbr: 'TEX', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/251.png' },
-  { id: 'michigan-wolverines', name: 'Michigan', abbr: 'MICH', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/130.png' },
-  { id: 'usc-trojans', name: 'USC', abbr: 'USC', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/30.png' },
-  { id: 'notre-dame-fighting-irish', name: 'Notre Dame', abbr: 'ND', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/87.png' },
-  { id: 'oregon-ducks', name: 'Oregon', abbr: 'ORE', logo: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png' },
-];
 
 interface StatLeader {
   playerId: string;
@@ -41,7 +28,7 @@ const SECTIONS = [
   { id: 'transfer-portal', label: 'Transfer Portal' },
   { id: 'stat-leaders', label: 'Stat Leaders' },
   { id: 'tools', label: 'Tools' },
-  { id: 'teams', label: 'Teams' },
+  { id: 'articles', label: 'Articles' },
 ] as const;
 
 export default function CFBHomePageContent() {
@@ -59,6 +46,39 @@ export default function CFBHomePageContent() {
   const statLeaders = useMemo<CategoryData[]>(() => {
     return (statLeadersRaw?.categories || []).slice(0, 3);
   }, [statLeadersRaw]);
+
+  // Articles state
+  interface Article {
+    title: string;
+    link: string;
+    pubDate: string;
+    description: string;
+    featuredImage?: string;
+    author?: string;
+  }
+  const [latestArticles, setLatestArticles] = useState<Article[]>([]);
+  const [articlesLoading, setArticlesLoading] = useState(true);
+
+  const getRelativeTime = (dateString: string) => {
+    const now = new Date();
+    const date = new Date(dateString);
+    const diffMs = now.getTime() - date.getTime();
+    const diffHours = Math.floor(diffMs / 3600000);
+    const diffDays = Math.floor(diffMs / 86400000);
+    if (diffHours < 24) return `${diffHours}h ago`;
+    if (diffDays < 7) return `${diffDays}d ago`;
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  };
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(getApiPath(`api/proxy-rss?url=${encodeURIComponent('https://www.profootballnetwork.com/feed/cfb-feed/')}`), { signal: controller.signal })
+      .then(res => res.json())
+      .then(data => { setLatestArticles((data.articles || []).slice(0, 3)); })
+      .catch(() => {})
+      .finally(() => setArticlesLoading(false));
+    return () => controller.abort();
+  }, []);
 
   // Pill nav state
   const [activeSection, setActiveSection] = useState<string>(SECTIONS[0].id);
@@ -190,15 +210,11 @@ export default function CFBHomePageContent() {
             <div className="flex items-center gap-2.5 flex-1 min-w-0">
               <span className="text-gray-400 font-semibold text-xs w-4">{idx + 1}</span>
               {leader.teamLogo && (
-                <div className="w-5 h-5 relative flex-shrink-0">
-                  <Image
-                    src={leader.teamLogo}
-                    alt="Team"
-                    fill
-                    className="object-contain"
-                    unoptimized
-                  />
-                </div>
+                <img
+                  src={leader.teamLogo}
+                  alt="Team"
+                  className="w-5 h-5 object-contain flex-shrink-0"
+                />
               )}
               <span className="font-medium text-gray-900 truncate text-sm">{leader.name}</span>
             </div>
@@ -451,22 +467,22 @@ export default function CFBHomePageContent() {
                   </div>
                 </Link>
 
-                {/* Player Rankings Builder */}
+                {/* Postseason */}
                 <Link
-                  href="/player-rankings-builder"
+                  href="/postseason"
                   className="group relative bg-white rounded-xl p-6 sm:p-8 border-l-4 border-l-[#0050A0] border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col h-full"
                 >
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-2">
-                    Player Rankings Builder
+                    CFB Playoff & Postseason
                   </h3>
                   <p className="text-gray-600 text-sm mb-5">
-                    Build and share your own CFB player rankings
+                    College Football Playoff bracket, bowl games, and champions
                   </p>
                   <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-lg p-6 text-center flex-grow flex flex-col justify-center min-h-[80px]">
-                    <p className="text-lg font-semibold text-gray-700">Rank Your Top Players</p>
+                    <p className="text-lg font-semibold text-gray-700">Bracket & Bowl Games</p>
                   </div>
                   <div className="mt-5 flex items-center text-[#0050A0]">
-                    <span className="text-sm font-medium group-hover:underline">Start Ranking</span>
+                    <span className="text-sm font-medium group-hover:underline">View Postseason</span>
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -476,23 +492,6 @@ export default function CFBHomePageContent() {
 
               {/* Standard Tier — compact cards, horizontal scroll on mobile */}
               <div className="flex overflow-x-auto scrollbar-hide gap-3 -mx-4 px-4 snap-x snap-mandatory pb-2 md:grid md:grid-cols-4 md:gap-4 md:mx-0 md:px-0 md:overflow-visible md:pb-0 md:snap-none">
-                <Link
-                  href="/postseason"
-                  className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
-                >
-                  <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
-                    Playoff & Postseason
-                  </h3>
-                  <p className="text-gray-500 text-xs mb-3 line-clamp-2">
-                    CFP bracket, bowl games, and champions
-                  </p>
-                  <div className="mt-auto flex items-center text-[#0050A0]">
-                    <span className="text-xs font-medium group-hover:underline">View Postseason</span>
-                    <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </Link>
 
                 <Link
                   href="/standings"
@@ -549,50 +548,14 @@ export default function CFBHomePageContent() {
                 </Link>
 
                 <Link
-                  href="/players"
-                  className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
-                >
-                  <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
-                    CFB Player Pages
-                  </h3>
-                  <p className="text-gray-500 text-xs mb-3 line-clamp-2">
-                    Browse player profiles, stats & career info
-                  </p>
-                  <div className="mt-auto flex items-center text-[#0050A0]">
-                    <span className="text-xs font-medium group-hover:underline">Browse Players</span>
-                    <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </Link>
-
-                <Link
-                  href="/articles"
-                  className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
-                >
-                  <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
-                    Articles
-                  </h3>
-                  <p className="text-gray-500 text-xs mb-3 line-clamp-2">
-                    College football news, analysis, and features
-                  </p>
-                  <div className="mt-auto flex items-center text-[#0050A0]">
-                    <span className="text-xs font-medium group-hover:underline">Read Articles</span>
-                    <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </Link>
-
-                <Link
                   href="/draft-history"
                   className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
                 >
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
-                    NFL Draft History
+                    CFB Draft History
                   </h3>
                   <p className="text-gray-500 text-xs mb-3 line-clamp-2">
-                    Historical NFL Draft picks by school and year
+                    NFL Draft picks by college program since 1967
                   </p>
                   <div className="mt-auto flex items-center text-[#0050A0]">
                     <span className="text-xs font-medium group-hover:underline">View History</span>
@@ -608,59 +571,71 @@ export default function CFBHomePageContent() {
         </div>
       </section>
 
-      {/* Featured Teams Section */}
-      <div id="teams" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-8" style={{ scrollMarginTop: '100px' }}>
-        <div className="rounded-xl overflow-hidden border border-gray-200">
-          <div className="bg-[#0050A0] px-5 py-4">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl sm:text-[22px] font-bold text-white">Featured Teams</h2>
-              <Link href="/teams" className="hidden md:flex items-center gap-1 text-white/80 hover:text-white font-semibold text-sm transition-colors">
-                View All Teams →
-              </Link>
+      {/* Latest CFB Articles Section */}
+      <section id="articles" className="py-8 sm:py-10 lg:py-12" style={{ scrollMarginTop: '100px' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">Latest CFB Articles</h2>
+              <div className="w-12 h-1 bg-[#0050A0] rounded-full mt-2"></div>
             </div>
+            <Link href="/articles" className="text-[#0050A0] hover:text-[#003a75] font-semibold text-sm transition-colors">
+              View All Articles →
+            </Link>
           </div>
 
-          <div className="bg-white rounded-b-xl p-4 sm:p-6">
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-8 gap-4">
-              {FEATURED_TEAMS.map((team) => (
-                <Link
-                  key={team.id}
-                  href={`/teams/${team.id}`}
-                  className="group relative bg-gray-50 rounded-xl p-3 border border-gray-200 hover:border-[#0050A0] hover:bg-white transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col items-center justify-center aspect-square"
-                >
-                  <div className="relative w-12 h-12 sm:w-14 sm:h-14 mb-1">
-                    <Image
-                      src={team.logo}
-                      alt={team.name}
-                      fill
-                      className="object-contain"
-                      unoptimized
-                    />
+          {articlesLoading ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="bg-gray-50 rounded-lg overflow-hidden animate-pulse">
+                  <div className="w-full aspect-video bg-gray-200"></div>
+                  <div className="p-4">
+                    <div className="h-5 bg-gray-200 rounded w-3/4 mb-2"></div>
+                    <div className="h-4 bg-gray-200 rounded w-full mb-1"></div>
+                    <div className="h-4 bg-gray-200 rounded w-5/6"></div>
                   </div>
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors">
-                      {team.abbr}
-                    </div>
-                  </div>
-                </Link>
+                </div>
               ))}
             </div>
-
-            {/* View all teams button for mobile */}
-            <div className="mt-6 md:hidden text-center">
-              <Link
-                href="/teams"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0050A0] hover:bg-[#003a75] active:scale-[0.98] text-white font-medium rounded-lg transition-all cursor-pointer min-h-[44px]"
-              >
-                View All Teams
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+          ) : latestArticles.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {latestArticles.map((article, index) => (
+                <a
+                  key={`${article.link}-${index}`}
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                >
+                  {article.featuredImage ? (
+                    <div className="w-full aspect-video overflow-hidden bg-gray-200">
+                      <img
+                        src={article.featuredImage}
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-full aspect-video bg-gradient-to-br from-[#0050A0] to-[#003a75] flex items-center justify-center">
+                      <span className="text-white text-3xl font-bold opacity-30">PFSN</span>
+                    </div>
+                  )}
+                  <div className="p-4">
+                    <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] mb-2 line-clamp-2 transition-colors">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 line-clamp-2 mb-3">{article.description}</p>
+                    <div className="flex items-center justify-between text-xs text-gray-400">
+                      <span>{article.author}</span>
+                      <span>{getRelativeTime(article.pubDate)}</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
             </div>
-          </div>
+          ) : null}
         </div>
-      </div>
+      </section>
 
       <Footer currentPage="CFB" />
     </>
