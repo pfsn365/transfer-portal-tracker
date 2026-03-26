@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Footer from '@/components/Footer';
 import PowerRankingsSkeleton from '@/components/PowerRankingsSkeleton';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 import { getApiPath } from '@/utils/api';
 
 interface TeamWithRecord {
@@ -916,7 +917,7 @@ export default function PowerRankingsClient() {
 
     // Footer
     const footerY = canvasHeight - 64;
-    ctx.fillStyle = '#800000';
+    ctx.fillStyle = '#0050A0';
     ctx.fillRect(0, footerY, canvasWidth, 64);
     ctx.fillStyle = '#ffffff';
     ctx.font = '600 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
@@ -1063,7 +1064,7 @@ export default function PowerRankingsClient() {
         <header
           className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -1076,7 +1077,7 @@ export default function PowerRankingsClient() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
@@ -1088,8 +1089,8 @@ export default function PowerRankingsClient() {
                 onClick={() => setDivision('fbs')}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                   division === 'fbs'
-                    ? 'bg-[#800000] text-white'
-                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                    ? 'bg-[#0050A0] text-white'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0]'
                 }`}
               >
                 FBS
@@ -1098,8 +1099,8 @@ export default function PowerRankingsClient() {
                 onClick={() => setDivision('fcs')}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                   division === 'fcs'
-                    ? 'bg-[#800000] text-white'
-                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                    ? 'bg-[#0050A0] text-white'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0]'
                 }`}
               >
                 FCS
@@ -1128,7 +1129,7 @@ export default function PowerRankingsClient() {
                       onClick={() => setConferenceFilter(conf)}
                       className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                         conferenceFilter === conf
-                          ? 'bg-[#800000] text-white'
+                          ? 'bg-[#0050A0] text-white'
                           : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                       }`}
                     >
@@ -1349,7 +1350,7 @@ export default function PowerRankingsClient() {
                       <button
                         onClick={() => setShowExportMenu(!showExportMenu)}
                         disabled={isDownloading}
-                        className="px-3 py-2 text-sm bg-[#800000] hover:bg-[#600000] active:scale-[0.98] disabled:opacity-50 text-white rounded-lg font-medium flex items-center gap-1.5 transition-all cursor-pointer"
+                        className="px-3 py-2 text-sm bg-[#0050A0] hover:bg-[#003a75] active:scale-[0.98] disabled:opacity-50 text-white rounded-lg font-medium flex items-center gap-1.5 transition-all cursor-pointer"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -1494,7 +1495,7 @@ export default function PowerRankingsClient() {
 
               <div className="overflow-x-auto">
                 <table className="w-full" ref={tableRef}>
-                  <thead className="bg-[#800000] text-white">
+                  <thead className="bg-[#0050A0] text-white">
                     <tr>
                       {conferenceFilter === 'All' && (
                         <th className="pl-4 pr-2 py-3 w-10">
@@ -1534,8 +1535,8 @@ export default function PowerRankingsClient() {
                           onClick={() => setFocusedIndex(index)}
                           className={`border-b border-gray-200 transition-all ${!isMobile ? 'cursor-move' : ''} ${
                             draggedIndex === index ? 'opacity-50' : ''
-                          } ${dragOverIndex === index ? 'bg-red-100' : ''} ${
-                            isSelected ? 'bg-red-50' : isFocused ? 'bg-yellow-50' : 'hover:bg-gray-50'
+                          } ${dragOverIndex === index ? 'bg-blue-100' : ''} ${
+                            isSelected ? 'bg-blue-50' : isFocused ? 'bg-yellow-50' : 'hover:bg-gray-50'
                           }`}
                         >
                           {conferenceFilter === 'All' && (
@@ -1560,7 +1561,7 @@ export default function PowerRankingsClient() {
                                 autoFocus
                                 min={1}
                                 max={currentRankings.length}
-                                className="w-14 h-10 px-2 text-center text-lg font-bold border-2 border-[#800000] rounded-lg"
+                                className="w-14 h-10 px-2 text-center text-lg font-bold border-2 border-[#0050A0] rounded-lg"
                                 onClick={(e) => e.stopPropagation()}
                               />
                             ) : (
@@ -1786,7 +1787,7 @@ export default function PowerRankingsClient() {
                 value={addTeamSearch}
                 onChange={(e) => setAddTeamSearch(e.target.value)}
                 placeholder="Search for a team..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent"
                 autoFocus
               />
             </div>

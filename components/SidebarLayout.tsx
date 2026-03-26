@@ -32,10 +32,10 @@ export default function SidebarLayout({ children }: { children: React.ReactNode 
       {/* Desktop toggle button */}
       <button
         onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
-        className={`hidden lg:flex items-center justify-center fixed top-10 z-50 w-8 h-8 bg-black text-white transition-all duration-300 cursor-pointer hover:bg-gray-800 ${
+        className={`hidden lg:flex items-center justify-center fixed top-0 z-50 w-8 h-8 bg-black text-white transition-all duration-300 cursor-pointer hover:bg-gray-800 ${
           sidebarCollapsed
-            ? 'left-0 rounded-tr-md rounded-br-md'
-            : 'left-64 rounded-tr-md rounded-br-md'
+            ? 'left-0 rounded-br-md'
+            : 'left-64 rounded-br-md'
         }`}
         aria-label={sidebarCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
       >

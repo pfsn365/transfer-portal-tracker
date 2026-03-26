@@ -97,7 +97,7 @@ function CustomSchoolDropdown({
               <button
                 type="button"
                 onClick={() => handleTeamClick('All')}
-                className="w-full text-left px-3 py-2 text-base font-semibold text-[#800000] hover:bg-gray-50 bg-gray-50 sticky top-0 border-b border-gray-200 cursor-pointer"
+                className="w-full text-left px-3 py-2 text-base font-semibold text-[#0050A0] hover:bg-gray-50 bg-gray-50 sticky top-0 border-b border-gray-200 cursor-pointer"
               >
                 All Schools
               </button>
@@ -118,7 +118,7 @@ function CustomSchoolDropdown({
               <button
                 type="button"
                 onClick={handleBackClick}
-                className="w-full text-left px-3 py-2 text-base font-semibold text-[#800000] hover:bg-gray-50 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
+                className="w-full text-left px-3 py-2 text-base font-semibold text-[#0050A0] hover:bg-gray-50 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
               >
                 ← Back to Conferences
               </button>

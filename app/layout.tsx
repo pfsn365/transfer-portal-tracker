@@ -6,7 +6,6 @@ import VisiblTracking from '@/components/VisiblTracking';
 import VideoPlayerScript from '@/components/VideoPlayerScript';
 import CanonicalURL from '@/components/CanonicalURL';
 import StructuredData from '@/components/StructuredData';
-import CFBScoreTicker from '@/components/CFBScoreTicker';
 import SidebarLayout from '@/components/SidebarLayout';
 
 export const metadata: Metadata = {
@@ -139,7 +138,6 @@ export default function RootLayout({
         <CanonicalURL />
         <VideoPlayerScript />
         <StructuredData />
-        <CFBScoreTicker />
         <SidebarLayout>{children}</SidebarLayout>
       </body>
     </html>

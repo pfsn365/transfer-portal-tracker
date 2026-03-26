@@ -519,7 +519,7 @@ export default function HistoryTab({ team, teamColor }: HistoryTabProps) {
                 type="checkbox"
                 checked={showRankedOnly}
                 onChange={(e) => setShowRankedOnly(e.target.checked)}
-                className="rounded border-gray-300 text-[#800000] focus:ring-blue-500 cursor-pointer"
+                className="rounded border-gray-300 text-[#0050A0] focus:ring-blue-500 cursor-pointer"
               />
               Ranked seasons only
             </label>

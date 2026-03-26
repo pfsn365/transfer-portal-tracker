@@ -10,6 +10,7 @@ import { fetcher, swrConfig } from '@/utils/swr';
 import { hasCFPRankings, getHistoricalCFPPoll } from '@/data/cfp-historical';
 import { getTeamById } from '@/data/teams';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 interface RankedTeam {
   current: number;
@@ -84,7 +85,7 @@ export default function RankingsClient() {
         <header
           className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -100,7 +101,7 @@ export default function RankingsClient() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
@@ -115,8 +116,8 @@ export default function RankingsClient() {
                     onClick={() => setSelectedPoll(poll.name)}
                     className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer lg:rounded-lg lg:py-2 lg:font-semibold ${
                       selectedPoll === poll.name
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200 lg:bg-white lg:text-gray-700 lg:border lg:border-gray-300 lg:hover:border-[#800000] lg:hover:text-[#800000]'
+                        ? 'bg-[#0050A0] text-white'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200 lg:bg-white lg:text-gray-700 lg:border lg:border-gray-300 lg:hover:border-[#0050A0] lg:hover:text-[#0050A0]'
                     }`}
                   >
                     {poll.shortName || poll.name}
@@ -129,7 +130,7 @@ export default function RankingsClient() {
           {/* Loading State */}
           {loading && (
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <div className="px-4 py-3 bg-[#800000]">
+              <div className="px-4 py-3 bg-[#0050A0]">
                 <div className="h-6 bg-white/20 rounded w-32 animate-pulse"></div>
               </div>
               <div className="divide-y divide-gray-100">
@@ -162,7 +163,7 @@ export default function RankingsClient() {
           {!loading && !error && currentPoll && (
             <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
               {/* Poll Header */}
-              <div className="px-4 py-3 border-b border-gray-200 bg-[#800000]">
+              <div className="px-4 py-3 border-b border-gray-200 bg-[#0050A0]">
                 <h2 className="text-lg font-bold text-white">
                   {currentPoll.name}
                 </h2>
@@ -225,7 +226,7 @@ export default function RankingsClient() {
                               {(() => {
                                 const teamData = getTeamById(team.team.displayName || '');
                                 return teamData ? (
-                                  <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 hover:text-[#800000] hover:underline">
+                                  <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 hover:text-[#0050A0] hover:underline">
                                     {team.team.displayName}
                                   </Link>
                                 ) : (

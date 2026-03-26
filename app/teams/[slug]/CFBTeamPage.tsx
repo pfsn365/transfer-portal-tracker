@@ -19,6 +19,7 @@ import HistoryTab from '@/components/cfb-tabs/HistoryTab';
 import DraftTab from '@/components/cfb-tabs/DraftTab';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 interface CFBTeamPageProps {
   team: Team;
@@ -220,6 +221,7 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
         conferenceRank={conferenceRank || undefined}
         headCoach={headCoach || undefined}
       />
+      <TransferPortalBanner />
 
       <CFBNavigationTabs activeTab={activeTab} onTabChange={handleTabChange} team={team} teamColor={teamColor} />
 

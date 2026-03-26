@@ -7,6 +7,7 @@ import { getAllConferences, getTeamsByConference } from '@/data/teams';
 import { Conference } from '@/types/player';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import Pagination from '@/components/Pagination';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 interface Player {
   id: string;
@@ -117,7 +118,7 @@ function CustomSchoolDropdown({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#800000] focus:border-[#800000] bg-white text-gray-900 text-left flex items-center justify-between cursor-pointer"
+        className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0050A0] focus:border-[#0050A0] bg-white text-gray-900 text-left flex items-center justify-between cursor-pointer"
       >
         <span className="truncate">{displayText}</span>
         <svg className="w-4 h-4 ml-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -157,7 +158,7 @@ function CustomSchoolDropdown({
               <button
                 type="button"
                 onClick={handleBackClick}
-                className="w-full text-left px-3 py-2 text-base font-semibold text-[#800000] hover:bg-gray-100 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
+                className="w-full text-left px-3 py-2 text-base font-semibold text-[#0050A0] hover:bg-gray-100 sticky top-0 bg-white border-b border-gray-200 cursor-pointer"
               >
                 ← Back to Conferences
               </button>
@@ -304,7 +305,7 @@ export default function PlayersDirectoryClient() {
       <header
         className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -317,7 +318,7 @@ export default function PlayersDirectoryClient() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Content */}
         <div className="mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-7xl">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Player Directory</h2>
@@ -335,7 +336,7 @@ export default function PlayersDirectoryClient() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search by name, team, or position..."
-                  className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#800000] focus:border-[#800000]"
+                  className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0050A0] focus:border-[#0050A0]"
                 />
               </div>
 
@@ -359,7 +360,7 @@ export default function PlayersDirectoryClient() {
                   id="position"
                   value={selectedPosition}
                   onChange={(e) => setSelectedPosition(e.target.value)}
-                  className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#800000] focus:border-[#800000] cursor-pointer"
+                  className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0050A0] focus:border-[#0050A0] cursor-pointer"
                 >
                   {POSITIONS.map((pos) => (
                     <option key={pos.value} value={pos.value}>{pos.label}</option>
@@ -401,7 +402,7 @@ export default function PlayersDirectoryClient() {
                         <Link
                           key={`${player.teamId}-${player.slug}`}
                           href={`/players/${player.slug}`}
-                          className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-[#800000] hover:bg-white hover:shadow-md transition-all cursor-pointer"
+                          className="bg-gray-50 rounded-lg p-4 border border-gray-200 hover:border-[#0050A0] hover:bg-white hover:shadow-md transition-all cursor-pointer"
                         >
                           {/* Headshot */}
                           <div className="flex justify-center mb-3">

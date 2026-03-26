@@ -54,7 +54,14 @@
       "Bash(git remote add:*)",
       "Bash(git fetch:*)",
       "Bash(git branch:*)",
-      "Bash(npm ls:*)"
+      "Bash(npm ls:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(find:*)",
+      "Bash(cd:*)",
+      "Bash(rm:*)",
+      "Bash(npx kill-port:*)",
+      "WebFetch(domain:collegefootballdata.com)",
+      "WebFetch(domain:api.collegefootballdata.com)"
     ]
   }
 }

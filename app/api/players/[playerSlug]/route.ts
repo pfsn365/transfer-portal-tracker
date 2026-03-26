@@ -211,7 +211,7 @@ async function searchPlayerFallback(playerSlug: string): Promise<PlayerIndexEntr
     const teamData = allTeams.find((t) => t.slug === teamSlug);
 
     // Resolve team color: prefer our mapping, fall back to ESPN color
-    const espnColor = athleteTeam?.color ? `#${athleteTeam.color}` : '#800000';
+    const espnColor = athleteTeam?.color ? `#${athleteTeam.color}` : '#0050A0';
     const teamColor = teamData?.id ? getTeamColor(teamData.id) : espnColor;
 
     return {
@@ -518,7 +518,7 @@ export async function GET(
       : '';
 
     // Get team primary color using the same utility as team pages
-    const teamPrimaryColor = teamData?.id ? getTeamColor(teamData.id) : '#800000';
+    const teamPrimaryColor = teamData?.id ? getTeamColor(teamData.id) : '#0050A0';
 
     // Build player profile response
     const playerProfile = {

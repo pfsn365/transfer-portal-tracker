@@ -7,6 +7,7 @@ import PlayerTable from '@/components/PlayerTable';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 import ErrorMessage from '@/components/ErrorMessage';
 import TableSkeleton from '@/components/TableSkeleton';
 import Pagination from '@/components/Pagination';
@@ -35,7 +36,7 @@ export default function TransferPortalClient() {
   // Sorting state
   type SortField = 'name' | 'position' | 'class' | 'status' | 'rating' | 'formerSchool' | 'newSchool' | 'announcedDate' | 'commitDate';
   type SortDirection = 'asc' | 'desc';
-  const [sortField, setSortField] = useState<SortField | null>('announcedDate');
+  const [sortField, setSortField] = useState<SortField | null>('commitDate');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
   // Pagination state
@@ -314,6 +315,7 @@ export default function TransferPortalClient() {
     return (
       <>
         <Header />
+        <TransferPortalBanner />
 
           {/* Raptive Header Ad */}
           <RaptiveHeaderAd />
@@ -342,6 +344,7 @@ export default function TransferPortalClient() {
     return (
       <>
         <Header />
+        <TransferPortalBanner />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">All Transfer Portal Players</h2>
             <ErrorMessage message={error} onRetry={handleRetry} />
@@ -353,6 +356,7 @@ export default function TransferPortalClient() {
   return (
     <>
       <Header />
+      <TransferPortalBanner />
 
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />

@@ -11,8 +11,8 @@ export default function NotFound() {
       <PFNHeader />
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
-        <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-red-100 mb-8">
-          <span className="text-5xl font-bold text-red-600">404</span>
+        <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-blue-100 mb-8">
+          <span className="text-5xl font-bold text-blue-600">404</span>
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
@@ -26,7 +26,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/"
-            className="flex items-center gap-2 px-6 py-3 bg-[#800000] text-white rounded-lg font-medium hover:bg-[#600000] active:scale-[0.98] transition-all cursor-pointer min-h-[44px] min-w-[200px] justify-center"
+            className="flex items-center gap-2 px-6 py-3 bg-[#0050A0] text-white rounded-lg font-medium hover:bg-[#003a75] active:scale-[0.98] transition-all cursor-pointer min-h-[44px] min-w-[200px] justify-center"
           >
             <Home className="w-5 h-5" />
             Go to CFB HQ
@@ -44,11 +44,11 @@ export default function NotFound() {
         <div className="mt-16 pt-8 border-t border-gray-200">
           <p className="text-sm text-gray-500">
             Looking for something specific?{' '}
-            <Link href="/transfer-portal-tracker" className="text-[#800000] hover:text-[#600000] font-medium underline">
+            <Link href="/transfer-portal-tracker" className="text-[#0050A0] hover:text-[#003a75] font-medium underline">
               Search the transfer portal
             </Link>
             {' '}or{' '}
-            <Link href="/teams" className="text-[#800000] hover:text-[#600000] font-medium underline">
+            <Link href="/teams" className="text-[#0050A0] hover:text-[#003a75] font-medium underline">
               browse all teams
             </Link>
             .

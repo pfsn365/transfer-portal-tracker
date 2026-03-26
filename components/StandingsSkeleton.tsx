@@ -7,7 +7,7 @@ export default function StandingsSkeleton() {
           className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200"
         >
           {/* Conference Header Skeleton */}
-          <div className="px-4 py-3 border-b border-gray-200" style={{ backgroundColor: '#800000' }}>
+          <div className="px-4 py-3 border-b border-gray-200" style={{ backgroundColor: '#0050A0' }}>
             <div className="h-5 w-24 bg-white/30 rounded animate-pulse" />
           </div>
 

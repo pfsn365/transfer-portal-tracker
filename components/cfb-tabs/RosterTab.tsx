@@ -154,7 +154,7 @@ export default function RosterTab({ team, teamColor }: RosterTabProps) {
               placeholder="Search players..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent"
             />
           </div>
           {/* Position Filter */}
@@ -162,7 +162,7 @@ export default function RosterTab({ team, teamColor }: RosterTabProps) {
             <select
               value={selectedPosition}
               onChange={(e) => setSelectedPosition(e.target.value)}
-              className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white cursor-pointer"
+              className="w-full sm:w-auto px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white cursor-pointer"
             >
               <option value="All">All Positions</option>
               {positionOrder.filter(g => g !== 'Other').map(group => (
@@ -214,7 +214,7 @@ export default function RosterTab({ team, teamColor }: RosterTabProps) {
                               className="rounded-full object-cover"
                             />
                           )}
-                          <span className="font-medium text-gray-900 group-hover:text-[#800000] transition-colors">{player.name}</span>
+                          <span className="font-medium text-gray-900 group-hover:text-[#0050A0] transition-colors">{player.name}</span>
                         </Link>
                       </td>
                       <td className="px-4 py-3 text-sm text-gray-600">{player.position}</td>

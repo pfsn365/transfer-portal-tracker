@@ -11,6 +11,7 @@ import { fetcher, swrConfig } from '@/utils/swr';
 import { useLiveScores } from '@/hooks/useLiveScores';
 import { getTeamById } from '@/data/teams';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 interface GameLeader {
   name: string;
@@ -413,7 +414,7 @@ function ScheduleClientInner() {
         >
           {/* Bowl Game Name (shortened for compact view) */}
           {game.note && (
-            <div className="bg-[#800000] text-white px-2 py-1 text-center">
+            <div className="bg-[#0050A0] text-white px-2 py-1 text-center">
               <span className="text-[10px] font-bold uppercase tracking-wide">{shortenBowlName(game.note)}</span>
             </div>
           )}
@@ -483,7 +484,7 @@ function ScheduleClientInner() {
                           </div>
                         )}
                         <div className="min-w-0 flex-1">
-                          <div className="text-[9px] font-bold text-[#800000] uppercase">Passing</div>
+                          <div className="text-[9px] font-bold text-[#0050A0] uppercase">Passing</div>
                           <div className="font-semibold text-gray-900 truncate">{game.leaders.passing.name}</div>
                           <div className="text-gray-500">{game.leaders.passing.displayValue}</div>
                         </div>
@@ -503,7 +504,7 @@ function ScheduleClientInner() {
                           </div>
                         )}
                         <div className="min-w-0 flex-1">
-                          <div className="text-[9px] font-bold text-[#800000] uppercase">Rushing</div>
+                          <div className="text-[9px] font-bold text-[#0050A0] uppercase">Rushing</div>
                           <div className="font-semibold text-gray-900 truncate">{game.leaders.rushing.name}</div>
                           <div className="text-gray-500">{game.leaders.rushing.displayValue}</div>
                         </div>
@@ -523,7 +524,7 @@ function ScheduleClientInner() {
                           </div>
                         )}
                         <div className="min-w-0 flex-1">
-                          <div className="text-[9px] font-bold text-[#800000] uppercase">Receiving</div>
+                          <div className="text-[9px] font-bold text-[#0050A0] uppercase">Receiving</div>
                           <div className="font-semibold text-gray-900 truncate">{game.leaders.receiving.name}</div>
                           <div className="text-gray-500">{game.leaders.receiving.displayValue}</div>
                         </div>
@@ -566,7 +567,7 @@ function ScheduleClientInner() {
       >
         {/* Bowl Game / Event Name Banner */}
         {game.note && (
-          <div className="bg-gradient-to-r from-[#800000] to-[#a00000] text-white px-5 py-2 text-center">
+          <div className="bg-gradient-to-r from-[#0050A0] to-[#0060b8] text-white px-5 py-2 text-center">
             <span className="text-sm font-bold uppercase tracking-wide">{game.note}</span>
           </div>
         )}
@@ -594,7 +595,7 @@ function ScheduleClientInner() {
                     {(() => {
                       const awayTeamData = getTeamById(game.awayTeam.name);
                       return awayTeamData ? (
-                        <Link href={`/teams/${awayTeamData.slug}`} className="truncate hover:text-[#800000] hover:underline">
+                        <Link href={`/teams/${awayTeamData.slug}`} className="truncate hover:text-[#0050A0] hover:underline">
                           {game.awayTeam.name}
                         </Link>
                       ) : (
@@ -621,7 +622,7 @@ function ScheduleClientInner() {
                     {(() => {
                       const homeTeamData = getTeamById(game.homeTeam.name);
                       return homeTeamData ? (
-                        <Link href={`/teams/${homeTeamData.slug}`} className="truncate hover:text-[#800000] hover:underline">
+                        <Link href={`/teams/${homeTeamData.slug}`} className="truncate hover:text-[#0050A0] hover:underline">
                           {game.homeTeam.name}
                         </Link>
                       ) : (
@@ -717,7 +718,7 @@ function ScheduleClientInner() {
                         </div>
                       )}
                       <div className="min-w-0">
-                        <div className="text-[10px] font-bold text-[#800000] uppercase">Passing</div>
+                        <div className="text-[10px] font-bold text-[#0050A0] uppercase">Passing</div>
                         <div className="font-semibold text-gray-900 text-sm truncate">{game.leaders.passing.name}</div>
                         <div className="text-xs text-gray-600">{game.leaders.passing.displayValue}</div>
                       </div>
@@ -737,7 +738,7 @@ function ScheduleClientInner() {
                         </div>
                       )}
                       <div className="min-w-0">
-                        <div className="text-[10px] font-bold text-[#800000] uppercase">Rushing</div>
+                        <div className="text-[10px] font-bold text-[#0050A0] uppercase">Rushing</div>
                         <div className="font-semibold text-gray-900 text-sm truncate">{game.leaders.rushing.name}</div>
                         <div className="text-xs text-gray-600">{game.leaders.rushing.displayValue}</div>
                       </div>
@@ -757,7 +758,7 @@ function ScheduleClientInner() {
                         </div>
                       )}
                       <div className="min-w-0">
-                        <div className="text-[10px] font-bold text-[#800000] uppercase">Receiving</div>
+                        <div className="text-[10px] font-bold text-[#0050A0] uppercase">Receiving</div>
                         <div className="font-semibold text-gray-900 text-sm truncate">{game.leaders.receiving.name}</div>
                         <div className="text-xs text-gray-600">{game.leaders.receiving.displayValue}</div>
                       </div>
@@ -818,7 +819,7 @@ function ScheduleClientInner() {
         <header
           className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -831,7 +832,7 @@ function ScheduleClientInner() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
@@ -845,7 +846,7 @@ function ScheduleClientInner() {
                   onClick={() => setViewMode('daily')}
                   className={`px-4 py-2 rounded-md font-medium text-sm transition-all active:scale-[0.98] cursor-pointer ${
                     viewMode === 'daily'
-                      ? 'bg-white text-[#800000] shadow-sm'
+                      ? 'bg-white text-[#0050A0] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -855,7 +856,7 @@ function ScheduleClientInner() {
                   onClick={() => setViewMode('weekly')}
                   className={`px-4 py-2 rounded-md font-medium text-sm transition-all active:scale-[0.98] cursor-pointer ${
                     viewMode === 'weekly'
-                      ? 'bg-white text-[#800000] shadow-sm'
+                      ? 'bg-white text-[#0050A0] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -865,7 +866,7 @@ function ScheduleClientInner() {
                   onClick={() => setViewMode('monthly')}
                   className={`px-4 py-2 rounded-md font-medium text-sm transition-all active:scale-[0.98] cursor-pointer ${
                     viewMode === 'monthly'
-                      ? 'bg-white text-[#800000] shadow-sm'
+                      ? 'bg-white text-[#0050A0] shadow-sm'
                       : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
@@ -881,8 +882,8 @@ function ScheduleClientInner() {
                     onClick={() => setDivision('fbs')}
                     className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fbs'
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
+                        ? 'bg-[#0050A0] text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0]'
                     }`}
                   >
                     FBS
@@ -891,8 +892,8 @@ function ScheduleClientInner() {
                     onClick={() => setDivision('fcs')}
                     className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fcs'
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
+                        ? 'bg-[#0050A0] text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0]'
                     }`}
                   >
                     FCS
@@ -903,7 +904,7 @@ function ScheduleClientInner() {
                 <select
                   value={selectedConference}
                   onChange={(e) => setSelectedConference(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800000] text-gray-900 bg-white cursor-pointer text-sm"
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0050A0] text-gray-900 bg-white cursor-pointer text-sm"
                 >
                   {currentConferences.map((conf) => (
                     <option key={conf} value={conf}>{conf}</option>
@@ -917,7 +918,7 @@ function ScheduleClientInner() {
                     placeholder="Search team..."
                     value={teamSearch}
                     onChange={(e) => setTeamSearch(e.target.value)}
-                    className="pl-8 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800000] text-gray-900 bg-white text-sm w-36 sm:w-44"
+                    className="pl-8 pr-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0050A0] text-gray-900 bg-white text-sm w-36 sm:w-44"
                   />
                   <svg
                     className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
@@ -943,7 +944,7 @@ function ScheduleClientInner() {
                 {!isToday && (
                   <button
                     onClick={goToToday}
-                    className="px-3 py-2 bg-[#800000] text-white rounded-lg font-medium text-sm hover:bg-[#600000] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
+                    className="px-3 py-2 bg-[#0050A0] text-white rounded-lg font-medium text-sm hover:bg-[#003a75] active:scale-[0.98] transition-all cursor-pointer flex items-center gap-1.5"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -974,8 +975,8 @@ function ScheduleClientInner() {
                     type="date"
                     value={selectedDate}
                     onChange={(e) => setSelectedDate(e.target.value)}
-                    className={`px-3 sm:px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800000] text-gray-900 text-sm sm:text-base flex-1 max-w-[200px] min-h-[44px] ${
-                      isToday ? 'border-[#800000] bg-red-50 ring-2 ring-[#800000]' : 'border-gray-300'
+                    className={`px-3 sm:px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0050A0] text-gray-900 text-sm sm:text-base flex-1 max-w-[200px] min-h-[44px] ${
+                      isToday ? 'border-[#0050A0] bg-blue-50 ring-2 ring-[#0050A0]' : 'border-gray-300'
                     }`}
                   />
 
@@ -1091,7 +1092,7 @@ function ScheduleClientInner() {
             <>
               {loading ? (
                 <div className="flex items-center justify-center py-12">
-                  <div className="w-8 h-8 border-4 border-[#800000] border-t-transparent rounded-full animate-spin" />
+                  <div className="w-8 h-8 border-4 border-[#0050A0] border-t-transparent rounded-full animate-spin" />
                   <span className="ml-3 text-gray-600">Loading schedule...</span>
                 </div>
               ) : error ? (
@@ -1151,8 +1152,8 @@ function ScheduleClientInner() {
                       const isDayToday = day === getLocalDateString();
 
                       return (
-                        <div key={day} className={`bg-white rounded-xl border shadow-sm overflow-hidden ${isDayToday ? 'border-[#800000] ring-2 ring-[#800000]' : 'border-gray-200'}`}>
-                          <div className={`p-3 text-center border-b ${isDayToday ? 'bg-red-50 border-[#800000]' : 'bg-gray-50 border-gray-200'}`}>
+                        <div key={day} className={`bg-white rounded-xl border shadow-sm overflow-hidden ${isDayToday ? 'border-[#0050A0] ring-2 ring-[#0050A0]' : 'border-gray-200'}`}>
+                          <div className={`p-3 text-center border-b ${isDayToday ? 'bg-blue-50 border-[#0050A0]' : 'bg-gray-50 border-gray-200'}`}>
                             <div className="text-xs font-semibold text-gray-600 uppercase">
                               {dayDate.toLocaleDateString('en-US', { weekday: 'short' })}
                             </div>
@@ -1255,11 +1256,11 @@ function ScheduleClientInner() {
                             }}
                             className={`aspect-square border-r border-b p-1 sm:p-2 md:p-3 hover:shadow-md transition-all cursor-pointer ${
                               gameCount > 0 ? 'bg-white hover:bg-gray-50' : 'bg-gray-50 hover:bg-gray-100'
-                            } ${isDayToday ? 'ring-2 ring-[#800000] ring-inset' : 'border-gray-200'}`}
+                            } ${isDayToday ? 'ring-2 ring-[#0050A0] ring-inset' : 'border-gray-200'}`}
                           >
                             <div className="h-full flex flex-col">
                               <div className={`text-sm sm:text-base md:text-lg font-bold mb-1 sm:mb-2 ${
-                                isDayToday ? 'text-[#800000]' :
+                                isDayToday ? 'text-[#0050A0]' :
                                 gameCount > 0 ? 'text-gray-900' : 'text-gray-400'
                               }`}>
                                 {date.getDate()}
@@ -1329,7 +1330,7 @@ export default function ScheduleClient() {
       <div className="flex h-screen bg-gray-50">
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#800000] mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#0050A0] mx-auto mb-4"></div>
             <p className="text-gray-600">Loading schedule...</p>
           </div>
         </div>

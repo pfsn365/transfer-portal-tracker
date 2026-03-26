@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 interface PlayerProfile {
   id: string;
@@ -181,7 +182,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
         <div className="flex items-center justify-center py-24">
           <div className="text-center">
             <svg
-              className="animate-spin h-12 w-12 mx-auto mb-4 text-[#800000]"
+              className="animate-spin h-12 w-12 mx-auto mb-4 text-[#0050A0]"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -253,7 +254,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
   return (
     <>
       {/* Hero Section with Team Primary Color */}
-      <div className="text-white" style={{ backgroundColor: player.team?.primaryColor || '#800000' }}>
+      <div className="text-white" style={{ backgroundColor: player.team?.primaryColor || '#0050A0' }}>
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center gap-5">
             {/* Player Headshot with circular white background */}
@@ -308,6 +309,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
           </div>
         </div>
       </div>
+      <TransferPortalBanner />
 
       {/* Raptive Header Ad */}
       <RaptiveHeaderAd />
@@ -375,7 +377,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                     id="season-select"
                     value={selectedSeason}
                     onChange={(e) => setSelectedSeason(e.target.value)}
-                    className="px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#800000] focus:border-[#800000]"
+                    className="px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] focus:border-[#0050A0]"
                   >
                     {player.availableSeasons.map((season) => (
                       <option key={season.value} value={season.value}>
@@ -389,7 +391,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
             {gameLogLoading ? (
               <div className="flex items-center justify-center py-12">
                 <svg
-                  className="animate-spin h-8 w-8 text-[#800000]"
+                  className="animate-spin h-8 w-8 text-[#0050A0]"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -491,7 +493,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                       onClick={() => setSelectedStatCategory(cat.category)}
                       className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all active:scale-[0.98] cursor-pointer ${
                         selectedStatCategory === cat.category
-                          ? 'bg-[#800000] text-white'
+                          ? 'bg-[#0050A0] text-white'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
@@ -578,7 +580,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
         <div className="mt-6">
           <Link
             href="/players"
-            className="inline-flex items-center gap-2 text-[#800000] hover:text-[#600000] font-medium"
+            className="inline-flex items-center gap-2 text-[#0050A0] hover:text-[#003a75] font-medium"
           >
             ← Back to All Players
           </Link>

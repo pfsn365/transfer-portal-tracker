@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 import { getApiPath } from '@/utils/api';
 import { getTeamById } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
@@ -144,7 +145,7 @@ export default function SpringGamesClient() {
       <header
         className="text-white shadow-lg"
         style={{
-          background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+          background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
         }}
       >
         <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-3 sm:pb-4 md:pb-5 lg:pb-6">
@@ -156,7 +157,7 @@ export default function SpringGamesClient() {
           </p>
         </div>
       </header>
-
+      <TransferPortalBanner />
       {/* Raptive Header Ad */}
       <RaptiveHeaderAd />
 
@@ -195,8 +196,8 @@ export default function SpringGamesClient() {
                     onClick={() => setViewMode(mode)}
                     className={`px-3 py-2 rounded-lg font-semibold text-sm transition-all cursor-pointer ${
                       viewMode === mode
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                        ? 'bg-[#0050A0] text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0]'
                     }`}
                   >
                     {label}
@@ -208,7 +209,7 @@ export default function SpringGamesClient() {
               <select
                 value={selectedConference}
                 onChange={(e) => setSelectedConference(e.target.value)}
-                className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
+                className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
               >
                 <option value="all">All Conferences</option>
                 {conferences.map((conf) => (
@@ -226,7 +227,7 @@ export default function SpringGamesClient() {
                 placeholder="Search team..."
                 value={teamSearch}
                 onChange={(e) => setTeamSearch(e.target.value)}
-                className="pl-9 pr-8 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 text-sm w-full lg:w-56"
+                className="pl-9 pr-8 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white text-gray-900 text-sm w-full lg:w-56"
               />
               <svg
                 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500"
@@ -288,7 +289,7 @@ export default function SpringGamesClient() {
                 className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200"
               >
                 {/* Conference Header */}
-                <div className="px-4 py-3 border-b border-gray-200 bg-[#800000] flex items-center justify-between">
+                <div className="px-4 py-3 border-b border-gray-200 bg-[#0050A0] flex items-center justify-between">
                   <h2 className="text-lg font-bold text-white">
                     {CONFERENCE_DISPLAY[conference] || conference}
                   </h2>
@@ -347,7 +348,7 @@ export default function SpringGamesClient() {
                                   {teamData ? (
                                     <Link
                                       href={`/teams/${teamData.slug}`}
-                                      className="font-medium text-gray-900 text-sm hover:text-[#800000] hover:underline"
+                                      className="font-medium text-gray-900 text-sm hover:text-[#0050A0] hover:underline"
                                     >
                                       {game.program}
                                     </Link>

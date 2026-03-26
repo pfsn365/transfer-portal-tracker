@@ -10,6 +10,7 @@ import { getApiPath } from '@/utils/api';
 import { fetcher, swrConfig } from '@/utils/swr';
 import { getTeamById } from '@/data/teams';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 interface StandingsTeam {
   id: string;
@@ -167,7 +168,7 @@ export default function StandingsClient() {
         <header
           className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -183,7 +184,7 @@ export default function StandingsClient() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
@@ -198,8 +199,8 @@ export default function StandingsClient() {
                     onClick={() => setDivision('fbs')}
                     className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fbs'
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                        ? 'bg-[#0050A0] text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0]'
                     }`}
                   >
                     FBS
@@ -208,8 +209,8 @@ export default function StandingsClient() {
                     onClick={() => setDivision('fcs')}
                     className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fcs'
-                        ? 'bg-[#800000] text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000] hover:text-[#800000]'
+                        ? 'bg-[#0050A0] text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0]'
                     }`}
                   >
                     FCS
@@ -221,7 +222,7 @@ export default function StandingsClient() {
                   id="conference-filter"
                   value={selectedConference}
                   onChange={(e) => setSelectedConference(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
                 >
                   <option value="all">All Conferences</option>
                   {standings.map((conf) => (
@@ -235,7 +236,7 @@ export default function StandingsClient() {
                 <select
                   value={sortOption}
                   onChange={(e) => setSortOption(e.target.value as SortOption)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
                 >
                   <option value="conference">Sort: Conference Record</option>
                   <option value="overall">Sort: Overall Record</option>
@@ -250,7 +251,7 @@ export default function StandingsClient() {
                   placeholder="Search team..."
                   value={teamSearch}
                   onChange={(e) => setTeamSearch(e.target.value)}
-                  className="pl-9 pr-8 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 text-sm w-full lg:w-56"
+                  className="pl-9 pr-8 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white text-gray-900 text-sm w-full lg:w-56"
                 />
                 <svg
                   className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500"
@@ -299,7 +300,7 @@ export default function StandingsClient() {
                   className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200"
                 >
                   {/* Conference Header */}
-                  <div className="px-4 py-3 border-b border-gray-200" style={{ backgroundColor: '#800000' }}>
+                  <div className="px-4 py-3 border-b border-gray-200" style={{ backgroundColor: '#0050A0' }}>
                     <h2 className="text-lg font-bold text-white">
                       {conference.name}
                     </h2>
@@ -379,7 +380,7 @@ export default function StandingsClient() {
                                     {(() => {
                                       const teamData = getTeamById(team.name);
                                       return teamData ? (
-                                        <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 truncate text-sm hover:text-[#800000] hover:underline">
+                                        <Link href={`/teams/${teamData.slug}`} className="font-medium text-gray-900 truncate text-sm hover:text-[#0050A0] hover:underline">
                                           {team.name}
                                         </Link>
                                       ) : (

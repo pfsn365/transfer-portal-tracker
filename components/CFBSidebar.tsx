@@ -93,7 +93,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
             onClick={closeMobile ? () => setIsExpanded(false) : undefined}
             className={`relative flex items-center px-3 py-1.5 mx-1 rounded-md transition-all duration-200 ${
               isActive
-                ? 'bg-[#800000] text-white'
+                ? 'bg-[#0050A0] text-white'
                 : 'text-gray-400 hover:bg-gray-800/50 hover:text-white'
             }`}
           >
@@ -197,7 +197,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                     onClick={() => setIsExpanded(false)}
                     className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                       isHomePage
-                        ? 'bg-[#800000] text-white'
+                        ? 'bg-[#0050A0] text-white'
                         : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
                     }`}
                   >
@@ -215,7 +215,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                     onClick={() => setIsExpanded(false)}
                     className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                       isActivePage('/transfer-portal-tracker')
-                        ? 'bg-[#800000] text-white'
+                        ? 'bg-[#0050A0] text-white'
                         : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
                     }`}
                   >
@@ -233,7 +233,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                     onClick={() => setIsExpanded(false)}
                     className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                       isBrowseTeamsPage
-                        ? 'bg-[#800000] text-white'
+                        ? 'bg-[#0050A0] text-white'
                         : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
                     }`}
                   >
@@ -289,7 +289,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               href="/"
               className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                 isHomePage
-                  ? 'bg-[#800000] text-white'
+                  ? 'bg-[#0050A0] text-white'
                   : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
               }`}
             >
@@ -306,7 +306,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               href="/transfer-portal-tracker"
               className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                 isActivePage('/transfer-portal-tracker')
-                  ? 'bg-[#800000] text-white'
+                  ? 'bg-[#0050A0] text-white'
                   : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
               }`}
             >
@@ -323,7 +323,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
               href="/teams"
               className={`relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 ${
                 isBrowseTeamsPage
-                  ? 'bg-[#800000] text-white'
+                  ? 'bg-[#0050A0] text-white'
                   : 'text-gray-100 hover:bg-gray-800/50 hover:text-white'
               }`}
             >

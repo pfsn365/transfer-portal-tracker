@@ -3,7 +3,7 @@ export default function Header() {
     <header
       className="text-white shadow-lg"
       style={{
-        background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+        background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
         boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
       }}
     >

@@ -116,7 +116,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
   const [watchlist, setWatchlist] = useState<string[]>([]);
 
   // Impact grade info tooltip state
-  const [showImpactInfo, setShowImpactInfo] = useState(false);
+
 
   // Load watchlist on mount
   useEffect(() => {
@@ -189,31 +189,13 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                 <SortableHeader field="newSchool" centered>New School</SortableHeader>
                 <SortableHeader field="rating" centered>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="relative">
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setShowImpactInfo(!showImpactInfo);
-                        }}
-                        className="inline-flex items-center justify-center w-4 h-4 rounded-full hover:bg-gray-200 transition-colors cursor-pointer"
-                        aria-label="Impact grade information"
-                      >
-                        <Info className="w-3 h-3 text-gray-500" />
-                      </button>
-                      {showImpactInfo && (
-                        <>
-                          <div
-                            className="fixed inset-0 z-10"
-                            onClick={() => setShowImpactInfo(false)}
-                          />
-                          <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-20 w-56 p-3 bg-gray-900 text-white text-xs rounded-lg shadow-lg">
-                            <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45" />
-                            Grades are comparable within position groups but not across
-                          </div>
-                        </>
-                      )}
-                    </div>
+                    <span
+                      className="relative inline-flex items-center justify-center w-4 h-4 rounded-full hover:bg-gray-200 transition-colors cursor-help peer"
+                      aria-label="Impact grade information"
+                      title="Grades are comparable within position groups but not across"
+                    >
+                      <Info className="w-3 h-3 text-gray-500" />
+                    </span>
                     <span>Impact Grade</span>
                   </div>
                 </SortableHeader>
@@ -251,7 +233,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                       />
                       <div className="ml-4">
                         {!validPlayerSlugs || validPlayerSlugs.has(createPlayerSlug(player.name)) ? (
-                          <Link href={`/players/${createPlayerSlug(player.name)}`} className="text-sm font-bold text-gray-900 hover:text-[#800000] transition-colors">
+                          <Link href={`/players/${createPlayerSlug(player.name)}`} className="text-sm font-bold text-gray-900 hover:text-[#0050A0] transition-colors">
                             {player.name}
                           </Link>
                         ) : (
@@ -369,7 +351,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                               href={url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-lg font-bold text-[#800000] hover:text-[#600000] hover:underline transition-colors"
+                              className="text-lg font-bold text-[#0050A0] hover:text-[#003a75] hover:underline transition-colors"
                             >
                               {player.rating.toFixed(1)}
                             </Link>
@@ -474,7 +456,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                   />
                 <div className="flex-1 min-w-0">
                   {!validPlayerSlugs || validPlayerSlugs.has(createPlayerSlug(player.name)) ? (
-                    <Link href={`/players/${createPlayerSlug(player.name)}`} className="font-bold text-gray-900 text-base leading-tight mb-1.5 hover:text-[#800000] transition-colors block">
+                    <Link href={`/players/${createPlayerSlug(player.name)}`} className="font-bold text-gray-900 text-base leading-tight mb-1.5 hover:text-[#0050A0] transition-colors block">
                       {player.name}
                     </Link>
                   ) : (
@@ -502,7 +484,7 @@ export default function PlayerTable({ players, sortField, sortDirection, onSort,
                           href={url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#800000] hover:text-[#600000] hover:underline transition-colors"
+                          className="text-[#0050A0] hover:text-[#003a75] hover:underline transition-colors"
                         >
                           {player.rating.toFixed(1)}
                         </Link>

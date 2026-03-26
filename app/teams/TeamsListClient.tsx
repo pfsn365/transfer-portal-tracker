@@ -7,6 +7,7 @@ import { getAllConferences, getTeamsByConference } from '@/data/teams';
 import { getTeamLogo } from '@/utils/teamLogos';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 import { Search } from 'lucide-react';
 
 // FBS conferences only
@@ -45,7 +46,7 @@ export default function TeamsListClient() {
         <header
           className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -58,7 +59,7 @@ export default function TeamsListClient() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
@@ -75,7 +76,7 @@ export default function TeamsListClient() {
                 placeholder="Search teams..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-500"
+                className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-gray-50 text-gray-900 placeholder-gray-500"
                 aria-label="Search for a team"
               />
             </div>
@@ -91,7 +92,7 @@ export default function TeamsListClient() {
           ) : (
             filteredConferences.map(({ conference, teams }) => (
               <div key={conference} className="mb-8">
-                <h3 className="text-2xl font-bold text-white mb-4 px-4 py-3 rounded-lg shadow-md bg-[#800000]">
+                <h3 className="text-2xl font-bold text-white mb-4 px-4 py-3 rounded-lg shadow-md bg-[#0050A0]">
                   {conference}
                 </h3>
 
@@ -112,7 +113,7 @@ export default function TeamsListClient() {
                             className="object-contain group-hover:scale-110 transition-transform"
                           />
                         </div>
-                        <span className="text-sm font-semibold text-gray-900 group-hover:text-[#800000] transition-colors">
+                        <span className="text-sm font-semibold text-gray-900 group-hover:text-[#0050A0] transition-colors">
                           {team.name}
                         </span>
                       </div>

@@ -23,7 +23,7 @@ export default function StatLeadersSkeleton() {
 
       {/* Leaders Table Skeleton */}
       <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-        <div className="bg-[#800000] px-6 py-4">
+        <div className="bg-[#0050A0] px-6 py-4">
           <div className="h-6 w-40 bg-white/30 rounded animate-pulse" />
         </div>
 

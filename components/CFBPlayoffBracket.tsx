@@ -365,7 +365,7 @@ export default function CFBPlayoffBracket() {
 
   return (
     <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden w-full max-w-7xl mx-auto">
-      <div className="px-5 py-3 border-b border-gray-200 flex items-center justify-between" style={{ backgroundColor: '#800000' }}>
+      <div className="px-5 py-3 border-b border-gray-200 flex items-center justify-between" style={{ backgroundColor: '#0050A0' }}>
         <h3 className="text-xl font-bold text-white">2025-26 CFB Playoff Bracket</h3>
         <button
           onClick={() => setUserPicks({})}

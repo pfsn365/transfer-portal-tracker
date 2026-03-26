@@ -11,6 +11,7 @@ import { fetcher, swrConfig } from '@/utils/swr';
 import { createPlayerSlug, getPlayerInitials } from '@/utils/playerHelpers';
 import { getTeamById } from '@/data/teams';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
+import TransferPortalBanner from '@/components/TransferPortalBanner';
 
 // Player headshot component with local image fallback
 function PlayerHeadshot({ name, className = "w-10 h-10" }: { name: string; className?: string }) {
@@ -217,7 +218,7 @@ export default function StatLeadersClient() {
         <header
           className="text-white shadow-lg"
           style={{
-            background: 'linear-gradient(180deg, #800000 0%, #600000 100%)',
+            background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
             boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)'
           }}
         >
@@ -233,7 +234,7 @@ export default function StatLeadersClient() {
             </p>
           </div>
         </header>
-
+        <TransferPortalBanner />
         {/* Raptive Header Ad */}
         <RaptiveHeaderAd />
 
@@ -248,7 +249,7 @@ export default function StatLeadersClient() {
                     onClick={() => setDivision('fbs')}
                     className={`px-4 py-2 font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer ${
                       division === 'fbs'
-                        ? 'bg-[#800000] text-white'
+                        ? 'bg-[#0050A0] text-white'
                         : 'bg-white text-gray-700 hover:bg-gray-50'
                     }`}
                   >
@@ -258,7 +259,7 @@ export default function StatLeadersClient() {
                     onClick={() => setDivision('fcs')}
                     className={`px-4 py-2 font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer border-l border-gray-300 ${
                       division === 'fcs'
-                        ? 'bg-[#800000] text-white'
+                        ? 'bg-[#0050A0] text-white'
                         : 'bg-white text-gray-700 hover:bg-gray-50'
                     }`}
                   >
@@ -270,7 +271,7 @@ export default function StatLeadersClient() {
                 <select
                   value={conferenceFilter}
                   onChange={(e) => setConferenceFilter(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#800000] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0050A0] focus:border-transparent bg-white text-gray-900 cursor-pointer text-sm"
                 >
                   <option value="all">All Conferences</option>
                   {availableConferences.map((conf) => (
@@ -284,8 +285,8 @@ export default function StatLeadersClient() {
                 onClick={() => setStatType(statType === 'total' ? 'perGame' : 'total')}
                 className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all active:scale-[0.98] cursor-pointer ${
                   statType === 'perGame'
-                    ? 'bg-[#800000] text-white'
-                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#800000]'
+                    ? 'bg-[#0050A0] text-white'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:border-[#0050A0]'
                 }`}
               >
                 {statType === 'perGame' ? 'Per Game' : 'Total Stats'}
@@ -325,9 +326,9 @@ export default function StatLeadersClient() {
                         disabled={!hasCategories}
                         className={`flex-shrink-0 px-6 py-3 font-semibold text-sm transition-all active:scale-[0.98] cursor-pointer border-b-2 ${
                           isSelected
-                            ? 'border-[#800000] text-[#800000] bg-gray-50'
+                            ? 'border-[#0050A0] text-[#0050A0] bg-gray-50'
                             : hasCategories
-                            ? 'border-transparent text-gray-600 hover:text-[#800000] hover:bg-gray-50'
+                            ? 'border-transparent text-gray-600 hover:text-[#0050A0] hover:bg-gray-50'
                             : 'border-transparent text-gray-400 cursor-not-allowed'
                         }`}
                       >
@@ -352,7 +353,7 @@ export default function StatLeadersClient() {
                           }}
                           className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap transition-colors cursor-pointer ${
                             isSelected
-                              ? 'bg-[#800000] text-white'
+                              ? 'bg-[#0050A0] text-white'
                               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                           }`}
                         >
@@ -367,7 +368,7 @@ export default function StatLeadersClient() {
               {/* Leaders Table */}
               {selectedCategoryData && (
                 <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-                  <div className="bg-[#800000] px-6 py-4">
+                  <div className="bg-[#0050A0] px-6 py-4">
                     <h2 className="text-xl font-bold text-white">
                       {selectedCategoryData.displayName}
                       {conferenceFilter !== 'all' && (
@@ -418,7 +419,7 @@ export default function StatLeadersClient() {
                                 <Link href={`/players/${createPlayerSlug(leader.name)}`} className="flex items-center gap-3 group">
                                   <PlayerHeadshot name={leader.name} />
                                   <div>
-                                    <div className="font-semibold text-gray-900 group-hover:text-[#800000] transition-colors">{leader.name}</div>
+                                    <div className="font-semibold text-gray-900 group-hover:text-[#0050A0] transition-colors">{leader.name}</div>
                                     <div className="text-sm text-gray-500 sm:hidden">{leader.position}</div>
                                     <div className="text-xs text-gray-400 md:hidden">{leader.teamAbbreviation || leader.teamName}</div>
                                   </div>
@@ -445,7 +446,7 @@ export default function StatLeadersClient() {
                                   {(() => {
                                     const teamData = getTeamById(leader.teamName);
                                     return teamData ? (
-                                      <Link href={`/teams/${teamData.slug}`} className="text-gray-700 truncate hover:text-[#800000] hover:underline">
+                                      <Link href={`/teams/${teamData.slug}`} className="text-gray-700 truncate hover:text-[#0050A0] hover:underline">
                                         {leader.teamName}
                                       </Link>
                                     ) : (
@@ -461,7 +462,7 @@ export default function StatLeadersClient() {
                                 <span className="text-gray-600">{leader.gamesPlayed}</span>
                               </td>
                               <td className="px-4 py-4 text-right">
-                                <span className="text-lg font-bold text-[#800000]">{getDisplayValue(leader)}</span>
+                                <span className="text-lg font-bold text-[#0050A0]">{getDisplayValue(leader)}</span>
                               </td>
                             </tr>
                         ))}
@@ -475,7 +476,7 @@ export default function StatLeadersClient() {
                       {displayCount < 50 && selectedCategoryData.leaders.length >= 26 && (
                         <button
                           onClick={() => setDisplayCount(50)}
-                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-white border border-gray-300 hover:border-[#800000] hover:text-[#800000] text-gray-700"
+                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-white border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0] text-gray-700"
                         >
                           Show Top 50
                         </button>
@@ -483,7 +484,7 @@ export default function StatLeadersClient() {
                       {displayCount < 100 && selectedCategoryData.leaders.length >= 51 && (
                         <button
                           onClick={() => setDisplayCount(100)}
-                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-white border border-gray-300 hover:border-[#800000] hover:text-[#800000] text-gray-700"
+                          className="px-4 py-2 rounded-lg font-medium cursor-pointer transition-all active:scale-[0.98] bg-white border border-gray-300 hover:border-[#0050A0] hover:text-[#0050A0] text-gray-700"
                         >
                           Show Top 100
                         </button>
