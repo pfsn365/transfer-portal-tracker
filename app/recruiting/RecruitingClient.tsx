@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
@@ -186,6 +186,56 @@ interface TeamRanking {
   topRecruit: string;
 }
 
+interface PipelineEntryType {
+  rank: number;
+  school: string;
+  totalRecruits: number;
+  totalScore: number;
+  fiveStars: number;
+  fourStars: number;
+  threeStars: number;
+  avgStars: number;
+  avgClassScore: number;
+  bestYear: number;
+  bestYearScore: number;
+  classByYear: Record<number, { recruits: number; score: number; fiveStars: number; avgStars: number }>;
+}
+
+function StatusCell({ recruit, getTeamSlug }: { recruit: Recruit; getTeamSlug: (name: string) => string | null }) {
+  const isCommitted = recruit.commitStatus === 'committed' || recruit.status === 'Enrolled' || recruit.status === 'Signed' || recruit.status === 'HardCommit';
+
+  if (!isCommitted) {
+    return <span className="text-xs font-semibold text-red-600">Uncommitted</span>;
+  }
+
+  const slug = getTeamSlug(recruit.committedTo || '');
+  const statusText = recruit.status === 'Enrolled' ? 'Enrolled' : recruit.status === 'Signed' ? 'Signed' : 'Committed';
+  const statusColor = recruit.status === 'Enrolled' || recruit.status === 'Signed' ? 'text-green-600' : 'text-blue-600';
+
+  const logo = recruit.committedSchoolLogo
+    ? <img src={recruit.committedSchoolLogo} alt="" className="w-5 h-5 object-contain" />
+    : recruit.committedTo
+      ? <img src={getTeamLogo(recruit.committedTo)} alt="" className="w-5 h-5 object-contain" />
+      : null;
+
+  const content = (
+    <div className="flex flex-col items-center gap-1">
+      {logo}
+      <span className={`text-xs font-semibold ${statusColor}`}>{statusText}</span>
+    </div>
+  );
+
+  if (slug) {
+    return (
+      <Link href={`/teams/${slug}/recruiting`} className="hover:opacity-80 transition-opacity cursor-pointer">
+        {content}
+      </Link>
+    );
+  }
+
+  return content;
+}
+
 export default function RecruitingClient() {
   const [recruits, setRecruits] = useState<Recruit[]>([]);
   const [loading, setLoading] = useState(true);
@@ -193,13 +243,24 @@ export default function RecruitingClient() {
   const [total, setTotal] = useState(0);
 
   // View toggle
-  const [activeView, setActiveView] = useState<'players' | 'team-rankings'>('players');
+  const [activeView, setActiveView] = useState<'players' | 'team-rankings' | 'pipeline'>('players');
 
   // Team rankings state
   const [teamRankings, setTeamRankings] = useState<TeamRanking[]>([]);
   const [teamLoading, setTeamLoading] = useState(false);
   const [teamSortKey, setTeamSortKey] = useState<string>('compositePoints');
   const [teamConferenceFilter, setTeamConferenceFilter] = useState('');
+
+  // Pipeline state
+  const [pipelineData, setPipelineData] = useState<PipelineEntryType[]>([]);
+  const [pipelineLoading, setPipelineLoading] = useState(false);
+  const [pipelineYearMin, setPipelineYearMin] = useState('2020');
+  const [pipelineYearMax, setPipelineYearMax] = useState('2026');
+  const [pipelinePosition, setPipelinePosition] = useState('');
+  const [pipelineConference, setPipelineConference] = useState('');
+  const [pipelineSortKey, setPipelineSortKey] = useState<string>('totalScore');
+  const [expandedPipelineSchool, setExpandedPipelineSchool] = useState<string | null>(null);
+  const [pipelinePositions, setPipelinePositions] = useState<string[]>([]);
 
   // School name to conference lookup
   const schoolConference = useMemo(() => {
@@ -287,8 +348,9 @@ export default function RecruitingClient() {
     setCurrentPage(1);
   }, [year, source, debouncedSearch, debouncedPositions, debouncedStars, debouncedStates, committed]);
 
-  // Fetch recruits
+  // Fetch recruits (only when player rankings view is active)
   useEffect(() => {
+    if (activeView !== 'players') return;
     const controller = new AbortController();
     setLoading(true);
     setError('');
@@ -326,7 +388,7 @@ export default function RecruitingClient() {
       .finally(() => setLoading(false));
 
     return () => controller.abort();
-  }, [year, source, currentPage, itemsPerPage, debouncedSearch, debouncedPositions, debouncedStars, debouncedStates, committed]);
+  }, [activeView, year, source, currentPage, itemsPerPage, debouncedSearch, debouncedPositions, debouncedStars, debouncedStates, committed]);
 
   // Fetch team rankings
   useEffect(() => {
@@ -346,7 +408,54 @@ export default function RecruitingClient() {
     return () => controller.abort();
   }, [activeView, year]);
 
-  // Sorted position distribution for display
+  // Fetch pipeline data
+  useEffect(() => {
+    if (activeView !== 'pipeline') return;
+    const controller = new AbortController();
+    setPipelineLoading(true);
+
+    const params = new URLSearchParams({ view: 'pipeline', yearMin: pipelineYearMin, yearMax: pipelineYearMax });
+    if (pipelinePosition) params.set('position', pipelinePosition);
+
+    fetch(getApiPath(`api/cfb/recruits?${params}`), { signal: controller.signal })
+      .then(res => res.json())
+      .then(data => {
+        setPipelineData(data.pipeline || []);
+        if (data.availableYears?.length) setAvailableYears(data.availableYears);
+        if (data.positions?.length) setPipelinePositions(data.positions);
+      })
+      .catch(err => { if (err.name !== 'AbortError') console.error(err); })
+      .finally(() => setPipelineLoading(false));
+
+    return () => controller.abort();
+  }, [activeView, pipelineYearMin, pipelineYearMax, pipelinePosition]);
+
+  // Sorted pipeline with conference filter
+  const sortedPipeline = useMemo(() => {
+    let filtered = [...pipelineData];
+    if (pipelineConference) {
+      filtered = filtered.filter(t => getSchoolConference(t.school) === pipelineConference);
+    }
+    filtered.sort((a, b) => {
+      const aVal = (a as unknown as Record<string, number>)[pipelineSortKey] || 0;
+      const bVal = (b as unknown as Record<string, number>)[pipelineSortKey] || 0;
+      return bVal - aVal;
+    });
+    return filtered.map((t, i) => ({ ...t, rank: i + 1 }));
+  }, [pipelineData, pipelineSortKey, pipelineConference, getSchoolConference]);
+
+  // Lookup team slug from school name for linking
+  const getTeamSlug = useCallback((schoolName: string): string | null => {
+    if (!schoolName) return null;
+    const lower = schoolName.toLowerCase();
+    const team = allTeams.find(t =>
+      t.id.toLowerCase() === lower ||
+      t.name.toLowerCase().startsWith(lower) ||
+      lower.startsWith(t.name.split(' ').slice(0, -1).join(' ').toLowerCase())
+    );
+    return team?.slug || null;
+  }, []);
+
   const posOrder = ['ATH','QB','RB','WR','TE','OT','OG','OC','OL','DT','EDGE','LB','CB','SAF','K','P'];
   const sortedPositions = posOrder.filter(p => (positionDistribution[p] || 0) > 0);
 
@@ -372,7 +481,7 @@ export default function RecruitingClient() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-24">
         {/* View Toggle */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => setActiveView('players')}
             className={`px-5 py-2 rounded-lg font-semibold text-sm transition-colors cursor-pointer ${
@@ -392,6 +501,16 @@ export default function RecruitingClient() {
             }`}
           >
             Team Class Rankings
+          </button>
+          <button
+            onClick={() => setActiveView('pipeline')}
+            className={`px-5 py-2 rounded-lg font-semibold text-sm transition-colors cursor-pointer ${
+              activeView === 'pipeline'
+                ? 'bg-[#0050A0] text-white'
+                : 'border border-gray-300 text-gray-700 hover:border-[#0050A0] hover:text-[#0050A0]'
+            }`}
+          >
+            Recruiting Pipeline
           </button>
         </div>
 
@@ -469,7 +588,7 @@ export default function RecruitingClient() {
                         ))}
                       </tr>
                     ))
-                  ) : teamRankings.length === 0 ? (
+                  ) : sortedTeamRankings.length === 0 ? (
                     <tr><td colSpan={9} className="text-center py-12 text-gray-500">No team rankings data available</td></tr>
                   ) : (
                     sortedTeamRankings.map((team, idx) => (
@@ -479,10 +598,20 @@ export default function RecruitingClient() {
                       >
                         <td className="px-3 py-3 text-center tabular-nums font-semibold text-gray-500">{team.rank}</td>
                         <td className="px-3 py-3">
-                          <div className="flex items-center gap-2">
-                            <img src={getTeamLogo(team.school)} alt="" className="w-6 h-6 object-contain" />
-                            <span className="font-medium text-gray-900">{team.school}</span>
-                          </div>
+                          {(() => {
+                            const slug = getTeamSlug(team.school);
+                            const content = (
+                              <div className="flex items-center gap-2">
+                                <img src={getTeamLogo(team.school)} alt="" className="w-6 h-6 object-contain" />
+                                <span className="font-medium text-gray-900">{team.school}</span>
+                              </div>
+                            );
+                            return slug ? (
+                              <Link href={`/teams/${slug}/recruiting`} className="hover:text-[#0050A0] transition-colors">
+                                {content}
+                              </Link>
+                            ) : content;
+                          })()}
                         </td>
                         <td className="px-3 py-3 text-center tabular-nums font-semibold">{team.totalCommits}</td>
                         <td className="px-3 py-3 text-center tabular-nums">
@@ -499,6 +628,182 @@ export default function RecruitingClient() {
                 </tbody>
               </table>
             </div>
+          </>
+        )}
+
+        {/* ═══ RECRUITING PIPELINE VIEW ═══ */}
+        {activeView === 'pipeline' && (
+          <>
+            {/* Controls */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
+              <h2 className="text-xl font-bold text-gray-900">Recruiting Pipeline ({pipelineYearMin}–{pipelineYearMax})</h2>
+              <div className="flex gap-2 flex-wrap">
+                <select
+                  value={pipelineConference}
+                  onChange={e => setPipelineConference(e.target.value)}
+                  className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] cursor-pointer"
+                >
+                  <option value="">All Conferences</option>
+                  {['SEC', 'Big Ten', 'Big 12', 'ACC', 'American', 'Pac-12', 'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Independent'].map(c => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+                <select
+                  value={pipelinePosition}
+                  onChange={e => setPipelinePosition(e.target.value)}
+                  className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] cursor-pointer"
+                >
+                  <option value="">All Positions</option>
+                  {['ATH','QB','RB','WR','TE','OT','OG','OC','OL','DT','EDGE','LB','CB','SAF','K','P']
+                    .filter(p => pipelinePositions.includes(p))
+                    .map(p => (<option key={p} value={p}>{p}</option>))}
+                </select>
+                <select
+                  value={pipelineYearMin}
+                  onChange={e => setPipelineYearMin(e.target.value)}
+                  className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] cursor-pointer"
+                >
+                  {availableYears.map(y => (<option key={y} value={y}>From {y}</option>))}
+                </select>
+                <select
+                  value={pipelineYearMax}
+                  onChange={e => setPipelineYearMax(e.target.value)}
+                  className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] cursor-pointer"
+                >
+                  {availableYears.map(y => (<option key={y} value={y}>To {y}</option>))}
+                </select>
+              </div>
+            </div>
+
+            {/* Table */}
+            <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm bg-white">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-[#0050A0] text-white">
+                    <th className="px-3 py-3 text-center font-semibold w-12">#</th>
+                    <th className="px-3 py-3 text-left font-semibold">School</th>
+                    {([
+                      { key: 'totalRecruits', label: 'Recruits' },
+                      { key: 'avgStars', label: 'Avg ★' },
+                      { key: 'fiveStars', label: '5★' },
+                      { key: 'fourStars', label: '4★' },
+                      { key: 'threeStars', label: '3★', hide: 'hidden sm:table-cell' },
+                      { key: 'avgClassScore', label: 'Avg Class', hide: 'hidden md:table-cell' },
+                    ] as const).map(col => (
+                      <th
+                        key={col.key}
+                        onClick={() => setPipelineSortKey(col.key)}
+                        className={`px-3 py-3 text-center font-semibold cursor-pointer hover:bg-[#003a75] transition-colors select-none ${'hide' in col ? col.hide : ''}`}
+                      >
+                        {col.label} {pipelineSortKey === col.key && '▼'}
+                      </th>
+                    ))}
+                    <th
+                      onClick={() => setPipelineSortKey('totalScore')}
+                      className="px-3 py-3 text-center font-semibold cursor-help hover:bg-[#003a75] transition-colors select-none"
+                      title="PFSN Score: 5★=160pts, 4★=70pts, 3★=30pts, 2★=12pts, 1★=4pts, 0★=1pt"
+                    >
+                      <span className="inline-flex items-center gap-1">
+                        PFSN Score
+                        <svg className="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {pipelineSortKey === 'totalScore' && '▼'}
+                      </span>
+                    </th>
+                    <th className="px-3 py-3 text-center font-semibold hidden lg:table-cell">Best Class</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {pipelineLoading ? (
+                    Array.from({ length: 15 }).map((_, i) => (
+                      <tr key={i} className="animate-pulse">
+                        {Array.from({ length: 10 }).map((_, j) => (
+                          <td key={j} className="px-3 py-3"><div className="h-4 bg-gray-200 rounded w-12 mx-auto"></div></td>
+                        ))}
+                      </tr>
+                    ))
+                  ) : sortedPipeline.length === 0 ? (
+                    <tr><td colSpan={10} className="text-center py-12 text-gray-500">No pipeline data available</td></tr>
+                  ) : (
+                    sortedPipeline.map((school, idx) => {
+                      const isExpanded = expandedPipelineSchool === school.school;
+                      const slug = getTeamSlug(school.school);
+                      return (
+                        <React.Fragment key={school.school}>
+                          <tr
+                            onClick={() => setExpandedPipelineSchool(isExpanded ? null : school.school)}
+                            className={`hover:bg-blue-50 transition-colors cursor-pointer ${isExpanded ? 'bg-blue-50' : idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}
+                          >
+                            <td className="px-3 py-3 text-center tabular-nums font-semibold text-gray-500">{school.rank}</td>
+                            <td className="px-3 py-3">
+                              <div className="flex items-center gap-2">
+                                <svg className={`w-3 h-3 text-gray-400 transition-transform shrink-0 ${isExpanded ? 'rotate-90' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                                <img src={getTeamLogo(school.school)} alt="" className="w-6 h-6 object-contain" />
+                                {slug ? (
+                                  <Link href={`/teams/${slug}/recruiting`} onClick={e => e.stopPropagation()} className="font-medium text-gray-900 hover:text-[#0050A0]">
+                                    {school.school}
+                                  </Link>
+                                ) : (
+                                  <span className="font-medium text-gray-900">{school.school}</span>
+                                )}
+                              </div>
+                            </td>
+                            <td className="px-3 py-3 text-center tabular-nums font-semibold">{school.totalRecruits}</td>
+                            <td className="px-3 py-3 text-center tabular-nums font-bold text-[#0050A0]">{school.avgStars.toFixed(1)}</td>
+                            <td className="px-3 py-3 text-center tabular-nums font-semibold text-yellow-600">{school.fiveStars || '—'}</td>
+                            <td className="px-3 py-3 text-center tabular-nums">{school.fourStars || '—'}</td>
+                            <td className="px-3 py-3 text-center tabular-nums hidden sm:table-cell">{school.threeStars || '—'}</td>
+                            <td className="px-3 py-3 text-center tabular-nums hidden md:table-cell">{school.avgClassScore}</td>
+                            <td className="px-3 py-3 text-center tabular-nums font-medium">{school.totalScore.toLocaleString()}</td>
+                            <td className="px-3 py-3 text-center tabular-nums hidden lg:table-cell">{school.bestYear} ({school.bestYearScore})</td>
+                          </tr>
+                          {isExpanded && (
+                            <tr>
+                              <td colSpan={10} className="bg-gray-50 p-0">
+                                <div className="px-4 sm:px-6 py-3">
+                                  <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Year-by-Year Recruiting Classes</h4>
+                                  <table className="w-full text-sm">
+                                    <thead>
+                                      <tr className="text-xs text-gray-400 uppercase">
+                                        <th className="text-left py-1 pr-4 font-medium">Year</th>
+                                        <th className="text-center py-1 pr-4 font-medium">Recruits</th>
+                                        <th className="text-center py-1 pr-4 font-medium">5★</th>
+                                        <th className="text-center py-1 pr-4 font-medium">PFSN Score</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {Object.entries(school.classByYear)
+                                        .sort(([a], [b]) => parseInt(b) - parseInt(a))
+                                        .map(([yr, cls]) => (
+                                          <tr key={yr} className="border-t border-gray-200">
+                                            <td className="py-1.5 pr-4 tabular-nums text-gray-600">{yr}</td>
+                                            <td className="py-1.5 pr-4 text-center tabular-nums">{cls.recruits}</td>
+                                            <td className="py-1.5 pr-4 text-center tabular-nums text-yellow-600">{cls.fiveStars || '—'}</td>
+                                            <td className="py-1.5 pr-4 text-center tabular-nums font-medium">{cls.score}</td>
+                                          </tr>
+                                        ))}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          )}
+                        </React.Fragment>
+                      );
+                    })
+                  )}
+                </tbody>
+              </table>
+            </div>
+
+            {!pipelineLoading && (
+              <p className="text-xs text-gray-500 mt-3">
+                Showing {sortedPipeline.length} FBS schools
+              </p>
+            )}
           </>
         )}
 
@@ -569,6 +874,7 @@ export default function RecruitingClient() {
             >
               <option value="">All Status</option>
               <option value="enrolled">Enrolled</option>
+              <option value="signed">Signed</option>
               <option value="committed">Committed</option>
               <option value="uncommitted">Uncommitted</option>
             </select>
@@ -678,20 +984,7 @@ export default function RecruitingClient() {
                       {recruit.weight || '—'}
                     </td>
                     <td className="px-3 py-3 text-center">
-                      {recruit.commitStatus === 'committed' || recruit.status === 'Enrolled' || recruit.status === 'Signed' || recruit.status === 'HardCommit' ? (
-                        <div className="flex flex-col items-center gap-1">
-                          {recruit.committedSchoolLogo ? (
-                            <img src={recruit.committedSchoolLogo} alt="" className="w-5 h-5 object-contain" />
-                          ) : recruit.committedTo ? (
-                            <img src={getTeamLogo(recruit.committedTo)} alt="" className="w-5 h-5 object-contain" />
-                          ) : null}
-                          <span className={`text-xs font-semibold ${recruit.status === 'Enrolled' || recruit.status === 'Signed' ? 'text-green-600' : 'text-blue-600'}`}>
-                            {recruit.status === 'Enrolled' ? 'Enrolled' : recruit.status === 'Signed' ? 'Signed' : 'Committed'}
-                          </span>
-                        </div>
-                      ) : (
-                        <span className="text-xs font-semibold text-red-600">Uncommitted</span>
-                      )}
+                      <StatusCell recruit={recruit} getTeamSlug={getTeamSlug} />
                     </td>
                   </tr>
                 ))

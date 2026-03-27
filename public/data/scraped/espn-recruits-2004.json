@@ -1,0 +1,76 @@
+{
+  "source": "espn",
+  "year": 2004,
+  "scrapedAt": "2026-03-27T20:03:32.042Z",
+  "count": 2,
+  "recruits": [
+    {
+      "rank": 1,
+      "name": "Adrian Peters",
+      "firstName": "Adrian",
+      "lastName": "Peters",
+      "espnId": "143505",
+      "position": "RB",
+      "positionName": null,
+      "city": null,
+      "state": "TX",
+      "stateFull": "Texas",
+      "height": "6-2",
+      "heightInches": 74,
+      "weight": 210,
+      "highSchool": "Palestine High School",
+      "highSchoolCity": "Palestine",
+      "highSchoolState": "Texas",
+      "classYear": 2004,
+      "grade": null,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 2,
+      "name": "Adrian Peterson",
+      "firstName": "Adrian",
+      "lastName": "Peterson",
+      "espnId": "143837",
+      "position": "RB",
+      "positionName": null,
+      "city": "Palestine",
+      "state": "TX",
+      "stateFull": "Texas",
+      "height": null,
+      "heightInches": null,
+      "weight": null,
+      "highSchool": "Palestine High School",
+      "highSchoolCity": "Palestine",
+      "highSchoolState": "Texas",
+      "classYear": 2004,
+      "grade": null,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": {
+        "40 YD": 99,
+        "3 CD": 99,
+        "20 YS": 99
+      },
+      "committedSchool": null,
+      "schools": [
+        {
+          "name": "Oklahoma Sooners",
+          "abbreviation": "OKLA",
+          "status": "Undeclared"
+        }
+      ],
+      "schoolInterests": 1,
+      "source": "espn"
+    }
+  ]
+}

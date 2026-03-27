@@ -71,10 +71,7 @@ function RecruitAvatar({ recruit }: { recruit: Recruit }) {
   );
 }
 
-// Default to current recruiting cycle year (shifts in February)
-const DEFAULT_YEAR = new Date().getMonth() < 2
-  ? new Date().getFullYear()
-  : new Date().getFullYear() + 1;
+const DEFAULT_YEAR = 2026;
 
 export default function RecruitingTab({ team, teamColor }: RecruitingTabProps) {
   const [year, setYear] = useState(String(DEFAULT_YEAR));

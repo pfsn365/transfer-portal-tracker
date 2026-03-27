@@ -19,6 +19,7 @@ const cfbTeams: Record<string, string> = {
   'tennessee': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TENN.png',
   'texas': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TEX.png',
   'texas a&m': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TA&M.png',
+  'texas am': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/TA&M.png',
   'vanderbilt': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/VAN.png',
 
   // Big Ten
@@ -341,10 +342,15 @@ export function getTeamLogo(teamName: string): string {
   }
 
   // If no exact match, check if the team name starts with any known team ID
-  // This handles cases where mascot is included (e.g., "Texas Tech Red Raiders" -> "texas tech")
-  for (const knownTeam of allTeams) {
-    const teamId = knownTeam.id.toLowerCase()
+  // Sort by ID length (longest first) so "florida state" matches before "florida"
+  const sortedTeams = [...allTeams].sort((a, b) => b.id.length - a.id.length)
+  for (const knownTeam of sortedTeams) {
+    const teamId = normalize(knownTeam.id.toLowerCase())
     if (team.startsWith(teamId + ' ') || team === teamId) {
+      if (cfbTeams[knownTeam.id.toLowerCase()]) {
+        return cfbTeams[knownTeam.id.toLowerCase()]
+      }
+      // Also try normalized key
       if (cfbTeams[teamId]) {
         return cfbTeams[teamId]
       }
@@ -353,10 +359,11 @@ export function getTeamLogo(teamName: string): string {
 
   // Also check the keys in cfbTeams directly for partial matches
   // Sort keys by length (longest first) to match more specific names first
-  // This ensures "texas a&m" is checked before "texas"
+  // Normalize keys for comparison to handle special chars (& etc.)
   const sortedKeys = Object.keys(cfbTeams).sort((a, b) => b.length - a.length);
   for (const key of sortedKeys) {
-    if (team.startsWith(key + ' ') || team === key) {
+    const normalizedKey = normalize(key)
+    if (team.startsWith(normalizedKey + ' ') || team === normalizedKey) {
       return cfbTeams[key]
     }
   }
@@ -368,6 +375,12 @@ export function getTeamLogo(teamName: string): string {
     const partial = words.slice(0, i).join(' ')
     if (cfbTeams[partial]) {
       return cfbTeams[partial]
+    }
+    // Also check sorted keys for partial match
+    for (const key of sortedKeys) {
+      if (partial === key) {
+        return cfbTeams[key]
+      }
     }
   }
 

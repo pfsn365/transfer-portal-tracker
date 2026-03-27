@@ -445,22 +445,22 @@ export default function CFBHomePageContent() {
             <div className="bg-white rounded-b-xl p-4 sm:p-6">
               {/* Hero Tier — 2 large cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
-                {/* Power Rankings Builder */}
+                {/* Recruiting Hub */}
                 <Link
-                  href="/power-rankings-builder"
+                  href="/recruiting"
                   className="group relative bg-white rounded-xl p-6 sm:p-8 border-l-4 border-l-[#0050A0] border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col h-full"
                 >
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-2">
-                    Power Rankings Builder
+                    Recruiting Hub
                   </h3>
                   <p className="text-gray-600 text-sm mb-5">
-                    Create and share your own CFB power rankings
+                    CFB recruit rankings from 247Sports, ESPN, On3, and Rivals
                   </p>
                   <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-lg p-6 text-center flex-grow flex flex-col justify-center min-h-[80px]">
-                    <p className="text-lg font-semibold text-gray-700">Drag & Drop Rankings</p>
+                    <p className="text-lg font-semibold text-gray-700">Composite Rankings & Team Classes</p>
                   </div>
                   <div className="mt-5 flex items-center text-[#0050A0]">
-                    <span className="text-sm font-medium group-hover:underline">Start Building</span>
+                    <span className="text-sm font-medium group-hover:underline">Explore Recruiting</span>
                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -530,17 +530,17 @@ export default function CFBHomePageContent() {
                 </Link>
 
                 <Link
-                  href="/rankings"
+                  href="/power-rankings-builder"
                   className="min-w-[160px] w-[45vw] flex-shrink-0 snap-start md:min-w-0 md:w-auto md:flex-shrink group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-[#0050A0] hover:shadow-xl hover:bg-blue-50 hover:-translate-y-1 transition-all duration-200 cursor-pointer flex flex-col"
                 >
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] transition-colors mb-1">
-                    CFB Rankings
+                    Power Rankings
                   </h3>
                   <p className="text-gray-500 text-xs mb-3 line-clamp-2">
-                    AP, Coaches, and CFP rankings
+                    Create and share your own CFB power rankings
                   </p>
                   <div className="mt-auto flex items-center text-[#0050A0]">
-                    <span className="text-xs font-medium group-hover:underline">View Rankings</span>
+                    <span className="text-xs font-medium group-hover:underline">Start Building</span>
                     <svg className="w-3 h-3 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

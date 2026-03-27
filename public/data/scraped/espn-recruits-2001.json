@@ -1,0 +1,557 @@
+{
+  "source": "espn",
+  "year": 2001,
+  "scrapedAt": "2026-03-27T20:04:03.889Z",
+  "count": 14,
+  "recruits": [
+    {
+      "rank": 1,
+      "name": "Kekua Aumua",
+      "firstName": "Kekua",
+      "lastName": "Aumua",
+      "espnId": "262410",
+      "position": "TE-Y",
+      "positionName": null,
+      "city": "Bradenton",
+      "state": "FL",
+      "stateFull": "Florida",
+      "height": "6-5",
+      "heightInches": 77,
+      "weight": 245,
+      "highSchool": "IMG Academy",
+      "highSchoolCity": "Bradenton",
+      "highSchoolState": "Florida",
+      "classYear": 2001,
+      "grade": 44,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": [
+        {
+          "name": "Arizona State Sun Devils",
+          "abbreviation": "ASU",
+          "status": "Undeclared"
+        },
+        {
+          "name": "South Florida Bulls",
+          "abbreviation": "USF",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Hawaii Warriors",
+          "abbreviation": "HAW",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Pennsylvania Quakers",
+          "abbreviation": "PENN",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Washington Huskies",
+          "abbreviation": "WASH",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Washington State Cougars",
+          "abbreviation": "WSU",
+          "status": "Undeclared"
+        }
+      ],
+      "schoolInterests": 6,
+      "source": "espn"
+    },
+    {
+      "rank": 2,
+      "name": "Dayton Aupiu",
+      "firstName": "Dayton",
+      "lastName": "Aupiu",
+      "espnId": "254365",
+      "position": "ATH",
+      "positionName": null,
+      "city": "Oxnard",
+      "state": "CA",
+      "stateFull": "California",
+      "height": "6-3",
+      "heightInches": 75,
+      "weight": 170,
+      "highSchool": "Pacifica High School",
+      "highSchoolCity": "Oxnard",
+      "highSchoolState": "California",
+      "classYear": 2001,
+      "grade": 44,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 3,
+      "name": "MacGregor Byers",
+      "firstName": "MacGregor",
+      "lastName": "Byers",
+      "espnId": "267395",
+      "position": "DT",
+      "positionName": null,
+      "city": "Houston",
+      "state": "TX",
+      "stateFull": "Texas",
+      "height": "6-4",
+      "heightInches": 76,
+      "weight": 260,
+      "highSchool": "Strake Jesuit College Prep",
+      "highSchoolCity": null,
+      "highSchoolState": "Texas",
+      "classYear": 2001,
+      "grade": 43,
+      "status": {
+        "id": 1,
+        "description": "Committed"
+      },
+      "attributes": null,
+      "committedSchool": {
+        "name": "Wyoming Cowboys",
+        "abbreviation": "WYO",
+        "status": "Committed"
+      },
+      "schools": [
+        {
+          "name": "Air Force Falcons",
+          "abbreviation": "AFA",
+          "status": "Undeclared"
+        },
+        {
+          "name": "UNLV Rebels",
+          "abbreviation": "UNLV",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Wyoming Cowboys",
+          "abbreviation": "WYO",
+          "status": "Committed"
+        }
+      ],
+      "schoolInterests": 3,
+      "source": "espn"
+    },
+    {
+      "rank": 4,
+      "name": "Zach Carpenter",
+      "firstName": "Zach",
+      "lastName": "Carpenter",
+      "espnId": "257637",
+      "position": "OG",
+      "positionName": null,
+      "city": "Cincinnati",
+      "state": "OH",
+      "stateFull": "Ohio",
+      "height": "6-5",
+      "heightInches": 77,
+      "weight": 329,
+      "highSchool": "Indiana University",
+      "highSchoolCity": "Bloomington",
+      "highSchoolState": "Indiana",
+      "classYear": 2001,
+      "grade": null,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 5,
+      "name": "Darrell Gill Jr.",
+      "firstName": "Darrell",
+      "lastName": "Gill Jr.",
+      "espnId": "254146",
+      "position": "WR",
+      "positionName": null,
+      "city": "Humble",
+      "state": "TX",
+      "stateFull": "Texas",
+      "height": "6-2",
+      "heightInches": 74,
+      "weight": 175,
+      "highSchool": "Atascocita High School",
+      "highSchoolCity": "Humble",
+      "highSchoolState": "Texas",
+      "classYear": 2001,
+      "grade": 44,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": [
+        {
+          "name": "Syracuse Orange",
+          "abbreviation": "SYR",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Washington State Cougars",
+          "abbreviation": "WSU",
+          "status": "Undeclared"
+        }
+      ],
+      "schoolInterests": 2,
+      "source": "espn"
+    },
+    {
+      "rank": 6,
+      "name": "Ty Johnson",
+      "firstName": "Ty",
+      "lastName": "Johnson",
+      "espnId": "266354",
+      "position": "WR",
+      "positionName": null,
+      "city": "Irvine",
+      "state": "CA",
+      "stateFull": "California",
+      "height": "6-3",
+      "heightInches": 75,
+      "weight": 200,
+      "highSchool": "Crean Lutheran High School",
+      "highSchoolCity": "Irvine",
+      "highSchoolState": "California",
+      "classYear": 2001,
+      "grade": 44,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 7,
+      "name": "Isaac Kone",
+      "firstName": "Isaac",
+      "lastName": "Kone",
+      "espnId": "254108",
+      "position": "K",
+      "positionName": null,
+      "city": "Orlando",
+      "state": "FL",
+      "stateFull": "Florida",
+      "height": "6-0",
+      "heightInches": 72,
+      "weight": 160,
+      "highSchool": "Maynard Evans High School",
+      "highSchoolCity": "Orlando",
+      "highSchoolState": "Florida",
+      "classYear": 2001,
+      "grade": 43,
+      "status": {
+        "id": 3,
+        "description": "Signed"
+      },
+      "attributes": null,
+      "committedSchool": {
+        "name": "Georgia State Panthers",
+        "abbreviation": "GAST",
+        "status": "Signed"
+      },
+      "schools": [
+        {
+          "name": "Georgia State Panthers",
+          "abbreviation": "GAST",
+          "status": "Signed"
+        }
+      ],
+      "schoolInterests": 1,
+      "source": "espn"
+    },
+    {
+      "rank": 8,
+      "name": "Mikey Matthews",
+      "firstName": "Mikey",
+      "lastName": "Matthews",
+      "espnId": "257568",
+      "position": "WR",
+      "positionName": null,
+      "city": "Irvine",
+      "state": "CA",
+      "stateFull": "California",
+      "height": "5-8",
+      "heightInches": 68,
+      "weight": 180,
+      "highSchool": "University of Utah",
+      "highSchoolCity": null,
+      "highSchoolState": "Utah",
+      "classYear": 2001,
+      "grade": null,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 9,
+      "name": "Se'Von McDowell",
+      "firstName": "Se'Von",
+      "lastName": "McDowell",
+      "espnId": "258172",
+      "position": "OLB",
+      "positionName": null,
+      "city": "Dinwiddie",
+      "state": "VA",
+      "stateFull": "Virginia",
+      "height": "6-2",
+      "heightInches": 74,
+      "weight": 205,
+      "highSchool": "Dinwiddie County Senior H. S.",
+      "highSchoolCity": "Dinwiddie",
+      "highSchoolState": "Virginia",
+      "classYear": 2001,
+      "grade": 43,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 10,
+      "name": "D'Arco Perkins-McAllister",
+      "firstName": "D'Arco",
+      "lastName": "Perkins-McAllister",
+      "espnId": "254039",
+      "position": "S",
+      "positionName": null,
+      "city": "Nashville",
+      "state": "TN",
+      "stateFull": "Tennessee",
+      "height": "6-1",
+      "heightInches": 73,
+      "weight": 190,
+      "highSchool": "Texas Christian University",
+      "highSchoolCity": null,
+      "highSchoolState": "Texas",
+      "classYear": 2001,
+      "grade": null,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 11,
+      "name": "Tavares Powell",
+      "firstName": "Tavares",
+      "lastName": "Powell",
+      "espnId": "271393",
+      "position": "WR",
+      "positionName": null,
+      "city": "Bradenton",
+      "state": "FL",
+      "stateFull": "Florida",
+      "height": "6-0",
+      "heightInches": 72,
+      "weight": 170,
+      "highSchool": "Manatee High School",
+      "highSchoolCity": "Bradenton",
+      "highSchoolState": "Florida",
+      "classYear": 2001,
+      "grade": 44,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": [
+        {
+          "name": "Kentucky Wildcats",
+          "abbreviation": "UK",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Michigan State Spartans",
+          "abbreviation": "MSU",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Memphis Tigers",
+          "abbreviation": "MEM",
+          "status": "Undeclared"
+        },
+        {
+          "name": "West Virginia Mountaineers",
+          "abbreviation": "WVU",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Kansas Jayhawks",
+          "abbreviation": "KU",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Toledo Rockets",
+          "abbreviation": "TOL",
+          "status": "Undeclared"
+        }
+      ],
+      "schoolInterests": 6,
+      "source": "espn"
+    },
+    {
+      "rank": 12,
+      "name": "Shawn Senatus",
+      "firstName": "Shawn",
+      "lastName": "Senatus",
+      "espnId": "257325",
+      "position": "S",
+      "positionName": null,
+      "city": "Harvey",
+      "state": "LA",
+      "stateFull": "Louisiana",
+      "height": "6-0",
+      "heightInches": 72,
+      "weight": 185,
+      "highSchool": null,
+      "highSchoolCity": null,
+      "highSchoolState": null,
+      "classYear": 2001,
+      "grade": 4,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": [
+        {
+          "name": "Western Kentucky Hilltoppers",
+          "abbreviation": "WKU",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Memphis Tigers",
+          "abbreviation": "MEM",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Marshall Thundering Herd",
+          "abbreviation": "MRSH",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Arkansas State Red Wolves",
+          "abbreviation": "ARST",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Louisiana-Monroe Warhawks",
+          "abbreviation": "ULM",
+          "status": "Undeclared"
+        },
+        {
+          "name": "UNLV Rebels",
+          "abbreviation": "UNLV",
+          "status": "Undeclared"
+        },
+        {
+          "name": "Troy Trojans",
+          "abbreviation": "TROY",
+          "status": "Undeclared"
+        }
+      ],
+      "schoolInterests": 7,
+      "source": "espn"
+    },
+    {
+      "rank": 13,
+      "name": "Ja'Sir Taylor",
+      "firstName": "Ja'Sir",
+      "lastName": "Taylor",
+      "espnId": "211278",
+      "position": "RB",
+      "positionName": null,
+      "city": "Brick",
+      "state": "NJ",
+      "stateFull": "New Jersey",
+      "height": "6-0",
+      "heightInches": 72,
+      "weight": 170,
+      "highSchool": "Brick Memorial High",
+      "highSchoolCity": "Brick",
+      "highSchoolState": "New Jersey",
+      "classYear": 2001,
+      "grade": 42,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": {
+        "40 YD": 99,
+        "3 CD": 99,
+        "20 YS": 99
+      },
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    },
+    {
+      "rank": 14,
+      "name": "T.J. White",
+      "firstName": "T.J.",
+      "lastName": "White",
+      "espnId": "259414",
+      "position": "OLB",
+      "positionName": null,
+      "city": "Jackson",
+      "state": "MS",
+      "stateFull": "Mississippi",
+      "height": "6-2",
+      "heightInches": 74,
+      "weight": 215,
+      "highSchool": "Jackson Academy",
+      "highSchoolCity": "Jackson",
+      "highSchoolState": "Mississippi",
+      "classYear": 2001,
+      "grade": 44,
+      "status": {
+        "id": 0,
+        "description": "Undeclared"
+      },
+      "attributes": null,
+      "committedSchool": null,
+      "schools": null,
+      "schoolInterests": 0,
+      "source": "espn"
+    }
+  ]
+}
