@@ -28,6 +28,8 @@ interface Recruit {
   commitStatus: string;
   committedTo?: string;
   source: string;
+  lat?: number;
+  lng?: number;
   // Composite fields
   compositeRating?: number;
   compositeStars?: number;
@@ -53,6 +55,63 @@ const STATE_ABBR: Record<string, string> = {
 };
 
 const US_STATE_ABBRS = new Set(Object.values(STATE_ABBR));
+
+// Approximate state centroids for fallback when CFBD lat/lng is missing
+const STATE_CENTROIDS: Record<string, [number, number]> = {
+  'AL': [32.8, -86.8], 'AK': [64.2, -152.5], 'AZ': [34.3, -111.7], 'AR': [34.8, -92.2],
+  'CA': [36.8, -119.4], 'CO': [39.0, -105.5], 'CT': [41.6, -72.7], 'DE': [39.0, -75.5],
+  'FL': [28.6, -82.4], 'GA': [33.0, -83.5], 'HI': [20.8, -156.3], 'ID': [44.1, -114.7],
+  'IL': [40.0, -89.2], 'IN': [39.8, -86.3], 'IA': [42.0, -93.5], 'KS': [38.5, -98.3],
+  'KY': [37.8, -85.3], 'LA': [31.0, -92.0], 'ME': [45.4, -69.2], 'MD': [39.0, -76.8],
+  'MA': [42.2, -71.5], 'MI': [44.3, -84.5], 'MN': [46.3, -94.3], 'MS': [32.7, -89.7],
+  'MO': [38.5, -92.3], 'MT': [47.0, -109.6], 'NE': [41.5, -99.8], 'NV': [38.8, -116.4],
+  'NH': [43.7, -71.6], 'NJ': [40.1, -74.7], 'NM': [34.4, -106.1], 'NY': [42.9, -75.5],
+  'NC': [35.5, -79.8], 'ND': [47.4, -100.5], 'OH': [40.4, -82.8], 'OK': [35.6, -97.5],
+  'OR': [44.0, -120.5], 'PA': [40.9, -77.8], 'RI': [41.7, -71.5], 'SC': [33.9, -80.9],
+  'SD': [44.4, -100.2], 'TN': [35.8, -86.3], 'TX': [31.5, -99.3], 'UT': [39.3, -111.7],
+  'VT': [44.1, -72.6], 'VA': [37.5, -78.9], 'WA': [47.4, -120.7], 'WV': [38.6, -80.6],
+  'WI': [44.6, -89.8], 'WY': [43.0, -107.6], 'DC': [38.9, -77.0],
+};
+
+// Country/region centroids for international recruits
+const COUNTRY_CENTROIDS: Record<string, [number, number]> = {
+  'england': [51.5, -0.1], 'uk': [51.5, -0.1], 'united kingdom': [51.5, -0.1], 'london': [51.5, -0.1],
+  'en': [51.5, -0.1], 'gb': [51.5, -0.1],
+  'canada': [45.4, -75.7], 'can': [45.4, -75.7], 'ab': [51.0, -114.1], 'bc': [49.3, -123.1],
+  'on': [43.7, -79.4], 'qc': [45.5, -73.6],
+  'australia': [-33.9, 151.2], 'aus': [-33.9, 151.2],
+  'germany': [50.1, 8.7], 'ger': [50.1, 8.7], 'de': [50.1, 8.7],
+  'france': [48.9, 2.3], 'fra': [48.9, 2.3], 'fr': [48.9, 2.3],
+  'nigeria': [9.1, 7.5], 'nga': [9.1, 7.5],
+  'ghana': [5.6, -0.2], 'gha': [5.6, -0.2],
+  'jamaica': [18.1, -77.3], 'jam': [18.1, -77.3],
+  'brazil': [-15.8, -47.9], 'bra': [-15.8, -47.9],
+  'mexico': [19.4, -99.1], 'mex': [19.4, -99.1],
+  'japan': [35.7, 139.7], 'jpn': [35.7, 139.7],
+  'south korea': [37.6, 127.0], 'korea': [37.6, 127.0],
+  'sweden': [59.3, 18.1], 'swe': [59.3, 18.1],
+  'norway': [59.9, 10.8], 'nor': [59.9, 10.8],
+  'denmark': [55.7, 12.6], 'den': [55.7, 12.6],
+  'netherlands': [52.4, 4.9], 'ned': [52.4, 4.9],
+  'italy': [41.9, 12.5], 'ita': [41.9, 12.5],
+  'spain': [40.4, -3.7], 'esp': [40.4, -3.7],
+  'samoa': [-13.8, -172.0], 'american samoa': [-14.3, -170.7],
+  'tonga': [-21.2, -175.2], 'fiji': [-18.1, 178.4],
+  'new zealand': [-41.3, 174.8], 'nzl': [-41.3, 174.8],
+  'ireland': [53.3, -6.3], 'irl': [53.3, -6.3],
+  'scotland': [55.95, -3.2], 'wales': [51.5, -3.2],
+  'haiti': [18.5, -72.3], 'dominican republic': [18.5, -69.9],
+  'trinidad': [10.7, -61.5], 'bahamas': [25.0, -77.4],
+  'bermuda': [32.3, -64.8], 'puerto rico': [18.2, -66.5],
+};
+
+function getCountryCentroid(locationStr: string): [number, number] | null {
+  const lower = locationStr.toLowerCase().trim();
+  for (const [key, coords] of Object.entries(COUNTRY_CENTROIDS)) {
+    if (lower.includes(key)) return coords;
+  }
+  return null;
+}
 
 function normalizeState(state: string): string {
   if (!state) return '';
@@ -372,20 +431,44 @@ function buildComposite(year: number): Recruit[] {
     });
   }
 
-  // Enrich with committedTo from CFBD and committedSchoolLogo from 247
+  // Enrich with committedTo + lat/lng from CFBD and committedSchoolLogo from 247
   const cfbdData = loadCfbdRecruits(year);
-  const cfbdByName = new Map<string, string>();
-  cfbdData.forEach(r => { if (r.committedTo) cfbdByName.set(normalizeName(r.name), r.committedTo); });
+  const cfbdByName = new Map<string, Recruit>();
+  cfbdData.forEach(r => { cfbdByName.set(normalizeName(r.name), r); });
 
   const logoByName = new Map<string, string>();
   data247.forEach(r => { if (r.committedSchoolLogo) logoByName.set(normalizeName(r.name), r.committedSchoolLogo); });
 
   composite.forEach(r => {
-    if (!r.committedTo) {
-      r.committedTo = cfbdByName.get(normalizeName(r.name)) || '';
+    const cfbd = cfbdByName.get(normalizeName(r.name));
+    if (!r.committedTo && cfbd?.committedTo) {
+      r.committedTo = cfbd.committedTo;
     }
     if (!r.committedSchoolLogo) {
       r.committedSchoolLogo = logoByName.get(normalizeName(r.name)) || '';
+    }
+    if (cfbd?.lat && cfbd?.lng) {
+      r.lat = cfbd.lat;
+      r.lng = cfbd.lng;
+    }
+    // Fallback: use state centroid or country centroid if no coordinates from CFBD
+    if (!r.lat || !r.lng) {
+      const stateAbbr = normalizeState(r.state);
+      if (stateAbbr && stateAbbr !== 'Non-US') {
+        const centroid = STATE_CENTROIDS[stateAbbr];
+        if (centroid) {
+          r.lat = centroid[0] + (Math.random() - 0.5) * 0.8;
+          r.lng = centroid[1] + (Math.random() - 0.5) * 0.8;
+        }
+      } else {
+        // International recruit — approximate by country/region from city or state field
+        const loc = ((r.state || '') + ' ' + (r.city || '')).toLowerCase();
+        const countryCoords = getCountryCentroid(loc);
+        if (countryCoords) {
+          r.lat = countryCoords[0] + (Math.random() - 0.5) * 0.5;
+          r.lng = countryCoords[1] + (Math.random() - 0.5) * 0.5;
+        }
+      }
     }
   });
 
@@ -460,6 +543,8 @@ function loadCfbdRecruits(year: number): Recruit[] {
       committedTo: (r.committedTo as string) || '',
       committedSchoolLogo: '',
       source: 'cfbd',
+      lat: (r.lat as number) || undefined,
+      lng: (r.lng as number) || undefined,
     }));
 
     cache[cacheKey] = { data: recruits, timestamp: now };

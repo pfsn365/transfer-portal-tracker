@@ -9,6 +9,8 @@ import Pagination from '@/components/Pagination';
 import { getApiPath } from '@/utils/api';
 import { getTeamLogo } from '@/utils/teamLogos';
 import { allTeams } from '@/data/teams';
+import ClassCalculator from './ClassCalculator';
+import RecruitingMap from './RecruitingMap';
 
 interface Recruit {
   id: number;
@@ -243,7 +245,7 @@ export default function RecruitingClient() {
   const [total, setTotal] = useState(0);
 
   // View toggle
-  const [activeView, setActiveView] = useState<'players' | 'team-rankings' | 'pipeline'>('players');
+  const [activeView, setActiveView] = useState<'players' | 'team-rankings' | 'pipeline' | 'class-calculator' | 'map'>('players');
 
   // Team rankings state
   const [teamRankings, setTeamRankings] = useState<TeamRanking[]>([]);
@@ -511,6 +513,26 @@ export default function RecruitingClient() {
             }`}
           >
             Recruiting Pipeline
+          </button>
+          <button
+            onClick={() => setActiveView('class-calculator')}
+            className={`px-5 py-2 rounded-lg font-semibold text-sm transition-colors cursor-pointer ${
+              activeView === 'class-calculator'
+                ? 'bg-[#0050A0] text-white'
+                : 'border border-gray-300 text-gray-700 hover:border-[#0050A0] hover:text-[#0050A0]'
+            }`}
+          >
+            Class Calculator
+          </button>
+          <button
+            onClick={() => setActiveView('map')}
+            className={`px-5 py-2 rounded-lg font-semibold text-sm transition-colors cursor-pointer ${
+              activeView === 'map'
+                ? 'bg-[#0050A0] text-white'
+                : 'border border-gray-300 text-gray-700 hover:border-[#0050A0] hover:text-[#0050A0]'
+            }`}
+          >
+            Recruiting Map
           </button>
         </div>
 
@@ -805,6 +827,16 @@ export default function RecruitingClient() {
               </p>
             )}
           </>
+        )}
+
+        {/* ═══ CLASS CALCULATOR VIEW ═══ */}
+        {activeView === 'class-calculator' && (
+          <ClassCalculator year={year} availableYears={availableYears} onYearChange={setYear} />
+        )}
+
+        {/* ═══ RECRUITING MAP VIEW ═══ */}
+        {activeView === 'map' && (
+          <RecruitingMap year={year} availableYears={availableYears} onYearChange={setYear} />
         )}
 
         {/* ═══ PLAYER RANKINGS VIEW ═══ */}

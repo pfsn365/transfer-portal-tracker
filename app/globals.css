@@ -371,3 +371,22 @@ table {
 .sidebar-scroll::-webkit-scrollbar-thumb:hover {
   background-color: #6b7280;
 }
+
+/* Leaflet popup overrides for recruiting map */
+.recruit-popup .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 0;
+}
+.recruit-popup .leaflet-popup-content {
+  margin: 10px 12px;
+}
+.recruit-popup .leaflet-popup-tip {
+  box-shadow: none;
+}
+
+/* Team logo markers on recruiting map */
+.recruit-logo-marker {
+  background: none !important;
+  border: none !important;
+}
