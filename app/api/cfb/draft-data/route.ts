@@ -65,14 +65,14 @@ const POSITION_GROUPS: Record<string, string[]> = {
   'OT': ['OT', 'T'],
   'OG': ['G'],
   'OC': ['C'],
-  'OL': ['OT', 'T', 'G', 'C', 'OL'],
+  'OL': ['OT', 'OG', 'OC', 'T', 'G', 'C', 'IOL', 'OL'],
   'DT': ['DT', 'NT'],
   'EDGE': ['DE'],
   'DL': ['DT', 'NT', 'DE', 'DL'],
   'LB': ['LB', 'ILB', 'OLB'],
-  'CB': ['CB'],
-  'SAF': ['S', 'FS', 'SAF'],
-  'DB': ['CB', 'S', 'FS', 'SAF', 'DB'],
+  'CB': ['CB', 'NB'],
+  'SAF': ['S', 'SS', 'FS', 'SAF'],
+  'DB': ['CB', 'NB', 'S', 'SS', 'FS', 'SAF', 'DB'],
   'K/P': ['K', 'P', 'LS'],
 };
 
@@ -132,7 +132,10 @@ function buildHistory(
       if (filters.yearMin && pick.year < filters.yearMin) return;
       if (filters.yearMax && pick.year > filters.yearMax) return;
       if (filters.round && pick.round !== filters.round) return;
-      if (filters.position && pick.position !== filters.position) return;
+      if (filters.position) {
+        const posMatches = POSITION_GROUPS[filters.position] || [filters.position];
+        if (!posMatches.includes(pick.position)) return;
+      }
 
       allPicks.push({
         ...pick,

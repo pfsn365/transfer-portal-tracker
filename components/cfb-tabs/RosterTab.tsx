@@ -32,10 +32,10 @@ const positionGroups: Record<string, string[]> = {
   'Running Backs': ['RB', 'FB'],
   'Wide Receivers': ['WR'],
   'Tight Ends': ['TE'],
-  'Offensive Line': ['OT', 'OG', 'OL', 'C', 'G', 'T', 'LT', 'RT', 'LG', 'RG'],
+  'Offensive Line': ['OT', 'OG', 'OC', 'OL', 'IOL', 'C', 'G', 'T', 'LT', 'RT', 'LG', 'RG'],
   'Defensive Line': ['DE', 'DT', 'NT', 'DL'],
   'Linebackers': ['LB', 'OLB', 'ILB', 'MLB', 'EDGE'],
-  'Defensive Backs': ['CB', 'S', 'FS', 'SS', 'DB'],
+  'Defensive Backs': ['CB', 'NB', 'S', 'SS', 'FS', 'SAF', 'DB'],
   'Special Teams': ['K', 'P', 'LS', 'PK'],
 };
 

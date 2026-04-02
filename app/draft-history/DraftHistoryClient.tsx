@@ -50,8 +50,8 @@ const YEAR_MAX = 2025;
 const YEAR_OPTIONS = Array.from({ length: YEAR_MAX - YEAR_MIN + 1 }, (_, i) => YEAR_MAX - i);
 const CONFERENCES = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'American', 'Pac-12', 'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Independent'] as const;
 const POSITIONS = [
-  'QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'C',
-  'DL', 'DE', 'DT', 'LB', 'CB', 'S', 'DB', 'K', 'P',
+  'QB', 'RB', 'WR', 'TE', 'OL', 'OT', 'OG', 'OC',
+  'DL', 'DT', 'EDGE', 'LB', 'DB', 'CB', 'SAF', 'K/P',
 ] as const;
 
 const PIPELINE_POSITION_FILTERS = [

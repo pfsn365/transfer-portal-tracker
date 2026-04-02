@@ -67,10 +67,10 @@ const POSITION_GROUPS: Record<string, string[]> = {
   'RB': ['RB', 'FB'],
   'WR': ['WR'],
   'TE': ['TE'],
-  'OL': ['OT', 'IOL', 'OL', 'C', 'G', 'T'],
+  'OL': ['OT', 'OG', 'OC', 'IOL', 'OL', 'C', 'G', 'T'],
   'DL': ['DL', 'DT', 'DE', 'NT', 'EDGE'],
   'LB': ['LB', 'ILB', 'OLB', 'MLB'],
-  'DB': ['CB', 'S', 'FS', 'SS'],
+  'DB': ['CB', 'NB', 'S', 'SS', 'FS', 'SAF', 'DB'],
   'K/P': ['K', 'P'],
 };
 
