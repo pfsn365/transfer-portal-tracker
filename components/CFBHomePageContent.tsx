@@ -59,6 +59,18 @@ export default function CFBHomePageContent() {
   const [latestArticles, setLatestArticles] = useState<Article[]>([]);
   const [articlesLoading, setArticlesLoading] = useState(true);
 
+  // YouTube state
+  interface YTVideo {
+    videoId: string;
+    title: string;
+    url: string;
+    thumbnail: string;
+    published: string;
+  }
+  const [ytVideos, setYtVideos] = useState<YTVideo[]>([]);
+  const [ytLoading, setYtLoading] = useState(true);
+  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+
   const getRelativeTime = (dateString: string) => {
     const now = new Date();
     const date = new Date(dateString);
@@ -74,9 +86,19 @@ export default function CFBHomePageContent() {
     const controller = new AbortController();
     fetch(getApiPath(`api/proxy-rss?url=${encodeURIComponent('https://www.profootballnetwork.com/feed/cfb-feed/')}`), { signal: controller.signal })
       .then(res => res.json())
-      .then(data => { setLatestArticles((data.articles || []).slice(0, 3)); })
+      .then(data => { setLatestArticles((data.articles || []).slice(0, 5)); })
       .catch(() => {})
       .finally(() => setArticlesLoading(false));
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(getApiPath('api/youtube-feed'), { signal: controller.signal })
+      .then(res => res.json())
+      .then(data => { setYtVideos(data.videos || []); })
+      .catch(() => {})
+      .finally(() => setYtLoading(false));
     return () => controller.abort();
   }, []);
 
@@ -571,69 +593,144 @@ export default function CFBHomePageContent() {
         </div>
       </section>
 
-      {/* Latest CFB Articles Section */}
-      <section id="articles" className="py-8 sm:py-10 lg:py-12" style={{ scrollMarginTop: '100px' }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900">Latest CFB Articles</h2>
-              <div className="w-12 h-1 bg-[#0050A0] rounded-full mt-2"></div>
-            </div>
-            <Link href="/articles" className="text-[#0050A0] hover:text-[#003a75] font-semibold text-sm transition-colors">
-              View All Articles →
-            </Link>
-          </div>
+      {/* Latest CFB Articles & YouTube Section */}
+      <section id="articles" className="pt-2 pb-8 sm:pb-10 lg:pb-12" style={{ scrollMarginTop: '100px' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
 
-          {articlesLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="bg-gray-50 rounded-lg overflow-hidden animate-pulse">
-                  <div className="w-full aspect-video bg-gray-200"></div>
-                  <div className="p-4">
-                    <div className="h-5 bg-gray-200 rounded w-3/4 mb-2"></div>
-                    <div className="h-4 bg-gray-200 rounded w-full mb-1"></div>
-                    <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-                  </div>
-                </div>
-              ))}
+          {/* ── Row 1: Articles ── */}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3 min-w-0">
+                <span className="text-xs font-bold uppercase tracking-widest text-gray-400 whitespace-nowrap">Latest CFB Articles from PFSN</span>
+                <div className="flex-1 h-px bg-gray-200 min-w-[20px]" />
+              </div>
+              <Link
+                href="/articles"
+                className="ml-4 flex-shrink-0 text-xs font-bold uppercase tracking-widest text-[#0050A0] hover:text-[#003a75] transition-colors"
+              >
+                View More →
+              </Link>
             </div>
-          ) : latestArticles.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {latestArticles.map((article, index) => (
-                <a
-                  key={`${article.link}-${index}`}
-                  href={article.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-                >
-                  {article.featuredImage ? (
-                    <div className="w-full aspect-video overflow-hidden bg-gray-200">
-                      <img
-                        src={article.featuredImage}
-                        alt={article.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
+
+            {articlesLoading ? (
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <div key={i} className="animate-pulse">
+                    <div className="w-full aspect-video bg-gray-200 rounded-lg mb-3" />
+                    <div className="h-4 bg-gray-200 rounded w-3/4 mb-2" />
+                    <div className="h-3 bg-gray-200 rounded w-1/3" />
+                  </div>
+                ))}
+              </div>
+            ) : latestArticles.length > 0 ? (
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                {latestArticles.map((article, index) => (
+                  <a
+                    key={`${article.link}-${index}`}
+                    href={article.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group cursor-pointer"
+                  >
+                    <div className="w-full aspect-video overflow-hidden rounded-lg bg-gray-200 mb-3">
+                      {article.featuredImage ? (
+                        <img
+                          src={article.featuredImage}
+                          alt={article.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-[#0050A0] to-[#003a75] flex items-center justify-center">
+                          <span className="text-white text-2xl font-bold opacity-30">PFSN</span>
+                        </div>
+                      )}
                     </div>
-                  ) : (
-                    <div className="w-full aspect-video bg-gradient-to-br from-[#0050A0] to-[#003a75] flex items-center justify-center">
-                      <span className="text-white text-3xl font-bold opacity-30">PFSN</span>
-                    </div>
-                  )}
-                  <div className="p-4">
-                    <h3 className="text-base font-bold text-gray-900 group-hover:text-[#0050A0] mb-2 line-clamp-2 transition-colors">
+                    <h3 className="text-sm font-bold text-gray-900 group-hover:text-[#0050A0] line-clamp-2 transition-colors leading-snug mb-1">
                       {article.title}
                     </h3>
-                    <p className="text-sm text-gray-600 line-clamp-2 mb-3">{article.description}</p>
-                    <div className="flex items-center justify-between text-xs text-gray-400">
-                      <span>{article.author}</span>
-                      <span>{getRelativeTime(article.pubDate)}</span>
-                    </div>
-                  </div>
-                </a>
-              ))}
+                    <p className="text-xs text-gray-400">{getRelativeTime(article.pubDate)}</p>
+                  </a>
+                ))}
+              </div>
+            ) : null}
+          </div>
+
+          {/* ── Row 2: YouTube / FDC365 ── */}
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3 min-w-0">
+                <span className="text-xs font-bold uppercase tracking-widest text-gray-400 whitespace-nowrap">Latest from Football Debate Club</span>
+                <div className="flex-1 h-px bg-gray-200 min-w-[20px]" />
+              </div>
+              <a
+                href="https://www.youtube.com/@FDC365?sub_confirmation=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-4 flex-shrink-0 flex items-center gap-1.5 bg-[#0050A0] hover:bg-[#003a75] text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded transition-colors"
+              >
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                Subscribe
+              </a>
             </div>
-          ) : null}
+
+            {ytLoading ? (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="animate-pulse">
+                    <div className="w-full aspect-video bg-gray-200 rounded-lg mb-3" />
+                    <div className="h-4 bg-gray-200 rounded w-3/4 mb-2" />
+                    <div className="h-3 bg-gray-200 rounded w-1/3" />
+                  </div>
+                ))}
+              </div>
+            ) : ytVideos.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {ytVideos.map((video) => (
+                  <div key={video.videoId} className="group cursor-pointer">
+                    <div className="w-full aspect-video overflow-hidden rounded-lg bg-gray-900 mb-3 relative">
+                      {activeVideoId === video.videoId ? (
+                        <iframe
+                          src={`https://www.youtube.com/embed/${video.videoId}?autoplay=1`}
+                          title={video.title}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="w-full h-full"
+                        />
+                      ) : (
+                        <>
+                          <img
+                            src={video.thumbnail}
+                            alt={video.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div
+                            className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors duration-200"
+                            onClick={() => setActiveVideoId(video.videoId)}
+                          >
+                            <div className="bg-[#0050A0] rounded-full w-14 h-14 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+                              <svg className="w-6 h-6 text-white ml-1" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                    <h3
+                      className="text-sm font-bold text-gray-900 group-hover:text-[#0050A0] line-clamp-2 transition-colors leading-snug mb-1 cursor-pointer"
+                      onClick={() => setActiveVideoId(video.videoId)}
+                    >
+                      {video.title}
+                    </h3>
+                    <p className="text-xs text-gray-400">{getRelativeTime(video.published)}</p>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+          </div>
+
         </div>
       </section>
 
