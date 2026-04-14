@@ -113,7 +113,7 @@
       "pick": 280,
       "name": "Tony Barker",
       "position": "LB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1991,
@@ -129,7 +129,31 @@
       "pick": 37,
       "name": "Courtney Hall",
       "position": "C",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1986,
+      "round": 10,
+      "pick": 267,
+      "name": "Elliston Stinson",
+      "position": "WR",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1983,
+      "round": 11,
+      "pick": 291,
+      "name": "Clenzie Pierson",
+      "position": "DT",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1982,
+      "round": 8,
+      "pick": 213,
+      "name": "Robert Hubble",
+      "position": "TE",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1981,
@@ -145,7 +169,15 @@
       "pick": 231,
       "name": "Darryl Grant",
       "position": "DT",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1981,
+      "round": 9,
+      "pick": 245,
+      "name": "Calvin Fance",
+      "position": "RB",
+      "nflTeam": "Atlanta Falcons"
     },
     {
       "year": 1980,
@@ -156,12 +188,36 @@
       "nflTeam": "San Francisco 49ers"
     },
     {
+      "year": 1979,
+      "round": 9,
+      "pick": 242,
+      "name": "Charlie Taylor",
+      "position": "WR",
+      "nflTeam": "Denver Broncos"
+    },
+    {
       "year": 1977,
       "round": 1,
       "pick": 27,
       "name": "Tommy Kramer",
       "position": "QB",
       "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1977,
+      "round": 10,
+      "pick": 273,
+      "name": "James Sykes",
+      "position": "RB",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1976,
+      "round": 5,
+      "pick": 152,
+      "name": "Rodney Norton",
+      "position": "LB",
+      "nflTeam": "Pittsburgh Steelers"
     },
     {
       "year": 1976,
@@ -173,11 +229,51 @@
     },
     {
       "year": 1975,
+      "round": 3,
+      "pick": 59,
+      "name": "Cornelius Walker",
+      "position": "DT",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1975,
       "round": 10,
       "pick": 246,
       "name": "Alan Pringle",
       "position": "K",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1975,
+      "round": 14,
+      "pick": 352,
+      "name": "Jody Medford",
+      "position": "G",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1974,
+      "round": 7,
+      "pick": 164,
+      "name": "Carl Swierc",
+      "position": "WR",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1974,
+      "round": 14,
+      "pick": 344,
+      "name": "Ed Collins",
+      "position": "WR",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1974,
+      "round": 14,
+      "pick": 358,
+      "name": "Bruce Henley",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
     },
     {
       "year": 1974,
@@ -202,6 +298,86 @@
       "name": "Rodrigo Barnes",
       "position": "LB",
       "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1973,
+      "round": 9,
+      "pick": 209,
+      "name": "Mark Williams",
+      "position": "K",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1972,
+      "round": 8,
+      "pick": 193,
+      "name": "Stahle Vincent",
+      "position": "RB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1972,
+      "round": 14,
+      "pick": 347,
+      "name": "Bob Brown",
+      "position": "WR",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1972,
+      "round": 17,
+      "pick": 432,
+      "name": "Mike Tyler",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1971,
+      "round": 7,
+      "pick": 177,
+      "name": "Brownie Wheless",
+      "position": "T",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1971,
+      "round": 11,
+      "pick": 265,
+      "name": "Macon Hughes",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1971,
+      "round": 11,
+      "pick": 269,
+      "name": "Roger Roitsch",
+      "position": "DT",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1970,
+      "round": 11,
+      "pick": 263,
+      "name": "Brownie Wheless",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1970,
+      "round": 16,
+      "pick": 394,
+      "name": "Larry Davis",
+      "position": "WR",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1969,
+      "round": 15,
+      "pick": 388,
+      "name": "Leland Winston",
+      "position": "T",
+      "nflTeam": "Kansas City Chiefs"
     }
   ]
 }

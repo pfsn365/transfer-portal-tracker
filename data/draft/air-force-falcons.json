@@ -36,6 +36,14 @@
       "nflTeam": "Buffalo Bills"
     },
     {
+      "year": 1997,
+      "round": 6,
+      "pick": 178,
+      "name": "Daniel Palmer",
+      "position": "C",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
       "year": 1995,
       "round": 7,
       "pick": 218,
@@ -44,12 +52,36 @@
       "nflTeam": "Denver Broncos"
     },
     {
+      "year": 1992,
+      "round": 12,
+      "pick": 332,
+      "name": "Joe Wood",
+      "position": "K",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1988,
       "round": 11,
       "pick": 290,
       "name": "Chad Hennings",
       "position": "DT",
       "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1976,
+      "round": 16,
+      "pick": 444,
+      "name": "Dave Lawson",
+      "position": "K",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1971,
+      "round": 10,
+      "pick": 257,
+      "name": "Ernie Jennings",
+      "position": "WR",
+      "nflTeam": "San Francisco 49ers"
     }
   ]
 }

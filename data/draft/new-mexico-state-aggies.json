@@ -49,7 +49,15 @@
       "pick": 246,
       "name": "Siddeeq Shabazz",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 2001,
+      "round": 5,
+      "pick": 161,
+      "name": "Chris Barnes",
+      "position": "RB",
+      "nflTeam": "Baltimore Ravens"
     },
     {
       "year": 1996,
@@ -60,12 +68,20 @@
       "nflTeam": "San Francisco 49ers"
     },
     {
+      "year": 1996,
+      "round": 7,
+      "pick": 254,
+      "name": "Sam Manuel",
+      "position": "LB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1995,
       "round": 6,
       "pick": 177,
       "name": "Troy Sienkiewicz",
       "position": "G",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1994,
@@ -73,7 +89,15 @@
       "pick": 137,
       "name": "Aaron Laing",
       "position": "TE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1991,
+      "round": 10,
+      "pick": 277,
+      "name": "Tony De Lorenzo",
+      "position": "G",
+      "nflTeam": "Buffalo Bills"
     },
     {
       "year": 1988,
@@ -81,7 +105,23 @@
       "pick": 91,
       "name": "Joe Campbell",
       "position": "DE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1985,
+      "round": 7,
+      "pick": 172,
+      "name": "Kim Locklin",
+      "position": "RB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1985,
+      "round": 12,
+      "pick": 322,
+      "name": "Louis Garza",
+      "position": "T",
+      "nflTeam": "Cincinnati Bengals"
     },
     {
       "year": 1984,
@@ -116,6 +156,22 @@
       "nflTeam": "Los Angeles Rams"
     },
     {
+      "year": 1982,
+      "round": 11,
+      "pick": 299,
+      "name": "Anthony Watson",
+      "position": "DB",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1978,
+      "round": 9,
+      "pick": 246,
+      "name": "Andre Anderson",
+      "position": "DE",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
       "year": 1978,
       "round": 11,
       "pick": 280,
@@ -137,7 +193,7 @@
       "pick": 128,
       "name": "Cliff Olander",
       "position": "QB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1976,
@@ -146,6 +202,22 @@
       "name": "Duriel Harris",
       "position": "WR",
       "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1976,
+      "round": 10,
+      "pick": 279,
+      "name": "Bill Bowerman",
+      "position": "QB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1975,
+      "round": 2,
+      "pick": 46,
+      "name": "Jim Germany",
+      "position": "RB",
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1973,
@@ -172,12 +244,60 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1972,
+      "round": 14,
+      "pick": 344,
+      "name": "Pat McTeer",
+      "position": "K",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1971,
+      "round": 5,
+      "pick": 122,
+      "name": "George Wells",
+      "position": "LB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1969,
       "round": 4,
       "pick": 96,
       "name": "Roy Gerela",
       "position": "K",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1969,
+      "round": 4,
+      "pick": 100,
+      "name": "Ruby Jackson",
+      "position": "T",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1969,
+      "round": 7,
+      "pick": 162,
+      "name": "Rick Hackley",
+      "position": "T",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1969,
+      "round": 12,
+      "pick": 305,
+      "name": "Howard Taylor",
+      "position": "RB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1969,
+      "round": 14,
+      "pick": 356,
+      "name": "Bill Ackman",
+      "position": "DT",
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1968,
@@ -185,7 +305,31 @@
       "pick": 96,
       "name": "Joe Schmiesing",
       "position": "DE",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1968,
+      "round": 7,
+      "pick": 174,
+      "name": "Doug Dalton",
+      "position": "RB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1968,
+      "round": 14,
+      "pick": 370,
+      "name": "Harold Gargus",
+      "position": "DT",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1967,
+      "round": 7,
+      "pick": 178,
+      "name": "Bob Crenshaw",
+      "position": "G",
+      "nflTeam": "Philadelphia Eagles"
     }
   ]
 }

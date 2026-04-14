@@ -113,7 +113,7 @@
       "pick": 168,
       "name": "Marquel Lee",
       "position": "LB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2015,
@@ -145,7 +145,7 @@
       "pick": 96,
       "name": "Chris Givens",
       "position": "WR",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2012,
@@ -337,7 +337,7 @@
       "pick": 32,
       "name": "Ben Coleman",
       "position": "G",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1993,
@@ -345,7 +345,7 @@
       "pick": 131,
       "name": "John Henry Mills",
       "position": "LB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1993,
@@ -361,7 +361,7 @@
       "pick": 58,
       "name": "Ricky Proehl",
       "position": "WR",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1990,
@@ -404,12 +404,28 @@
       "nflTeam": "New Orleans Saints"
     },
     {
+      "year": 1988,
+      "round": 8,
+      "pick": 221,
+      "name": "Darryl McGill",
+      "position": "RB",
+      "nflTeam": "Washington Commanders"
+    },
+    {
       "year": 1987,
       "round": 6,
       "pick": 153,
       "name": "Paul Kiser",
       "position": "G",
       "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1987,
+      "round": 9,
+      "pick": 228,
+      "name": "Gregg Harris",
+      "position": "G",
+      "nflTeam": "Green Bay Packers"
     },
     {
       "year": 1986,
@@ -481,7 +497,7 @@
       "pick": 300,
       "name": "Carlos Bradley",
       "position": "LB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1980,
@@ -498,6 +514,22 @@
       "name": "Larry Tearry",
       "position": "C",
       "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1978,
+      "round": 10,
+      "pick": 266,
+      "name": "Steve Young",
+      "position": "TE",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1977,
+      "round": 8,
+      "pick": 213,
+      "name": "Bill Armstrong",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
     },
     {
       "year": 1977,
@@ -524,12 +556,28 @@
       "nflTeam": "Miami Dolphins"
     },
     {
+      "year": 1973,
+      "round": 8,
+      "pick": 188,
+      "name": "Ken Garrett",
+      "position": "RB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
       "year": 1972,
       "round": 4,
       "pick": 88,
       "name": "Ed Bradley",
       "position": "LB",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1971,
+      "round": 8,
+      "pick": 193,
+      "name": "Win Headley",
+      "position": "C",
+      "nflTeam": "Green Bay Packers"
     },
     {
       "year": 1970,
@@ -553,7 +601,31 @@
       "pick": 50,
       "name": "Bob Grant",
       "position": "LB",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1968,
+      "round": 7,
+      "pick": 177,
+      "name": "Ken Henry",
+      "position": "FL",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1967,
+      "round": 14,
+      "pick": 351,
+      "name": "Lynn Nesbitt",
+      "position": "G",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1967,
+      "round": 15,
+      "pick": 368,
+      "name": "John Snow",
+      "position": "T",
+      "nflTeam": "New Orleans Saints"
     }
   ]
 }

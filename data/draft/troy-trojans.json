@@ -103,7 +103,7 @@
       "year": 2005,
       "round": 1,
       "pick": 11,
-      "name": "DeMarcus Ware",
+      "name": "DeMarcus Ware HOF",
       "position": "LB",
       "nflTeam": "Dallas Cowboys"
     },
@@ -137,7 +137,7 @@
       "pick": 129,
       "name": "Michael Moore",
       "position": "G",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2000,
@@ -156,12 +156,20 @@
       "nflTeam": "Cleveland Browns"
     },
     {
+      "year": 1998,
+      "round": 6,
+      "pick": 155,
+      "name": "Clifford Ivory",
+      "position": "DB",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
       "year": 1997,
       "round": 4,
       "pick": 107,
       "name": "Pratt Lyons",
       "position": "DE",
-      "nflTeam": "Tennessee Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1994,
@@ -180,12 +188,28 @@
       "nflTeam": "Cincinnati Bengals"
     },
     {
+      "year": 1992,
+      "round": 8,
+      "pick": 217,
+      "name": "Reggie Dwight",
+      "position": "TE",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
       "year": 1989,
       "round": 6,
       "pick": 153,
       "name": "Titus Dixon",
       "position": "WR",
       "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1988,
+      "round": 11,
+      "pick": 286,
+      "name": "Greg Harris",
+      "position": "WR",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1986,
@@ -196,12 +220,28 @@
       "nflTeam": "Pittsburgh Steelers"
     },
     {
+      "year": 1985,
+      "round": 9,
+      "pick": 247,
+      "name": "Mitch Geier",
+      "position": "G",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1982,
+      "round": 9,
+      "pick": 224,
+      "name": "Kelvin Murdock",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
       "year": 1981,
       "round": 8,
       "pick": 217,
       "name": "Willie Tullis",
       "position": "DB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1980,
@@ -228,12 +268,36 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1973,
+      "round": 6,
+      "pick": 147,
+      "name": "Wade Brantley",
+      "position": "DT",
+      "nflTeam": "New York Giants"
+    },
+    {
       "year": 1971,
       "round": 6,
       "pick": 133,
       "name": "Jack Smith",
       "position": "DB",
       "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1970,
+      "round": 13,
+      "pick": 316,
+      "name": "Ronnie Shelley",
+      "position": "DB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1969,
+      "round": 14,
+      "pick": 349,
+      "name": "Glenn Thompson",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
     }
   ]
 }

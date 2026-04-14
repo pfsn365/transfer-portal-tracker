@@ -146,7 +146,7 @@ export default function DraftTab({ team, teamColor }: DraftTabProps) {
           comparison = a.position.localeCompare(b.position);
           break;
         case 'nflTeam':
-          comparison = a.nflTeam.localeCompare(b.nflTeam);
+          comparison = (a.nflTeam || '').localeCompare(b.nflTeam || '');
           break;
       }
 
@@ -160,6 +160,7 @@ export default function DraftTab({ team, teamColor }: DraftTabProps) {
 
     const teamCounts: Record<string, number> = {};
     data.draftPicks.forEach(pick => {
+      if (!pick.nflTeam) return;
       teamCounts[pick.nflTeam] = (teamCounts[pick.nflTeam] || 0) + 1;
     });
 

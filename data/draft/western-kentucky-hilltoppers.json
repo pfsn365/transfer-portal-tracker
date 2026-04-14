@@ -113,7 +113,7 @@
       "pick": 247,
       "name": "Jonathan Dowling",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2013,
@@ -148,6 +148,38 @@
       "nflTeam": "New Orleans Saints"
     },
     {
+      "year": 1992,
+      "round": 12,
+      "pick": 321,
+      "name": "Milton Biggins",
+      "position": "TE",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1990,
+      "round": 10,
+      "pick": 269,
+      "name": "Jerome Martin",
+      "position": "DB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1990,
+      "round": 11,
+      "pick": 287,
+      "name": "Webbie Burnett",
+      "position": "DT",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1988,
+      "round": 8,
+      "pick": 207,
+      "name": "David Smith",
+      "position": "RB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
       "year": 1984,
       "round": 10,
       "pick": 264,
@@ -164,12 +196,36 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1982,
+      "round": 11,
+      "pick": 280,
+      "name": "Lamont Meacham",
+      "position": "DB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1980,
+      "round": 11,
+      "pick": 301,
+      "name": "Eddie Preston",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1977,
       "round": 6,
       "pick": 165,
       "name": "David Carter",
       "position": "C",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1976,
+      "round": 13,
+      "pick": 360,
+      "name": "Rick Caswell",
+      "position": "KR",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1975,
@@ -180,12 +236,60 @@
       "nflTeam": "Chicago Bears"
     },
     {
+      "year": 1975,
+      "round": 8,
+      "pick": 184,
+      "name": "John Bushong",
+      "position": "DE",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1974,
+      "round": 8,
+      "pick": 183,
+      "name": "Mike McCoy",
+      "position": "DB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1974,
       "round": 16,
       "pick": 395,
       "name": "Jazz Jackson",
       "position": "RB",
       "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1973,
+      "round": 8,
+      "pick": 186,
+      "name": "Isaac Brown",
+      "position": "RB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1971,
+      "round": 15,
+      "pick": 378,
+      "name": "Bill Green",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1971,
+      "round": 16,
+      "pick": 407,
+      "name": "Lawrence Brame",
+      "position": "LB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1971,
+      "round": 17,
+      "pick": 432,
+      "name": "Sam Pearson",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
     }
   ]
 }

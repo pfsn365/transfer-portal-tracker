@@ -33,7 +33,7 @@
       "pick": 219,
       "name": "T.J. Carrie",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2013,
@@ -65,7 +65,7 @@
       "pick": 47,
       "name": "Mike Mitchell",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2008,
@@ -84,12 +84,28 @@
       "nflTeam": "Baltimore Ravens"
     },
     {
+      "year": 1976,
+      "round": 16,
+      "pick": 450,
+      "name": "Mike Green",
+      "position": "K",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
       "year": 1973,
       "round": 14,
       "pick": 345,
       "name": "Dave Juenger",
       "position": "WR",
       "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1972,
+      "round": 4,
+      "pick": 103,
+      "name": "Al Benton",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
     },
     {
       "year": 1972,
@@ -108,12 +124,28 @@
       "nflTeam": "Atlanta Falcons"
     },
     {
+      "year": 1970,
+      "round": 11,
+      "pick": 271,
+      "name": "Cleve Bryant",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
       "year": 1969,
       "round": 9,
       "pick": 233,
       "name": "Frank Peters",
       "position": "T",
       "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1969,
+      "round": 14,
+      "pick": 342,
+      "name": "Bob Houmard",
+      "position": "RB",
+      "nflTeam": "Pittsburgh Steelers"
     }
   ]
 }

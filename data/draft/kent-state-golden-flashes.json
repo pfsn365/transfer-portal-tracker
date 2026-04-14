@@ -52,6 +52,14 @@
       "nflTeam": "New Orleans Saints"
     },
     {
+      "year": 2000,
+      "round": 6,
+      "pick": 204,
+      "name": "Jason Gavadza",
+      "position": "TE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
       "year": 1999,
       "round": 5,
       "pick": 164,
@@ -100,6 +108,14 @@
       "nflTeam": "Atlanta Falcons"
     },
     {
+      "year": 1978,
+      "round": 12,
+      "pick": 323,
+      "name": "Kim Featsent",
+      "position": "WR",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
       "year": 1977,
       "round": 6,
       "pick": 156,
@@ -117,11 +133,27 @@
     },
     {
       "year": 1976,
+      "round": 11,
+      "pick": 294,
+      "name": "Greg Kokal",
+      "position": "QB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1976,
+      "round": 11,
+      "pick": 297,
+      "name": "Doug Celek",
+      "position": "DE",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1976,
       "round": 12,
       "pick": 343,
       "name": "Cedric Brown",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1975,
@@ -143,7 +175,7 @@
       "year": 1974,
       "round": 2,
       "pick": 46,
-      "name": "Jack Lambert",
+      "name": "Jack Lambert HOF",
       "position": "LB",
       "nflTeam": "Pittsburgh Steelers"
     },
@@ -153,7 +185,47 @@
       "pick": 441,
       "name": "Don Nottingham",
       "position": "RB",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1970,
+      "round": 2,
+      "pick": 33,
+      "name": "Jim Corrigall",
+      "position": "LB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1969,
+      "round": 17,
+      "pick": 420,
+      "name": "Bill Eppright",
+      "position": "K",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1968,
+      "round": 4,
+      "pick": 87,
+      "name": "Don Fitzgerald",
+      "position": "RB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1968,
+      "round": 5,
+      "pick": 129,
+      "name": "Bill Perry",
+      "position": "TE",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1968,
+      "round": 13,
+      "pick": 350,
+      "name": "Howard Tennebar",
+      "position": "T",
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1968,
@@ -162,6 +234,38 @@
       "name": "Lou Harris",
       "position": "DB",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1967,
+      "round": 2,
+      "pick": 44,
+      "name": "John Brooks",
+      "position": "G",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1967,
+      "round": 9,
+      "pick": 233,
+      "name": "Gerald Seither",
+      "position": "E",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1967,
+      "round": 12,
+      "pick": 292,
+      "name": "Ernie Ames",
+      "position": "DT",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1967,
+      "round": 14,
+      "pick": 344,
+      "name": "Charles Stikes",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
     }
   ]
 }

@@ -101,11 +101,43 @@
     },
     {
       "year": 1974,
+      "round": 15,
+      "pick": 379,
+      "name": "Piel Pennington",
+      "position": "QB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1974,
       "round": 17,
       "pick": 421,
       "name": "Tim Berra",
       "position": "WR",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1973,
+      "round": 13,
+      "pick": 329,
+      "name": "Paul Metallo",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1972,
+      "round": 15,
+      "pick": 368,
+      "name": "John Hulecki",
+      "position": "G",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1972,
+      "round": 15,
+      "pick": 370,
+      "name": "Harold Parmenter",
+      "position": "DT",
+      "nflTeam": "Denver Broncos"
     },
     {
       "year": 1971,
@@ -114,6 +146,22 @@
       "name": "Bubba Pena",
       "position": "G",
       "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1971,
+      "round": 15,
+      "pick": 365,
+      "name": "Nick McGarry",
+      "position": "TE",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1970,
+      "round": 16,
+      "pick": 403,
+      "name": "Steve Parnell",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
     },
     {
       "year": 1968,

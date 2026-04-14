@@ -25,7 +25,7 @@
       "pick": 229,
       "name": "Erik Cook",
       "position": "C",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2009,
@@ -81,7 +81,7 @@
       "pick": 134,
       "name": "Claude Terrell",
       "position": "G",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2005,
@@ -111,9 +111,17 @@
       "year": 2000,
       "round": 1,
       "pick": 9,
-      "name": "Brian Urlacher",
+      "name": "Brian Urlacher HOF",
       "position": "LB",
       "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 2000,
+      "round": 7,
+      "pick": 226,
+      "name": "Casey Tisdale",
+      "position": "LB",
+      "nflTeam": "New England Patriots"
     },
     {
       "year": 1998,
@@ -140,6 +148,14 @@
       "nflTeam": "Carolina Panthers"
     },
     {
+      "year": 1996,
+      "round": 6,
+      "pick": 173,
+      "name": "Chris Griffin",
+      "position": "TE",
+      "nflTeam": "New England Patriots"
+    },
+    {
       "year": 1995,
       "round": 3,
       "pick": 70,
@@ -156,12 +172,28 @@
       "nflTeam": "Arizona Cardinals"
     },
     {
+      "year": 1991,
+      "round": 12,
+      "pick": 329,
+      "name": "Ron Shipley",
+      "position": "G",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1990,
       "round": 6,
       "pick": 140,
       "name": "Terance Mathis",
       "position": "WR",
       "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1985,
+      "round": 10,
+      "pick": 269,
+      "name": "Buddy Funck",
+      "position": "QB",
+      "nflTeam": "Denver Broncos"
     },
     {
       "year": 1984,
@@ -180,12 +212,36 @@
       "nflTeam": "New England Patriots"
     },
     {
+      "year": 1981,
+      "round": 4,
+      "pick": 96,
+      "name": "Brad Wright",
+      "position": "QB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1981,
+      "round": 5,
+      "pick": 127,
+      "name": "Ricky Martin",
+      "position": "WR",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1981,
+      "round": 12,
+      "pick": 316,
+      "name": "Bob Shupryt",
+      "position": "LB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
       "year": 1980,
       "round": 3,
       "pick": 81,
       "name": "Charles Baker",
       "position": "LB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1980,
@@ -193,7 +249,7 @@
       "pick": 106,
       "name": "Chris Combs",
       "position": "TE",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1979,
@@ -228,6 +284,14 @@
       "nflTeam": "Miami Dolphins"
     },
     {
+      "year": 1977,
+      "round": 9,
+      "pick": 235,
+      "name": "Dave Green",
+      "position": "T",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1976,
       "round": 4,
       "pick": 93,
@@ -236,12 +300,36 @@
       "nflTeam": "Seattle Seahawks"
     },
     {
+      "year": 1976,
+      "round": 17,
+      "pick": 477,
+      "name": "Bob Berg",
+      "position": "K",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
       "year": 1974,
       "round": 6,
       "pick": 134,
       "name": "Don Woods",
       "position": "RB",
       "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1973,
+      "round": 9,
+      "pick": 221,
+      "name": "Larry Dibbles",
+      "position": "DE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1973,
+      "round": 17,
+      "pick": 427,
+      "name": "Fred Henry",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 1971,
@@ -260,6 +348,22 @@
       "nflTeam": "Dallas Cowboys"
     },
     {
+      "year": 1970,
+      "round": 11,
+      "pick": 282,
+      "name": "David Bookert",
+      "position": "RB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1969,
+      "round": 13,
+      "pick": 336,
+      "name": "Rene Matison",
+      "position": "FL",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
       "year": 1968,
       "round": 9,
       "pick": 222,
@@ -274,6 +378,14 @@
       "name": "Emilio Vallez",
       "position": "TE",
       "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1967,
+      "round": 12,
+      "pick": 309,
+      "name": "Ben Monroe",
+      "position": "QB",
+      "nflTeam": "Philadelphia Eagles"
     }
   ]
 }

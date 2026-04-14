@@ -49,7 +49,7 @@
       "pick": 124,
       "name": "John Bates",
       "position": "TE",
-      "nflTeam": "Washington Football Team"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2021,
@@ -249,7 +249,7 @@
       "pick": 78,
       "name": "Austin Pettis",
       "position": "WR",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2011,
@@ -257,7 +257,7 @@
       "pick": 213,
       "name": "Brandyn Thompson",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2010,
@@ -297,7 +297,7 @@
       "pick": 172,
       "name": "Legedu Naanee",
       "position": "WR",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2007,
@@ -380,6 +380,14 @@
       "nflTeam": "Denver Broncos"
     },
     {
+      "year": 1992,
+      "round": 9,
+      "pick": 234,
+      "name": "Larry Stayner",
+      "position": "TE",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
       "year": 1987,
       "round": 6,
       "pick": 155,
@@ -393,7 +401,7 @@
       "pick": 273,
       "name": "Jim Ellis",
       "position": "LB",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1986,
@@ -401,7 +409,7 @@
       "pick": 30,
       "name": "Markus Koch",
       "position": "DE",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1986,
@@ -410,6 +418,22 @@
       "name": "Jon Francis",
       "position": "RB",
       "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1984,
+      "round": 11,
+      "pick": 291,
+      "name": "Michel Bourgeau",
+      "position": "DE",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1983,
+      "round": 7,
+      "pick": 183,
+      "name": "Jeff Turk",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
     },
     {
       "year": 1983,
@@ -428,6 +452,14 @@
       "nflTeam": "Pittsburgh Steelers"
     },
     {
+      "year": 1982,
+      "round": 9,
+      "pick": 238,
+      "name": "Randy Trautman",
+      "position": "DT",
+      "nflTeam": "Washington Commanders"
+    },
+    {
       "year": 1981,
       "round": 2,
       "pick": 31,
@@ -444,12 +476,84 @@
       "nflTeam": "Seattle Seahawks"
     },
     {
+      "year": 1979,
+      "round": 8,
+      "pick": 205,
+      "name": "Willie Beamon",
+      "position": "LB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1976,
+      "round": 3,
+      "pick": 75,
+      "name": "John Smith",
+      "position": "RB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1976,
+      "round": 16,
+      "pick": 448,
+      "name": "Gary Gorrell",
+      "position": "LB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1976,
+      "round": 17,
+      "pick": 475,
+      "name": "Jim Meeks",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
       "year": 1975,
       "round": 6,
       "pick": 148,
       "name": "Rolly Woolsey",
       "position": "DB",
       "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1975,
+      "round": 14,
+      "pick": 350,
+      "name": "Jim McMillan",
+      "position": "QB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1975,
+      "round": 15,
+      "pick": 386,
+      "name": "Ron Franklin",
+      "position": "DT",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1974,
+      "round": 9,
+      "pick": 213,
+      "name": "Don Hutt",
+      "position": "WR",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1974,
+      "round": 13,
+      "pick": 313,
+      "name": "Dan Dixon",
+      "position": "G",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1974,
+      "round": 17,
+      "pick": 433,
+      "name": "Al Davis",
+      "position": "G",
+      "nflTeam": "Atlanta Falcons"
     },
     {
       "year": 1973,
@@ -460,12 +564,36 @@
       "nflTeam": "Denver Broncos"
     },
     {
+      "year": 1972,
+      "round": 9,
+      "pick": 209,
+      "name": "Steve Vogel",
+      "position": "LB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1972,
+      "round": 14,
+      "pick": 356,
+      "name": "Eric Guthrie",
+      "position": "QB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1971,
       "round": 10,
       "pick": 241,
       "name": "Faddie Tillman",
       "position": "DT",
       "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1970,
+      "round": 7,
+      "pick": 180,
+      "name": "Steve Svitak",
+      "position": "LB",
+      "nflTeam": "Las Vegas Raiders"
     }
   ]
 }

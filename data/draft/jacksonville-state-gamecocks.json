@@ -33,7 +33,7 @@
       "pick": 299,
       "name": "David Gulledge",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1990,
@@ -42,6 +42,14 @@
       "name": "Eric Davis",
       "position": "DB",
       "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1990,
+      "round": 10,
+      "pick": 273,
+      "name": "Orlando Adams",
+      "position": "DT",
+      "nflTeam": "Philadelphia Eagles"
     },
     {
       "year": 1987,
@@ -57,7 +65,15 @@
       "pick": 50,
       "name": "Jesse Baker",
       "position": "DE",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1971,
+      "round": 4,
+      "pick": 94,
+      "name": "David Robinson",
+      "position": "TE",
+      "nflTeam": "Kansas City Chiefs"
     }
   ]
 }

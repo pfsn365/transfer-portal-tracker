@@ -1,3 +1,14 @@
+/**
+ * Fetches NFL draft data from Pro Football Reference using Playwright (real Chrome).
+ * Bypasses Cloudflare bot detection since it uses an actual browser.
+ *
+ * Usage:
+ *   npx playwright install chromium   (first time only)
+ *   npx tsx tools/fetchDraftPlaywright.ts
+ *   npx tsx tools/fetchDraftPlaywright.ts --start=missouri-tigers
+ */
+
+import { chromium } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -17,7 +28,6 @@ interface DraftData {
   draftPicks: DraftPick[];
 }
 
-// Pro Football Reference school ID mappings (slug -> PFR ID)
 const pfbRefSchoolIds: Record<string, { pfrId: string; teamName: string }> = {
   // SEC
   'alabama-crimson-tide': { pfrId: 'alabama', teamName: 'Alabama Crimson Tide' },
@@ -32,7 +42,6 @@ const pfbRefSchoolIds: Record<string, { pfrId: string; teamName: string }> = {
   'kentucky-wildcats': { pfrId: 'kentucky', teamName: 'Kentucky Wildcats' },
   'mississippi-state-bulldogs': { pfrId: 'mississippist', teamName: 'Mississippi State Bulldogs' },
   'missouri-tigers': { pfrId: 'missouri', teamName: 'Missouri Tigers' },
-  'south-carolina-gamecocks': { pfrId: 'socarolina', teamName: 'South Carolina Gamecocks' },
   'vanderbilt-commodores': { pfrId: 'vanderbilt', teamName: 'Vanderbilt Commodores' },
   'texas-longhorns': { pfrId: 'texas', teamName: 'Texas Longhorns' },
   'oklahoma-sooners': { pfrId: 'oklahoma', teamName: 'Oklahoma Sooners' },
@@ -95,7 +104,7 @@ const pfbRefSchoolIds: Record<string, { pfrId: string; teamName: string }> = {
   'colorado-buffaloes': { pfrId: 'colorado', teamName: 'Colorado Buffaloes' },
   'utah-utes': { pfrId: 'utah', teamName: 'Utah Utes' },
 
-  // Pac-12 (remaining)
+  // Pac-12 remaining
   'oregon-state-beavers': { pfrId: 'oregonst', teamName: 'Oregon State Beavers' },
   'washington-state-cougars': { pfrId: 'washingtonst', teamName: 'Washington State Cougars' },
 
@@ -139,7 +148,7 @@ const pfbRefSchoolIds: Record<string, { pfrId: string; teamName: string }> = {
   'georgia-southern-eagles': { pfrId: 'georgiaso', teamName: 'Georgia Southern Eagles' },
   'troy-trojans': { pfrId: 'troy', teamName: 'Troy Trojans' },
   'south-alabama-jaguars': { pfrId: 'soalabama', teamName: 'South Alabama Jaguars' },
-  'louisiana-ragin-cajuns': { pfrId: 'lalafayette', teamName: 'Louisiana Ragin\' Cajuns' },
+  'louisiana-ragin-cajuns': { pfrId: 'lalafayette', teamName: "Louisiana Ragin' Cajuns" },
   'louisiana-tech-bulldogs': { pfrId: 'louisianatech', teamName: 'Louisiana Tech Bulldogs' },
   'arkansas-state-red-wolves': { pfrId: 'arkansasst', teamName: 'Arkansas State Red Wolves' },
   'texas-state-bobcats': { pfrId: 'texasst', teamName: 'Texas State Bobcats' },
@@ -160,7 +169,7 @@ const pfbRefSchoolIds: Record<string, { pfrId: string; teamName: string }> = {
   'eastern-michigan-eagles': { pfrId: 'eastmichigan', teamName: 'Eastern Michigan Eagles' },
   'northern-illinois-huskies': { pfrId: 'noillinois', teamName: 'Northern Illinois Huskies' },
 
-  // Conference USA
+  // Conference USA / Independents
   'liberty-flames': { pfrId: 'liberty', teamName: 'Liberty Flames' },
   'jacksonville-state-gamecocks': { pfrId: 'jacksonvillest', teamName: 'Jacksonville State Gamecocks' },
   'sam-houston-bearkats': { pfrId: 'samhoustonst', teamName: 'Sam Houston Bearkats' },
@@ -169,233 +178,152 @@ const pfbRefSchoolIds: Record<string, { pfrId: string; teamName: string }> = {
   'middle-tennessee-blue-raiders': { pfrId: 'middletennst', teamName: 'Middle Tennessee Blue Raiders' },
   'western-kentucky-hilltoppers': { pfrId: 'westkentucky', teamName: 'Western Kentucky Hilltoppers' },
   'fiu-panthers': { pfrId: 'floridainternational', teamName: 'FIU Panthers' },
-
-  // Independents
   'uconn-huskies': { pfrId: 'connecticut', teamName: 'UConn Huskies' },
   'umass-minutemen': { pfrId: 'massachusetts', teamName: 'UMass Minutemen' },
 };
 
-async function fetchDraftData(schoolId: string): Promise<string | null> {
-  const url = `https://www.pro-football-reference.com/schools/${schoolId}/drafted.htm`;
+// Manually verified — skip these
+const verifiedSlugs = new Set(['south-carolina-gamecocks']);
 
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Cache-Control': 'max-age=0',
-        'Sec-Ch-Ua': '"Chromium";v="134", "Google Chrome";v="134", "Not:A-Brand";v="99"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'none',
-        'Sec-Fetch-User': '?1',
-        'Upgrade-Insecure-Requests': '1',
-      }
-    });
-    if (!response.ok) {
-      console.error(`Failed to fetch ${url}: ${response.status}`);
-      return null;
-    }
-    return await response.text();
-  } catch (error) {
-    console.error(`Error fetching ${url}:`, error);
-    return null;
-  }
-}
-
-function parseDraftPicks(html: string, minYear: number = 1967): DraftPick[] {
+function parseDraftTable(html: string): DraftPick[] {
   const picks: DraftPick[] = [];
-
-  // Match each table row - the rows span multiple lines
   const rowRegex = /<tr[^>]*>.*?<\/tr>/gs;
   const rows = html.match(rowRegex) || [];
-
-  console.log(`Found ${rows.length} total rows in HTML`);
 
   for (const row of rows) {
     if (!row.includes('data-stat="year_id"')) continue;
 
-    // Extract year - it's inside an anchor tag: <td ... data-stat="year_id" ><a href="...">2025</a></td>
     const yearMatch = row.match(/data-stat="year_id"[^>]*><a[^>]*>(\d{4})<\/a>/);
     if (!yearMatch) continue;
     const year = parseInt(yearMatch[1]);
+    if (year < 1967) continue;
 
-    // Skip years before minYear
-    if (year < minYear) continue;
-
-    // Extract round - format: <td ... data-stat="draft_round" ...>1</td>
     const roundMatch = row.match(/data-stat="draft_round"[^>]*>(\d+)<\/td>/);
     if (!roundMatch) continue;
     const round = parseInt(roundMatch[1]);
 
-    // Extract pick - format: <td ... data-stat="draft_pick" >12</td>
     const pickMatch = row.match(/data-stat="draft_pick"[^>]*>(\d+)<\/td>/);
     if (!pickMatch) continue;
     const pick = parseInt(pickMatch[1]);
 
-    // Extract NFL team from title attribute: <a href="..." title="Dallas Cowboys">DAL</a>
     const teamMatch = row.match(/data-stat="team"[^>]*><a[^>]*title="([^"]+)"/);
     if (!teamMatch) continue;
-    const nflTeam = teamMatch[1];
 
-    // Extract player name - inside anchor: <td ... data-stat="player" ...><a href="...">Tyler Booker</a></td>
     const playerMatch = row.match(/data-stat="player"[^>]*><a[^>]*>([^<]+)<\/a>/);
     if (!playerMatch) continue;
-    const name = playerMatch[1];
 
-    // Extract position - format: <td ... data-stat="pos" ...>OL</td>
-    const posMatch = row.match(/data-stat="pos"[^>]*>([A-Z]+)<\/td>/);
-    const position = posMatch ? posMatch[1] : 'Unknown';
+    const posMatch = row.match(/data-stat="pos"[^>]*>([A-Z*]+)<\/td>/);
 
     picks.push({
       year,
       round,
       pick,
-      name,
-      position,
-      nflTeam
+      name: playerMatch[1],
+      position: posMatch ? posMatch[1] : 'Unknown',
+      nflTeam: teamMatch[1],
     });
   }
 
-  // Sort by year (desc), then round, then pick
-  picks.sort((a, b) => {
-    if (b.year !== a.year) return b.year - a.year;
-    if (a.round !== b.round) return a.round - b.round;
-    return a.pick - b.pick;
-  });
-
+  picks.sort((a, b) => b.year - a.year || a.round - b.round || a.pick - b.pick);
   return picks;
 }
 
-async function fetchTeamDraftData(slug: string, pfrId: string, teamName: string): Promise<number> {
-  console.log(`\nFetching ${teamName}...`);
-
-  const html = await fetchDraftData(pfrId);
-  if (!html) {
-    console.error(`  Failed to fetch HTML for ${pfrId}`);
-    return 0;
-  }
-
-  const picks = parseDraftPicks(html, 1967);
-
-  if (picks.length === 0) {
-    console.log(`  No picks found`);
-    return 0;
-  }
-
-  // Show year range
-  const years = picks.map(p => p.year);
-  const minYearFound = Math.min(...years);
-  const maxYearFound = Math.max(...years);
-  console.log(`  Found ${picks.length} picks (${minYearFound}-${maxYearFound})`);
-
-  // Save to draft file
-  const draftData: DraftData = {
-    teamId: pfrId,
-    teamSlug: slug,
-    teamName: teamName,
-    draftPicks: picks
-  };
-
-  const outputPath = path.join(process.cwd(), 'data', 'draft', `${slug}.json`);
-  fs.writeFileSync(outputPath, JSON.stringify(draftData, null, 2));
-
-  return picks.length;
-}
-
-// Delay helper to avoid rate limiting
-function delay(ms: number): Promise<void> {
+function delay(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function hasFullData(slug: string): boolean {
-  const filePath = path.join(process.cwd(), 'data', 'draft', `${slug}.json`);
-  if (!fs.existsSync(filePath)) return false;
-
-  try {
-    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-    // Consider it "full" if it has picks from before 2000
-    if (data.draftPicks && data.draftPicks.length > 0) {
-      const years = data.draftPicks.map((p: DraftPick) => p.year);
-      const minYear = Math.min(...years);
-      return minYear < 2000; // Has historical data
-    }
-  } catch {
-    return false;
-  }
-  return false;
-}
-
-// Teams with manually verified PFR data — skip these even without --skip-existing
-const verifiedSlugs = new Set([
-  'south-carolina-gamecocks',
-]);
-
 async function main() {
-  const teams = Object.entries(pfbRefSchoolIds);
-  const skipExisting = process.argv.includes('--skip-existing');
   const startFrom = process.argv.find(a => a.startsWith('--start='))?.split('=')[1];
+  const draftDir = path.join(process.cwd(), 'data', 'draft');
 
-  console.log(`Processing ${teams.length} teams...`);
-  if (skipExisting) console.log('Skipping teams with existing full data');
-  if (startFrom) console.log(`Starting from: ${startFrom}`);
-  console.log('');
+  console.log('Launching Chrome...');
+  const browser = await chromium.launch({ headless: true });
+  const context = await browser.newContext({
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36',
+  });
+  const page = await context.newPage();
 
-  let totalPicks = 0;
-  let successCount = 0;
-  let failCount = 0;
-  let skippedCount = 0;
+  // Warm up — visit PFR homepage first to get Cloudflare clearance
+  console.log('Warming up (visiting PFR homepage)...');
+  await page.goto('https://www.pro-football-reference.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+  await delay(3000);
+  console.log('Warmed up. Starting team scrape...\n');
+
+  const teams = Object.entries(pfbRefSchoolIds);
+  let success = 0, failed = 0, skipped = 0;
   let startProcessing = !startFrom;
 
   for (const [slug, { pfrId, teamName }] of teams) {
-    // Handle --start= flag
     if (!startProcessing) {
-      if (slug === startFrom) {
-        startProcessing = true;
-      } else {
-        continue;
-      }
+      if (slug === startFrom) startProcessing = true;
+      else continue;
     }
 
-    // Skip manually verified teams
     if (verifiedSlugs.has(slug)) {
       console.log(`Skipping ${teamName} (manually verified)`);
-      skippedCount++;
+      skipped++;
       continue;
     }
 
-    // Skip if we already have full data
-    if (skipExisting && hasFullData(slug)) {
-      console.log(`Skipping ${teamName} (already has full data)`);
-      skippedCount++;
-      continue;
-    }
+    const url = `https://www.pro-football-reference.com/schools/${pfrId}/drafted.htm`;
+    console.log(`\nFetching ${teamName}...`);
 
     try {
-      const pickCount = await fetchTeamDraftData(slug, pfrId, teamName);
-      if (pickCount > 0) {
-        totalPicks += pickCount;
-        successCount++;
-      } else {
-        failCount++;
+      const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+      if (!response || response.status() !== 200) {
+        console.error(`  HTTP ${response?.status()} — skipping`);
+        failed++;
+        await delay(5000);
+        continue;
       }
-      // Longer delay between requests to avoid rate limiting (10-15 seconds with randomization)
-      await delay(10000 + Math.random() * 5000);
-    } catch (error) {
-      console.error(`  Error processing ${slug}:`, error);
-      failCount++;
+
+      const html = await page.content();
+      const picks = parseDraftTable(html);
+
+      if (picks.length === 0) {
+        console.log('  No picks found');
+        failed++;
+      } else {
+        const years = picks.map(p => p.year);
+        console.log(`  Found ${picks.length} picks (${Math.min(...years)}–${Math.max(...years)})`);
+
+        const outputPath = path.join(draftDir, `${slug}.json`);
+        const existing = fs.existsSync(outputPath)
+          ? JSON.parse(fs.readFileSync(outputPath, 'utf-8'))
+          : null;
+
+        const data: DraftData = {
+          teamId: existing?.teamId || pfrId,
+          teamSlug: slug,
+          teamName: existing?.teamName || teamName,
+          draftPicks: picks,
+        };
+
+        fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+        success++;
+      }
+    } catch (err) {
+      console.error(`  Error: ${err}`);
+      failed++;
     }
+
+    // Polite delay: 8–12 seconds between requests
+    await delay(8000 + Math.random() * 4000);
   }
 
-  console.log(`\n========================================`);
-  console.log(`Done! Processed ${successCount} teams successfully.`);
-  console.log(`Total picks: ${totalPicks}`);
-  if (skippedCount > 0) console.log(`Skipped: ${skippedCount} teams (already had data)`);
-  if (failCount > 0) console.log(`Failed: ${failCount} teams`);
+  await browser.close();
+
+  console.log('\n========================================');
+  console.log(`Done! Success: ${success} | Failed: ${failed} | Skipped: ${skipped}`);
+
+  // Spot-check a few
+  for (const slug of ['alabama-crimson-tide', 'ohio-state-buckeyes', 'notre-dame-fighting-irish']) {
+    if (fs.existsSync(path.join(draftDir, `${slug}.json`))) {
+      const d = JSON.parse(fs.readFileSync(path.join(draftDir, `${slug}.json`), 'utf-8'));
+      console.log(`  ${d.teamName}: ${d.draftPicks.length} picks`);
+    }
+  }
 }
 
 main().catch(console.error);

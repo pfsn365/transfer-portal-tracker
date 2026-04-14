@@ -89,7 +89,7 @@
       "pick": 244,
       "name": "Treyvon Hester",
       "position": "DT",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2008,
@@ -97,7 +97,7 @@
       "pick": 65,
       "name": "John Greco",
       "position": "T",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2008,
@@ -177,7 +177,7 @@
       "pick": 204,
       "name": "Jerry Evans",
       "position": "TE",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1986,
@@ -186,6 +186,46 @@
       "name": "Brent Williams",
       "position": "DE",
       "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1984,
+      "round": 9,
+      "pick": 252,
+      "name": "Mike Russell",
+      "position": "LB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1983,
+      "round": 9,
+      "pick": 239,
+      "name": "Rod Achter",
+      "position": "WR",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1982,
+      "round": 7,
+      "pick": 177,
+      "name": "Jeff Jackson",
+      "position": "DE",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1976,
+      "round": 4,
+      "pick": 97,
+      "name": "Gene Swick",
+      "position": "QB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1973,
+      "round": 14,
+      "pick": 350,
+      "name": "Joe Schwartz",
+      "position": "RB",
+      "nflTeam": "New York Jets"
     },
     {
       "year": 1972,
@@ -212,6 +252,14 @@
       "nflTeam": "San Francisco 49ers"
     },
     {
+      "year": 1971,
+      "round": 15,
+      "pick": 369,
+      "name": "Charley Cole",
+      "position": "RB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
       "year": 1970,
       "round": 4,
       "pick": 81,
@@ -220,12 +268,28 @@
       "nflTeam": "Miami Dolphins"
     },
     {
+      "year": 1970,
+      "round": 6,
+      "pick": 136,
+      "name": "James Manuel",
+      "position": "T",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1970,
+      "round": 11,
+      "pick": 269,
+      "name": "Dan Crockett",
+      "position": "WR",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1969,
       "round": 7,
       "pick": 181,
       "name": "Roland Moss",
       "position": "TE",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1968,
@@ -233,7 +297,15 @@
       "pick": 126,
       "name": "Paul Elzey",
       "position": "LB",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1968,
+      "round": 7,
+      "pick": 170,
+      "name": "John Schneider",
+      "position": "QB",
+      "nflTeam": "New England Patriots"
     },
     {
       "year": 1968,

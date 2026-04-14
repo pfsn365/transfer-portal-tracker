@@ -36,6 +36,14 @@
       "nflTeam": "New England Patriots"
     },
     {
+      "year": 1998,
+      "round": 2,
+      "pick": 1,
+      "name": "Mike Wahle",
+      "position": "G",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
       "year": 1995,
       "round": 6,
       "pick": 186,
@@ -65,7 +73,15 @@
       "pick": 108,
       "name": "Napoleon McCallum",
       "position": "RB",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1973,
+      "round": 16,
+      "pick": 414,
+      "name": "Glen Nardi",
+      "position": "DT",
+      "nflTeam": "Pittsburgh Steelers"
     }
   ]
 }

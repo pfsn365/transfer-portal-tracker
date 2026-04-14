@@ -129,7 +129,15 @@
       "pick": 245,
       "name": "Courtney Anderson",
       "position": "TE",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 2003,
+      "round": 6,
+      "pick": 209,
+      "name": "Tim Provost",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
     },
     {
       "year": 2001,
@@ -161,7 +169,7 @@
       "pick": 81,
       "name": "Brian Roche",
       "position": "TE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1991,
@@ -177,7 +185,15 @@
       "pick": 169,
       "name": "Johnny Johnson",
       "position": "RB",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1990,
+      "round": 12,
+      "pick": 318,
+      "name": "Tony Jeffery",
+      "position": "WR",
+      "nflTeam": "Kansas City Chiefs"
     },
     {
       "year": 1989,
@@ -185,7 +201,7 @@
       "pick": 150,
       "name": "Jay Taylor",
       "position": "DB",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1988,
@@ -196,6 +212,22 @@
       "nflTeam": "Kansas City Chiefs"
     },
     {
+      "year": 1988,
+      "round": 7,
+      "pick": 175,
+      "name": "Mike Perez",
+      "position": "QB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1985,
+      "round": 5,
+      "pick": 134,
+      "name": "Tony Smith",
+      "position": "WR",
+      "nflTeam": "New York Jets"
+    },
+    {
       "year": 1984,
       "round": 2,
       "pick": 41,
@@ -204,12 +236,20 @@
       "nflTeam": "Buffalo Bills"
     },
     {
+      "year": 1984,
+      "round": 11,
+      "pick": 285,
+      "name": "Bobby Johnson",
+      "position": "RB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1983,
       "round": 1,
       "pick": 22,
       "name": "Gill Byrd",
       "position": "DB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1983,
@@ -221,11 +261,19 @@
     },
     {
       "year": 1983,
+      "round": 9,
+      "pick": 228,
+      "name": "Brian Hawkins",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1983,
       "round": 10,
       "pick": 277,
       "name": "Mervyn Fernandez",
       "position": "WR",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1983,
@@ -233,7 +281,7 @@
       "pick": 303,
       "name": "Tim Kearse",
       "position": "WR",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1982,
@@ -273,7 +321,7 @@
       "pick": 101,
       "name": "Ed Luther",
       "position": "QB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1979,
@@ -297,7 +345,7 @@
       "pick": 265,
       "name": "Randy Gill",
       "position": "LB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1977,
@@ -318,10 +366,26 @@
     {
       "year": 1977,
       "round": 10,
+      "pick": 270,
+      "name": "Jim LeJay",
+      "position": "WR",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1977,
+      "round": 10,
       "pick": 275,
       "name": "Steve DeBerg",
       "position": "QB",
       "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1977,
+      "round": 11,
+      "pick": 285,
+      "name": "John Blain",
+      "position": "T",
+      "nflTeam": "New Orleans Saints"
     },
     {
       "year": 1976,
@@ -340,6 +404,14 @@
       "nflTeam": "Los Angeles Rams"
     },
     {
+      "year": 1976,
+      "round": 17,
+      "pick": 473,
+      "name": "Darryl Jenkins",
+      "position": "RB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1975,
       "round": 1,
       "pick": 17,
@@ -348,12 +420,36 @@
       "nflTeam": "Denver Broncos"
     },
     {
+      "year": 1975,
+      "round": 6,
+      "pick": 139,
+      "name": "Dave Wasick",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1975,
+      "round": 11,
+      "pick": 284,
+      "name": "Ike McBee",
+      "position": "WR",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1974,
+      "round": 13,
+      "pick": 324,
+      "name": "Emanuel Armstrong",
+      "position": "LB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
       "year": 1974,
       "round": 17,
       "pick": 418,
       "name": "Charles DeJurnett",
       "position": "NT",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1973,
@@ -364,12 +460,76 @@
       "nflTeam": "Los Angeles Rams"
     },
     {
+      "year": 1972,
+      "round": 14,
+      "pick": 360,
+      "name": "Dave Chaney",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1972,
+      "round": 16,
+      "pick": 400,
+      "name": "Eric Dahl",
+      "position": "DB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1970,
+      "round": 15,
+      "pick": 371,
+      "name": "John Carlos",
+      "position": "WR",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1969,
+      "round": 5,
+      "pick": 108,
+      "name": "Walt Shockley",
+      "position": "RB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
       "year": 1969,
       "round": 9,
       "pick": 209,
       "name": "Steve Alexakos",
       "position": "G",
-      "nflTeam": "Boston Patriots"
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1968,
+      "round": 6,
+      "pick": 148,
+      "name": "Mike Spitzer",
+      "position": "DE",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1968,
+      "round": 8,
+      "pick": 201,
+      "name": "Danny Holman",
+      "position": "QB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1968,
+      "round": 16,
+      "pick": 410,
+      "name": "Roy Hall",
+      "position": "T",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1968,
+      "round": 16,
+      "pick": 432,
+      "name": "Walt Blackledge",
+      "position": "FL",
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1967,
@@ -381,11 +541,19 @@
     },
     {
       "year": 1967,
+      "round": 12,
+      "pick": 297,
+      "name": "Eric Watts",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1967,
       "round": 14,
       "pick": 355,
       "name": "Marty Baccaglio",
       "position": "DE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     }
   ]
 }

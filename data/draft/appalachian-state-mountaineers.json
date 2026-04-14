@@ -89,7 +89,7 @@
       "pick": 33,
       "name": "Brian Quick",
       "position": "WR",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2011,
@@ -173,6 +173,14 @@
     },
     {
       "year": 1992,
+      "round": 5,
+      "pick": 122,
+      "name": "Gary Dandridge",
+      "position": "DB",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1992,
       "round": 7,
       "pick": 178,
       "name": "Mike Frier",
@@ -188,12 +196,36 @@
       "nflTeam": "Kansas City Chiefs"
     },
     {
+      "year": 1990,
+      "round": 7,
+      "pick": 193,
+      "name": "Keith Collins",
+      "position": "DB",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1988,
+      "round": 10,
+      "pick": 265,
+      "name": "Steve Wilkes",
+      "position": "TE",
+      "nflTeam": "New York Giants"
+    },
+    {
       "year": 1986,
       "round": 2,
       "pick": 35,
       "name": "Dino Hackett",
       "position": "LB",
       "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1984,
+      "round": 9,
+      "pick": 236,
+      "name": "Leroy Howell",
+      "position": "DE",
+      "nflTeam": "Buffalo Bills"
     }
   ]
 }

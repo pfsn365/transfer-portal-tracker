@@ -57,7 +57,7 @@
       "pick": 176,
       "name": "Lionel Barnes",
       "position": "DE",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 1998,
@@ -89,7 +89,15 @@
       "pick": 52,
       "name": "James Folston",
       "position": "LB",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1994,
+      "round": 4,
+      "pick": 1,
+      "name": "Tito Wooten",
+      "position": "DB",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1994,
@@ -129,7 +137,7 @@
       "pick": 208,
       "name": "Greg Robinson",
       "position": "RB",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1990,
@@ -153,7 +161,7 @@
       "pick": 159,
       "name": "Stan Humphries",
       "position": "QB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1987,
@@ -180,6 +188,30 @@
       "nflTeam": "Atlanta Falcons"
     },
     {
+      "year": 1984,
+      "round": 8,
+      "pick": 219,
+      "name": "Bob Craighead",
+      "position": "RB",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1983,
+      "round": 10,
+      "pick": 275,
+      "name": "Roosevelt Straughter",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1982,
+      "round": 9,
+      "pick": 242,
+      "name": "Bob Lane",
+      "position": "QB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
       "year": 1981,
       "round": 5,
       "pick": 126,
@@ -196,12 +228,20 @@
       "nflTeam": "Seattle Seahawks"
     },
     {
+      "year": 1980,
+      "round": 12,
+      "pick": 317,
+      "name": "David Dumars",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
       "year": 1979,
       "round": 4,
       "pick": 104,
       "name": "John Floyd",
       "position": "WR",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1976,
@@ -210,6 +250,30 @@
       "name": "Fred Coleman",
       "position": "TE",
       "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1976,
+      "round": 13,
+      "pick": 361,
+      "name": "Joe Bruner",
+      "position": "QB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1975,
+      "round": 11,
+      "pick": 266,
+      "name": "Danny Lee",
+      "position": "P",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1974,
+      "round": 16,
+      "pick": 391,
+      "name": "Mathew Williams",
+      "position": "RB",
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1972,
@@ -226,6 +290,30 @@
       "name": "Joe Profit",
       "position": "RB",
       "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1971,
+      "round": 6,
+      "pick": 156,
+      "name": "Ken Frith",
+      "position": "DT",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1968,
+      "round": 14,
+      "pick": 367,
+      "name": "Vic Bender",
+      "position": "C",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1967,
+      "round": 14,
+      "pick": 354,
+      "name": "Dalton Leblanc",
+      "position": "FL",
+      "nflTeam": "San Francisco 49ers"
     }
   ]
 }

@@ -52,6 +52,22 @@
       "nflTeam": "Carolina Panthers"
     },
     {
+      "year": 2005,
+      "round": 5,
+      "pick": 170,
+      "name": "Ryan Claridge",
+      "position": "LB",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 2004,
+      "round": 7,
+      "pick": 243,
+      "name": "Dominic Furio",
+      "position": "C",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
       "year": 2002,
       "round": 2,
       "pick": 60,
@@ -74,6 +90,22 @@
       "name": "Kevin Thomas",
       "position": "DB",
       "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 2002,
+      "round": 7,
+      "pick": 261,
+      "name": "Ahmad Miller",
+      "position": "DT",
+      "nflTeam": "Houston Texans"
+    },
+    {
+      "year": 2000,
+      "round": 5,
+      "pick": 155,
+      "name": "Quincy Sanders",
+      "position": "DB",
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1999,
@@ -113,7 +145,7 @@
       "pick": 326,
       "name": "Keenan McCardell",
       "position": "WR",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1990,
@@ -177,7 +209,15 @@
       "pick": 99,
       "name": "Todd Liebenstein",
       "position": "DE",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1982,
+      "round": 9,
+      "pick": 240,
+      "name": "John Higgins",
+      "position": "DB",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1982,
@@ -189,11 +229,27 @@
     },
     {
       "year": 1981,
+      "round": 4,
+      "pick": 84,
+      "name": "Sam Greene",
+      "position": "WR",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1981,
       "round": 8,
       "pick": 216,
       "name": "Art Plunkett",
       "position": "T",
       "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1981,
+      "round": 9,
+      "pick": 225,
+      "name": "Admiral Dewey Larry",
+      "position": "DB",
+      "nflTeam": "New York Jets"
     },
     {
       "year": 1980,
@@ -212,6 +268,14 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1980,
+      "round": 10,
+      "pick": 275,
+      "name": "Brett Davis",
+      "position": "RB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
       "year": 1979,
       "round": 2,
       "pick": 55,
@@ -226,6 +290,14 @@
       "name": "Cleveland Jackson",
       "position": "TE",
       "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1979,
+      "round": 9,
+      "pick": 225,
+      "name": "Henry Vereen",
+      "position": "WR",
+      "nflTeam": "Tampa Bay Buccaneers"
     },
     {
       "year": 1978,
@@ -249,7 +321,7 @@
       "pick": 189,
       "name": "Reggie Haynes",
       "position": "TE",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1977,
@@ -257,7 +329,15 @@
       "pick": 193,
       "name": "Blanchard Carter",
       "position": "T",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1976,
+      "round": 7,
+      "pick": 185,
+      "name": "Joe Ingersoll",
+      "position": "G",
+      "nflTeam": "Miami Dolphins"
     },
     {
       "year": 1975,
@@ -265,7 +345,7 @@
       "pick": 108,
       "name": "Mike Thomas",
       "position": "RB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1975,

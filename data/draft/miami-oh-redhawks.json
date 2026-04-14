@@ -76,6 +76,14 @@
       "nflTeam": "Tennessee Titans"
     },
     {
+      "year": 2005,
+      "round": 5,
+      "pick": 147,
+      "name": "Alphonso Hodge",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 2004,
       "round": 1,
       "pick": 11,
@@ -113,7 +121,15 @@
       "pick": 111,
       "name": "Trevor Gaylor",
       "position": "WR",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1999,
+      "round": 5,
+      "pick": 155,
+      "name": "Paris Johnson",
+      "position": "DB",
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1999,
@@ -121,7 +137,15 @@
       "pick": 224,
       "name": "JoJuan Armour",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1998,
+      "round": 7,
+      "pick": 222,
+      "name": "Damian Vaughn",
+      "position": "TE",
+      "nflTeam": "Cincinnati Bengals"
     },
     {
       "year": 1988,
@@ -137,7 +161,7 @@
       "pick": 260,
       "name": "Andy Schillinger",
       "position": "WR",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1987,
@@ -145,7 +169,31 @@
       "pick": 118,
       "name": "George Swarn",
       "position": "RB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1980,
+      "round": 10,
+      "pick": 271,
+      "name": "Doug Lantz",
+      "position": "C",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1979,
+      "round": 12,
+      "pick": 327,
+      "name": "Larry Fortner",
+      "position": "QB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1977,
+      "round": 3,
+      "pick": 71,
+      "name": "Mike Watson",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
     },
     {
       "year": 1977,
@@ -153,7 +201,7 @@
       "pick": 84,
       "name": "Rob Carpenter",
       "position": "RB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1976,
@@ -164,6 +212,46 @@
       "nflTeam": "Seattle Seahawks"
     },
     {
+      "year": 1976,
+      "round": 7,
+      "pick": 192,
+      "name": "Pete Rome",
+      "position": "DB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1976,
+      "round": 13,
+      "pick": 371,
+      "name": "Randy Walker",
+      "position": "RB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1975,
+      "round": 7,
+      "pick": 162,
+      "name": "Mike Biehle",
+      "position": "T",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1973,
+      "round": 13,
+      "pick": 338,
+      "name": "Joe Booker",
+      "position": "RB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1971,
+      "round": 14,
+      "pick": 343,
+      "name": "Dick Adams",
+      "position": "DB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1970,
       "round": 5,
       "pick": 124,
@@ -172,12 +260,28 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1970,
+      "round": 10,
+      "pick": 254,
+      "name": "Cleve Dickerson",
+      "position": "RB",
+      "nflTeam": "New York Jets"
+    },
+    {
       "year": 1969,
       "round": 1,
       "pick": 18,
       "name": "Bob Babich",
       "position": "LB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1969,
+      "round": 15,
+      "pick": 373,
+      "name": "Errol Kahoun",
+      "position": "G",
+      "nflTeam": "Denver Broncos"
     },
     {
       "year": 1968,
@@ -185,7 +289,7 @@
       "pick": 430,
       "name": "Bob Smith",
       "position": "DB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1967,
@@ -193,7 +297,23 @@
       "pick": 101,
       "name": "Ed Philpott",
       "position": "LB",
-      "nflTeam": "Boston Patriots"
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1967,
+      "round": 7,
+      "pick": 168,
+      "name": "Bruce Matte",
+      "position": "QB",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1967,
+      "round": 13,
+      "pick": 330,
+      "name": "John Erisman",
+      "position": "E",
+      "nflTeam": "Los Angeles Rams"
     }
   ]
 }

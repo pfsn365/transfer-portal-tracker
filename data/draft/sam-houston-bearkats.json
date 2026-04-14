@@ -17,7 +17,7 @@
       "pick": 57,
       "name": "P.J. Hall",
       "position": "DT",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2016,
@@ -52,12 +52,28 @@
       "nflTeam": "Carolina Panthers"
     },
     {
+      "year": 1996,
+      "round": 7,
+      "pick": 224,
+      "name": "Darius Smith",
+      "position": "C",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1995,
+      "round": 6,
+      "pick": 189,
+      "name": "John Solomon",
+      "position": "LB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
       "year": 1992,
       "round": 4,
       "pick": 100,
       "name": "Michael Bankston",
       "position": "DE",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1989,
@@ -65,7 +81,15 @@
       "pick": 177,
       "name": "Ricky Royal",
       "position": "DB",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1988,
+      "round": 5,
+      "pick": 127,
+      "name": "Carl Mims",
+      "position": "DB",
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1985,
@@ -73,7 +97,15 @@
       "pick": 304,
       "name": "Garry Kimble",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1983,
+      "round": 12,
+      "pick": 330,
+      "name": "Roger Wiley",
+      "position": "RB",
+      "nflTeam": "Pittsburgh Steelers"
     },
     {
       "year": 1979,
@@ -84,6 +116,14 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1978,
+      "round": 10,
+      "pick": 1,
+      "name": "Johnnie Dirden",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1973,
       "round": 12,
       "pick": 294,
@@ -92,12 +132,20 @@
       "nflTeam": "Buffalo Bills"
     },
     {
+      "year": 1971,
+      "round": 17,
+      "pick": 442,
+      "name": "Charles Hill",
+      "position": "WR",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
       "year": 1969,
       "round": 9,
       "pick": 210,
       "name": "George Wright",
       "position": "DT",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     }
   ]
 }

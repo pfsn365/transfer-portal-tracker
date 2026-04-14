@@ -25,7 +25,7 @@
       "pick": 106,
       "name": "Maxx Crosby",
       "position": "DE",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2017,
@@ -92,6 +92,22 @@
       "nflTeam": "Detroit Lions"
     },
     {
+      "year": 1988,
+      "round": 7,
+      "pick": 172,
+      "name": "Gary Patton",
+      "position": "RB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1981,
+      "round": 7,
+      "pick": 191,
+      "name": "Ken Miller",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
       "year": 1978,
       "round": 1,
       "pick": 22,
@@ -100,12 +116,36 @@
       "nflTeam": "Pittsburgh Steelers"
     },
     {
+      "year": 1977,
+      "round": 10,
+      "pick": 264,
+      "name": "Mark Carter",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1977,
+      "round": 12,
+      "pick": 319,
+      "name": "Jim Stansik",
+      "position": "TE",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
       "year": 1976,
       "round": 7,
       "pick": 204,
       "name": "Clarence Chapman",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1975,
+      "round": 14,
+      "pick": 363,
+      "name": "Mike Strickland",
+      "position": "RB",
+      "nflTeam": "Minnesota Vikings"
     },
     {
       "year": 1974,
@@ -117,11 +157,27 @@
     },
     {
       "year": 1974,
+      "round": 7,
+      "pick": 179,
+      "name": "Scott Garske",
+      "position": "TE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1974,
       "round": 11,
       "pick": 285,
       "name": "Dave Boone",
       "position": "DE",
       "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1974,
+      "round": 13,
+      "pick": 333,
+      "name": "Frank Kolch",
+      "position": "QB",
+      "nflTeam": "Pittsburgh Steelers"
     },
     {
       "year": 1973,
@@ -156,12 +212,44 @@
       "nflTeam": "Philadelphia Eagles"
     },
     {
+      "year": 1972,
+      "round": 8,
+      "pick": 196,
+      "name": "Larry Ratcliff",
+      "position": "RB",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1972,
+      "round": 13,
+      "pick": 325,
+      "name": "Sam Elmore",
+      "position": "DB",
+      "nflTeam": "New England Patriots"
+    },
+    {
       "year": 1971,
       "round": 3,
       "pick": 72,
       "name": "Al Clark",
       "position": "DB",
       "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1970,
+      "round": 14,
+      "pick": 353,
+      "name": "Bob Lints",
+      "position": "G",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1967,
+      "round": 13,
+      "pick": 328,
+      "name": "Bob Rodwell",
+      "position": "LB",
+      "nflTeam": "Washington Commanders"
     }
   ]
 }

@@ -225,7 +225,7 @@
       "pick": 22,
       "name": "Josh Doctson",
       "position": "WR",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2016,
@@ -281,7 +281,7 @@
       "pick": 25,
       "name": "Jason Verrett",
       "position": "DB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2013,
@@ -393,7 +393,7 @@
       "pick": 186,
       "name": "Robert Henson",
       "position": "LB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2009,
@@ -434,6 +434,14 @@
       "name": "Herbert Taylor",
       "position": "T",
       "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 2006,
+      "round": 4,
+      "pick": 104,
+      "name": "Cory Rodgers",
+      "position": "WR",
+      "nflTeam": "Green Bay Packers"
     },
     {
       "year": 2006,
@@ -495,9 +503,9 @@
       "year": 2001,
       "round": 1,
       "pick": 5,
-      "name": "LaDainian Tomlinson",
+      "name": "LaDainian Tomlinson HOF",
       "position": "RB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2001,
@@ -548,12 +556,20 @@
       "nflTeam": "Cincinnati Bengals"
     },
     {
+      "year": 1998,
+      "round": 7,
+      "pick": 212,
+      "name": "Chance McCarty",
+      "position": "DE",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
       "year": 1997,
       "round": 4,
       "pick": 112,
       "name": "Ryan Tucker",
       "position": "T",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 1995,
@@ -561,7 +577,15 @@
       "pick": 49,
       "name": "Barret Robbins",
       "position": "C",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1995,
+      "round": 2,
+      "pick": 61,
+      "name": "Jimmy Oliver",
+      "position": "WR",
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1992,
@@ -597,6 +621,14 @@
     },
     {
       "year": 1990,
+      "round": 5,
+      "pick": 134,
+      "name": "Robert McWright",
+      "position": "DB",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1990,
       "round": 12,
       "pick": 306,
       "name": "Darrell Davis",
@@ -621,6 +653,14 @@
     },
     {
       "year": 1989,
+      "round": 10,
+      "pick": 261,
+      "name": "Chris Becker",
+      "position": "P",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1989,
       "round": 12,
       "pick": 308,
       "name": "Scott Ankrom",
@@ -633,7 +673,15 @@
       "pick": 38,
       "name": "Tony Jeffery",
       "position": "RB",
-      "nflTeam": "Phoenix Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1988,
+      "round": 9,
+      "pick": 241,
+      "name": "David Spradlin",
+      "position": "LB",
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1988,
@@ -685,6 +733,14 @@
     },
     {
       "year": 1984,
+      "round": 1,
+      "pick": 13,
+      "name": "Allanda Smith",
+      "position": "DB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1984,
       "round": 3,
       "pick": 64,
       "name": "Kyle Clifton",
@@ -697,7 +753,15 @@
       "pick": 114,
       "name": "Robert Lyles",
       "position": "LB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1984,
+      "round": 10,
+      "pick": 256,
+      "name": "John Thomas",
+      "position": "DB",
+      "nflTeam": "Philadelphia Eagles"
     },
     {
       "year": 1983,
@@ -705,7 +769,23 @@
       "pick": 110,
       "name": "Greg Townsend",
       "position": "DE",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1983,
+      "round": 6,
+      "pick": 151,
+      "name": "Darrell Patterson",
+      "position": "LB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1983,
+      "round": 9,
+      "pick": 251,
+      "name": "Marcus Gilbert",
+      "position": "RB",
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1982,
@@ -721,7 +801,15 @@
       "pick": 170,
       "name": "Wes Roberts",
       "position": "DE",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1980,
+      "round": 11,
+      "pick": 296,
+      "name": "Chris Judge",
+      "position": "DB",
+      "nflTeam": "Chicago Bears"
     },
     {
       "year": 1979,
@@ -737,7 +825,7 @@
       "pick": 98,
       "name": "Mike Renfro",
       "position": "WR",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1978,
@@ -748,12 +836,60 @@
       "nflTeam": "Atlanta Falcons"
     },
     {
+      "year": 1976,
+      "round": 16,
+      "pick": 442,
+      "name": "Ronald Parker",
+      "position": "TE",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1975,
+      "round": 7,
+      "pick": 161,
+      "name": "Merle Wang",
+      "position": "T",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1975,
+      "round": 11,
+      "pick": 270,
+      "name": "Gene Hernandez",
+      "position": "DB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1974,
+      "round": 8,
+      "pick": 207,
+      "name": "Berl Simmons",
+      "position": "K",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
       "year": 1974,
       "round": 9,
       "pick": 229,
       "name": "Charles Davis",
       "position": "DT",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1974,
+      "round": 14,
+      "pick": 348,
+      "name": "Kent Marshall",
+      "position": "DB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1974,
+      "round": 15,
+      "pick": 375,
+      "name": "Sid Bond",
+      "position": "T",
+      "nflTeam": "Philadelphia Eagles"
     },
     {
       "year": 1973,
@@ -773,6 +909,14 @@
     },
     {
       "year": 1971,
+      "round": 13,
+      "pick": 316,
+      "name": "Busty Underwood",
+      "position": "QB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1971,
       "round": 14,
       "pick": 342,
       "name": "Bob Creech",
@@ -785,7 +929,7 @@
       "pick": 18,
       "name": "Norm Bulaich",
       "position": "RB",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1970,
@@ -796,12 +940,28 @@
       "nflTeam": "Chicago Bears"
     },
     {
+      "year": 1970,
+      "round": 13,
+      "pick": 321,
+      "name": "Jim Vanderslice",
+      "position": "LB",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1969,
       "round": 3,
       "pick": 66,
       "name": "Ross Montgomery",
       "position": "RB",
       "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1969,
+      "round": 6,
+      "pick": 145,
+      "name": "Larry Adams",
+      "position": "DT",
+      "nflTeam": "Cleveland Browns"
     },
     {
       "year": 1969,
@@ -826,6 +986,14 @@
       "name": "Bruce Alford",
       "position": "K",
       "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1967,
+      "round": 11,
+      "pick": 278,
+      "name": "Frank Horak",
+      "position": "DB",
+      "nflTeam": "Los Angeles Rams"
     }
   ]
 }

@@ -113,7 +113,7 @@
       "pick": 110,
       "name": "Ladarius Green",
       "position": "TE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2010,
@@ -121,7 +121,7 @@
       "pick": 149,
       "name": "Hall Davis",
       "position": "DE",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2005,
@@ -209,7 +209,7 @@
       "pick": 130,
       "name": "Brian Mitchell",
       "position": "RB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1989,
@@ -228,6 +228,22 @@
       "nflTeam": "Green Bay Packers"
     },
     {
+      "year": 1989,
+      "round": 8,
+      "pick": 198,
+      "name": "Thomas King",
+      "position": "DB",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1988,
+      "round": 10,
+      "pick": 258,
+      "name": "R.C. Mullin",
+      "position": "T",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
       "year": 1985,
       "round": 7,
       "pick": 190,
@@ -236,12 +252,60 @@
       "nflTeam": "Chicago Bears"
     },
     {
+      "year": 1984,
+      "round": 3,
+      "pick": 83,
+      "name": "Clarence Verdin",
+      "position": "WR",
+      "nflTeam": "Washington Commanders"
+    },
+    {
       "year": 1977,
       "round": 10,
       "pick": 258,
       "name": "Rafael Septien",
       "position": "K",
       "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1976,
+      "round": 11,
+      "pick": 293,
+      "name": "Keith Muehr",
+      "position": "P",
+      "nflTeam": "Seattle Seahawks"
+    },
+    {
+      "year": 1976,
+      "round": 12,
+      "pick": 331,
+      "name": "Harold Porter",
+      "position": "WR",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1974,
+      "round": 15,
+      "pick": 382,
+      "name": "Ken Williams",
+      "position": "LB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1972,
+      "round": 14,
+      "pick": 349,
+      "name": "Louis Age",
+      "position": "G",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1967,
+      "round": 13,
+      "pick": 332,
+      "name": "Len Kleinpeter",
+      "position": "E",
+      "nflTeam": "Las Vegas Raiders"
     }
   ]
 }

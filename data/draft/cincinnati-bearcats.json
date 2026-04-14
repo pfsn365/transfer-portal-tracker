@@ -129,7 +129,7 @@
       "pick": 163,
       "name": "Darrick Forrest",
       "position": "S",
-      "nflTeam": "Washington Football Team"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2021,
@@ -217,7 +217,7 @@
       "pick": 50,
       "name": "Isaiah Pead",
       "position": "RB",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2012,
@@ -249,7 +249,7 @@
       "pick": 99,
       "name": "Mardy Gilyard",
       "position": "WR",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2010,
@@ -324,12 +324,20 @@
       "nflTeam": "Baltimore Ravens"
     },
     {
+      "year": 2008,
+      "round": 7,
+      "pick": 244,
+      "name": "Angelo Craig",
+      "position": "LB",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
       "year": 2007,
       "round": 4,
       "pick": 110,
       "name": "John Bowie",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2007,
@@ -373,6 +381,14 @@
     },
     {
       "year": 2003,
+      "round": 5,
+      "pick": 159,
+      "name": "Jon Olinger",
+      "position": "WR",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 2003,
       "round": 7,
       "pick": 220,
       "name": "Blue Adams",
@@ -393,7 +409,7 @@
       "pick": 186,
       "name": "Mario Monds",
       "position": "DT",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1999,
@@ -465,7 +481,7 @@
       "pick": 119,
       "name": "Mike Davis",
       "position": "DB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1994,
@@ -492,12 +508,68 @@
       "nflTeam": "Cleveland Browns"
     },
     {
+      "year": 1989,
+      "round": 8,
+      "pick": 201,
+      "name": "Chris Asbeck",
+      "position": "DT",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1988,
+      "round": 11,
+      "pick": 281,
+      "name": "Danny McCoin",
+      "position": "QB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
       "year": 1987,
       "round": 2,
       "pick": 42,
       "name": "Alex Gordon",
       "position": "LB",
       "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1987,
+      "round": 11,
+      "pick": 280,
+      "name": "Reggie Taylor",
+      "position": "RB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1984,
+      "round": 2,
+      "pick": 47,
+      "name": "George Jamison",
+      "position": "LB",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1982,
+      "round": 8,
+      "pick": 222,
+      "name": "Kari Yli-Renko",
+      "position": "T",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1982,
+      "round": 12,
+      "pick": 318,
+      "name": "Hobson Milner",
+      "position": "RB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1980,
+      "round": 6,
+      "pick": 155,
+      "name": "Farley Bell",
+      "position": "LB",
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1979,
@@ -508,12 +580,20 @@
       "nflTeam": "Cincinnati Bengals"
     },
     {
+      "year": 1979,
+      "round": 11,
+      "pick": 286,
+      "name": "Bob Wright",
+      "position": "T",
+      "nflTeam": "Chicago Bears"
+    },
+    {
       "year": 1978,
       "round": 2,
       "pick": 52,
       "name": "Mike Woods",
       "position": "LB",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1978,
@@ -524,12 +604,36 @@
       "nflTeam": "San Francisco 49ers"
     },
     {
+      "year": 1978,
+      "round": 10,
+      "pick": 264,
+      "name": "Charles Price",
+      "position": "TE",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1977,
+      "round": 6,
+      "pick": 161,
+      "name": "Keith Jenkins",
+      "position": "DB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1977,
+      "round": 11,
+      "pick": 298,
+      "name": "Lou West",
+      "position": "DB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
       "year": 1976,
       "round": 6,
       "pick": 179,
       "name": "Tommy Marvaso",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1976,
@@ -541,11 +645,19 @@
     },
     {
       "year": 1976,
+      "round": 14,
+      "pick": 378,
+      "name": "Ed Jones",
+      "position": "G",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1976,
       "round": 17,
       "pick": 463,
       "name": "Clarence Sanders",
       "position": "LB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1975,
@@ -554,6 +666,14 @@
       "name": "Jeff West",
       "position": "P",
       "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1975,
+      "round": 12,
+      "pick": 304,
+      "name": "Chuck Bland",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
     },
     {
       "year": 1974,
@@ -569,7 +689,7 @@
       "pick": 185,
       "name": "Tom Forrest",
       "position": "G",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1974,
@@ -577,7 +697,15 @@
       "pick": 215,
       "name": "Reggie Harrison",
       "position": "RB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1974,
+      "round": 17,
+      "pick": 434,
+      "name": "Sal Casola",
+      "position": "K",
+      "nflTeam": "Buffalo Bills"
     },
     {
       "year": 1971,
@@ -593,7 +721,7 @@
       "pick": 244,
       "name": "Jesse Taylor",
       "position": "RB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1970,
@@ -601,7 +729,7 @@
       "pick": 70,
       "name": "Jim O'Brien",
       "position": "WR",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1969,

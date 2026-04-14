@@ -17,7 +17,15 @@
       "pick": 182,
       "name": "Cody Spencer",
       "position": "LB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1995,
+      "round": 6,
+      "pick": 205,
+      "name": "Anthony Bridges",
+      "position": "DB",
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1991,
@@ -26,6 +34,14 @@
       "name": "Erric Pegram",
       "position": "RB",
       "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1991,
+      "round": 6,
+      "pick": 165,
+      "name": "Scott Bowles",
+      "position": "T",
+      "nflTeam": "San Francisco 49ers"
     },
     {
       "year": 1989,
@@ -84,6 +100,22 @@
       "nflTeam": "Dallas Cowboys"
     },
     {
+      "year": 1976,
+      "round": 15,
+      "pick": 431,
+      "name": "Mel Davis",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1975,
+      "round": 14,
+      "pick": 348,
+      "name": "Stan Blackmon",
+      "position": "TE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
       "year": 1973,
       "round": 14,
       "pick": 355,
@@ -92,12 +124,20 @@
       "nflTeam": "Cincinnati Bengals"
     },
     {
+      "year": 1972,
+      "round": 13,
+      "pick": 324,
+      "name": "Steve Sullivan",
+      "position": "T",
+      "nflTeam": "New York Jets"
+    },
+    {
       "year": 1971,
       "round": 1,
       "pick": 26,
       "name": "Lenny Dunlap",
       "position": "DB",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1971,
@@ -109,11 +149,27 @@
     },
     {
       "year": 1971,
+      "round": 9,
+      "pick": 222,
+      "name": "Wilmur Levels",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1971,
       "round": 14,
       "pick": 357,
       "name": "Thomas Gipson",
       "position": "DT",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1971,
+      "round": 16,
+      "pick": 400,
+      "name": "Glenn Tucker",
+      "position": "LB",
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1970,
@@ -148,10 +204,18 @@
       "nflTeam": "Chicago Bears"
     },
     {
+      "year": 1970,
+      "round": 16,
+      "pick": 390,
+      "name": "Bob Helterbran",
+      "position": "G",
+      "nflTeam": "Chicago Bears"
+    },
+    {
       "year": 1969,
       "round": 1,
       "pick": 4,
-      "name": "Joe Greene",
+      "name": "Joe Greene HOF",
       "position": "DT",
       "nflTeam": "Pittsburgh Steelers"
     },
@@ -164,12 +228,68 @@
       "nflTeam": "Pittsburgh Steelers"
     },
     {
+      "year": 1969,
+      "round": 13,
+      "pick": 322,
+      "name": "Mike Shook",
+      "position": "DB",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1969,
+      "round": 16,
+      "pick": 400,
+      "name": "Billy Woods",
+      "position": "DB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1968,
+      "round": 8,
+      "pick": 213,
+      "name": "Lindon Endsley",
+      "position": "C",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1968,
+      "round": 8,
+      "pick": 219,
+      "name": "Ed Brantley",
+      "position": "T",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1968,
+      "round": 9,
+      "pick": 221,
+      "name": "Henry Holland",
+      "position": "C",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1968,
+      "round": 10,
+      "pick": 273,
+      "name": "James Russell",
+      "position": "E",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1967,
+      "round": 3,
+      "pick": 69,
+      "name": "Vidal Carlin",
+      "position": "QB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
       "year": 1967,
       "round": 7,
       "pick": 172,
       "name": "John Love",
       "position": "WR",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     }
   ]
 }

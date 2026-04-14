@@ -129,7 +129,7 @@
       "pick": 153,
       "name": "Roderick Coleman",
       "position": "DT",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1999,
@@ -213,11 +213,27 @@
     },
     {
       "year": 1992,
+      "round": 8,
+      "pick": 210,
+      "name": "Luke Fisher",
+      "position": "TE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1992,
       "round": 9,
       "pick": 250,
       "name": "Chris Hall",
       "position": "DB",
       "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1992,
+      "round": 10,
+      "pick": 274,
+      "name": "Dion Johnson",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1991,
@@ -233,7 +249,7 @@
       "pick": 67,
       "name": "Walter Wilson",
       "position": "TE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1990,
@@ -245,11 +261,27 @@
     },
     {
       "year": 1990,
+      "round": 7,
+      "pick": 179,
+      "name": "James Singletary",
+      "position": "LB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1990,
       "round": 10,
       "pick": 275,
       "name": "Anthony Thompson",
       "position": "LB",
       "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1988,
+      "round": 8,
+      "pick": 198,
+      "name": "Anthony Simpson",
+      "position": "RB",
+      "nflTeam": "Tampa Bay Buccaneers"
     },
     {
       "year": 1988,
@@ -281,7 +313,7 @@
       "pick": 80,
       "name": "Stefon Adams",
       "position": "DB",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1985,
@@ -297,7 +329,7 @@
       "pick": 55,
       "name": "Steve Hamilton",
       "position": "DE",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1984,
@@ -306,6 +338,22 @@
       "name": "Terry Long",
       "position": "G",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1984,
+      "round": 5,
+      "pick": 115,
+      "name": "Clint Harris",
+      "position": "DB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1984,
+      "round": 5,
+      "pick": 125,
+      "name": "Jeff Pegues",
+      "position": "LB",
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1984,
@@ -332,6 +380,14 @@
       "nflTeam": "Cleveland Browns"
     },
     {
+      "year": 1984,
+      "round": 11,
+      "pick": 284,
+      "name": "John Robertson",
+      "position": "T",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
       "year": 1983,
       "round": 2,
       "pick": 46,
@@ -353,7 +409,7 @@
       "pick": 90,
       "name": "Tootie Robbins",
       "position": "T",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1981,
@@ -372,6 +428,14 @@
       "nflTeam": "Minnesota Vikings"
     },
     {
+      "year": 1980,
+      "round": 12,
+      "pick": 314,
+      "name": "Mike Brewington",
+      "position": "LB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1979,
       "round": 2,
       "pick": 56,
@@ -386,6 +450,14 @@
       "name": "Eddie Hicks",
       "position": "RB",
       "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1978,
+      "round": 6,
+      "pick": 166,
+      "name": "Harold Randolph",
+      "position": "LB",
+      "nflTeam": "Dallas Cowboys"
     },
     {
       "year": 1977,
@@ -404,12 +476,36 @@
       "nflTeam": "New York Giants"
     },
     {
+      "year": 1974,
+      "round": 4,
+      "pick": 95,
+      "name": "Carlester Crumpler",
+      "position": "RB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1973,
+      "round": 16,
+      "pick": 390,
+      "name": "Tim Dameron",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1973,
       "round": 17,
       "pick": 438,
       "name": "Les Strayhorn",
       "position": "RB",
       "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1969,
+      "round": 17,
+      "pick": 417,
+      "name": "Wayne Lineberry",
+      "position": "LB",
+      "nflTeam": "Buffalo Bills"
     }
   ]
 }

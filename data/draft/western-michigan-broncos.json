@@ -54,6 +54,14 @@
     {
       "year": 2018,
       "round": 3,
+      "pick": 1,
+      "name": "Sam Beal",
+      "position": "DB",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2018,
+      "round": 3,
       "pick": 92,
       "name": "Chukwuma Okorafor",
       "position": "T",
@@ -217,7 +225,7 @@
       "pick": 146,
       "name": "Mark Garalczyk",
       "position": "DT",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1986,
@@ -236,11 +244,59 @@
       "nflTeam": "New England Patriots"
     },
     {
+      "year": 1982,
+      "round": 12,
+      "pick": 320,
+      "name": "Al Hughes",
+      "position": "DE",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
       "year": 1977,
       "round": 11,
       "pick": 283,
       "name": "Rocco Moore",
       "position": "G",
+      "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1974,
+      "round": 15,
+      "pick": 390,
+      "name": "Larry Cates",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1973,
+      "round": 12,
+      "pick": 295,
+      "name": "Bernard Thomas",
+      "position": "DE",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1973,
+      "round": 16,
+      "pick": 411,
+      "name": "Keith Pretty",
+      "position": "TE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
+      "year": 1972,
+      "round": 7,
+      "pick": 181,
+      "name": "Bill Slater",
+      "position": "DE",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1972,
+      "round": 11,
+      "pick": 274,
+      "name": "Dennis Sweeney",
+      "position": "DE",
       "nflTeam": "Philadelphia Eagles"
     },
     {
@@ -252,12 +308,28 @@
       "nflTeam": "Chicago Bears"
     },
     {
+      "year": 1972,
+      "round": 17,
+      "pick": 441,
+      "name": "Vern Brown",
+      "position": "DB",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1971,
+      "round": 17,
+      "pick": 422,
+      "name": "Greg Flaska",
+      "position": "DE",
+      "nflTeam": "New York Jets"
+    },
+    {
       "year": 1970,
       "round": 11,
       "pick": 267,
       "name": "Mike Siwek",
       "position": "DT",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1968,
@@ -273,7 +345,15 @@
       "pick": 43,
       "name": "Bob Rowe",
       "position": "DT",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1967,
+      "round": 10,
+      "pick": 251,
+      "name": "Torre Ossmo",
+      "position": "T",
+      "nflTeam": "Los Angeles Chargers"
     }
   ]
 }

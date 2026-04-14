@@ -57,7 +57,15 @@
       "pick": 192,
       "name": "Dante Ridgeway",
       "position": "WR",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 2005,
+      "round": 6,
+      "pick": 208,
+      "name": "Justin Beriault",
+      "position": "DB",
+      "nflTeam": "Dallas Cowboys"
     },
     {
       "year": 2005,
@@ -65,7 +73,7 @@
       "pick": 210,
       "name": "Reggie Hodges",
       "position": "P",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 1997,
@@ -97,7 +105,15 @@
       "pick": 214,
       "name": "Blaine Bishop",
       "position": "DB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1981,
+      "round": 12,
+      "pick": 312,
+      "name": "Mark O'Connell",
+      "position": "QB",
+      "nflTeam": "Cincinnati Bengals"
     },
     {
       "year": 1980,
@@ -105,7 +121,7 @@
       "pick": 255,
       "name": "Rush Brown",
       "position": "DT",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1979,
@@ -121,7 +137,7 @@
       "pick": 86,
       "name": "Maurice Harvey",
       "position": "DB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1976,
@@ -137,7 +153,15 @@
       "pick": 256,
       "name": "Art Stringer",
       "position": "LB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1975,
+      "round": 16,
+      "pick": 391,
+      "name": "Jim Micklos",
+      "position": "TE",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1974,
@@ -153,6 +177,30 @@
       "pick": 314,
       "name": "Don Burchfield",
       "position": "TE",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1969,
+      "round": 6,
+      "pick": 149,
+      "name": "Amos Van Pelt",
+      "position": "RB",
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1968,
+      "round": 7,
+      "pick": 182,
+      "name": "Oscar Lubke",
+      "position": "T",
+      "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1968,
+      "round": 16,
+      "pick": 411,
+      "name": "Elie Ghattas",
+      "position": "G",
       "nflTeam": "New Orleans Saints"
     }
   ]

@@ -17,7 +17,7 @@
       "pick": 227,
       "name": "Jimmy Moreland",
       "position": "CB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2013,
@@ -36,12 +36,28 @@
       "nflTeam": "Buffalo Bills"
     },
     {
+      "year": 2010,
+      "round": 6,
+      "pick": 203,
+      "name": "Scotty McGee",
+      "position": "DB",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
       "year": 2000,
       "round": 4,
       "pick": 97,
       "name": "Curtis Keaton",
       "position": "RB",
       "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1999,
+      "round": 7,
+      "pick": 211,
+      "name": "Tony Booth",
+      "position": "DB",
+      "nflTeam": "Carolina Panthers"
     },
     {
       "year": 1997,
@@ -60,6 +76,38 @@
       "nflTeam": "Miami Dolphins"
     },
     {
+      "year": 1996,
+      "round": 6,
+      "pick": 205,
+      "name": "Mike Cawley",
+      "position": "QB",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1990,
+      "round": 10,
+      "pick": 272,
+      "name": "Steve Bates",
+      "position": "DE",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 1989,
+      "round": 12,
+      "pick": 331,
+      "name": "Shawn Woodson",
+      "position": "LB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1988,
+      "round": 9,
+      "pick": 228,
+      "name": "Neal Wilkinson",
+      "position": "TE",
+      "nflTeam": "Green Bay Packers"
+    },
+    {
       "year": 1987,
       "round": 6,
       "pick": 167,
@@ -71,9 +119,17 @@
       "year": 1986,
       "round": 4,
       "pick": 96,
-      "name": "Charles Haley",
+      "name": "Charles Haley HOF",
       "position": "DE",
       "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1984,
+      "round": 2,
+      "pick": 55,
+      "name": "Gary Clark",
+      "position": "WR",
+      "nflTeam": "Washington Commanders"
     }
   ]
 }

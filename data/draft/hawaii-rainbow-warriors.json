@@ -41,7 +41,7 @@
       "pick": 209,
       "name": "Aaron Brown",
       "position": "LB",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2011,
@@ -57,7 +57,7 @@
       "pick": 112,
       "name": "Greg Salas",
       "position": "WR",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2011,
@@ -97,7 +97,7 @@
       "pick": 186,
       "name": "Colt Brennan",
       "position": "QB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2007,
@@ -122,6 +122,22 @@
       "name": "Reagan Maui'a",
       "position": "RB",
       "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 2007,
+      "round": 6,
+      "pick": 200,
+      "name": "Melila Purcell",
+      "position": "DE",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 2007,
+      "round": 7,
+      "pick": 236,
+      "name": "Nate Ilaoa",
+      "position": "RB",
+      "nflTeam": "Philadelphia Eagles"
     },
     {
       "year": 2005,
@@ -153,7 +169,7 @@
       "pick": 43,
       "name": "Pisa Tinoisamoa",
       "position": "LB",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2003,
@@ -204,6 +220,14 @@
       "nflTeam": "San Francisco 49ers"
     },
     {
+      "year": 2000,
+      "round": 4,
+      "pick": 104,
+      "name": "Kaulana Noa",
+      "position": "T",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
       "year": 1994,
       "round": 4,
       "pick": 122,
@@ -228,6 +252,14 @@
       "nflTeam": "Los Angeles Rams"
     },
     {
+      "year": 1993,
+      "round": 8,
+      "pick": 220,
+      "name": "Darrick Branch",
+      "position": "WR",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
       "year": 1992,
       "round": 6,
       "pick": 160,
@@ -241,7 +273,7 @@
       "pick": 60,
       "name": "Leo Goeas",
       "position": "G",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1988,
@@ -252,12 +284,20 @@
       "nflTeam": "Minnesota Vikings"
     },
     {
+      "year": 1988,
+      "round": 10,
+      "pick": 271,
+      "name": "Marco Johnson",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
       "year": 1987,
       "round": 3,
       "pick": 70,
       "name": "Colin Scotts",
       "position": "DT",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1987,
@@ -266,6 +306,14 @@
       "name": "Ron Hall",
       "position": "TE",
       "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1987,
+      "round": 6,
+      "pick": 151,
+      "name": "Joe Onosai",
+      "position": "G",
+      "nflTeam": "Dallas Cowboys"
     },
     {
       "year": 1987,
@@ -281,7 +329,15 @@
       "pick": 45,
       "name": "Walter Murray",
       "position": "WR",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1986,
+      "round": 9,
+      "pick": 227,
+      "name": "Kent Kafentzis",
+      "position": "DB",
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1986,
@@ -297,7 +353,7 @@
       "pick": 122,
       "name": "Raphel Cherry",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 1985,
@@ -313,7 +369,15 @@
       "pick": 170,
       "name": "Mike Akiu",
       "position": "WR",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1984,
+      "round": 7,
+      "pick": 194,
+      "name": "Bernard Carvalho",
+      "position": "G",
+      "nflTeam": "Miami Dolphins"
     },
     {
       "year": 1984,
@@ -321,7 +385,15 @@
       "pick": 201,
       "name": "Niko Noga",
       "position": "LB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1983,
+      "round": 7,
+      "pick": 174,
+      "name": "Anthony Edgar",
+      "position": "RB",
+      "nflTeam": "Philadelphia Eagles"
     },
     {
       "year": 1983,
@@ -329,7 +401,7 @@
       "pick": 225,
       "name": "Jim Mills",
       "position": "T",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1983,
@@ -345,7 +417,15 @@
       "pick": 148,
       "name": "Gary Allen",
       "position": "RB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1982,
+      "round": 7,
+      "pick": 176,
+      "name": "David Toloumu",
+      "position": "RB",
+      "nflTeam": "Atlanta Falcons"
     },
     {
       "year": 1982,
@@ -366,6 +446,14 @@
     {
       "year": 1980,
       "round": 9,
+      "pick": 222,
+      "name": "DeWayne Jett",
+      "position": "WR",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1980,
+      "round": 9,
       "pick": 223,
       "name": "Tom Tuinei",
       "position": "DT",
@@ -377,7 +465,7 @@
       "pick": 210,
       "name": "Wilbert Haslip",
       "position": "RB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1977,
@@ -396,6 +484,14 @@
       "nflTeam": "Detroit Lions"
     },
     {
+      "year": 1976,
+      "round": 9,
+      "pick": 254,
+      "name": "Curtis Akins",
+      "position": "G",
+      "nflTeam": "Washington Commanders"
+    },
+    {
       "year": 1974,
       "round": 2,
       "pick": 52,
@@ -404,12 +500,76 @@
       "nflTeam": "Miami Dolphins"
     },
     {
+      "year": 1974,
+      "round": 17,
+      "pick": 425,
+      "name": "Levi Stanley",
+      "position": "G",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
+      "year": 1973,
+      "round": 16,
+      "pick": 410,
+      "name": "John Conley",
+      "position": "TE",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1972,
+      "round": 10,
+      "pick": 257,
+      "name": "Rich Ruppert",
+      "position": "T",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
+      "year": 1972,
+      "round": 13,
+      "pick": 327,
+      "name": "Henry Sovio",
+      "position": "TE",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1971,
+      "round": 10,
+      "pick": 239,
+      "name": "Rocky Pamplin",
+      "position": "RB",
+      "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1971,
+      "round": 16,
+      "pick": 403,
+      "name": "Ed Foote",
+      "position": "C",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1970,
+      "round": 12,
+      "pick": 308,
+      "name": "Larry Arnold",
+      "position": "QB",
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
       "year": 1969,
       "round": 8,
       "pick": 187,
       "name": "Tim Buchanan",
       "position": "LB",
       "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1969,
+      "round": 10,
+      "pick": 241,
+      "name": "McKinley Reynolds",
+      "position": "RB",
+      "nflTeam": "New Orleans Saints"
     },
     {
       "year": 1968,

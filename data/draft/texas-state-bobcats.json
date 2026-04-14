@@ -9,7 +9,7 @@
       "pick": 83,
       "name": "Craig Mager",
       "position": "CB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2015,
@@ -28,6 +28,14 @@
       "nflTeam": "Miami Dolphins"
     },
     {
+      "year": 2002,
+      "round": 6,
+      "pick": 180,
+      "name": "Clenton Ballard",
+      "position": "DT",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
       "year": 2000,
       "round": 6,
       "pick": 183,
@@ -44,12 +52,28 @@
       "nflTeam": "Atlanta Falcons"
     },
     {
+      "year": 2000,
+      "round": 7,
+      "pick": 231,
+      "name": "Clifton Black",
+      "position": "DB",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1991,
+      "round": 11,
+      "pick": 303,
+      "name": "Paul Alsbury",
+      "position": "P",
+      "nflTeam": "New England Patriots"
+    },
+    {
       "year": 1990,
       "round": 7,
       "pick": 172,
       "name": "Jeff Novak",
       "position": "G",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1989,
@@ -57,7 +81,15 @@
       "pick": 149,
       "name": "A.J. Johnson",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1989,
+      "round": 10,
+      "pick": 254,
+      "name": "Ben Jessie",
+      "position": "DB",
+      "nflTeam": "Green Bay Packers"
     },
     {
       "year": 1989,
@@ -69,11 +101,27 @@
     },
     {
       "year": 1984,
+      "round": 1,
+      "pick": 16,
+      "name": "Ricky Sanders",
+      "position": "WR",
+      "nflTeam": "New England Patriots"
+    },
+    {
+      "year": 1984,
       "round": 5,
       "pick": 135,
       "name": "Van Hughes",
       "position": "DE",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1984,
+      "round": 6,
+      "pick": 157,
+      "name": "Rod Clark",
+      "position": "LB",
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1982,
@@ -89,7 +137,15 @@
       "pick": 226,
       "name": "Ken Coffey",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1982,
+      "round": 12,
+      "pick": 324,
+      "name": "Mike Miller",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
     },
     {
       "year": 1979,
@@ -100,12 +156,36 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1976,
+      "round": 9,
+      "pick": 255,
+      "name": "Bob Kotzur",
+      "position": "DT",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1975,
+      "round": 14,
+      "pick": 342,
+      "name": "Walter Hartfield",
+      "position": "RB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
       "year": 1974,
       "round": 12,
       "pick": 305,
       "name": "Noe Gonzalez",
       "position": "RB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1974,
+      "round": 13,
+      "pick": 315,
+      "name": "Dennis Colvin",
+      "position": "T",
+      "nflTeam": "New York Giants"
     },
     {
       "year": 1973,
@@ -116,12 +196,36 @@
       "nflTeam": "Cleveland Browns"
     },
     {
+      "year": 1973,
+      "round": 7,
+      "pick": 168,
+      "name": "Josh Brown",
+      "position": "RB",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1971,
+      "round": 15,
+      "pick": 380,
+      "name": "Mike Montgomery",
+      "position": "DB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1969,
       "round": 13,
       "pick": 314,
       "name": "Wade Key",
       "position": "G",
       "nflTeam": "Philadelphia Eagles"
+    },
+    {
+      "year": 1969,
+      "round": 14,
+      "pick": 355,
+      "name": "Tommy Head",
+      "position": "C",
+      "nflTeam": "Minnesota Vikings"
     },
     {
       "year": 1968,
@@ -137,7 +241,15 @@
       "pick": 339,
       "name": "Mack Sauls",
       "position": "DB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
+    },
+    {
+      "year": 1968,
+      "round": 16,
+      "pick": 433,
+      "name": "David Morrison",
+      "position": "DB",
+      "nflTeam": "Las Vegas Raiders"
     }
   ]
 }

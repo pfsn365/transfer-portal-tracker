@@ -97,7 +97,7 @@
       "pick": 107,
       "name": "Justin Ellis",
       "position": "DT",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2014,
@@ -132,12 +132,20 @@
       "nflTeam": "Jacksonville Jaguars"
     },
     {
+      "year": 2010,
+      "round": 6,
+      "pick": 174,
+      "name": "Dennis Morris",
+      "position": "RB",
+      "nflTeam": "Washington Commanders"
+    },
+    {
       "year": 2007,
       "round": 7,
       "pick": 254,
       "name": "Jonathan Holland",
       "position": "WR",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 2005,
@@ -173,6 +181,14 @@
     },
     {
       "year": 2000,
+      "round": 4,
+      "pick": 123,
+      "name": "Joey Chustz",
+      "position": "T",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2000,
       "round": 7,
       "pick": 212,
       "name": "Tim Rattay",
@@ -191,7 +207,7 @@
       "year": 1993,
       "round": 1,
       "pick": 8,
-      "name": "Willie Roaf",
+      "name": "Willie Roaf HOF",
       "position": "T",
       "nflTeam": "New Orleans Saints"
     },
@@ -228,6 +244,14 @@
       "nflTeam": "Cincinnati Bengals"
     },
     {
+      "year": 1991,
+      "round": 11,
+      "pick": 304,
+      "name": "Bobby Slaughter",
+      "position": "WR",
+      "nflTeam": "San Francisco 49ers"
+    },
+    {
       "year": 1990,
       "round": 6,
       "pick": 141,
@@ -249,7 +273,23 @@
       "pick": 46,
       "name": "Walter Johnson",
       "position": "LB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1986,
+      "round": 5,
+      "pick": 118,
+      "name": "Doug Landry",
+      "position": "LB",
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1984,
+      "round": 10,
+      "pick": 273,
+      "name": "James Thaxton",
+      "position": "DB",
+      "nflTeam": "Detroit Lions"
     },
     {
       "year": 1983,
@@ -269,11 +309,19 @@
     },
     {
       "year": 1982,
+      "round": 5,
+      "pick": 123,
+      "name": "Ed Jackson",
+      "position": "LB",
+      "nflTeam": "Las Vegas Raiders"
+    },
+    {
+      "year": 1982,
       "round": 10,
       "pick": 273,
       "name": "Andre Young",
       "position": "DB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1981,
@@ -281,7 +329,7 @@
       "pick": 111,
       "name": "Johnny Robinson",
       "position": "NT",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1978,
@@ -290,6 +338,14 @@
       "name": "Larry Anderson",
       "position": "DB",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1978,
+      "round": 8,
+      "pick": 195,
+      "name": "John Henry White",
+      "position": "RB",
+      "nflTeam": "Kansas City Chiefs"
     },
     {
       "year": 1977,
@@ -305,7 +361,7 @@
       "pick": 48,
       "name": "Mike Barber",
       "position": "TE",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1976,
@@ -313,15 +369,23 @@
       "pick": 114,
       "name": "Pat Tilley",
       "position": "WR",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1975,
       "round": 2,
       "pick": 33,
-      "name": "Fred Dean",
+      "name": "Fred Dean HOF",
       "position": "DE",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1975,
+      "round": 13,
+      "pick": 316,
+      "name": "Charles McDaniel",
+      "position": "RB",
+      "nflTeam": "Chicago Bears"
     },
     {
       "year": 1975,
@@ -337,14 +401,38 @@
       "pick": 24,
       "name": "Roger Carr",
       "position": "WR",
-      "nflTeam": "Baltimore Colts"
+      "nflTeam": "Indianapolis Colts"
     },
     {
       "year": 1970,
       "round": 1,
       "pick": 1,
-      "name": "Terry Bradshaw",
+      "name": "Terry Bradshaw HOF",
       "position": "QB",
+      "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1970,
+      "round": 8,
+      "pick": 194,
+      "name": "Larry Brewer",
+      "position": "TE",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1970,
+      "round": 14,
+      "pick": 363,
+      "name": "Tommy Spinks",
+      "position": "WR",
+      "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1969,
+      "round": 15,
+      "pick": 368,
+      "name": "Ken Liberto",
+      "position": "WR",
       "nflTeam": "Pittsburgh Steelers"
     },
     {
@@ -353,7 +441,23 @@
       "pick": 176,
       "name": "Bob Brunet",
       "position": "RB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 1968,
+      "round": 10,
+      "pick": 263,
+      "name": "Joe Peace",
+      "position": "LB",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1967,
+      "round": 10,
+      "pick": 259,
+      "name": "Tom Croft",
+      "position": "DB",
+      "nflTeam": "Buffalo Bills"
     }
   ]
 }

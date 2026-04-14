@@ -17,7 +17,7 @@
       "pick": 175,
       "name": "Jatavis Brown",
       "position": "OLB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2008,
@@ -71,9 +71,25 @@
       "year": 1997,
       "round": 3,
       "pick": 73,
-      "name": "Jason Taylor",
+      "name": "Jason Taylor HOF",
       "position": "DE",
       "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1993,
+      "round": 8,
+      "pick": 224,
+      "name": "Daron Alcorn",
+      "position": "K",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1989,
+      "round": 10,
+      "pick": 274,
+      "name": "John Buddenberg",
+      "position": "T",
+      "nflTeam": "Cleveland Browns"
     },
     {
       "year": 1987,
@@ -82,6 +98,38 @@
       "name": "Chris Kelley",
       "position": "TE",
       "nflTeam": "Pittsburgh Steelers"
+    },
+    {
+      "year": 1969,
+      "round": 11,
+      "pick": 285,
+      "name": "Ken Delaney",
+      "position": "T",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
+      "year": 1968,
+      "round": 12,
+      "pick": 307,
+      "name": "Paul Paxton",
+      "position": "T",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
+      "year": 1967,
+      "round": 13,
+      "pick": 338,
+      "name": "Al Kerkian",
+      "position": "DE",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1967,
+      "round": 16,
+      "pick": 411,
+      "name": "Don Williams",
+      "position": "E",
+      "nflTeam": "Cleveland Browns"
     }
   ]
 }

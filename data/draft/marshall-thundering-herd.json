@@ -153,7 +153,15 @@
       "pick": 243,
       "name": "Chris Massey",
       "position": "RB",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
+    },
+    {
+      "year": 2001,
+      "round": 2,
+      "pick": 51,
+      "name": "Paul Toviessi",
+      "position": "DE",
+      "nflTeam": "Denver Broncos"
     },
     {
       "year": 2000,
@@ -169,7 +177,7 @@
       "pick": 43,
       "name": "Rogers Beckett",
       "position": "DB",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 2000,
@@ -191,7 +199,7 @@
       "year": 1998,
       "round": 1,
       "pick": 21,
-      "name": "Randy Moss",
+      "name": "Randy Moss HOF",
       "position": "WR",
       "nflTeam": "Minnesota Vikings"
     },
@@ -220,12 +228,28 @@
       "nflTeam": "San Francisco 49ers"
     },
     {
+      "year": 1989,
+      "round": 6,
+      "pick": 164,
+      "name": "Sean Doctor",
+      "position": "RB",
+      "nflTeam": "Buffalo Bills"
+    },
+    {
       "year": 1983,
       "round": 7,
       "pick": 186,
       "name": "Carl Lee",
       "position": "DB",
       "nflTeam": "Minnesota Vikings"
+    },
+    {
+      "year": 1967,
+      "round": 14,
+      "pick": 353,
+      "name": "Andy Socha",
+      "position": "HB",
+      "nflTeam": "Washington Commanders"
     }
   ]
 }

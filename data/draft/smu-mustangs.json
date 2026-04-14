@@ -89,7 +89,7 @@
       "pick": 256,
       "name": "Trey Quinn",
       "position": "WR",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2014,
@@ -105,7 +105,7 @@
       "pick": 214,
       "name": "Garrett Gilbert",
       "position": "QB",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 2013,
@@ -121,7 +121,7 @@
       "pick": 71,
       "name": "Josh LeRibeus",
       "position": "G",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2012,
@@ -137,7 +137,7 @@
       "pick": 213,
       "name": "Richard Crawford",
       "position": "DB",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2012,
@@ -153,7 +153,7 @@
       "pick": 178,
       "name": "Aldrick Robinson",
       "position": "WR",
-      "nflTeam": "Washington Redskins"
+      "nflTeam": "Washington Commanders"
     },
     {
       "year": 2010,
@@ -185,7 +185,7 @@
       "pick": 172,
       "name": "Kevin Garrett",
       "position": "DB",
-      "nflTeam": "St. Louis Rams"
+      "nflTeam": "Los Angeles Rams"
     },
     {
       "year": 1999,
@@ -236,6 +236,14 @@
       "nflTeam": "Detroit Lions"
     },
     {
+      "year": 1987,
+      "round": 11,
+      "pick": 293,
+      "name": "Terence Mann",
+      "position": "DT",
+      "nflTeam": "Miami Dolphins"
+    },
+    {
       "year": 1986,
       "round": 1,
       "pick": 25,
@@ -276,12 +284,36 @@
       "nflTeam": "Buffalo Bills"
     },
     {
+      "year": 1985,
+      "round": 10,
+      "pick": 278,
+      "name": "Ron Anderson",
+      "position": "LB",
+      "nflTeam": "Denver Broncos"
+    },
+    {
+      "year": 1985,
+      "round": 11,
+      "pick": 293,
+      "name": "Chris Jackson",
+      "position": "C",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1984,
       "round": 1,
       "pick": 10,
       "name": "Russell Carter",
       "position": "DB",
       "nflTeam": "New York Jets"
+    },
+    {
+      "year": 1984,
+      "round": 3,
+      "pick": 74,
+      "name": "Doug Hollie",
+      "position": "DE",
+      "nflTeam": "Detroit Lions"
     },
     {
       "year": 1984,
@@ -305,13 +337,13 @@
       "pick": 183,
       "name": "Mitch Willis",
       "position": "NT",
-      "nflTeam": "Los Angeles Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1983,
       "round": 1,
       "pick": 2,
-      "name": "Eric Dickerson",
+      "name": "Eric Dickerson HOF",
       "position": "RB",
       "nflTeam": "Los Angeles Rams"
     },
@@ -373,11 +405,35 @@
     },
     {
       "year": 1981,
+      "round": 7,
+      "pick": 182,
+      "name": "Lee Spivey",
+      "position": "T",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1981,
       "round": 9,
       "pick": 224,
       "name": "Byron Hunt",
       "position": "LB",
       "nflTeam": "New York Giants"
+    },
+    {
+      "year": 1981,
+      "round": 9,
+      "pick": 228,
+      "name": "Mike Ford",
+      "position": "QB",
+      "nflTeam": "Tampa Bay Buccaneers"
+    },
+    {
+      "year": 1980,
+      "round": 7,
+      "pick": 183,
+      "name": "Emanuel Tolbert",
+      "position": "WR",
+      "nflTeam": "Chicago Bears"
     },
     {
       "year": 1980,
@@ -388,12 +444,20 @@
       "nflTeam": "Chicago Bears"
     },
     {
+      "year": 1979,
+      "round": 8,
+      "pick": 200,
+      "name": "D.K. Perry",
+      "position": "DB",
+      "nflTeam": "New York Giants"
+    },
+    {
       "year": 1978,
       "round": 7,
       "pick": 176,
       "name": "Arthur Whittington",
       "position": "RB",
-      "nflTeam": "Oakland Raiders"
+      "nflTeam": "Las Vegas Raiders"
     },
     {
       "year": 1976,
@@ -409,7 +473,7 @@
       "pick": 141,
       "name": "Wayne Morris",
       "position": "RB",
-      "nflTeam": "St. Louis Cardinals"
+      "nflTeam": "Arizona Cardinals"
     },
     {
       "year": 1976,
@@ -433,7 +497,7 @@
       "pick": 30,
       "name": "Louie Kelcher",
       "position": "DT",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
     },
     {
       "year": 1975,
@@ -444,12 +508,52 @@
       "nflTeam": "Cleveland Browns"
     },
     {
+      "year": 1975,
+      "round": 14,
+      "pick": 339,
+      "name": "Mike Smith",
+      "position": "C",
+      "nflTeam": "Indianapolis Colts"
+    },
+    {
       "year": 1974,
       "round": 8,
       "pick": 201,
       "name": "Alvin Maxson",
       "position": "RB",
       "nflTeam": "New Orleans Saints"
+    },
+    {
+      "year": 1974,
+      "round": 9,
+      "pick": 231,
+      "name": "Ed Johnson",
+      "position": "DE",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
+      "year": 1974,
+      "round": 12,
+      "pick": 309,
+      "name": "Keith Bobo",
+      "position": "QB",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
+      "year": 1973,
+      "round": 14,
+      "pick": 359,
+      "name": "Robert Popelka",
+      "position": "DB",
+      "nflTeam": "Cleveland Browns"
+    },
+    {
+      "year": 1973,
+      "round": 17,
+      "pick": 431,
+      "name": "Clayton Korver",
+      "position": "TE",
+      "nflTeam": "Kansas City Chiefs"
     },
     {
       "year": 1972,
@@ -460,12 +564,28 @@
       "nflTeam": "New York Jets"
     },
     {
+      "year": 1972,
+      "round": 12,
+      "pick": 301,
+      "name": "Paul Bradley",
+      "position": "WR",
+      "nflTeam": "Detroit Lions"
+    },
+    {
+      "year": 1971,
+      "round": 13,
+      "pick": 328,
+      "name": "Chuck Hixson",
+      "position": "QB",
+      "nflTeam": "Kansas City Chiefs"
+    },
+    {
       "year": 1969,
       "round": 2,
       "pick": 40,
       "name": "Jerry LeVias",
       "position": "WR",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1969,
@@ -473,7 +593,15 @@
       "pick": 171,
       "name": "Mike Richardson",
       "position": "RB",
-      "nflTeam": "Houston Oilers"
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 1969,
+      "round": 11,
+      "pick": 274,
+      "name": "Terry May",
+      "position": "C",
+      "nflTeam": "Tennessee Titans"
     },
     {
       "year": 1968,
@@ -485,11 +613,27 @@
     },
     {
       "year": 1968,
+      "round": 6,
+      "pick": 140,
+      "name": "Jim Hagle",
+      "position": "RB",
+      "nflTeam": "Atlanta Falcons"
+    },
+    {
+      "year": 1968,
       "round": 11,
       "pick": 291,
       "name": "Dennis Partee",
       "position": "K",
-      "nflTeam": "San Diego Chargers"
+      "nflTeam": "Los Angeles Chargers"
+    },
+    {
+      "year": 1967,
+      "round": 6,
+      "pick": 154,
+      "name": "Ron Medlen",
+      "position": "DE",
+      "nflTeam": "New England Patriots"
     },
     {
       "year": 1967,
@@ -498,6 +642,22 @@
       "name": "George Gaiser",
       "position": "T",
       "nflTeam": "Buffalo Bills"
+    },
+    {
+      "year": 1967,
+      "round": 8,
+      "pick": 200,
+      "name": "Jerry Griffin",
+      "position": "LB",
+      "nflTeam": "Chicago Bears"
+    },
+    {
+      "year": 1967,
+      "round": 17,
+      "pick": 438,
+      "name": "Billy Bob Stewart",
+      "position": "LB",
+      "nflTeam": "New Orleans Saints"
     }
   ]
 }
