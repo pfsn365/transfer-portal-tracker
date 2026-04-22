@@ -55,13 +55,13 @@ export default function TransfersTab({ team, teamColor }: TransfersTabProps) {
   const isPlayerIncoming = useCallback((player: TransferPlayer) => {
     const teamIdLower = team.id.toLowerCase();
     const newSchoolLower = (player.newSchool || '').toLowerCase();
-    return newSchoolLower === teamIdLower || newSchoolLower.includes(teamIdLower);
+    return newSchoolLower === teamIdLower;
   }, [team.id]);
 
   const isPlayerOutgoing = useCallback((player: TransferPlayer) => {
     const teamIdLower = team.id.toLowerCase();
     const formerSchoolLower = player.formerSchool.toLowerCase();
-    return formerSchoolLower === teamIdLower || formerSchoolLower.includes(teamIdLower);
+    return formerSchoolLower === teamIdLower;
   }, [team.id]);
 
   // Filter players (team filtering already done server-side, just apply UI filters)

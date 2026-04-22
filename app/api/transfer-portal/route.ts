@@ -90,10 +90,8 @@ export async function GET(request: NextRequest) {
         const newSchoolLower = (player.newSchool || '').toLowerCase();
         const formerSchoolLower = (player.formerSchool || '').toLowerCase();
 
-        const isIncoming = newSchoolLower === teamFilter ||
-                          newSchoolLower.includes(teamFilter);
-        const isOutgoing = formerSchoolLower === teamFilter ||
-                          formerSchoolLower.includes(teamFilter);
+        const isIncoming = newSchoolLower === teamFilter;
+        const isOutgoing = formerSchoolLower === teamFilter;
 
         return isIncoming || isOutgoing;
       });

@@ -589,8 +589,7 @@ export default function PowerRankingsClient() {
       .filter(team => !rankedTeamIds.has(team.id))
       .filter(team => {
         if (conferenceFilter !== 'All') {
-          if (team.conference.toLowerCase().includes(conferenceFilter.toLowerCase()) ||
-              conferenceFilter.toLowerCase().includes(team.conference.toLowerCase())) {
+          if (team.conference.toLowerCase() === conferenceFilter.toLowerCase()) {
             return false;
           }
         }
@@ -610,11 +609,7 @@ export default function PowerRankingsClient() {
 
   // Helper to check if team belongs to conference
   const teamBelongsToConference = (team: TeamWithRecord, conf: string): boolean => {
-    const teamConf = team.conference.toLowerCase();
-    const filterConf = conf.toLowerCase();
-    return teamConf === filterConf ||
-           teamConf.includes(filterConf) ||
-           filterConf.includes(teamConf);
+    return team.conference.toLowerCase() === conf.toLowerCase();
   };
 
   // Get or build conference rankings

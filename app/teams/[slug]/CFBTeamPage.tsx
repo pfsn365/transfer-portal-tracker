@@ -18,6 +18,7 @@ import StatsTab from '@/components/cfb-tabs/StatsTab';
 import HistoryTab from '@/components/cfb-tabs/HistoryTab';
 import DraftTab from '@/components/cfb-tabs/DraftTab';
 import RecruitingTab from '@/components/cfb-tabs/RecruitingTab';
+import DepthChartTab from '@/components/cfb-tabs/DepthChartTab';
 import LoadingSpinner from '@/components/LoadingSpinner';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import TransferPortalBanner from '@/components/TransferPortalBanner';
@@ -103,6 +104,7 @@ function TeamHeroSection({ team, teamColor, record, conferenceRank, headCoach }:
 const TAB_TITLES: Record<string, string> = {
   overview: 'Overview',
   transfers: 'Transfer Portal',
+  'depth-chart': 'Depth Chart',
   roster: 'Roster',
   schedule: 'Schedule',
   stats: 'Stats',
@@ -197,6 +199,8 @@ function CFBTeamPageContent({ team, initialTab }: CFBTeamPageProps) {
     switch (activeTab) {
       case 'overview':
         return <OverviewTab team={team} schedule={schedule} teamColor={teamColor} />;
+      case 'depth-chart':
+        return <DepthChartTab team={team} teamColor={teamColor} />;
       case 'roster':
         return <RosterTab team={team} teamColor={teamColor} />;
       case 'schedule':

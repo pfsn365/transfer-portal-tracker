@@ -17,12 +17,12 @@ export default function CFBNavigationTabs({ activeTab, onTabChange, team, teamCo
   const tabs = useMemo(() => [
     { id: 'overview', label: 'Overview' },
     { id: 'transfers', label: 'Transfer Portal' },
+    { id: 'recruiting', label: 'Recruiting' },
     { id: 'roster', label: 'Roster' },
     { id: 'schedule', label: 'Schedule' },
     { id: 'stats', label: 'Stats' },
     { id: 'history', label: 'Record by Year' },
     { id: 'draft', label: 'NFL Draft History' },
-    { id: 'recruiting', label: 'Recruiting' },
   ], []);
 
   // Scroll active tab into view when activeTab changes

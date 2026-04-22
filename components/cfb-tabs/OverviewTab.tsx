@@ -157,9 +157,9 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
 
     // Find current team's position in standings
     const teamIndex = allStandings.findIndex((s: Standing) =>
-      s.team?.toLowerCase().includes(team.id.toLowerCase()) ||
       s.teamId === team.id ||
-      team.name.toLowerCase().includes(s.team?.toLowerCase() || '')
+      s.team?.toLowerCase() === team.id.toLowerCase() ||
+      s.team?.toLowerCase() === team.name.toLowerCase()
     );
 
     // Get 5 teams around the current team (2 above, team, 2 below)
@@ -181,12 +181,12 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
 
     const incoming: TransferPlayer[] = players.filter((p: TransferPlayer) => {
       const newSchoolLower = (p.newSchool || '').toLowerCase();
-      return newSchoolLower === teamIdLower || newSchoolLower.includes(teamIdLower);
+      return newSchoolLower === teamIdLower;
     }).slice(0, 5);
 
     const outgoing: TransferPlayer[] = players.filter((p: TransferPlayer) => {
       const formerSchoolLower = p.formerSchool.toLowerCase();
-      return formerSchoolLower === teamIdLower || formerSchoolLower.includes(teamIdLower);
+      return formerSchoolLower === teamIdLower;
     }).slice(0, 5);
 
     return { incoming, outgoing };
@@ -271,9 +271,9 @@ export default function OverviewTab({ team, schedule, teamColor }: OverviewTabPr
                   </thead>
                   <tbody>
                     {standings.map((standing, idx) => {
-                      const isCurrentTeam = standing.team?.toLowerCase().includes(team.id.toLowerCase()) ||
-                                           standing.teamId === team.id ||
-                                           team.name.toLowerCase().includes(standing.team?.toLowerCase() || '');
+                      const isCurrentTeam = standing.teamId === team.id ||
+                                           standing.team?.toLowerCase() === team.id.toLowerCase() ||
+                                           standing.team?.toLowerCase() === team.name.toLowerCase();
                       return (
                         <tr key={idx} className={`border-t border-gray-100 ${isCurrentTeam ? 'bg-gray-200' : ''}`}>
                           <td className="py-2">

@@ -41,9 +41,8 @@ function getHistoryData(teamSlug: string): HistoryData | null {
   // Fallback: scan directory only if direct match fails
   try {
     const files = fs.readdirSync(historyDir);
-    const teamIdPart = teamSlug.split('-')[0];
     const matchingFile = files.find(file =>
-      file.startsWith(teamIdPart) || file.replace('.json', '').includes(teamIdPart)
+      file.replace('.json', '') === teamSlug
     );
 
     if (matchingFile) {

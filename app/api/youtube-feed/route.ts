@@ -1,41 +1,58 @@
 import { NextResponse } from 'next/server';
-import * as cheerio from 'cheerio';
 
-const CHANNEL_ID = 'UCiwWI74RHeKeUz9rniL8C6Q'; // Football Debate Club (@FDC365)
-const FEED_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+const UPLOADS_PLAYLIST_ID = 'UUiwWI74RHeKeUz9rniL8C6Q'; // UCxxx -> UUxxx for uploads playlist
+const BASE = 'https://www.googleapis.com/youtube/v3';
+
+function isoDurationToSeconds(iso: string): number {
+  const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+  if (!m) return 0;
+  return parseInt(m[1] || '0') * 3600 + parseInt(m[2] || '0') * 60 + parseInt(m[3] || '0');
+}
 
 export async function GET() {
-  try {
-    const response = await fetch(FEED_URL, {
-      headers: { 'User-Agent': 'PFN-Internal-NON-Blocking' },
-      next: { revalidate: 3600 },
-    });
+  const API_KEY = process.env.YOUTUBE_API_KEY;
+  if (!API_KEY) return NextResponse.json({ videos: [] }, { status: 500 });
 
-    if (!response.ok) {
-      return NextResponse.json({ videos: [] }, { status: 502 });
+  try {
+    // Fetch 20 recent uploads so we have enough after filtering out Shorts
+    const playlistRes = await fetch(
+      `${BASE}/playlistItems?part=snippet&playlistId=${UPLOADS_PLAYLIST_ID}&maxResults=20&key=${API_KEY}`,
+      { next: { revalidate: 21600 } }
+    );
+    if (!playlistRes.ok) return NextResponse.json({ videos: [] }, { status: 502 });
+
+    const playlistData = await playlistRes.json();
+    const items: { snippet: { resourceId: { videoId: string }; title: string; publishedAt: string; thumbnails: { maxres?: { url: string }; standard?: { url: string }; high?: { url: string }; medium?: { url: string } } } }[] = playlistData.items || [];
+
+    const candidates = items.map(item => ({
+      videoId: item.snippet.resourceId.videoId,
+      title: item.snippet.title,
+      thumbnail: item.snippet.thumbnails?.maxres?.url || item.snippet.thumbnails?.standard?.url || item.snippet.thumbnails?.high?.url || '',
+      published: item.snippet.publishedAt,
+      url: `https://www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`,
+    }));
+
+    // Fetch durations to filter out Shorts (<= 60 seconds)
+    const videoIds = candidates.map(c => c.videoId).join(',');
+    const detailsRes = await fetch(
+      `${BASE}/videos?part=contentDetails&id=${videoIds}&key=${API_KEY}`,
+      { next: { revalidate: 21600 } }
+    );
+    if (!detailsRes.ok) return NextResponse.json({ videos: [] }, { status: 502 });
+
+    const detailsData = await detailsRes.json();
+    const durationMap: Record<string, number> = {};
+    for (const item of detailsData.items as { id: string; contentDetails: { duration: string } }[]) {
+      durationMap[item.id] = isoDurationToSeconds(item.contentDetails.duration);
     }
 
-    const xml = await response.text();
-    const $ = cheerio.load(xml, { xmlMode: true });
-
-    const videos: { videoId: string; title: string; url: string; thumbnail: string; published: string }[] = [];
-
-    $('entry').each((_i, el) => {
-      const videoId = $(el).find('yt\\:videoId').text().trim();
-      const title = $(el).find('title').text().trim();
-      const url = $(el).find('link[rel="alternate"]').attr('href') || `https://www.youtube.com/watch?v=${videoId}`;
-      const thumbnail = $(el).find('media\\:thumbnail').attr('url') || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-      const published = $(el).find('published').text().trim();
-
-      // Skip YouTube Shorts
-      if (videoId && title && !url.includes('/shorts/')) {
-        videos.push({ videoId, title, url, thumbnail, published });
-      }
-    });
+    const videos = candidates
+      .filter(c => (durationMap[c.videoId] ?? 0) > 60)
+      .slice(0, 3);
 
     return NextResponse.json(
-      { videos: videos.slice(0, 3) },
-      { headers: { 'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=1800' } }
+      { videos },
+      { headers: { 'Cache-Control': 'public, s-maxage=21600, stale-while-revalidate=3600' } }
     );
   } catch {
     return NextResponse.json({ videos: [] }, { status: 502 });

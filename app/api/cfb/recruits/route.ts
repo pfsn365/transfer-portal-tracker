@@ -174,7 +174,7 @@ function espnSchoolToTeamId(schoolName: string): string {
   const lower = schoolName.toLowerCase();
   const match = allTeams.find(t =>
     t.name.toLowerCase() === lower ||
-    lower.startsWith(t.id.toLowerCase())
+    t.id.toLowerCase() === lower
   );
   return match?.id || schoolName;
 }
@@ -869,11 +869,6 @@ export async function GET(request: NextRequest) {
             const committedLower = r.committedTo.toLowerCase().replace(/[^a-z\s]/g, '').trim();
             const committedCompact = committedLower.replace(/\s/g, '');
             if (committedLower === teamLower || committedCompact === teamCompact) return true;
-          }
-          // Match 247 committed school logo URL (often contains school abbreviation)
-          if (r.committedSchoolLogo) {
-            const logoLower = r.committedSchoolLogo.toLowerCase();
-            if (logoLower.includes(teamCompact)) return true;
           }
           return false;
         } catch {
