@@ -173,7 +173,7 @@ export default function PostseasonClient() {
                   <div className="flex items-center justify-center gap-4 mb-3">
                     <div className="relative w-16 h-16">
                       <Image
-                        src="https://a.espncdn.com/i/teamlogos/ncaa/500/84.png"
+                        src={getTeamLogo('indiana')}
                         alt="Indiana"
                         fill
                         className="object-contain"
@@ -332,7 +332,7 @@ export default function PostseasonClient() {
                   <div className="flex items-center justify-center gap-4 mb-3">
                     <div className="relative w-16 h-16">
                       <Image
-                        src="https://a.espncdn.com/i/teamlogos/ncaa/500/147.png"
+                        src={getTeamLogo('montana state')}
                         alt="Montana State"
                         fill
                         className="object-contain"

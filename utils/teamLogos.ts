@@ -67,6 +67,7 @@ const cfbTeams: Record<string, string> = {
   // ACC
   'boston college': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/BC.png',
   'california': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CAL.png',
+  'cal': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CAL.png',
   'clemson': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/CLEM.png',
   'duke': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/DUKE.png',
   'florida state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/FSU.png',
@@ -74,6 +75,7 @@ const cfbTeams: Record<string, string> = {
   'louisville': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/LOU.png',
   'miami': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MIA.png',
   'miami (fl)': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MIA.png',
+  'miami fl': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MIA.png',
   'north carolina': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/UNC.png',
   'north carolina state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NCSU.png',
   'nc state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NCSU.png',
@@ -209,6 +211,7 @@ const cfbTeams: Record<string, string> = {
   'nicholls': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NICH.png',
   'northwestern state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/NWST.png',
   'se louisiana': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SELA.png',
+  'southeastern louisiana': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/SELA.png',
   'holy cross': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/HC.png',
   'merrimack': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MRMK.png',
   'morgan state': 'https://staticd.profootballnetwork.com/skm/assets/college-football-playoff-predictor/team-logos/MORG.png',
@@ -330,7 +333,7 @@ const cfbTeams: Record<string, string> = {
 
 // Normalize accented/special characters (e.g., "José" → "jose", "Hawai'i" → "hawaii")
 function normalize(str: string): string {
-  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/['']/g, '');
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/['''\u02bb]/g, '');
 }
 
 export function getTeamLogo(teamName: string): string {
