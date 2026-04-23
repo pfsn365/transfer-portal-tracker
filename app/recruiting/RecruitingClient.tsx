@@ -474,7 +474,7 @@ export default function RecruitingClient() {
         <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-3 sm:pb-4 md:pb-5 lg:pb-6">
           <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">Recruiting Hub</h1>
           <p className="text-lg opacity-90 font-medium">
-            CFB recruit rankings from 247Sports, ESPN, On3, and Rivals
+            Top CFB recruiting rankings for players and team classes
           </p>
         </div>
       </header>

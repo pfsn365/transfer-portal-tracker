@@ -476,7 +476,7 @@ export default function CFBHomePageContent() {
                     Recruiting Hub
                   </h3>
                   <p className="text-gray-600 text-sm mb-5">
-                    CFB recruit rankings from 247Sports, ESPN, On3, and Rivals
+                    Top CFB recruiting rankings for players and team classes
                   </p>
                   <div className="bg-gradient-to-br from-blue-50 to-sky-50 rounded-lg p-6 text-center flex-grow flex flex-col justify-center min-h-[80px]">
                     <p className="text-lg font-semibold text-gray-700">Composite Rankings & Team Classes</p>
