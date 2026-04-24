@@ -4,6 +4,38 @@
   "teamName": "Ohio State Buckeyes",
   "draftPicks": [
     {
+      "year": 2026,
+      "round": 1,
+      "pick": 4,
+      "name": "Carnell Tate",
+      "position": "WR",
+      "nflTeam": "Tennessee Titans"
+    },
+    {
+      "year": 2026,
+      "round": 1,
+      "pick": 5,
+      "name": "Arvell Reese",
+      "position": "EDGE",
+      "nflTeam": "New York Giants"
+    },
+    {
+      "year": 2026,
+      "round": 1,
+      "pick": 7,
+      "name": "Sonny Styles",
+      "position": "LB",
+      "nflTeam": "Washington Commanders"
+    },
+    {
+      "year": 2026,
+      "round": 1,
+      "pick": 11,
+      "name": "Caleb Downs",
+      "position": "S",
+      "nflTeam": "Dallas Cowboys"
+    },
+    {
       "year": 2025,
       "round": 1,
       "pick": 19,

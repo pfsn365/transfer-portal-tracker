@@ -34,21 +34,14 @@ interface PipelineEntry {
   topPlayers: DraftPick[];
 }
 
-// Module-level cache
-let cachedData: TeamDraftData[] | null = null;
-
 function loadAllData(): TeamDraftData[] {
-  if (cachedData) return cachedData;
-
   const draftDir = path.join(process.cwd(), 'data', 'draft');
   const files = fs.readdirSync(draftDir).filter((f: string) => f.endsWith('.json'));
 
-  cachedData = files.map((file: string) => {
+  return files.map((file: string) => {
     const raw = fs.readFileSync(path.join(draftDir, file), 'utf-8');
     return JSON.parse(raw) as TeamDraftData;
   });
-
-  return cachedData;
 }
 
 function getDecade(year: number): string {
@@ -67,7 +60,7 @@ const POSITION_GROUPS: Record<string, string[]> = {
   'OC': ['C'],
   'OL': ['OT', 'OG', 'OC', 'T', 'G', 'C', 'IOL', 'OL'],
   'DT': ['DT', 'NT'],
-  'EDGE': ['DE'],
+  'EDGE': ['DE', 'EDGE'],
   'DL': ['DT', 'NT', 'DE', 'DL'],
   'LB': ['LB', 'ILB', 'OLB'],
   'CB': ['CB', 'NB'],

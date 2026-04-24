@@ -46,7 +46,7 @@ type SortKey = 'totalPicks' | 'firstRoundPicks' | 'recentPicks' | '2020s' | '201
 
 const DECADES = ['2020s', '2010s', '2000s'] as const;
 const YEAR_MIN = 1967;
-const YEAR_MAX = 2025;
+const YEAR_MAX = 2026;
 const YEAR_OPTIONS = Array.from({ length: YEAR_MAX - YEAR_MIN + 1 }, (_, i) => YEAR_MAX - i);
 const CONFERENCES = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'American', 'Pac-12', 'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Independent'] as const;
 const POSITIONS = [
@@ -266,7 +266,7 @@ export default function DraftHistoryClient() {
             CFB Draft History
           </h1>
           <p className="text-lg opacity-90 font-medium">
-            NFL Draft picks by college program, spanning the modern era (1967–2025)
+            NFL Draft picks by college program, spanning the modern era (1967–2026)
           </p>
         </div>
       </header>
