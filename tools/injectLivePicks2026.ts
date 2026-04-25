@@ -240,8 +240,10 @@ async function main() {
     process.exit(1);
   }
 
-  const minPick = Math.min(...targetRounds.map(r => r === 1 ? 1 : r === 2 ? 33 : r === 3 ? 65 : r === 4 ? 101 : r === 5 ? 139 : 180));
-  const maxPick = Math.max(...targetRounds.map(r => r === 1 ? 32 : r === 2 ? 64 : r === 3 ? 100 : r === 4 ? 138 : r === 5 ? 179 : 217));
+  const roundMin = (r: number) => r === 1 ? 1 : r === 2 ? 33 : r === 3 ? 65 : r === 4 ? 101 : r === 5 ? 139 : r === 6 ? 180 : 218;
+  const roundMax = (r: number) => r === 1 ? 32 : r === 2 ? 64 : r === 3 ? 100 : r === 4 ? 138 : r === 5 ? 179 : r === 6 ? 217 : 9999;
+  const minPick = Math.min(...targetRounds.map(roundMin));
+  const maxPick = Math.max(...targetRounds.map(roundMax));
 
   const livePicks = trackingSheet.data.slice(1).filter(row => {
     const pick = parseInt(row[0]);

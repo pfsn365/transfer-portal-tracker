@@ -4,6 +4,30 @@
   "teamName": "Duke Blue Devils",
   "draftPicks": [
     {
+      "year": 2026,
+      "round": 4,
+      "pick": 119,
+      "name": "Wesley Williams",
+      "position": "EDGE",
+      "nflTeam": "Jacksonville Jaguars"
+    },
+    {
+      "year": 2026,
+      "round": 5,
+      "pick": 162,
+      "name": "Chandler Rivers",
+      "position": "CB",
+      "nflTeam": "Baltimore Ravens"
+    },
+    {
+      "year": 2026,
+      "round": 6,
+      "pick": 189,
+      "name": "Brian Parker II",
+      "position": "OC",
+      "nflTeam": "Cincinnati Bengals"
+    },
+    {
       "year": 2024,
       "round": 1,
       "pick": 26,
