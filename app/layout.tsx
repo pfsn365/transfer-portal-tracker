@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from 'react';
 import "./globals.css";
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import RaptiveScript from '@/components/RaptiveScript';
@@ -138,7 +139,18 @@ export default function RootLayout({
         <CanonicalURL />
         <VideoPlayerScript />
         <StructuredData />
-        <SidebarLayout>{children}</SidebarLayout>
+        <Suspense fallback={
+          <div className="min-h-screen bg-gray-50 flex">
+            <div className="hidden lg:block w-64 bg-black flex-shrink-0" />
+            <div className="flex-1 p-6">
+              <div className="h-8 w-48 bg-gray-200 rounded animate-pulse mb-4" />
+              <div className="h-4 w-full bg-gray-200 rounded animate-pulse mb-2" />
+              <div className="h-4 w-3/4 bg-gray-200 rounded animate-pulse" />
+            </div>
+          </div>
+        }>
+          <SidebarLayout>{children}</SidebarLayout>
+        </Suspense>
       </body>
     </html>
   );

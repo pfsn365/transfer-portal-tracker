@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 import { allTeams } from '@/data/teams';
+import fs from 'fs';
+import path from 'path';
 
 const BASE_URL = 'https://www.profootballnetwork.com/cfb-hq';
 
@@ -40,5 +42,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ]);
 
-  return [...staticPages, ...teamPages];
+  // Player profile pages
+  let playerPages: MetadataRoute.Sitemap = [];
+  try {
+    const slugsPath = path.join(process.cwd(), 'public', 'data', 'valid-player-slugs.json');
+    const slugs: string[] = JSON.parse(fs.readFileSync(slugsPath, 'utf-8'));
+    playerPages = slugs.map(slug => ({
+      url: `${BASE_URL}/players/${slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    }));
+  } catch {
+    // file not present, skip
+  }
+
+  return [...staticPages, ...teamPages, ...playerPages];
 }

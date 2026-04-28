@@ -53,6 +53,8 @@ function PlayerAvatar({
       <img
         src={`/cfb-hq/player-images/${slug}.png`}
         alt={`${playerName} headshot`}
+        width={size === 'lg' ? 64 : size === 'md' ? 48 : 40}
+        height={size === 'lg' ? 64 : size === 'md' ? 48 : 40}
         className="w-full h-full object-cover object-top"
         onError={() => setImageError(true)}
       />

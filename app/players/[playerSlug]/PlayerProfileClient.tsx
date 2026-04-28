@@ -262,6 +262,8 @@ const [selectedSeason, setSelectedSeason] = useState<string>('');
               <img
                 src={getLocalHeadshotUrl(playerSlug)}
                 alt={player.name}
+                width={112}
+                height={112}
                 className="w-full h-full object-cover object-[center_20%]"
                 onError={(e) => {
                   const img = e.target as HTMLImageElement;
@@ -291,6 +293,8 @@ const [selectedSeason, setSelectedSeason] = useState<string>('');
                   <img
                     src={player.team.logo}
                     alt={player.team.name}
+                    width={20}
+                    height={20}
                     className="w-5 h-5"
                   />
                 )}

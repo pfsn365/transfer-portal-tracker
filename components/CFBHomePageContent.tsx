@@ -235,6 +235,8 @@ export default function CFBHomePageContent() {
                 <img
                   src={leader.teamLogo}
                   alt="Team"
+                  width={20}
+                  height={20}
                   className="w-5 h-5 object-contain flex-shrink-0"
                 />
               )}
@@ -365,7 +367,7 @@ export default function CFBHomePageContent() {
                               <td className="px-2 sm:px-3 py-2 whitespace-nowrap text-sm text-center">
                                 <div className="flex items-center justify-center gap-1.5">
                                   {formerLogo && (
-                                    <img src={formerLogo} alt="" className="w-5 h-5 object-contain" />
+                                    <img src={formerLogo} alt="" width={20} height={20} className="w-5 h-5 object-contain" />
                                   )}
                                   <span className="text-gray-700 hidden md:inline">{player.formerSchool}</span>
                                 </div>
@@ -373,7 +375,7 @@ export default function CFBHomePageContent() {
                               <td className="px-2 sm:px-3 py-2 whitespace-nowrap text-sm text-center">
                                 <div className="flex items-center justify-center gap-1.5">
                                   {newLogo && (
-                                    <img src={newLogo} alt="" className="w-5 h-5 object-contain" />
+                                    <img src={newLogo} alt="" width={20} height={20} className="w-5 h-5 object-contain" />
                                   )}
                                   <span className="text-gray-900 font-medium hidden md:inline">{player.newSchool}</span>
                                 </div>
@@ -637,6 +639,8 @@ export default function CFBHomePageContent() {
                         <img
                           src={article.featuredImage}
                           alt={article.title}
+                          width={400}
+                          height={225}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       ) : (
@@ -703,6 +707,8 @@ export default function CFBHomePageContent() {
                           <img
                             src={video.thumbnail}
                             alt={video.title}
+                            width={400}
+                            height={225}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                           <div

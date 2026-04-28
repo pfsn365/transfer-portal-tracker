@@ -30,22 +30,6 @@ const Footer = (_props?: FooterProps) => {
             </div>
 
             <div className="footer-column">
-              <h3 className="footer-column-title">Fantasy Football Tools</h3>
-              <ul className="footer-links">
-                <li><a href="https://www.profootballnetwork.com/fantasy-football-mock-draft-simulator/">Fantasy Mock Draft Simulator</a></li>
-                <li><a href="https://www.profootballnetwork.com/who-should-i-start-fantasy-optimizer">Fantasy Start/Sit Optimizer</a></li>
-                <li><a href="https://www.profootballnetwork.com/fantasy-football-waiver-wire">Fantasy Waiver Wire Assistant</a></li>
-                <li><a href="https://www.profootballnetwork.com/fantasy-football-trade-analyzer">Fantasy Trade Analyzer</a></li>
-                <li><a href="https://www.profootballnetwork.com/dynasty-fantasy-football-trade-value-charts">Dynasty Trade Charts</a></li>
-                <li><a href="https://www.profootballnetwork.com/fantasy-football-trade-value-charts">Redraft Trade Charts</a></li>
-                <li><a href="https://www.profootballnetwork.com/nfl-dfs-optimizer-lineup-generator">NFL DFS Optimizer</a></li>
-                <li><a href="https://www.profootballnetwork.com/who-should-i-draft-fantasy-football">Who Should I Draft?</a></li>
-                <li><a href="https://www.profootballnetwork.com/fantasy-football-team-name-generator">Team Name Generator</a></li>
-                <li><a href="https://www.profootballnetwork.com/fantasy-football-draft-order-generator-randomizer/">Draft Order Randomizer</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
               <h3 className="footer-column-title">Company</h3>
               <ul className="footer-links">
                 <li><a href="https://www.profootballnetwork.com/about-us/">About PFSN</a></li>
