@@ -417,7 +417,7 @@ export default function CFBHomePageContent() {
           {/* RIGHT: Stat Leaders Sidebar — 1 column on desktop */}
           <div id="stat-leaders" className="lg:col-start-3 lg:row-start-1 space-y-4" style={{ scrollMarginTop: '100px' }}>
             <div className="flex items-center justify-between mb-1">
-              <h2 className="text-lg font-bold text-gray-900">CFB Stat Leaders</h2>
+              <h2 className="text-lg font-bold text-gray-900">2025 CFB Stat Leaders</h2>
               <Link href="/stat-leaders" className="text-[#0050A0] hover:text-[#003a75] font-semibold text-sm transition-colors">
                 View All →
               </Link>

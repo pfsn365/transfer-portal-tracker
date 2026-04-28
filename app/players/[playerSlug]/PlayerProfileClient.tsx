@@ -84,7 +84,7 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
   const [player, setPlayer] = useState<PlayerProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedSeason, setSelectedSeason] = useState<string>('');
+const [selectedSeason, setSelectedSeason] = useState<string>('');
   const [gameLogLoading, setGameLogLoading] = useState(false);
   const [currentGameLog, setCurrentGameLog] = useState<PlayerProfile['gameLog']>([]);
   const [selectedStatCategory, setSelectedStatCategory] = useState<string>('');
@@ -265,8 +265,6 @@ export default function PlayerProfileClient({ playerSlug }: Props) {
                 className="w-full h-full object-cover object-[center_20%]"
                 onError={(e) => {
                   const img = e.target as HTMLImageElement;
-                  // Fallback to ESPN headshot if local image doesn't exist
-                  // If already on ESPN fallback, show initials instead
                   if (img.src === player.headshot || img.dataset.fallbackAttempted) {
                     img.style.visibility = 'hidden';
                     return;

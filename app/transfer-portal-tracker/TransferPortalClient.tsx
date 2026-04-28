@@ -52,6 +52,15 @@ export default function TransferPortalClient() {
   // Valid player slugs (players that have roster pages)
   const [validPlayerSlugs, setValidPlayerSlugs] = useState<Set<string>>(new Set());
 
+  useEffect(() => {
+    fetch('/cfb-hq/api/players/valid-slugs')
+      .then(r => r.json())
+      .then(data => {
+        if (data.slugs) setValidPlayerSlugs(new Set(data.slugs));
+      })
+      .catch(() => {});
+  }, []);
+
   // Load data on component mount
   useEffect(() => {
     const abortController = new AbortController();

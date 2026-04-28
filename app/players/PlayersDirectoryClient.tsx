@@ -411,7 +411,7 @@ export default function PlayersDirectoryClient() {
                                 <img
                                   src={player.headshot}
                                   alt={player.name}
-                                  className="w-full h-full object-cover scale-125 translate-y-1"
+                                  className="w-full h-full object-cover object-top"
                                   onError={() => handleImageError(player.slug)}
                                 />
                               ) : (

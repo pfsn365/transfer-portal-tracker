@@ -65,7 +65,7 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
         { title: 'Postseason HQ', url: '/postseason', external: false },
         { title: 'CFB Draft History', url: '/draft-history', external: false },
         { title: 'Power Rankings Builder', url: '/power-rankings-builder', external: false },
-        { title: 'Playoff Predictor', url: 'https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/', external: true },
+        { title: 'NFL Mock Draft Simulator', url: 'https://www.profootballnetwork.com/mockdraft', external: true },
       ],
     },
   ];
@@ -230,6 +230,22 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                   </Link>
                 </li>
                 <li>
+                  <a
+                    href="https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsExpanded(false)}
+                    className="relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 text-gray-100 hover:bg-gray-800/50 hover:text-white"
+                  >
+                    <div className="flex items-center gap-2 w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                      <span className="text-[13px] font-medium">CFB Playoff Predictor</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
                   <Link
                     href="/recruiting"
                     onClick={() => setIsExpanded(false)}
@@ -337,6 +353,21 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
                 <span className="text-[13px] font-medium">Transfer Portal Tracker</span>
               </div>
             </Link>
+          </li>
+          <li>
+            <a
+              href="https://www.profootballnetwork.com/cfb/playoff-predictor-cfb-cta/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center px-3 py-2 mx-1 rounded-md transition-all duration-200 text-gray-100 hover:bg-gray-800/50 hover:text-white"
+            >
+              <div className="flex items-center gap-2 w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <span className="text-[13px] font-medium flex items-center gap-2">CFB Playoff Predictor <ExternalIcon /></span>
+              </div>
+            </a>
           </li>
           <li>
             <Link
