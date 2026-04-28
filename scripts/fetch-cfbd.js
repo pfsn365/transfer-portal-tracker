@@ -19,14 +19,16 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-// Load .env
-var envPath = path.join(__dirname, '..', '.env');
-if (fs.existsSync(envPath)) {
-  fs.readFileSync(envPath, 'utf8').split('\n').forEach(function(line) {
-    var match = line.match(/^([^#=]+)=(.*)$/);
-    if (match) process.env[match[1].trim()] = match[2].trim();
-  });
-}
+// Load .env / .env.local
+['.env', '.env.local'].forEach(function(name) {
+  var envPath = path.join(__dirname, '..', name);
+  if (fs.existsSync(envPath)) {
+    fs.readFileSync(envPath, 'utf8').split('\n').forEach(function(line) {
+      var match = line.match(/^([^#=]+)=(.*)$/);
+      if (match) process.env[match[1].trim()] = match[2].trim();
+    });
+  }
+});
 
 var API_KEY = process.env.CFBD_API_KEY;
 if (!API_KEY) {

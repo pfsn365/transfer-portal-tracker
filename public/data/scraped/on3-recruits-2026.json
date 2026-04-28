@@ -2,7 +2,7 @@
   "source": "on3",
   "type": "industry-comparison",
   "year": 2026,
-  "scrapedAt": "2026-04-13T19:38:29.314Z",
+  "scrapedAt": "2026-04-28T17:44:16.679Z",
   "count": 500,
   "recruits": [
     {
@@ -56,12 +56,12 @@
           "stateRank": null
         }
       },
-      "nilValue": 1936045,
+      "nilValue": 1792045,
       "commitment": {
         "school": "miami-hurricanes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-05-13T14:59:00"
       },
       "fiveStarPlus": true,
@@ -376,7 +376,7 @@
         "school": "maryland-terrapins",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2024-12-07T13:08:00"
       },
       "fiveStarPlus": true,
@@ -628,7 +628,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2023-07-28T19:27:00"
       },
       "fiveStarPlus": true,
@@ -880,7 +880,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-06-19T12:34:00"
       },
       "fiveStarPlus": true,
@@ -1321,7 +1321,7 @@
         "school": "oregon-ducks",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2024-11-30T13:27:00"
       },
       "fiveStarPlus": false,
@@ -1384,7 +1384,7 @@
         "school": "oregon-ducks",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-06-19T20:36:00"
       },
       "fiveStarPlus": false,
@@ -2077,7 +2077,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-11-06T11:53:00"
       },
       "fiveStarPlus": false,
@@ -2203,7 +2203,7 @@
         "school": "washington-huskies",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-04-24T12:06:00"
       },
       "fiveStarPlus": false,
@@ -2581,7 +2581,7 @@
         "school": "south-carolina-gamecocks",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-12-04T11:50:00"
       },
       "fiveStarPlus": false,
@@ -2643,8 +2643,8 @@
       "commitment": {
         "school": "michigan-wolverines",
         "schoolName": null,
-        "signed": false,
-        "enrolled": false,
+        "signed": true,
+        "enrolled": true,
         "date": "2026-01-16T21:44:00"
       },
       "fiveStarPlus": false,
@@ -2833,7 +2833,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-07-18T17:25:00"
       },
       "fiveStarPlus": false,
@@ -3337,7 +3337,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-06-10T21:00:00"
       },
       "fiveStarPlus": false,
@@ -3589,8 +3589,8 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
-        "date": "2025-03-25T14:08:00"
+        "enrolled": true,
+        "date": "2025-12-03T13:06:00"
       },
       "fiveStarPlus": false,
       "imageUrl": "https://on3static.com/uploads/assets/122/373/373122.jpg",
@@ -4471,7 +4471,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-03-31T09:58:00"
       },
       "fiveStarPlus": false,
@@ -5983,7 +5983,7 @@
         "school": "south-carolina-gamecocks",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-06-07T19:45:00"
       },
       "fiveStarPlus": false,
@@ -6613,7 +6613,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-05-12T13:36:00"
       },
       "fiveStarPlus": false,
@@ -7195,7 +7195,7 @@
       "state": "UT",
       "height": "6-6",
       "weight": 240,
-      "age": 18,
+      "age": 19,
       "classYear": 2026,
       "highSchool": "Pine View",
       "overallRank": 249,
@@ -8187,8 +8187,8 @@
       "commitment": {
         "school": "ohio-state-buckeyes",
         "schoolName": null,
-        "signed": false,
-        "enrolled": false,
+        "signed": true,
+        "enrolled": true,
         "date": "2025-12-16T22:08:00"
       },
       "fiveStarPlus": false,
@@ -9259,7 +9259,7 @@
         "school": "north-carolina-tar-heels",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-07-16T16:46:00"
       },
       "fiveStarPlus": false,
@@ -11086,7 +11086,7 @@
         "school": "kentucky-wildcats",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-12-05T12:55:00"
       },
       "fiveStarPlus": false,
@@ -11590,7 +11590,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-11-18T09:01:00"
       },
       "fiveStarPlus": false,
@@ -12472,8 +12472,8 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
-        "date": "2025-03-10T19:29:00"
+        "enrolled": true,
+        "date": "2025-12-03T16:22:00"
       },
       "fiveStarPlus": false,
       "imageUrl": "https://on3static.com/uploads/assets/105/373/373105.jpg",
@@ -12787,7 +12787,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-06-27T17:08:00"
       },
       "fiveStarPlus": false,
@@ -14740,7 +14740,7 @@
         "school": "kentucky-wildcats",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-07-06T19:01:00"
       },
       "fiveStarPlus": false,
@@ -14929,7 +14929,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-11-09T15:27:00"
       },
       "fiveStarPlus": false,
@@ -15496,7 +15496,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-04-03T09:33:00"
       },
       "fiveStarPlus": false,
@@ -18079,7 +18079,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-04-04T10:00:00"
       },
       "fiveStarPlus": false,
@@ -19275,8 +19275,8 @@
       "commitment": {
         "school": "kentucky-wildcats",
         "schoolName": null,
-        "signed": false,
-        "enrolled": false,
+        "signed": true,
+        "enrolled": true,
         "date": "2026-01-06T13:41:00"
       },
       "fiveStarPlus": false,
@@ -19843,7 +19843,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-11-16T12:23:00"
       },
       "fiveStarPlus": false,
@@ -20032,7 +20032,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-06-08T13:00:00"
       },
       "fiveStarPlus": false,
@@ -20095,7 +20095,7 @@
         "school": "ohio-state-buckeyes",
         "schoolName": null,
         "signed": true,
-        "enrolled": false,
+        "enrolled": true,
         "date": "2025-10-14T18:01:00"
       },
       "fiveStarPlus": false,
