@@ -68,6 +68,13 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
         { title: 'NFL Mock Draft Simulator', url: 'https://www.profootballnetwork.com/mockdraft', external: true },
       ],
     },
+    {
+      label: 'Other Hubs',
+      items: [
+        { title: 'NFL Draft HQ', url: 'https://www.profootballnetwork.com/nfl-draft-hq', external: true },
+        { title: 'NFL HQ', url: 'https://www.profootballnetwork.com/nfl-hq', external: true },
+      ],
+    },
   ];
 
   // ── Shared helpers ──────────────────────────────────────────────────

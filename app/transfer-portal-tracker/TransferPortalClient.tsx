@@ -53,10 +53,10 @@ export default function TransferPortalClient() {
   const [validPlayerSlugs, setValidPlayerSlugs] = useState<Set<string>>(new Set());
 
   useEffect(() => {
-    fetch('/cfb-hq/api/players/valid-slugs')
+    fetch('/cfb-hq/data/valid-player-slugs.json')
       .then(r => r.json())
-      .then(data => {
-        if (data.slugs) setValidPlayerSlugs(new Set(data.slugs));
+      .then((slugs: string[]) => {
+        if (Array.isArray(slugs)) setValidPlayerSlugs(new Set(slugs));
       })
       .catch(() => {});
   }, []);

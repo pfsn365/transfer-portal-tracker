@@ -201,6 +201,14 @@ async function main() {
   console.log(`Downloaded: ${downloaded}`);
   console.log(`Not found: ${notFound}`);
   console.log(`Errors: ${errors}`);
+
+  // Regenerate static slugs file
+  const slugs = fs.readdirSync(PLAYER_IMAGES_DIR)
+    .filter(f => f.endsWith('.png'))
+    .map(f => f.replace('.png', ''));
+  const slugsPath = path.join(__dirname, '../public/data/valid-player-slugs.json');
+  fs.writeFileSync(slugsPath, JSON.stringify(slugs));
+  console.log(`Updated valid-player-slugs.json (${slugs.length} slugs)`);
 }
 
 main().catch(console.error);
