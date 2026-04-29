@@ -52,6 +52,8 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
       items: [
         { title: 'NFL Mock Draft Simulator', url: 'https://www.profootballnetwork.com/mockdraft', external: true },
         { title: 'Power Rankings Builder', url: '/power-rankings-builder', external: false },
+        { title: 'Recruiting Pipelines', url: '/recruiting-origin', external: false },
+        { title: 'Team Transfer Streams', url: '/transfer-flow', external: false },
       ],
     },
     {
