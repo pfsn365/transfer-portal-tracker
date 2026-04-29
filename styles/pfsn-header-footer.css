@@ -97,7 +97,7 @@ iframe[id^="google_ads_iframe"] {
 }
 
 .nav-menu .current-page a {
-  background: #cc3333;
+  background: #0050A0;
   color: white;
 }
 
@@ -174,12 +174,12 @@ iframe[id^="google_ads_iframe"] {
 }
 
 .footer-links a:hover {
-  color: #cc3333;
+  color: #0050A0;
   transform: translateX(3px);
 }
 
 .footer-links .current-page a {
-  color: #cc3333;
+  color: #0050A0;
   font-weight: 600;
 }
 
@@ -209,7 +209,7 @@ iframe[id^="google_ads_iframe"] {
 }
 
 .social-icons a:hover {
-  color: #cc3333;
+  color: #0050A0;
   transform: scale(1.1);
 }
 
