@@ -1,0 +1,75 @@
+{
+  "team": "ohio state",
+  "year": 2022,
+  "staff": [
+    {
+      "role": "Head Coach",
+      "name": "Ryan Day"
+    },
+    {
+      "role": "Vice President / Athletic Director",
+      "name": "Gene Smith"
+    },
+    {
+      "role": "Assistant Athletic Director for Football Sports Performance",
+      "name": "Mickey Marotti"
+    },
+    {
+      "role": "Assistant Head Coach for offense / running game coordinator / running backs coach",
+      "name": "Tony Alford"
+    },
+    {
+      "role": "Associate head coach for offense / offensive line",
+      "name": "Justin Frye"
+    },
+    {
+      "role": "Associate head coach / defensive line coach",
+      "name": "Larry Johnson"
+    },
+    {
+      "role": "Offensive coordinator / tight ends coach",
+      "name": "Kevin Wilson"
+    },
+    {
+      "role": "Defensive coordinator / linebackers coach",
+      "name": "Jim Knowles"
+    },
+    {
+      "role": "Special Teams Coordinator",
+      "name": "Parker Fleming"
+    },
+    {
+      "role": "Passing Game Coordinator / wide receivers coach",
+      "name": "Brian Hartline"
+    },
+    {
+      "role": "Quarterbacks coach",
+      "name": "Corey Dennis"
+    },
+    {
+      "role": "Secondary Coach / Cornerbacks coach",
+      "name": "Tim Walton"
+    },
+    {
+      "role": "Safeties coach",
+      "name": "Perry Eliano"
+    },
+    {
+      "role": "Offensive Analyst",
+      "name": "Todd Fitch"
+    },
+    {
+      "role": "Senior Advisor / Analyst",
+      "name": "Matt Guerrieri"
+    },
+    {
+      "role": "Graduate Assistant (OL)",
+      "name": "Mike Sollenne"
+    },
+    {
+      "role": "Graduate Assistant (WR)",
+      "name": "Keegan O'Hara"
+    }
+  ],
+  "found": true
+}

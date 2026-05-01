@@ -1,0 +1,31 @@
+{
+  "team": "iowa state",
+  "year": 2021,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Matt Campbell"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Jon Heacock"
+    },
+    {
+      "role": "Offensive coordinator",
+      "name": "Tom Manning"
+    },
+    {
+      "role": "Assistant head coach/linebackers",
+      "name": "Tyson Veidt"
+    },
+    {
+      "role": "Passing game coordinator/QB",
+      "name": "Joel Gordon"
+    },
+    {
+      "role": "Run game coordinator/running backs/wide receivers",
+      "name": "Nathan Scheelhaase"
+    }
+  ],
+  "found": true
+}

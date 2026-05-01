@@ -1,0 +1,19 @@
+{
+  "team": "virginia tech",
+  "year": 2000,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "Michael Vick"
+    },
+    {
+      "role": "Defensive back",
+      "name": "Cory Bird"
+    },
+    {
+      "role": "Center",
+      "name": "Matt Lehr"
+    }
+  ],
+  "found": true
+}

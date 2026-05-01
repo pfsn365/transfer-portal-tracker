@@ -1,0 +1,27 @@
+{
+  "team": "texas tech",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Matt Wells"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "David Yost"
+    },
+    {
+      "role": "Defensive coordinator/linebackers",
+      "name": "Keith Patterson"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Dave Scholz"
+    },
+    {
+      "role": "Special teams Coordinator",
+      "name": "Joe Lorig"
+    }
+  ],
+  "found": true
+}

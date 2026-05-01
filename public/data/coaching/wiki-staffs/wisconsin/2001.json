@@ -1,0 +1,43 @@
+{
+  "team": "wisconsin",
+  "year": 2001,
+  "staff": [
+    {
+      "role": "Running back",
+      "name": "Anthony Davis"
+    },
+    {
+      "role": "Fullback",
+      "name": "Chad Kuhns"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Lee Evans"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Nick Davis"
+    },
+    {
+      "role": "Tight end",
+      "name": "Mark Anelli"
+    },
+    {
+      "role": "Left tackle",
+      "name": "Ben Johnson"
+    },
+    {
+      "role": "Left guard",
+      "name": "Dan Buenning"
+    },
+    {
+      "role": "Center",
+      "name": "Al Johnson"
+    },
+    {
+      "role": "Right tackle",
+      "name": "Jason Jowers"
+    }
+  ],
+  "found": true
+}

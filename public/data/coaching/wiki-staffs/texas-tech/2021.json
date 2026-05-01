@@ -1,0 +1,31 @@
+{
+  "team": "texas tech",
+  "year": 2021,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Matt Wells"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "Sonny Cumbie"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Keith Patterson"
+    },
+    {
+      "role": "Co-defensive coordinator/secondary",
+      "name": "Derek Jones"
+    },
+    {
+      "role": "Special teams coordinator/Assistant Offensive Line",
+      "name": "Mark Tommerdahl"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Dave Scholz"
+    }
+  ],
+  "found": true
+}

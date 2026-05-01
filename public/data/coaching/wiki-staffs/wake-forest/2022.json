@@ -1,0 +1,31 @@
+{
+  "team": "wake forest",
+  "year": 2022,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dave Clawson"
+    },
+    {
+      "role": "Asst head coach / Receivers",
+      "name": "Kevin Higgins"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks",
+      "name": "Warren Ruggiero"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Brad Lambert"
+    },
+    {
+      "role": "Special teams coordinator / tight ends",
+      "name": "Wayne Lineburg"
+    },
+    {
+      "role": "Assistant coach / Safeties",
+      "name": "James Adams"
+    }
+  ],
+  "found": true
+}

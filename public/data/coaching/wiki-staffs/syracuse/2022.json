@@ -1,0 +1,47 @@
+{
+  "team": "syracuse",
+  "year": 2022,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dino Babers"
+    },
+    {
+      "role": "Defensive coordinator/linebacker coach",
+      "name": "Tony White"
+    },
+    {
+      "role": "Offensive coordinator",
+      "name": "Robert Anae"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Chris Achuff"
+    },
+    {
+      "role": "Quarterbacks coach",
+      "name": "Jason Beck"
+    },
+    {
+      "role": "Special teams coordinator",
+      "name": "Bob Ligashesky"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "Mike Lynch"
+    },
+    {
+      "role": "Safeties/nickelbacks coach",
+      "name": "Nick Monroe"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Mike Schmidt"
+    },
+    {
+      "role": "Cornerbacks coach",
+      "name": "Chip West"
+    }
+  ],
+  "found": true
+}

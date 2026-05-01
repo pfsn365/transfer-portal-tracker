@@ -1,0 +1,35 @@
+{
+  "team": "utsa",
+  "year": 2021,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Jeff Traylor"
+    },
+    {
+      "role": "Associate head coach/offensive coordinator/quarterbacks",
+      "name": "Barry Lunney Jr."
+    },
+    {
+      "role": "Co-defensive coordinator/safeties",
+      "name": "Jess Loepp"
+    },
+    {
+      "role": "Co-defensive coordinator/defensive line",
+      "name": "Rod Wright"
+    },
+    {
+      "role": "Special teams coordinator",
+      "name": "Tommy Perry"
+    },
+    {
+      "role": "Offensive line/Run Game Coordinator",
+      "name": "Matt Mattox"
+    },
+    {
+      "role": "Wide receivers/Passing Game Coordinator",
+      "name": "Will Stein"
+    }
+  ],
+  "found": true
+}

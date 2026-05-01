@@ -1,0 +1,51 @@
+{
+  "team": "washington state",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Mike Leach"
+    },
+    {
+      "role": "Defensive coordinator/secondary coach",
+      "name": "Alex Grinch"
+    },
+    {
+      "role": "Strength and conditioning coach",
+      "name": "Jason Loscalzo"
+    },
+    {
+      "role": "Outside linebackers coach",
+      "name": "Roy Manning"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "Jim Mastro"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Clay McGuire"
+    },
+    {
+      "role": "Special teams coach",
+      "name": "Eric Mele"
+    },
+    {
+      "role": "Outside receivers coach",
+      "name": "Dave Nichol"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Jeff Phelps"
+    },
+    {
+      "role": "Inside receivers coach",
+      "name": "Derek Sage"
+    },
+    {
+      "role": "Linebackers coach",
+      "name": "Ken Wilson"
+    }
+  ],
+  "found": true
+}

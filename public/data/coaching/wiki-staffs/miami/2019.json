@@ -1,0 +1,31 @@
+{
+  "team": "miami",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Manny Diaz"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "Dan Enos"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Blake Baker"
+    },
+    {
+      "role": "Co-defensive coordinator/safeties",
+      "name": "Ephraim Banda"
+    },
+    {
+      "role": "Assistant head coach / defensive line",
+      "name": "Todd Stroud"
+    },
+    {
+      "role": "Cornerbacks coach",
+      "name": "Mike Rumph"
+    }
+  ],
+  "found": true
+}

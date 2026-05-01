@@ -1,0 +1,23 @@
+{
+  "team": "penn state",
+  "year": 2013,
+  "staff": [
+    {
+      "role": "Head Coach",
+      "name": "Bill O'Brien"
+    },
+    {
+      "role": "Defensive coordinator/Cornerbacks",
+      "name": "John Butler"
+    },
+    {
+      "role": "Assistant Head Coach/Wide Receivers",
+      "name": "Stan Hixon"
+    },
+    {
+      "role": "Running Backs/Recruiting Coordinator",
+      "name": "Charles London"
+    }
+  ],
+  "found": true
+}

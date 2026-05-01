@@ -1,0 +1,51 @@
+{
+  "team": "wisconsin",
+  "year": 2007,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "Tyler Donovan"
+    },
+    {
+      "role": "Running back",
+      "name": "P. J. Hill"
+    },
+    {
+      "role": "Fullback",
+      "name": "Chris Pressley"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Luke Swan"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Paul Hubbard"
+    },
+    {
+      "role": "Tight end",
+      "name": "Travis Beckum"
+    },
+    {
+      "role": "Left tackle",
+      "name": "Gabe Carimi"
+    },
+    {
+      "role": "Left guard",
+      "name": "Andy Kemp"
+    },
+    {
+      "role": "Center",
+      "name": "Marcus Coleman"
+    },
+    {
+      "role": "Right guard",
+      "name": "Kraig Urbik"
+    },
+    {
+      "role": "Right tackle",
+      "name": "Eric Vanden Heuvel"
+    }
+  ],
+  "found": true
+}

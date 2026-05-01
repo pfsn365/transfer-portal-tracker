@@ -1,0 +1,43 @@
+{
+  "team": "ohio",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Frank Solich"
+    },
+    {
+      "role": "Asst. head coach/offensive coordinator/running backs coach",
+      "name": "Tim Albin"
+    },
+    {
+      "role": "Asst. head coach/defensive coordinator/safeties coach",
+      "name": "Jim Burrow"
+    },
+    {
+      "role": "Co-offensive coordinator/quarterbacks coach",
+      "name": "Scott Isphording"
+    },
+    {
+      "role": "Defensive line coach/Special teams coordinator",
+      "name": "Pete Germano"
+    },
+    {
+      "role": "Linebackers coach/co-defensive coordinator",
+      "name": "Ron Collins"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Dwayne Dixon"
+    },
+    {
+      "role": "Recruiting/Special teams coordinator/tight ends coach",
+      "name": "Brian Haines"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Dave Johnson"
+    }
+  ],
+  "found": true
+}

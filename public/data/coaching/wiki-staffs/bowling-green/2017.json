@@ -1,0 +1,51 @@
+{
+  "team": "bowling green",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Mike Jinks"
+    },
+    {
+      "role": "Associate head coach/defensive coordinator",
+      "name": "Perry Eliano"
+    },
+    {
+      "role": "Co-offensive coordinator/wide receivers coach",
+      "name": "Kevin Kilmer"
+    },
+    {
+      "role": "Co-offensive coordinator/quarterbacks coach",
+      "name": "Andy Padron"
+    },
+    {
+      "role": "Special teams coordinator/linebackers coach",
+      "name": "Matt Brock"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Marcus White"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Stephen Hamby"
+    },
+    {
+      "role": "Cornerbacks coach",
+      "name": "Mike Mickens"
+    },
+    {
+      "role": "Receivers Coach",
+      "name": "Seth Doege"
+    },
+    {
+      "role": "Safeties Coach",
+      "name": "Ryan Downard"
+    },
+    {
+      "role": "Defensive graduate assistant",
+      "name": "Clint Killough"
+    }
+  ],
+  "found": true
+}

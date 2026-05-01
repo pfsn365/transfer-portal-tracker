@@ -1,0 +1,39 @@
+{
+  "team": "tulsa",
+  "year": 2007,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Todd Graham"
+    },
+    {
+      "role": "Assistant head coach/Offensive coordinator/Quarterback",
+      "name": "Gus Malzahn"
+    },
+    {
+      "role": "Co-offensive coordinator/Offensive line",
+      "name": "Herb Hand"
+    },
+    {
+      "role": "Co-defensive coordinator/Defensive Line",
+      "name": "Paul Randolph"
+    },
+    {
+      "role": "Co-defensive coordinator/Linebackers",
+      "name": "Dan Phillips"
+    },
+    {
+      "role": "Special teams Coordinator/Cornerback",
+      "name": "Jason Jones"
+    },
+    {
+      "role": "Recruiting coordinator/safeties",
+      "name": "Jess Loepp"
+    },
+    {
+      "role": "Head Strength and Conditioning Coach",
+      "name": "Yancy McNight"
+    }
+  ],
+  "found": true
+}

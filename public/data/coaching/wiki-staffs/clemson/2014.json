@@ -1,0 +1,39 @@
+{
+  "team": "clemson",
+  "year": 2014,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dabo Swinney"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "Chad Morris"
+    },
+    {
+      "role": "Defensive coordinator/linebackers",
+      "name": "Brent Venables"
+    },
+    {
+      "role": "Wide receivers/recruiting coordinator/co-offensive coordinator",
+      "name": "Jeff Scott"
+    },
+    {
+      "role": "Running backs/co-offensive coordinator",
+      "name": "Tony Elliott"
+    },
+    {
+      "role": "Defensive running game coordinator/defensive ends",
+      "name": "Marion Hobby"
+    },
+    {
+      "role": "Special teams coordinator/tight ends",
+      "name": "Danny Pearman"
+    },
+    {
+      "role": "Student assistant",
+      "name": "Zac Alley"
+    }
+  ],
+  "found": true
+}

@@ -1,0 +1,47 @@
+{
+  "team": "arizona state",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Todd Graham"
+    },
+    {
+      "role": "Assistant head coach",
+      "name": "Shawn Slocum"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Phil Bennett"
+    },
+    {
+      "role": "Offensive coordinator",
+      "name": "Billy Napier"
+    },
+    {
+      "role": "Linebackers coach",
+      "name": "Keith Patterson"
+    },
+    {
+      "role": "Defensive backs coach",
+      "name": "TJ Rushing"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "John Simon"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Rob Sale"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Rob Likens"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Michael Slater"
+    }
+  ],
+  "found": true
+}

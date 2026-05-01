@@ -1,0 +1,31 @@
+{
+  "team": "alabama",
+  "year": 2015,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Nick Saban"
+    },
+    {
+      "role": "Associate head coach, running backs",
+      "name": "Burton Burns"
+    },
+    {
+      "role": "Offensive coordinator, quarterbacks",
+      "name": "Lane Kiffin"
+    },
+    {
+      "role": "Defensive coordinator, inside linebackers",
+      "name": "Kirby Smart"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Scott Cochran"
+    },
+    {
+      "role": "Assistant head coach and defensive backs",
+      "name": "Mel Tucker"
+    }
+  ],
+  "found": true
+}

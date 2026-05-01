@@ -1,0 +1,47 @@
+{
+  "team": "texas",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Tom Herman"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks",
+      "name": "Tim Beck"
+    },
+    {
+      "role": "Associate head coach / run game coordinator",
+      "name": "Stan Drayton"
+    },
+    {
+      "role": "Co-offensive coordinator / Offensive Line",
+      "name": "Herb Hand"
+    },
+    {
+      "role": "Pass game coordinator / wide receivers",
+      "name": "Drew Mehringer"
+    },
+    {
+      "role": "Co-defensive coordinator / Safeties",
+      "name": "Craig Naivar"
+    },
+    {
+      "role": "Defensive coordinator / Linebackers",
+      "name": "Todd Orlando"
+    },
+    {
+      "role": "Special teams coordinator / tight ends",
+      "name": "Derek Warehime"
+    },
+    {
+      "role": "Recruiting coordinator / Cornerbacks",
+      "name": "Jason Washington"
+    },
+    {
+      "role": "Head Strength and Conditioning",
+      "name": "Yancy McKnight"
+    }
+  ],
+  "found": true
+}

@@ -1,0 +1,35 @@
+{
+  "team": "notre dame",
+  "year": 2002,
+  "staff": [
+    {
+      "role": "Center",
+      "name": "Jeff Faine"
+    },
+    {
+      "role": "Tackle",
+      "name": "Jordan Black"
+    },
+    {
+      "role": "Center",
+      "name": "Sean Mahan"
+    },
+    {
+      "role": "Safety",
+      "name": "Shane Walton"
+    },
+    {
+      "role": "Safety",
+      "name": "Gerome Sapp"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "Arnaz Battle"
+    },
+    {
+      "role": "Tackle",
+      "name": "Brennan Curtin"
+    }
+  ],
+  "found": true
+}

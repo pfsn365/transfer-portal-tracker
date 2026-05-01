@@ -1,0 +1,51 @@
+{
+  "team": "wisconsin",
+  "year": 2000,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "Brooks Bollinger"
+    },
+    {
+      "role": "Running back",
+      "name": "Michael Bennett"
+    },
+    {
+      "role": "Fullback",
+      "name": "Mark Anelli"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Lee Evans"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Chris Chambers"
+    },
+    {
+      "role": "Tight end",
+      "name": "John Sigmund"
+    },
+    {
+      "role": "Left tackle",
+      "name": "Ben Johnson"
+    },
+    {
+      "role": "Left guard",
+      "name": "Bill Ferrario"
+    },
+    {
+      "role": "Center",
+      "name": "Al Johnson"
+    },
+    {
+      "role": "Right guard",
+      "name": "Casey Rabach"
+    },
+    {
+      "role": "Right tackle",
+      "name": "Brian Lamont"
+    }
+  ],
+  "found": true
+}

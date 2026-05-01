@@ -1,0 +1,51 @@
+{
+  "team": "arizona state",
+  "year": 2023,
+  "staff": [
+    {
+      "role": "Head Coach",
+      "name": "Kenny Dillingham"
+    },
+    {
+      "role": "Assistant Head CoachSpecial Teams Coordinator",
+      "name": "Charlie Ragle"
+    },
+    {
+      "role": "Offensive CoordinatorQuarterbacks Coach",
+      "name": "Beau Baldwin"
+    },
+    {
+      "role": "Defensive Coordinator",
+      "name": "Brian Ward"
+    },
+    {
+      "role": "Wide Receivers CoachPassing Game Coordinator",
+      "name": "Ra'Shaad Samples"
+    },
+    {
+      "role": "Running Backs Coach",
+      "name": "Shaun Aguano"
+    },
+    {
+      "role": "Offensive Line Coach",
+      "name": "Saga Tuitele"
+    },
+    {
+      "role": "Linebackers CoachRun Game Coordinator",
+      "name": "A. J. Cooper"
+    },
+    {
+      "role": "Cornerbacks Coach",
+      "name": "Bryan Carrington"
+    },
+    {
+      "role": "Defensive Line Coach",
+      "name": "Vince Amey"
+    },
+    {
+      "role": "Tight Ends Coach",
+      "name": "Jason Mohns"
+    }
+  ],
+  "found": true
+}

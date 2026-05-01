@@ -1,0 +1,43 @@
+{
+  "team": "syracuse",
+  "year": 2023,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dino Babers"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Rocky Long"
+    },
+    {
+      "role": "Offensive coordinator",
+      "name": "Jason Beck"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Chris Achuff"
+    },
+    {
+      "role": "Special teams coordinator",
+      "name": "Bob Ligashesky"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "Mike Lynch"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Steve Farmer"
+    },
+    {
+      "role": "Cornerbacks coach",
+      "name": "Travis Fisher"
+    },
+    {
+      "role": "Tight ends coach",
+      "name": "Nunzio Campanile"
+    }
+  ],
+  "found": true
+}

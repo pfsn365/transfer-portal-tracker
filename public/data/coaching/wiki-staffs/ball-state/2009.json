@@ -1,0 +1,47 @@
+{
+  "team": "ball state",
+  "year": 2009,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Stan Parrish"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Doug Graber"
+    },
+    {
+      "role": "Secondary Coach",
+      "name": "Daryl Dixon"
+    },
+    {
+      "role": "Offensive coordinatorRunning backs coach",
+      "name": "Eddie Faulkner"
+    },
+    {
+      "role": "Linebackers coach",
+      "name": "Deion Melvin"
+    },
+    {
+      "role": "Recruiting coordinatorTight ends coach",
+      "name": "John Powers"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Phil Burnett"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Jason Eck"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Joey Lynch"
+    },
+    {
+      "role": "Defensive ends coach",
+      "name": "Jay Hood"
+    }
+  ],
+  "found": true
+}

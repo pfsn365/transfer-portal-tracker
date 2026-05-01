@@ -135,7 +135,7 @@ const POSITION_MAP: Record<string, string> = {
   'LB': 'LB', 'ILB': 'LB', 'MLB': 'LB',
   'CB': 'CB',
   'S': 'SAF', 'SAF': 'SAF', 'FS': 'SAF', 'SS': 'SAF', 'DB': 'SAF',
-  'K': 'K', 'P': 'P', 'LS': 'P',
+  'K': 'K', 'P': 'P', 'LS': 'LS',
   'ATH': 'ATH', 'ATHLETE': 'ATH', 'RET': 'ATH',
   'QB-DT': 'QB', 'QB-PP': 'QB', 'TE-H': 'TE', 'TE-Y': 'TE',
   // 247Sports position ID mappings (historical data uses numeric IDs)
@@ -147,7 +147,10 @@ const POSITION_MAP: Record<string, string> = {
 function normalizePosition(pos: string | number | undefined): string {
   if (!pos && pos !== 0) return 'ATH';
   const str = String(pos).toUpperCase();
-  return POSITION_MAP[str] || str;
+  if (POSITION_MAP[str]) return POSITION_MAP[str];
+  // Unknown numeric position codes → ATH rather than leaking raw numbers
+  if (/^\d+$/.test(str)) return 'ATH';
+  return str;
 }
 
 // Module-level cache

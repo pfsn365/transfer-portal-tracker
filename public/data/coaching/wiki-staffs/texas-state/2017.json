@@ -1,0 +1,39 @@
+{
+  "team": "texas state",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head Coach",
+      "name": "Everett Withers"
+    },
+    {
+      "role": "Assistant Head Coach/Defensive Coordinator/Linebackers",
+      "name": "Randall McCray"
+    },
+    {
+      "role": "Offensive Coordinator/Running Backs",
+      "name": "Zak Kuhr"
+    },
+    {
+      "role": "Co-Offensive Coordinator/Quarterbacks",
+      "name": "Parker Fleming"
+    },
+    {
+      "role": "Tight Ends/Recruiting Coordinator",
+      "name": "Adrian Mayes"
+    },
+    {
+      "role": "Director of Football Operations",
+      "name": "John Streicher"
+    },
+    {
+      "role": "Director of Player Personnel",
+      "name": "Michael George"
+    },
+    {
+      "role": "Director of Player Development",
+      "name": "Clayton Barnes"
+    }
+  ],
+  "found": true
+}

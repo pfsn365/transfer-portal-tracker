@@ -1,0 +1,35 @@
+{
+  "team": "alabama",
+  "year": 2012,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Nick Saban"
+    },
+    {
+      "role": "Associate head coach, running backs",
+      "name": "Burton Burns"
+    },
+    {
+      "role": "Receivers, recruiting coordinator",
+      "name": "Mike Groh"
+    },
+    {
+      "role": "Offensive coordinator, quarterbacks",
+      "name": "Doug Nussmeier"
+    },
+    {
+      "role": "Defensive coordinator, linebackers",
+      "name": "Kirby Smart"
+    },
+    {
+      "role": "Assistant head coach, offensive line",
+      "name": "Jeff Stoutland"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Scott Cochran"
+    }
+  ],
+  "found": true
+}

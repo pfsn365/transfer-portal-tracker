@@ -1,0 +1,51 @@
+{
+  "team": "charlotte",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Will Healy"
+    },
+    {
+      "role": "Assistant head coach/co-defensive coordinator/defensive line",
+      "name": "Marcus West"
+    },
+    {
+      "role": "Offensive coordinator/offensive line",
+      "name": "Alex Atkins"
+    },
+    {
+      "role": "Co-defensive coordinator/safeties",
+      "name": "Brandon Cooper"
+    },
+    {
+      "role": "Quarterbacks coach",
+      "name": "Mark Carney"
+    },
+    {
+      "role": "Running backs coach/run game coordinator",
+      "name": "Sean Dawkins"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Montario Hardesty"
+    },
+    {
+      "role": "Cornerbacks coach",
+      "name": "Eddie Hicks"
+    },
+    {
+      "role": "Nicklebacks coach",
+      "name": "Tommy Langford"
+    },
+    {
+      "role": "Linebackers/special teams coach",
+      "name": "Max Thurmond"
+    },
+    {
+      "role": "Tight ends coach",
+      "name": "Cody Woodiel"
+    }
+  ],
+  "found": true
+}

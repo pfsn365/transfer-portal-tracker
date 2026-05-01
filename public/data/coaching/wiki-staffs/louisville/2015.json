@@ -1,0 +1,59 @@
+{
+  "team": "louisville",
+  "year": 2015,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Bobby Petrino"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks coach / assistant head coach",
+      "name": "Garrick McGee"
+    },
+    {
+      "role": "Defensive coordinator / outside linebackers coach",
+      "name": "Todd Grantham"
+    },
+    {
+      "role": "Safeties Coach / recruiting coordinator",
+      "name": "Greg Brown"
+    },
+    {
+      "role": "Cornerbacks coach",
+      "name": "Terrell Buckley"
+    },
+    {
+      "role": "Inside linebackers coach / special teams coordinator",
+      "name": "Tony Grantham"
+    },
+    {
+      "role": "Offensive line coach / running game coordinator",
+      "name": "Chris Klenakis"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "L.D. Scott"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "Kolby Smith"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Lamar Thomas"
+    },
+    {
+      "role": "Director of strength and conditioning",
+      "name": "Joe Miday"
+    },
+    {
+      "role": "Assistant director of strength and conditioning",
+      "name": "Scott Wilks"
+    },
+    {
+      "role": "Director of football operations",
+      "name": "Andrew Wagner"
+    }
+  ],
+  "found": true
+}

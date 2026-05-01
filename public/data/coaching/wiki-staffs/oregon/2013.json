@@ -1,0 +1,35 @@
+{
+  "team": "oregon",
+  "year": 2013,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Mark Helfrich"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Nick Aliotti"
+    },
+    {
+      "role": "Offensive coordinator & quarterbacks",
+      "name": "Scott Frost"
+    },
+    {
+      "role": "Running game coordinator & offensive line",
+      "name": "Steve Greatwood"
+    },
+    {
+      "role": "Passing Game Coordinator & wide receivers",
+      "name": "Matt Lubick"
+    },
+    {
+      "role": "Linebackers & recruiting coordinator",
+      "name": "Don Pellum"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Jim Radcliffe"
+    }
+  ],
+  "found": true
+}

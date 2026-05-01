@@ -73,6 +73,8 @@ const TEAM_COLORS: Record<string, string> = {
 
 const FBS_CONFERENCES = ['SEC', 'Big Ten', 'Big 12', 'ACC', 'American', 'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Independent'];
 
+const POSITION_ORDER = ['QB', 'RB', 'WR', 'TE', 'OT', 'OG', 'OC', 'OL', 'DT', 'EDGE', 'LB', 'CB', 'SAF', 'K', 'P', 'LS', 'ATH'];
+
 // Complete home-state map for all FBS programs
 const HOME_STATE_MAP: Record<string, string[]> = {
   // SEC
@@ -157,6 +159,7 @@ export default function RecruitingOriginClient() {
   const [recruits, setRecruits] = useState<Recruit[]>([]);
   const [availableYears, setAvailableYears] = useState<number[]>([2026, 2025, 2024, 2023, 2022]);
   const [loading, setLoading] = useState(true);
+  const [selectedPosition, setSelectedPosition] = useState('');
   const stateRowRefs = useRef<Record<string, HTMLTableRowElement | null>>({});
   const statePanelRef = useRef<HTMLDivElement | null>(null);
 
@@ -238,14 +241,33 @@ export default function RecruitingOriginClient() {
     return () => ctrl.abort();
   }, [selectedTeam, selectedYear, selectedConference, viewMode, conferenceTeams]);
 
+  const availablePositions = useMemo(() => {
+    const raw = [...new Set(recruits.map(r => r.position).filter(Boolean))];
+    // Drop any raw numeric codes that slipped past API normalization
+    const valid = raw.filter(p => !/^\d+$/.test(p));
+    return valid.sort((a, b) => {
+      const ia = POSITION_ORDER.indexOf(a);
+      const ib = POSITION_ORDER.indexOf(b);
+      if (ia === -1 && ib === -1) return a.localeCompare(b);
+      if (ia === -1) return 1;
+      if (ib === -1) return -1;
+      return ia - ib;
+    });
+  }, [recruits]);
+
+  const filteredRecruits = useMemo(() => {
+    if (!selectedPosition) return recruits;
+    return recruits.filter(r => r.position === selectedPosition);
+  }, [recruits, selectedPosition]);
+
   const stateCounts = useMemo(() => {
     const counts: Record<string, number> = {};
-    for (const r of recruits) {
+    for (const r of filteredRecruits) {
       const abbr = normalizeState(r.state);
       if (abbr) counts[abbr] = (counts[abbr] ?? 0) + 1;
     }
     return counts;
-  }, [recruits]);
+  }, [filteredRecruits]);
 
   const sortedStates = useMemo(() =>
     Object.entries(stateCounts).sort((a, b) => b[1] - a[1]),
@@ -256,8 +278,8 @@ export default function RecruitingOriginClient() {
   const inState = useMemo(() => {
     if (viewMode !== 'team') return 0;
     const homeStates = HOME_STATE_MAP[selectedTeam.toLowerCase()] ?? [];
-    return recruits.filter(r => homeStates.includes(normalizeState(r.state))).length;
-  }, [recruits, selectedTeam, viewMode]);
+    return filteredRecruits.filter(r => homeStates.includes(normalizeState(r.state))).length;
+  }, [filteredRecruits, selectedTeam, viewMode]);
 
   // Scroll to state panel when a state is clicked
   useEffect(() => {
@@ -267,11 +289,11 @@ export default function RecruitingOriginClient() {
 
   const selectedStateRecruits = useMemo(() => {
     if (!selectedState) return [];
-    return recruits
+    return filteredRecruits
       .filter(r => normalizeState(r.state) === selectedState)
       .sort((a, b) => (a.nationalRank || 9999) - (b.nationalRank || 9999))
-      .slice(0, 8);
-  }, [recruits, selectedState]);
+      .slice(0, 12);
+  }, [filteredRecruits, selectedState]);
 
   const teamColor = viewMode === 'team' ? (TEAM_COLORS[selectedTeam.toLowerCase()] ?? '#0050A0') : '#0050A0';
   const selectedTeamObj = allTeams.find(t => t.id === selectedTeam);
@@ -295,6 +317,10 @@ export default function RecruitingOriginClient() {
   }
   function handleYearChange(year: string) {
     setSelectedYear(year);
+    setSelectedState(null);
+  }
+  function handlePositionChange(pos: string) {
+    setSelectedPosition(pos);
     setSelectedState(null);
   }
   function handleStateClick(abbr: string) {
@@ -324,7 +350,7 @@ export default function RecruitingOriginClient() {
 
         {/* Filters */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3">
             <select
               value={selectedConference}
               onChange={e => handleConferenceChange(e.target.value)}
@@ -356,6 +382,18 @@ export default function RecruitingOriginClient() {
                 <option key={y} value={String(y)}>Class of {y}</option>
               ))}
             </select>
+
+            <select
+              value={selectedPosition}
+              onChange={e => handlePositionChange(e.target.value)}
+              className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] cursor-pointer"
+              disabled={loading || recruits.length === 0}
+            >
+              <option value="">All Positions</option>
+              {availablePositions.map(p => (
+                <option key={p} value={p}>{p}</option>
+              ))}
+            </select>
           </div>
 
           {viewMode !== 'team' && !loading && recruits.length > 0 && (
@@ -365,13 +403,18 @@ export default function RecruitingOriginClient() {
                 : `Showing combined ${selectedConference} recruiting footprint — select a specific team to drill down`}
             </p>
           )}
+          {!loading && recruits.length > 0 && !recruits.some(r => r.stars > 0) && (
+            <p className="text-xs text-amber-600 mt-2">
+              ★ Star ratings are not available for this recruiting class.
+            </p>
+          )}
         </div>
 
         {/* Stats bar */}
-        {!loading && recruits.length > 0 && (
+        {!loading && filteredRecruits.length > 0 && (
           <div className={`grid gap-3 ${viewMode === 'team' ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'}`}>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
-              <div className="text-2xl font-bold text-gray-900">{recruits.length}</div>
+              <div className="text-2xl font-bold text-gray-900">{filteredRecruits.length}</div>
               <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Total Recruits</div>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
@@ -387,7 +430,7 @@ export default function RecruitingOriginClient() {
             {viewMode === 'team' && (
               <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
                 <div className="text-2xl font-bold text-gray-900">
-                  {recruits.length > 0 ? `${Math.round((inState / recruits.length) * 100)}%` : '—'}
+                  {filteredRecruits.length > 0 ? `${Math.round((inState / filteredRecruits.length) * 100)}%` : '—'}
                 </div>
                 <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">In-State</div>
               </div>
@@ -408,8 +451,12 @@ export default function RecruitingOriginClient() {
             </div>
           ) : (
             <div className="p-4">
-              {recruits.length === 0 ? (
-                <div className="py-12 text-center text-gray-400 text-sm">No recruiting data found for this selection.</div>
+              {filteredRecruits.length === 0 ? (
+                <div className="py-12 text-center text-gray-400 text-sm">
+                  {recruits.length === 0
+                    ? 'No recruiting data found for this selection.'
+                    : `No ${selectedPosition} recruits found for this selection.`}
+                </div>
               ) : (
                 <>
                   <p className="text-xs text-gray-400 mb-2 sm:hidden text-center">Tap a state to see its recruits</p>
@@ -480,9 +527,9 @@ export default function RecruitingOriginClient() {
                   <span className="text-xs text-gray-400 hidden sm:block truncate max-w-[140px]">{r.highSchool}</span>
                 </div>
               ))}
-              {(stateCounts[selectedState] ?? 0) > 8 && (
+              {(stateCounts[selectedState] ?? 0) > 12 && (
                 <p className="text-xs text-gray-400 pt-1">
-                  +{(stateCounts[selectedState] ?? 0) - 8} more — see table below
+                  +{(stateCounts[selectedState] ?? 0) - 12} more
                 </p>
               )}
             </div>
@@ -517,11 +564,11 @@ export default function RecruitingOriginClient() {
                 </thead>
                 <tbody className="divide-y divide-gray-50">
                   {sortedStates.map(([abbr, count]) => {
-                    const stateRecruits = recruits
+                    const stateRecruits = filteredRecruits
                       .filter(r => normalizeState(r.state) === abbr)
                       .sort((a, b) => (a.nationalRank || 9999) - (b.nationalRank || 9999))
                       .slice(0, 3);
-                    const pct = recruits.length > 0 ? (count / recruits.length) * 100 : 0;
+                    const pct = filteredRecruits.length > 0 ? (count / filteredRecruits.length) * 100 : 0;
                     const isSelected = selectedState === abbr;
                     return (
                       <tr

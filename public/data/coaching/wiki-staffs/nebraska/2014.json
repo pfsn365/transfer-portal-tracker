@@ -1,0 +1,51 @@
+{
+  "team": "nebraska",
+  "year": 2014,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "Tommy Armstrong"
+    },
+    {
+      "role": "Running back",
+      "name": "Ameer Abdullah"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Kenny Bell"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Jamal Turner"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Jordan Westerkamp"
+    },
+    {
+      "role": "Tight end",
+      "name": "Cethan Carter"
+    },
+    {
+      "role": "Left tackle",
+      "name": "Alex Lewis"
+    },
+    {
+      "role": "Left guard",
+      "name": "Jake Cotton"
+    },
+    {
+      "role": "Center",
+      "name": "Mark Pelini"
+    },
+    {
+      "role": "Right guard",
+      "name": "Mike Moudy"
+    },
+    {
+      "role": "Right tackle",
+      "name": "Givens Price"
+    }
+  ],
+  "found": true
+}

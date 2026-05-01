@@ -54,6 +54,8 @@ const CFBSidebar: React.FC<CFBSidebarProps> = ({ isMobile = false }) => {
         { title: 'Power Rankings Builder', url: '/power-rankings-builder', external: false },
         { title: 'Recruiting Pipelines', url: '/recruiting-origin', external: false },
         { title: 'Team Transfer Streams', url: '/transfer-flow', external: false },
+        { title: 'Head-to-Head Records', url: '/head-to-head', external: false },
+        { title: 'Coaching Trees', url: '/coaching-tree', external: false },
       ],
     },
     {

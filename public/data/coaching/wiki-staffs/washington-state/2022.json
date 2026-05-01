@@ -1,0 +1,35 @@
+{
+  "team": "washington state",
+  "year": 2022,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Jake Dickert"
+    },
+    {
+      "role": "Defensive coordinator / Linebackers",
+      "name": "Brian Ward"
+    },
+    {
+      "role": "Assistant head coach / defensive tackles",
+      "name": "Pete Kaligis"
+    },
+    {
+      "role": "Edges / defensive run game coordinator",
+      "name": "A. J. Cooper"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks",
+      "name": "Eric Morris"
+    },
+    {
+      "role": "Tight ends / special teams coordinator",
+      "name": "Nick Whitworth"
+    },
+    {
+      "role": "Head strength and conditioning coach",
+      "name": "Dwain Bradshaw"
+    }
+  ],
+  "found": true
+}

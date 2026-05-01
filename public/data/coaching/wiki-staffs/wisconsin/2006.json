@@ -1,0 +1,47 @@
+{
+  "team": "wisconsin",
+  "year": 2006,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "John Stocco"
+    },
+    {
+      "role": "Running back",
+      "name": "P. J. Hill"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Luke Swan"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Paul Hubbard"
+    },
+    {
+      "role": "Tight end",
+      "name": "Travis Beckum"
+    },
+    {
+      "role": "Left tackle",
+      "name": "Joe Thomas"
+    },
+    {
+      "role": "Left guard",
+      "name": "Andy Kemp"
+    },
+    {
+      "role": "Center",
+      "name": "Marcus Coleman"
+    },
+    {
+      "role": "Right guard",
+      "name": "Kraig Urbik"
+    },
+    {
+      "role": "Right tackle",
+      "name": "Eric Vanden Heuvel"
+    }
+  ],
+  "found": true
+}

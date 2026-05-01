@@ -1,0 +1,39 @@
+{
+  "team": "washington",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Chris Petersen"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Pete Kwiatkowski"
+    },
+    {
+      "role": "Co-defensive coordinator / defensive backs",
+      "name": "Jimmy Lake"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks",
+      "name": "Jonathan Smith"
+    },
+    {
+      "role": "Co-offensive coordinator / Receivers",
+      "name": "Matt Lubick"
+    },
+    {
+      "role": "Assistant head coach / Linebackers / special teams",
+      "name": "Bob Gregory"
+    },
+    {
+      "role": "Running backs / recruiting coordinator",
+      "name": "Keith Bhonapha"
+    },
+    {
+      "role": "Offensive line / Run Game Coordinator",
+      "name": "Scott Huff"
+    }
+  ],
+  "found": true
+}

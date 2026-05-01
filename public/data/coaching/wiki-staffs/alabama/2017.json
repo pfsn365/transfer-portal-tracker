@@ -1,0 +1,43 @@
+{
+  "team": "alabama",
+  "year": 2017,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Nick Saban"
+    },
+    {
+      "role": "Associate head coach and running backs coach",
+      "name": "Burton Burns"
+    },
+    {
+      "role": "Co-defensive coordinator and outside linebackers coach",
+      "name": "Tosh Lupoi"
+    },
+    {
+      "role": "Defensive coordinator and inside linebackers coach",
+      "name": "Jeremy Pruitt"
+    },
+    {
+      "role": "Co-offensive coordinator and wide receivers coach",
+      "name": "Mike Locksley"
+    },
+    {
+      "role": "Offensive coordinator and quarterbacks coach",
+      "name": "Brian Daboll"
+    },
+    {
+      "role": "Tight end coach and special teams coordinator",
+      "name": "Joe Pannunzio"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Karl Dunbar"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Scott Cochran"
+    }
+  ],
+  "found": true
+}

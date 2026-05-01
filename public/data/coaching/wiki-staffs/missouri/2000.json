@@ -1,0 +1,31 @@
+{
+  "team": "missouri",
+  "year": 2000,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Larry Smith"
+    },
+    {
+      "role": "Offensive coordinator & quarterbacks",
+      "name": "Bill Cubit"
+    },
+    {
+      "role": "Co-offensive coordinator & Wide receivers",
+      "name": "Andy Hill"
+    },
+    {
+      "role": "Defensive coordinator/Outside Linebackers",
+      "name": "Moe Ankney"
+    },
+    {
+      "role": "Inside Linebackers & associate head coach",
+      "name": "Ricky Hunley"
+    },
+    {
+      "role": "Running backs/Special teams coordinator",
+      "name": "Chris Tabor"
+    }
+  ],
+  "found": true
+}

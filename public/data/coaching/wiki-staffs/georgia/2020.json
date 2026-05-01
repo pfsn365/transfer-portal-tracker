@@ -1,0 +1,47 @@
+{
+  "team": "georgia",
+  "year": 2020,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Kirby Smart"
+    },
+    {
+      "role": "Offensive coordinator/Quarterbacks Coach",
+      "name": "Todd Monken"
+    },
+    {
+      "role": "Associate head coach / Offensive line coach",
+      "name": "Matt Luke"
+    },
+    {
+      "role": "Special teams coordinator",
+      "name": "Scott Cochran"
+    },
+    {
+      "role": "Defensive coordinator/Outside linebackers coach",
+      "name": "Dan Lanning"
+    },
+    {
+      "role": "Co-defensive coordinator/Inside linebackers coach",
+      "name": "Glenn Schumann"
+    },
+    {
+      "role": "Pass Game coordinator/Wide receivers coach",
+      "name": "Cortez Hankton"
+    },
+    {
+      "role": "Run Game coordinator/Running backs coach",
+      "name": "Dell McGee"
+    },
+    {
+      "role": "Tight ends coach",
+      "name": "Todd Hartley"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Tray Scott"
+    }
+  ],
+  "found": true
+}

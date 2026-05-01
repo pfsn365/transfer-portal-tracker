@@ -1,0 +1,35 @@
+{
+  "team": "alabama",
+  "year": 2016,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Nick Saban"
+    },
+    {
+      "role": "Associate head coach, running backs coach",
+      "name": "Burton Burns"
+    },
+    {
+      "role": "Offensive coordinator, quarterbacks coach",
+      "name": "Lane Kiffin"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Karl Dunbar"
+    },
+    {
+      "role": "Defensive coordinator, inside linebackers",
+      "name": "Jeremy Pruitt"
+    },
+    {
+      "role": "Offensive tackles and tight ends, recruiting coordinator",
+      "name": "Mario Cristobal"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Scott Cochran"
+    }
+  ],
+  "found": true
+}

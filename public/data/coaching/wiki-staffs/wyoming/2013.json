@@ -1,0 +1,35 @@
+{
+  "team": "wyoming",
+  "year": 2013,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dave Christensen"
+    },
+    {
+      "role": "Asst. head coach / Co-Off. Coordinator / running backs coach",
+      "name": "Pete Kaligis"
+    },
+    {
+      "role": "Co-offensive Coordinator / offensive line coach",
+      "name": "Jim Harding"
+    },
+    {
+      "role": "Defensive coordinator / safeties coach",
+      "name": "Chris Tormey"
+    },
+    {
+      "role": "Special teams coordinator / Linebackers",
+      "name": "Robin Ross"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Jamar Cain"
+    },
+    {
+      "role": "Tight Ends / h-backs coach",
+      "name": "Nick Danielson"
+    }
+  ],
+  "found": true
+}

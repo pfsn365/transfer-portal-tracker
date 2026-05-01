@@ -1,0 +1,31 @@
+{
+  "team": "wake forest",
+  "year": 2013,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Jim Grobe"
+    },
+    {
+      "role": "Passing game coordinator/quarterbacks",
+      "name": "Tom Elrod"
+    },
+    {
+      "role": "Defensive coordinator/linebackers",
+      "name": "Brian Knorr"
+    },
+    {
+      "role": "Offensive coordinator/running backs, Tight Ends & Fullbacks",
+      "name": "Steed Lobotzke"
+    },
+    {
+      "role": "Recruiting coordinator/defensive line",
+      "name": "Ray McCartney"
+    },
+    {
+      "role": "Associate head coach/special teams",
+      "name": "Billy Mitchell"
+    }
+  ],
+  "found": true
+}

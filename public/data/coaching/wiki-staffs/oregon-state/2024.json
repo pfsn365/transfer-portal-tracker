@@ -1,0 +1,31 @@
+{
+  "team": "oregon state",
+  "year": 2024,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Jonathan Smith"
+    },
+    {
+      "role": "Offensive coordinator",
+      "name": "Brian Lindgren"
+    },
+    {
+      "role": "Assistant head coach/running backs coach",
+      "name": "Keith Bhonapha"
+    },
+    {
+      "role": "Associate head coach/running game coordinator/offensive line coach",
+      "name": "Jim Michalczik"
+    },
+    {
+      "role": "Tight ends coach",
+      "name": "Brian Wozniak"
+    },
+    {
+      "role": "Defensive backs coach",
+      "name": "Blue Adams"
+    }
+  ],
+  "found": true
+}

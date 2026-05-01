@@ -1,0 +1,51 @@
+{
+  "team": "kentucky",
+  "year": 2021,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Mark Stoops"
+    },
+    {
+      "role": "Associate head coach/tight end coach",
+      "name": "Vince Marrow"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks coach",
+      "name": "Liam Coen"
+    },
+    {
+      "role": "Defensive coordinator/Outside linebackers coach",
+      "name": "Brad White"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "John Settle"
+    },
+    {
+      "role": "Inside linebackers coach /co-defensive coordinator",
+      "name": "Jon Sumrall"
+    },
+    {
+      "role": "Safeties coach",
+      "name": "Frank Buffano"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Eric Wolford"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Scott Woodward"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Anwar Stewart"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Mark Hill"
+    }
+  ],
+  "found": true
+}

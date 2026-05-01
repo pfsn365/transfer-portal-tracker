@@ -1,0 +1,39 @@
+{
+  "team": "virginia tech",
+  "year": 2014,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Frank Beamer"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "Scot Loeffler"
+    },
+    {
+      "role": "Associate head coach/Running backs",
+      "name": "Shane Beamer"
+    },
+    {
+      "role": "Tight ends/recruiting coordinator",
+      "name": "Bryan Stinespring"
+    },
+    {
+      "role": "Defensive coordinator/Inside Linebackers",
+      "name": "Bud Foster"
+    },
+    {
+      "role": "Defensive backs/passing game coordinator",
+      "name": "Torrian Gray"
+    },
+    {
+      "role": "Defensive line/Running game coordinator",
+      "name": "Charley Wiles"
+    },
+    {
+      "role": "Outside linebackers/Assistant defensive line",
+      "name": "Cornell Brown"
+    }
+  ],
+  "found": true
+}

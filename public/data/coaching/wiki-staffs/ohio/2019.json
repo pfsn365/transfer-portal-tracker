@@ -1,0 +1,43 @@
+{
+  "team": "ohio",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Frank Solich"
+    },
+    {
+      "role": "Associate head coach/Co-offensive coordinator/running backs",
+      "name": "Tim Albin"
+    },
+    {
+      "role": "Defensive coordinator/safeties",
+      "name": "Ron Collins"
+    },
+    {
+      "role": "Co-offensive coordinator/quarterbacks",
+      "name": "Scott Isphording"
+    },
+    {
+      "role": "Co-defensive coordinator/defensive ends",
+      "name": "Pete Germano"
+    },
+    {
+      "role": "Special teams coordinator/tight ends/Recruiting coordinator",
+      "name": "Brian Haines"
+    },
+    {
+      "role": "Assistant Athletic Director For Football Operations",
+      "name": "Chris Rodgers"
+    },
+    {
+      "role": "Director of Player Personnel & HS Relations",
+      "name": "Ryan Bainbridge"
+    },
+    {
+      "role": "Director of Strength & Conditioning",
+      "name": "Dak Notestine"
+    }
+  ],
+  "found": true
+}

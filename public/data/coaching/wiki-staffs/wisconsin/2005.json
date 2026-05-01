@@ -1,0 +1,51 @@
+{
+  "team": "wisconsin",
+  "year": 2005,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "John Stocco"
+    },
+    {
+      "role": "Running back",
+      "name": "Brian Calhoun"
+    },
+    {
+      "role": "Fullback",
+      "name": "Jason Pociask"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Jonathan Orr"
+    },
+    {
+      "role": "Wide receiver",
+      "name": "Brandon Williams"
+    },
+    {
+      "role": "Tight end",
+      "name": "Owen Daniels"
+    },
+    {
+      "role": "Left tackle",
+      "name": "Joe Thomas"
+    },
+    {
+      "role": "Left guard",
+      "name": "Matt Lawrence"
+    },
+    {
+      "role": "Center",
+      "name": "Donovan Raiola"
+    },
+    {
+      "role": "Right guard",
+      "name": "Jason Palermo"
+    },
+    {
+      "role": "Right tackle",
+      "name": "Kraig Urbik"
+    }
+  ],
+  "found": true
+}

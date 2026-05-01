@@ -1,0 +1,27 @@
+{
+  "team": "boston college",
+  "year": 2013,
+  "staff": [
+    {
+      "role": "Head Coach",
+      "name": "Steve Addazio"
+    },
+    {
+      "role": "Offensive Coordinator/quarterbacks",
+      "name": "Ryan Day"
+    },
+    {
+      "role": "Wide Receivers/passing game coordinator",
+      "name": "Todd Fitch"
+    },
+    {
+      "role": "Defensive coordinator/linebackers",
+      "name": "Don Brown"
+    },
+    {
+      "role": "Special Teams Coordinator",
+      "name": "Sean McGowan"
+    }
+  ],
+  "found": true
+}

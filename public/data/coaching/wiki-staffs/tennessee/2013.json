@@ -1,0 +1,35 @@
+{
+  "team": "tennessee",
+  "year": 2013,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Butch Jones"
+    },
+    {
+      "role": "Offensive Coordinator/Quarterbacks",
+      "name": "Mike Bajakian"
+    },
+    {
+      "role": "Defensive Coordinator/Linebackers",
+      "name": "John Jancek"
+    },
+    {
+      "role": "Assistant Head Coach/Defensive Line Coach",
+      "name": "Steve Stripling"
+    },
+    {
+      "role": "Wide Receivers / Recruiting Coordinator",
+      "name": "Zach Azzanni"
+    },
+    {
+      "role": "Tight Ends/Special Teams Coordinator",
+      "name": "Mark Elder"
+    },
+    {
+      "role": "Strength and Conditioning",
+      "name": "Dave Lawson"
+    }
+  ],
+  "found": true
+}

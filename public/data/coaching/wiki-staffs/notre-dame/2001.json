@@ -1,0 +1,31 @@
+{
+  "team": "notre dame",
+  "year": 2001,
+  "staff": [
+    {
+      "role": "Defensive end",
+      "name": "Anthony Weaver"
+    },
+    {
+      "role": "Linebacker",
+      "name": "Rocky Boiman"
+    },
+    {
+      "role": "Tight end",
+      "name": "John Owens"
+    },
+    {
+      "role": "Linebacker",
+      "name": "Tyreo Harrison"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "Javin Hunter"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "David Givens"
+    }
+  ],
+  "found": true
+}

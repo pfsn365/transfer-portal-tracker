@@ -1,0 +1,27 @@
+{
+  "team": "wake forest",
+  "year": 2016,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dave Clawson"
+    },
+    {
+      "role": "Defensive coordinator / Safeties",
+      "name": "Mike Elko"
+    },
+    {
+      "role": "Asst head coach / Receivers",
+      "name": "Kevin Higgins"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks",
+      "name": "Warren Ruggiero"
+    },
+    {
+      "role": "Special teams coordinator / tight ends",
+      "name": "Adam Scheier"
+    }
+  ],
+  "found": true
+}

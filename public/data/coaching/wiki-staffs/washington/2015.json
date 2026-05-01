@@ -1,0 +1,35 @@
+{
+  "team": "washington",
+  "year": 2015,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Chris Petersen"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Pete Kwiatkowski"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "Jonathan Smith"
+    },
+    {
+      "role": "Assistant head coach/linebackers",
+      "name": "Bob Gregory"
+    },
+    {
+      "role": "Associate head coach/offensive line",
+      "name": "Chris Strausser"
+    },
+    {
+      "role": "Running backs/recruiting coordinator",
+      "name": "Keith Bhonapha"
+    },
+    {
+      "role": "Special teams coordinator/defensive line",
+      "name": "Jeff Choate"
+    }
+  ],
+  "found": true
+}

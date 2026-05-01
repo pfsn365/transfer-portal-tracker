@@ -1,0 +1,23 @@
+{
+  "team": "arkansas",
+  "year": 2012,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "John L. Smith"
+    },
+    {
+      "role": "Defensive coordinator, Secondary",
+      "name": "Paul Haynes"
+    },
+    {
+      "role": "Offensive coordinator, Quarterbacks",
+      "name": "Paul Petrino"
+    },
+    {
+      "role": "Running Backs, Recruiting Coordinator",
+      "name": "Tim Horton"
+    }
+  ],
+  "found": true
+}

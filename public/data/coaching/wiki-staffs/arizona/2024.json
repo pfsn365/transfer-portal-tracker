@@ -1,0 +1,39 @@
+{
+  "team": "arizona",
+  "year": 2024,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Brent Brennan"
+    },
+    {
+      "role": "Offensive coordinator/Quarterbacks coach",
+      "name": "Dino Babers"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Josh Oglesby"
+    },
+    {
+      "role": "Tight end coach/Passing game coordinator",
+      "name": "Matt Adkins"
+    },
+    {
+      "role": "Assistant head coach/Running backs coach",
+      "name": "Alonzo Carter"
+    },
+    {
+      "role": "Linebackers coach/Special Teams coordinator",
+      "name": "Danny Gonzales"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Bobby Wade"
+    },
+    {
+      "role": "Defensive coordinator",
+      "name": "Duane Akina"
+    }
+  ],
+  "found": true
+}

@@ -1,0 +1,27 @@
+{
+  "team": "wake forest",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Dave Clawson"
+    },
+    {
+      "role": "Offensive coordinator / quarterbacks",
+      "name": "Warren Ruggiero"
+    },
+    {
+      "role": "Defensive coordinator / Safeties",
+      "name": "Lyle Hemphill"
+    },
+    {
+      "role": "Asst head coach / Receivers",
+      "name": "Kevin Higgins"
+    },
+    {
+      "role": "Special teams coordinator / tight ends",
+      "name": "Wayne Lineburg"
+    }
+  ],
+  "found": true
+}

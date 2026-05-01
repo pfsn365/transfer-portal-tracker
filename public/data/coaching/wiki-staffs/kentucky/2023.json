@@ -1,0 +1,55 @@
+{
+  "team": "kentucky",
+  "year": 2023,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Mark Stoops"
+    },
+    {
+      "role": "Associate head coach/tight ends coach",
+      "name": "Vince Marrow"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks coach",
+      "name": "Liam Coen"
+    },
+    {
+      "role": "Defensive coordinator/outside linebackers coach",
+      "name": "Brad White"
+    },
+    {
+      "role": "Running backs coach",
+      "name": "Jay Boulware"
+    },
+    {
+      "role": "Inside linebackers coach",
+      "name": "Mike Stoops"
+    },
+    {
+      "role": "Safeties coach",
+      "name": "Frank Buffano"
+    },
+    {
+      "role": "Defensive backs coach",
+      "name": "Chris Collins"
+    },
+    {
+      "role": "Offensive line coach",
+      "name": "Zach Yenser"
+    },
+    {
+      "role": "Wide receivers coach",
+      "name": "Scott Woodward"
+    },
+    {
+      "role": "Defensive line coach",
+      "name": "Anwar Stewart"
+    },
+    {
+      "role": "Strength and conditioning",
+      "name": "Mark Hill"
+    }
+  ],
+  "found": true
+}

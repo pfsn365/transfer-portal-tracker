@@ -1,0 +1,23 @@
+{
+  "team": "boston college",
+  "year": 2015,
+  "staff": [
+    {
+      "role": "Head Coach",
+      "name": "Steve Addazio"
+    },
+    {
+      "role": "Offensive Coordinator/quarterbacks",
+      "name": "Todd Fitch"
+    },
+    {
+      "role": "Defensive coordinator/linebackers",
+      "name": "Don Brown"
+    },
+    {
+      "role": "Special teams coordinator",
+      "name": "Coleman Hutzler"
+    }
+  ],
+  "found": true
+}

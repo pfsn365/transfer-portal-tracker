@@ -1,0 +1,51 @@
+{
+  "team": "nebraska",
+  "year": 2019,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "Adrian Martinez"
+    },
+    {
+      "role": "Running Back",
+      "name": "Dedrick Mills"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "Wan'Dale Robinson"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "Mike Williams"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "JD Spielman"
+    },
+    {
+      "role": "Tight End",
+      "name": "Jack Stoll"
+    },
+    {
+      "role": "Left Tackle",
+      "name": "Brenden Jaimes"
+    },
+    {
+      "role": "Left Guard",
+      "name": "Trent Hixson"
+    },
+    {
+      "role": "Center",
+      "name": "Cam Jurgens"
+    },
+    {
+      "role": "Right Guard",
+      "name": "Boe Wilson"
+    },
+    {
+      "role": "Right Tackle",
+      "name": "Matt Farniok"
+    }
+  ],
+  "found": true
+}

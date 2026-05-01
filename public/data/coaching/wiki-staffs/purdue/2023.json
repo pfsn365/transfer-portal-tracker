@@ -1,0 +1,31 @@
+{
+  "team": "purdue",
+  "year": 2023,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Jeff Brohm"
+    },
+    {
+      "role": "Offensive coordinator/quarterbacks",
+      "name": "Brian Brohm"
+    },
+    {
+      "role": "Co-defensive coordinator/secondary",
+      "name": "Ron English"
+    },
+    {
+      "role": "Co-defensive coordinator/defensive line",
+      "name": "Mark Hagen"
+    },
+    {
+      "role": "Special teams/assistant linebackers",
+      "name": "Karl Maslowski"
+    },
+    {
+      "role": "Tight ends/assistant offensive line",
+      "name": "Ryan Wallace"
+    }
+  ],
+  "found": true
+}

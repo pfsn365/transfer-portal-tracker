@@ -1,0 +1,27 @@
+{
+  "team": "purdue",
+  "year": 2000,
+  "staff": [
+    {
+      "role": "Quarterback",
+      "name": "Drew Brees"
+    },
+    {
+      "role": "Tackle",
+      "name": "Matt Light"
+    },
+    {
+      "role": "Wide Receiver",
+      "name": "Vinny Sutherland"
+    },
+    {
+      "role": "Center",
+      "name": "Chukky Okobi"
+    },
+    {
+      "role": "Tackle",
+      "name": "Brandon Gorin"
+    }
+  ],
+  "found": true
+}

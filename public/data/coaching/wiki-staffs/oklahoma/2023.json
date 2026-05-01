@@ -1,0 +1,35 @@
+{
+  "team": "oklahoma",
+  "year": 2023,
+  "staff": [
+    {
+      "role": "Head coach",
+      "name": "Brent Venables"
+    },
+    {
+      "role": "Offensive coordinator/Quarterbacks",
+      "name": "Jeff Lebby"
+    },
+    {
+      "role": "Defensive coordinator/Linebackers",
+      "name": "Ted Roof"
+    },
+    {
+      "role": "Associate head coach/Co-defensive coordinator/Run defense/Defensive tackles",
+      "name": "Todd Bates"
+    },
+    {
+      "role": "Passing game coordinator/Wide receivers",
+      "name": "Emmett Jones"
+    },
+    {
+      "role": "Co-defensive coordinator/Pass defense/ Cornerbacks & nickelbacks",
+      "name": "Jay Valai"
+    },
+    {
+      "role": "Director of sports enhancement & strength and conditioning",
+      "name": "Jerry Schmidt"
+    }
+  ],
+  "found": true
+}

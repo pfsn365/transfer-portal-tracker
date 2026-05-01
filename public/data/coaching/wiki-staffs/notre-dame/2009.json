@@ -1,0 +1,35 @@
+{
+  "team": "notre dame",
+  "year": 2009,
+  "staff": [
+    {
+      "role": "Head coach, offensive coordinator",
+      "name": "Charlie Weis"
+    },
+    {
+      "role": "Assistant head coach (offense), recruiting coordinator, receivers",
+      "name": "Rob Ianello"
+    },
+    {
+      "role": "Associate head coach, co-defensive coordinator, defensive backs",
+      "name": "Corwin Brown"
+    },
+    {
+      "role": "Assistant head coach (defense), co-defensive coordinator, linebackers",
+      "name": "Jon Tenuta"
+    },
+    {
+      "role": "Running game coordinator, offensive line",
+      "name": "Frank Verducci"
+    },
+    {
+      "role": "Offensive graduate assistant",
+      "name": "Brian White"
+    },
+    {
+      "role": "Defensive graduate assistant",
+      "name": "Bryant Young"
+    }
+  ],
+  "found": true
+}
