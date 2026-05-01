@@ -25,6 +25,7 @@ export interface TransferPlayer {
   height?: string;
   weight?: number;
   rating?: number;
+  stars?: number;
   imageUrl?: string;
   announcedDate: string;
   commitDate?: string;

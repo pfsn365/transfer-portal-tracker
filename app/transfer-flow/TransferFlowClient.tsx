@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 import RaptiveHeaderAd from '@/components/RaptiveHeaderAd';
 import TransferPortalBanner from '@/components/TransferPortalBanner';
 
-// ─── Team colors ────────────────────────────────────────────────────────────
+// ─── Team colors ─────────────────────────────────────────────────────────────
 const TEAM_COLORS: Record<string, string> = {
   alabama: '#9E1B32', arkansas: '#9D2235', auburn: '#0C2340', florida: '#0021A5',
   georgia: '#BA0C2F', kentucky: '#0033A0', lsu: '#461D7C', 'ole miss': '#CE1126',
@@ -34,19 +34,34 @@ const TEAM_COLORS: Record<string, string> = {
   'wake forest': '#9E7E38', 'boston college': '#98002E',
 };
 
+// ─── Conference display config ────────────────────────────────────────────────
+const ESPN_CONF = 'https://a.espncdn.com/i/teamlogos/ncaa_conf/500';
+const CONF_DISPLAY: Record<string, { abbr: string; color: string; logoUrl?: string }> = {
+  'SEC':           { abbr: 'SEC',  color: '#003087', logoUrl: `${ESPN_CONF}/8.png` },
+  'Big Ten':       { abbr: 'B10',  color: '#002244', logoUrl: `${ESPN_CONF}/5.png` },
+  'Big 12':        { abbr: 'B12',  color: '#00529B', logoUrl: `${ESPN_CONF}/4.png` },
+  'ACC':           { abbr: 'ACC',  color: '#1B3A6B', logoUrl: `${ESPN_CONF}/1.png` },
+  'American':      { abbr: 'AAC',  color: '#006633', logoUrl: `${ESPN_CONF}/151.png` },
+  'Mountain West': { abbr: 'MW',   color: '#003366', logoUrl: `${ESPN_CONF}/17.png` },
+  'Sun Belt':      { abbr: 'SBC',  color: '#E04E14', logoUrl: `${ESPN_CONF}/37.png` },
+  'MAC':           { abbr: 'MAC',  color: '#B31B1B', logoUrl: `${ESPN_CONF}/15.png` },
+  'Conference USA':{ abbr: 'CUSA', color: '#004990', logoUrl: `${ESPN_CONF}/12.png` },
+  'Pac-12':        { abbr: 'P12',  color: '#003087', logoUrl: `${ESPN_CONF}/9.png` },
+  'Independent':   { abbr: 'IND',  color: '#555555' },
+  'FCS':           { abbr: 'FCS',  color: '#777777' },
+};
+
 const FBS_CONFERENCES = [
   'SEC', 'Big Ten', 'Big 12', 'ACC', 'American',
   'Mountain West', 'Sun Belt', 'Conference USA', 'MAC', 'Independent',
 ];
 
-// All-caps acronym overrides for display names
 const DISPLAY_OVERRIDES: Record<string, string> = {
   lsu: 'LSU', byu: 'BYU', usc: 'USC', ucf: 'UCF', uab: 'UAB',
   usf: 'USF', utsa: 'UTSA', utep: 'UTEP', unlv: 'UNLV', fau: 'FAU',
   smu: 'SMU', tcu: 'TCU', ucla: 'UCLA',
 };
 
-// Position filter groups
 const POSITION_GROUPS: Record<string, string[]> = {
   QB: ['QB'],
   RB: ['RB', 'FB', 'APB'],
@@ -60,7 +75,7 @@ const POSITION_GROUPS: Record<string, string[]> = {
   'K/P': ['K', 'P', 'LS'],
 };
 
-// ─── SVG Layout constants ─────────────────────────────────────────────────
+// ─── SVG layout constants ─────────────────────────────────────────────────────
 const SVG_W = 880;
 const PAD = 40;
 const SCHOOL_W = 170;
@@ -73,10 +88,10 @@ const TEAM_RIGHT = TEAM_X + TEAM_W;
 const LCP = (LEFT_RIGHT + TEAM_LEFT) / 2;
 const RCP = (TEAM_RIGHT + RIGHT_LEFT) / 2;
 const BOX_GAP = 10;
-const MIN_BOX_H = 50;
-const PX_PER_PLAYER = 14;
-const MAX_BOX_H = 88;
-const MAX_SCHOOLS = 10;
+const MIN_BOX_H = 36;
+const PX_PER_PLAYER = 10;
+const MAX_BOX_H = 60;
+const MAX_SCHOOLS = 50;
 
 function titleCase(s: string) {
   return s.replace(/\b\w/g, c => c.toUpperCase());
@@ -98,13 +113,12 @@ function ratingToStars(rating: number | undefined): number {
   return 0;
 }
 
-function StarRating({ rating }: { rating: number | undefined }) {
-  const stars = ratingToStars(rating);
-  if (stars > 0) {
+function StarRating({ rating, stars }: { rating?: number; stars?: number }) {
+  if (stars && stars > 0) {
     return <span className="text-yellow-500 tracking-tighter text-xs">{'★'.repeat(stars)}</span>;
   }
   if (rating && rating > 0) {
-    return <span className="text-xs text-gray-400 tabular-nums">{rating.toFixed(2)}</span>;
+    return <span className="text-xs text-gray-400 tabular-nums">{rating.toFixed(1)}</span>;
   }
   return null;
 }
@@ -125,34 +139,54 @@ function ribbonPath(sx: number, sy1: number, sy2: number, tx: number, ty1: numbe
 interface SchoolPos { school: string; players: TransferPlayer[]; y: number; h: number; }
 interface RibbonSlot { school: string; y: number; h: number; }
 
-// ─── Mobile school card list ──────────────────────────────────────────────
+// ─── Mobile card list ─────────────────────────────────────────────────────────
 function SchoolCards({
-  schools, side, onPivot,
+  schools, side, onPivot, confMode = false,
 }: {
   schools: Array<[string, TransferPlayer[]]>;
   side: 'in' | 'out';
   onPivot: (id: string) => void;
+  confMode?: boolean;
 }) {
   const isIn = side === 'in';
   return (
     <div className="space-y-2">
       {schools.map(([school, ps]) => {
-        const knownTeam = allTeams.find(t => t.id.toLowerCase() === school.toLowerCase());
+        const knownTeam = confMode ? null : allTeams.find(t => t.id.toLowerCase() === school.toLowerCase());
+        const conf = CONF_DISPLAY[school];
         return (
           <div
             key={school}
             className={`flex items-center gap-3 p-3 rounded-lg border bg-gray-50 transition-all ${knownTeam ? `cursor-pointer ${isIn ? 'hover:bg-green-50 hover:border-green-300 active:scale-[0.98]' : 'hover:bg-red-50 hover:border-red-300 active:scale-[0.98]'}` : 'border-gray-200'}`}
             onClick={() => knownTeam && onPivot(knownTeam.id)}
           >
-            <img
-              src={getTeamLogo(school)}
-              alt={displayName(school)}
-              className="w-9 h-9 object-contain flex-shrink-0"
-              onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-            />
+            {confMode ? (
+              conf?.logoUrl ? (
+                <img
+                  src={conf.logoUrl}
+                  alt={school}
+                  className="w-9 h-9 object-contain flex-shrink-0"
+                />
+              ) : (
+                <div
+                  className="w-9 h-9 rounded-md flex items-center justify-center flex-shrink-0 text-white font-bold text-xs"
+                  style={{ background: conf?.color ?? '#888' }}
+                >
+                  {conf?.abbr ?? school.slice(0, 3).toUpperCase()}
+                </div>
+              )
+            ) : (
+              <img
+                src={getTeamLogo(school)}
+                alt={displayName(school)}
+                className="w-9 h-9 object-contain flex-shrink-0"
+                onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
+              />
+            )}
             <div className="flex-1 min-w-0">
-              <div className="font-semibold text-gray-900 text-sm truncate">{displayName(school)}</div>
-              <div className="text-xs text-gray-500">{ps.length} player{ps.length !== 1 ? 's' : ''}</div>
+              <div className="font-semibold text-gray-900 text-sm truncate">
+                {confMode ? school : displayName(school)}
+              </div>
             </div>
             <div className="flex items-center gap-1.5 flex-shrink-0">
               <span className={`text-sm font-bold tabular-nums ${isIn ? 'text-green-600' : 'text-red-500'}`}>
@@ -171,7 +205,7 @@ function SchoolCards({
   );
 }
 
-// ─── Main component ───────────────────────────────────────────────────────
+// ─── Main component ───────────────────────────────────────────────────────────
 export default function TransferFlowClient() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -179,11 +213,14 @@ export default function TransferFlowClient() {
   const [selectedTeam, setSelectedTeam] = useState(() => searchParams.get('team') ?? '');
   const [selectedConference, setSelectedConference] = useState(() => searchParams.get('conference') ?? '');
   const [selectedPosition, setSelectedPosition] = useState('All');
+  const [viewMode, setViewMode] = useState<'school' | 'conference'>('school');
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(false);
   const [hoveredSchool, setHoveredSchool] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; lines: string[] } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
+
+  const isConfMode = viewMode === 'conference';
 
   // URL sync
   useEffect(() => {
@@ -200,7 +237,6 @@ export default function TransferFlowClient() {
     return base.filter(t => t.conference === selectedConference).sort((a, b) => a.name.localeCompare(b.name));
   }, [selectedConference]);
 
-  // Fetch player data when team changes
   useEffect(() => {
     if (!selectedTeam) { setPlayers([]); return; }
     const ctrl = new AbortController();
@@ -213,7 +249,6 @@ export default function TransferFlowClient() {
     return () => ctrl.abort();
   }, [selectedTeam]);
 
-  // Which position groups exist in the current dataset
   const activePositionGroups = useMemo(() => {
     const posSet = new Set(players.map(p => p.position as string));
     return Object.entries(POSITION_GROUPS)
@@ -237,13 +272,13 @@ export default function TransferFlowClient() {
     filteredPlayers.filter(p => p.formerSchool.toLowerCase() === teamIdLower),
   [filteredPlayers, teamIdLower]);
 
-  // For SVG/cards: filter out undecided from chart (no newSchool)
   const outgoingDecided = useMemo(() =>
     outgoing.filter(p => p.newSchool && p.newSchool.trim() !== ''),
   [outgoing]);
 
   const undecidedCount = outgoing.length - outgoingDecided.length;
 
+  // ── School groupings ──────────────────────────────────────────────────────
   const incomingBySchool = useMemo(() => {
     const map: Record<string, TransferPlayer[]> = {};
     for (const p of incoming) {
@@ -264,9 +299,34 @@ export default function TransferFlowClient() {
     return Object.entries(map).sort((a, b) => b[1].length - a[1].length).slice(0, MAX_SCHOOLS);
   }, [outgoingDecided]);
 
-  // ── SVG layout ────────────────────────────────────────────────────────────
-  const leftH = sideHeight(incomingBySchool);
-  const rightH = sideHeight(outgoingBySchool);
+  // ── Conference groupings ──────────────────────────────────────────────────
+  const incomingByConf = useMemo(() => {
+    const map: Record<string, TransferPlayer[]> = {};
+    for (const p of incoming) {
+      const k = p.formerConference || 'Independent';
+      if (!map[k]) map[k] = [];
+      map[k].push(p);
+    }
+    return Object.entries(map).sort((a, b) => b[1].length - a[1].length);
+  }, [incoming]);
+
+  const outgoingByConf = useMemo(() => {
+    const map: Record<string, TransferPlayer[]> = {};
+    for (const p of outgoingDecided) {
+      const k = p.newConference || 'Independent';
+      if (!map[k]) map[k] = [];
+      map[k].push(p);
+    }
+    return Object.entries(map).sort((a, b) => b[1].length - a[1].length);
+  }, [outgoingDecided]);
+
+  // Active groupings based on view mode
+  const activeIncoming = isConfMode ? incomingByConf : incomingBySchool;
+  const activeOutgoing = isConfMode ? outgoingByConf : outgoingBySchool;
+
+  // ── SVG layout ─────────────────────────────────────────────────────────────
+  const leftH = sideHeight(activeIncoming);
+  const rightH = sideHeight(activeOutgoing);
   const teamBoxH = Math.max(leftH, rightH, 80);
   const svgH = teamBoxH + PAD * 2;
 
@@ -291,9 +351,9 @@ export default function TransferFlowClient() {
     });
   }
 
-  const incomingLayout = layoutSide(incomingBySchool, teamBoxH);
-  const outgoingLayout = layoutSide(outgoingBySchool, teamBoxH);
-  const inSlots = ribbonSlots(incomingLayout, incoming.length, teamBoxH);
+  const incomingLayout = layoutSide(activeIncoming, teamBoxH);
+  const outgoingLayout = layoutSide(activeOutgoing, teamBoxH);
+  const inSlots  = ribbonSlots(incomingLayout, incoming.length, teamBoxH);
   const outSlots = ribbonSlots(outgoingLayout, outgoingDecided.length, teamBoxH);
 
   const teamColor = TEAM_COLORS[teamIdLower] ?? '#0050A0';
@@ -358,13 +418,9 @@ export default function TransferFlowClient() {
               <option value="">All Conferences</option>
               {FBS_CONFERENCES.map(c => <option key={c} value={c}>{c}</option>)}
             </select>
-
             <select
               value={selectedTeam}
-              onChange={e => {
-                setSelectedTeam(e.target.value);
-                setSelectedPosition('All');
-              }}
+              onChange={e => { setSelectedTeam(e.target.value); setSelectedPosition('All'); }}
               className="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0050A0] cursor-pointer"
             >
               <option value="">Select a Team</option>
@@ -372,28 +428,29 @@ export default function TransferFlowClient() {
                 <option key={t.id} value={t.id}>{t.name}</option>
               ))}
             </select>
-
           </div>
         </div>
 
-        {/* Stats */}
+        {/* Counts + Portal Grade */}
         {selectedTeam && !loading && (
-          <div className="grid grid-cols-3 gap-3">
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
-              <div className="text-2xl font-bold text-green-600">+{incoming.length}</div>
-              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Incoming</div>
-            </div>
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
-              <div className={`text-2xl font-bold ${net >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                {net >= 0 ? '+' : ''}{net}
+          <>
+            <div className="grid grid-cols-3 gap-3">
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
+                <div className="text-2xl font-bold text-green-600">+{incoming.length}</div>
+                <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Incoming</div>
               </div>
-              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Net</div>
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
+                <div className={`text-2xl font-bold ${net >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                  {net >= 0 ? '+' : ''}{net}
+                </div>
+                <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Net</div>
+              </div>
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
+                <div className="text-2xl font-bold text-red-600">−{outgoing.length}</div>
+                <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Outgoing</div>
+              </div>
             </div>
-            <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 text-center">
-              <div className="text-2xl font-bold text-red-600">−{outgoing.length}</div>
-              <div className="text-xs font-medium text-gray-500 uppercase tracking-wide mt-0.5">Outgoing</div>
-            </div>
-          </div>
+          </>
         )}
 
         {/* Position filter pills */}
@@ -439,37 +496,59 @@ export default function TransferFlowClient() {
             </div>
           ) : (
             <div className="p-4 sm:p-6">
-              {/* Column headers */}
-              <div className="flex justify-between mb-3 px-1">
+              {/* Column headers + view toggle */}
+              <div className="flex justify-between items-center mb-3 px-1">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Incoming ({incoming.length})</span>
+                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                    Incoming ({incoming.length})
+                  </span>
                 </div>
-                <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide hidden sm:block">
-                  {selectedTeamObj?.name}
-                </span>
+
+                {/* View toggle */}
+                <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-0.5">
+                  <button
+                    onClick={() => setViewMode('school')}
+                    className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-pointer ${
+                      !isConfMode ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    By School
+                  </button>
+                  <button
+                    onClick={() => setViewMode('conference')}
+                    className={`px-2.5 py-1 rounded-md text-xs font-semibold transition-all cursor-pointer ${
+                      isConfMode ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    By Conference
+                  </button>
+                </div>
+
                 <div className="flex items-center gap-1.5">
-                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Outgoing ({outgoing.length})</span>
+                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wide">
+                    Outgoing ({outgoing.length})
+                  </span>
                   <span className="w-2 h-2 rounded-full bg-red-400 inline-block" />
                 </div>
               </div>
 
               {/* ── Mobile card view (< sm) ── */}
               <div className="sm:hidden space-y-4">
-                {incomingBySchool.length > 0 && (
+                {activeIncoming.length > 0 && (
                   <div>
                     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-                      From {incomingBySchool.length} school{incomingBySchool.length !== 1 ? 's' : ''} — tap to explore
+                      From {activeIncoming.length} {isConfMode ? 'conference' : 'school'}{activeIncoming.length !== 1 ? 's' : ''}{!isConfMode ? ' — tap to explore' : ''}
                     </p>
-                    <SchoolCards schools={incomingBySchool} side="in" onPivot={handleTeamPivot} />
+                    <SchoolCards schools={activeIncoming} side="in" onPivot={handleTeamPivot} confMode={isConfMode} />
                   </div>
                 )}
-                {outgoingBySchool.length > 0 && (
+                {activeOutgoing.length > 0 && (
                   <div>
                     <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
-                      To {outgoingBySchool.length} school{outgoingBySchool.length !== 1 ? 's' : ''} — tap to explore
+                      To {activeOutgoing.length} {isConfMode ? 'conference' : 'school'}{activeOutgoing.length !== 1 ? 's' : ''}{!isConfMode ? ' — tap to explore' : ''}
                     </p>
-                    <SchoolCards schools={outgoingBySchool} side="out" onPivot={handleTeamPivot} />
+                    <SchoolCards schools={activeOutgoing} side="out" onPivot={handleTeamPivot} confMode={isConfMode} />
                   </div>
                 )}
                 {undecidedCount > 0 && (
@@ -535,11 +614,12 @@ export default function TransferFlowClient() {
                       {selectedTeam.toUpperCase()}
                     </text>
 
-                    {/* Left school boxes */}
+                    {/* Left boxes (incoming) */}
                     {incomingLayout.map(({ school, players: ps, y, h }) => {
                       const isHovered = hoveredSchool === school;
-                      const knownTeam = allTeams.find(t => t.id.toLowerCase() === school.toLowerCase());
-                      const label = displayName(school);
+                      const knownTeam = isConfMode ? null : allTeams.find(t => t.id.toLowerCase() === school.toLowerCase());
+                      const label = isConfMode ? school : displayName(school);
+                      const conf = isConfMode ? CONF_DISPLAY[school] : null;
                       return (
                         <g
                           key={`in-box-${school}`}
@@ -548,25 +628,42 @@ export default function TransferFlowClient() {
                           onMouseLeave={() => { setHoveredSchool(null); setTooltip(null); }}
                           onClick={() => knownTeam && handleTeamPivot(knownTeam.id)}
                         >
-                          <rect x={0} y={y} width={SCHOOL_W} height={h} rx={6} fill={isHovered ? '#f0fdf4' : 'white'} stroke={isHovered ? '#22c55e' : '#e5e7eb'} strokeWidth={isHovered ? 1.5 : 1} />
-                          <image href={getTeamLogo(school)} x={7} y={y + h / 2 - 11} width={22} height={22} preserveAspectRatio="xMidYMid meet" />
-                          <text x={35} y={y + h / 2 - 3} fontSize={10} fontWeight={600} fill="#111827" fontFamily="system-ui, sans-serif">
+                          <rect x={0} y={y} width={SCHOOL_W} height={h} rx={6}
+                            fill={isHovered ? '#f0fdf4' : 'white'}
+                            stroke={isHovered ? '#22c55e' : '#e5e7eb'}
+                            strokeWidth={isHovered ? 1.5 : 1}
+                          />
+                          {isConfMode ? (
+                            conf?.logoUrl ? (
+                              <image href={conf.logoUrl} x={6} y={y + h / 2 - 11} width={22} height={22} preserveAspectRatio="xMidYMid meet" />
+                            ) : (
+                              <>
+                                <rect x={6} y={y + h / 2 - 11} width={22} height={22} rx={4} fill={conf?.color ?? '#888'} />
+                                <text x={17} y={y + h / 2 + 4} textAnchor="middle" fontSize={7} fontWeight={700} fill="white" fontFamily="system-ui, sans-serif">
+                                  {conf?.abbr ?? school.slice(0, 3).toUpperCase()}
+                                </text>
+                              </>
+                            )
+                          ) : (
+                            <image href={getTeamLogo(school)} x={7} y={y + h / 2 - 11} width={22} height={22} preserveAspectRatio="xMidYMid meet" />
+                          )}
+                          <text x={35} y={y + h / 2 + 4} fontSize={10} fontWeight={600} fill="#111827" fontFamily="system-ui, sans-serif">
                             {label.length > 17 ? label.slice(0, 16) + '…' : label}
                           </text>
-                          <text x={35} y={y + h / 2 + 10} fontSize={9} fill="#6b7280" fontFamily="system-ui, sans-serif">
-                            {ps.length} player{ps.length !== 1 ? 's' : ''}{knownTeam ? ' →' : ''}
-                          </text>
                           <rect x={SCHOOL_W - 24} y={y + h / 2 - 9} width={18} height={18} rx={9} fill="#22c55e" />
-                          <text x={SCHOOL_W - 15} y={y + h / 2 + 4} textAnchor="middle" fontSize={9} fontWeight={700} fill="white" fontFamily="system-ui, sans-serif">{ps.length}</text>
+                          <text x={SCHOOL_W - 15} y={y + h / 2 + 4} textAnchor="middle" fontSize={9} fontWeight={700} fill="white" fontFamily="system-ui, sans-serif">
+                            {ps.length}
+                          </text>
                         </g>
                       );
                     })}
 
-                    {/* Right school boxes */}
+                    {/* Right boxes (outgoing) */}
                     {outgoingLayout.map(({ school, players: ps, y, h }) => {
                       const isHovered = hoveredSchool === school;
-                      const knownTeam = allTeams.find(t => t.id.toLowerCase() === school.toLowerCase());
-                      const label = displayName(school);
+                      const knownTeam = isConfMode ? null : allTeams.find(t => t.id.toLowerCase() === school.toLowerCase());
+                      const label = isConfMode ? school : displayName(school);
+                      const conf = isConfMode ? CONF_DISPLAY[school] : null;
                       return (
                         <g
                           key={`out-box-${school}`}
@@ -575,16 +672,32 @@ export default function TransferFlowClient() {
                           onMouseLeave={() => { setHoveredSchool(null); setTooltip(null); }}
                           onClick={() => knownTeam && handleTeamPivot(knownTeam.id)}
                         >
-                          <rect x={RIGHT_LEFT} y={y} width={SCHOOL_W} height={h} rx={6} fill={isHovered ? '#fef2f2' : 'white'} stroke={isHovered ? '#ef4444' : '#e5e7eb'} strokeWidth={isHovered ? 1.5 : 1} />
-                          <image href={getTeamLogo(school)} x={RIGHT_LEFT + 7} y={y + h / 2 - 11} width={22} height={22} preserveAspectRatio="xMidYMid meet" />
-                          <text x={RIGHT_LEFT + 35} y={y + h / 2 - 3} fontSize={10} fontWeight={600} fill="#111827" fontFamily="system-ui, sans-serif">
+                          <rect x={RIGHT_LEFT} y={y} width={SCHOOL_W} height={h} rx={6}
+                            fill={isHovered ? '#fef2f2' : 'white'}
+                            stroke={isHovered ? '#ef4444' : '#e5e7eb'}
+                            strokeWidth={isHovered ? 1.5 : 1}
+                          />
+                          {isConfMode ? (
+                            conf?.logoUrl ? (
+                              <image href={conf.logoUrl} x={RIGHT_LEFT + 6} y={y + h / 2 - 11} width={22} height={22} preserveAspectRatio="xMidYMid meet" />
+                            ) : (
+                              <>
+                                <rect x={RIGHT_LEFT + 6} y={y + h / 2 - 11} width={22} height={22} rx={4} fill={conf?.color ?? '#888'} />
+                                <text x={RIGHT_LEFT + 17} y={y + h / 2 + 4} textAnchor="middle" fontSize={7} fontWeight={700} fill="white" fontFamily="system-ui, sans-serif">
+                                  {conf?.abbr ?? school.slice(0, 3).toUpperCase()}
+                                </text>
+                              </>
+                            )
+                          ) : (
+                            <image href={getTeamLogo(school)} x={RIGHT_LEFT + 7} y={y + h / 2 - 11} width={22} height={22} preserveAspectRatio="xMidYMid meet" />
+                          )}
+                          <text x={RIGHT_LEFT + 35} y={y + h / 2 + 4} fontSize={10} fontWeight={600} fill="#111827" fontFamily="system-ui, sans-serif">
                             {label.length > 17 ? label.slice(0, 16) + '…' : label}
                           </text>
-                          <text x={RIGHT_LEFT + 35} y={y + h / 2 + 10} fontSize={9} fill="#6b7280" fontFamily="system-ui, sans-serif">
-                            {knownTeam ? '← ' : ''}{ps.length} player{ps.length !== 1 ? 's' : ''}
-                          </text>
                           <rect x={SVG_W - 22} y={y + h / 2 - 9} width={18} height={18} rx={9} fill="#ef4444" />
-                          <text x={SVG_W - 13} y={y + h / 2 + 4} textAnchor="middle" fontSize={9} fontWeight={700} fill="white" fontFamily="system-ui, sans-serif">{ps.length}</text>
+                          <text x={SVG_W - 13} y={y + h / 2 + 4} textAnchor="middle" fontSize={9} fontWeight={700} fill="white" fontFamily="system-ui, sans-serif">
+                            {ps.length}
+                          </text>
                         </g>
                       );
                     })}
@@ -593,7 +706,7 @@ export default function TransferFlowClient() {
                   {/* Hover tooltip */}
                   {tooltip && (
                     <div
-                      className="pointer-events-none absolute z-20 bg-gray-900 text-white text-xs rounded-lg shadow-xl px-3 py-2 max-w-[220px]"
+                      className="pointer-events-none absolute z-20 bg-gray-900 text-white text-xs rounded-lg shadow-xl px-3 py-2 max-w-[300px]"
                       style={{ left: tooltip.x, top: tooltip.y, transform: 'translate(-50%, -100%)' }}
                     >
                       {tooltip.lines.map((l, i) => (
@@ -604,17 +717,25 @@ export default function TransferFlowClient() {
                 </div>
 
                 {/* Footer notes */}
-                <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-2">
-                  {incomingBySchool.length < Object.keys(incoming.reduce((m: Record<string, boolean>, p) => { m[p.formerSchool] = true; return m; }, {})).length && (
-                    <p className="text-xs text-gray-400">Showing top {incomingBySchool.length} incoming schools</p>
-                  )}
-                  {outgoingBySchool.length < Object.keys(outgoingDecided.reduce((m: Record<string, boolean>, p) => { m[p.newSchool!] = true; return m; }, {})).length && (
-                    <p className="text-xs text-gray-400">Showing top {outgoingBySchool.length} outgoing schools</p>
-                  )}
-                  {undecidedCount > 0 && (
-                    <p className="text-xs text-gray-400">{undecidedCount} outgoing player{undecidedCount !== 1 ? 's' : ''} still deciding (not shown in chart)</p>
-                  )}
-                </div>
+                {(() => {
+                  const inShown  = activeIncoming.reduce((s, [, ps]) => s + ps.length, 0);
+                  const outShown = activeOutgoing.reduce((s, [, ps]) => s + ps.length, 0);
+                  const inHidden  = incoming.length - inShown;
+                  const outHidden = outgoingDecided.length - outShown;
+                  const notes: string[] = [];
+                  if (inHidden > 0)
+                    notes.push(`Showing ${inShown} of ${incoming.length} incoming (${activeIncoming.length} schools · ${inHidden} more to other schools)`);
+                  if (outHidden > 0)
+                    notes.push(`Showing ${outShown} of ${outgoingDecided.length} committed outgoing (${activeOutgoing.length} schools · ${outHidden} more to other schools)`);
+                  if (undecidedCount > 0)
+                    notes.push(`${undecidedCount} outgoing still deciding`);
+                  if (notes.length === 0) return null;
+                  return (
+                    <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-2">
+                      {notes.map((n, i) => <p key={i} className="text-xs text-gray-400">{n}</p>)}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           )}
@@ -623,7 +744,6 @@ export default function TransferFlowClient() {
         {/* Player lists */}
         {selectedTeam && !loading && (incoming.length > 0 || outgoing.length > 0) && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Incoming */}
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
               <div className="px-5 py-3 border-b border-gray-100 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
@@ -637,13 +757,12 @@ export default function TransferFlowClient() {
                     <span className="text-xs font-bold text-green-600 w-8 text-right flex-shrink-0">{p.position}</span>
                     <span className="text-sm font-medium text-gray-900 flex-1 min-w-0 truncate">{p.name}</span>
                     <span className="text-xs text-gray-400 truncate max-w-[80px] sm:max-w-[120px] flex-shrink-0">{titleCase(p.formerSchool)}</span>
-                    <span className="flex-shrink-0"><StarRating rating={p.rating} /></span>
+                    <span className="flex-shrink-0"><StarRating rating={p.rating} stars={p.stars} /></span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Outgoing */}
             <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
               <div className="px-5 py-3 border-b border-gray-100 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-red-400 inline-block" />
@@ -659,7 +778,7 @@ export default function TransferFlowClient() {
                     <span className="text-xs text-gray-400 truncate max-w-[80px] sm:max-w-[120px] flex-shrink-0">
                       {p.newSchool ? titleCase(p.newSchool) : <span className="italic text-gray-300">Undecided</span>}
                     </span>
-                    <span className="flex-shrink-0"><StarRating rating={p.rating} /></span>
+                    <span className="flex-shrink-0"><StarRating rating={p.rating} stars={p.stars} /></span>
                   </div>
                 ))}
               </div>

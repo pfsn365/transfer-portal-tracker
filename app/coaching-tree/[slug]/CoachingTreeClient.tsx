@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
@@ -47,6 +47,45 @@ function fmtRecord(c: Coach) {
   return `${r.wins}–${r.losses} (${pct}%)`;
 }
 
+// Returns the school a coach is most associated with:
+// active → current school; retired → most titles, break ties by wins
+function getFamousSchool(coach: Coach): string | null {
+  if (coach.active && coach.currentSchool) return coach.currentSchool;
+  if (coach.hcCareer.length === 0) return null;
+  return coach.hcCareer.reduce((best, t) => {
+    if (t.titles.length > best.titles.length) return t;
+    if (t.titles.length === best.titles.length && t.wins > best.wins) return t;
+    return best;
+  }).school;
+}
+
+function CoachAvatar({ coach }: { coach: Coach }) {
+  const [logoFailed, setLogoFailed] = useState(false);
+  const school = getFamousSchool(coach);
+  const initials = coach.name.split(' ').map(n => n[0]).join('').slice(0, 2);
+
+  if (!school || logoFailed) {
+    return (
+      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#0050A0] to-[#003a75] flex items-center justify-center text-white text-xl font-extrabold flex-shrink-0">
+        {initials}
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-14 h-14 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center flex-shrink-0 p-1.5 shadow-sm">
+      <img
+        src={getTeamLogo(LOGO_NAME_MAP[school] ?? school)}
+        alt={school}
+        width={44}
+        height={44}
+        className="object-contain w-full h-full"
+        onError={() => setLogoFailed(true)}
+      />
+    </div>
+  );
+}
+
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
@@ -75,33 +114,45 @@ export default function CoachingTreeClient({ slug }: { slug: string }) {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      {/* Hero */}
+      {/* Hero — same generic header as the landing page */}
       <header
-        className="bg-gradient-to-b from-[#0050A0] to-[#003a75] text-white px-4 sm:px-6 py-10"
-        style={{ boxShadow: 'inset 0 -1px 0 rgba(255,255,255,0.1)' }}
+        className="text-white shadow-lg"
+        style={{
+          background: 'linear-gradient(180deg, #0050A0 0%, #003a75 100%)',
+          boxShadow: 'inset 0 -30px 40px -30px rgba(0,0,0,0.15), 0 4px 6px -1px rgba(0,0,0,0.1)',
+        }}
       >
-        <div className="max-w-6xl mx-auto">
-          <Link href="/coaching-tree" className="text-blue-300 hover:text-white text-sm mb-3 inline-flex items-center gap-1 transition-colors">
+        <div className="container mx-auto px-4 pt-6 sm:pt-7 md:pt-8 lg:pt-10 pb-3 sm:pb-4 md:pb-5 lg:pb-6">
+          <h1 className="text-4xl lg:text-5xl font-extrabold mb-2">CFB Coaching Trees</h1>
+          <p className="text-lg opacity-90 font-medium">Follow the mentors and disciples behind college football's biggest dynasties.</p>
+        </div>
+      </header>
+      <TransferPortalBanner />
+      <RaptiveHeaderAd />
+
+      <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 space-y-8">
+
+        {/* Coach profile card */}
+        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
+          <Link href="/coaching-tree" className="text-[#0050A0] hover:underline text-sm inline-flex items-center gap-1 mb-4">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             All Coaching Trees
           </Link>
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center text-2xl font-extrabold flex-shrink-0">
-              {coach.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-            </div>
+            <CoachAvatar coach={coach} />
             <div>
-              <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">{coach.name}</h1>
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1 text-blue-200 text-sm">
+              <p className="text-2xl font-extrabold text-gray-900 leading-tight">{coach.name}</p>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1 text-sm text-gray-600">
                 <span>{record.wins}–{record.losses} ({pct}%)</span>
                 {titles.length > 0 && (
-                  <span className="text-yellow-300 font-semibold">
+                  <span className="text-yellow-600 font-semibold">
                     {titles.length}× National Champion ({titles.join(', ')})
                   </span>
                 )}
                 {coach.active && (
-                  <span className="bg-green-500/20 text-green-300 border border-green-400/30 rounded-full px-2 py-0.5 text-xs font-semibold">
+                  <span className="bg-green-100 text-green-700 border border-green-200 rounded-full px-2 py-0.5 text-xs font-semibold">
                     Active · {coach.currentSchool}
                   </span>
                 )}
@@ -109,11 +160,6 @@ export default function CoachingTreeClient({ slug }: { slug: string }) {
             </div>
           </div>
         </div>
-      </header>
-      <TransferPortalBanner />
-      <RaptiveHeaderAd />
-
-      <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 space-y-8">
 
         {/* Tree visualization */}
         <section>
