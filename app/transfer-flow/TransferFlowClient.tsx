@@ -216,6 +216,7 @@ export default function TransferFlowClient() {
   const [viewMode, setViewMode] = useState<'school' | 'conference'>('school');
   const [players, setPlayers] = useState<TransferPlayer[]>([]);
   const [loading, setLoading] = useState(false);
+  const [downloading, setDownloading] = useState(false);
   const [hoveredSchool, setHoveredSchool] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; lines: string[] } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -368,20 +369,118 @@ export default function TransferFlowClient() {
 
   function handleRibbonHover(e: React.MouseEvent<SVGElement>, school: string, ps: TransferPlayer[]) {
     setHoveredSchool(school);
-    const container = svgRef.current?.closest('.svg-container') as HTMLElement | null;
-    if (!container) return;
-    const rect = container.getBoundingClientRect();
-    const lines = ps.slice(0, 8).map(p => {
-      const stars = ratingToStars(p.rating);
-      const ratingStr = stars > 0 ? ` · ${'★'.repeat(stars)}` : p.rating ? ` · ${p.rating.toFixed(2)}` : '';
-      return `${p.name} (${p.position}${ratingStr})`;
-    });
-    if (ps.length > 8) lines.push(`+${ps.length - 8} more`);
-    setTooltip({
-      x: e.clientX - rect.left + container.scrollLeft,
-      y: e.clientY - rect.top + container.scrollTop - 8,
-      lines,
-    });
+    const lines = ps.slice(0, 10).map(p => `${p.name} (${p.position})`);
+    if (ps.length > 10) lines.push(`+${ps.length - 10} more`);
+    setTooltip({ x: e.clientX, y: e.clientY - 8, lines });
+  }
+
+  async function downloadChart() {
+    if (!svgRef.current) return;
+    setDownloading(true);
+    try {
+      // ── 1. Clone SVG and inline all image hrefs as data URIs ──
+      const clone = svgRef.current.cloneNode(true) as SVGSVGElement;
+      clone.setAttribute('width', String(SVG_W));
+      clone.setAttribute('height', String(svgH));
+
+      async function toDataUri(src: string): Promise<string | null> {
+        const abs = src.startsWith('http') ? src : `${window.location.origin}${src}`;
+        try {
+          const res = await fetch(abs);
+          const blob = await res.blob();
+          return await new Promise<string>(resolve => {
+            const reader = new FileReader();
+            reader.onloadend = () => resolve(reader.result as string);
+            reader.readAsDataURL(blob);
+          });
+        } catch { return null; }
+      }
+
+      await Promise.all(Array.from(clone.querySelectorAll('image')).map(async el => {
+        const raw = el.getAttribute('href') || '';
+        if (!raw) return;
+        const uri = await toDataUri(raw);
+        if (uri) el.setAttribute('href', uri); else el.remove();
+      }));
+
+      // ── 2. Load PFSN logo ──
+      const pfsnImg = await new Promise<HTMLImageElement>(resolve => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = () => resolve(img);
+        img.onerror = () => resolve(img);
+        img.src = `${window.location.origin}/cfb-hq/pfsn-logo.png?v=${Date.now()}`;
+      });
+
+      // ── 3. Build canvas with header + chart + footer ──
+      const scale = 2;
+      const HEADER_H = 60;
+      const FOOTER_H = 38;
+      const canvas = document.createElement('canvas');
+      canvas.width = SVG_W * scale;
+      canvas.height = (HEADER_H + svgH + FOOTER_H) * scale;
+      const ctx = canvas.getContext('2d')!;
+      ctx.scale(scale, scale);
+
+      // Header background — white
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, SVG_W, HEADER_H);
+
+      // Title — top left in team color
+      const teamLabel = displayName(selectedTeam);
+      ctx.fillStyle = teamColor;
+      ctx.font = 'bold 21px system-ui, -apple-system, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(`2026 ${teamLabel} Transfer Streams`, 18, HEADER_H / 2);
+
+      // PFSN logo — top right, invert(1) turns white→black, leaves transparent alone
+      if (pfsnImg.naturalWidth > 0) {
+        const logoH = 32;
+        const logoW = Math.round(pfsnImg.naturalWidth / pfsnImg.naturalHeight * logoH);
+        ctx.save();
+        ctx.filter = 'invert(1)';
+        ctx.drawImage(pfsnImg, SVG_W - logoW - 16, (HEADER_H - logoH) / 2, logoW, logoH);
+        ctx.restore();
+      }
+
+      // Chart area — white background then SVG
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, HEADER_H, SVG_W, svgH);
+
+      const svgStr = new XMLSerializer().serializeToString(clone);
+      const svgBlob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
+      const svgUrl = URL.createObjectURL(svgBlob);
+      await new Promise<void>((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => { ctx.drawImage(img, 0, HEADER_H); URL.revokeObjectURL(svgUrl); resolve(); };
+        img.onerror = reject;
+        img.src = svgUrl;
+      });
+
+      // Footer background — PFSN blue
+      ctx.fillStyle = '#0050A0';
+      ctx.fillRect(0, HEADER_H + svgH, SVG_W, FOOTER_H);
+
+      // URL — bottom right, production link
+      const pageUrl = `https://www.profootballnetwork.com/cfb-hq/transfer-flow?${new URLSearchParams({ team: selectedTeam }).toString()}`;
+      ctx.fillStyle = 'rgba(255,255,255,0.85)';
+      ctx.font = '13px system-ui, -apple-system, sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(pageUrl, SVG_W - 16, HEADER_H + svgH + FOOTER_H / 2);
+
+      // ── 4. Download ──
+      const teamSlug = teamLabel.replace(/\s+/g, '-').toLowerCase();
+      const a = document.createElement('a');
+      a.download = `${teamSlug}-transfer-flow-2026.png`;
+      a.href = canvas.toDataURL('image/png');
+      a.click();
+    } catch (err) {
+      console.error('Chart download failed:', err);
+    } finally {
+      setDownloading(false);
+    }
   }
 
   return (
@@ -558,7 +657,7 @@ export default function TransferFlowClient() {
 
               {/* ── Desktop SVG Sankey (≥ sm) ── */}
               <div className="hidden sm:block">
-                <div className="svg-container relative overflow-x-auto">
+                <div className="svg-container relative overflow-x-auto overflow-y-auto" style={{ maxHeight: 540 }}>
                   <svg
                     ref={svgRef}
                     viewBox={`0 0 ${SVG_W} ${svgH}`}
@@ -706,7 +805,7 @@ export default function TransferFlowClient() {
                   {/* Hover tooltip */}
                   {tooltip && (
                     <div
-                      className="pointer-events-none absolute z-20 bg-gray-900 text-white text-xs rounded-lg shadow-xl px-3 py-2 max-w-[300px]"
+                      className="pointer-events-none fixed z-50 bg-gray-900 text-white text-xs rounded-lg shadow-xl px-3 py-2 max-w-[300px]"
                       style={{ left: tooltip.x, top: tooltip.y, transform: 'translate(-50%, -100%)' }}
                     >
                       {tooltip.lines.map((l, i) => (
@@ -736,6 +835,25 @@ export default function TransferFlowClient() {
                     </div>
                   );
                 })()}
+
+                {/* Download button */}
+                <div className="flex justify-end mt-3">
+                  <button
+                    onClick={downloadChart}
+                    disabled={downloading}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border border-gray-200 text-gray-500 hover:text-gray-900 hover:border-gray-400 hover:bg-gray-50 transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                    title="Download full chart as PNG"
+                  >
+                    {downloading ? (
+                      <div className="w-3.5 h-3.5 border border-gray-400 border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                    )}
+                    {downloading ? 'Saving...' : 'Save PNG'}
+                  </button>
+                </div>
               </div>
             </div>
           )}
@@ -753,11 +871,14 @@ export default function TransferFlowClient() {
                 {incoming.length === 0 ? (
                   <p className="px-5 py-4 text-sm text-gray-400">None</p>
                 ) : incoming.map((p, i) => (
-                  <div key={i} className="px-5 py-2.5 flex items-center gap-3 hover:bg-gray-50">
+                  <div key={i} className="px-3 py-2 flex items-center gap-2 hover:bg-gray-50">
                     <span className="text-xs font-bold text-green-600 w-8 text-right flex-shrink-0">{p.position}</span>
                     <span className="text-sm font-medium text-gray-900 flex-1 min-w-0 truncate">{p.name}</span>
-                    <span className="text-xs text-gray-400 truncate max-w-[80px] sm:max-w-[120px] flex-shrink-0">{titleCase(p.formerSchool)}</span>
-                    <span className="flex-shrink-0"><StarRating rating={p.rating} stars={p.stars} /></span>
+                    <div className="flex items-center gap-1 flex-shrink-0 max-w-[130px]">
+                      <img src={getTeamLogo(p.formerSchool)} alt="" className="w-4 h-4 object-contain flex-shrink-0"
+                        onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+                      <span className="text-xs text-gray-400 truncate">{titleCase(p.formerSchool)}</span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -772,13 +893,20 @@ export default function TransferFlowClient() {
                 {outgoing.length === 0 ? (
                   <p className="px-5 py-4 text-sm text-gray-400">None</p>
                 ) : outgoing.map((p, i) => (
-                  <div key={i} className="px-5 py-2.5 flex items-center gap-3 hover:bg-gray-50">
+                  <div key={i} className="px-3 py-2 flex items-center gap-2 hover:bg-gray-50">
                     <span className="text-xs font-bold text-red-500 w-8 text-right flex-shrink-0">{p.position}</span>
                     <span className="text-sm font-medium text-gray-900 flex-1 min-w-0 truncate">{p.name}</span>
-                    <span className="text-xs text-gray-400 truncate max-w-[80px] sm:max-w-[120px] flex-shrink-0">
-                      {p.newSchool ? titleCase(p.newSchool) : <span className="italic text-gray-300">Undecided</span>}
-                    </span>
-                    <span className="flex-shrink-0"><StarRating rating={p.rating} stars={p.stars} /></span>
+                    <div className="flex items-center gap-1 flex-shrink-0 max-w-[130px]">
+                      {p.newSchool ? (
+                        <>
+                          <img src={getTeamLogo(p.newSchool)} alt="" className="w-4 h-4 object-contain flex-shrink-0"
+                            onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+                          <span className="text-xs text-gray-400 truncate">{titleCase(p.newSchool)}</span>
+                        </>
+                      ) : (
+                        <span className="italic text-xs text-gray-300">Undecided</span>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
